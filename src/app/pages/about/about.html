@@ -1,0 +1,53 @@
+@let t = translation.t();
+
+<div class="page">
+  <div class="title">{{ t.about.title }}</div>
+  <div class="subtitle">{{ t.about.subtitle }}</div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="photo">
+        <img src="assets/images/sawito-dog-selfie.jpg" alt="Sawito mugshot" />
+      </div>
+      <div class="details">
+        <div class="name">{{ t.about.sawitoName }}</div>
+        <div class="alias">{{ t.about.sawitoAlias }}</div>
+        <div class="facts">
+          <div class="label">{{ t.about.occupation }}</div><div>{{ t.about.occupationVal }}</div>
+          <div class="label">{{ t.about.marksLabel }}</div><div>{{ t.about.sawitoMarks }}</div>
+          <div class="label">{{ t.about.associateLabel }}</div><div>{{ t.about.sawitoAssociate }}</div>
+          <div class="label">{{ t.about.statusLabel }}</div><div>{{ t.about.sawitoStatus }}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="photo">
+        <img src="assets/images/dog-floor-portrait.jpg" alt="Le Criminel mugshot" />
+      </div>
+      <div class="details">
+        <div class="name">{{ t.about.dogName }}</div>
+        <div class="alias">{{ t.about.dogAlias }}</div>
+        <div class="facts">
+          <div class="label">{{ t.about.breedLabel }}</div><div>{{ t.about.breedVal }}</div>
+          <div class="label">{{ t.about.marksLabel }}</div><div>{{ t.about.dogMarks }}</div>
+          <div class="label">{{ t.about.associateLabel }}</div><div>{{ t.about.dogAssociate }}</div>
+          <div class="label">{{ t.about.statusLabel }}</div><div>{{ t.about.dogStatus }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rap-sheet">
+    <div class="rap-sheet-header">
+      <div class="rap-sheet-title">{{ t.about.rapSheetTitle }}</div>
+      <div class="confidential">{{ t.about.confidential }}</div>
+    </div>
+    @for (entry of t.rapSheet; track entry.case) {
+      <div class="rap-sheet-entry">
+        <div class="case">{{ entry.case }}</div>
+        <div class="charge">{{ entry.charge }}</div>
+      </div>
+    }
+  </div>
+</div>

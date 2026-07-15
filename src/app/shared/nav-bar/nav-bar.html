@@ -1,0 +1,19 @@
+@let t = translation.t();
+@let lang = translation.lang();
+
+<div class="nav">
+  <a routerLink="/" class="brand">THE THIEFFRY CRIMINALS</a>
+  <div class="links">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ t.nav.home }}</a>
+    <a routerLink="/about" routerLinkActive="active">{{ t.nav.about }}</a>
+    <a routerLink="/story" routerLinkActive="active">{{ t.nav.story }}</a>
+    <a routerLink="/pigeon" routerLinkActive="active">{{ t.nav.pigeon }}</a>
+    <a routerLink="/blog" routerLinkActive="active">{{ t.nav.blog }}</a>
+    <a routerLink="/shop" routerLinkActive="active">{{ t.nav.shop }}</a>
+    <div class="lang-switch">
+      <button type="button" [class.active]="lang === 'en'" (click)="setLang('en')">EN</button>
+      <span class="sep">/</span>
+      <button type="button" [class.active]="lang === 'fr'" (click)="setLang('fr')">FR</button>
+    </div>
+  </div>
+</div>
