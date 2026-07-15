@@ -1,0 +1,22 @@
+@let t = translation.t();
+
+<div class="page">
+  <div class="title">{{ t.shop.title }}</div>
+  <div class="subtitle">{{ t.shop.subtitle }}</div>
+
+  <div class="grid">
+    @for (item of t.shopItems; track item.name) {
+      <div class="item">
+        <div class="placeholder">[ PRODUCT PHOTO ]</div>
+        <div class="details">
+          <div class="name">{{ item.name }}</div>
+          <div class="tag">{{ item.tag }}</div>
+          <div class="price-row">
+            <div class="price">{{ item.price }}</div>
+            <div class="not-for-sale">{{ t.shop.notForSale }}</div>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>
