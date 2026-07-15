@@ -1,7 +1,9 @@
 # EtterbeekCriminals
 
+Just a fun mockup website I put together as a test — not a real project.
+
 ## Viewing the site
 
-This repo is published with GitHub Pages. Once Pages is enabled (Settings → Pages → deploy from the `main` branch, root folder), the site will be live at:
+This repo is published with GitHub Pages, live at:
 
 https://poiteal-ops.github.io/EtterbeekCriminals/
