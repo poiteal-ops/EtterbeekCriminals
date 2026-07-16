@@ -1,0 +1,35 @@
+@let t = translation.t();
+
+<div class="page">
+  <div class="kicker">{{ t.couch.kicker }}</div>
+  <div class="title">{{ t.couch.title }}</div>
+
+  <div class="report">
+    <div class="facts">
+      <div class="label">{{ t.couch.locationLabel }}</div><div>{{ t.couch.locationVal }}</div>
+      <div class="label">{{ t.couch.suspectLabel }}</div><div>{{ t.couch.suspectVal }}</div>
+      <div class="label">{{ t.couch.witnessLabel }}</div><div>{{ t.couch.witnessVal }}</div>
+      <div class="label">{{ t.couch.motiveLabel }}</div><div>{{ t.couch.motiveVal }}</div>
+    </div>
+    <div class="photo">
+      <img src="assets/images/couch-crime-scene.jpg" alt="Le Criminel at the scene of the couch" />
+    </div>
+    <div class="body">
+      <p>{{ t.couch.p1 }}</p>
+      <p>{{ t.couch.p2 }}</p>
+    </div>
+
+    <div class="gallery">
+      <figure>
+        <img src="assets/images/couch-armrest-detail.jpg" alt="Close-up of the armrest damage" />
+        <figcaption>{{ t.couch.exhibitBCaption }}</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/couch-dog-caught.jpg" alt="Le Criminel nearby, looking innocent" />
+        <figcaption>{{ t.couch.exhibitCCaption }}</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="stamp">{{ t.couch.stamp }}</div>
+</div>

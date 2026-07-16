@@ -7,7 +7,11 @@
   <div class="grid">
     @for (item of t.shopItems; track item.name) {
       <div class="item">
-        <div class="placeholder">[ PRODUCT PHOTO ]</div>
+        @if (item.image) {
+          <div class="photo"><img [src]="item.image" [alt]="item.name" /></div>
+        } @else {
+          <div class="placeholder">[ PRODUCT PHOTO ]</div>
+        }
         <div class="details">
           <div class="name">{{ item.name }}</div>
           <div class="tag">{{ item.tag }}</div>
