@@ -1,0 +1,34 @@
+@let t = translation.t();
+@let product = item();
+
+<div class="page">
+  @if (product) {
+    <div class="kicker">{{ t.shop.itemKicker }}</div>
+    <div class="title">{{ product.name }}</div>
+
+    <div class="report">
+      <div class="photo">
+        <img [src]="product.image" [alt]="product.name" />
+      </div>
+      <div class="meta">
+        <div class="tag">{{ product.tag }}</div>
+        <div class="price-row">
+          <div class="price">{{ product.price }}</div>
+          <div class="not-for-sale">{{ t.shop.notForSale }}</div>
+        </div>
+      </div>
+      <div class="body">
+        @for (paragraph of product.detail; track paragraph) {
+          <p>{{ paragraph }}</p>
+        }
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <div class="disclaimer-title">{{ t.shop.disclaimerTitle }}</div>
+      <p>{{ t.shop.disclaimerBody }}</p>
+    </div>
+
+    <a class="back" routerLink="/shop">{{ t.shop.backToShop }}</a>
+  }
+</div>

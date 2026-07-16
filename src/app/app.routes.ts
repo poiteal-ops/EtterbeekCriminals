@@ -6,6 +6,7 @@ import { Couch } from './pages/couch/couch';
 import { Home } from './pages/home/home';
 import { Pigeon } from './pages/pigeon/pigeon';
 import { Shop } from './pages/shop/shop';
+import { ShopItemPage } from './pages/shop-item/shop-item';
 import { Story } from './pages/story/story';
 import { TrainRide } from './pages/train-ride/train-ride';
 
@@ -18,5 +19,6 @@ export const routes: Routes = [
   { path: 'train-ride', component: TrainRide },
   { path: 'blog', component: Blog },
   { path: 'shop', component: Shop },
+  { path: 'shop/:slug', component: ShopItemPage },
   { path: '**', redirectTo: '' },
 ];
