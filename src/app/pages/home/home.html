@@ -30,15 +30,21 @@
 </div>
 
 <div class="promo-wrap">
-  <a class="promo" routerLink="/shop">
-    <div class="promo-photo">
-      <img src="assets/images/shop-brux-gang.jpg" alt="Brux Gang mixtape cover" />
-    </div>
-    <div class="promo-details">
-      <div class="promo-kicker">{{ t.home.promoKicker }}</div>
-      <div class="promo-title">{{ t.home.promoTitle }}</div>
-      <div class="promo-tag">{{ t.home.promoTag }}</div>
-      <div class="promo-cta">{{ t.home.promoCta }}</div>
-    </div>
-  </a>
+  <div class="promo">
+    <a class="promo-main" routerLink="/shop">
+      <div class="promo-photo">
+        <img src="assets/images/shop-brux-gang.jpg" alt="Brux Gang mixtape cover" />
+      </div>
+      <div class="promo-details">
+        <div class="promo-kicker">{{ t.home.promoKicker }}</div>
+        <div class="promo-title">{{ t.home.promoTitle }}</div>
+        <div class="promo-tag">{{ t.home.promoTag }}</div>
+        <div class="promo-cta">{{ t.home.promoCta }}</div>
+      </div>
+    </a>
+    <a class="promo-video" href="https://www.youtube.com/watch?v=7l6RhWyPk4s" target="_blank" rel="noopener noreferrer">
+      <span class="promo-video-icon" aria-hidden="true">&#9658;</span>
+      {{ t.home.promoVideoLink }}
+    </a>
+  </div>
 </div>

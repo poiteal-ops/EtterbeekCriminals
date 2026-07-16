@@ -4,23 +4,68 @@
   <div class="title">{{ t.shop.title }}</div>
   <div class="subtitle">{{ t.shop.subtitle }}</div>
 
-  <div class="grid">
-    @for (item of t.shopItems; track item.name) {
-      <div class="item">
-        @if (item.image) {
-          <div class="photo"><img [src]="item.image" [alt]="item.name" /></div>
-        } @else {
-          <div class="placeholder">[ PRODUCT PHOTO ]</div>
-        }
-        <div class="details">
-          <div class="name">{{ item.name }}</div>
-          <div class="tag">{{ item.tag }}</div>
-          <div class="price-row">
-            <div class="price">{{ item.price }}</div>
-            <div class="not-for-sale">{{ t.shop.notForSale }}</div>
-          </div>
+  @for (item of t.shopItems; track item.name) {
+    @if (item.videoId) {
+      <div class="featured">
+        <div class="featured-badge">{{ t.shop.previewLabel }}</div>
+        <div class="featured-media">
+          @if (isPlaying(item.videoId)) {
+            <div class="video-frame">
+              <iframe
+                [src]="embedUrl(item.videoId)"
+                [title]="item.name"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          } @else {
+            <button type="button" class="video-facade" (click)="play(item.videoId)">
+              <img [src]="thumbnailUrl(item.videoId)" [alt]="item.name" />
+              <span class="play-button" aria-hidden="true">&#9658;</span>
+              <span class="play-label">{{ t.shop.playLabel }}</span>
+            </button>
+          }
+        </div>
+        <div class="featured-info">
+          <div class="featured-kicker">{{ t.shop.featuredKicker }}</div>
+          <div class="featured-title">{{ item.name }}</div>
+          <div class="featured-tag">{{ item.tag }}</div>
         </div>
       </div>
+    }
+  }
+
+  <div class="grid">
+    @for (item of t.shopItems; track item.name) {
+      @if (item.slug) {
+        <a class="item" [routerLink]="['/shop', item.slug]">
+          <div class="photo"><img [src]="item.image" [alt]="item.name" /></div>
+          <div class="details">
+            <div class="name">{{ item.name }}</div>
+            <div class="tag">{{ item.tag }}</div>
+            <div class="price-row">
+              <div class="price">{{ item.price }}</div>
+              <div class="not-for-sale">{{ t.shop.notForSale }}</div>
+            </div>
+          </div>
+        </a>
+      } @else {
+        <div class="item">
+          @if (item.image) {
+            <div class="photo"><img [src]="item.image" [alt]="item.name" /></div>
+          } @else {
+            <div class="placeholder">[ PRODUCT PHOTO ]</div>
+          }
+          <div class="details">
+            <div class="name">{{ item.name }}</div>
+            <div class="tag">{{ item.tag }}</div>
+            <div class="price-row">
+              <div class="price">{{ item.price }}</div>
+              <div class="not-for-sale">{{ t.shop.notForSale }}</div>
+            </div>
+          </div>
+        </div>
+      }
     }
   </div>
 </div>

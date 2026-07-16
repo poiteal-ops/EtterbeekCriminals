@@ -20,6 +20,9 @@ export interface ShopItem {
   tag: string;
   price: string;
   image?: string;
+  videoId?: string;
+  slug?: string;
+  detail?: string[];
 }
 
 export interface AdventureEntry {
@@ -51,6 +54,7 @@ export interface SiteContent {
     promoTitle: string;
     promoTag: string;
     promoCta: string;
+    promoVideoLink: string;
   };
   about: {
     title: string;
@@ -104,6 +108,7 @@ export interface SiteContent {
     motiveVal: string;
     p1: string;
     p2: string;
+    aftermathCaption: string;
     stamp: string;
   };
   couch: {
@@ -152,6 +157,13 @@ export interface SiteContent {
     title: string;
     subtitle: string;
     notForSale: string;
+    previewLabel: string;
+    playLabel: string;
+    featuredKicker: string;
+    itemKicker: string;
+    disclaimerTitle: string;
+    disclaimerBody: string;
+    backToShop: string;
   };
   shopItems: ShopItem[];
   footer: string;
@@ -169,6 +181,7 @@ const CONTENT: Record<Lang, SiteContent> = {
       promoTitle: 'BRUX GANG — "THUG LIFE, NO RULES"',
       promoTag: 'The mixtape nobody asked for. Cover art by a certain Spooky-something.',
       promoCta: 'VIEW IN SHOP',
+      promoVideoLink: 'Watch the preview',
     },
     about: {
       title: 'ABOUT THE SUSPECTS', subtitle: 'Case file 001-CR — subjects identified below',
@@ -217,6 +230,7 @@ const CONTENT: Record<Lang, SiteContent> = {
       motiveLabel: 'MOTIVE', motiveVal: 'One (1) pigeon, standing where it should not have',
       p1: 'Suspect observed a pigeon at close range and, without consulting anyone, made a decision. He left the balcony at speed and without a plan. Gravity was involved. The pigeon was not caught. The dog was fine.',
       p2: 'Sawito was not fine. Some hair was lost in the ensuing panic — his own, not the dog’s — and has not been recovered.',
+      aftermathCaption: 'EXHIBIT B — SUBJECT IN RECOVERY, BACK ON SOLID GROUND, VISIBLY UNBOTHERED BY ANY OF IT',
       stamp: 'CASE CLOSED — NO CHARGES FILED',
     },
     couch: {
@@ -273,13 +287,51 @@ const CONTENT: Record<Lang, SiteContent> = {
       { date: 'MAY 2026', case: 'CASE LOG 023', title: 'FULL LIFE TAKEOVER, ASSESSMENT COMPLETE', body: 'Subject now controls the bed, the schedule, the snacks, and most major decisions. Owner’s independence status: revoked.', image: 'assets/images/blog-waffle-watch.jpg' },
       { date: 'JUN 2026', case: 'CASE LOG 024', title: 'TWO-YEAR STATUS REVIEW', body: 'Two years since intake. No reform. No regrets either. Even suspect Pikette, on a rare quiet evening, was found sharing the couch. Case remains open.', image: 'assets/images/blog-belly-flop.jpg' },
     ],
-    shop: { title: 'SHOP', subtitle: 'Evidence locker — display only, nothing here is for sale', notForSale: 'NOT FOR SALE' },
+    shop: {
+      title: 'SHOP', subtitle: 'Evidence locker — display only, nothing here is for sale', notForSale: 'NOT FOR SALE', previewLabel: 'SAMPLE / PREVIEW', playLabel: 'PLAY PREVIEW', featuredKicker: 'NOW SCREENING — ALBUM PREVIEW',
+      itemKicker: 'EVIDENCE LOCKER — ITEM FILE',
+      disclaimerTitle: 'NOTHING HERE IS REAL',
+      disclaimerBody: 'This item is a piece of joke concept art made for this site. It was never manufactured, is not for sale, and cannot be ordered in any size, color, or quantity — anywhere, from anyone. Any resemblance to an actual product is coincidental and entirely unintentional.',
+      backToShop: '← BACK TO THE SHOP',
+    },
     shopItems: [
-      { name: 'Brux Gang — "Thug Life, No Rules" (Mixtape)', tag: 'Parental advisory. Cover art by a certain Spooky-something.', price: '$14', image: 'assets/images/shop-brux-gang.jpg' },
-      { name: 'WANTED Tee', tag: 'Cotton, unisex, guilty by association', price: '$32' },
-      { name: '"Okayest Criminal" Mug', tag: 'Ceramic, holds coffee and grudges', price: '$18' },
-      { name: 'Balcony Incident Poster', tag: 'Commemorative print, framed separately', price: '$45' },
-      { name: 'Case File Sticker Pack', tag: 'Set of 5, vinyl, weatherproof', price: '$9' },
+      { name: 'Brux Gang — "Thug Life, No Rules" (Mixtape)', tag: 'Parental advisory. Cover art and video by a certain Spooky-something.', price: '$14', image: 'assets/images/shop-brux-gang.jpg', videoId: '7l6RhWyPk4s' },
+      {
+        name: 'WANTED Tee', tag: 'Cotton, unisex, guilty by association', price: '$32',
+        image: 'assets/images/shop-wanted-tee.png', slug: 'wanted-tee',
+        detail: [
+          'Printed front and center: a studio mugshot of Le Criminel, staring down the camera with the flat, unbothered expression of a repeat offender who has never once considered his own innocence. The height chart behind him is decorative — no formal measurement was ever taken, on account of the subject\'s refusal to stand still for processing.',
+          'Style notes, for the record: heavyweight black cotton, distressed WANTED lettering, and a fit best described as "evidence room chic." Comes in exactly zero sizes, because it comes in zero units — see below.',
+          'To be absolutely clear: this shirt does not exist. It cannot be purchased, ordered, back-ordered, or requested in a different size. It is a piece of concept art generated for the joke of this site and nothing more — Le Criminel has not endorsed any merchandise, being a dog.',
+        ],
+      },
+      {
+        name: '"Okayest Criminal" Mug', tag: 'Ceramic, holds coffee and grudges', price: '$18',
+        image: 'assets/images/shop-okayest-mug.png', slug: 'okayest-mug',
+        detail: [
+          'A stoneware mug bearing the department\'s least enthusiastic commendation: "Okayest Criminal," stamped in a circular seal beneath a small, unimpressed portrait of the suspect. Awarded not for excellence, but for consistency — same offenses, same lack of remorse, morning after morning.',
+          'Holds a full mug of coffee, or, per the label, an equivalent volume of grudges. Dishwasher safety was never tested, because the mug does not exist to be washed, owned, or filled with anything at all.',
+          'To be absolutely clear: this mug does not exist. It cannot be purchased, ordered, back-ordered, or requested in a different glaze. It is a piece of concept art generated for the joke of this site and nothing more.',
+        ],
+      },
+      {
+        name: 'Balcony Incident Poster', tag: 'Commemorative print, framed separately', price: '$45',
+        image: 'assets/images/shop-balcony-poster.png', slug: 'balcony-poster',
+        detail: [
+          'A commemorative print marking the balcony\'s single worst afternoon: Le Criminel, mid-lean over the railing, eyeing a pigeon that has already clocked the danger and is one wingbeat from gone. The rooftops behind him are the neighborhood\'s, rendered in a deliberately aged, woodcut-adjacent style, because the actual incident produced no usable photographs — only witnesses, and a great deal of noise.',
+          '"THE BALCONY INCIDENT" runs across the bottom in block type, as though the moment were significant enough to warrant a framed print. It probably was. See the full incident report for the version with fewer illustrations and more consequences.',
+          'To be absolutely clear: this poster does not exist. It cannot be purchased, printed, framed, or shipped in any size. It is a piece of concept art generated for the joke of this site and nothing more.',
+        ],
+      },
+      {
+        name: 'Case File Sticker Pack', tag: 'Set of 5, vinyl, weatherproof', price: '$9',
+        image: 'assets/images/shop-sticker-pack.png', slug: 'sticker-pack',
+        detail: [
+          'Five vinyl stickers pulled from the case file\'s greatest hits: the mugshot, the file tag reading "001-CR," a paw-print department seal, the couch reduced to evidence, and a pigeon perched smugly on a railing it has no legal claim to. Weatherproof, in theory, on account of being entirely theoretical.',
+          'Designed for laptops, water bottles, or the inside of a folder marked CONFIDENTIAL. None of that matters, since the pack was never produced and cannot be shipped, gifted, or peeled off its backing sheet — because it has no backing sheet.',
+          'To be absolutely clear: this sticker pack does not exist. It cannot be purchased, ordered, or printed in any quantity. It is a piece of concept art generated for the joke of this site and nothing more.',
+        ],
+      },
     ],
     footer: '© THE THIEFFRY CRIMINALS — FILE REMAINS OPEN. ALL RIGHTS RESERVED (ALLEGEDLY).',
   },
@@ -295,6 +347,7 @@ const CONTENT: Record<Lang, SiteContent> = {
       promoTitle: 'BRUX GANG — « THUG LIFE, NO RULES »',
       promoTag: 'La mixtape que personne n’a demandée. Pochette signée par un certain Spooky-quelque-chose.',
       promoCta: 'VOIR EN BOUTIQUE',
+      promoVideoLink: "Voir l'aperçu",
     },
     about: {
       title: 'À PROPOS DES SUSPECTS', subtitle: 'Dossier 001-CR — suspects identifiés ci-dessous',
@@ -343,6 +396,7 @@ const CONTENT: Record<Lang, SiteContent> = {
       motiveLabel: 'MOBILE', motiveVal: "Un (1) pigeon, posté là où il n'aurait pas dû",
       p1: "Le suspect a observé un pigeon de près et, sans consulter personne, a pris une décision. Il a quitté le balcon à grande vitesse et sans plan. La gravité s'en est mêchée. Le pigeon n'a pas été attrapé. Le chien allait bien.",
       p2: "Sawito, lui, n'allait pas bien. Des cheveux ont été perdus dans la panique qui a suivi — les siens, pas ceux du chien — et n'ont jamais été retrouvés.",
+      aftermathCaption: 'PIÈCE B — LE SUJET EN CONVALESCENCE, DE RETOUR SUR LA TERRE FERME, VISIBLEMENT INDIFFÉRENT À TOUT CELA',
       stamp: 'AFFAIRE CLASSÉE — AUCUNE POURSUITE ENGAGÉE',
     },
     couch: {
@@ -399,13 +453,51 @@ const CONTENT: Record<Lang, SiteContent> = {
       { date: 'MAY 2026', case: 'CASE LOG 023', title: 'PRISE DE CONTRÔLE TOTALE DE LA VIE, BILAN ÉTABLI', body: 'Le sujet contrôle désormais le lit, l’emploi du temps, les collations, et la plupart des décisions importantes. Statut d’indépendance du propriétaire : révoqué.', image: 'assets/images/blog-waffle-watch.jpg' },
       { date: 'JUN 2026', case: 'CASE LOG 024', title: 'BILAN DES DEUX ANS', body: 'Deux ans depuis la prise en charge. Aucune réforme. Aucun regret non plus. Même la suspecte Pikette, lors d’une rare soirée calme, a été retrouvée partageant le canapé. Le dossier reste ouvert.', image: 'assets/images/blog-belly-flop.jpg' },
     ],
-    shop: { title: 'BOUTIQUE', subtitle: 'Casier à preuves — présentation uniquement, rien n’est à vendre ici', notForSale: 'PAS À VENDRE' },
+    shop: {
+      title: 'BOUTIQUE', subtitle: 'Casier à preuves — présentation uniquement, rien n’est à vendre ici', notForSale: 'PAS À VENDRE', previewLabel: 'EXTRAIT / APERÇU', playLabel: 'LANCER L’EXTRAIT', featuredKicker: 'À L’AFFICHE — APERÇU DE L’ALBUM',
+      itemKicker: 'CASIER À PREUVES — FICHE ARTICLE',
+      disclaimerTitle: "RIEN DE TOUT CECI N'EST RÉEL",
+      disclaimerBody: "Cet article est une illustration conceptuelle créée pour ce site, à titre de blague. Il n'a jamais été fabriqué, n'est pas à vendre, et ne peut être commandé dans aucune taille, couleur ou quantité — nulle part, auprès de personne. Toute ressemblance avec un produit réel serait purement fortuite et totalement involontaire.",
+      backToShop: '← RETOUR À LA BOUTIQUE',
+    },
     shopItems: [
-      { name: 'Brux Gang — « Thug Life, No Rules » (Mixtape)', tag: 'Avertissement parental. Pochette signée par un certain Spooky-quelque-chose.', price: '$14', image: 'assets/images/shop-brux-gang.jpg' },
-      { name: 'T-shirt RECHERCHÉ', tag: 'Coton, unisexe, coupable par association', price: '$32' },
-      { name: 'Mug « Criminel Moyen »', tag: 'Céramique, contient le café et les rancunes', price: '$18' },
-      { name: "Affiche de l'Incident du Balcon", tag: 'Impression commémorative, cadre vendu séparément', price: '$45' },
-      { name: 'Pack d’Autocollants Dossier', tag: 'Lot de 5, vinyle, résistant aux intempéries', price: '$9' },
+      { name: 'Brux Gang — « Thug Life, No Rules » (Mixtape)', tag: 'Avertissement parental. Pochette et clip signés par un certain Spooky-quelque-chose.', price: '$14', image: 'assets/images/shop-brux-gang.jpg', videoId: '7l6RhWyPk4s' },
+      {
+        name: 'T-shirt RECHERCHÉ', tag: 'Coton, unisexe, coupable par association', price: '$32',
+        image: 'assets/images/shop-wanted-tee.png', slug: 'wanted-tee',
+        detail: [
+          "Imprimé au centre : un portrait anthropométrique du Criminel, fixant l'objectif avec l'expression plate et imperturbable d'un récidiviste qui n'a jamais envisagé sa propre innocence. La toise dans le fond est purement décorative — aucune mesure officielle n'a jamais été prise, le suspect ayant toujours refusé de rester immobile pour le fichage.",
+          'Notes de style, pour le dossier : coton noir épais, lettrage RECHERCHÉ délavé, coupe la mieux décrite comme « chic salle des scellés ». Disponible en zéro taille, puisqu\'il est disponible en zéro exemplaire — voir ci-dessous.',
+          "Pour être parfaitement clair : ce t-shirt n'existe pas. Il ne peut être acheté, commandé, mis en attente, ni demandé dans une autre taille. C'est une illustration conceptuelle créée pour la blague de ce site, rien de plus — Le Criminel n'a endossé aucun produit dérivé, étant un chien.",
+        ],
+      },
+      {
+        name: 'Mug « Criminel Moyen »', tag: 'Céramique, contient le café et les rancunes', price: '$18',
+        image: 'assets/images/shop-okayest-mug.png', slug: 'okayest-mug',
+        detail: [
+          "Un mug en grès portant la mention la moins enthousiaste du service : « Criminel Moyen », tamponnée dans un sceau circulaire sous un petit portrait peu impressionné du suspect. Décerné non pas pour l'excellence, mais pour la régularité — les mêmes délits, la même absence de remords, matin après matin.",
+          "Contient une pleine tasse de café, ou, selon l'étiquette, un volume équivalent de rancunes. La compatibilité lave-vaisselle n'a jamais été testée, puisque ce mug n'existe pas pour être lavé, possédé, ni rempli de quoi que ce soit.",
+          "Pour être parfaitement clair : ce mug n'existe pas. Il ne peut être acheté, commandé, mis en attente, ni demandé dans un autre émail. C'est une illustration conceptuelle créée pour la blague de ce site, rien de plus.",
+        ],
+      },
+      {
+        name: "Affiche de l'Incident du Balcon", tag: 'Impression commémorative, cadre vendu séparément', price: '$45',
+        image: 'assets/images/shop-balcony-poster.png', slug: 'balcony-poster',
+        detail: [
+          "Une affiche commémorative marquant le pire après-midi du balcon : Le Criminel, penché sur la balustrade, fixant un pigeon qui a déjà repéré le danger et n'est plus qu'à un battement d'aile de la fuite. Les toits derrière lui sont ceux du quartier, rendus dans un style volontairement vieilli, façon gravure sur bois, car l'incident réel n'a produit aucune photo exploitable — seulement des témoins, et beaucoup de bruit.",
+          '« THE BALCONY INCIDENT » s\'étale en lettres capitales en bas de l\'affiche, comme si l\'instant méritait vraiment un tirage encadré. C\'était peut-être le cas. Consultez le rapport d\'incident complet pour la version avec moins d\'illustrations et plus de conséquences.',
+          "Pour être parfaitement clair : cette affiche n'existe pas. Elle ne peut être achetée, imprimée, encadrée, ni expédiée dans quelque format que ce soit. C'est une illustration conceptuelle créée pour la blague de ce site, rien de plus.",
+        ],
+      },
+      {
+        name: 'Pack d’Autocollants Dossier', tag: 'Lot de 5, vinyle, résistant aux intempéries', price: '$9',
+        image: 'assets/images/shop-sticker-pack.png', slug: 'sticker-pack',
+        detail: [
+          "Cinq autocollants vinyle tirés des meilleurs moments du dossier : le portrait anthropométrique, l'étiquette de dossier « 001-CR », un sceau du service en forme d'empreinte de patte, le canapé réduit à l'état de pièce à conviction, et un pigeon perché avec insolence sur une balustrade sur laquelle il n'a aucun droit. Résistant aux intempéries, en théorie, puisqu'il est entièrement théorique.",
+          'Conçus pour un ordinateur portable, une gourde, ou l\'intérieur d\'un dossier marqué CONFIDENTIEL. Peu importe, puisque ce lot n\'a jamais été produit et ne peut être expédié, offert, ni décollé de son support — puisqu\'il n\'a pas de support.',
+          "Pour être parfaitement clair : ce pack d'autocollants n'existe pas. Il ne peut être acheté, commandé, ni imprimé en quelque quantité que ce soit. C'est une illustration conceptuelle créée pour la blague de ce site, rien de plus.",
+        ],
+      },
     ],
     footer: '© THE THIEFFRY CRIMINALS — LE DOSSIER RESTE OUVERT. TOUS DROITS RÉSERVÉS (SOI-DISANT).',
   },

@@ -32,8 +32,19 @@
 }
 
 .item {
+  display: block;
   border: 1px solid #2c2c2c;
   background: #161616;
+  color: inherit;
+  text-decoration: none;
+}
+
+a.item {
+  transition: border-color 0.15s ease;
+
+  &:hover {
+    border-color: #6e6e6e;
+  }
 }
 
 .placeholder {
@@ -61,6 +72,126 @@
     object-fit: cover;
     object-position: center 20%;
     filter: grayscale(1) contrast(1.15);
+  }
+}
+
+.featured {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(240px, 420px) 1fr;
+  border: 1px solid #a11;
+  background: linear-gradient(180deg, rgba(161, 17, 17, 0.14), #161616 65%);
+  margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+  .featured {
+    grid-template-columns: 1fr;
+  }
+}
+
+.featured-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #a11;
+  padding: 5px 10px;
+}
+
+.featured-media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  overflow: hidden;
+}
+
+.featured-info {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-kicker {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ff5a5a;
+  margin-bottom: 10px;
+}
+
+.featured-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(24px, 4vw, 32px);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.featured-tag {
+  font-size: 13px;
+  color: #b5b5b5;
+}
+
+.video-frame {
+  width: 100%;
+  height: 100%;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+.video-facade {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: #000;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1) contrast(1.15);
+    opacity: 0.75;
+  }
+
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .play-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #fff;
   }
 }
 
