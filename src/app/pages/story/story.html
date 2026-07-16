@@ -18,5 +18,26 @@
     <p>{{ t.story.p4 }}</p>
   </div>
 
+  <div class="adventures">
+    <div class="adventures-kicker">{{ t.story.adventuresKicker }}</div>
+    <div class="adventures-grid">
+      @for (adventure of t.adventures; track adventure.link) {
+        <a class="adventure-card" [routerLink]="adventure.link">
+          <div class="adventure-photo">
+            <img [src]="adventure.image" [alt]="adventure.title" />
+          </div>
+          <div class="adventure-title">{{ adventure.title }}</div>
+          <div class="adventure-teaser">{{ adventure.teaser }}</div>
+        </a>
+      }
+    </div>
+  </div>
+
+  <div class="want-more">
+    <div class="want-more-title">{{ t.story.wantMoreTitle }}</div>
+    <p>{{ t.story.wantMoreBody }}</p>
+    <a class="want-more-cta" routerLink="/blog">{{ t.story.wantMoreCta }}</a>
+  </div>
+
   <div class="footer">{{ t.story.footer }}</div>
 </div>

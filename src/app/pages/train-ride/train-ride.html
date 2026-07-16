@@ -1,0 +1,47 @@
+@let t = translation.t();
+
+<div class="page">
+  <div class="kicker">{{ t.trainRide.kicker }}</div>
+  <div class="title">{{ t.trainRide.title }}</div>
+
+  <div class="report">
+    <div class="facts">
+      <div class="label">{{ t.trainRide.locationLabel }}</div><div>{{ t.trainRide.locationVal }}</div>
+      <div class="label">{{ t.trainRide.suspectLabel }}</div><div>{{ t.trainRide.suspectVal }}</div>
+      <div class="label">{{ t.trainRide.witnessLabel }}</div><div>{{ t.trainRide.witnessVal }}</div>
+      <div class="label">{{ t.trainRide.motiveLabel }}</div><div>{{ t.trainRide.motiveVal }}</div>
+    </div>
+    <div class="photo">
+      <img src="assets/images/train-window-view.jpg" alt="Le Criminel watching the coast go by" />
+    </div>
+    <div class="body">
+      <p>{{ t.trainRide.p1 }}</p>
+      <p>{{ t.trainRide.p2 }}</p>
+    </div>
+
+    <div class="gallery">
+      <figure>
+        <img src="assets/images/train-seat-portrait.jpg" alt="Le Criminel settled in for the ride" />
+        <figcaption>{{ t.trainRide.exhibitBCaption }}</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/train-floor-visit.jpg" alt="Le Criminel inspecting the train floor" />
+        <figcaption>{{ t.trainRide.exhibitCCaption }}</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/train-countryside-view.jpg" alt="Le Criminel watching the countryside pass" />
+        <figcaption>{{ t.trainRide.exhibitDCaption }}</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/train-window-close.jpg" alt="Le Criminel nose to the window" />
+        <figcaption>{{ t.trainRide.exhibitECaption }}</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/train-coast-arrival.jpg" alt="Le Criminel arriving at the coast" />
+        <figcaption>{{ t.trainRide.exhibitFCaption }}</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="stamp">{{ t.trainRide.stamp }}</div>
+</div>

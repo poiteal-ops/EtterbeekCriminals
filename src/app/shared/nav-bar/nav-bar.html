@@ -3,11 +3,40 @@
 
 <div class="nav">
   <a routerLink="/" class="brand">THE THIEFFRY CRIMINALS</a>
-  <div class="links">
+
+  <button
+    type="button"
+    class="menu-toggle"
+    [class.open]="menuOpen()"
+    (click)="toggleMenu(); $event.stopPropagation()"
+    [attr.aria-expanded]="menuOpen()"
+    aria-label="Toggle navigation menu"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="links" [class.open]="menuOpen()">
     <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ t.nav.home }}</a>
     <a routerLink="/about" routerLinkActive="active">{{ t.nav.about }}</a>
     <a routerLink="/story" routerLinkActive="active">{{ t.nav.story }}</a>
-    <a routerLink="/pigeon" routerLinkActive="active">{{ t.nav.pigeon }}</a>
+    <div class="dropdown" [class.active]="storiesActive()">
+      <button
+        type="button"
+        class="dropdown-trigger"
+        [class.open]="dropdownOpen()"
+        [attr.aria-expanded]="dropdownOpen()"
+        (click)="toggleDropdown($event)"
+      >
+        {{ t.nav.stories }}
+      </button>
+      <div class="dropdown-menu" [class.open]="dropdownOpen()">
+        <a routerLink="/pigeon" routerLinkActive="active">{{ t.nav.pigeon }}</a>
+        <a routerLink="/couch" routerLinkActive="active">{{ t.nav.couch }}</a>
+        <a routerLink="/train-ride" routerLinkActive="active">{{ t.nav.trainRide }}</a>
+      </div>
+    </div>
     <a routerLink="/blog" routerLinkActive="active">{{ t.nav.blog }}</a>
     <a routerLink="/shop" routerLinkActive="active">{{ t.nav.shop }}</a>
     <div class="lang-switch">

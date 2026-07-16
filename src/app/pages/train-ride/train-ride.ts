@@ -1,14 +1,12 @@
 import { Component, inject } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 import { TranslationService } from '../../services/translation.service';
 
 @Component({
-  selector: 'app-story',
-  imports: [RouterLink],
-  templateUrl: './story.html',
-  styleUrl: './story.scss',
+  selector: 'app-train-ride',
+  templateUrl: './train-ride.html',
+  styleUrl: './train-ride.scss',
 })
-export class Story {
+export class TrainRide {
   protected readonly translation = inject(TranslationService);
 }
