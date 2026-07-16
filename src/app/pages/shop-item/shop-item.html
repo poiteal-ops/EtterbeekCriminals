@@ -29,6 +29,6 @@
       <p>{{ t.shop.disclaimerBody }}</p>
     </div>
 
-    <a class="back" routerLink="/shop">{{ t.shop.backToShop }}</a>
+    <a class="back" [routerLink]="translation.path('shop')">{{ t.shop.backToShop }}</a>
   }
 </div>

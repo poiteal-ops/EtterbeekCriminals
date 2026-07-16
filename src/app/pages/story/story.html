@@ -22,7 +22,7 @@
     <div class="adventures-kicker">{{ t.story.adventuresKicker }}</div>
     <div class="adventures-grid">
       @for (adventure of t.adventures; track adventure.link) {
-        <a class="adventure-card" [routerLink]="adventure.link">
+        <a class="adventure-card" [routerLink]="translation.path(adventure.link)">
           <div class="adventure-photo">
             <img [src]="adventure.image" [alt]="adventure.title" />
           </div>
@@ -36,7 +36,7 @@
   <div class="want-more">
     <div class="want-more-title">{{ t.story.wantMoreTitle }}</div>
     <p>{{ t.story.wantMoreBody }}</p>
-    <a class="want-more-cta" routerLink="/blog">{{ t.story.wantMoreCta }}</a>
+    <a class="want-more-cta" [routerLink]="translation.path('blog')">{{ t.story.wantMoreCta }}</a>
   </div>
 
   <div class="footer">{{ t.story.footer }}</div>
