@@ -151,6 +151,8 @@
   .dropdown-menu {
     right: 0;
     left: auto;
+    max-height: 60vh;
+    overflow-y: auto;
   }
 }
 

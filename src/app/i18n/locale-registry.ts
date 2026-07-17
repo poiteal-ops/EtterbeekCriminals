@@ -34,7 +34,7 @@ export const DEFAULT_LOCALE: LocaleCode = 'en';
  * Locales that currently ship real content. To add a language later:
  * create public/i18n/{code}.json (matching SiteContent) and add the code here.
  */
-export const CONTENT_LOCALES: readonly LocaleCode[] = ['en', 'fr'];
+export const CONTENT_LOCALES: readonly LocaleCode[] = ['en', 'fr', 'de', 'nl', 'es', 'it', 'ja'];
 
 const KNOWN_LOCALES = new Set<string>(LOCALE_CODES);
 
