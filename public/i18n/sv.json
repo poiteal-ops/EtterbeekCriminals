@@ -7,6 +7,7 @@
     "pigeon": "EN DUVA, EN BALKONG",
     "couch": "SOFFAN",
     "trainRide": "TÅGRESA",
+    "escapeCountry": "FLYKT TILL LANDET",
     "blog": "BLOGG",
     "shop": "BUTIK"
   },
@@ -84,8 +85,34 @@
       "teaser": "Ingen av de misstänkta får köra bil lagligt, så de tar tåget.",
       "link": "/train-ride",
       "image": "assets/images/train-window-view.jpg"
+    },
+    {
+      "title": "FLYKT TILL LANDET",
+      "teaser": "En återförening, en fullständigt charmad värdinna, och ett fält kospillning med hans namn på.",
+      "link": "/escape-to-the-country",
+      "image": "assets/images/gaume-mistress-and-suspect.jpg"
     }
   ],
+  "escapeToCountry": {
+    "kicker": "Fältrapport — insats på landet",
+    "title": "FLYKT TILL LANDET",
+    "locationLabel": "PLATS",
+    "locationVal": "Gaume, södra Belgien",
+    "suspectLabel": "MISSTÄNKT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "VITTNE",
+    "witnessVal": "Sawito (närvarande, inget meningsfullt ingripande gjordes)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "En återförening med gamla vänner, senare utökad till att inkludera hästar, öppna gator och en (1) oidentifierad betesmark",
+    "p1": "I våras följde den misstänkte med Sawito till Gaume, i södra Belgien, för att träffa vänner som ingen av dem hade sett på alldeles för länge. Det tog honom ungefär så lång tid som bilresan varade att identifiera hushållets svaga punkt. Värdinnan blev charmad, sedan nedgjord av charm, och fullt i hans tjänst redan innan kaffet hunnit hällas upp. Utredarna kallar det kärlek vid första ögonkastet. Den misstänkte kallar det en helt vanlig dag.",
+    "p2": "Den goda viljan höll inte hela helgen ut. Det skälldes på hästar, med full övertygelse. Ett försök gjordes — två gånger — att med våld dra hela sällskapet ut på gatan, mål okänt. Och i fallets avslutande akt, fem minuter efter att ha klivit på tåget hem, lokaliserade och rullade sig den misstänkte i en sådan mängd komöck att inget vittne efteråt kunde säga var hunden slutade och fältet började.",
+    "exhibitBCaption": "BEVIS B — UNDER NY LEDNING: DEN MISSTÄNKTE ÖVERVAKAR KÖKET",
+    "exhibitCCaption": "BEVIS C — SPANAR AV MARKERNA VID GRYNINGEN",
+    "exhibitDCaption": "BEVIS D — PÅ VÄG, MÅL OKÄNT",
+    "exhibitECaption": "BEVIS E — GRÄNSINSPEKTION PÅGÅR",
+    "exhibitFCaption": "BEVIS F — DEN MISSTÄNKTE I VILA, TYDLIGA SPÅR AV ANSTRÄNGNING",
+    "stamp": "INCIDENTEN REGISTRERAD — DEN MISSTÄNKTE FÖRBLIR OBOTFÄRDIG (OCH DOFTANDE)"
+  },
   "pigeon": {
     "kicker": "Incidentrapport",
     "title": "EN DUVA, EN BALKONG",

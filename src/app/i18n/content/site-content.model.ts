@@ -37,6 +37,7 @@ export interface SiteContent {
     pigeon: string;
     couch: string;
     trainRide: string;
+    escapeCountry: string;
     blog: string;
     shop: string;
   };
@@ -91,6 +92,26 @@ export interface SiteContent {
     footer: string;
   };
   adventures: AdventureEntry[];
+  escapeToCountry: {
+    kicker: string;
+    title: string;
+    locationLabel: string;
+    locationVal: string;
+    suspectLabel: string;
+    suspectVal: string;
+    witnessLabel: string;
+    witnessVal: string;
+    motiveLabel: string;
+    motiveVal: string;
+    p1: string;
+    p2: string;
+    exhibitBCaption: string;
+    exhibitCCaption: string;
+    exhibitDCaption: string;
+    exhibitECaption: string;
+    exhibitFCaption: string;
+    stamp: string;
+  };
   pigeon: {
     kicker: string;
     title: string;

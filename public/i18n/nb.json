@@ -7,6 +7,7 @@
     "pigeon": "ÉN DUE, ÉN BALKONG",
     "couch": "SOFAEN",
     "trainRide": "TOGTUR",
+    "escapeCountry": "FLUKT TIL LANDET",
     "blog": "BLOGG",
     "shop": "BUTIKK"
   },
@@ -84,8 +85,34 @@
       "teaser": "Ingen av de mistenkte har lov til å kjøre bil, så de tar toget.",
       "link": "/train-ride",
       "image": "assets/images/train-window-view.jpg"
+    },
+    {
+      "title": "FLUKT TIL LANDET",
+      "teaser": "Én gjenforening, én fullstendig sjarmert vertinne, og et jorde med kumøkk som allerede bærer hans signatur.",
+      "link": "/escape-to-the-country",
+      "image": "assets/images/gaume-mistress-and-suspect.jpg"
     }
   ],
+  "escapeToCountry": {
+    "kicker": "Feltrapport — utplassering på landet",
+    "title": "FLUKT TIL LANDET",
+    "locationLabel": "STED",
+    "locationVal": "Gaume, sør i Belgia",
+    "suspectLabel": "MISTENKT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "VITNE",
+    "witnessVal": "Sawito (til stede, intet meningsfullt forsøk på inngripen)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "En gjenforening med gamle venner, senere utvidet til å omfatte hester, åpne gater og én (1) uidentifisert beitemark",
+    "p1": "Denne våren fulgte subjektet med Sawito til Gaume, sør i Belgia, for å treffe venner ingen av dem hadde sett på altfor lenge. Det tok ham omtrent så lang tid som bilturen varte å identifisere husholdningens svake punkt. Vertinnen ble sjarmert, deretter underlagt, og fullstendig i hans tjeneste før kaffen rakk å bli skjenket. Etterforskerne kaller det kjærlighet ved første blikk. Subjektet kaller det en helt vanlig dag.",
+    "p2": "Velviljen varte ikke helgen ut. Det ble bjeffet mot hester, med full overbevisning. Det ble gjort et forsøk — to ganger — på å dra hele følget med makt ut i gaten, mål ukjent. Og i sakens avsluttende akt, fem minutter etter at han gikk om bord i toget hjem, oppdaget og rullet subjektet seg i en slik mengde kumøkk at intet vitne etterpå kunne si hvor hunden sluttet og jordet begynte.",
+    "exhibitBCaption": "BEVIS B — UNDER NY LEDELSE: SUBJEKTET OVERVÅKER KJØKKENET",
+    "exhibitCCaption": "BEVIS C — REKOGNOSERER TERRENGET I DAGGRY",
+    "exhibitDCaption": "BEVIS D — I BEVEGELSE, MÅL UKJENT",
+    "exhibitECaption": "BEVIS E — PERIMETERINSPEKSJON PÅGÅR",
+    "exhibitFCaption": "BEVIS F — SUBJEKTET I RO, TYDELIGE TEGN PÅ ANSTRENGELSE",
+    "stamp": "HENDELSEN REGISTRERT — SUBJEKTET FORBLIR UANGRENDE (OG DUFTENDE)"
+  },
   "pigeon": {
     "kicker": "Hendelsesrapport",
     "title": "ÉN DUE, ÉN BALKONG",

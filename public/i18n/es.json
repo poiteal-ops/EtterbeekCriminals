@@ -7,6 +7,7 @@
     "pigeon": "UNA PALOMA, UN BALCÓN",
     "couch": "EL SOFÁ",
     "trainRide": "EN TREN",
+    "escapeCountry": "ESCAPADA AL CAMPO",
     "blog": "BLOG",
     "shop": "TIENDA"
   },
@@ -84,8 +85,34 @@
       "teaser": "Ninguno de los dos sospechosos puede conducir legalmente, así que toman el tren.",
       "link": "/train-ride",
       "image": "assets/images/train-window-view.jpg"
+    },
+    {
+      "title": "ESCAPADA AL CAMPO",
+      "teaser": "Un reencuentro, una anfitriona totalmente conquistada, y un campo de boñigas con su nombre escrito.",
+      "link": "/escape-to-the-country",
+      "image": "assets/images/gaume-mistress-and-suspect.jpg"
     }
   ],
+  "escapeToCountry": {
+    "kicker": "Informe de campo — despliegue rural",
+    "title": "ESCAPADA AL CAMPO",
+    "locationLabel": "LUGAR",
+    "locationVal": "Gaume, sur de Bélgica",
+    "suspectLabel": "SOSPECHOSO",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TESTIGO",
+    "witnessVal": "Sawito (presente, sin intento de intervención reseñable)",
+    "motiveLabel": "MÓVIL",
+    "motiveVal": "Un reencuentro con viejos amigos, revisado después para incluir caballos, calles abiertas y un (1) prado sin identificar",
+    "p1": "La pasada primavera, el sujeto acompañó a Sawito a Gaume, en el sur de Bélgica, para ver a unos amigos a los que ninguno de los dos había visto en demasiado tiempo. Le bastó, más o menos, la duración del trayecto en coche para localizar el punto débil de la casa. La anfitriona quedó encantada, después rendida, y finalmente por completo a su servicio antes de que se sirviera el café. Los investigadores lo llaman amor a primera vista. El sujeto lo llama un día cualquiera.",
+    "p2": "La buena voluntad no sobrevivió al fin de semana. Se ladró a los caballos, con convicción. Se intentó —dos veces— arrastrar al grupo a la fuerza hacia la calle, destino desconocido. Y en el acto final del caso, cinco minutos después de subir al tren de vuelta, el sujeto localizó una cantidad de boñiga tan generosa y se revolcó en ella con tal esmero que ningún testigo pudo, después, decir dónde terminaba el perro y dónde empezaba el campo.",
+    "exhibitBCaption": "PRUEBA B — BAJO NUEVA DIRECCIÓN: EL SUJETO SUPERVISA LA COCINA",
+    "exhibitCCaption": "PRUEBA C — RECONOCIMIENTO DEL TERRENO AL AMANECER",
+    "exhibitDCaption": "PRUEBA D — EN MOVIMIENTO, DESTINO DESCONOCIDO",
+    "exhibitECaption": "PRUEBA E — INSPECCIÓN DEL PERÍMETRO, EN CURSO",
+    "exhibitFCaption": "PRUEBA F — SUJETO EN REPOSO, CON EVIDENCIAS DE ESFUERZO",
+    "stamp": "INCIDENTE REGISTRADO — EL SUJETO SIGUE IMPENITENTE (Y OLOROSO)"
+  },
   "pigeon": {
     "kicker": "Informe de incidente",
     "title": "UNA PALOMA, UN BALCÓN",
