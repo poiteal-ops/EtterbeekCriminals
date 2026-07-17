@@ -1,0 +1,384 @@
+{
+  "nav": {
+    "home": "KEZDŐLAP",
+    "about": "GYANÚSÍTOTTAK",
+    "story": "EGY BŰNÖZŐ TÖRTÉNETE",
+    "stories": "ÜGYIRATOK",
+    "pigeon": "EGY GALAMB, EGY ERKÉLY",
+    "couch": "A KANAPÉ",
+    "trainRide": "VONATÚT",
+    "blog": "BLOG",
+    "shop": "BOLT"
+  },
+  "home": {
+    "wanted": "KÖRÖZVE",
+    "fileNo": "ÜGYIRATSZÁM: 001-CR",
+    "tagline": "Sawito és Le Criminel — körözve, kihallgatva, és többnyire megbocsátva",
+    "kicker": "— helyi akció, két gyanúsított —",
+    "intro": "Egy férfi, egy kutya, és a jó modor szabályai iránti közös közöny. Böngéssze az alábbi aktát — a tények magukért beszélnek.",
+    "promoKicker": "ÚJDONSÁG A BIZONYÍTÉKTÁRBAN",
+    "promoTitle": "BRUX GANG — „THUG LIFE, NO RULES”",
+    "promoTag": "A mixtape, amit senki nem kért. A borítót egy bizonyos Spooky-valaki készítette.",
+    "promoCta": "MEGNÉZEM A BOLTBAN",
+    "promoVideoLink": "Előzetes megtekintése"
+  },
+  "about": {
+    "title": "A GYANÚSÍTOTTAKRÓL",
+    "subtitle": "Ügyirat 001-CR — az érintettek alább azonosítva",
+    "sawitoName": "SAWITO",
+    "sawitoAlias": "ÁLNÉV: „A FENTI ÖREGÚR”",
+    "occupation": "FOGLALKOZÁS",
+    "occupationVal": "Főcinkos",
+    "marksLabel": "ISMERTETŐJEGYEK",
+    "sawitoMarks": "Ezüst szakáll, örökös cigaretta, pilótaszemüveg házon belül és kívül egyaránt",
+    "associateLabel": "TÁRS",
+    "sawitoAssociate": "Le Criminel (elválaszthatatlan, megátalkodott)",
+    "statusLabel": "ÁLLAPOT",
+    "sawitoStatus": "Szökésben. Feltehetően jutalomfalatokkal felfegyverkezve.",
+    "dogName": "LE CRIMINEL",
+    "dogAlias": "ÁLNÉV: „AZ ERKÉLYRABLÓ”",
+    "breedLabel": "FAJTA",
+    "breedVal": "Állítólag Boston Terrier",
+    "dogMarks": "Fekete-fehér foltok, taktikai nyakörv, közömbös arckifejezés",
+    "dogAssociate": "Sawito (afféle idomár)",
+    "dogStatus": "Körözve az erkélyincidens ügyében. Lásd az aktát.",
+    "rapSheetTitle": "BŰNLAJSTROM",
+    "confidential": "BIZALMAS"
+  },
+  "rapSheet": [
+    { "case": "CASE 001", "charge": "Ismétlődő elsőbbségi szabályszegés a közös sétautakon." },
+    { "case": "CASE 002", "charge": "Engedély nélküli lelkesedés birtoklása a postás közelében." },
+    { "case": "CASE 003", "charge": "Bizonyíték elásására irányuló összeesküvés (egy zokni, hátsó kert, lezáratlan ügy)." },
+    { "case": "CASE 004", "charge": "Csendháborítás, reggel 6:15-kor, naponta, leállásra utaló jel nélkül." },
+    { "case": "CASE 005", "charge": "Testi sértés halálos farokcsóválással." }
+  ],
+  "story": {
+    "kicker": "Ügyirat 001-CR — előzmények",
+    "title": "EGY BŰNÖZŐ TÖRTÉNETE",
+    "exhibit": "A JELŰ BIZONYÍTÉK — AZ ALANY SZABADLÁBON",
+    "p1": "Minden névnek van eredete, és ennek papírnyoma is. A kutya nem „Le Criminel” néven született. Amennyire bizonyítható, tökéletesen hétköznapi kölyökként jött a világra, mindenféle bűnügyi előélet nélkül.",
+    "p2": "A név később érkezett, apró vétségekkel kiérdemelve, egyenként: itt egy ellopott zokni, ott egy szétrágott távirányító, egy kanapépárna, amely nem élte túl a nyarat. Egyetlen tett sem indokolt volna aktát. Együtt viszont kiérdemeltek egy becenevet.",
+    "p3": "Sawito volt az első, aki kimondta, félig az orra alatt motyogva, miközben nézte, ahogy a kutya olyan nyugalommal poroszkál el a tetthelyről, mint aki még soha nem kapták rajta: „Ce chien, c'est un criminel.” A név megragadt, ahogy a becenevek szoktak — nem választották, csak igaz volt.",
+    "p4": "Hivatalos vádemelésre soha nem került sor ellene. Megbánást soha nem mutatott. A nyomozás, ha egyáltalán annak nevezhető, továbbra is folyamatban van.",
+    "adventuresKicker": "VÁLOGATOTT ÜGYIRATOK",
+    "wantMoreTitle": "TUDNI SZERETNE TÖBBET?",
+    "wantMoreBody": "A teljes ügynapló havonta frissül, minden vétség rögzítve.",
+    "wantMoreCta": "ÜGYNAPLÓ OLVASÁSA",
+    "footer": "IKTATVA: HELYI LEGENDÁK, MEGERŐSÍTETLEN"
+  },
+  "adventures": [
+    {
+      "title": "EGY GALAMB, EGY ERKÉLY",
+      "teaser": "Egy galamb, egy erkély, és egy nagyon rossz döntés, teljes sebességgel meghozva.",
+      "link": "/pigeon",
+      "image": "assets/images/dog-close-lap.jpg"
+    },
+    {
+      "title": "A KANAPÉ",
+      "teaser": "Lassú, megfontolt bontás. A sarok nem élte túl.",
+      "link": "/couch",
+      "image": "assets/images/couch-crime-scene.jpg"
+    },
+    {
+      "title": "VONATÚT",
+      "teaser": "Egyik gyanúsított sem vezethet legálisan, így vonattal közlekednek.",
+      "link": "/train-ride",
+      "image": "assets/images/train-window-view.jpg"
+    }
+  ],
+  "pigeon": {
+    "kicker": "Incidensjelentés",
+    "title": "EGY GALAMB, EGY ERKÉLY",
+    "locationLabel": "HELYSZÍN",
+    "locationVal": "Második emeleti erkély, cím nem nyilvános",
+    "suspectLabel": "GYANÚSÍTOTT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TANÚ",
+    "witnessVal": "Sawito (jelen volt, nem tudott időben közbelépni)",
+    "motiveLabel": "INDÍTÉK",
+    "motiveVal": "Egy (1) galamb, olyan helyen állva, ahol nem lett volna szabad",
+    "p1": "A gyanúsított közelről megfigyelt egy galambot, és anélkül, hogy bárkivel egyeztetett volna, döntést hozott. Nagy sebességgel és terv nélkül hagyta el az erkélyt. A nehézségi erő is közrejátszott. A galambot nem sikerült elfogni. A kutyának semmi baja nem esett.",
+    "p2": "Sawitónak annál inkább esett baja. Az ezt követő pánikban haj is veszett — az övé, nem a kutyáé —, és azóta sem került elő.",
+    "aftermathCaption": "B JELŰ BIZONYÍTÉK — AZ ALANY LÁBADOZÓBAN, ISMÉT SZILÁRD TALAJON, LÁTHATÓAN FÜTYÜL AZ EGÉSZRE",
+    "stamp": "ÜGY LEZÁRVA — VÁDEMELÉS NEM TÖRTÉNT"
+  },
+  "couch": {
+    "kicker": "Rongálási jelentés",
+    "title": "A KANAPÉ",
+    "locationLabel": "HELYSZÍN",
+    "locationVal": "Nappali, délkeleti sarok, egykor kárpitozva",
+    "suspectLabel": "GYANÚSÍTOTT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TANÚ",
+    "witnessVal": "Sawito (végig jelen volt, jelentést nem tett)",
+    "motiveLabel": "INDÍTÉK",
+    "motiveVal": "Egy (1) kilógó szál, elfogadhatatlannak minősítve",
+    "p1": "Mint ilyenkor lenni szokott, egyetlen szállal kezdődött. Az alany megtalálta, meghúzta, és felfedezte — amit a nyomozók csak szakmai elégedettségként tudnak leírni —, hogy további szál is követi. A folyamat lassú volt, megfontolt, és teljesen dokumentálatlan egészen addig, amíg már túl késő volt közbelépni.",
+    "p2": "Mire a kárt észrevették, a sarok csupasz vázzá és szétszórt tömőanyaggá vált, egy tartókábel is szabadon hevert, és úgy tűnik, alaposan meg is vizsgálták. Az alanyt pillanatokkal később a helyszínen találták, egyik szemét megvilágította a vaku, egy kötéljáték hevert mellette, mintha csak épp arra járt volna.",
+    "exhibitBCaption": "B JELŰ BIZONYÍTÉK — KÖZELKÉP A KÁRRÓL",
+    "exhibitCCaption": "C JELŰ BIZONYÍTÉK — A GYANÚSÍTOTT A KÖZELBEN, KIISMERHETETLEN ARCKIFEJEZÉSSEL",
+    "stamp": "A KANAPÉ TOTÁLKÁROSNAK NYILVÁNÍTVA — AZ ALANYT NEM ZAVARJA"
+  },
+  "trainRide": {
+    "kicker": "Utazási napló",
+    "title": "VONATÚT",
+    "locationLabel": "HELYSZÍN",
+    "locationVal": "Regionális vasútvonal, úti célok: vidék és tengerpart",
+    "suspectLabel": "GYANÚSÍTOTT",
+    "suspectVal": "Le Criminel (gyakori utazó)",
+    "witnessLabel": "TANÚ",
+    "witnessVal": "Sawito (technikailag vak, a jegyeket mégis megvette)",
+    "motiveLabel": "INDÍTÉK",
+    "motiveVal": "Elsősorban friss levegő. Pontosabban sirályok.",
+    "p1": "Egyik gyanúsított sem ülhet volán mögé, teljesen eltérő, de egyformán kizáró okokból: Sawito saját bevallása szerint technikailag vak, Le Criminelnek pedig még kerékpáros jogosítványt sem állítottak ki soha. A vonat nem életmódválasztásként, hanem az egyetlen megmaradt lehetőségként adódott, és a végén jobban bevált, mint bárki várta volna.",
+    "p2": "Két úti cél szerepel a nyilvántartásban: a vidék és a tengerpart. Mindkettőt jól fogadták. A tengerpart azonban egyértelmű kedvenc, a sirályok miatt, akiket az alany inkább személyes kihívásnak tekint, mintsem helyi vadvilágnak. Egyet sem fogott még el. De abba sem hagyta a próbálkozást, és az egyik utazás jelentős részét azzal töltötte, hogy orrát az ablaküveghez nyomva terveket szövögetett.",
+    "exhibitBCaption": "B JELŰ BIZONYÍTÉK — BERENDEZKEDVE AZ ÚTRA",
+    "exhibitCCaption": "C JELŰ BIZONYÍTÉK — PADLÓSZINTŰ HELYSZÍNI SZEMLE",
+    "exhibitDCaption": "D JELŰ BIZONYÍTÉK — VIDÉK, SEBESSÉGGEL ELSUHANVA",
+    "exhibitECaption": "E JELŰ BIZONYÍTÉK — ORR AZ ÜVEGHEZ NYOMVA, VALAHOL KÉT ÁLLOMÁS KÖZÖTT",
+    "exhibitFCaption": "F JELŰ BIZONYÍTÉK — PARTRASZÁLLÁS A TENGERPARTON",
+    "stamp": "ÚTI CÉL: AHOL SIRÁLYOK VANNAK"
+  },
+  "blog": {
+    "title": "ÜGYNAPLÓ",
+    "subtitle": "24 havi bejegyzés — két év folyamatos megfigyelés, a 001-CR ügy továbbra is nyitva"
+  },
+  "blogPosts": [
+    {
+      "date": "JUL 2024",
+      "case": "CASE LOG 001",
+      "title": "A NAP, AMIKOR MEGTALÁLTÁK AZ EMBERT",
+      "body": "Az utcán bukkant rá, póráz nélkül, terv nélkül, gazdi nélkül. Az alany kétszer megszaglászta, leült elé, és nem volt hajlandó megmozdulni, amíg meg nem született a megállapodás. A megállapodás megszületett. Az alany azóta is felügyeli.",
+      "image": "assets/images/blog-cheek-to-cheek.jpg"
+    },
+    {
+      "date": "AUG 2024",
+      "case": "CASE LOG 002",
+      "title": "AZ ELSŐ ÉJSZAKAI INCIDENS",
+      "body": "Egy cipő belépett az ingatlanra. Egy cipő felismerhető állapotban távozott. A másik cipő ügyében a nyomozás folyamatban.",
+      "image": "assets/images/blog-shoe-inspection.jpg"
+    },
+    {
+      "date": "SEP 2024",
+      "case": "CASE LOG 003",
+      "title": "RENDSZERES FÜGGÖNYMEGFIGYELÉS",
+      "body": "Az alany állandó pozíciót foglalt el a kanapé háttámláján, egy mancsával félrehúzva a függönyt, és figyeli az utcát az illetéktelen gyalogosok, kerékpárosok és alkalmi galambok után kutatva. Műszakrend: szinte folyamatos.",
+      "image": "assets/images/blog-couch-lookout.jpg"
+    },
+    {
+      "date": "OCT 2024",
+      "case": "CASE LOG 004",
+      "title": "ENGEDÉLY NÉLKÜLI KONYHAI BEHATOLÁS",
+      "body": "Az alanyt teljes egészében a konyhában állva észlelték, jóllehet soha semmilyen meghívást nem kapott. Tagadja, hogy ismerné a „kifelé” szót.",
+      "image": "assets/images/blog-shop-entry.jpg"
+    },
+    {
+      "date": "NOV 2024",
+      "case": "CASE LOG 005",
+      "title": "LELEPLEZETT ZOKNITOLVAJ-HÁLÓZAT",
+      "body": "Hét árva zoknit találtak az ágy alatt. Az alany jelen volt a helyszínen, láthatóan cseppet sem zavarta a bizonyíték.",
+      "image": "assets/images/blog-shoulder-selfie.jpg"
+    },
+    {
+      "date": "DEC 2024",
+      "case": "CASE LOG 006",
+      "title": "ÜNNEPI RENDBONTÁS",
+      "body": "Egy karácsonyfadísz odalett. A fa egyelőre még áll. Az alany állítja, hogy a dísz „mozdult előbb”.",
+      "image": "assets/images/blog-bee-costume.jpg"
+    },
+    {
+      "date": "JAN 2025",
+      "case": "CASE LOG 007",
+      "title": "ÚJÉVI FOGADALOM MEGSZEGVE",
+      "body": "A gazdi elhatározta, hogy betartatja a kanapétilalmat. A fogadalom négy óráig tartott. Az alany azóta ismét teljes mértékben birtokba vette a kanapét.",
+      "image": "assets/images/blog-couch-cuddle-selfie.jpg"
+    },
+    {
+      "date": "FEB 2025",
+      "case": "CASE LOG 008",
+      "title": "PIKETTE GYANÚSÍTOTT ELSŐ ÉSZLELÉSE",
+      "body": "Egy macskát, névre Pikette, észleltek az ingatlanon. Mindkét fél azonnal és kölcsönösen tajtékzott a dühtől. Az ok ismeretlen, azóta hagyománnyá vált.",
+      "image": "assets/images/pikette-windowsill.jpg"
+    },
+    {
+      "date": "MAR 2025",
+      "case": "CASE LOG 009",
+      "title": "TÁRGYALÁSI KÍSÉRLET A POSTÁSSAL",
+      "body": "Az alany tisztázatlan szándékkal közelítette meg a postást. A tárgyalások másodperceken belül megszakadtak. A posta végül kézbesítésre került.",
+      "image": "assets/images/blog-mailman-standoff.jpg"
+    },
+    {
+      "date": "APR 2025",
+      "case": "CASE LOG 010",
+      "title": "AZ ERKÉLYINCIDENS",
+      "body": "A teljes jelentés külön, az „Egy galamb, egy erkély” cím alatt található. Itt csak a nyilvántartás teljessége érdekében szerepel."
+    },
+    {
+      "date": "MAY 2025",
+      "case": "CASE LOG 011",
+      "title": "AZ ELTŰNT TÁVIRÁNYÍTÓ ÜGYE",
+      "body": "A távirányítót utoljára az alany közelében látták. Három nappal később a radiátor alatt került elő, a fognyomok korábbi vétségekkel egyeznek.",
+      "image": "assets/images/blog-bed-nap.jpg"
+    },
+    {
+      "date": "JUN 2025",
+      "case": "CASE LOG 012",
+      "title": "PIKETTE VISSZATÉR, A FESZÜLTSÉG VÁLTOZATLAN",
+      "body": "Pikette gyanúsított második látogatása. Mindkét fél pontosan onnan folytatta az ellenségeskedést, ahol abbahagyta, mintha idő sem telt volna el.",
+      "image": "assets/images/pikette-dog-couch.jpg"
+    },
+    {
+      "date": "JUL 2025",
+      "case": "CASE LOG 013",
+      "title": "EGY ÉV FELÜGYELET ALATT, JAVULÁS NEM ÉSZLELHETŐ",
+      "body": "A tizenkét hónapos felülvizsgálat lezárult. Az alany semmilyen mérhető előrelépést nem tett a jó viselkedés felé. Ugyanakkor mára elképzelhetetlen nélküle élni.",
+      "image": "assets/images/blog-garden-wall.jpg"
+    },
+    {
+      "date": "AUG 2025",
+      "case": "CASE LOG 014",
+      "title": "AZ ALANY SEBÉSZETI BEAVATKOZÁSON ESETT ÁT",
+      "body": "Az alanyt ebben a hónapban ivartalanították. A beavatkozás sikeres volt, a méltóság azonban nem élte túl a szégyengallért. A viselkedést egyáltalán nem befolyásolta.",
+      "image": "assets/images/blog-park-walk.jpg"
+    },
+    {
+      "date": "SEP 2025",
+      "case": "CASE LOG 015",
+      "title": "LÁBADOZÁSI IDŐSZAK, A HANGULAT VÁLTOZATLAN",
+      "body": "A gallért eltávolították. Az alany úgy ünnepelt, hogy azonnal, teljes kapacitással folytatta az összes korábban tiltott tevékenységet.",
+      "image": "assets/images/blog-full-capacity.jpg"
+    },
+    {
+      "date": "OCT 2025",
+      "case": "CASE LOG 016",
+      "title": "ÖSSZECSAPÁS PIKETTE-TEL, HARMADIK KÖR",
+      "body": "A műtét nem hűtötte le az ellenségeskedést Pikette gyanúsítottal. Ha valami, az alany úgy tűnik, tisztán elvi alapon tartja fenn a haragját.",
+      "image": "assets/images/pikette-couch-visit.jpg"
+    },
+    {
+      "date": "NOV 2025",
+      "case": "CASE LOG 017",
+      "title": "VÁDIRAT TAKARÓFELHALMOZÁS MIATT",
+      "body": "A háztartás összes puha textíliája egyetlen kupacba került áthelyezésre, amely jelenleg az alany kizárólagos ellenőrzése alatt áll.",
+      "image": "assets/images/blog-blanket-hoard.jpg"
+    },
+    {
+      "date": "DEC 2025",
+      "case": "CASE LOG 018",
+      "title": "ÜNNEPI RENDBONTÁS, MÁSODIK KÖR",
+      "body": "A második karácsonyfadísz is odalett. Az alany tagadja a viselkedési mintát, védekezésként a „véletlenre” hivatkozik."
+    },
+    {
+      "date": "JAN 2026",
+      "case": "CASE LOG 019",
+      "title": "SZÖKÉSI KÍSÉRLET MEGHIÚSULT AZ AJTÓNÁL",
+      "body": "Az alany a nyitott bejárati ajtó felé vette az irányt. A bejárati lépcsőn sikerült visszafogni. Sérülés nem történt, enyhe kínos érzés mindkét oldalon.",
+      "image": "assets/images/blog-front-door-recapture.jpg"
+    },
+    {
+      "date": "FEB 2026",
+      "case": "CASE LOG 020",
+      "title": "PIKETTE GYANÚSÍTOTT, MEGFIGYELÉSI FOTÓ AZ AKTÁBAN",
+      "body": "Pikette gyanúsítottat közelről lefényképezték egy látogatás során. Mindkét fél továbbra is, tisztázatlan okokból, képtelen békésen egymás mellett élni.",
+      "image": "assets/images/pikette-closeup.jpg"
+    },
+    {
+      "date": "MAR 2026",
+      "case": "CASE LOG 021",
+      "title": "KIHALLGATÁS AZ ELTŰNT SZENDVICS ÜGYÉBEN",
+      "body": "Egy szendvics, kilencven másodpercig felügyelet nélkül hagyva, nem került elő. Az alany a szobában tartózkodott. Az alany sem megerősíteni, sem cáfolni nem hajlandó.",
+      "image": "assets/images/blog-cafe-standoff.jpg"
+    },
+    {
+      "date": "APR 2026",
+      "case": "CASE LOG 022",
+      "title": "SZOMSZÉD HIVATALOS PANASZT NYÚJT BE",
+      "body": "Panasz érkezett a reggel 6:15-kor tapasztalt túlzott ugatás miatt. Az alanyt hivatalosan figyelmeztették. Az alany nem változtatott a napirendjén.",
+      "image": "assets/images/blog-frosty-morning.jpg"
+    },
+    {
+      "date": "MAY 2026",
+      "case": "CASE LOG 023",
+      "title": "TELJES ÉLET FELETTI ÁTVÉTEL, AZ ÉRTÉKELÉS LEZÁRULT",
+      "body": "Az alany immár uralja az ágyat, a napirendet, a nasikat és a legtöbb fontos döntést. A gazdi függetlenségi státusza: visszavonva.",
+      "image": "assets/images/blog-waffle-watch.jpg"
+    },
+    {
+      "date": "JUN 2026",
+      "case": "CASE LOG 024",
+      "title": "KÉTÉVES ÁLLAPOTFELMÉRÉS",
+      "body": "Két év telt el a befogadás óta. Nincs javulás. De megbánás sincs. Még Pikette gyanúsítottat is, egy ritka csendes estén, a kanapén osztozva találták. Az ügy továbbra is nyitva.",
+      "image": "assets/images/blog-belly-flop.jpg"
+    }
+  ],
+  "shop": {
+    "title": "BOLT",
+    "subtitle": "Bizonyítéktár — csak bemutató jelleggel, semmi nem eladó",
+    "notForSale": "NEM ELADÓ",
+    "previewLabel": "RÉSZLET / ELŐZETES",
+    "playLabel": "ELŐZETES LEJÁTSZÁSA",
+    "featuredKicker": "MOST VETÍTVE — ALBUMELŐZETES",
+    "itemKicker": "BIZONYÍTÉKTÁR — TÁRGYI AKTA",
+    "disclaimerTitle": "ITT SEMMI SEM VALÓDI",
+    "disclaimerBody": "Ez a tárgy egy tréfás koncepcióterv, amelyet kifejezetten ehhez a weboldalhoz készítettek. Soha nem gyártották le, nem eladó, és sehol, senkitől nem rendelhető meg semmilyen méretben, színben vagy mennyiségben. Bármilyen hasonlóság egy valódi termékkel a véletlen műve és teljesen szándékolatlan.",
+    "backToShop": "← VISSZA A BOLTHOZ"
+  },
+  "shopItems": [
+    {
+      "name": "Brux Gang — „Thug Life, No Rules” (Mixtape)",
+      "tag": "Szülői felügyelet ajánlott. A borítót és a videót egy bizonyos Spooky-valaki készítette.",
+      "price": "$14",
+      "image": "assets/images/shop-brux-gang.jpg",
+      "videoId": "7l6RhWyPk4s"
+    },
+    {
+      "name": "KÖRÖZVE póló",
+      "tag": "Pamut, uniszex, társbűnösség alapján bűnös",
+      "price": "$32",
+      "image": "assets/images/shop-wanted-tee.png",
+      "slug": "wanted-tee",
+      "detail": [
+        "Középen nyomtatva: Le Criminel stúdiós bűnügyi fotója, amint kifejezéstelen, közömbös arccal mered a kamerába, mint egy visszaeső bűnöző, akinek eszébe sem jutott soha a saját ártatlansága. A mögötte látható magasságmérő tábla pusztán dekoráció — hivatalos mérésre soha nem került sor, mivel az alany következetesen megtagadta, hogy nyugton álljon a rendőrségi eljáráshoz.",
+        "Stílusjegyzet a jegyzőkönyvhöz: nehéz szövésű fekete pamut, kopottas hatású KÖRÖZVE felirat, és a szabás, amelyet leginkább „bizonyítéktár-sikk” néven lehetne leírni. Pontosan nulla méretben kapható, mivel nulla darabban kapható — lásd alább.",
+        "Hogy teljesen világos legyen: ez a póló nem létezik. Nem vásárolható meg, nem rendelhető, nem előjegyezhető, és más méretben sem igényelhető. Ez pusztán egy koncepcióterv, amely ennek a weboldalnak a tréfájához készült, semmi más — Le Criminel semmiféle terméket nem hagyott jóvá, lévén kutya."
+      ]
+    },
+    {
+      "name": "„Épp Csak Elmegy Bűnöző” bögre",
+      "tag": "Kerámia, kávét és haragot egyaránt tartalmaz",
+      "price": "$18",
+      "image": "assets/images/shop-okayest-mug.png",
+      "slug": "okayest-mug",
+      "detail": [
+        "Kőagyag bögre, amelyen az osztály legkevésbé lelkes elismerése olvasható: „Épp Csak Elmegy Bűnöző”, egy körpecsétbe bélyegezve, a gyanúsított kicsi, kevéssé elismerő portréja alatt. Nem kiválóságért járt, hanem következetességért — ugyanazok a vétségek, ugyanaz a megbánáshiány, reggelről reggelre.",
+        "Egy teli bögre kávét fogad be, vagy a címke szerint azzal egyenértékű mennyiségű haragot. A mosogatógép-biztonságot soha nem tesztelték, mivel a bögre nem létezik ahhoz, hogy elmosogassák, birtokolják, vagy bármivel is megtöltsék.",
+        "Hogy teljesen világos legyen: ez a bögre nem létezik. Nem vásárolható meg, nem rendelhető, nem előjegyezhető, és más mázazásban sem igényelhető. Ez pusztán egy koncepcióterv, amely ennek a weboldalnak a tréfájához készült, semmi más."
+      ]
+    },
+    {
+      "name": "Erkélyincidens poszter",
+      "tag": "Emlékplakát, keret külön vásárolható",
+      "price": "$45",
+      "image": "assets/images/shop-balcony-poster.png",
+      "slug": "balcony-poster",
+      "detail": [
+        "Emlékplakát, amely az erkély valaha volt legrosszabb délutánját örökíti meg: Le Criminel épp a korlát fölé hajol, és egy galambot méreget, amely már észlelte a veszélyt, és egyetlen szárnycsapásnyira van az eltűnéstől. A mögötte látható tetők a szomszédságot ábrázolják, szándékosan öregített, fametszetre emlékeztető stílusban, mivel a valódi incidensről nem készült használható fénykép — csak tanúk, és rengeteg zaj.",
+        "Alul, nagybetűs nyomtatott felirattal: „THE BALCONY INCIDENT”, mintha a pillanat elég jelentős lett volna ahhoz, hogy bekeretezett nyomatot érdemeljen. Valószínűleg az is volt. A kevesebb illusztrációt és több következményt tartalmazó változatért lásd a teljes incidensjelentést.",
+        "Hogy teljesen világos legyen: ez a poszter nem létezik. Nem vásárolható meg, nem nyomtatható, nem kereteztethető, és semmilyen méretben nem szállítható. Ez pusztán egy koncepcióterv, amely ennek a weboldalnak a tréfájához készült, semmi más."
+      ]
+    },
+    {
+      "name": "Ügyirat matricacsomag",
+      "tag": "5 darabos készlet, vinil, időjárásálló",
+      "price": "$9",
+      "image": "assets/images/shop-sticker-pack.png",
+      "slug": "sticker-pack",
+      "detail": [
+        "Öt vinilmatrica az ügyirat legnagyobb slágereiből: a bűnügyi fotó, a „001-CR” feliratú aktacímke, egy mancsnyomos osztálypecsét, a bizonyítékká silányult kanapé, és egy galamb, amely önelégülten gubbaszt egy korláton, amelyhez semmilyen jogos igénye nincs. Időjárásálló, elméletben, mivel teljes egészében elméleti.",
+        "Laptopokra, kulacsokra, vagy egy BIZALMAS jelzésű mappa belsejére tervezve. Mindez azonban lényegtelen, mivel a csomagot soha nem gyártották le, és nem szállítható, nem ajándékozható, és nem is húzható le a hátlapjáról — mivel nincs is hátlapja.",
+        "Hogy teljesen világos legyen: ez a matricacsomag nem létezik. Nem vásárolható meg, nem rendelhető, és semmilyen mennyiségben nem nyomtatható. Ez pusztán egy koncepcióterv, amely ennek a weboldalnak a tréfájához készült, semmi más."
+      ]
+    }
+  ],
+  "footer": "© THE THIEFFRY CRIMINALS — AZ AKTA TOVÁBBRA IS NYITVA. MINDEN JOG FENNTARTVA (ÁLLÍTÓLAG)."
+}

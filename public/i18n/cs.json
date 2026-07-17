@@ -1,0 +1,384 @@
+{
+  "nav": {
+    "home": "DOMŮ",
+    "about": "O NÁS",
+    "story": "PŘÍBĚH JEDNOHO ZLOČINCE",
+    "stories": "SPISY PŘÍPADŮ",
+    "pigeon": "JEDEN HOLUB, JEDEN BALKÓN",
+    "couch": "POHOVKA",
+    "trainRide": "JÍZDA VLAKEM",
+    "blog": "BLOG",
+    "shop": "OBCHOD"
+  },
+  "home": {
+    "wanted": "HLEDÁ SE",
+    "fileNo": "SPIS Č. 001-CR",
+    "tagline": "Sawito & Le Criminel — hledaní, vyslýchaní a většinou omilostnění",
+    "kicker": "— místní operace, dva podezřelí —",
+    "intro": "Jeden muž, jeden pes, jedno společné pohrdání pravidly slušné společnosti. Prohlédněte si spis níže — záznamy mluví samy za sebe.",
+    "promoKicker": "NOVĚ VE SKLADU DŮKAZŮ",
+    "promoTitle": "BRUX GANG — „THUG LIFE, NO RULES“",
+    "promoTag": "Mixtape, o který nikdo nežádal. Obal namaloval jistý Spooky-cosi.",
+    "promoCta": "ZOBRAZIT V OBCHODĚ",
+    "promoVideoLink": "Zhlédnout ukázku"
+  },
+  "about": {
+    "title": "O PODEZŘELÝCH",
+    "subtitle": "Spis 001-CR — subjekty identifikovány níže",
+    "sawitoName": "SAWITO",
+    "sawitoAlias": "PŘEZDÍVKA: „STAŘÍK ZE SVRCHNÍHO PATRA“",
+    "occupation": "POVOLÁNÍ",
+    "occupationVal": "Hlavní nohsled",
+    "marksLabel": "ZVLÁŠTNÍ ZNAMENÍ",
+    "sawitoMarks": "Stříbrný plnovous, věčná cigareta, pilotky nošené doma i venku",
+    "associateLabel": "KOMPLIC",
+    "sawitoAssociate": "Le Criminel (nerozlučný, nekajícný)",
+    "statusLabel": "STAV",
+    "sawitoStatus": "Na útěku. Údajně ozbrojen pamlsky.",
+    "dogName": "LE CRIMINEL",
+    "dogAlias": "PŘEZDÍVKA: „BALKÓNOVÝ BANDITA“",
+    "breedLabel": "PLEMENO",
+    "breedVal": "Bostonský teriér, údajně",
+    "dogMarks": "Černobílé skvrny, taktický obojek, nevzrušený výraz",
+    "dogAssociate": "Sawito (psovod, tak nějak)",
+    "dogStatus": "Hledán v souvislosti s balkónovým incidentem. Viz spis.",
+    "rapSheetTitle": "TRESTNÍ REJSTŘÍK",
+    "confidential": "DŮVĚRNÉ"
+  },
+  "rapSheet": [
+    { "case": "CASE 001", "charge": "Opakované nedání přednosti na sdílených stezkách." },
+    { "case": "CASE 002", "charge": "Přechovávání neschváleného nadšení v blízkosti pošťáka." },
+    { "case": "CASE 003", "charge": "Spolčení za účelem ukrytí důkazů (jedna ponožka, zahrada, nevyřešeno)." },
+    { "case": "CASE 004", "charge": "Rušení nočního klidu, 6:15 ráno, denně, bez známek ustání." },
+    { "case": "CASE 005", "charge": "Napadení smrtícím vrtěním ocasu." }
+  ],
+  "story": {
+    "kicker": "Spis 001-CR — pozadí případu",
+    "title": "PŘÍBĚH JEDNOHO ZLOČINCE",
+    "exhibit": "DŮKAZ A — SUBJEKT NA SVOBODĚ",
+    "p1": "Každé jméno má svůj původ a toto má i papírovou stopu. Pes se nenarodil jako „Le Criminel“. Narodil se, pokud lze cokoliv dokázat, jako naprosto obyčejné štěně bez jakéhokoliv trestního rejstříku.",
+    "p2": "Jméno přišlo později, vysloužené jeden malý přečin po druhém: tady ukradená ponožka, tam okousané dálkové ovládání, polštář z pohovky, který nepřežil léto. Žádný jednotlivý čin si spis nezasloužil. Dohromady si zasloužily přezdívku.",
+    "p3": "Poprvé to řekl Sawito, napůl pod vousy, když sledoval psa odcházet z místa činu s klidem někoho, kdo nikdy nebyl chycen: „Ce chien, c'est un criminel.“ Jméno se ujalo tak, jak se přezdívky ujímají — nikdo je nevymyslel, prostě byla pravdivá.",
+    "p4": "Nikdy nebyl formálně obviněn. Nikdy neprojevil lítost. Vyšetřování, pokud se to tak dá nazvat, zůstává otevřené.",
+    "adventuresKicker": "VYBRANÉ SPISY PŘÍPADŮ",
+    "wantMoreTitle": "CHCETE VĚDĚT VÍC?",
+    "wantMoreBody": "Kompletní deník případů se aktualizuje měsíčně, každý přečin je zaznamenán.",
+    "wantMoreCta": "ČÍST DENÍK PŘÍPADŮ",
+    "footer": "ZAŘAZENO POD: MÍSTNÍ LEGENDY, NEOVĚŘENO"
+  },
+  "adventures": [
+    {
+      "title": "JEDEN HOLUB, JEDEN BALKÓN",
+      "teaser": "Holub, balkón a jedno velmi špatné rozhodnutí učiněné plnou rychlostí.",
+      "link": "/pigeon",
+      "image": "assets/images/dog-close-lap.jpg"
+    },
+    {
+      "title": "POHOVKA",
+      "teaser": "Pomalá, promyšlená demolice. Roh to nepřežil.",
+      "link": "/couch",
+      "image": "assets/images/couch-crime-scene.jpg"
+    },
+    {
+      "title": "JÍZDA VLAKEM",
+      "teaser": "Žádný z podezřelých nesmí legálně řídit, takže jezdí vlakem.",
+      "link": "/train-ride",
+      "image": "assets/images/train-window-view.jpg"
+    }
+  ],
+  "pigeon": {
+    "kicker": "Zpráva o incidentu",
+    "title": "JEDEN HOLUB, JEDEN BALKÓN",
+    "locationLabel": "MÍSTO",
+    "locationVal": "Balkón ve druhém patře, adresa neuvedena",
+    "suspectLabel": "PODEZŘELÝ",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "SVĚDEK",
+    "witnessVal": "Sawito (přítomen, nestihl včas zasáhnout)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Jeden (1) holub, stojící tam, kde neměl",
+    "p1": "Podezřelý zpozoroval holuba na blízkou vzdálenost a bez konzultace s kýmkoliv učinil rozhodnutí. Opustil balkón plnou rychlostí a bez plánu. Gravitace se do toho vložila. Holub nebyl chycen. Pes byl v pořádku.",
+    "p2": "Sawito v pořádku nebyl. Při následné panice přišel o nějaké vlasy — své vlastní, ne psí — a dodnes se nenašly.",
+    "aftermathCaption": "DŮKAZ B — SUBJEKT SE ZOTAVUJE, ZPĚT NA PEVNÉ ZEMI, VIDITELNĚ NEDOTČEN CELOU SITUACÍ",
+    "stamp": "PŘÍPAD UZAVŘEN — BEZ OBVINĚNÍ"
+  },
+  "couch": {
+    "kicker": "Zpráva o poškození majetku",
+    "title": "POHOVKA",
+    "locationLabel": "MÍSTO",
+    "locationVal": "Obývací pokoj, jihovýchodní roh, dříve čalouněný",
+    "suspectLabel": "PODEZŘELÝ",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "SVĚDEK",
+    "witnessVal": "Sawito (přítomen po celou dobu, žádnou zprávu nesepsal)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Jedna (1) volná nit, shledaná nepřijatelnou",
+    "p1": "Začalo to, jak to tak bývá, jednou jedinou nití. Subjekt ji objevil, zatáhl za ni a zjistil — s tím, co vyšetřovatelé mohou popsat jedině jako profesionální uspokojení — že následuje další. Postup byl pomalý, promyšlený a zcela nezdokumentovaný, dokud nebylo na zásah příliš pozdě.",
+    "p2": "V době, kdy si škody někdo všiml, byl roh zredukován na holou kostru a rozvolněnou výplň, s odhaleným — a zjevně důkladně prozkoumaným — nosným lankem. Subjekt byl na místě činu nalezen o chvíli později, jedno oko ozářené bleskem fotoaparátu, poblíž držená provazová hračka, jako by chtěl naznačit, že tudy jen náhodou procházel.",
+    "exhibitBCaption": "DŮKAZ B — DETAILNÍ ZÁBĚR ŠKODY",
+    "exhibitCCaption": "DŮKAZ C — PODEZŘELÝ V BLÍZKOSTI, VÝRAZ NEČITELNÝ",
+    "stamp": "POHOVKA PROHLÁŠENA ZA ÚPLNOU ZTRÁTU — SUBJEKT NEDOTČEN"
+  },
+  "trainRide": {
+    "kicker": "Cestovní deník",
+    "title": "JÍZDA VLAKEM",
+    "locationLabel": "MÍSTO",
+    "locationVal": "Regionální železnice, cíle: venkov a pobřeží",
+    "suspectLabel": "PODEZŘELÝ",
+    "suspectVal": "Le Criminel (častý cestující)",
+    "witnessLabel": "SVĚDEK",
+    "witnessVal": "Sawito (technicky nevidomý, přesto koupil jízdenky)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Především čerstvý vzduch. Konkrétně racci.",
+    "p1": "Žádný z podezřelých nesmí usednout za volant, a to ze zcela odlišných, leč stejně diskvalifikujících důvodů: Sawito je podle vlastního přiznání technicky nevidomý a Le Criminel nikdy nedostal ani cyklistický průkaz. K vlaku nedospěli jako k životnímu stylu, ale jako k jediné zbývající možnosti — a osvědčila se lépe, než kdokoliv čekal.",
+    "p2": "V záznamech figurují dva cíle: venkov a pobřeží. Oba byly přijaty kladně. Pobřeží je však jednoznačným favoritem, a to kvůli rackům, které subjekt považuje spíše za osobní výzvu než místní faunu. Nikdy žádného nechytil. Také se o to nikdy nepřestal pokoušet a značnou část jedné cesty strávil s čumákem přitisknutým k oknu, kuje pikle.",
+    "exhibitBCaption": "DŮKAZ B — USAZEN NA CESTU",
+    "exhibitCCaption": "DŮKAZ C — PROVÁDÍ INSPEKCI V ÚROVNI PODLAHY",
+    "exhibitDCaption": "DŮKAZ D — VENKOV, UBÍHAJÍCÍ V PLNÉ RYCHLOSTI",
+    "exhibitECaption": "DŮKAZ E — ČUMÁK NA SKLE, NĚKDE MEZI DVĚMA STANICEMI",
+    "exhibitFCaption": "DŮKAZ F — PŘISTÁNÍ NA POBŘEŽÍ",
+    "stamp": "CÍL CESTY: KDEKOLIV JSOU RACCI"
+  },
+  "blog": {
+    "title": "DENÍK PŘÍPADŮ",
+    "subtitle": "24 měsíčních záznamů — dva roky nepřetržitého sledování, případ 001-CR zůstává otevřený"
+  },
+  "blogPosts": [
+    {
+      "date": "JUL 2024",
+      "case": "CASE LOG 001",
+      "title": "DEN, KDY BYL NALEZEN ČLOVĚK",
+      "body": "Nalezen na ulici, bez vodítka, bez plánu, bez zjevného majitele. Subjekt ho dvakrát očichal, posadil se před něj a odmítl se hnout, dokud nebyla domluvena opatření. Opatření byla domluvena. Subjekt nad ním od té doby dohlíží.",
+      "image": "assets/images/blog-cheek-to-cheek.jpg"
+    },
+    {
+      "date": "AUG 2024",
+      "case": "CASE LOG 002",
+      "title": "INCIDENT PRVNÍ NOCI",
+      "body": "Do prostor vstoupila jedna bota. V rozpoznatelném stavu prostory opustila jedna bota. Vyšetřování ohledně druhé boty pokračuje.",
+      "image": "assets/images/blog-shoe-inspection.jpg"
+    },
+    {
+      "date": "SEP 2024",
+      "case": "CASE LOG 003",
+      "title": "TRVALÉ SLEDOVÁNÍ ZPOZA ZÁCLONY",
+      "body": "Subjekt zaujal pevnou pozici na opěradle pohovky, záclonu odhrnutou jednou tlapou, a monitoruje ulici kvůli neautorizovaným chodcům, cyklistům a příležitostným holubům. Směnný režim: téměř nepřetržitý.",
+      "image": "assets/images/blog-couch-lookout.jpg"
+    },
+    {
+      "date": "OCT 2024",
+      "case": "CASE LOG 004",
+      "title": "NEOPRÁVNĚNÝ VSTUP DO KUCHYNĚ",
+      "body": "Subjekt byl pozorován, jak stojí zcela uvnitř kuchyně, aniž by mu kdy bylo uděleno pozvání. Popírá jakoukoliv znalost slova „ven“.",
+      "image": "assets/images/blog-shop-entry.jpg"
+    },
+    {
+      "date": "NOV 2024",
+      "case": "CASE LOG 005",
+      "title": "ODHALEN GANG ZLODĚJŮ PONOŽEK",
+      "body": "Sedm lichých ponožek nalezeno pod postelí. Subjekt přítomen na místě činu, viditelně nedotčen důkazy.",
+      "image": "assets/images/blog-shoulder-selfie.jpg"
+    },
+    {
+      "date": "DEC 2024",
+      "case": "CASE LOG 006",
+      "title": "SVÁTEČNÍ NEPOKOJE",
+      "body": "Jedna ozdoba na zemi. Stromeček zatím stále stojí. Subjekt tvrdí, že ozdoba „začala první“.",
+      "image": "assets/images/blog-bee-costume.jpg"
+    },
+    {
+      "date": "JAN 2025",
+      "case": "CASE LOG 007",
+      "title": "PORUŠENÍ NOVOROČNÍHO PŘEDSEVZETÍ",
+      "body": "Majitel si předsevzal prosadit zákaz pohovky. Předsevzetí vydrželo čtyři hodiny. Subjekt obnovil plnou okupaci.",
+      "image": "assets/images/blog-couch-cuddle-selfie.jpg"
+    },
+    {
+      "date": "FEB 2025",
+      "case": "CASE LOG 008",
+      "title": "PRVNÍ SPATŘENÍ PODEZŘELÉ PIKETTE",
+      "body": "Na místě byla spatřena kočka jménem Pikette. Obě strany se okamžitě a vzájemně rozzuřily. Příčina neznámá, tradice od té doby zavedená.",
+      "image": "assets/images/pikette-windowsill.jpg"
+    },
+    {
+      "date": "MAR 2025",
+      "case": "CASE LOG 009",
+      "title": "POKUS O VYJEDNÁVÁNÍ S POŠŤÁKEM",
+      "body": "Subjekt se přiblížil k pošťákovi s nejasným záměrem. Vyjednávání zkrachovalo během několika vteřin. Pošta byla nakonec doručena.",
+      "image": "assets/images/blog-mailman-standoff.jpg"
+    },
+    {
+      "date": "APR 2025",
+      "case": "CASE LOG 010",
+      "title": "BALKÓNOVÝ INCIDENT",
+      "body": "Úplná zpráva podána samostatně pod názvem „Jeden holub, jeden balkón“. Zde uvedeno pro úplnost záznamu."
+    },
+    {
+      "date": "MAY 2025",
+      "case": "CASE LOG 011",
+      "title": "PŘÍPAD ZTRACENÉHO DÁLKOVÉHO OVLADAČE",
+      "body": "Dálkový ovladač naposledy spatřen v blízkosti subjektu. Nalezen o tři dny později pod radiátorem, stopy zubů odpovídají předchozím přečinům.",
+      "image": "assets/images/blog-bed-nap.jpg"
+    },
+    {
+      "date": "JUN 2025",
+      "case": "CASE LOG 012",
+      "title": "PIKETTE SE VRACÍ, NAPĚTÍ BEZE ZMĚNY",
+      "body": "Druhá návštěva podezřelé Pikette. Obě strany obnovily nepřátelství přesně tam, kde ho přerušily, jako by neuplynul žádný čas.",
+      "image": "assets/images/pikette-dog-couch.jpg"
+    },
+    {
+      "date": "JUL 2025",
+      "case": "CASE LOG 013",
+      "title": "JEDEN ROK VE VAZBĚ, BEZ ZAZNAMENANÉHO ZLEPŠENÍ",
+      "body": "Dvanáctiměsíční hodnocení dokončeno. Subjekt nedosáhl žádného měřitelného pokroku směrem k dobrému chování. Stal se však bytostí, bez níž si nikdo neumí představit život.",
+      "image": "assets/images/blog-garden-wall.jpg"
+    },
+    {
+      "date": "AUG 2025",
+      "case": "CASE LOG 014",
+      "title": "SUBJEKT PODSTOUPIL CHIRURGICKÝ ZÁKROK",
+      "body": "Subjekt byl tento měsíc vykastrován. Zákrok úspěšný, důstojnost kolár hanby nepřežila. Chování zcela nedotčeno.",
+      "image": "assets/images/blog-park-walk.jpg"
+    },
+    {
+      "date": "SEP 2025",
+      "case": "CASE LOG 015",
+      "title": "OBDOBÍ REKONVALESCENCE, NÁLADA BEZE ZMĚNY",
+      "body": "Kolár odstraněn. Subjekt to oslavil okamžitým obnovením všech dříve zakázaných činností v plném rozsahu.",
+      "image": "assets/images/blog-full-capacity.jpg"
+    },
+    {
+      "date": "OCT 2025",
+      "case": "CASE LOG 016",
+      "title": "KONFRONTACE S PIKETTE, KOLO TŘETÍ",
+      "body": "Operace nezchladila nepřátelství vůči podezřelé Pikette. Subjekt naopak zjevně chová zášť čistě z principu.",
+      "image": "assets/images/pikette-couch-visit.jpg"
+    },
+    {
+      "date": "NOV 2025",
+      "case": "CASE LOG 017",
+      "title": "OBŽALOBA ZE SHROMAŽĎOVÁNÍ DEK",
+      "body": "Veškeré měkké textilie v domácnosti byly přemístěny na jednu jedinou hromadu, aktuálně pod výhradní kontrolou subjektu.",
+      "image": "assets/images/blog-blanket-hoard.jpg"
+    },
+    {
+      "date": "DEC 2025",
+      "case": "CASE LOG 018",
+      "title": "SVÁTEČNÍ NEPOKOJE, KOLO DRUHÉ",
+      "body": "Druhá ozdoba na zemi. Subjekt popírá vzorec chování, jako obhajobu uvádí „náhodu“."
+    },
+    {
+      "date": "JAN 2026",
+      "case": "CASE LOG 019",
+      "title": "POKUS O ÚTĚK ZMAŘEN U DVEŘÍ",
+      "body": "Subjekt se pokusil o útěk otevřenými vchodovými dveřmi. Znovu zadržen na schodech před domem. Bez zranění, mírné rozpaky na obou stranách.",
+      "image": "assets/images/blog-front-door-recapture.jpg"
+    },
+    {
+      "date": "FEB 2026",
+      "case": "CASE LOG 020",
+      "title": "PODEZŘELÁ PIKETTE, FOTOGRAFIE ZE SLEDOVÁNÍ VE SPISU",
+      "body": "Podezřelá Pikette vyfotografována zblízka během návštěvy. Obě strany z nejasných důvodů stále nejsou schopny mírového soužití.",
+      "image": "assets/images/pikette-closeup.jpg"
+    },
+    {
+      "date": "MAR 2026",
+      "case": "CASE LOG 021",
+      "title": "VÝSLECH VE VĚCI ZTRACENÉHO SENDVIČE",
+      "body": "Jeden sendvič, ponechaný bez dozoru na devadesát vteřin, se nenašel. Subjekt byl v místnosti. Subjekt nic nepotvrzuje ani nepopírá.",
+      "image": "assets/images/blog-cafe-standoff.jpg"
+    },
+    {
+      "date": "APR 2026",
+      "case": "CASE LOG 022",
+      "title": "SOUSED PODÁVÁ OFICIÁLNÍ STÍŽNOST",
+      "body": "Přijata stížnost na nadměrné štěkání v 6:15 ráno. Subjekt obdržel formální varování. Subjekt svůj rozvrh nezměnil.",
+      "image": "assets/images/blog-frosty-morning.jpg"
+    },
+    {
+      "date": "MAY 2026",
+      "case": "CASE LOG 023",
+      "title": "ÚPLNÉ PŘEVZETÍ ŽIVOTA, HODNOCENÍ DOKONČENO",
+      "body": "Subjekt nyní ovládá postel, rozvrh, svačiny a většinu důležitých rozhodnutí. Stav nezávislosti majitele: odebrán.",
+      "image": "assets/images/blog-waffle-watch.jpg"
+    },
+    {
+      "date": "JUN 2026",
+      "case": "CASE LOG 024",
+      "title": "DVOULETÉ HODNOCENÍ STAVU",
+      "body": "Dva roky od přijetí do péče. Žádná náprava. Ale ani žádná lítost. Dokonce i podezřelá Pikette byla při vzácném klidném večeru přistižena, jak sdílí pohovku. Případ zůstává otevřený.",
+      "image": "assets/images/blog-belly-flop.jpg"
+    }
+  ],
+  "shop": {
+    "title": "OBCHOD",
+    "subtitle": "Sklad důkazů — pouze k prohlédnutí, nic zde není na prodej",
+    "notForSale": "NENÍ NA PRODEJ",
+    "previewLabel": "UKÁZKA / NÁHLED",
+    "playLabel": "PŘEHRÁT UKÁZKU",
+    "featuredKicker": "NYNÍ SE PROMÍTÁ — NÁHLED ALBA",
+    "itemKicker": "SKLAD DŮKAZŮ — SPIS PŘEDMĚTU",
+    "disclaimerTitle": "NIC Z TOHOTO NENÍ SKUTEČNÉ",
+    "disclaimerBody": "Tento předmět je vtipné koncepční umělecké dílo vytvořené pro tento web. Nikdy nebyl vyroben, není na prodej a nelze jej objednat v žádné velikosti, barvě ani množství — nikde, u nikoho. Jakákoliv podobnost se skutečným produktem je čistě náhodná a zcela neúmyslná.",
+    "backToShop": "← ZPĚT DO OBCHODU"
+  },
+  "shopItems": [
+    {
+      "name": "Brux Gang — „Thug Life, No Rules“ (Mixtape)",
+      "tag": "Rodičovské varování. Obal a video od jistého Spooky-cosi.",
+      "price": "$14",
+      "image": "assets/images/shop-brux-gang.jpg",
+      "videoId": "7l6RhWyPk4s"
+    },
+    {
+      "name": "Tričko HLEDÁ SE",
+      "tag": "Bavlna, uniseks, vinen spolčením",
+      "price": "$32",
+      "image": "assets/images/shop-wanted-tee.png",
+      "slug": "wanted-tee",
+      "detail": [
+        "Vytištěno uprostřed vpředu: studiová identifikační fotografie Le Criminela, zírajícího do objektivu s plochým, nedotčeným výrazem recidivisty, který nikdy ani na okamžik nezapochyboval o vlastní nevině. Výškový žebřík za ním je čistě dekorativní — žádné oficiální měření nikdy neproběhlo, neboť subjekt odmítal při snímkování stát v klidu.",
+        "Poznámky ke stylu, pro účely záznamu: těžká černá bavlna, záměrně sešlé písmo HLEDÁ SE a střih nejlépe popsaný jako „šik ze skladu důkazů“. K dostání v přesně nula velikostech, protože je k dostání v nula kusech — viz níže.",
+        "Aby bylo naprosto jasno: toto tričko neexistuje. Nelze jej koupit, objednat, objednat předem ani požadovat v jiné velikosti. Jde o koncepční umělecké dílo vytvořené pro vtip tohoto webu a nic víc — Le Criminel nepodpořil žádné merchandisingové zboží, neboť je pes."
+      ]
+    },
+    {
+      "name": "Hrnek „Tak akorát zločinec“",
+      "tag": "Keramika, pojme kávu i zášť",
+      "price": "$18",
+      "image": "assets/images/shop-okayest-mug.png",
+      "slug": "okayest-mug",
+      "detail": [
+        "Kameninový hrnek nesoucí nejméně nadšené ocenění oddělení: „Tak akorát zločinec“, otištěné v kruhové pečeti pod malým, nepříliš ohromeným portrétem podezřelého. Udělené nikoliv za výjimečnost, ale za vytrvalost — stejné přečiny, stejný nedostatek lítosti, ráno co ráno.",
+        "Pojme celý hrnek kávy, nebo podle etikety odpovídající objem zášti. Odolnost vůči myčce nikdy nebyla testována, protože hrnek neexistuje proto, aby byl umýván, vlastněn nebo čímkoliv naplněn.",
+        "Aby bylo naprosto jasno: tento hrnek neexistuje. Nelze jej koupit, objednat, objednat předem ani požadovat v jiné glazuře. Jde o koncepční umělecké dílo vytvořené pro vtip tohoto webu a nic víc."
+      ]
+    },
+    {
+      "name": "Plakát Balkónový incident",
+      "tag": "Pamětní tisk, rám prodáván zvlášť",
+      "price": "$45",
+      "image": "assets/images/shop-balcony-poster.png",
+      "slug": "balcony-poster",
+      "detail": [
+        "Pamětní tisk připomínající nejhorší odpoledne, jaké kdy balkón zažil: Le Criminel se naklání přes zábradlí a upírá zrak na holuba, který už nebezpečí zaregistroval a je jeden mávnutí křídel od zmizení. Střechy za ním patří sousedství a jsou ztvárněny záměrně zestárlým stylem blízkým dřevorytu, protože samotný incident nezanechal žádné použitelné fotografie — jen svědky a spoustu hluku.",
+        "„THE BALCONY INCIDENT“ se táhne blokovým písmem přes spodní okraj, jako by okamžik byl natolik významný, že si zasloužil zarámovaný tisk. Pravděpodobně ano. Úplnou zprávu o incidentu s méně ilustracemi a více následky najdete v příslušném spisu.",
+        "Aby bylo naprosto jasno: tento plakát neexistuje. Nelze jej koupit, vytisknout, zarámovat ani zaslat v žádné velikosti. Jde o koncepční umělecké dílo vytvořené pro vtip tohoto webu a nic víc."
+      ]
+    },
+    {
+      "name": "Sada nálepek Spis případu",
+      "tag": "Sada 5 kusů, vinyl, odolné vůči povětrnosti",
+      "price": "$9",
+      "image": "assets/images/shop-sticker-pack.png",
+      "slug": "sticker-pack",
+      "detail": [
+        "Pět vinylových nálepek vybraných z největších hitů spisu: identifikační fotografie, štítek spisu s nápisem „001-CR“, pečeť oddělení ve tvaru tlapky, pohovka zredukovaná na důkazní materiál a holub, jak samolibě sedí na zábradlí, na které nemá žádný právní nárok. Odolné vůči povětrnosti, teoreticky, jelikož jsou zcela teoretické.",
+        "Navrženo pro notebooky, láhve na vodu nebo vnitřek desek označených DŮVĚRNÉ. Na ničem z toho nezáleží, protože sada nikdy nebyla vyrobena a nelze ji zaslat, darovat ani odloupnout z podkladové fólie — protože žádnou podkladovou fólii nemá.",
+        "Aby bylo naprosto jasno: tato sada nálepek neexistuje. Nelze ji koupit, objednat ani vytisknout v žádném množství. Jde o koncepční umělecké dílo vytvořené pro vtip tohoto webu a nic víc."
+      ]
+    }
+  ],
+  "footer": "© THE THIEFFRY CRIMINALS — SPIS ZŮSTÁVÁ OTEVŘENÝ. VŠECHNA PRÁVA VYHRAZENA (ÚDAJNĚ)."
+}

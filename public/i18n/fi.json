@@ -1,0 +1,384 @@
+{
+  "nav": {
+    "home": "KOTI",
+    "about": "TIETOA",
+    "story": "RIKOLLISEN TARINA",
+    "stories": "TAPAUSKANSIOT",
+    "pigeon": "YKSI KYYHKYNEN, YKSI PARVEKE",
+    "couch": "SOHVA",
+    "trainRide": "JUNAMATKA",
+    "blog": "BLOGI",
+    "shop": "KAUPPA"
+  },
+  "home": {
+    "wanted": "ETSINTÄKUULUTETTU",
+    "fileNo": "ASIAKIRJA NRO 001-CR",
+    "tagline": "Sawito & Le Criminel — etsintäkuulutettu, kuulusteltu ja pääosin annettu anteeksi",
+    "kicker": "— paikallinen operaatio, kaksi epäiltyä —",
+    "intro": "Yksi mies, yksi koira, yhteinen piittaamattomuus kohteliaan yhteiskunnan säännöistä. Selaa alla olevaa kansiota — asiakirjat puhuvat puolestaan.",
+    "promoKicker": "UUTTA TODISTEVARASTOSSA",
+    "promoTitle": "BRUX GANG — \"THUG LIFE, NO RULES\"",
+    "promoTag": "Mikstiippi, jota kukaan ei pyytänyt. Kansitaide erään Spooky-jonkun käsialaa.",
+    "promoCta": "KATSO KAUPASSA",
+    "promoVideoLink": "Katso esikatselu"
+  },
+  "about": {
+    "title": "TIETOA EPÄILLYISTÄ",
+    "subtitle": "Asiakirja 001-CR — kohteet tunnistettu alla",
+    "sawitoName": "SAWITO",
+    "sawitoAlias": "PEITENIMI: \"YLÄKERRAN VANHA MIES\"",
+    "occupation": "AMMATTI",
+    "occupationVal": "Päämahdollistaja",
+    "marksLabel": "TUNTOMERKIT",
+    "sawitoMarks": "Hopeanharmaa parta, jatkuva savuke, aviaattorilasit sisällä ja ulkona",
+    "associateLabel": "KUMPPANI",
+    "sawitoAssociate": "Le Criminel (erottamattomat, katumaton)",
+    "statusLabel": "TILA",
+    "sawitoStatus": "Vapaalla jalalla. Uskotaan aseistautuneen herkuilla.",
+    "dogName": "LE CRIMINEL",
+    "dogAlias": "PEITENIMI: \"PARVEKEROSVO\"",
+    "breedLabel": "ROTU",
+    "breedVal": "Bostoninterrieri, väitetysti",
+    "dogMarks": "Mustavalkoisia laikkuja, taktinen panta, tyyni ilme",
+    "dogAssociate": "Sawito (ohjaaja, sikäli kuin voi sanoa)",
+    "dogStatus": "Etsintäkuulutettu parvekevälikohtauksen vuoksi. Katso asiakirja.",
+    "rapSheetTitle": "RIKOSREKISTERI",
+    "confidential": "LUOTTAMUKSELLINEN"
+  },
+  "rapSheet": [
+    { "case": "CASE 001", "charge": "Toistuva väistämisvelvollisuuden laiminlyönti yhteiskäytössä olevilla kävelyreiteillä." },
+    { "case": "CASE 002", "charge": "Luvattoman innostuksen hallussapito postinkantajan läheisyydessä." },
+    { "case": "CASE 003", "charge": "Salaliitto todisteiden hautaamiseksi (yksi sukka, takapiha, ratkaisematta)." },
+    { "case": "CASE 004", "charge": "Yleisen järjestyksen häiritseminen, klo 6:15, päivittäin, ei merkkejä loppumisesta." },
+    { "case": "CASE 005", "charge": "Pahoinpitely tappavalla hännänheilutuksella." }
+  ],
+  "story": {
+    "kicker": "Asiakirja 001-CR — taustaa",
+    "title": "RIKOLLISEN TARINA",
+    "exhibit": "TODISTE A — KOHDE VAPAALLA JALALLA",
+    "p1": "Jokaisella nimellä on alkuperänsä, ja tällä on paperijälki. Koira ei syntynyt nimellä \"Le Criminel\". Hän syntyi, mikäli kukaan pystyy todistamaan mitään, aivan tavallisena pentuna, jolla ei ollut minkäänlaista rikosrekisteriä.",
+    "p2": "Nimi tuli myöhemmin, ansaittiin yksi pieni rikkomus kerrallaan: varastettu sukka täällä, pureskeltu kaukosäädin siellä, sohvatyyny, joka ei selvinnyt kesästä hengissä. Yksikään yksittäinen teko ei oikeuttanut asiakirjaa. Yhdessä ne oikeuttivat lempinimen.",
+    "p3": "Sawito sanoi sen ensimmäisenä, puoliksi hampaidensa välistä, katsellessaan koiran ravaavan pois rikospaikalta sellaisen henkilön rauhallisuudella, jota ei koskaan ole jäänyt kiinni: \"Ce chien, c'est un criminel.\" Nimi jäi elämään niin kuin lempinimet jäävät — ei valittu, vain totta.",
+    "p4": "Häntä ei ole koskaan virallisesti syytetty. Hän ei ole koskaan osoittanut katumusta. Tutkinta, sellaisena kuin se on, pysyy avoimena.",
+    "adventuresKicker": "VALITUT TAPAUSKANSIOT",
+    "wantMoreTitle": "HALUATKO TIETÄÄ LISÄÄ?",
+    "wantMoreBody": "Koko tapauspäiväkirja päivitetään kuukausittain, jokainen rikkomus kirjattuna.",
+    "wantMoreCta": "LUE TAPAUSPÄIVÄKIRJA",
+    "footer": "ARKISTOITU KOHTAAN: PAIKALLISET LEGENDAT, VAHVISTAMATON"
+  },
+  "adventures": [
+    {
+      "title": "YKSI KYYHKYNEN, YKSI PARVEKE",
+      "teaser": "Kyyhkynen, parveke ja yksi erittäin huono päätös tehtynä täydellä vauhdilla.",
+      "link": "/pigeon",
+      "image": "assets/images/dog-close-lap.jpg"
+    },
+    {
+      "title": "SOHVA",
+      "teaser": "Hidas, harkittu tuho. Nurkka ei selvinnyt hengissä.",
+      "link": "/couch",
+      "image": "assets/images/couch-crime-scene.jpg"
+    },
+    {
+      "title": "JUNAMATKA",
+      "teaser": "Kumpikaan epäilty ei saa laillisesti ajaa, joten he matkustavat junalla.",
+      "link": "/train-ride",
+      "image": "assets/images/train-window-view.jpg"
+    }
+  ],
+  "pigeon": {
+    "kicker": "Tapahtumailmoitus",
+    "title": "YKSI KYYHKYNEN, YKSI PARVEKE",
+    "locationLabel": "SIJAINTI",
+    "locationVal": "Toisen kerroksen parveke, osoite salattu",
+    "suspectLabel": "EPÄILTY",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TODISTAJA",
+    "witnessVal": "Sawito (paikalla, ei ehtinyt puuttua asiaan ajoissa)",
+    "motiveLabel": "MOTIIVI",
+    "motiveVal": "Yksi (1) kyyhkynen, seisomassa paikassa, jossa sen ei olisi pitänyt seistä",
+    "p1": "Epäilty havaitsi kyyhkysen läheltä ja teki, kenenkään kanssa neuvottelematta, päätöksen. Hän poistui parvekkeelta täydellä vauhdilla ja ilman suunnitelmaa. Painovoima oli osallisena. Kyyhkystä ei saatu kiinni. Koiralla oli kaikki hyvin.",
+    "p2": "Sawitolla ei ollut kaikki hyvin. Seuranneessa paniikissa menetettiin hiuksia — hänen omiaan, ei koiran — eikä niitä ole löydetty.",
+    "aftermathCaption": "TODISTE B — KOHDE TOIPUMASSA, TAAS TUKEVALLA MAAPERÄLLÄ, NÄKYVÄSTI PIITTAAMATON KOKO ASIASTA",
+    "stamp": "TAPAUS SULJETTU — EI SYYTTEITÄ"
+  },
+  "couch": {
+    "kicker": "Omaisuusvahinkoilmoitus",
+    "title": "SOHVA",
+    "locationLabel": "SIJAINTI",
+    "locationVal": "Olohuone, kaakkoiskulma, entinen verhoiltu",
+    "suspectLabel": "EPÄILTY",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TODISTAJA",
+    "witnessVal": "Sawito (paikalla koko ajan, ei jättänyt ilmoitusta)",
+    "motiveLabel": "MOTIIVI",
+    "motiveVal": "Yksi (1) irtolanka, todettu sietämättömäksi",
+    "p1": "Se alkoi, kuten nämä asiat yleensä alkavat, yhdestä langasta. Kohde löysi sen, veti siitä, ja huomasi — tutkijoiden vain ammatilliseksi tyytyväisyydeksi kuvailemalla tavalla — että lankaa riitti lisää. Eteneminen oli hidasta, harkittua ja täysin dokumentoimatonta siihen asti, kunnes oli jo aivan liian myöhäistä puuttua asiaan.",
+    "p2": "Siihen mennessä, kun vahinko huomattiin, nurkka oli supistunut paljaaksi rungoksi ja irtonaiseksi täytteeksi, tukikaapeli paljastettuna ja, ilmeisesti, perusteellisesti tarkastettuna. Kohde löydettiin paikalta hetkeä myöhemmin, toinen silmä kameran salaman valaisemana, narulelu lähettyvillä ikään kuin vihjaisi vain kulkeneensa ohitse.",
+    "exhibitBCaption": "TODISTE B — LÄHIKUVA VAHINGOSTA",
+    "exhibitCCaption": "TODISTE C — EPÄILTY LÄHISTÖLLÄ, ILME TULKITSEMATON",
+    "stamp": "SOHVA JULISTETTU TÄYDELLISEKSI MENETYKSEKSI — KOHDE PIITTAAMATON"
+  },
+  "trainRide": {
+    "kicker": "Matkapäiväkirja",
+    "title": "JUNAMATKA",
+    "locationLabel": "SIJAINTI",
+    "locationVal": "Alueellinen rautatie, määränpäät: maaseutu ja rannikko",
+    "suspectLabel": "EPÄILTY",
+    "suspectVal": "Le Criminel (aktiivimatkustaja)",
+    "witnessLabel": "TODISTAJA",
+    "witnessVal": "Sawito (teknisesti sokea, osti liput silti)",
+    "motiveLabel": "MOTIIVI",
+    "motiveVal": "Raitista ilmaa, enimmäkseen. Lokkeja, tarkemmin sanottuna.",
+    "p1": "Kummallakaan epäillyllä ei ole lupaa istua ajoneuvon ratin taakse, täysin erilaisista mutta yhtä lailla diskvalifioivista syistä: Sawito on omien sanojensa mukaan teknisesti sokea, eikä Le Criminelille ole koskaan myönnetty edes polkupyöräkorttia. Juna ei ollut elämäntapavalinta vaan ainoa jäljellä oleva vaihtoehto, ja se on osoittautunut toimivan paremmin kuin kukaan osasi odottaa.",
+    "p2": "Kaksi määränpäätä on kirjattu: maaseutu ja rannikko. Molemmat otettiin hyvin vastaan. Rannikko on kuitenkin selvä suosikki lokkien ansiosta, joita kohde pitää henkilökohtaisena haasteena eikä paikallisena eläimistönä. Hän ei ole koskaan saanut yhtäkään kiinni. Hän ei myöskään ole koskaan lakannut yrittämästä, ja vietti huomattavan osan yhdestä matkasta nenä ikkunaa vasten painettuna, juonia hautoen.",
+    "exhibitBCaption": "TODISTE B — ASETTUNUT MUKAVASTI MATKAAN",
+    "exhibitCCaption": "TODISTE C — LATTIATASON TARKASTUS KÄYNNISSÄ",
+    "exhibitDCaption": "TODISTE D — MAASEUTU, OHITTAA VAUHDILLA",
+    "exhibitECaption": "TODISTE E — NENÄ LASIA VASTEN, JOSSAIN ASEMIEN VÄLISSÄ",
+    "exhibitFCaption": "TODISTE F — MAIHINNOUSU RANNIKOLLA",
+    "stamp": "MÄÄRÄNPÄÄ: MISSÄ TAHANSA ON LOKKEJA"
+  },
+  "blog": {
+    "title": "TAPAUSPÄIVÄKIRJA",
+    "subtitle": "24 kuukausittaista merkintää — kaksi vuotta jatkuvaa valvontaa, tapaus 001-CR pysyy avoimena"
+  },
+  "blogPosts": [
+    {
+      "date": "JUL 2024",
+      "case": "CASE LOG 001",
+      "title": "PÄIVÄ, JOLLOIN IHMINEN LÖYDETTIIN",
+      "body": "Kohdattiin kadulla, ilman hihnaa, ilman suunnitelmaa, ilman näkyvää omistajaa. Kohde haisteli häntä kahdesti, istuutui hänen eteensä ja kieltäytyi liikkumasta ennen kuin järjestelyistä oli sovittu. Järjestelyistä sovittiin. Kohde on valvonut häntä siitä lähtien.",
+      "image": "assets/images/blog-cheek-to-cheek.jpg"
+    },
+    {
+      "date": "AUG 2024",
+      "case": "CASE LOG 002",
+      "title": "ENSIMMÄISEN YÖN VÄLIKOHTAUS",
+      "body": "Yksi kenkä saapui tiloihin. Yksi kenkä poistui tunnistettavassa kunnossa. Tutkinta toisesta kengästä jatkuu.",
+      "image": "assets/images/blog-shoe-inspection.jpg"
+    },
+    {
+      "date": "SEP 2024",
+      "case": "CASE LOG 003",
+      "title": "TOISTUVA VERHOTARKKAILU",
+      "body": "Kohde on ottanut kiinteän aseman sohvan selkänojalla, verho vedettynä syrjään yhdellä tassulla, tarkkaillen katua luvattomien jalankulkijoiden, pyöräilijöiden ja satunnaisten kyyhkysten varalta. Vuoromalli: lähes jatkuva.",
+      "image": "assets/images/blog-couch-lookout.jpg"
+    },
+    {
+      "date": "OCT 2024",
+      "case": "CASE LOG 004",
+      "title": "LUVATON PÄÄSY KEITTIÖÖN",
+      "body": "Kohde havaittiin seisomassa täysin keittiön sisällä, vaikka kutsua ei ollut koskaan esitetty. Kiistää tuntevansa sanan \"ulos\".",
+      "image": "assets/images/blog-shop-entry.jpg"
+    },
+    {
+      "date": "NOV 2024",
+      "case": "CASE LOG 005",
+      "title": "SUKKAVARKAUSVERKOSTO PALJASTETTU",
+      "body": "Seitsemän paritonta sukkaa löydetty sängyn alta. Kohde paikalla tapahtumapaikalla, näkyvästi piittaamaton todisteista.",
+      "image": "assets/images/blog-shoulder-selfie.jpg"
+    },
+    {
+      "date": "DEC 2024",
+      "case": "CASE LOG 006",
+      "title": "JOULUAJAN HÄIRIÖ",
+      "body": "Yksi joulukoriste alas. Kuusi pysyy pystyssä, toistaiseksi. Kohde väittää koristeen \"aloittaneen ensin\".",
+      "image": "assets/images/blog-bee-costume.jpg"
+    },
+    {
+      "date": "JAN 2025",
+      "case": "CASE LOG 007",
+      "title": "UUDENVUODENLUPAUS RIKOTTU",
+      "body": "Omistaja päätti valvoa sohvakieltoa tiukasti. Lupaus kesti neljä tuntia. Kohde on palannut täyteen sohvahallintaan.",
+      "image": "assets/images/blog-couch-cuddle-selfie.jpg"
+    },
+    {
+      "date": "FEB 2025",
+      "case": "CASE LOG 008",
+      "title": "EPÄILTY PIKETTEN ENSIHAVAINTO",
+      "body": "Alueella havaittiin kissa nimeltä Pikette. Molemmat osapuolet raivostuivat välittömästi ja molemminpuolisesti. Syy tuntematon, siitä lähtien vakiintunut perinne.",
+      "image": "assets/images/pikette-windowsill.jpg"
+    },
+    {
+      "date": "MAR 2025",
+      "case": "CASE LOG 009",
+      "title": "NEUVOTTELUYRITYS POSTINKANTAJAN KANSSA",
+      "body": "Kohde lähestyi postinkantajaa aikomus epäselvänä. Neuvottelut kariutuivat sekunneissa. Posti lopulta toimitettiin.",
+      "image": "assets/images/blog-mailman-standoff.jpg"
+    },
+    {
+      "date": "APR 2025",
+      "case": "CASE LOG 010",
+      "title": "PARVEKEVÄLIKOHTAUS",
+      "body": "Täydellinen raportti jätetty erikseen otsikon \"Yksi kyyhkynen, yksi parveke\" alle. Mainittu tässä täydellisyyden vuoksi."
+    },
+    {
+      "date": "MAY 2025",
+      "case": "CASE LOG 011",
+      "title": "KADONNEEN KAUKOSÄÄTIMEN TAPAUS",
+      "body": "Kaukosäädin nähtiin viimeksi kohteen läheisyydessä. Löydettiin kolme päivää myöhemmin lämpöpatterin alta, hammasjäljet yhteneväisiä aiempien rikkomusten kanssa.",
+      "image": "assets/images/blog-bed-nap.jpg"
+    },
+    {
+      "date": "JUN 2025",
+      "case": "CASE LOG 012",
+      "title": "PIKETTE PALAA, JÄNNITTEET ENNALLAAN",
+      "body": "Epäilty Piketten toinen vierailu. Molemmat osapuolet jatkoivat vihamielisyyksiä täsmälleen siitä, mihin ne olivat jääneet, ikään kuin aikaa ei olisi kulunut lainkaan.",
+      "image": "assets/images/pikette-dog-couch.jpg"
+    },
+    {
+      "date": "JUL 2025",
+      "case": "CASE LOG 013",
+      "title": "VUOSI SÄILÖSSÄ, EI HAVAITTAVAA PARANNUSTA",
+      "body": "Kaksitoista kuukautta kestänyt tarkastelu valmis. Kohde ei ole tehnyt mitattavaa edistystä kohti hyvää käytöstä. On kuitenkin muuttunut mahdottomaksi kuvitella elämää ilman häntä.",
+      "image": "assets/images/blog-garden-wall.jpg"
+    },
+    {
+      "date": "AUG 2025",
+      "case": "CASE LOG 014",
+      "title": "KOHDE LÄPIKÄY KIRURGISEN TOIMENPITEEN",
+      "body": "Kohde kastroitiin tässä kuussa. Toimenpide onnistui, arvokkuus ei selvinnyt häpeäkauluksesta hengissä. Käytös täysin muuttumaton.",
+      "image": "assets/images/blog-park-walk.jpg"
+    },
+    {
+      "date": "SEP 2025",
+      "case": "CASE LOG 015",
+      "title": "TOIPUMISAIKA, MIELIALA ENNALLAAN",
+      "body": "Kaulus poistettu. Kohde juhli palaamalla välittömästi kaikkiin aiemmin kiellettyihin toimiin täydellä teholla.",
+      "image": "assets/images/blog-full-capacity.jpg"
+    },
+    {
+      "date": "OCT 2025",
+      "case": "CASE LOG 016",
+      "title": "YHTEENOTTO PIKETTEN KANSSA, KIERROS KOLME",
+      "body": "Leikkaus ei ole viilentänyt vihamielisyyksiä epäilty Piketten kanssa. Pikemminkin kohde vaikuttaa kantavan kaunaa puhtaasta periaatteesta.",
+      "image": "assets/images/pikette-couch-visit.jpg"
+    },
+    {
+      "date": "NOV 2025",
+      "case": "CASE LOG 017",
+      "title": "PEITTOJEN KERÄÄMISSYYTE",
+      "body": "Kaikki kodin pehmeät tekstiilit on siirretty yhteen kasaan, joka on tällä hetkellä kohteen yksinomaisessa hallinnassa.",
+      "image": "assets/images/blog-blanket-hoard.jpg"
+    },
+    {
+      "date": "DEC 2025",
+      "case": "CASE LOG 018",
+      "title": "JOULUAJAN HÄIRIÖ, KIERROS KAKSI",
+      "body": "Toinen joulukoriste alas. Kohde kiistää käytösmallin ja vetoaa puolustuksenaan \"sattumaan\"."
+    },
+    {
+      "date": "JAN 2026",
+      "case": "CASE LOG 019",
+      "title": "PAKOYRITYS ESTETTY OVELLA",
+      "body": "Kohde yritti karata avoimesta ulko-ovesta. Otettiin uudelleen kiinni kynnyksellä. Ei vammoja, lievää nolostumista molemmin puolin.",
+      "image": "assets/images/blog-front-door-recapture.jpg"
+    },
+    {
+      "date": "FEB 2026",
+      "case": "CASE LOG 020",
+      "title": "EPÄILTY PIKETTE, VALVONTAKUVA ARKISTOSSA",
+      "body": "Epäilty Pikette kuvattiin läheltä vierailun aikana. Molemmat osapuolet pysyvät, syystä joka on epäselvä, kykenemättöminä rauhanomaiseen rinnakkaineloon.",
+      "image": "assets/images/pikette-closeup.jpg"
+    },
+    {
+      "date": "MAR 2026",
+      "case": "CASE LOG 021",
+      "title": "KUULUSTELU: KADONNUT VOILEIPÄ",
+      "body": "Yhtä voileipää, joka jätettiin valvomatta yhdeksäksikymmeneksi sekunniksi, ei ole löydetty. Kohde oli huoneessa. Kohde ei vahvista eikä kiellä.",
+      "image": "assets/images/blog-cafe-standoff.jpg"
+    },
+    {
+      "date": "APR 2026",
+      "case": "CASE LOG 022",
+      "title": "NAAPURI JÄTTÄÄ VIRALLISEN VALITUKSEN",
+      "body": "Valitus vastaanotettu koskien liiallista haukkumista klo 6:15. Kohde on saanut virallisen varoituksen. Kohde ei ole muuttanut aikataulua.",
+      "image": "assets/images/blog-frosty-morning.jpg"
+    },
+    {
+      "date": "MAY 2026",
+      "case": "CASE LOG 023",
+      "title": "TÄYDELLINEN ELÄMÄN HALTUUNOTTO, ARVIOINTI VALMIS",
+      "body": "Kohde hallitsee nyt sänkyä, aikataulua, välipaloja ja useimpia tärkeitä päätöksiä. Omistajan itsenäisyysstatus: peruutettu.",
+      "image": "assets/images/blog-waffle-watch.jpg"
+    },
+    {
+      "date": "JUN 2026",
+      "case": "CASE LOG 024",
+      "title": "KAHDEN VUODEN TILANNEKATSAUS",
+      "body": "Kaksi vuotta vastaanotosta. Ei parannusta. Ei myöskään katumusta. Jopa epäilty Pikette löydettiin harvinaisena rauhallisena iltana jakamassa sohvaa. Tapaus pysyy avoimena.",
+      "image": "assets/images/blog-belly-flop.jpg"
+    }
+  ],
+  "shop": {
+    "title": "KAUPPA",
+    "subtitle": "Todistevarasto — vain näytteillä, mikään täällä ei ole myynnissä",
+    "notForSale": "EI MYYNNISSÄ",
+    "previewLabel": "NÄYTE / ESIKATSELU",
+    "playLabel": "TOISTA ESIKATSELU",
+    "featuredKicker": "NYT ESILLÄ — ALBUMIN ESIKATSELU",
+    "itemKicker": "TODISTEVARASTO — TUOTETIEDOT",
+    "disclaimerTitle": "MIKÄÄN TÄSSÄ EI OLE TOTTA",
+    "disclaimerBody": "Tämä tuote on tälle sivustolle tehty vitsikäs konseptitaideteos. Sitä ei ole koskaan valmistettu, se ei ole myynnissä eikä sitä voi tilata missään koossa, värissä tai määrässä — ei mistään, ei keneltäkään. Kaikki yhtäläisyydet oikeaan tuotteeseen ovat sattumaa ja täysin tahattomia.",
+    "backToShop": "← TAKAISIN KAUPPAAN"
+  },
+  "shopItems": [
+    {
+      "name": "Brux Gang — \"Thug Life, No Rules\" (Mikstiippi)",
+      "tag": "Sisältövaroitus. Kansitaide ja video erään Spooky-jonkun käsialaa.",
+      "price": "$14",
+      "image": "assets/images/shop-brux-gang.jpg",
+      "videoId": "7l6RhWyPk4s"
+    },
+    {
+      "name": "ETSINTÄKUULUTETTU-paita",
+      "tag": "Puuvillaa, unisex, syyllinen assosiaation perusteella",
+      "price": "$32",
+      "image": "assets/images/shop-wanted-tee.png",
+      "slug": "wanted-tee",
+      "detail": [
+        "Painettu keskelle edessä: Le Criminelin studiokuva, joka tuijottaa kameraa sillä tasaisella, piittaamattomalla ilmeellä, joka on ominainen uusintarikolliselle, joka ei ole koskaan pohtinut omaa syyttömyyttään. Hänen takanaan oleva pituusasteikko on koristeellinen — mitään virallista mittausta ei koskaan suoritettu, koska kohde kieltäytyi seisomasta paikallaan kuvausta varten.",
+        "Tyylihuomioita pöytäkirjaa varten: raskas musta puuvilla, kulahtanut ETSINTÄKUULUTETTU-teksti ja istuvuus, jota kuvaa parhaiten \"todistevaraston tyylikkyys\". Saatavilla täsmälleen nollassa koossa, koska sitä on saatavilla nolla kappaletta — katso alta.",
+        "Ollaksemme täysin selviä: tätä paitaa ei ole olemassa. Sitä ei voi ostaa, tilata, jälkitilata tai pyytää eri koossa. Se on tälle sivuston vitsille tuotettu konseptitaideteos eikä mitään muuta — Le Criminel ei ole suositellut mitään oheistuotteita, koska hän on koira."
+      ]
+    },
+    {
+      "name": "\"Ihan Ok Rikollinen\" -muki",
+      "tag": "Keramiikkaa, sisältää kahvia ja kaunaa",
+      "price": "$18",
+      "image": "assets/images/shop-okayest-mug.png",
+      "slug": "okayest-mug",
+      "detail": [
+        "Kivitavaramuki, jossa on osaston vähiten innostunut kunniamaininta: \"Ihan Ok Rikollinen\", leimattuna pyöreään sinettiin epäillyn pienen, vaikuttumattoman muotokuvan alle. Myönnetty ei erinomaisuudesta vaan johdonmukaisuudesta — samat rikkomukset, sama katumuksen puute, aamu toisensa jälkeen.",
+        "Vetää täyden mukillisen kahvia, tai etiketin mukaan vastaavan määrän kaunaa. Astianpesukoneenkestävyyttä ei koskaan testattu, koska mukia ei ole olemassa pestäväksi, omistettavaksi tai millään täytettäväksi.",
+        "Ollaksemme täysin selviä: tätä mukia ei ole olemassa. Sitä ei voi ostaa, tilata, jälkitilata tai pyytää eri lasitteessa. Se on tälle sivuston vitsille tuotettu konseptitaideteos eikä mitään muuta."
+      ]
+    },
+    {
+      "name": "Parvekevälikohtaus-juliste",
+      "tag": "Muistojuliste, kehys myydään erikseen",
+      "price": "$45",
+      "image": "assets/images/shop-balcony-poster.png",
+      "slug": "balcony-poster",
+      "detail": [
+        "Muistojuliste, joka merkitsee parvekkeen kaikkien aikojen huonointa iltapäivää: Le Criminel kesken kurkotuksen kaiteen yli, tähyten kyyhkystä, joka on jo huomannut vaaran ja on yhden siiveniskun päässä pakenemisesta. Hänen takanaan olevat kattojen siluetit ovat naapuruston, kuvattuina tarkoituksella vanhahtavassa, puupiirrosta muistuttavassa tyylissä, koska varsinaisesta tapahtumasta ei syntynyt käyttökelpoisia valokuvia — ainoastaan silminnäkijöitä ja paljon meteliä.",
+        "\"THE BALCONY INCIDENT\" kulkee alareunassa suuraakkosin, ikään kuin hetki olisi ollut tarpeeksi merkittävä ansaitakseen kehystetyn julisteen. Luultavasti olikin. Katso koko tapahtumailmoitus versiota, jossa on vähemmän kuvitusta ja enemmän seurauksia.",
+        "Ollaksemme täysin selviä: tätä julistetta ei ole olemassa. Sitä ei voi ostaa, tulostaa, kehystää tai lähettää missään koossa. Se on tälle sivuston vitsille tuotettu konseptitaideteos eikä mitään muuta."
+      ]
+    },
+    {
+      "name": "Tapauskansio-tarrapakkaus",
+      "tag": "5 kappaleen setti, vinyyliä, säänkestävä",
+      "price": "$9",
+      "image": "assets/images/shop-sticker-pack.png",
+      "slug": "sticker-pack",
+      "detail": [
+        "Viisi vinyylitarraa poimittuna tapauskansion parhaista paloista: tunnistuskuva, kansiomerkintä \"001-CR\", tassunjälkiaiheinen osastosinetti, todisteeksi pelkistetty sohva ja kyyhkynen, joka istuu itsetyytyväisenä kaiteella, johon sillä ei ole minkäänlaista laillista oikeutta. Säänkestävä, teoriassa, koska se on kokonaan teoreettinen.",
+        "Suunniteltu kannettaviin tietokoneisiin, vesipulloihin tai LUOTTAMUKSELLINEN-merkinnällä varustetun kansion sisäpuolelle. Millään tästä ei ole merkitystä, sillä pakkausta ei koskaan valmistettu eikä sitä voida lähettää, lahjoittaa tai kuoria irti taustapaperistaan — koska sillä ei ole taustapaperia.",
+        "Ollaksemme täysin selviä: tätä tarrapakkausta ei ole olemassa. Sitä ei voi ostaa, tilata tai tulostaa missään määrässä. Se on tälle sivuston vitsille tuotettu konseptitaideteos eikä mitään muuta."
+      ]
+    }
+  ],
+  "footer": "© THE THIEFFRY CRIMINALS — TAPAUS PYSYY AVOINNA. KAIKKI OIKEUDET PIDÄTETÄÄN (VÄITETYSTI)."
+}

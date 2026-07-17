@@ -1,0 +1,384 @@
+{
+  "nav": {
+    "home": "AVALEHT",
+    "about": "MEIST",
+    "story": "KURJATEGIJA LUGU",
+    "stories": "TOIMIKUD",
+    "pigeon": "ÜKS TUVI, ÜKS RÕDU",
+    "couch": "DIIVAN",
+    "trainRide": "RONGISÕIT",
+    "blog": "BLOGI",
+    "shop": "POOD"
+  },
+  "home": {
+    "wanted": "TAGAOTSITAV",
+    "fileNo": "TOIMIK NR 001-CR",
+    "tagline": "Sawito ja Le Criminel — tagaotsitavad, üle kuulatud ja suuresti andeks antud",
+    "kicker": "— kohalik operatsioon, kaks kahtlusalust —",
+    "intro": "Üks mees, üks koer, üks ühine hoolimatus viisaka ühiskonna reeglite vastu. Sirvige allolevat toimikut — faktid räägivad enda eest.",
+    "promoKicker": "UUS TÕENDITE HOIDLAS",
+    "promoTitle": "BRUX GANG — „THUG LIFE, NO RULES\"",
+    "promoTag": "Mikstseip, mida keegi ei tellinud. Kaanekujunduse autoriks keegi Spooky-see-ja-teine.",
+    "promoCta": "VAATA POES",
+    "promoVideoLink": "Vaata eelvaadet"
+  },
+  "about": {
+    "title": "KAHTLUSALUSTEST",
+    "subtitle": "Toimik 001-CR — isikud tuvastatud allpool",
+    "sawitoName": "SAWITO",
+    "sawitoAlias": "ALIAS: „ÜLEMISE KORRUSE VANAMEES\"",
+    "occupation": "AMET",
+    "occupationVal": "Peamine kaasaaitaja",
+    "marksLabel": "TUNNUSED",
+    "sawitoMarks": "Hõbedane habe, alaline sigaret, aviaatorprillid nii toas kui õues",
+    "associateLabel": "KAASOSALINE",
+    "sawitoAssociate": "Le Criminel (lahutamatu, kahetsuseta)",
+    "statusLabel": "STAATUS",
+    "sawitoStatus": "Vabaduses. Arvatavasti relvastatud maiustega.",
+    "dogName": "LE CRIMINEL",
+    "dogAlias": "ALIAS: „RÕDUBANDIIT\"",
+    "breedLabel": "TÕUG",
+    "breedVal": "Väidetavalt Bostoni terjer",
+    "dogMarks": "Must-valged laigud, taktikaline rihm, ükskõikne ilme",
+    "dogAssociate": "Sawito (juhendaja, teatud mõttes)",
+    "dogStatus": "Tagaotsitav seoses rõdujuhtumiga. Vt toimikut.",
+    "rapSheetTitle": "KARISTUSREGISTER",
+    "confidential": "KONFIDENTSIAALNE"
+  },
+  "rapSheet": [
+    { "case": "CASE 001", "charge": "Korduv teeandmiskohustuse rikkumine ühiskasutuses jalgteedel." },
+    { "case": "CASE 002", "charge": "Loata entusiasmi omamine postiljoni läheduses." },
+    { "case": "CASE 003", "charge": "Vandenõu tõendite mattmiseks (üks sokk, tagaaed, lahendamata)." },
+    { "case": "CASE 004", "charge": "Avaliku rahu rikkumine kell 6:15 hommikul, igapäevaselt, lõppemise märke pole." },
+    { "case": "CASE 005", "charge": "Rünnak surmava sabaliputusega." }
+  ],
+  "story": {
+    "kicker": "Toimik 001-CR — taust",
+    "title": "KURJATEGIJA LUGU",
+    "exhibit": "TÕEND A — ISIK VABADUSES",
+    "p1": "Igal nimel on oma algupära ja sellel on ka paberjälg. Koer ei sündinud „Le Criminelina\". Ta sündis, niipalju kui keegi suudab tõestada, täiesti tavalise kutsikana, ilma igasuguse karistusregistrita.",
+    "p2": "Nimi tuli hiljem, teenituna üks väike üleastumine korraga: siin varastatud sokk, seal näritud pult, diivanipadi, mis ei jäänud suve üle ellu. Ükski üksik tegu ei väärinud toimikut. Koos aga väärisid need hüüdnime.",
+    "p3": "Just Sawito ütles seda esimesena, poolenisti endamisi pomisedes, vaadates koera kuriteopaigalt eemale trippimas rahuga, mis on omane kellelegi, keda pole kunagi vahele jäänud: „Ce chien, c'est un criminel.\" Nimi jäi külge nii, nagu hüüdnimed ikka jäävad — mitte valituna, vaid lihtsalt tõena.",
+    "p4": "Talle pole kunagi ametlikult süüdistust esitatud. Ta pole kunagi kahetsust näidanud. Juurdlus, nagu see praegu on, jääb avatuks.",
+    "adventuresKicker": "VALITUD TOIMIKUD",
+    "wantMoreTitle": "TAHAD TEADA ROHKEM?",
+    "wantMoreBody": "Täielikku juhtumipäevikut uuendatakse igakuiselt, iga üleastumine on kirja pandud.",
+    "wantMoreCta": "LOE JUHTUMIPÄEVIKUT",
+    "footer": "TOIMIKUSSE KANTUD KUI: KOHALIKUD LEGENDID, KINNITAMATA"
+  },
+  "adventures": [
+    {
+      "title": "ÜKS TUVI, ÜKS RÕDU",
+      "teaser": "Tuvi, rõdu ja üks väga halb otsus, mis tehti kiiruga.",
+      "link": "/pigeon",
+      "image": "assets/images/dog-close-lap.jpg"
+    },
+    {
+      "title": "DIIVAN",
+      "teaser": "Aeglane, tahtlik lammutustöö. Nurk ei jäänud ellu.",
+      "link": "/couch",
+      "image": "assets/images/couch-crime-scene.jpg"
+    },
+    {
+      "title": "RONGISÕIT",
+      "teaser": "Kumbki kahtlusalune ei tohi seaduslikult autot juhtida, seega sõidavad nad rongiga.",
+      "link": "/train-ride",
+      "image": "assets/images/train-window-view.jpg"
+    }
+  ],
+  "pigeon": {
+    "kicker": "Intsidendi aruanne",
+    "title": "ÜKS TUVI, ÜKS RÕDU",
+    "locationLabel": "ASUKOHT",
+    "locationVal": "Teise korruse rõdu, aadress avaldamata",
+    "suspectLabel": "KAHTLUSALUNE",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TUNNISTAJA",
+    "witnessVal": "Sawito (kohal, ei jõudnud õigel ajal sekkuda)",
+    "motiveLabel": "MOTIIV",
+    "motiveVal": "Üks (1) tuvi, kes seisis seal, kus ei oleks tohtinud",
+    "p1": "Kahtlusalune märkas tuvi vahetust lähedusest ja tegi ilma kellegagi nõu pidamata otsuse. Ta lahkus rõdult kiirustades ja ilma plaanita. Raskusjõud oli mängus. Tuvi ei jäänud kätte. Koeraga oli kõik korras.",
+    "p2": "Sawitoga polnud kõik korras. Sellele järgnenud paanikas kaotati mõned juuksed — tema enda, mitte koera omad — ja neid pole seni leitud.",
+    "aftermathCaption": "TÕEND B — ISIK TAASTUMAS, TAGASI KINDLAL PINNAL, NÄHTAVALT MURETU KÕIGE SELLE SUHTES",
+    "stamp": "JUHTUM SULETUD — SÜÜDISTUST EI ESITATUD"
+  },
+  "couch": {
+    "kicker": "Varakahju aruanne",
+    "title": "DIIVAN",
+    "locationLabel": "ASUKOHT",
+    "locationVal": "Elutuba, kagunurk, endine polstriga",
+    "suspectLabel": "KAHTLUSALUNE",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TUNNISTAJA",
+    "witnessVal": "Sawito (kohal kogu aeg, aruannet ei esitanud)",
+    "motiveLabel": "MOTIIV",
+    "motiveVal": "Üks (1) lahtine niit, tunnistatud lubamatuks",
+    "p1": "See sai alguse, nagu need lood ikka, ühest ainsast niidist. Isik leidis selle üles, tõmbas seda ja avastas — sellise rahuloluga, mida uurijad saavad kirjeldada vaid professionaalsena — et niiti järgnes veel. Edenemine oli aeglane, sihilik ja täiesti dokumenteerimata, kuni sekkumiseks oli juba liiga hilja.",
+    "p2": "Selleks ajaks, kui kahju märgati, oli nurgast järel vaid paljas raam ja lahtine polster, kusjuures tugikaabel oli paljastatud ja ilmselgelt põhjalikult üle vaadatud. Isik leiti sündmuskohalt hetk hiljem, üks silm kaamera välgust särav, lähedal hoides nöörist mänguasja, otsekui vihjates, et ta lihtsalt juhtus mööda kõndima.",
+    "exhibitBCaption": "TÕEND B — LÄHIVÕTE KAHJUST",
+    "exhibitCCaption": "TÕEND C — KAHTLUSALUNE LÄHEDAL, ILME LOETAMATU",
+    "stamp": "DIIVAN TUNNISTATUD TÄIELIKULT HÄVINUKS — ISIK MURETU"
+  },
+  "trainRide": {
+    "kicker": "Reisipäevik",
+    "title": "RONGISÕIT",
+    "locationLabel": "ASUKOHT",
+    "locationVal": "Piirkondlik raudtee, sihtkohad: maapiirkond ja rannik",
+    "suspectLabel": "KAHTLUSALUNE",
+    "suspectVal": "Le Criminel (sagedane reisija)",
+    "witnessLabel": "TUNNISTAJA",
+    "witnessVal": "Sawito (tehniliselt pime, ostis piletid siiski)",
+    "motiveLabel": "MOTIIV",
+    "motiveVal": "Peamiselt värske õhk. Täpsemalt kajakad.",
+    "p1": "Kummalgi kahtlusalusel pole lubatud rooli istuda, ja seda täiesti erinevatel, kuid võrdselt diskvalifitseerivatel põhjustel: Sawito on omal ütlusel tehniliselt pime ning Le Criminelile pole väljastatud isegi jalgratta juhiluba. Rong ei olnud elustiilivalik, vaid ainus järelejäänud võimalus, ning see on osutunud paremaks, kui keegi oskas oodata.",
+    "p2": "Kaks sihtkohta on kirja pandud: maapiirkond ja rannik. Mõlemad said hea vastuvõtu osaliseks. Rannik on aga selge lemmik, tänu kajakatele, keda isik peab pigem isiklikuks väljakutseks kui kohalikuks loomastikuks. Ta pole kunagi ühtegi kätte saanud. Ta pole ka kunagi proovimist lõpetanud ning veetis olulise osa ühest reisist nina vastu akent surudes, plaane sepitsedes.",
+    "exhibitBCaption": "TÕEND B — SÕIDUKS SISSE SEADNUD",
+    "exhibitCCaption": "TÕEND C — PÕRANDATASANDIL KONTROLLI LÄBI VIIMAS",
+    "exhibitDCaption": "TÕEND D — MAASTIK, KIIRUSTADES MÖÖDUMAS",
+    "exhibitECaption": "TÕEND E — NINA VASTU KLAASI, KUSKIL JAAMADE VAHEL",
+    "exhibitFCaption": "TÕEND F — MAABUMINE RANNIKUL",
+    "stamp": "SIHTKOHT: KUS IIAL ON KAJAKAID"
+  },
+  "blog": {
+    "title": "JUHTUMIPÄEVIK",
+    "subtitle": "24 igakuist kannet — kaks aastat pidevat jälgimist, toimik 001-CR jääb avatuks"
+  },
+  "blogPosts": [
+    {
+      "date": "JUL 2024",
+      "case": "CASE LOG 001",
+      "title": "PÄEV, MIL INIMENE LEITI",
+      "body": "Kohatud tänaval, ilma rihmata, ilma plaanita, nähtava omanikuta. Isik nuusutas teda kaks korda, istus tema ette maha ja keeldus liikumast, kuni kokkulepped olid sõlmitud. Kokkulepped sõlmiti. Isik on teda sellest ajast saadik valvanud.",
+      "image": "assets/images/blog-cheek-to-cheek.jpg"
+    },
+    {
+      "date": "AUG 2024",
+      "case": "CASE LOG 002",
+      "title": "ESIMESE ÖÖ INTSIDENT",
+      "body": "Üks king sisenes ruumidesse. Üks king lahkus äratuntavas seisukorras. Teise kinga osas käib juurdlus.",
+      "image": "assets/images/blog-shoe-inspection.jpg"
+    },
+    {
+      "date": "SEP 2024",
+      "case": "CASE LOG 003",
+      "title": "HARJUMUSPÄRANE KARDINAVALVE",
+      "body": "Isik on võtnud sisse kindla positsiooni diivani seljatoel, tõmmates kardina käpaga kõrvale, et jälgida tänavat loata jalakäijate, jalgratturite ja aeg-ajalt esinevate tuvide suhtes. Vahetuste graafik: peaaegu pidev.",
+      "image": "assets/images/blog-couch-lookout.jpg"
+    },
+    {
+      "date": "OCT 2024",
+      "case": "CASE LOG 004",
+      "title": "LOATA SISENEMINE KÖÖKI",
+      "body": "Isikut nähti seismas täies ulatuses köögis, kuigi kutset polnud kunagi esitatud. Eitab teadmist sõnast „välja\".",
+      "image": "assets/images/blog-shop-entry.jpg"
+    },
+    {
+      "date": "NOV 2024",
+      "case": "CASE LOG 005",
+      "title": "SOKIVARGUSTE VÕRGUSTIK PALJASTATUD",
+      "body": "Voodi alt leiti seitse paaritut sokki. Isik viibis sündmuskohal, nähtavalt tõenditest häirimatuna.",
+      "image": "assets/images/blog-shoulder-selfie.jpg"
+    },
+    {
+      "date": "DEC 2024",
+      "case": "CASE LOG 006",
+      "title": "PÜHADEAEGNE RAHURIKKUMINE",
+      "body": "Üks ehe langes. Puu püsib esialgu püsti. Isik väidab, et ehe „liikus enne\".",
+      "image": "assets/images/blog-bee-costume.jpg"
+    },
+    {
+      "date": "JAN 2025",
+      "case": "CASE LOG 007",
+      "title": "UUE AASTA LUBADUS RIKUTUD",
+      "body": "Omanik otsustas jõustada diivanikeelu reegli. Otsus kestis neli tundi. Isik on taastanud täieliku kasutusõiguse.",
+      "image": "assets/images/blog-couch-cuddle-selfie.jpg"
+    },
+    {
+      "date": "FEB 2025",
+      "case": "CASE LOG 008",
+      "title": "ESIMENE KOHTUMINE KAHTLUSALUSE PIKETTEGA",
+      "body": "Kass nimega Pikette märgati kinnisvaral. Mõlemad pooled muutusid koheselt ja vastastikku raevukaks. Põhjus teadmata, sellest ajast on kujunenud traditsiooniks.",
+      "image": "assets/images/pikette-windowsill.jpg"
+    },
+    {
+      "date": "MAR 2025",
+      "case": "CASE LOG 009",
+      "title": "KATSE PIDADA LÄBIRÄÄKIMISI POSTILJONIGA",
+      "body": "Isik lähenes postiljonile ebaselgel eesmärgil. Läbirääkimised katkesid mõne sekundiga. Post lõpuks siiski toimetati kohale.",
+      "image": "assets/images/blog-mailman-standoff.jpg"
+    },
+    {
+      "date": "APR 2025",
+      "case": "CASE LOG 010",
+      "title": "RÕDUJUHTUM",
+      "body": "Täielik aruanne on esitatud eraldi pealkirja „Üks tuvi, üks rõdu\" all. Siin mainitud toimiku täielikkuse huvides."
+    },
+    {
+      "date": "MAY 2025",
+      "case": "CASE LOG 011",
+      "title": "KADUNUD PULDI JUHTUM",
+      "body": "Pulti nähti viimati isiku läheduses. Leiti kolm päeva hiljem radiaatori alt, hambajäljed vastavuses varasemate üleastumistega.",
+      "image": "assets/images/blog-bed-nap.jpg"
+    },
+    {
+      "date": "JUN 2025",
+      "case": "CASE LOG 012",
+      "title": "PIKETTE NAASEB, PINGED MUUTUMATUD",
+      "body": "Kahtlusaluse Pikette teine visiit. Mõlemad pooled jätkasid vaenutegevust täpselt sealt, kus pooleli jäi, otsekui poleks aega mööda läinud.",
+      "image": "assets/images/pikette-dog-couch.jpg"
+    },
+    {
+      "date": "JUL 2025",
+      "case": "CASE LOG 013",
+      "title": "AASTA HOOLDUSEL, PARANEMIST EI TÄHELDATUD",
+      "body": "Kaheteistkümnekuuline ülevaatus lõpetatud. Isik pole teinud mõõdetavat edu hea käitumise suunas. Küll aga on ta muutunud selliseks, kelleta on võimatu elu ette kujutada.",
+      "image": "assets/images/blog-garden-wall.jpg"
+    },
+    {
+      "date": "AUG 2025",
+      "case": "CASE LOG 014",
+      "title": "ISIK LÄBIS KIRURGILISE SEKKUMISE",
+      "body": "Isik kastreeriti sel kuul. Protseduur õnnestus, väärikus ei jäänud häbikrae üle ellu. Käitumine jäi täiesti mõjutamata.",
+      "image": "assets/images/blog-park-walk.jpg"
+    },
+    {
+      "date": "SEP 2025",
+      "case": "CASE LOG 015",
+      "title": "TAASTUSPERIOOD, MEELEOLU MUUTUMATU",
+      "body": "Krae eemaldati. Isik tähistas seda, jätkates viivitamatult kõiki varem keelatud tegevusi täies mahus.",
+      "image": "assets/images/blog-full-capacity.jpg"
+    },
+    {
+      "date": "OCT 2025",
+      "case": "CASE LOG 016",
+      "title": "KOKKUPÕRGE PIKETTEGA, KOLMAS VOOR",
+      "body": "Operatsioon pole vaenutegevust kahtlusaluse Pikettega jahutanud. Pigem tundub, et isik hoiab viha põhimõtte pärast.",
+      "image": "assets/images/pikette-couch-visit.jpg"
+    },
+    {
+      "date": "NOV 2025",
+      "case": "CASE LOG 017",
+      "title": "SÜÜDISTUS TEKIKOGUMISES",
+      "body": "Kõik majapidamise pehmed tekstiilid on ümber paigutatud ühte hunnikusse, mis on praegu isiku ainuvalduses.",
+      "image": "assets/images/blog-blanket-hoard.jpg"
+    },
+    {
+      "date": "DEC 2025",
+      "case": "CASE LOG 018",
+      "title": "PÜHADEAEGNE RAHURIKKUMINE, TEINE VOOR",
+      "body": "Teine ehe langes. Isik eitab käitumismustrit, viidates kaitseks „juhusele\"."
+    },
+    {
+      "date": "JAN 2026",
+      "case": "CASE LOG 019",
+      "title": "PÕGENEMISKATSE NURJATUD UKSEL",
+      "body": "Isik tegi läbimurdekatse avatud esiukse suunas. Tabati uuesti kinni esiuksetrepil. Vigastusi ei esinenud, kerge piinlikkus mõlemal poolel.",
+      "image": "assets/images/blog-front-door-recapture.jpg"
+    },
+    {
+      "date": "FEB 2026",
+      "case": "CASE LOG 020",
+      "title": "KAHTLUSALUNE PIKETTE, JÄLGIMISFOTO TOIMIKUS",
+      "body": "Kahtlusalune Pikette pildistati visiidi ajal vahetust lähedusest. Mõlemad pooled on jätkuvalt, teadmata põhjustel, võimetud rahumeelselt koos eksisteerima.",
+      "image": "assets/images/pikette-closeup.jpg"
+    },
+    {
+      "date": "MAR 2026",
+      "case": "CASE LOG 021",
+      "title": "ÜLEKUULAMINE SEOSES KADUNUD VÕILEIVAGA",
+      "body": "Üks võileib, järelevalveta üheksakümmend sekundit, pole leitud. Isik viibis ruumis. Isik ei kinnita ega lükka ümber.",
+      "image": "assets/images/blog-cafe-standoff.jpg"
+    },
+    {
+      "date": "APR 2026",
+      "case": "CASE LOG 022",
+      "title": "NAABER ESITAB AMETLIKU KAEBUSE",
+      "body": "Laekus kaebus seoses liigse haukumisega kell 6:15 hommikul. Isikut on ametlikult hoiatatud. Isik pole oma ajakava muutnud.",
+      "image": "assets/images/blog-frosty-morning.jpg"
+    },
+    {
+      "date": "MAY 2026",
+      "case": "CASE LOG 023",
+      "title": "TÄIELIK ELU ÜLEVÕTMINE, HINDAMINE LÕPETATUD",
+      "body": "Isik kontrollib nüüd voodit, ajakava, suupisteid ja enamikku olulisi otsuseid. Omaniku iseseisvuse staatus: tühistatud.",
+      "image": "assets/images/blog-waffle-watch.jpg"
+    },
+    {
+      "date": "JUN 2026",
+      "case": "CASE LOG 024",
+      "title": "KAHEAASTANE OLUKORRA ÜLEVAADE",
+      "body": "Kaks aastat vastuvõtust. Paranemist ei ole. Kahetsust samuti mitte. Isegi kahtlusalune Pikette leiti ühel harval vaiksel õhtul diivanit jagamas. Toimik jääb avatuks.",
+      "image": "assets/images/blog-belly-flop.jpg"
+    }
+  ],
+  "shop": {
+    "title": "POOD",
+    "subtitle": "Tõendite hoidla — ainult vaatamiseks, miski siin pole müügiks",
+    "notForSale": "POLE MÜÜGIL",
+    "previewLabel": "NÄIDIS / EELVAADE",
+    "playLabel": "MÄNGI EELVAADET",
+    "featuredKicker": "PRAEGU EKRAANIL — ALBUMI EELVAADE",
+    "itemKicker": "TÕENDITE HOIDLA — ESEME TOIMIK",
+    "disclaimerTitle": "MIDAGI SIIN POLE PÄRIS",
+    "disclaimerBody": "See ese on selle saidi jaoks loodud naljakas kontseptsioonikunst. Seda pole kunagi valmistatud, see pole müügil ning seda ei saa tellida üheski suuruses, värvis ega koguses — mitte kusagilt, mitte kelleltki. Igasugune sarnasus tegeliku tootega on juhuslik ja täiesti tahtmatu.",
+    "backToShop": "← TAGASI POODI"
+  },
+  "shopItems": [
+    {
+      "name": "Brux Gang — „Thug Life, No Rules\" (mikstseip)",
+      "tag": "Vanemliku hoolatuse hoiatus. Kaanekujunduse ja video autoriks keegi Spooky-see-ja-teine.",
+      "price": "$14",
+      "image": "assets/images/shop-brux-gang.jpg",
+      "videoId": "7l6RhWyPk4s"
+    },
+    {
+      "name": "TAGAOTSITAV T-särk",
+      "tag": "Puuvill, uniseks, süüdi seotuse tõttu",
+      "price": "$32",
+      "image": "assets/images/shop-wanted-tee.png",
+      "slug": "wanted-tee",
+      "detail": [
+        "Trükitud otse keskele: Le Crimineli stuudio kuriteofoto, kus ta vahib kaamerasse tasase, ükskõikse ilmega, mis on omane korduvkurjategijale, kes pole kordagi kaalunud oma süütust. Taustal olev pikkuseskaala on puhtalt dekoratiivne — ametlikku mõõtmist pole kunagi tehtud, kuna isik keeldus registreerimise ajal paigal seismast.",
+        "Stiilimärkused protokolli jaoks: raske must puuvill, kulunud kirjastiiliga „TAGAOTSITAV\", ja lõige, mida on kõige parem kirjeldada kui „tõendite ruumi šikk\". Saadaval täpselt null suuruses, kuna seda toodetakse null eksemplaris — vt allpool.",
+        "Selguse huvides: seda särki ei ole olemas. Seda ei saa osta, tellida, järeltellida ega paluda teises suuruses. See on kontseptsioonikunst, mis on loodud selle saidi nalja jaoks ja mitte midagi enamat — Le Criminel pole ühtegi kaupa heaks kiitnud, kuna ta on koer."
+      ]
+    },
+    {
+      "name": "„Üsna okei kurjategija\" kruus",
+      "tag": "Keraamiline, mahutab kohvi ja vimma",
+      "price": "$18",
+      "image": "assets/images/shop-okayest-mug.png",
+      "slug": "okayest-mug",
+      "detail": [
+        "Kivikeraamikast kruus, millel on osakonna kõige vähem entusiastlik tunnustus: „Üsna okei kurjategija\", tembeldatud ümmargusesse pitserisse väikese, mulje avaldamata jäänud kahtlusaluse portree all. Antud mitte tipptaseme, vaid järjekindluse eest — samad üleastumised, sama kahetsuse puudumine, hommik hommiku järel.",
+        "Mahutab täisportsu kohvi või, vastavalt sildile, samaväärse koguse vimma. Nõudepesumasina kindlust pole kunagi testitud, kuna kruusi pole olemas, et seda pesta, omada või millegagi täita.",
+        "Selguse huvides: seda kruusi ei ole olemas. Seda ei saa osta, tellida, järeltellida ega paluda teistsuguse glasuuriga. See on kontseptsioonikunst, mis on loodud selle saidi nalja jaoks ja mitte midagi enamat."
+      ]
+    },
+    {
+      "name": "Rõdujuhtumi plakat",
+      "tag": "Mälestustrükis, raam müüakse eraldi",
+      "price": "$45",
+      "image": "assets/images/shop-balcony-poster.png",
+      "slug": "balcony-poster",
+      "detail": [
+        "Mälestustrükis, mis jäädvustab rõdu kõige hullema pärastlõuna: Le Criminel, poolenisti käsipuu kohale kummardunud, silmitsedes tuvi, kes on juba ohtu tajunud ja on ühe tiivalöögi kaugusel kadumisest. Taustal olevad katused kuuluvad naabruskonnale ning on kujutatud tahtlikult vanaaegses, puulõikele lähedases stiilis, kuna tegelik intsident ei andnud kasutuskõlblikke fotosid — ainult tunnistajaid ja hulgaliselt lärmi.",
+        "„THE BALCONY INCIDENT\" jookseb alaosas suurtähtedes, otsekui oleks hetk piisavalt tähtis, et vääriks raamitud trükist. Tõenäoliselt oligi. Vaata täielikku intsidendiaruannet versiooni jaoks, kus on vähem illustratsioone ja rohkem tagajärgi.",
+        "Selguse huvides: seda plakatit ei ole olemas. Seda ei saa osta, printida, raamida ega saata üheski suuruses. See on kontseptsioonikunst, mis on loodud selle saidi nalja jaoks ja mitte midagi enamat."
+      ]
+    },
+    {
+      "name": "Toimiku kleebisepakk",
+      "tag": "Komplekt 5 tükki, vinüül, ilmastikukindel",
+      "price": "$9",
+      "image": "assets/images/shop-sticker-pack.png",
+      "slug": "sticker-pack",
+      "detail": [
+        "Viis vinüülkleebist toimiku suurimatest hittidest: kuriteofoto, toimikusilt kirjaga „001-CR\", käpajäljega osakonna pitser, diivan tõendiks taandatud kujul ning tuvi, kes istub eneseküllalt käsipuul, millele tal pole mingit seaduslikku õigust. Ilmastikukindel — teoreetiliselt, kuna kõik on täiesti teoreetiline.",
+        "Mõeldud sülearvutitele, veepudelitele või kausta siseküljele, millel on kiri KONFIDENTSIAALNE. Sellest kõigest pole tegelikult tähtsust, kuna pakki pole kunagi toodetud ning seda ei saa saata, kinkida ega selle aluslehelt lahti koorida — kuna sel pole aluslehte.",
+        "Selguse huvides: seda kleebisepakki ei ole olemas. Seda ei saa osta, tellida ega printida üheski koguses. See on kontseptsioonikunst, mis on loodud selle saidi nalja jaoks ja mitte midagi enamat."
+      ]
+    }
+  ],
+  "footer": "© THE THIEFFRY CRIMINALS — TOIMIK JÄÄB AVATUKS. KÕIK ÕIGUSED KAITSTUD (VÄIDETAVALT)."
+}
