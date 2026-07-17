@@ -1,0 +1,384 @@
+{
+  "nav": {
+    "home": "HOME",
+    "about": "O NAS",
+    "story": "HISTORIA PEWNEGO PRZESTĘPCY",
+    "stories": "AKTA SPRAWY",
+    "pigeon": "JEDEN GOŁĄB, JEDEN BALKON",
+    "couch": "KANAPA",
+    "trainRide": "PODRÓŻ POCIĄGIEM",
+    "blog": "BLOG",
+    "shop": "SKLEP"
+  },
+  "home": {
+    "wanted": "POSZUKIWANY",
+    "fileNo": "AKTA NR 001-CR",
+    "tagline": "Sawito i Le Criminel — poszukiwani, przesłuchani i w większości wybaczeni",
+    "kicker": "— lokalna operacja, dwóch podejrzanych —",
+    "intro": "Jeden mężczyzna, jeden pies, jedno wspólne lekceważenie zasad dobrego wychowania. Zapoznajcie się z aktami poniżej — dokumentacja mówi sama za siebie.",
+    "promoKicker": "NOWOŚĆ W MAGAZYNIE DOWODÓW",
+    "promoTitle": "BRUX GANG — „THUG LIFE, NO RULES”",
+    "promoTag": "Mixtape, o który nikt nie prosił. Okładka autorstwa niejakiego Spooky-jakiegośtam.",
+    "promoCta": "ZOBACZ W SKLEPIE",
+    "promoVideoLink": "Obejrzyj zapowiedź"
+  },
+  "about": {
+    "title": "O PODEJRZANYCH",
+    "subtitle": "Akta sprawy 001-CR — podejrzani zidentyfikowani poniżej",
+    "sawitoName": "SAWITO",
+    "sawitoAlias": "PSEUDONIM: „STARY Z GÓRY”",
+    "occupation": "ZAWÓD",
+    "occupationVal": "Główny Poplecznik",
+    "marksLabel": "ZNAKI SZCZEGÓLNE",
+    "sawitoMarks": "Siwa broda, papieros na stałe w ustach, okulary aviator noszone w domu i na zewnątrz",
+    "associateLabel": "WSPÓLNIK",
+    "sawitoAssociate": "Le Criminel (nierozłączny, bez cienia skruchy)",
+    "statusLabel": "STATUS",
+    "sawitoStatus": "Na wolności. Podejrzewany o posiadanie przysmaków dla psa.",
+    "dogName": "LE CRIMINEL",
+    "dogAlias": "PSEUDONIM: „BANDYTA Z BALKONU”",
+    "breedLabel": "RASA",
+    "breedVal": "Bostonterier, podobno",
+    "dogMarks": "Czarno-białe łaty, taktyczna obroża, wyraz twarzy pełen obojętności",
+    "dogAssociate": "Sawito (opiekun, w pewnym sensie)",
+    "dogStatus": "Poszukiwany w związku z incydentem na balkonie. Zobacz akta.",
+    "rapSheetTitle": "KARTOTEKA",
+    "confidential": "POUFNE"
+  },
+  "rapSheet": [
+    { "case": "CASE 001", "charge": "Wielokrotne nieustępowanie pierwszeństwa na wspólnych ścieżkach spacerowych." },
+    { "case": "CASE 002", "charge": "Posiadanie nieautoryzowanego entuzjazmu w pobliżu listonosza." },
+    { "case": "CASE 003", "charge": "Zmowa w celu ukrycia dowodów (jedna skarpetka, ogród, sprawa nierozwiązana)." },
+    { "case": "CASE 004", "charge": "Zakłócanie spokoju publicznego, godz. 6:15, codziennie, bez oznak ustąpienia." },
+    { "case": "CASE 005", "charge": "Napaść z użyciem śmiercionośnego machania ogonem." }
+  ],
+  "story": {
+    "kicker": "Akta sprawy 001-CR — tło sprawy",
+    "title": "HISTORIA PEWNEGO PRZESTĘPCY",
+    "exhibit": "DOWÓD A — PODEJRZANY NA WOLNOŚCI",
+    "p1": "Każde imię ma swoje pochodzenie, a to ma udokumentowaną historię. Pies nie urodził się jako „Le Criminel”. Przyszedł na świat, o ile ktokolwiek zdołał to udowodnić, jako zupełnie zwyczajny szczeniak bez żadnej kartoteki kryminalnej.",
+    "p2": "Imię pojawiło się później, zdobywane po jednym drobnym wykroczeniu naraz: tu skradziona skarpetka, tam przegryziony pilot, poduszka z kanapy, która nie przetrwała lata. Żaden pojedynczy czyn nie zasługiwał na osobne akta. Razem zasłużyły na przydomek.",
+    "p3": "To Sawito powiedział to pierwszy, półgłosem, patrząc, jak pies odchodzi truchtem z miejsca zbrodni ze spokojem kogoś, kto nigdy nie został złapany: „Ce chien, c'est un criminel”. Przydomek przylgnął tak, jak przylegają przezwiska — nie wybrany, po prostu prawdziwy.",
+    "p4": "Nigdy nie postawiono mu formalnych zarzutów. Nigdy nie okazał skruchy. Śledztwo, jeśli można to tak nazwać, pozostaje otwarte.",
+    "adventuresKicker": "WYBRANE AKTA SPRAWY",
+    "wantMoreTitle": "CHCESZ WIEDZIEĆ WIĘCEJ?",
+    "wantMoreBody": "Pełny rejestr spraw jest aktualizowany co miesiąc, każde wykroczenie trafia do akt.",
+    "wantMoreCta": "CZYTAJ REJESTR SPRAW",
+    "footer": "ZAKWALIFIKOWANO JAKO: LOKALNE LEGENDY, NIEZWERYFIKOWANE"
+  },
+  "adventures": [
+    {
+      "title": "JEDEN GOŁĄB, JEDEN BALKON",
+      "teaser": "Gołąb, balkon i jedna bardzo zła decyzja podjęta w ułamku sekundy.",
+      "link": "/pigeon",
+      "image": "assets/images/dog-close-lap.jpg"
+    },
+    {
+      "title": "KANAPA",
+      "teaser": "Powolna, metodyczna demolka. Narożnik jej nie przetrwał.",
+      "link": "/couch",
+      "image": "assets/images/couch-crime-scene.jpg"
+    },
+    {
+      "title": "PODRÓŻ POCIĄGIEM",
+      "teaser": "Żaden z podejrzanych nie może legalnie prowadzić pojazdu, więc jeżdżą pociągiem.",
+      "link": "/train-ride",
+      "image": "assets/images/train-window-view.jpg"
+    }
+  ],
+  "pigeon": {
+    "kicker": "Raport z incydentu",
+    "title": "JEDEN GOŁĄB, JEDEN BALKON",
+    "locationLabel": "MIEJSCE",
+    "locationVal": "Balkon na drugim piętrze, adres nieujawniony",
+    "suspectLabel": "PODEJRZANY",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "ŚWIADEK",
+    "witnessVal": "Sawito (obecny, nie zdążył zareagować)",
+    "motiveLabel": "MOTYW",
+    "motiveVal": "Jeden (1) gołąb, stojący tam, gdzie nie powinien",
+    "p1": "Podejrzany zaobserwował gołębia z bliskiej odległości i, nie konsultując się z nikim, podjął decyzję. Opuścił balkon w pośpiechu i bez planu. W całą sprawę zamieszana była grawitacja. Gołębia nie schwytano. Pies nic sobie nie zrobił.",
+    "p2": "Sawito nie był w takim samym stanie. W panice, jaka nastąpiła, stracił trochę włosów — swoich, nie psa — których do dziś nie odnaleziono.",
+    "aftermathCaption": "DOWÓD B — PODEJRZANY W TRAKCIE REKONWALESCENCJI, Z POWROTEM NA TWARDYM GRUNCIE, WYRAŹNIE NIEPRZEJĘTY CAŁĄ SYTUACJĄ",
+    "stamp": "SPRAWA ZAMKNIĘTA — BRAK POSTAWIONYCH ZARZUTÓW"
+  },
+  "couch": {
+    "kicker": "Raport o zniszczeniu mienia",
+    "title": "KANAPA",
+    "locationLabel": "MIEJSCE",
+    "locationVal": "Salon, narożnik południowo-wschodni, niegdyś tapicerowany",
+    "suspectLabel": "PODEJRZANY",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "ŚWIADEK",
+    "witnessVal": "Sawito (obecny przez cały czas, nie złożył żadnego raportu)",
+    "motiveLabel": "MOTYW",
+    "motiveVal": "Jedna (1) luźna nitka, uznana za niedopuszczalną",
+    "p1": "Zaczęło się, jak zwykle w takich przypadkach, od jednej nitki. Podejrzany ją zlokalizował, pociągnął i odkrył — z czymś, co śledczy mogą określić jedynie jako profesjonalną satysfakcję — że za nią ciągnie się kolejna. Postępy były powolne, metodyczne i w ogóle nieudokumentowane, aż było już zdecydowanie za późno na interwencję.",
+    "p2": "Zanim zauważono szkody, narożnik został zredukowany do gołej ramy i luźnej wyściółki, z odsłoniętą — i najwyraźniej dokładnie zbadaną — linką nośną. Podejrzanego zastano na miejscu zdarzenia chwilę później, z jednym okiem rozświetlonym błyskiem lampy, trzymającego w pobliżu zabawkę na sznurku, jakby chciał zasugerować, że akurat tędy przechodził.",
+    "exhibitBCaption": "DOWÓD B — ZBLIŻENIE NA ZNISZCZENIA",
+    "exhibitCCaption": "DOWÓD C — PODEJRZANY W POBLIŻU, WYRAZ TWARZY NIEODGADNIONY",
+    "stamp": "KANAPĘ UZNANO ZA CAŁKOWITĄ STRATĘ — PODEJRZANY NIEPRZEJĘTY"
+  },
+  "trainRide": {
+    "kicker": "Dziennik podróży",
+    "title": "PODRÓŻ POCIĄGIEM",
+    "locationLabel": "MIEJSCE",
+    "locationVal": "Kolej regionalna, kierunki: wieś i wybrzeże",
+    "suspectLabel": "PODEJRZANY",
+    "suspectVal": "Le Criminel (częsty podróżnik)",
+    "witnessLabel": "ŚWIADEK",
+    "witnessVal": "Sawito (technicznie niewidomy, mimo to kupił bilety)",
+    "motiveLabel": "MOTYW",
+    "motiveVal": "Głównie świeże powietrze. A konkretnie — mewy.",
+    "p1": "Żadnemu z podejrzanych nie wolno siadać za kierownicą pojazdu, z zupełnie różnych, lecz równie dyskwalifikujących powodów: Sawito jest, z własnego przyznania, technicznie niewidomy, a Le Criminel nigdy nie otrzymał nawet prawa jazdy na rower. Pociąg nie był wyborem stylu życia, lecz jedyną pozostałą opcją, i sprawdził się lepiej, niż ktokolwiek się spodziewał.",
+    "p2": "W aktach figurują dwa kierunki: wieś i wybrzeże. Oba zostały przyjęte przychylnie. Zdecydowanym faworytem jest jednak wybrzeże, ze względu na mewy, które podejrzany traktuje nie jako lokalną faunę, lecz jako osobiste wyzwanie. Nigdy żadnej nie złapał. Nigdy też nie przestał próbować i znaczną część jednej podróży spędził z nosem przyciśniętym do szyby, planując kolejny ruch.",
+    "exhibitBCaption": "DOWÓD B — ROZGOSZCZONY NA CZAS PODRÓŻY",
+    "exhibitCCaption": "DOWÓD C — INSPEKCJA PODŁOGI W TOKU",
+    "exhibitDCaption": "DOWÓD D — WIEŚ, MIJANA W PĘDZIE",
+    "exhibitECaption": "DOWÓD E — NOS PRZY SZYBIE, GDZIEŚ MIĘDZY STACJAMI",
+    "exhibitFCaption": "DOWÓD F — LĄDOWANIE NA WYBRZEŻU",
+    "stamp": "KIERUNEK: WSZĘDZIE TAM, GDZIE SĄ MEWY"
+  },
+  "blog": {
+    "title": "REJESTR SPRAW",
+    "subtitle": "24 comiesięczne wpisy — dwa lata nieprzerwanej obserwacji, sprawa 001-CR pozostaje otwarta"
+  },
+  "blogPosts": [
+    {
+      "date": "JUL 2024",
+      "case": "CASE LOG 001",
+      "title": "DZIEŃ, W KTÓRYM ZNALEZIONO CZŁOWIEKA",
+      "body": "Napotkany na ulicy, bez smyczy, bez planu, bez widocznego właściciela. Podejrzany obwąchał go dwukrotnie, usiadł przed nim i odmówił ruszenia się, dopóki nie ustalono warunków. Warunki ustalono. Podejrzany nadzoruje go od tamtej pory.",
+      "image": "assets/images/blog-cheek-to-cheek.jpg"
+    },
+    {
+      "date": "AUG 2024",
+      "case": "CASE LOG 002",
+      "title": "INCYDENT PIERWSZEJ NOCY",
+      "body": "Jeden but wszedł na teren posesji. Jeden but opuścił go w stanie nadającym się do identyfikacji. Śledztwo w sprawie drugiego buta w toku.",
+      "image": "assets/images/blog-shoe-inspection.jpg"
+    },
+    {
+      "date": "SEP 2024",
+      "case": "CASE LOG 003",
+      "title": "NAWYKOWA OBSERWACJA ZZA ZASŁON",
+      "body": "Podejrzany zajął stały posterunek na oparciu kanapy, odsuwając zasłonę jedną łapą, monitorując ulicę pod kątem nieautoryzowanych pieszych, rowerzystów i okazjonalnych gołębi. Harmonogram zmian: niemal nieprzerwany.",
+      "image": "assets/images/blog-couch-lookout.jpg"
+    },
+    {
+      "date": "OCT 2024",
+      "case": "CASE LOG 004",
+      "title": "NIEAUTORYZOWANE WEJŚCIE DO KUCHNI",
+      "body": "Podejrzanego zaobserwowano stojącego całkowicie wewnątrz kuchni, mimo że nigdy nie został zaproszony. Zaprzecza, jakoby znał słowo „wyjść”.",
+      "image": "assets/images/blog-shop-entry.jpg"
+    },
+    {
+      "date": "NOV 2024",
+      "case": "CASE LOG 005",
+      "title": "WYKRYTO SZAJKĘ ZŁODZIEI SKARPETEK",
+      "body": "Spod łóżka odzyskano siedem niesparowanych skarpetek. Podejrzany obecny na miejscu, wyraźnie niewzruszony dowodami.",
+      "image": "assets/images/blog-shoulder-selfie.jpg"
+    },
+    {
+      "date": "DEC 2024",
+      "case": "CASE LOG 006",
+      "title": "ŚWIĄTECZNE ZAKŁÓCENIE PORZĄDKU",
+      "body": "Jedna bombka strącona. Choinka na razie stoi. Podejrzany twierdzi, że bombka „pierwsza się ruszyła”.",
+      "image": "assets/images/blog-bee-costume.jpg"
+    },
+    {
+      "date": "JAN 2025",
+      "case": "CASE LOG 007",
+      "title": "ZŁAMANE NOWOROCZNE POSTANOWIENIE",
+      "body": "Właściciel postanowił egzekwować zakaz wchodzenia na kanapę. Postanowienie przetrwało cztery godziny. Podejrzany wznowił pełne zajęcie terenu.",
+      "image": "assets/images/blog-couch-cuddle-selfie.jpg"
+    },
+    {
+      "date": "FEB 2025",
+      "case": "CASE LOG 008",
+      "title": "PIERWSZE ZAOBSERWOWANIE PODEJRZANEJ PIKETTE",
+      "body": "Na terenie posesji zaobserwowano kotkę o imieniu Pikette. Obie strony natychmiast i wzajemnie wpadły w furię. Przyczyna nieznana, tradycja odtąd ugruntowana.",
+      "image": "assets/images/pikette-windowsill.jpg"
+    },
+    {
+      "date": "MAR 2025",
+      "case": "CASE LOG 009",
+      "title": "PRÓBA NEGOCJACJI Z LISTONOSZEM",
+      "body": "Podejrzany podszedł do listonosza z niejasnymi zamiarami. Negocjacje załamały się w ciągu kilku sekund. Poczta ostatecznie została dostarczona.",
+      "image": "assets/images/blog-mailman-standoff.jpg"
+    },
+    {
+      "date": "APR 2025",
+      "case": "CASE LOG 010",
+      "title": "INCYDENT NA BALKONIE",
+      "body": "Pełny raport złożono osobno pod tytułem „Jeden Gołąb, Jeden Balkon”. Przywołany tutaj dla kompletności akt."
+    },
+    {
+      "date": "MAY 2025",
+      "case": "CASE LOG 011",
+      "title": "SPRAWA ZAGINIONEGO PILOTA",
+      "body": "Pilota widziano ostatnio w pobliżu podejrzanego. Odzyskany trzy dni później pod kaloryferem, ślady zębów zgodne z poprzednimi wykroczeniami.",
+      "image": "assets/images/blog-bed-nap.jpg"
+    },
+    {
+      "date": "JUN 2025",
+      "case": "CASE LOG 012",
+      "title": "PIKETTE WRACA, NAPIĘCIE BEZ ZMIAN",
+      "body": "Druga wizyta podejrzanej Pikette. Obie strony wznowiły działania wojenne dokładnie w miejscu, w którym je przerwały, jakby nie minęła ani chwila.",
+      "image": "assets/images/pikette-dog-couch.jpg"
+    },
+    {
+      "date": "JUL 2025",
+      "case": "CASE LOG 013",
+      "title": "ROK POD NADZOREM, BRAK POPRAWY",
+      "body": "Zakończono przegląd dwunastomiesięczny. Podejrzany nie wykazał żadnego mierzalnego postępu w kierunku dobrego zachowania. Stał się jednak kimś, bez kogo trudno sobie wyobrazić życie.",
+      "image": "assets/images/blog-garden-wall.jpg"
+    },
+    {
+      "date": "AUG 2025",
+      "case": "CASE LOG 014",
+      "title": "PODEJRZANY PRZECHODZI ZABIEG CHIRURGICZNY",
+      "body": "W tym miesiącu podejrzany został wykastrowany. Zabieg zakończony sukcesem, godność nie przetrwała stożka wstydu. Zachowanie bez najmniejszej zmiany.",
+      "image": "assets/images/blog-park-walk.jpg"
+    },
+    {
+      "date": "SEP 2025",
+      "case": "CASE LOG 015",
+      "title": "OKRES REKONWALESCENCJI, NASTRÓJ BEZ ZMIAN",
+      "body": "Stożek zdjęty. Podejrzany uczcił to natychmiastowym wznowieniem wszystkich wcześniej zakazanych czynności z pełną intensywnością.",
+      "image": "assets/images/blog-full-capacity.jpg"
+    },
+    {
+      "date": "OCT 2025",
+      "case": "CASE LOG 016",
+      "title": "KONFRONTACJA Z PIKETTE, RUNDA TRZECIA",
+      "body": "Operacja nie ostudziła wrogości wobec podejrzanej Pikette. Wręcz przeciwnie, podejrzany zdaje się żywić urazę z czystej zasady.",
+      "image": "assets/images/pikette-couch-visit.jpg"
+    },
+    {
+      "date": "NOV 2025",
+      "case": "CASE LOG 017",
+      "title": "AKT OSKARŻENIA ZA GROMADZENIE KOCÓW",
+      "body": "Wszystkie miękkie tekstylia w domu zostały przeniesione na jeden stos, obecnie pod wyłączną kontrolą podejrzanego.",
+      "image": "assets/images/blog-blanket-hoard.jpg"
+    },
+    {
+      "date": "DEC 2025",
+      "case": "CASE LOG 018",
+      "title": "ŚWIĄTECZNE ZAKŁÓCENIE PORZĄDKU, RUNDA DRUGA",
+      "body": "Kolejna bombka strącona. Podejrzany zaprzecza istnieniu wzorca zachowań, jako linię obrony przyjmując „zbieg okoliczności”."
+    },
+    {
+      "date": "JAN 2026",
+      "case": "CASE LOG 019",
+      "title": "UDAREMNIONA PRÓBA UCIECZKI PRZY DRZWIACH",
+      "body": "Podejrzany rzucił się do ucieczki przez otwarte drzwi wejściowe. Odzyskany na schodach przed domem. Bez obrażeń, lekkie zażenowanie po obu stronach.",
+      "image": "assets/images/blog-front-door-recapture.jpg"
+    },
+    {
+      "date": "FEB 2026",
+      "case": "CASE LOG 020",
+      "title": "PODEJRZANA PIKETTE, ZDJĘCIE Z OBSERWACJI W AKTACH",
+      "body": "Podejrzaną Pikette sfotografowano z bliska podczas wizyty. Obie strony nadal, z niejasnych przyczyn, nie potrafią pokojowo współistnieć.",
+      "image": "assets/images/pikette-closeup.jpg"
+    },
+    {
+      "date": "MAR 2026",
+      "case": "CASE LOG 021",
+      "title": "PRZESŁUCHANIE W SPRAWIE ZAGINIONEJ KANAPKI",
+      "body": "Jedna kanapka, pozostawiona bez nadzoru na dziewięćdziesiąt sekund, nie została odnaleziona. Podejrzany przebywał w pomieszczeniu. Podejrzany ani nie potwierdza, ani nie zaprzecza.",
+      "image": "assets/images/blog-cafe-standoff.jpg"
+    },
+    {
+      "date": "APR 2026",
+      "case": "CASE LOG 022",
+      "title": "SĄSIAD SKŁADA OFICJALNĄ SKARGĘ",
+      "body": "Otrzymano skargę w sprawie nadmiernego szczekania o godzinie 6:15. Podejrzany otrzymał oficjalne ostrzeżenie. Podejrzany nie zmienił swojego harmonogramu.",
+      "image": "assets/images/blog-frosty-morning.jpg"
+    },
+    {
+      "date": "MAY 2026",
+      "case": "CASE LOG 023",
+      "title": "CAŁKOWITE PRZEJĘCIE ŻYCIA, OCENA ZAKOŃCZONA",
+      "body": "Podejrzany kontroluje obecnie łóżko, harmonogram, przekąski i większość ważnych decyzji. Status niezależności właściciela: cofnięty.",
+      "image": "assets/images/blog-waffle-watch.jpg"
+    },
+    {
+      "date": "JUN 2026",
+      "case": "CASE LOG 024",
+      "title": "PRZEGLĄD STATUSU PO DWÓCH LATACH",
+      "body": "Dwa lata od przyjęcia sprawy. Bez poprawy. Ale i bez żalu. Nawet podejrzaną Pikette, w jeden z rzadkich spokojnych wieczorów, przyłapano na dzieleniu kanapy. Sprawa pozostaje otwarta.",
+      "image": "assets/images/blog-belly-flop.jpg"
+    }
+  ],
+  "shop": {
+    "title": "SKLEP",
+    "subtitle": "Magazyn dowodów — wyłącznie do oglądania, nic tu nie jest na sprzedaż",
+    "notForSale": "NIE NA SPRZEDAŻ",
+    "previewLabel": "PRÓBKA / ZAPOWIEDŹ",
+    "playLabel": "ODTWÓRZ ZAPOWIEDŹ",
+    "featuredKicker": "TERAZ WYŚWIETLANE — ZAPOWIEDŹ ALBUMU",
+    "itemKicker": "MAGAZYN DOWODÓW — KARTA PRZEDMIOTU",
+    "disclaimerTitle": "NIC TUTAJ NIE JEST PRAWDZIWE",
+    "disclaimerBody": "Ten przedmiot to żartobliwa grafika koncepcyjna stworzona na potrzeby tej strony. Nigdy nie został wyprodukowany, nie jest na sprzedaż i nie można go zamówić w żadnym rozmiarze, kolorze ani ilości — nigdzie, u nikogo. Wszelkie podobieństwo do rzeczywistego produktu jest przypadkowe i całkowicie niezamierzone.",
+    "backToShop": "← WRÓĆ DO SKLEPU"
+  },
+  "shopItems": [
+    {
+      "name": "Brux Gang — „Thug Life, No Rules” (Mixtape)",
+      "tag": "Treści dla dorosłych. Okładka i teledysk autorstwa niejakiego Spooky-jakiegośtam.",
+      "price": "$14",
+      "image": "assets/images/shop-brux-gang.jpg",
+      "videoId": "7l6RhWyPk4s"
+    },
+    {
+      "name": "Koszulka POSZUKIWANY",
+      "tag": "Bawełna, unisex, winny przez skojarzenie",
+      "price": "$32",
+      "image": "assets/images/shop-wanted-tee.png",
+      "slug": "wanted-tee",
+      "detail": [
+        "Na środku przodu nadrukowano studyjne zdjęcie sygnalityczne Le Criminela, patrzącego prosto w obiektyw z płaskim, niewzruszonym wyrazem twarzy recydywisty, który ani razu nie rozważał własnej niewinności. Miarka wzrostu w tle ma charakter czysto dekoracyjny — nigdy nie dokonano żadnego formalnego pomiaru, ponieważ podejrzany odmówił stania w miejscu podczas rejestracji.",
+        "Uwagi stylistyczne, do protokołu: gruba czarna bawełna, postarzały napis POSZUKIWANY i krój, który najlepiej opisać jako „szyk magazynu dowodów”. Dostępna w dokładnie zero rozmiarach, ponieważ dostępna jest w zero egzemplarzach — patrz niżej.",
+        "Żeby było zupełnie jasne: ta koszulka nie istnieje. Nie można jej kupić, zamówić, zamówić z wyprzedzeniem ani zażądać w innym rozmiarze. To grafika koncepcyjna stworzona wyłącznie na potrzeby żartu tej strony i nic więcej — Le Criminel nie promuje żadnych gadżetów, będąc psem."
+      ]
+    },
+    {
+      "name": "Kubek „Kryminalista Taki Sobie”",
+      "tag": "Ceramika, mieści kawę i urazy",
+      "price": "$18",
+      "image": "assets/images/shop-okayest-mug.png",
+      "slug": "okayest-mug",
+      "detail": [
+        "Kamionkowy kubek z najmniej entuzjastycznym wyróżnieniem, jakie przyznaje departament: „Kryminalista Taki Sobie”, wybite w okrągłej pieczęci pod niewielkim, mało zaimponowanym portretem podejrzanego. Przyznane nie za doskonałość, lecz za konsekwencję — te same wykroczenia, ten sam brak skruchy, poranek po poranku.",
+        "Mieści pełny kubek kawy lub, zgodnie z etykietą, równoważną objętość urazów. Odporność na zmywarkę nigdy nie została przetestowana, ponieważ kubek nie istnieje, by go myć, posiadać czy czymkolwiek napełniać.",
+        "Żeby było zupełnie jasne: ten kubek nie istnieje. Nie można go kupić, zamówić, zamówić z wyprzedzeniem ani zażądać w innej glazurze. To grafika koncepcyjna stworzona wyłącznie na potrzeby żartu tej strony i nic więcej."
+      ]
+    },
+    {
+      "name": "Plakat Incydentu na Balkonie",
+      "tag": "Druk pamiątkowy, rama sprzedawana osobno",
+      "price": "$45",
+      "image": "assets/images/shop-balcony-poster.png",
+      "slug": "balcony-poster",
+      "detail": [
+        "Druk pamiątkowy upamiętniający najgorsze popołudnie w historii tego balkonu: Le Criminel przechylony nad barierką, mierzący wzrokiem gołębia, który już wyczuł niebezpieczeństwo i jest o jedno uderzenie skrzydeł od ucieczki. Dachy w tle to dachy okolicy, przedstawione w celowo postarzonym stylu zbliżonym do drzeworytu, ponieważ rzeczywisty incydent nie pozostawił po sobie żadnych użytecznych zdjęć — jedynie świadków i mnóstwo hałasu.",
+        "Napis „THE BALCONY INCIDENT” biegnie u dołu wielkimi literami, jakby chwila ta była wystarczająco doniosła, by zasłużyć na oprawiony druk. Prawdopodobnie była. Pełny raport z incydentu zawiera wersję z mniejszą liczbą ilustracji, a większą liczbą konsekwencji.",
+        "Żeby było zupełnie jasne: ten plakat nie istnieje. Nie można go kupić, wydrukować, oprawić ani wysłać w żadnym rozmiarze. To grafika koncepcyjna stworzona wyłącznie na potrzeby żartu tej strony i nic więcej."
+      ]
+    },
+    {
+      "name": "Zestaw Naklejek z Akt Sprawy",
+      "tag": "Zestaw 5 sztuk, winyl, odporny na warunki atmosferyczne",
+      "price": "$9",
+      "image": "assets/images/shop-sticker-pack.png",
+      "slug": "sticker-pack",
+      "detail": [
+        "Pięć winylowych naklejek wyciągniętych z największych hitów akt sprawy: zdjęcie sygnalityczne, metka akt z napisem „001-CR”, pieczęć departamentu w kształcie odcisku łapy, kanapa zredukowana do rangi dowodu rzeczowego oraz gołąb siedzący z buńczuczną miną na barierce, do której nie ma żadnego prawa. Odporny na warunki atmosferyczne, teoretycznie, jako że jest w pełni teoretyczny.",
+        "Zaprojektowane z myślą o laptopach, butelkach na wodę lub wnętrzu teczki oznaczonej jako POUFNE. Nic z tego nie ma jednak znaczenia, ponieważ zestaw nigdy nie został wyprodukowany i nie można go wysłać, podarować ani odkleić od podkładu — bo nie posiada żadnego podkładu.",
+        "Żeby było zupełnie jasne: ten zestaw naklejek nie istnieje. Nie można go kupić, zamówić ani wydrukować w żadnej ilości. To grafika koncepcyjna stworzona wyłącznie na potrzeby żartu tej strony i nic więcej."
+      ]
+    }
+  ],
+  "footer": "© THE THIEFFRY CRIMINALS — AKTA POZOSTAJĄ OTWARTE. WSZELKIE PRAWA ZASTRZEŻONE (PODOBNO)."
+}

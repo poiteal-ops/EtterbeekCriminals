@@ -1,0 +1,384 @@
+{
+  "nav": {
+    "home": "ACASĂ",
+    "about": "DESPRE",
+    "story": "POVESTEA UNUI INFRACTOR",
+    "stories": "DOSARE",
+    "pigeon": "UN PORUMBEL, UN BALCON",
+    "couch": "CANAPEAUA",
+    "trainRide": "CU TRENUL",
+    "blog": "BLOG",
+    "shop": "MAGAZIN"
+  },
+  "home": {
+    "wanted": "CĂUTAT",
+    "fileNo": "DOSAR NR. 001-CR",
+    "tagline": "Sawito & Le Criminel — căutați, interogați și, în mare parte, iertați",
+    "kicker": "— operațiune locală, doi suspecți —",
+    "intro": "Un bărbat, un câine, un dispreț comun față de regulile bunei-cuviințe. Răsfoiți dosarul de mai jos — faptele vorbesc de la sine.",
+    "promoKicker": "NOU ÎN CAMERA DE PROBE",
+    "promoTitle": "BRUX GANG — „THUG LIFE, NO RULES”",
+    "promoTag": "Mixtape-ul pe care nimeni nu l-a cerut. Copertă semnată de un anume Spooky-cutare.",
+    "promoCta": "VEZI ÎN MAGAZIN",
+    "promoVideoLink": "Vizionează previzualizarea"
+  },
+  "about": {
+    "title": "DESPRE SUSPECȚI",
+    "subtitle": "Dosarul 001-CR — subiecții identificați mai jos",
+    "sawitoName": "SAWITO",
+    "sawitoAlias": "ALIAS: „BĂTRÂNUL DE LA ETAJ”",
+    "occupation": "OCUPAȚIE",
+    "occupationVal": "Complice-șef",
+    "marksLabel": "SEMNE PARTICULARE",
+    "sawitoMarks": "Barbă argintie, țigară permanentă, ochelari de aviator purtați și în casă, și afară",
+    "associateLabel": "ASOCIAT",
+    "sawitoAssociate": "Le Criminel (inseparabili, nepocăiți)",
+    "statusLabel": "STATUT",
+    "sawitoStatus": "În libertate. Se presupune că este înarmat cu recompense.",
+    "dogName": "LE CRIMINEL",
+    "dogAlias": "ALIAS: „BANDITUL DE PE BALCON”",
+    "breedLabel": "RASĂ",
+    "breedVal": "Boston Terrier, se pare",
+    "dogMarks": "Pete alb-negru, zgardă tactică, expresie neclintită",
+    "dogAssociate": "Sawito (dresor, ca să spunem așa)",
+    "dogStatus": "Căutat în legătură cu incidentul de pe balcon. Vezi dosarul.",
+    "rapSheetTitle": "CAZIER",
+    "confidential": "CONFIDENȚIAL"
+  },
+  "rapSheet": [
+    { "case": "CASE 001", "charge": "Nerespectare repetată a priorității de trecere pe potecile comune." },
+    { "case": "CASE 002", "charge": "Posesie de entuziasm neautorizat în preajma poștașului." },
+    { "case": "CASE 003", "charge": "Conspirație pentru îngroparea probelor (o șosetă, curtea din spate, caz nerezolvat)." },
+    { "case": "CASE 004", "charge": "Tulburarea liniștii publice, ora 6:15, zilnic, fără semne de oprire." },
+    { "case": "CASE 005", "charge": "Agresiune cu dare din coadă cu potențial letal." }
+  ],
+  "story": {
+    "kicker": "Dosarul 001-CR — context",
+    "title": "POVESTEA UNUI INFRACTOR",
+    "exhibit": "PROBA A — SUBIECT ÎN LIBERTATE",
+    "p1": "Fiecare nume are o origine, iar acesta are și un dosar. Câinele nu s-a născut „Le Criminel”. S-a născut, din câte se poate dovedi, un cățel perfect obișnuit, fără niciun cazier.",
+    "p2": "Numele a venit mai târziu, câștigat câte o mică abatere odată: o șosetă furată aici, o telecomandă mestecată dincolo, o pernă de canapea care n-a supraviețuit verii. Niciun act în sine nu justifica un dosar. Împreună, au justificat o poreclă.",
+    "p3": "Sawito a fost primul care a spus-o, pe jumătate în barbă, privind câinele îndepărtându-se de la locul faptei cu calmul cuiva care nu fusese niciodată prins: „Ce chien, c'est un criminel.” Numele a rămas așa cum rămân poreclele — nu ales, doar adevărat.",
+    "p4": "Nu a fost niciodată acuzat oficial. Nu a arătat niciodată remușcare. Ancheta, așa cum este ea, rămâne deschisă.",
+    "adventuresKicker": "DOSARE SELECTATE",
+    "wantMoreTitle": "VREȚI SĂ AFLAȚI MAI MULTE?",
+    "wantMoreBody": "Registrul complet al cazurilor este actualizat lunar, fiecare abatere trecută în evidență.",
+    "wantMoreCta": "CITEȘTE REGISTRUL CAZURILOR",
+    "footer": "ARHIVAT LA: LEGENDE LOCALE, NEVERIFICATE"
+  },
+  "adventures": [
+    {
+      "title": "UN PORUMBEL, UN BALCON",
+      "teaser": "Un porumbel, un balcon și o decizie foarte proastă, luată în viteză.",
+      "link": "/pigeon",
+      "image": "assets/images/dog-close-lap.jpg"
+    },
+    {
+      "title": "CANAPEAUA",
+      "teaser": "O demolare lentă și metodică. Colțul nu a supraviețuit.",
+      "link": "/couch",
+      "image": "assets/images/couch-crime-scene.jpg"
+    },
+    {
+      "title": "CU TRENUL",
+      "teaser": "Niciunul dintre suspecți nu are voie legal să conducă, așa că iau trenul.",
+      "link": "/train-ride",
+      "image": "assets/images/train-window-view.jpg"
+    }
+  ],
+  "pigeon": {
+    "kicker": "Raport de incident",
+    "title": "UN PORUMBEL, UN BALCON",
+    "locationLabel": "LOCAȚIE",
+    "locationVal": "Balcon la etajul doi, adresă nedivulgată",
+    "suspectLabel": "SUSPECT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "MARTOR",
+    "witnessVal": "Sawito (prezent, incapabil să intervină la timp)",
+    "motiveLabel": "MOBIL",
+    "motiveVal": "Un (1) porumbel, aflat unde n-ar fi trebuit să stea",
+    "p1": "Suspectul a observat un porumbel la mică distanță și, fără să consulte pe nimeni, a luat o decizie. A părăsit balconul în viteză și fără niciun plan. Gravitația a fost implicată. Porumbelul nu a fost prins. Câinele a fost bine.",
+    "p2": "Sawito nu a fost bine. În panica ce a urmat s-a pierdut niște păr — al lui, nu al câinelui — și nu a fost recuperat până în prezent.",
+    "aftermathCaption": "PROBA B — SUBIECT ÎN CONVALESCENȚĂ, DIN NOU PE TEREN SOLID, VIZIBIL NEPĂSĂTOR FAȚĂ DE TOATĂ TĂRĂȘENIA",
+    "stamp": "CAZ ÎNCHIS — FĂRĂ ACUZAȚII"
+  },
+  "couch": {
+    "kicker": "Raport de daune materiale",
+    "title": "CANAPEAUA",
+    "locationLabel": "LOCAȚIE",
+    "locationVal": "Sufragerie, colțul sud-est, fost tapițat",
+    "suspectLabel": "SUSPECT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "MARTOR",
+    "witnessVal": "Sawito (prezent pe tot parcursul, nu a depus niciun raport)",
+    "motiveLabel": "MOBIL",
+    "motiveVal": "Un (1) fir desprins, considerat inacceptabil",
+    "p1": "A început, cum se întâmplă mereu în astfel de cazuri, cu un singur fir. Subiectul l-a localizat, l-a tras și a descoperit — cu ceea ce anchetatorii nu pot descrie decât drept satisfacție profesională — că mai urma încă fir. Progresul a fost lent, metodic și complet nedocumentat până când a fost mult prea târziu pentru a interveni.",
+    "p2": "Până când s-a observat paguba, colțul fusese redus la cadrul gol și umplutură împrăștiată, cu un cablu de susținere expus și, aparent, temeinic inspectat. Subiectul a fost găsit la fața locului la scurt timp după aceea, cu un ochi luminat de blițul camerei, ținând în apropiere o jucărie din frânghie, de parcă ar fi vrut să sugereze că doar trecea pe acolo întâmplător.",
+    "exhibitBCaption": "PROBA B — PRIM-PLAN AL PAGUBEI",
+    "exhibitCCaption": "PROBA C — SUSPECT ÎN APROPIERE, EXPRESIE INDESCIFRABILĂ",
+    "stamp": "CANAPEAUA DECLARATĂ PIERDERE TOTALĂ — SUBIECT NEPĂSĂTOR"
+  },
+  "trainRide": {
+    "kicker": "Jurnal de călătorie",
+    "title": "CU TRENUL",
+    "locationLabel": "LOCAȚIE",
+    "locationVal": "Cale ferată regională, destinații: la țară și pe litoral",
+    "suspectLabel": "SUSPECT",
+    "suspectVal": "Le Criminel (călător frecvent)",
+    "witnessLabel": "MARTOR",
+    "witnessVal": "Sawito (tehnic orb, a cumpărat totuși biletele)",
+    "motiveLabel": "MOBIL",
+    "motiveVal": "Aer curat, în principal. Pescăruși, mai exact.",
+    "p1": "Niciunul dintre suspecți nu are voie la volanul unui vehicul, din motive complet diferite, dar la fel de întemeiate: Sawito este, după propria mărturisire, tehnic orb, iar lui Le Criminel nu i s-a eliberat nici măcar un permis de bicicletă. Trenul nu a fost ales ca stil de viață, ci ca singura opțiune rămasă, iar lucrurile au ieșit mai bine decât se aștepta oricine.",
+    "p2": "Sunt înregistrate două destinații: la țară și pe litoral. Ambele au fost bine primite. Litoralul rămâne însă favoritul incontestabil, datorită pescărușilor, pe care subiectul îi consideră o provocare personală, nu faună locală. Nu a prins niciodată unul. Nici nu s-a oprit vreodată din încercat și a petrecut o bună parte dintr-o călătorie cu nasul lipit de geam, plănuind.",
+    "exhibitBCaption": "PROBA B — INSTALAT PENTRU CĂLĂTORIE",
+    "exhibitCCaption": "PROBA C — INSPECȚIE LA NIVELUL PODELEI",
+    "exhibitDCaption": "PROBA D — PEISAJ RURAL, TRECÂND ÎN VITEZĂ",
+    "exhibitECaption": "PROBA E — NASUL LIPIT DE GEAM, UNDEVA ÎNTRE DOUĂ STAȚII",
+    "exhibitFCaption": "PROBA F — SOSIRE PE LITORAL",
+    "stamp": "DESTINAȚIE: ORIUNDE SUNT PESCĂRUȘI"
+  },
+  "blog": {
+    "title": "REGISTRUL CAZURILOR",
+    "subtitle": "24 de intrări lunare — doi ani de supraveghere continuă, cazul 001-CR rămâne deschis"
+  },
+  "blogPosts": [
+    {
+      "date": "JUL 2024",
+      "case": "CASE LOG 001",
+      "title": "ZIUA ÎN CARE A FOST GĂSIT OMUL",
+      "body": "Întâlnit pe stradă, fără lesă, fără plan, fără stăpân aparent. Subiectul l-a mirosit de două ori, s-a așezat în fața lui și a refuzat să se miște până nu s-au făcut aranjamentele. Aranjamentele au fost făcute. Subiectul îl supraveghează de atunci.",
+      "image": "assets/images/blog-cheek-to-cheek.jpg"
+    },
+    {
+      "date": "AUG 2024",
+      "case": "CASE LOG 002",
+      "title": "INCIDENTUL DIN PRIMA NOAPTE",
+      "body": "Un pantof a intrat în incintă. Un pantof a ieșit în stare recognoscibilă. Ancheta privind celălalt pantof continuă.",
+      "image": "assets/images/blog-shoe-inspection.jpg"
+    },
+    {
+      "date": "SEP 2024",
+      "case": "CASE LOG 003",
+      "title": "SUPRAVEGHERE HABITUALĂ DE LA PERDEA",
+      "body": "Subiectul și-a stabilit o poziție fixă pe spătarul canapelei, cu perdeaua trasă la o parte cu o labă, monitorizând strada în căutarea pietonilor, bicicliștilor și, ocazional, a porumbeilor neautorizați. Program de tură: aproape permanent.",
+      "image": "assets/images/blog-couch-lookout.jpg"
+    },
+    {
+      "date": "OCT 2024",
+      "case": "CASE LOG 004",
+      "title": "PĂTRUNDERE NEAUTORIZATĂ ÎN BUCĂTĂRIE",
+      "body": "Subiectul a fost observat stând complet în interiorul bucătăriei, deși nu i s-a extins niciodată vreo invitație. Neagă orice cunoștință a cuvântului „afară”.",
+      "image": "assets/images/blog-shop-entry.jpg"
+    },
+    {
+      "date": "NOV 2024",
+      "case": "CASE LOG 005",
+      "title": "DESTRUCTURATĂ REȚEAUA DE FURT DE ȘOSETE",
+      "body": "Șapte șosete desperecheate recuperate de sub pat. Subiect prezent la fața locului, vizibil nepăsător față de probe.",
+      "image": "assets/images/blog-shoulder-selfie.jpg"
+    },
+    {
+      "date": "DEC 2024",
+      "case": "CASE LOG 006",
+      "title": "TULBURĂRI DE SĂRBĂTOARE",
+      "body": "Un glob de brad căzut. Bradul rezistă, deocamdată. Subiectul susține că globul „a început primul”.",
+      "image": "assets/images/blog-bee-costume.jpg"
+    },
+    {
+      "date": "JAN 2025",
+      "case": "CASE LOG 007",
+      "title": "REZOLUȚIA DE ANUL NOU ÎNCĂLCATĂ",
+      "body": "Stăpânul s-a hotărât să impună regula fără-canapea. Rezoluția a durat patru ore. Subiectul și-a reluat ocuparea deplină.",
+      "image": "assets/images/blog-couch-cuddle-selfie.jpg"
+    },
+    {
+      "date": "FEB 2025",
+      "case": "CASE LOG 008",
+      "title": "PRIMA APARIȚIE A SUSPECTEI PIKETTE",
+      "body": "O pisică, pe nume Pikette, a fost observată la fața locului. Ambele părți au devenit instantaneu și reciproc furioase. Cauză necunoscută, tradiție consfințită de atunci.",
+      "image": "assets/images/pikette-windowsill.jpg"
+    },
+    {
+      "date": "MAR 2025",
+      "case": "CASE LOG 009",
+      "title": "TENTATIVĂ DE NEGOCIERE CU POȘTAȘUL",
+      "body": "Subiectul s-a apropiat de poștaș cu intenții neclare. Negocierile au eșuat în câteva secunde. Poșta a fost, în cele din urmă, livrată.",
+      "image": "assets/images/blog-mailman-standoff.jpg"
+    },
+    {
+      "date": "APR 2025",
+      "case": "CASE LOG 010",
+      "title": "INCIDENTUL DE PE BALCON",
+      "body": "Raport complet depus separat sub titlul „Un Porumbel, Un Balcon”. Menționat aici pentru completarea evidenței."
+    },
+    {
+      "date": "MAY 2025",
+      "case": "CASE LOG 011",
+      "title": "CAZUL TELECOMENZII DISPĂRUTE",
+      "body": "Telecomanda văzută ultima dată în preajma subiectului. Recuperată trei zile mai târziu sub calorifer, urme de dinți compatibile cu abateri anterioare.",
+      "image": "assets/images/blog-bed-nap.jpg"
+    },
+    {
+      "date": "JUN 2025",
+      "case": "CASE LOG 012",
+      "title": "PIKETTE REVINE, TENSIUNILE NESCHIMBATE",
+      "body": "A doua vizită a suspectei Pikette. Ambele părți au reluat ostilitățile exact de unde le lăsaseră, ca și cum n-ar fi trecut deloc timpul.",
+      "image": "assets/images/pikette-dog-couch.jpg"
+    },
+    {
+      "date": "JUL 2025",
+      "case": "CASE LOG 013",
+      "title": "UN AN ÎN CUSTODIE, NICIO ÎMBUNĂTĂȚIRE CONSTATATĂ",
+      "body": "Revizuirea celor douăsprezece luni este completă. Subiectul nu a înregistrat niciun progres măsurabil spre un comportament bun. A devenit, totuși, imposibil de imaginat viața fără el.",
+      "image": "assets/images/blog-garden-wall.jpg"
+    },
+    {
+      "date": "AUG 2025",
+      "case": "CASE LOG 014",
+      "title": "SUBIECTUL SUFERĂ O INTERVENȚIE CHIRURGICALĂ",
+      "body": "Subiectul a fost castrat luna aceasta. Procedură reușită, demnitatea nu a supraviețuit gulerului rușinii. Comportament complet neafectat.",
+      "image": "assets/images/blog-park-walk.jpg"
+    },
+    {
+      "date": "SEP 2025",
+      "case": "CASE LOG 015",
+      "title": "PERIOADĂ DE RECUPERARE, DISPOZIȚIE NESCHIMBATĂ",
+      "body": "Gulerul a fost înlăturat. Subiectul a sărbătorit reluând imediat toate activitățile anterior interzise, la capacitate maximă.",
+      "image": "assets/images/blog-full-capacity.jpg"
+    },
+    {
+      "date": "OCT 2025",
+      "case": "CASE LOG 016",
+      "title": "CONFRUNTARE CU PIKETTE, RUNDA TREI",
+      "body": "Operația nu a răcit ostilitățile cu suspecta Pikette. Dimpotrivă, subiectul pare să poarte pică din pur principiu.",
+      "image": "assets/images/pikette-couch-visit.jpg"
+    },
+    {
+      "date": "NOV 2025",
+      "case": "CASE LOG 017",
+      "title": "RECHIZITORIU PENTRU ACAPARARE DE PĂTURI",
+      "body": "Toate textilele moi din gospodărie au fost relocate într-o singură grămadă, aflată în prezent sub controlul exclusiv al subiectului.",
+      "image": "assets/images/blog-blanket-hoard.jpg"
+    },
+    {
+      "date": "DEC 2025",
+      "case": "CASE LOG 018",
+      "title": "TULBURĂRI DE SĂRBĂTOARE, RUNDA DOI",
+      "body": "Al doilea glob de brad căzut. Subiectul neagă existența unui tipar de comportament, invocând „coincidența” drept apărare."
+    },
+    {
+      "date": "JAN 2026",
+      "case": "CASE LOG 019",
+      "title": "TENTATIVĂ DE EVADARE ZĂDĂRNICITĂ LA UȘĂ",
+      "body": "Subiectul a încercat să fugă pe ușa din față, lăsată deschisă. Recapturat pe treptele din față. Fără răni, jenă ușoară de ambele părți.",
+      "image": "assets/images/blog-front-door-recapture.jpg"
+    },
+    {
+      "date": "FEB 2026",
+      "case": "CASE LOG 020",
+      "title": "SUSPECTA PIKETTE, FOTOGRAFIE DE SUPRAVEGHERE LA DOSAR",
+      "body": "Suspecta Pikette fotografiată de aproape în timpul unei vizite. Ambele părți rămân, din motive neclare, incapabile să coexiste pașnic.",
+      "image": "assets/images/pikette-closeup.jpg"
+    },
+    {
+      "date": "MAR 2026",
+      "case": "CASE LOG 021",
+      "title": "INTEROGATORIU PRIVIND SANDVIȘUL DISPĂRUT",
+      "body": "Un sandviș, lăsat nesupravegheat timp de nouăzeci de secunde, nu a fost recuperat. Subiectul se afla în cameră. Subiectul nu confirmă, dar nici nu infirmă.",
+      "image": "assets/images/blog-cafe-standoff.jpg"
+    },
+    {
+      "date": "APR 2026",
+      "case": "CASE LOG 022",
+      "title": "UN VECIN DEPUNE PLÂNGERE OFICIALĂ",
+      "body": "Plângere primită privind lătrat excesiv la ora 6:15. Subiectul a fost avertizat oficial. Subiectul nu și-a schimbat programul.",
+      "image": "assets/images/blog-frosty-morning.jpg"
+    },
+    {
+      "date": "MAY 2026",
+      "case": "CASE LOG 023",
+      "title": "PRELUARE TOTALĂ A VIEȚII, EVALUARE FINALIZATĂ",
+      "body": "Subiectul controlează acum patul, programul, gustările și majoritatea deciziilor importante. Statutul de independență al stăpânului: revocat.",
+      "image": "assets/images/blog-waffle-watch.jpg"
+    },
+    {
+      "date": "JUN 2026",
+      "case": "CASE LOG 024",
+      "title": "BILANȚ LA DOI ANI",
+      "body": "Doi ani de la preluare. Nicio reformă. Dar nici regrete. Chiar și suspecta Pikette, într-o seară rară de liniște, a fost găsită împărțind canapeaua. Cazul rămâne deschis.",
+      "image": "assets/images/blog-belly-flop.jpg"
+    }
+  ],
+  "shop": {
+    "title": "MAGAZIN",
+    "subtitle": "Camera de probe — doar expunere, nimic de aici nu este de vânzare",
+    "notForSale": "NU ESTE DE VÂNZARE",
+    "previewLabel": "MOSTRĂ / PREVIZUALIZARE",
+    "playLabel": "REDĂ PREVIZUALIZAREA",
+    "featuredKicker": "ACUM ÎN PROIECȚIE — PREVIZUALIZAREA ALBUMULUI",
+    "itemKicker": "CAMERA DE PROBE — FIȘA ARTICOLULUI",
+    "disclaimerTitle": "NIMIC DE AICI NU ESTE REAL",
+    "disclaimerBody": "Acest articol este o ilustrație conceptuală glumeață creată pentru acest site. Nu a fost niciodată fabricat, nu este de vânzare și nu poate fi comandat în nicio mărime, culoare sau cantitate — nicăieri, de la nimeni. Orice asemănare cu un produs real este pur întâmplătoare și complet neintenționată.",
+    "backToShop": "← ÎNAPOI LA MAGAZIN"
+  },
+  "shopItems": [
+    {
+      "name": "Brux Gang — „Thug Life, No Rules” (Mixtape)",
+      "tag": "Avertisment pentru părinți. Copertă și videoclip semnate de un anume Spooky-cutare.",
+      "price": "$14",
+      "image": "assets/images/shop-brux-gang.jpg",
+      "videoId": "7l6RhWyPk4s"
+    },
+    {
+      "name": "Tricou CĂUTAT",
+      "tag": "Bumbac, unisex, vinovat prin asociere",
+      "price": "$32",
+      "image": "assets/images/shop-wanted-tee.png",
+      "slug": "wanted-tee",
+      "detail": [
+        "Imprimat chiar în centru: o fotografie de tip mugshot de studio a lui Le Criminel, fixând camera cu expresia plată, nepăsătoare a unui recidivist care nu și-a pus niciodată la îndoială propria nevinovăție. Rigla de înălțime din spatele lui este decorativă — nicio măsurătoare oficială nu a fost făcută vreodată, din cauza refuzului subiectului de a sta nemișcat pentru procesare.",
+        "Note de stil, pentru procesul-verbal: bumbac negru, gros, litere CĂUTAT cu aspect uzat, iar croiala este descrisă cel mai bine drept „șic de cameră de probe”. Disponibil în exact zero mărimi, pentru că este disponibil în zero exemplare — vezi mai jos.",
+        "Pentru a fi absolut clar: acest tricou nu există. Nu poate fi cumpărat, comandat, precomandat sau solicitat într-o altă mărime. Este o ilustrație conceptuală generată pentru gluma acestui site și nimic mai mult — Le Criminel nu a aprobat niciun produs promoțional, fiind câine."
+      ]
+    },
+    {
+      "name": "Cana „Infractor Acceptabil”",
+      "tag": "Ceramică, ține cafea și pică",
+      "price": "$18",
+      "image": "assets/images/shop-okayest-mug.png",
+      "slug": "okayest-mug",
+      "detail": [
+        "O cană din gresie ceramică ce poartă cea mai puțin entuziastă distincție a departamentului: „Infractor Acceptabil”, ștampilată într-un sigiliu circular sub un mic portret neimpresionat al suspectului. Acordată nu pentru excelență, ci pentru constanță — aceleași abateri, aceeași lipsă de remușcare, dimineață de dimineață.",
+        "Ține o cană plină de cafea, sau, potrivit etichetei, un volum echivalent de pică. Rezistența la mașina de spălat vase nu a fost niciodată testată, pentru că cana nu există ca să fie spălată, deținută sau umplută cu nimic.",
+        "Pentru a fi absolut clar: această cană nu există. Nu poate fi cumpărată, comandată, precomandată sau solicitată într-o altă glazură. Este o ilustrație conceptuală generată pentru gluma acestui site și nimic mai mult."
+      ]
+    },
+    {
+      "name": "Poster Incidentul de pe Balcon",
+      "tag": "Print comemorativ, ramă vândută separat",
+      "price": "$45",
+      "image": "assets/images/shop-balcony-poster.png",
+      "slug": "balcony-poster",
+      "detail": [
+        "Un print comemorativ care marchează cea mai proastă după-amiază a balconului: Le Criminel, aplecat peste balustradă, cu ochii pe un porumbel care deja a sesizat pericolul și se află la o bătaie de aripă distanță de a dispărea. Acoperișurile din spatele lui sunt cele ale cartierului, redate într-un stil deliberat îmbătrânit, apropiat de gravură în lemn, pentru că incidentul real nu a produs fotografii utilizabile — doar martori, și foarte mult zgomot.",
+        "„THE BALCONY INCIDENT” se întinde de-a lungul părții de jos cu litere block, ca și cum momentul ar fi fost suficient de important pentru a merita un print înrămat. Probabil chiar a fost. Consultați raportul complet al incidentului pentru versiunea cu mai puține ilustrații și mai multe consecințe.",
+        "Pentru a fi absolut clar: acest poster nu există. Nu poate fi cumpărat, tipărit, înrămat sau expediat în nicio dimensiune. Este o ilustrație conceptuală generată pentru gluma acestui site și nimic mai mult."
+      ]
+    },
+    {
+      "name": "Set de Autocolante Dosar de Caz",
+      "tag": "Set de 5, vinil, rezistent la intemperii",
+      "price": "$9",
+      "image": "assets/images/shop-sticker-pack.png",
+      "slug": "sticker-pack",
+      "detail": [
+        "Cinci autocolante din vinil extrase din cele mai reușite momente ale dosarului: fotografia mugshot, eticheta dosarului cu inscripția „001-CR”, un sigiliu al departamentului în formă de amprentă de labă, canapeaua redusă la o probă și un porumbel cocoțat cu impertinență pe o balustradă asupra căreia nu are niciun drept legal. Rezistent la intemperii, teoretic, având în vedere că este întru totul teoretic.",
+        "Conceput pentru laptopuri, sticle de apă sau interiorul unui dosar marcat CONFIDENȚIAL. Nimic din toate acestea nu contează, întrucât setul nu a fost produs niciodată și nu poate fi expediat, oferit cadou sau desprins de pe folia de suport — pentru că nu are folie de suport.",
+        "Pentru a fi absolut clar: acest set de autocolante nu există. Nu poate fi cumpărat, comandat sau tipărit în nicio cantitate. Este o ilustrație conceptuală generată pentru gluma acestui site și nimic mai mult."
+      ]
+    }
+  ],
+  "footer": "© THE THIEFFRY CRIMINALS — DOSARUL RĂMÂNE DESCHIS. TOATE DREPTURILE REZERVATE (SE PARE)."
+}

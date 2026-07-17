@@ -1,0 +1,20 @@
+echo "Running pre-push security checks..."
+
+if ! command -v gitleaks >/dev/null 2>&1; then
+  echo "gitleaks not found on PATH — install it (see scripts/setup-security-hook.sh for OS-specific commands) before pushing."
+  exit 1
+fi
+
+echo "-- gitleaks secret scan --"
+if ! gitleaks detect --source . --no-banner --redact; then
+  echo "BLOCKED: gitleaks found a likely secret. Fix it (or add a documented allowlist entry in .gitleaks.toml if it's a genuine false positive), then push again."
+  exit 1
+fi
+
+echo "-- npm audit (blocking on high/critical) --"
+if ! npm audit --audit-level=high; then
+  echo "BLOCKED: npm audit found high/critical severity vulnerabilities. Resolve them (npm audit fix, or an explicit override) before pushing."
+  exit 1
+fi
+
+echo "Security checks passed."

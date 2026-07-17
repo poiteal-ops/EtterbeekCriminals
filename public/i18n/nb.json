@@ -1,0 +1,384 @@
+{
+  "nav": {
+    "home": "HJEM",
+    "about": "OM OSS",
+    "story": "HISTORIEN OM EN FORBRYTER",
+    "stories": "SAKSMAPPER",
+    "pigeon": "ÉN DUE, ÉN BALKONG",
+    "couch": "SOFAEN",
+    "trainRide": "TOGTUR",
+    "blog": "BLOGG",
+    "shop": "BUTIKK"
+  },
+  "home": {
+    "wanted": "ETTERLYST",
+    "fileNo": "SAKSNR. 001-CR",
+    "tagline": "Sawito & Le Criminel — etterlyst, avhørt, og stort sett tilgitt",
+    "kicker": "— lokal aksjon, to mistenkte —",
+    "intro": "Én mann, én hund, én felles forakt for det anstendige samfunns regler. Bla gjennom mappen under — dokumentasjonen taler for seg selv.",
+    "promoKicker": "NÅ I BEVISLAGERET",
+    "promoTitle": "BRUX GANG — «THUG LIFE, NO RULES»",
+    "promoTag": "Mixtapen ingen ba om. Coverkunst av en viss Spooky-et-eller-annet.",
+    "promoCta": "SE I BUTIKKEN",
+    "promoVideoLink": "Se forhåndsvisningen"
+  },
+  "about": {
+    "title": "OM DE MISTENKTE",
+    "subtitle": "Saksmappe 001-CR — subjekter identifisert under",
+    "sawitoName": "SAWITO",
+    "sawitoAlias": "ALIAS: «DEN GAMLE MANNEN I ANDRE ETASJE»",
+    "occupation": "YRKE",
+    "occupationVal": "Sjefsmedhjelper",
+    "marksLabel": "KJENNETEGN",
+    "sawitoMarks": "Sølvfarget skjegg, permanent sigarett, aviatorbriller brukt ute som inne",
+    "associateLabel": "MEDSAMMENSVOREN",
+    "sawitoAssociate": "Le Criminel (uatskillelige, uangrende)",
+    "statusLabel": "STATUS",
+    "sawitoStatus": "På frifot. Antatt bevæpnet med godbiter.",
+    "dogName": "LE CRIMINEL",
+    "dogAlias": "ALIAS: «BALKONGBANDITTEN»",
+    "breedLabel": "RASE",
+    "breedVal": "Boston terrier, angivelig",
+    "dogMarks": "Svarte og hvite flekker, taktisk halsbånd, uberørt mine",
+    "dogAssociate": "Sawito (fører, i så måte)",
+    "dogStatus": "Etterlyst i forbindelse med balkonghendelsen. Se mappe.",
+    "rapSheetTitle": "RULLEBLAD",
+    "confidential": "KONFIDENSIELT"
+  },
+  "rapSheet": [
+    { "case": "CASE 001", "charge": "Gjentatt manglende overholdelse av vikeplikt på delte gangstier." },
+    { "case": "CASE 002", "charge": "Besittelse av uautorisert entusiasme i nærheten av postbudet." },
+    { "case": "CASE 003", "charge": "Konspirasjon om å skjule bevis (én sokk, bakgård, uoppklart)." },
+    { "case": "CASE 004", "charge": "Forstyrrelse av den offentlige ro, kl. 06.15, daglig, ingen tegn til å stoppe." },
+    { "case": "CASE 005", "charge": "Overfall med dødelig halevift." }
+  ],
+  "story": {
+    "kicker": "Saksmappe 001-CR — bakgrunn",
+    "title": "HISTORIEN OM EN FORBRYTER",
+    "exhibit": "BEVIS A — SUBJEKT PÅ FRI FOT",
+    "p1": "Ethvert navn har en opprinnelse, og dette har et papirspor. Hunden ble ikke født «Le Criminel». Han ble født, så langt noen kan bevise, som en helt ordinær valp uten den minste flekk på rullebladet.",
+    "p2": "Navnet kom senere, opptjent én liten forseelse om gangen: en stjålet sokk her, en tygget fjernkontroll der, en sofapute som ikke overlevde sommeren. Ingen enkelthandling rettferdiggjorde en mappe. Sammen rettferdiggjorde de et kallenavn.",
+    "p3": "Det var Sawito som sa det først, halvveis mumlende, mens han så hunden traske bort fra et åsted med roen til en som aldri hadde blitt tatt: «Ce chien, c'est un criminel.» Navnet satte seg slik kallenavn gjør — ikke valgt, bare sant.",
+    "p4": "Han har aldri blitt formelt siktet. Han har aldri vist anger. Etterforskningen, om man kan kalle den det, er fortsatt åpen.",
+    "adventuresKicker": "UTVALGTE SAKSMAPPER",
+    "wantMoreTitle": "VIL DU VITE MER?",
+    "wantMoreBody": "Den fullstendige saksloggen oppdateres månedlig, hver eneste forseelse ført til protokolls.",
+    "wantMoreCta": "LES SAKSLOGGEN",
+    "footer": "ARKIVERT UNDER: LOKALE LEGENDER, IKKE VERIFISERT"
+  },
+  "adventures": [
+    {
+      "title": "ÉN DUE, ÉN BALKONG",
+      "teaser": "En due, en balkong, og én svært dårlig beslutning tatt i full fart.",
+      "link": "/pigeon",
+      "image": "assets/images/dog-close-lap.jpg"
+    },
+    {
+      "title": "SOFAEN",
+      "teaser": "En langsom, overlagt rivning. Hjørnet overlevde ikke.",
+      "link": "/couch",
+      "image": "assets/images/couch-crime-scene.jpg"
+    },
+    {
+      "title": "TOGTUR",
+      "teaser": "Ingen av de mistenkte har lov til å kjøre bil, så de tar toget.",
+      "link": "/train-ride",
+      "image": "assets/images/train-window-view.jpg"
+    }
+  ],
+  "pigeon": {
+    "kicker": "Hendelsesrapport",
+    "title": "ÉN DUE, ÉN BALKONG",
+    "locationLabel": "STED",
+    "locationVal": "Balkong i andre etasje, adresse ikke oppgitt",
+    "suspectLabel": "MISTENKT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "VITNE",
+    "witnessVal": "Sawito (til stede, ute av stand til å gripe inn i tide)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Én (1) due, stående der den ikke burde ha stått",
+    "p1": "Den mistenkte observerte en due på kloss hold og tok, uten å rådføre seg med noen, en beslutning. Han forlot balkongen i full fart og uten noen plan. Tyngdekraften var involvert. Duen ble ikke tatt. Hunden klarte seg fint.",
+    "p2": "Sawito klarte seg ikke like fint. Noe hår gikk tapt i panikken som fulgte — hans eget, ikke hundens — og er aldri gjenfunnet.",
+    "aftermathCaption": "BEVIS B — SUBJEKT UNDER OPPHENTING, TILBAKE PÅ FAST GRUNN, TYDELIG UBERØRT AV DET HELE",
+    "stamp": "SAKEN AVSLUTTET — INGEN TILTALE TATT UT"
+  },
+  "couch": {
+    "kicker": "Rapport om skade på eiendom",
+    "title": "SOFAEN",
+    "locationLabel": "STED",
+    "locationVal": "Stue, sørøstre hjørne, tidligere trukket i stoff",
+    "suspectLabel": "MISTENKT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "VITNE",
+    "witnessVal": "Sawito (til stede hele tiden, leverte ingen rapport)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Én (1) løs tråd, ansett som uakseptabel",
+    "p1": "Det begynte, som slikt gjerne gjør, med en enkelt tråd. Subjektet fant den, dro i den, og oppdaget — med det etterforskerne bare kan beskrive som profesjonell tilfredshet — at det fulgte mer tråd etter. Fremdriften var langsom, overlagt, og fullstendig udokumentert helt til det var altfor sent å gripe inn.",
+    "p2": "Da skaden ble oppdaget, var hjørnet redusert til bar ramme og løs stopping, med en bærewire blottlagt og, tilsynelatende, grundig inspisert. Subjektet ble funnet på åstedet like etter, med det ene øyet opplyst av kamerablitsen, en tautelekene holdt i nærheten som for å antyde at han bare tilfeldigvis var innom.",
+    "exhibitBCaption": "BEVIS B — NÆRBILDE AV SKADEN",
+    "exhibitCCaption": "BEVIS C — MISTENKT I NÆRHETEN, UTTRYKK UMULIG Å TYDE",
+    "stamp": "SOFAEN ERKLÆRT TOTALVRAK — SUBJEKT UBERØRT"
+  },
+  "trainRide": {
+    "kicker": "Reiselogg",
+    "title": "TOGTUR",
+    "locationLabel": "STED",
+    "locationVal": "Regiontog, destinasjoner: landsbygd og kyst",
+    "suspectLabel": "MISTENKT",
+    "suspectVal": "Le Criminel (hyppig reisende)",
+    "witnessLabel": "VITNE",
+    "witnessVal": "Sawito (teknisk sett blind, kjøpte billettene likevel)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Frisk luft, for det meste. Måker, nærmere bestemt.",
+    "p1": "Ingen av de mistenkte har lov til å sitte bak rattet på et kjøretøy, av helt forskjellige og like diskvalifiserende grunner: Sawito er, etter eget utsagn, teknisk sett blind, og Le Criminel har aldri blitt utstedt så mye som et sykkelsertifikat. Toget ble ikke valgt som en livsstil, men som eneste gjenværende alternativ, og det har fungert bedre enn noen turde håpe.",
+    "p2": "To destinasjoner er ført i protokollen: landsbygda og kysten. Begge ble godt mottatt. Kysten er likevel den klare favoritten, på grunn av måkene, som subjektet betrakter som en personlig utfordring snarere enn lokal fauna. Han har aldri fanget en. Han har heller aldri sluttet å prøve, og tilbrakte en betydelig del av en reise med nesen presset mot vinduet, i dyp planlegging.",
+    "exhibitBCaption": "BEVIS B — TILRETTELAGT FOR TUREN",
+    "exhibitCCaption": "BEVIS C — GJENNOMFØRER INSPEKSJON PÅ GULVNIVÅ",
+    "exhibitDCaption": "BEVIS D — LANDSBYGD, PASSERT I FART",
+    "exhibitECaption": "BEVIS E — NESE MOT GLASSET, ET STED MELLOM TO STASJONER",
+    "exhibitFCaption": "BEVIS F — ANKOMST VED KYSTEN",
+    "stamp": "DESTINASJON: HVOR SOM HELST DET FINNES MÅKER"
+  },
+  "blog": {
+    "title": "SAKSLOGG",
+    "subtitle": "24 månedlige oppføringer — to år med kontinuerlig overvåking, sak 001-CR er fortsatt åpen"
+  },
+  "blogPosts": [
+    {
+      "date": "JUL 2024",
+      "case": "CASE LOG 001",
+      "title": "DAGEN MENNESKET BLE FUNNET",
+      "body": "Påtruffet på gaten, uten bånd, uten plan, uten synlig eier. Subjektet snuste på ham to ganger, satte seg foran ham, og nektet å bevege seg før det var inngått en avtale. Avtale ble inngått. Subjektet har overvåket ham siden.",
+      "image": "assets/images/blog-cheek-to-cheek.jpg"
+    },
+    {
+      "date": "AUG 2024",
+      "case": "CASE LOG 002",
+      "title": "HENDELSE FØRSTE NATT",
+      "body": "Én sko kom inn i lokalet. Én sko forlot lokalet i gjenkjennelig stand. Etterforskningen av den andre skoen pågår.",
+      "image": "assets/images/blog-shoe-inspection.jpg"
+    },
+    {
+      "date": "SEP 2024",
+      "case": "CASE LOG 003",
+      "title": "VANEMESSIG GARDINOVERVÅKING",
+      "body": "Subjektet har inntatt en fast posisjon på ryggen av sofaen, gardinen trukket til side med én pote, og overvåker gaten for uautoriserte fotgjengere, syklister og en og annen due. Vaktmønster: nesten konstant.",
+      "image": "assets/images/blog-couch-lookout.jpg"
+    },
+    {
+      "date": "OCT 2024",
+      "case": "CASE LOG 004",
+      "title": "UAUTORISERT INNTREDEN I KJØKKENET",
+      "body": "Subjektet observert stående fullt og helt inne på kjøkkenet til tross for at ingen invitasjon noen gang er utstedt. Nekter for ethvert kjennskap til ordet «ut».",
+      "image": "assets/images/blog-shop-entry.jpg"
+    },
+    {
+      "date": "NOV 2024",
+      "case": "CASE LOG 005",
+      "title": "SOKKETYVERI-RING AVSLØRT",
+      "body": "Sju usammenhengende sokker gjenfunnet under sengen. Subjektet til stede på åstedet, tydelig uberørt av bevisene.",
+      "image": "assets/images/blog-shoulder-selfie.jpg"
+    },
+    {
+      "date": "DEC 2024",
+      "case": "CASE LOG 006",
+      "title": "JULEFORSTYRRELSE",
+      "body": "Én julekule i bakken. Treet står fortsatt, foreløpig. Subjektet hevder julekulen «begynte først».",
+      "image": "assets/images/blog-bee-costume.jpg"
+    },
+    {
+      "date": "JAN 2025",
+      "case": "CASE LOG 007",
+      "title": "NYTTÅRSFORSETT BRUTT",
+      "body": "Eieren bestemte seg for å håndheve forbudet mot sofaen. Forsettet varte i fire timer. Subjektet har gjenopptatt full okkupasjon.",
+      "image": "assets/images/blog-couch-cuddle-selfie.jpg"
+    },
+    {
+      "date": "FEB 2025",
+      "case": "CASE LOG 008",
+      "title": "FØRSTE OBSERVASJON AV DEN MISTENKTE PIKETTE",
+      "body": "En katt ved navn Pikette ble observert på stedet. Begge parter ble øyeblikkelig og gjensidig rasende. Årsak ukjent, tradisjon nå etablert.",
+      "image": "assets/images/pikette-windowsill.jpg"
+    },
+    {
+      "date": "MAR 2025",
+      "case": "CASE LOG 009",
+      "title": "FORSØK PÅ FORHANDLING MED POSTBUDET",
+      "body": "Subjektet nærmet seg postbudet med uklare hensikter. Forhandlingene brøt sammen i løpet av sekunder. Posten ble, til slutt, levert.",
+      "image": "assets/images/blog-mailman-standoff.jpg"
+    },
+    {
+      "date": "APR 2025",
+      "case": "CASE LOG 010",
+      "title": "BALKONGHENDELSEN",
+      "body": "Fullstendig rapport levert separat under «Én Due, Én Balkong». Nevnt her for at protokollen skal være fullstendig."
+    },
+    {
+      "date": "MAY 2025",
+      "case": "CASE LOG 011",
+      "title": "SAKEN OM DEN FORSVUNNE FJERNKONTROLLEN",
+      "body": "Fjernkontroll sist sett i nærheten av subjektet. Gjenfunnet tre dager senere under radiatoren, tannmerker i samsvar med tidligere forseelser.",
+      "image": "assets/images/blog-bed-nap.jpg"
+    },
+    {
+      "date": "JUN 2025",
+      "case": "CASE LOG 012",
+      "title": "PIKETTE VENDER TILBAKE, SPENNINGEN UENDRET",
+      "body": "Andre besøk fra den mistenkte Pikette. Begge parter gjenopptok fiendtlighetene akkurat der de slapp, som om ingen tid hadde gått.",
+      "image": "assets/images/pikette-dog-couch.jpg"
+    },
+    {
+      "date": "JUL 2025",
+      "case": "CASE LOG 013",
+      "title": "ETT ÅR I VARETEKT, INGEN BEDRING NOTERT",
+      "body": "Tolvmånedersgjennomgang fullført. Subjektet har ikke gjort noen målbar fremgang mot god oppførsel. Har imidlertid blitt umulig å forestille seg et liv uten.",
+      "image": "assets/images/blog-garden-wall.jpg"
+    },
+    {
+      "date": "AUG 2025",
+      "case": "CASE LOG 014",
+      "title": "SUBJEKTET GJENNOMGÅR KIRURGISK INNGREP",
+      "body": "Subjektet ble kastrert denne måneden. Inngrepet vellykket, verdigheten overlevde ikke skammekragen. Oppførselen fullstendig upåvirket.",
+      "image": "assets/images/blog-park-walk.jpg"
+    },
+    {
+      "date": "SEP 2025",
+      "case": "CASE LOG 015",
+      "title": "OPPHENTINGSPERIODE, HUMØR UENDRET",
+      "body": "Kragen fjernet. Subjektet feiret ved umiddelbart å gjenoppta alle tidligere forbudte aktiviteter for fullt.",
+      "image": "assets/images/blog-full-capacity.jpg"
+    },
+    {
+      "date": "OCT 2025",
+      "case": "CASE LOG 016",
+      "title": "KONFRONTASJON MED PIKETTE, RUNDE TRE",
+      "body": "Operasjonen har ikke avkjølt fiendtlighetene med den mistenkte Pikette. Om noe later subjektet til å bære nag på ren prinsipp.",
+      "image": "assets/images/pikette-couch-visit.jpg"
+    },
+    {
+      "date": "NOV 2025",
+      "case": "CASE LOG 017",
+      "title": "TILTALE FOR TEPPEHAMSTRING",
+      "body": "Alle myke tekstiler i husholdningen er blitt flyttet til én enkelt haug, for tiden under subjektets eksklusive kontroll.",
+      "image": "assets/images/blog-blanket-hoard.jpg"
+    },
+    {
+      "date": "DEC 2025",
+      "case": "CASE LOG 018",
+      "title": "JULEFORSTYRRELSE, RUNDE TO",
+      "body": "Enda en julekule i bakken. Subjektet nekter for et mønster i oppførselen, og anfører «tilfeldighet» som forsvar."
+    },
+    {
+      "date": "JAN 2026",
+      "case": "CASE LOG 019",
+      "title": "FLUKTFORSØK AVVERGET VED DØREN",
+      "body": "Subjektet forsøkte å stikke av gjennom den åpne inngangsdøren. Gjenfanget på trappen. Ingen skader, mild forlegenhet på begge sider.",
+      "image": "assets/images/blog-front-door-recapture.jpg"
+    },
+    {
+      "date": "FEB 2026",
+      "case": "CASE LOG 020",
+      "title": "DEN MISTENKTE PIKETTE, OVERVÅKINGSBILDE I MAPPEN",
+      "body": "Den mistenkte Pikette fotografert på kloss hold under et besøk. Begge parter forblir, av uklare grunner, ute av stand til å sameksistere fredelig.",
+      "image": "assets/images/pikette-closeup.jpg"
+    },
+    {
+      "date": "MAR 2026",
+      "case": "CASE LOG 021",
+      "title": "AVHØR VEDRØRENDE FORSVUNNET SMØRBRØD",
+      "body": "Ett smørbrød, uten tilsyn i nitti sekunder, er ikke gjenfunnet. Subjektet befant seg i rommet. Subjektet vil verken bekrefte eller avkrefte.",
+      "image": "assets/images/blog-cafe-standoff.jpg"
+    },
+    {
+      "date": "APR 2026",
+      "case": "CASE LOG 022",
+      "title": "NABO LEVERER FORMELL KLAGE",
+      "body": "Klage mottatt angående overdreven bjeffing kl. 06.15. Subjektet har fått en formell advarsel. Subjektet har ikke endret timeplanen sin.",
+      "image": "assets/images/blog-frosty-morning.jpg"
+    },
+    {
+      "date": "MAY 2026",
+      "case": "CASE LOG 023",
+      "title": "FULLSTENDIG OVERTAKELSE AV LIVET, VURDERING FULLFØRT",
+      "body": "Subjektet kontrollerer nå sengen, timeplanen, smågodteriet og de fleste større beslutninger. Eierens uavhengighetsstatus: opphevet.",
+      "image": "assets/images/blog-waffle-watch.jpg"
+    },
+    {
+      "date": "JUN 2026",
+      "case": "CASE LOG 024",
+      "title": "TOÅRSSTATUSGJENNOMGANG",
+      "body": "To år siden inntak. Ingen bedring. Men heller ingen anger. Selv den mistenkte Pikette ble, en sjelden rolig kveld, funnet delende sofaen. Saken er fortsatt åpen.",
+      "image": "assets/images/blog-belly-flop.jpg"
+    }
+  ],
+  "shop": {
+    "title": "BUTIKK",
+    "subtitle": "Bevislager — kun til visning, ingenting her er til salgs",
+    "notForSale": "IKKE TIL SALGS",
+    "previewLabel": "SMAKEBIT / FORHÅNDSVISNING",
+    "playLabel": "SPILL FORHÅNDSVISNING",
+    "featuredKicker": "VISES NÅ — ALBUMFORHÅNDSVISNING",
+    "itemKicker": "BEVISLAGER — VAREMAPPE",
+    "disclaimerTitle": "INGENTING HER ER EKTE",
+    "disclaimerBody": "Denne varen er et stykke tøysete konseptkunst laget for dette nettstedet. Den har aldri blitt produsert, er ikke til salgs, og kan ikke bestilles i noen størrelse, farge eller mengde — noe sted, fra noen. Enhver likhet med et faktisk produkt er tilfeldig og fullstendig utilsiktet.",
+    "backToShop": "← TILBAKE TIL BUTIKKEN"
+  },
+  "shopItems": [
+    {
+      "name": "Brux Gang — «Thug Life, No Rules» (Mixtape)",
+      "tag": "Foreldreadvarsel. Coverkunst og video av en viss Spooky-et-eller-annet.",
+      "price": "$14",
+      "image": "assets/images/shop-brux-gang.jpg",
+      "videoId": "7l6RhWyPk4s"
+    },
+    {
+      "name": "ETTERLYST-T-skjorte",
+      "tag": "Bomull, unisex, skyldig ved assosiasjon",
+      "price": "$32",
+      "image": "assets/images/shop-wanted-tee.png",
+      "slug": "wanted-tee",
+      "detail": [
+        "Trykket midt på brystet: et studiobilde av Le Criminel, stirrende rett inn i kameraet med det flate, uberørte uttrykket til en gjenganger som aldri en gang har vurdert sin egen uskyld. Høydemåleren bak ham er rent dekorativ — ingen formell måling ble noensinne tatt, ettersom subjektet nektet å stå stille for registrering.",
+        "Stilnotater, for protokollen: tungt svart bomullsstoff, slitt ETTERLYST-skrift, og en passform best beskrevet som «sjik fra bevisrommet». Fås i akkurat null størrelser, ettersom den fås i null eksemplarer — se under.",
+        "For å være helt tydelig: denne t-skjorten finnes ikke. Den kan ikke kjøpes, bestilles, restbestilles eller etterspørres i en annen størrelse. Den er et stykke konseptkunst laget for dette nettstedets vits og ikke noe mer — Le Criminel har ikke gått god for noe merchandise, ettersom han er en hund."
+      ]
+    },
+    {
+      "name": "«Grei Nok Forbryter»-krus",
+      "tag": "Keramikk, rommer kaffe og nag",
+      "price": "$18",
+      "image": "assets/images/shop-okayest-mug.png",
+      "slug": "okayest-mug",
+      "detail": [
+        "Et steintøykrus som bærer avdelingens minst entusiastiske utmerkelse: «Grei Nok Forbryter», stemplet i et rundt segl under et lite, lite imponert portrett av den mistenkte. Tildelt ikke for fortreffelighet, men for konsistens — samme forseelser, samme mangel på anger, morgen etter morgen.",
+        "Rommer et fullt krus med kaffe, eller, ifølge etiketten, et tilsvarende volum med nag. Oppvaskmaskinsikkerhet ble aldri testet, ettersom kruset ikke finnes for å bli vasket, eid eller fylt med noe som helst.",
+        "For å være helt tydelig: dette kruset finnes ikke. Det kan ikke kjøpes, bestilles, restbestilles eller etterspørres i en annen glasur. Det er et stykke konseptkunst laget for dette nettstedets vits og ikke noe mer."
+      ]
+    },
+    {
+      "name": "Balkonghendelsen-plakat",
+      "tag": "Minneplakat, ramme selges separat",
+      "price": "$45",
+      "image": "assets/images/shop-balcony-poster.png",
+      "slug": "balcony-poster",
+      "detail": [
+        "En minneplakat som markerer balkongens desidert verste ettermiddag: Le Criminel, midt i et lene seg over rekkverket, med blikket festet på en due som allerede har oppdaget faren og er ett vingeslag unna å være borte. Hustakene bak ham er nabolagets, gjengitt i en bevisst aldret, tresnitt-aktig stil, fordi den faktiske hendelsen ikke resulterte i noen brukbare fotografier — bare vitner, og en god del bråk.",
+        "«THE BALCONY INCIDENT» går på tvers nederst i blokkbokstaver, som om øyeblikket var betydningsfullt nok til å fortjene en innrammet plakat. Det var det nok. Se den fullstendige hendelsesrapporten for versjonen med færre illustrasjoner og flere konsekvenser.",
+        "For å være helt tydelig: denne plakaten finnes ikke. Den kan ikke kjøpes, trykkes, rammes inn eller sendes i noen størrelse. Den er et stykke konseptkunst laget for dette nettstedets vits og ikke noe mer."
+      ]
+    },
+    {
+      "name": "Saksmappe-klistremerkepakke",
+      "tag": "Sett med 5, vinyl, værbestandig",
+      "price": "$9",
+      "image": "assets/images/shop-sticker-pack.png",
+      "slug": "sticker-pack",
+      "detail": [
+        "Fem vinylklistremerker hentet fra saksmappens største hits: portrettbildet, mappeetiketten som lyder «001-CR», et avdelingssegl formet som et poteavtrykk, sofaen redusert til bevismateriale, og en due som troner selvtilfreds på et rekkverk den ikke har noen juridisk rett til. Værbestandig, i teorien, ettersom den er helt og holdent teoretisk.",
+        "Designet for bærbare datamaskiner, drikkeflasker, eller innsiden av en mappe merket KONFIDENSIELT. Ingenting av dette spiller noen rolle, ettersom pakken aldri ble produsert og ikke kan sendes, gis bort, eller trekkes av baksiden — fordi den ikke har noen bakside.",
+        "For å være helt tydelig: denne klistremerkepakken finnes ikke. Den kan ikke kjøpes, bestilles eller trykkes i noen mengde. Den er et stykke konseptkunst laget for dette nettstedets vits og ikke noe mer."
+      ]
+    }
+  ],
+  "footer": "© THE THIEFFRY CRIMINALS — SAKEN FORBLIR ÅPEN. ALLE RETTIGHETER FORBEHOLDT (ANGIVELIG)."
+}

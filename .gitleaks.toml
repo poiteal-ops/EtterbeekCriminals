@@ -1,0 +1,10 @@
+# gitleaks config — extends the built-in default ruleset.
+# Add allowlist entries here for confirmed false positives; don't broaden
+# rules just to silence a real finding.
+[extend]
+useDefault = true
+
+# Add a [[allowlists]] entry here for confirmed false positives, e.g.:
+# [[allowlists]]
+# description = "project-specific false positives"
+# regexes = ["..."]

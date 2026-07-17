@@ -1,0 +1,384 @@
+{
+  "nav": {
+    "home": "HEM",
+    "about": "OM OSS",
+    "story": "HISTORIEN OM EN KRIMINELL",
+    "stories": "FALLAKTER",
+    "pigeon": "EN DUVA, EN BALKONG",
+    "couch": "SOFFAN",
+    "trainRide": "TÅGRESA",
+    "blog": "BLOGG",
+    "shop": "BUTIK"
+  },
+  "home": {
+    "wanted": "EFTERLYST",
+    "fileNo": "AKT NR. 001-CR",
+    "tagline": "Sawito & Le Criminel — efterlysta, förhörda och till största delen förlåtna",
+    "kicker": "— lokal insats, två misstänkta —",
+    "intro": "En man, en hund, en gemensam nonchalans inför det goda sällskapets regler. Bläddra i akten nedan — protokollet talar för sig självt.",
+    "promoKicker": "NYTT I BEVISFÖRRÅDET",
+    "promoTitle": "BRUX GANG — \"THUG LIFE, NO RULES\"",
+    "promoTag": "Mixtapet som ingen bad om. Omslagskonst av en viss Spooky-nånting.",
+    "promoCta": "SE I BUTIKEN",
+    "promoVideoLink": "Se förhandstitten"
+  },
+  "about": {
+    "title": "OM DE MISSTÄNKTA",
+    "subtitle": "Fallakt 001-CR — personer identifierade nedan",
+    "sawitoName": "SAWITO",
+    "sawitoAlias": "ALIAS: \"GUBBEN EN TRAPPA UPP\"",
+    "occupation": "YRKE",
+    "occupationVal": "Chefsmöjliggörare",
+    "marksLabel": "KÄNNETECKEN",
+    "sawitoMarks": "Silverfärgat skägg, permanent cigarett, pilotglasögon burna både inomhus och utomhus",
+    "associateLabel": "MEDBROTTSLING",
+    "sawitoAssociate": "Le Criminel (oskiljaktiga, obotfärdiga)",
+    "statusLabel": "STATUS",
+    "sawitoStatus": "Fortfarande på fri fot. Antas vara beväpnad med godbitar.",
+    "dogName": "LE CRIMINEL",
+    "dogAlias": "ALIAS: \"BALKONGBANDITEN\"",
+    "breedLabel": "RAS",
+    "breedVal": "Boston terrier, påstås det",
+    "dogMarks": "Svarta och vita fläckar, taktiskt halsband, obekymrad uppsyn",
+    "dogAssociate": "Sawito (förare, i viss mån)",
+    "dogStatus": "Efterlyst med anledning av balkongincidenten. Se akt.",
+    "rapSheetTitle": "BROTTSREGISTER",
+    "confidential": "KONFIDENTIELLT"
+  },
+  "rapSheet": [
+    { "case": "CASE 001", "charge": "Upprepad underlåtenhet att lämna företräde på delade promenadstråk." },
+    { "case": "CASE 002", "charge": "Innehav av otillåten entusiasm i brevbärarens närhet." },
+    { "case": "CASE 003", "charge": "Konspiration för att gömma bevis (en strumpa, bakgården, olöst fall)." },
+    { "case": "CASE 004", "charge": "Störande av allmän ordning, kl. 6:15, dagligen, inga tecken på att upphöra." },
+    { "case": "CASE 005", "charge": "Misshandel med dödlig svansviftning." }
+  ],
+  "story": {
+    "kicker": "Fallakt 001-CR — bakgrund",
+    "title": "HISTORIEN OM EN KRIMINELL",
+    "exhibit": "BEVIS A — MISSTÄNKT PÅ FRI FOT",
+    "p1": "Varje namn har ett ursprung, och det här har ett pappersspår. Hunden föddes inte som \"Le Criminel\". Han föddes, så vitt någon kan bevisa, som en fullkomligt vanlig valp utan något som helst brottsregister.",
+    "p2": "Namnet kom senare, förtjänat en liten förseelse i taget: en stulen strumpa här, en tuggad fjärrkontroll där, en soffdyna som inte överlevde sommaren. Ingen enskild handling motiverade en akt. Tillsammans motiverade de ett smeknamn.",
+    "p3": "Det var Sawito som sa det först, halvt för sig själv, medan han såg hunden trava iväg från en brottsplats med lugnet hos någon som aldrig blivit tagen på bar gärning: \"Ce chien, c'est un criminel.\" Namnet fastnade som smeknamn gör — inte valt, bara sant.",
+    "p4": "Han har aldrig formellt åtalats. Han har aldrig visat ånger. Utredningen, sådan den nu är, förblir öppen.",
+    "adventuresKicker": "UTVALDA FALLAKTER",
+    "wantMoreTitle": "VILL DU VETA MER?",
+    "wantMoreBody": "Den fullständiga fallloggen uppdateras månadsvis, varje förseelse noterad i protokollet.",
+    "wantMoreCta": "LÄS FALLLOGGEN",
+    "footer": "ARKIVERAT UNDER: LOKALA LEGENDER, OBEKRÄFTADE"
+  },
+  "adventures": [
+    {
+      "title": "EN DUVA, EN BALKONG",
+      "teaser": "En duva, en balkong och ett mycket dåligt beslut fattat i full fart.",
+      "link": "/pigeon",
+      "image": "assets/images/dog-close-lap.jpg"
+    },
+    {
+      "title": "SOFFAN",
+      "teaser": "En långsam, metodisk rivning. Hörnet överlevde inte.",
+      "link": "/couch",
+      "image": "assets/images/couch-crime-scene.jpg"
+    },
+    {
+      "title": "TÅGRESA",
+      "teaser": "Ingen av de misstänkta får köra bil lagligt, så de tar tåget.",
+      "link": "/train-ride",
+      "image": "assets/images/train-window-view.jpg"
+    }
+  ],
+  "pigeon": {
+    "kicker": "Incidentrapport",
+    "title": "EN DUVA, EN BALKONG",
+    "locationLabel": "PLATS",
+    "locationVal": "Balkong på andra våningen, okänd adress",
+    "suspectLabel": "MISSTÄNKT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "VITTNE",
+    "witnessVal": "Sawito (närvarande, kunde inte ingripa i tid)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "En (1) duva, stående där den inte borde ha stått",
+    "p1": "Den misstänkte fick syn på en duva på nära håll och fattade, utan att rådfråga någon, ett beslut. Han lämnade balkongen i full fart och utan någon plan. Tyngdkraften var inblandad. Duvan greps inte. Hunden klarade sig.",
+    "p2": "Sawito klarade sig sämre. En del hår gick förlorat under den efterföljande paniken — hans eget, inte hundens — och har aldrig återfunnits.",
+    "aftermathCaption": "BEVIS B — DEN MISSTÄNKTE UNDER TILLFRISKNANDE, ÅTER PÅ FAST MARK, SYNBART OBERÖRD AV DET HELA",
+    "stamp": "FALLET AVSLUTAT — INGET ÅTAL VÄCKT"
+  },
+  "couch": {
+    "kicker": "Rapport om sakskada",
+    "title": "SOFFAN",
+    "locationLabel": "PLATS",
+    "locationVal": "Vardagsrummet, sydöstra hörnet, tidigare stoppat",
+    "suspectLabel": "MISSTÄNKT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "VITTNE",
+    "witnessVal": "Sawito (närvarande hela tiden, lämnade ingen rapport)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "En (1) lös tråd, ansedd oacceptabel",
+    "p1": "Det började, som dessa saker gör, med en enda tråd. Den misstänkte lokaliserade den, drog i den, och upptäckte — med vad utredarna bara kan beskriva som professionell tillfredsställelse — att mer tråd följde efter. Framstegen var långsamma, metodiska och helt odokumenterade tills det var alldeles för sent att ingripa.",
+    "p2": "Vid den tidpunkt skadan upptäcktes hade hörnet reducerats till bar ram och lös stoppning, med en bärande vajer blottad och, tydligen, noggrant inspekterad. Den misstänkte påträffades på platsen strax därefter, ena ögat upplyst av kamerablixten, en repleksak hållen i närheten som för att antyda att han bara råkade gå förbi.",
+    "exhibitBCaption": "BEVIS B — NÄRBILD PÅ SKADAN",
+    "exhibitCCaption": "BEVIS C — MISSTÄNKT I NÄRHETEN, OUTGRUNDLIGT ANSIKTSUTTRYCK",
+    "stamp": "SOFFAN FÖRKLARAD TOTALFÖRLUST — MISSTÄNKT OBERÖRD"
+  },
+  "trainRide": {
+    "kicker": "Reselogg",
+    "title": "TÅGRESA",
+    "locationLabel": "PLATS",
+    "locationVal": "Regional järnväg, resmål: landsbygd och kust",
+    "suspectLabel": "MISSTÄNKT",
+    "suspectVal": "Le Criminel (flitig resenär)",
+    "witnessLabel": "VITTNE",
+    "witnessVal": "Sawito (tekniskt sett blind, köpte biljetterna ändå)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Frisk luft, mestadels. Måsar, specifikt.",
+    "p1": "Ingen av de misstänkta får framföra ett fordon, av helt olika men lika diskvalificerande skäl: Sawito är, enligt egen utsago, tekniskt sett blind, och Le Criminel har aldrig utfärdats ens ett cykelkörkort. Tåget blev inte ett livsstilsval utan det enda återstående alternativet, och det har fungerat bättre än någon förväntat sig.",
+    "p2": "Två resmål finns noterade: landsbygden och kusten. Båda mottogs väl. Kusten är dock den klara favoriten, tack vare måsarna, som den misstänkte betraktar som en personlig utmaning snarare än lokal fauna. Han har aldrig fångat en. Han har heller aldrig slutat försöka, och tillbringade en betydande del av en resa med nosen tryckt mot fönstret, i full planering.",
+    "exhibitBCaption": "BEVIS B — TILLRÄTTALAGD FÖR RESAN",
+    "exhibitCCaption": "BEVIS C — GENOMFÖR EN INSPEKTION I GOLVNIVÅ",
+    "exhibitDCaption": "BEVIS D — LANDSBYGD, PASSERANDE I FULL FART",
+    "exhibitECaption": "BEVIS E — NOS MOT GLASET, NÅGONSTANS MELLAN STATIONERNA",
+    "exhibitFCaption": "BEVIS F — ANKOMST VID KUSTEN",
+    "stamp": "RESMÅL: VAR SOM HELST DÄR DET FINNS MÅSAR"
+  },
+  "blog": {
+    "title": "FALLLOGG",
+    "subtitle": "24 månatliga poster — två års kontinuerlig övervakning, fall 001-CR förblir öppet"
+  },
+  "blogPosts": [
+    {
+      "date": "JUL 2024",
+      "case": "CASE LOG 001",
+      "title": "DAGEN DÅ MÄNNISKAN HITTADES",
+      "body": "Påträffad på gatan, utan koppel, utan plan, utan synbar ägare. Den misstänkte nosade på honom två gånger, satte sig framför honom och vägrade röra sig förrän arrangemang hade gjorts. Arrangemang gjordes. Den misstänkte har övervakat honom sedan dess.",
+      "image": "assets/images/blog-cheek-to-cheek.jpg"
+    },
+    {
+      "date": "AUG 2024",
+      "case": "CASE LOG 002",
+      "title": "INCIDENT UNDER FÖRSTA NATTEN",
+      "body": "En sko tog sig in på området. En sko lämnade i igenkännbart skick. Utredningen av den andra skon pågår.",
+      "image": "assets/images/blog-shoe-inspection.jpg"
+    },
+    {
+      "date": "SEP 2024",
+      "case": "CASE LOG 003",
+      "title": "VANEMÄSSIG GARDINBEVAKNING",
+      "body": "Den misstänkte har intagit en fast position på soffryggen, med gardinen dragen åt sidan med en tass, och bevakar gatan efter obehöriga fotgängare, cyklister och enstaka duvor. Skiftmönster: så gott som konstant.",
+      "image": "assets/images/blog-couch-lookout.jpg"
+    },
+    {
+      "date": "OCT 2024",
+      "case": "CASE LOG 004",
+      "title": "OBEHÖRIGT TILLTRÄDE TILL KÖKET",
+      "body": "Den misstänkte observerades stående helt inne i köket trots att ingen inbjudan någonsin utfärdats. Förnekar all kännedom om ordet \"ut\".",
+      "image": "assets/images/blog-shop-entry.jpg"
+    },
+    {
+      "date": "NOV 2024",
+      "case": "CASE LOG 005",
+      "title": "STRUMPSTÖLDSHÄRVA AVSLÖJAD",
+      "body": "Sju omaka strumpor återfunna under sängen. Den misstänkte närvarande på platsen, synbart oberörd av bevisen.",
+      "image": "assets/images/blog-shoulder-selfie.jpg"
+    },
+    {
+      "date": "DEC 2024",
+      "case": "CASE LOG 006",
+      "title": "HÖGTIDSSTÖRNING",
+      "body": "En julgranskula nedtagen. Trädet står fortfarande kvar, för tillfället. Den misstänkte hävdar att julgranskulan \"började först\".",
+      "image": "assets/images/blog-bee-costume.jpg"
+    },
+    {
+      "date": "JAN 2025",
+      "case": "CASE LOG 007",
+      "title": "NYÅRSLÖFTE BRUTET",
+      "body": "Ägaren lovade att upprätthålla soffförbudet. Löftet höll i fyra timmar. Den misstänkte har återupptagit full besittning.",
+      "image": "assets/images/blog-couch-cuddle-selfie.jpg"
+    },
+    {
+      "date": "FEB 2025",
+      "case": "CASE LOG 008",
+      "title": "FÖRSTA OBSERVATIONEN AV DEN MISSTÄNKTA PIKETTE",
+      "body": "En katt vid namn Pikette observerades på området. Båda parter blev omedelbart och ömsesidigt rasande. Orsak okänd, tradition sedan dess etablerad.",
+      "image": "assets/images/pikette-windowsill.jpg"
+    },
+    {
+      "date": "MAR 2025",
+      "case": "CASE LOG 009",
+      "title": "FÖRSÖK TILL FÖRHANDLING MED BREVBÄRAREN",
+      "body": "Den misstänkte närmade sig brevbäraren med oklar avsikt. Förhandlingarna bröt samman inom några sekunder. Posten levererades, till slut.",
+      "image": "assets/images/blog-mailman-standoff.jpg"
+    },
+    {
+      "date": "APR 2025",
+      "case": "CASE LOG 010",
+      "title": "BALKONGINCIDENTEN",
+      "body": "Fullständig rapport inlämnad separat under \"En Duva, En Balkong\". Refererad här för fullständighetens skull."
+    },
+    {
+      "date": "MAY 2025",
+      "case": "CASE LOG 011",
+      "title": "FALLET MED DEN FÖRSVUNNA FJÄRRKONTROLLEN",
+      "body": "Fjärrkontrollen senast sedd i den misstänktes närhet. Återfunnen tre dagar senare under elementet, tandavtryck förenliga med tidigare förseelser.",
+      "image": "assets/images/blog-bed-nap.jpg"
+    },
+    {
+      "date": "JUN 2025",
+      "case": "CASE LOG 012",
+      "title": "PIKETTE ÅTERVÄNDER, SPÄNNINGARNA OFÖRÄNDRADE",
+      "body": "Andra besöket av den misstänkta Pikette. Båda parter återupptog fientligheterna precis där de slutade, som om ingen tid hade förflutit.",
+      "image": "assets/images/pikette-dog-couch.jpg"
+    },
+    {
+      "date": "JUL 2025",
+      "case": "CASE LOG 013",
+      "title": "ETT ÅR I FÖRVAR, INGEN FÖRBÄTTRING NOTERAD",
+      "body": "Tolvmånadersgenomgången slutförd. Den misstänkte har inte gjort några mätbara framsteg mot gott uppförande. Har dock blivit omöjlig att föreställa sig livet utan.",
+      "image": "assets/images/blog-garden-wall.jpg"
+    },
+    {
+      "date": "AUG 2025",
+      "case": "CASE LOG 014",
+      "title": "DEN MISSTÄNKTE GENOMGÅR KIRURGISKT INGREPP",
+      "body": "Den misstänkte kastrerades denna månad. Ingreppet lyckades, värdigheten överlevde inte skammens krage. Beteendet helt opåverkat.",
+      "image": "assets/images/blog-park-walk.jpg"
+    },
+    {
+      "date": "SEP 2025",
+      "case": "CASE LOG 015",
+      "title": "TILLFRISKNANDEPERIOD, HUMÖRET OFÖRÄNDRAT",
+      "body": "Kragen borttagen. Den misstänkte firade genom att omedelbart återuppta alla tidigare förbjudna aktiviteter i full kapacitet.",
+      "image": "assets/images/blog-full-capacity.jpg"
+    },
+    {
+      "date": "OCT 2025",
+      "case": "CASE LOG 016",
+      "title": "KONFRONTATION MED PIKETTE, RUND TRE",
+      "body": "Operationen har inte svalkat fientligheterna mot den misstänkta Pikette. Snarare verkar den misstänkte hysa agg av ren princip.",
+      "image": "assets/images/pikette-couch-visit.jpg"
+    },
+    {
+      "date": "NOV 2025",
+      "case": "CASE LOG 017",
+      "title": "ÅTAL FÖR FILTHAMSTRING",
+      "body": "Alla mjuka textilier i hushållet har omlokaliserats till en enda hög, för närvarande under den misstänktes exklusiva kontroll.",
+      "image": "assets/images/blog-blanket-hoard.jpg"
+    },
+    {
+      "date": "DEC 2025",
+      "case": "CASE LOG 018",
+      "title": "HÖGTIDSSTÖRNING, RUND TVÅ",
+      "body": "Ännu en julgranskula nedtagen. Den misstänkte förnekar ett mönster av beteende och åberopar \"slumpen\" som försvar."
+    },
+    {
+      "date": "JAN 2026",
+      "case": "CASE LOG 019",
+      "title": "FLYKTFÖRSÖK STOPPAT VID DÖRREN",
+      "body": "Den misstänkte gjorde ett försök att fly genom den öppna ytterdörren. Återtagen på trappan. Inga skador, mild förlägenhet på båda sidor.",
+      "image": "assets/images/blog-front-door-recapture.jpg"
+    },
+    {
+      "date": "FEB 2026",
+      "case": "CASE LOG 020",
+      "title": "DEN MISSTÄNKTA PIKETTE, ÖVERVAKNINGSFOTO I AKTEN",
+      "body": "Den misstänkta Pikette fotograferad på nära håll under ett besök. Båda parter förblir, av oklara skäl, oförmögna att samexistera fredligt.",
+      "image": "assets/images/pikette-closeup.jpg"
+    },
+    {
+      "date": "MAR 2026",
+      "case": "CASE LOG 021",
+      "title": "FÖRHÖR ANGÅENDE FÖRSVUNNEN SMÖRGÅS",
+      "body": "En smörgås, obevakad i nittio sekunder, har inte återfunnits. Den misstänkte befann sig i rummet. Den misstänkte varken bekräftar eller förnekar.",
+      "image": "assets/images/blog-cafe-standoff.jpg"
+    },
+    {
+      "date": "APR 2026",
+      "case": "CASE LOG 022",
+      "title": "GRANNE LÄMNAR IN FORMELLT KLAGOMÅL",
+      "body": "Klagomål mottaget angående överdrivet skällande kl. 6:15. Den misstänkte har formellt varnats. Den misstänkte har inte ändrat sitt schema.",
+      "image": "assets/images/blog-frosty-morning.jpg"
+    },
+    {
+      "date": "MAY 2026",
+      "case": "CASE LOG 023",
+      "title": "FULLSTÄNDIGT LIVSÖVERTAGANDE, BEDÖMNING SLUTFÖRD",
+      "body": "Den misstänkte kontrollerar nu sängen, schemat, mellanmålen och de flesta viktiga beslut. Ägarens oberoendestatus: återkallad.",
+      "image": "assets/images/blog-waffle-watch.jpg"
+    },
+    {
+      "date": "JUN 2026",
+      "case": "CASE LOG 024",
+      "title": "TVÅÅRSSTATUSGENOMGÅNG",
+      "body": "Två år sedan intag. Ingen förbättring. Men heller ingen ånger. Till och med den misstänkta Pikette hittades, under en sällsynt lugn kväll, dela soffan. Fallet förblir öppet.",
+      "image": "assets/images/blog-belly-flop.jpg"
+    }
+  ],
+  "shop": {
+    "title": "BUTIK",
+    "subtitle": "Bevisförråd — endast utställning, inget här är till salu",
+    "notForSale": "EJ TILL SALU",
+    "previewLabel": "SMAKPROV / FÖRHANDSTITT",
+    "playLabel": "SPELA FÖRHANDSTITT",
+    "featuredKicker": "VISAS NU — ALBUMFÖRHANDSTITT",
+    "itemKicker": "BEVISFÖRRÅD — FÖREMÅLSAKT",
+    "disclaimerTitle": "INGET HÄR ÄR ÄKTA",
+    "disclaimerBody": "Detta föremål är ett skämtsamt konceptkonstverk skapat för den här sidan. Det har aldrig tillverkats, är inte till salu och kan inte beställas i någon storlek, färg eller kvantitet — någonstans, av någon. Eventuell likhet med en verklig produkt är slumpmässig och helt oavsiktlig.",
+    "backToShop": "← TILLBAKA TILL BUTIKEN"
+  },
+  "shopItems": [
+    {
+      "name": "Brux Gang — \"Thug Life, No Rules\" (Mixtape)",
+      "tag": "Föräldravarning. Omslagskonst och video av en viss Spooky-nånting.",
+      "price": "$14",
+      "image": "assets/images/shop-brux-gang.jpg",
+      "videoId": "7l6RhWyPk4s"
+    },
+    {
+      "name": "EFTERLYST-T-shirt",
+      "tag": "Bomull, unisex, skyldig genom association",
+      "price": "$32",
+      "image": "assets/images/shop-wanted-tee.png",
+      "slug": "wanted-tee",
+      "detail": [
+        "Tryckt mitt fram: ett studiofoto av Le Criminel i signalementsformat, som stirrar rakt in i kameran med den platta, oberörda min hos en återfallsförbrytare som aldrig en enda gång ifrågasatt sin egen oskuld. Längdmåttet bakom honom är rent dekorativt — ingen formell mätning har någonsin genomförts, eftersom den misstänkte vägrat stå still för registreringen.",
+        "Stilanteckningar, för protokollet: tungt svart bomullstyg, sliten EFTERLYST-text, och en passform bäst beskriven som \"bevisrumschic\". Finns i exakt noll storlekar, eftersom den finns i noll exemplar — se nedan.",
+        "För att vara alldeles tydlig: den här tröjan existerar inte. Den kan inte köpas, beställas, restnoteras eller önskas i en annan storlek. Det är ett konceptkonstverk skapat för den här sidans skämt och inget annat — Le Criminel har inte godkänt någon merchandise, med tanke på att han är en hund."
+      ]
+    },
+    {
+      "name": "\"Okejaste Brottslingen\"-mugg",
+      "tag": "Keramik, rymmer kaffe och gammalt agg",
+      "price": "$18",
+      "image": "assets/images/shop-okayest-mug.png",
+      "slug": "okayest-mug",
+      "detail": [
+        "En stengodsmugg som bär avdelningens minst entusiastiska hedersomnämnande: \"Okejaste Brottslingen\", stämplat i ett runt sigill under ett litet, föga imponerat porträtt av den misstänkte. Tilldelad inte för förträfflighet, utan för konsekvens — samma förseelser, samma brist på ånger, morgon efter morgon.",
+        "Rymmer en full mugg kaffe, eller, enligt etiketten, en motsvarande volym gammalt agg. Diskmaskinssäkerheten har aldrig testats, eftersom muggen inte existerar för att diskas, ägas eller fyllas med någonting alls.",
+        "För att vara alldeles tydlig: den här muggen existerar inte. Den kan inte köpas, beställas, restnoteras eller önskas i en annan glasyr. Det är ett konceptkonstverk skapat för den här sidans skämt och inget annat."
+      ]
+    },
+    {
+      "name": "Affisch: Balkongincidenten",
+      "tag": "Minnestryck, ram säljs separat",
+      "price": "$45",
+      "image": "assets/images/shop-balcony-poster.png",
+      "slug": "balcony-poster",
+      "detail": [
+        "Ett minnestryck som högtidlighåller balkongens värsta eftermiddag någonsin: Le Criminel, mitt i en lutning över räcket, med blicken på en duva som redan insett faran och är ett vingslag från att vara borta. Taken bakom honom är grannskapets, återgivna i en medvetet åldrad, träsnittsliknande stil, eftersom den faktiska incidenten inte gav några användbara fotografier — bara vittnen, och en hel del oväsen.",
+        "\"THE BALCONY INCIDENT\" löper längs nederkanten i blockbokstäver, som om ögonblicket var betydelsefullt nog att förtjäna ett inramat tryck. Det var det förmodligen. Se den fullständiga incidentrapporten för versionen med färre illustrationer och fler konsekvenser.",
+        "För att vara alldeles tydlig: den här affischen existerar inte. Den kan inte köpas, tryckas, inramas eller skickas i någon storlek. Det är ett konceptkonstverk skapat för den här sidans skämt och inget annat."
+      ]
+    },
+    {
+      "name": "Klistermärkespaket: Fallakten",
+      "tag": "Set om 5, vinyl, väderbeständigt",
+      "price": "$9",
+      "image": "assets/images/shop-sticker-pack.png",
+      "slug": "sticker-pack",
+      "detail": [
+        "Fem vinylklistermärken hämtade från fallaktens största höjdpunkter: signalementsfotot, aktmärket med texten \"001-CR\", ett avdelningssigill format som ett tassavtryck, soffan reducerad till bevismaterial, och en duva som sitter självbelåtet på ett räcke den inte har någon laglig rätt till. Väderbeständiga, i teorin, med tanke på att de är helt teoretiska.",
+        "Designade för bärbara datorer, vattenflaskor, eller insidan av en mapp märkt KONFIDENTIELLT. Inget av det spelar någon roll, eftersom paketet aldrig tillverkades och inte kan skickas, ges bort eller dras av sitt skyddspapper — eftersom det inte har något skyddspapper.",
+        "För att vara alldeles tydlig: det här klistermärkespaketet existerar inte. Det kan inte köpas, beställas eller tryckas i någon kvantitet. Det är ett konceptkonstverk skapat för den här sidans skämt och inget annat."
+      ]
+    }
+  ],
+  "footer": "© THE THIEFFRY CRIMINALS — AKTEN FÖRBLIR ÖPPEN. ALLA RÄTTIGHETER FÖRBEHÅLLNA (PÅSTÅTT)."
+}

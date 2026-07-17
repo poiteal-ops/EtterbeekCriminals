@@ -1,0 +1,384 @@
+{
+  "nav": {
+    "home": "POČETNA",
+    "about": "O NAMA",
+    "story": "PRIČA O KRIMINALCU",
+    "stories": "SPISI PREDMETA",
+    "pigeon": "JEDAN GOLUB, JEDAN BALKON",
+    "couch": "KAUČ",
+    "trainRide": "VOŽNJA VLAKOM",
+    "blog": "BLOG",
+    "shop": "TRGOVINA"
+  },
+  "home": {
+    "wanted": "TRAŽI SE",
+    "fileNo": "SPIS BR. 001-CR",
+    "tagline": "Sawito & Le Criminel — traženi, ispitani i uglavnom oprošteni",
+    "kicker": "— lokalna operacija, dvoje osumnjičenih —",
+    "intro": "Jedan čovjek, jedan pas, jedno zajedničko nepoštovanje pravila pristojnog društva. Pregledajte spis ispod — dokazi govore sami za sebe.",
+    "promoKicker": "NOVO U SKLADIŠTU DOKAZA",
+    "promoTitle": "BRUX GANG — «THUG LIFE, NO RULES»",
+    "promoTag": "Mixtape koji nitko nije tražio. Naslovnicu izradio izvjesni Spooky-nešto.",
+    "promoCta": "POGLEDAJ U TRGOVINI",
+    "promoVideoLink": "Pogledaj najavu"
+  },
+  "about": {
+    "title": "O OSUMNJIČENIMA",
+    "subtitle": "Spis predmeta 001-CR — subjekti identificirani u nastavku",
+    "sawitoName": "SAWITO",
+    "sawitoAlias": "ALIAS: «STARAC S KATA»",
+    "occupation": "ZANIMANJE",
+    "occupationVal": "Glavni omogućivač",
+    "marksLabel": "POSEBNA OBILJEŽJA",
+    "sawitoMarks": "Srebrna brada, cigareta u trajnom posjedu, pilotske naočale nošene i unutra i vani",
+    "associateLabel": "SURADNIK",
+    "sawitoAssociate": "Le Criminel (nerazdvojni, bez griže savjesti)",
+    "statusLabel": "STATUS",
+    "sawitoStatus": "U bijegu. Vjerojatno naoružan poslasticama.",
+    "dogName": "LE CRIMINEL",
+    "dogAlias": "ALIAS: «BANDIT S BALKONA»",
+    "breedLabel": "PASMINA",
+    "breedVal": "Bostonski terijer, navodno",
+    "dogMarks": "Crno-bijele mrlje, taktička ogrlica, ravnodušan izraz lica",
+    "dogAssociate": "Sawito (vodič, uvjetno rečeno)",
+    "dogStatus": "Traži se zbog incidenta na balkonu. Vidi spis.",
+    "rapSheetTitle": "KAZNENA EVIDENCIJA",
+    "confidential": "POVJERLJIVO"
+  },
+  "rapSheet": [
+    { "case": "CASE 001", "charge": "Opetovano nepoštivanje prava prvenstva prolaska na zajedničkim stazama za šetnju." },
+    { "case": "CASE 002", "charge": "Posjedovanje neovlaštenog oduševljenja u blizini poštara." },
+    { "case": "CASE 003", "charge": "Zavjera radi zakopavanja dokaza (jedna čarapa, dvorište, neriješeno)." },
+    { "case": "CASE 004", "charge": "Narušavanje javnog reda i mira, 6:15 ujutro, svakodnevno, bez znakova prestanka." },
+    { "case": "CASE 005", "charge": "Napad smrtonosnim mahanjem repa." }
+  ],
+  "story": {
+    "kicker": "Spis predmeta 001-CR — pozadina",
+    "title": "PRIČA O KRIMINALCU",
+    "exhibit": "DOKAZ A — SUBJEKT U BIJEGU",
+    "p1": "Svako ime ima podrijetlo, a ovo ima i spis. Pas nije rođen kao «Le Criminel». Rođen je, koliko se god može dokazati, kao posve običan štenac bez ikakve kaznene evidencije.",
+    "p2": "Ime je stiglo poslije, zarađeno jedan mali prekršaj po jedan: ovdje ukradena čarapa, ondje izgrizen daljinski upravljač, jastuk na kauču koji nije preživio ljeto. Nijedan pojedinačni čin nije zasluživao spis. Zajedno, zaslužili su nadimak.",
+    "p3": "Prvi ga je tako nazvao Sawito, poluglasno, gledajući psa kako odšeće s mjesta zločina s mirnoćom nekoga tko nikada nije uhvaćen: «Ce chien, c'est un criminel.» Ime se zalijepilo onako kako se nadimci lijepe — nije izabrano, samo je istinito.",
+    "p4": "Nikada nije formalno optužen. Nikada nije pokazao imalo kajanja. Istraga, kakva god bila, ostaje otvorena.",
+    "adventuresKicker": "ODABRANI SPISI PREDMETA",
+    "wantMoreTitle": "ŽELITE ZNATI VIŠE?",
+    "wantMoreBody": "Puni dnevnik predmeta ažurira se mjesečno, svaki prekršaj zaveden u evidenciju.",
+    "wantMoreCta": "PROČITAJ DNEVNIK PREDMETA",
+    "footer": "ZAVEDENO POD: LOKALNE LEGENDE, NEPOTVRĐENO"
+  },
+  "adventures": [
+    {
+      "title": "JEDAN GOLUB, JEDAN BALKON",
+      "teaser": "Golub, balkon i jedna vrlo loša odluka donesena velikom brzinom.",
+      "link": "/pigeon",
+      "image": "assets/images/dog-close-lap.jpg"
+    },
+    {
+      "title": "KAUČ",
+      "teaser": "Spora, promišljena demolicija. Kut nije preživio.",
+      "link": "/couch",
+      "image": "assets/images/couch-crime-scene.jpg"
+    },
+    {
+      "title": "VOŽNJA VLAKOM",
+      "teaser": "Nijedan osumnjičeni ne smije legalno voziti, pa idu vlakom.",
+      "link": "/train-ride",
+      "image": "assets/images/train-window-view.jpg"
+    }
+  ],
+  "pigeon": {
+    "kicker": "Izvještaj o incidentu",
+    "title": "JEDAN GOLUB, JEDAN BALKON",
+    "locationLabel": "LOKACIJA",
+    "locationVal": "Balkon na drugom katu, adresa nije objavljena",
+    "suspectLabel": "OSUMNJIČENI",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "SVJEDOK",
+    "witnessVal": "Sawito (prisutan, nije uspio pravovremeno intervenirati)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Jedan (1) golub, stajao je tamo gdje nije smio",
+    "p1": "Osumnjičeni je promotrio goluba iz neposredne blizine i, bez savjetovanja s ikim, donio odluku. Napustio je balkon velikom brzinom i bez plana. Gravitacija je odigrala svoju ulogu. Golub nije uhvaćen. Pas je bio dobro.",
+    "p2": "Sawito nije bio dobro. U panici koja je uslijedila izgubljena je kosa — njegova, ne pasja — i nikada nije pronađena.",
+    "aftermathCaption": "DOKAZ B — SUBJEKT U OPORAVKU, PONOVNO NA ČVRSTOM TLU, VIDLJIVO NEDIRNUT SVIME TIME",
+    "stamp": "SLUČAJ ZATVOREN — NEMA PODIGNUTE OPTUŽNICE"
+  },
+  "couch": {
+    "kicker": "Izvještaj o materijalnoj šteti",
+    "title": "KAUČ",
+    "locationLabel": "LOKACIJA",
+    "locationVal": "Dnevni boravak, jugoistočni kut, nekoć tapeciran",
+    "suspectLabel": "OSUMNJIČENI",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "SVJEDOK",
+    "witnessVal": "Sawito (prisutan cijelo vrijeme, nije podnio nikakav izvještaj)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Jedna (1) labava nit, proglašena neprihvatljivom",
+    "p1": "Počelo je, kao i uvijek u takvim slučajevima, s jednom niti. Subjekt ju je pronašao, povukao i otkrio — uz ono što istražitelji mogu opisati jedino kao profesionalno zadovoljstvo — da slijedi još niti. Napredak je bio spor, promišljen i posve nedokumentiran, sve dok nije bilo prekasno za intervenciju.",
+    "p2": "Do trenutka kad je šteta primijećena, kut je bio sveden na goli okvir i raspršenu punjenu masu, s izloženim potpornim kabelom koji je, čini se, temeljito pregledan. Subjekt je pronađen na mjestu događaja nedugo zatim, jedno oko obasjano bljeskalicom fotoaparata, uz igračku od užeta u blizini, kao da sugerira kako je samo slučajno prolazio.",
+    "exhibitBCaption": "DOKAZ B — DETALJ ŠTETE",
+    "exhibitCCaption": "DOKAZ C — OSUMNJIČENI U BLIZINI, IZRAZ LICA NEODGONETLJIV",
+    "stamp": "KAUČ PROGLAŠEN POTPUNIM GUBITKOM — SUBJEKT NEDIRNUT"
+  },
+  "trainRide": {
+    "kicker": "Putni dnevnik",
+    "title": "VOŽNJA VLAKOM",
+    "locationLabel": "LOKACIJA",
+    "locationVal": "Regionalna željeznica, odredišta: selo i obala",
+    "suspectLabel": "OSUMNJIČENI",
+    "suspectVal": "Le Criminel (čest putnik)",
+    "witnessLabel": "SVJEDOK",
+    "witnessVal": "Sawito (tehnički slijep, ipak je kupio karte)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Svjež zrak, uglavnom. Galebovi, konkretno.",
+    "p1": "Nijednom osumnjičenom nije dopušteno sjesti za volan vozila, iz posve različitih, ali podjednako diskvalificirajućih razloga: Sawito je, po vlastitom priznanju, tehnički slijep, a Le Criminelu nikada nije izdana čak ni vozačka dozvola za bicikl. Vlak nije postao njihov izbor stila života, već jedina preostala opcija, i pokazao se boljim rješenjem nego što je itko očekivao.",
+    "p2": "U evidenciji su dva odredišta: selo i obala. Oba su lijepo primljena. Obala je, međutim, jasni favorit, zbog galebova, koje subjekt smatra osobnim izazovom, a ne lokalnom faunom. Nikada nijednoga nije uhvatio. Također nikada nije prestao pokušavati, i znatan dio jednog putovanja proveo je s nosom prislonjenim na prozor, kujući planove.",
+    "exhibitBCaption": "DOKAZ B — SMJEŠTEN ZA VOŽNJU",
+    "exhibitCCaption": "DOKAZ C — PROVODI INSPEKCIJU NA RAZINI PODA",
+    "exhibitDCaption": "DOKAZ D — SELO, PROMIČE VELIKOM BRZINOM",
+    "exhibitECaption": "DOKAZ E — NOS NA STAKLU, NEGDJE IZMEĐU STANICA",
+    "exhibitFCaption": "DOKAZ F — DOLAZAK NA OBALU",
+    "stamp": "ODREDIŠTE: GDJE GOD IMA GALEBOVA"
+  },
+  "blog": {
+    "title": "DNEVNIK PREDMETA",
+    "subtitle": "24 mjesečna zapisa — dvije godine neprekidnog nadzora, predmet 001-CR ostaje otvoren"
+  },
+  "blogPosts": [
+    {
+      "date": "JUL 2024",
+      "case": "CASE LOG 001",
+      "title": "DAN KADA JE PRONAĐEN ČOVJEK",
+      "body": "Zatečen na ulici, bez povodca, bez plana, bez vidljivog vlasnika. Subjekt ga je onjušio dvaput, sjeo ispred njega i odbio se pomaknuti dok se nešto nije dogovorilo. Dogovor je postignut. Subjekt ga otad nadzire.",
+      "image": "assets/images/blog-cheek-to-cheek.jpg"
+    },
+    {
+      "date": "AUG 2024",
+      "case": "CASE LOG 002",
+      "title": "INCIDENT PRVE NOĆI",
+      "body": "Jedna cipela ušla je u prostorije. Jedna cipela izašla je u prepoznatljivom stanju. Istraga o drugoj cipeli u tijeku.",
+      "image": "assets/images/blog-shoe-inspection.jpg"
+    },
+    {
+      "date": "SEP 2024",
+      "case": "CASE LOG 003",
+      "title": "UOBIČAJENI NADZOR IZA ZAVJESE",
+      "body": "Subjekt je zauzeo stalnu poziciju na naslonu kauča, zavjesu odgurnuvši u stranu jednom šapom, nadzirući ulicu radi neovlaštenih pješaka, biciklista i povremenog goluba. Raspored smjena: gotovo neprekidan.",
+      "image": "assets/images/blog-couch-lookout.jpg"
+    },
+    {
+      "date": "OCT 2024",
+      "case": "CASE LOG 004",
+      "title": "NEOVLAŠTEN ULAZAK U KUHINJU",
+      "body": "Subjekt uočen kako stoji potpuno unutar kuhinje unatoč tome što mu nikada nije upućen poziv. Poriče poznavanje riječi «van».",
+      "image": "assets/images/blog-shop-entry.jpg"
+    },
+    {
+      "date": "NOV 2024",
+      "case": "CASE LOG 005",
+      "title": "OTKRIVEN LANAC KRAĐE ČARAPA",
+      "body": "Sedam neparnih čarapa pronađeno ispod kreveta. Subjekt prisutan na mjestu događaja, vidljivo nedirnut dokazima.",
+      "image": "assets/images/blog-shoulder-selfie.jpg"
+    },
+    {
+      "date": "DEC 2024",
+      "case": "CASE LOG 006",
+      "title": "BOŽIĆNI NEMIRI",
+      "body": "Jedan ukras pao. Bor još stoji, zasad. Subjekt tvrdi da je ukras «prvi počeo».",
+      "image": "assets/images/blog-bee-costume.jpg"
+    },
+    {
+      "date": "JAN 2025",
+      "case": "CASE LOG 007",
+      "title": "PREKRŠENA NOVOGODIŠNJA ODLUKA",
+      "body": "Vlasnik je odlučio provesti zabranu kauča. Odluka je potrajala četiri sata. Subjekt je ponovno preuzeo puno vlasništvo.",
+      "image": "assets/images/blog-couch-cuddle-selfie.jpg"
+    },
+    {
+      "date": "FEB 2025",
+      "case": "CASE LOG 008",
+      "title": "PRVO ZAPAŽANJE OSUMNJIČENE PIKETTE",
+      "body": "Mačka, imenom Pikette, primijećena je u prostorijama. Obje su strane trenutačno i uzajamno pobjesnjele. Uzrok nepoznat, tradicija otad ustanovljena.",
+      "image": "assets/images/pikette-windowsill.jpg"
+    },
+    {
+      "date": "MAR 2025",
+      "case": "CASE LOG 009",
+      "title": "POKUŠAJ PREGOVORA S POŠTAROM",
+      "body": "Subjekt se približio poštaru s nejasnom namjerom. Pregovori su propali u nekoliko sekundi. Pošta je, na kraju, dostavljena.",
+      "image": "assets/images/blog-mailman-standoff.jpg"
+    },
+    {
+      "date": "APR 2025",
+      "case": "CASE LOG 010",
+      "title": "INCIDENT NA BALKONU",
+      "body": "Puni izvještaj podnesen zasebno pod «Jedan golub, jedan balkon». Ovdje naveden radi potpunosti evidencije."
+    },
+    {
+      "date": "MAY 2025",
+      "case": "CASE LOG 011",
+      "title": "SLUČAJ NESTALOG DALJINSKOG UPRAVLJAČA",
+      "body": "Daljinski upravljač zadnji put viđen u blizini subjekta. Pronađen tri dana kasnije ispod radijatora, tragovi zubi u skladu s ranijim prekršajima.",
+      "image": "assets/images/blog-bed-nap.jpg"
+    },
+    {
+      "date": "JUN 2025",
+      "case": "CASE LOG 012",
+      "title": "PIKETTE SE VRAĆA, NAPETOSTI NEPROMIJENJENE",
+      "body": "Drugi posjet osumnjičene Pikette. Obje su strane nastavile neprijateljstva točno ondje gdje su stala, kao da nije prošlo nimalo vremena.",
+      "image": "assets/images/pikette-dog-couch.jpg"
+    },
+    {
+      "date": "JUL 2025",
+      "case": "CASE LOG 013",
+      "title": "GODINA DANA U PRITVORU, NAPREDAK NIJE ZABILJEŽEN",
+      "body": "Dvanaestomjesečni pregled dovršen. Subjekt nije ostvario nikakav mjerljiv napredak prema dobrom ponašanju. Ipak je postalo nezamislivo živjeti bez njega.",
+      "image": "assets/images/blog-garden-wall.jpg"
+    },
+    {
+      "date": "AUG 2025",
+      "case": "CASE LOG 014",
+      "title": "SUBJEKT PODVRGNUT KIRURŠKOM ZAHVATU",
+      "body": "Subjekt je ovaj mjesec kastriran. Zahvat uspješan, dostojanstvo nije preživjelo ovratnik srama. Ponašanje posve nepromijenjeno.",
+      "image": "assets/images/blog-park-walk.jpg"
+    },
+    {
+      "date": "SEP 2025",
+      "case": "CASE LOG 015",
+      "title": "RAZDOBLJE OPORAVKA, RASPOLOŽENJE NEPROMIJENJENO",
+      "body": "Ovratnik uklonjen. Subjekt je proslavio odmah nastavivši sve prethodno zabranjene aktivnosti punim intenzitetom.",
+      "image": "assets/images/blog-full-capacity.jpg"
+    },
+    {
+      "date": "OCT 2025",
+      "case": "CASE LOG 016",
+      "title": "SUKOB S PIKETTE, TREĆI KRUG",
+      "body": "Operacija nije ohladila neprijateljstva s osumnjičenom Pikette. Ako ništa drugo, čini se da subjekt ljutnju njeguje iz čistog principa.",
+      "image": "assets/images/pikette-couch-visit.jpg"
+    },
+    {
+      "date": "NOV 2025",
+      "case": "CASE LOG 017",
+      "title": "OPTUŽNICA ZA GOMILANJE DEKA",
+      "body": "Sav mekani namještaj u kućanstvu preseljen je na jednu gomilu, trenutačno pod isključivom kontrolom subjekta.",
+      "image": "assets/images/blog-blanket-hoard.jpg"
+    },
+    {
+      "date": "DEC 2025",
+      "case": "CASE LOG 018",
+      "title": "BOŽIĆNI NEMIRI, DRUGI KRUG",
+      "body": "Drugi ukras pao. Subjekt poriče obrazac ponašanja, navodeći «slučajnost» kao obranu."
+    },
+    {
+      "date": "JAN 2026",
+      "case": "CASE LOG 019",
+      "title": "POKUŠAJ BIJEGA OSUJEĆEN NA VRATIMA",
+      "body": "Subjekt je pokušao pobjeći kroz otvorena ulazna vrata. Ponovno uhvaćen na ulaznim stepenicama. Bez ozljeda, blaga sramota na obje strane.",
+      "image": "assets/images/blog-front-door-recapture.jpg"
+    },
+    {
+      "date": "FEB 2026",
+      "case": "CASE LOG 020",
+      "title": "OSUMNJIČENA PIKETTE, NADZORNA FOTOGRAFIJA U SPISU",
+      "body": "Osumnjičena Pikette fotografirana izbliza tijekom posjeta. Obje strane ostaju, iz nejasnih razloga, nesposobne za miran suživot.",
+      "image": "assets/images/pikette-closeup.jpg"
+    },
+    {
+      "date": "MAR 2026",
+      "case": "CASE LOG 021",
+      "title": "ISPITIVANJE VEZANO UZ NESTALI SENDVIČ",
+      "body": "Jedan sendvič, ostavljen bez nadzora devedeset sekundi, nije pronađen. Subjekt je bio u prostoriji. Subjekt ne potvrđuje niti poriče.",
+      "image": "assets/images/blog-cafe-standoff.jpg"
+    },
+    {
+      "date": "APR 2026",
+      "case": "CASE LOG 022",
+      "title": "SUSJED PODNOSI SLUŽBENU PRITUŽBU",
+      "body": "Zaprimljena pritužba zbog prekomjernog laveža u 6:15 ujutro. Subjektu je izdano službeno upozorenje. Subjekt nije promijenio raspored.",
+      "image": "assets/images/blog-frosty-morning.jpg"
+    },
+    {
+      "date": "MAY 2026",
+      "case": "CASE LOG 023",
+      "title": "POTPUNO PREUZIMANJE ŽIVOTA, PROCJENA DOVRŠENA",
+      "body": "Subjekt sada kontrolira krevet, raspored, grickalice i većinu važnih odluka. Status vlasnikove samostalnosti: ukinut.",
+      "image": "assets/images/blog-waffle-watch.jpg"
+    },
+    {
+      "date": "JUN 2026",
+      "case": "CASE LOG 024",
+      "title": "DVOGODIŠNJI PREGLED STANJA",
+      "body": "Dvije godine od prijema. Nema reforme. Nema ni kajanja. Čak je i osumnjičena Pikette, jedne rijetke mirne večeri, zatečena kako dijeli kauč. Predmet ostaje otvoren.",
+      "image": "assets/images/blog-belly-flop.jpg"
+    }
+  ],
+  "shop": {
+    "title": "TRGOVINA",
+    "subtitle": "Skladište dokaza — samo izložba, ništa ovdje nije na prodaju",
+    "notForSale": "NIJE NA PRODAJU",
+    "previewLabel": "UZORAK / NAJAVA",
+    "playLabel": "PUSTI NAJAVU",
+    "featuredKicker": "TRENUTNO NA PROGRAMU — NAJAVA ALBUMA",
+    "itemKicker": "SKLADIŠTE DOKAZA — SPIS PREDMETA",
+    "disclaimerTitle": "NIŠTA OD OVOGA NIJE STVARNO",
+    "disclaimerBody": "Ovaj predmet je šaljivi konceptualni crtež izrađen za ovu stranicu. Nikada nije proizveden, nije na prodaju i ne može se naručiti ni u kojoj veličini, boji ili količini — nigdje, ni od koga. Svaka sličnost sa stvarnim proizvodom je slučajna i posve nenamjerna.",
+    "backToShop": "← NATRAG U TRGOVINU"
+  },
+  "shopItems": [
+    {
+      "name": "Brux Gang — «Thug Life, No Rules» (Mixtape)",
+      "tag": "Roditeljsko upozorenje. Naslovnicu i video izradio izvjesni Spooky-nešto.",
+      "price": "$14",
+      "image": "assets/images/shop-brux-gang.jpg",
+      "videoId": "7l6RhWyPk4s"
+    },
+    {
+      "name": "Majica TRAŽI SE",
+      "tag": "Pamuk, uniseks, kriv po asocijaciji",
+      "price": "$32",
+      "image": "assets/images/shop-wanted-tee.png",
+      "slug": "wanted-tee",
+      "detail": [
+        "Otisnuto po sredini: studijska fotografija za kartoteku Le Criminela, koji netremice gleda u kameru s ravnim, nedirnutim izrazom povratnika koji nikada nije posumnjao u vlastitu nevinost. Ljestvica visine iza njega je dekorativna — nikada nije obavljeno službeno mjerenje, zbog subjektova stalnog odbijanja da miruje tijekom postupka.",
+        "Stilske napomene, za zapisnik: teški crni pamuk, izlizana slova TRAŽI SE, i kroj najbolje opisan kao «šik iz sobe za dokaze». Dolazi u točno nula veličina, jer dolazi u nula komada — vidi dolje.",
+        "Da bude posve jasno: ova majica ne postoji. Ne može se kupiti, naručiti, unaprijed rezervirati niti zatražiti u drugoj veličini. Riječ je o konceptualnom crtežu izrađenom u sklopu šale ove stranice i ničemu više — Le Criminel nije odobrio nikakvu robu, budući da je pas."
+      ]
+    },
+    {
+      "name": "Šalica «Prilično OK kriminalac»",
+      "tag": "Keramika, drži kavu i zamjerke",
+      "price": "$18",
+      "image": "assets/images/shop-okayest-mug.png",
+      "slug": "okayest-mug",
+      "detail": [
+        "Šalica od kamenine s najmanje oduševljenom pohvalom odjela: «Prilično OK kriminalac», utisnuta u okrugli pečat ispod malog, nezainteresiranog portreta osumnjičenog. Dodijeljena ne za izvrsnost, već za dosljednost — isti prekršaji, isti nedostatak kajanja, jutro za jutrom.",
+        "Prima punu šalicu kave, ili, prema natpisu, jednaku količinu zamjerki. Otpornost na perilicu posuđa nikada nije testirana, jer šalica ne postoji da bi se prala, posjedovala ili išta u nju ulijevalo.",
+        "Da bude posve jasno: ova šalica ne postoji. Ne može se kupiti, naručiti, unaprijed rezervirati niti zatražiti u drugoj glazuri. Riječ je o konceptualnom crtežu izrađenom u sklopu šale ove stranice i ničemu više."
+      ]
+    },
+    {
+      "name": "Plakat «Incident na balkonu»",
+      "tag": "Prigodni otisak, uokviruje se zasebno",
+      "price": "$45",
+      "image": "assets/images/shop-balcony-poster.png",
+      "slug": "balcony-poster",
+      "detail": [
+        "Prigodni otisak koji obilježava najgore popodne u povijesti balkona: Le Criminel, nagnut preko ograde, motri goluba koji je već primijetio opasnost i udaljen je jedan zamah krila od bijega. Krovovi iza njega pripadaju susjedstvu, prikazani u namjerno ostarjelom stilu nalik drvorezu, jer sam incident nije ostavio upotrebljive fotografije — samo svjedoke i mnogo buke.",
+        "«THE BALCONY INCIDENT» ispisano je verzalom pri dnu, kao da je trenutak bio dovoljno značajan za uokvireni otisak. Vjerojatno i jest bio. Pogledajte puni izvještaj o incidentu za verziju s manje ilustracija, a više posljedica.",
+        "Da bude posve jasno: ovaj plakat ne postoji. Ne može se kupiti, tiskati, uokviriti niti poslati u bilo kojoj veličini. Riječ je o konceptualnom crtežu izrađenom u sklopu šale ove stranice i ničemu više."
+      ]
+    },
+    {
+      "name": "Set naljepnica «Spis predmeta»",
+      "tag": "Set od 5, vinil, otporan na vremenske uvjete",
+      "price": "$9",
+      "image": "assets/images/shop-sticker-pack.png",
+      "slug": "sticker-pack",
+      "detail": [
+        "Pet vinilnih naljepnica izvučenih iz najboljih trenutaka spisa predmeta: fotografija za kartoteku, oznaka spisa s natpisom «001-CR», pečat odjela u obliku otiska šape, kauč sveden na dokazni materijal, i golub koji se samodopadno gnijezdi na ogradi na koju nema nikakvo pravo. Otporan na vremenske uvjete, teoretski, budući da je posve teoretski.",
+        "Osmišljeno za prijenosna računala, boce za vodu ili unutrašnjost fascikla s natpisom POVJERLJIVO. Ništa od toga nije bitno, s obzirom na to da set nikada nije proizveden i ne može se poslati, pokloniti niti odlijepiti sa svoje podloge — jer nema podlogu.",
+        "Da bude posve jasno: ovaj set naljepnica ne postoji. Ne može se kupiti, naručiti niti tiskati u bilo kojoj količini. Riječ je o konceptualnom crtežu izrađenom u sklopu šale ove stranice i ničemu više."
+      ]
+    }
+  ],
+  "footer": "© THE THIEFFRY CRIMINALS — SPIS OSTAJE OTVOREN. SVA PRAVA PRIDRŽANA (NAVODNO)."
+}
