@@ -7,6 +7,7 @@
     "pigeon": "UN PICCIONE, UN BALCONE",
     "couch": "IL DIVANO",
     "trainRide": "IN TRENO",
+    "escapeCountry": "FUGA IN CAMPAGNA",
     "blog": "BLOG",
     "shop": "NEGOZIO"
   },
@@ -84,8 +85,34 @@
       "teaser": "Nessuno dei due sospettati può guidare legalmente, quindi prendono il treno.",
       "link": "/train-ride",
       "image": "assets/images/train-window-view.jpg"
+    },
+    {
+      "title": "FUGA IN CAMPAGNA",
+      "teaser": "Un ritrovo, una padrona di casa completamente conquistata, e un campo di sterco con il suo nome sopra.",
+      "link": "/escape-to-the-country",
+      "image": "assets/images/gaume-mistress-and-suspect.jpg"
     }
   ],
+  "escapeToCountry": {
+    "kicker": "Rapporto sul campo — dispiegamento in campagna",
+    "title": "FUGA IN CAMPAGNA",
+    "locationLabel": "LUOGO",
+    "locationVal": "Gaume, sud del Belgio",
+    "suspectLabel": "SOSPETTATO",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TESTIMONE",
+    "witnessVal": "Sawito (presente, nessun tentativo di intervento degno di nota)",
+    "motiveLabel": "MOVENTE",
+    "motiveVal": "Un ritrovo con vecchi amici, in seguito ampliato per includere cavalli, strade aperte e un (1) pascolo non identificato",
+    "p1": "Questa primavera, il soggetto ha accompagnato Sawito a Gaume, nel sud del Belgio, per rivedere amici che nessuno dei due vedeva da fin troppo tempo. Gli è bastato più o meno il tempo del viaggio in auto per individuare il punto debole della casa. La padrona di casa è stata conquistata, poi soggiogata, poi completamente al suo servizio ancor prima che il caffè fosse versato. Gli inquirenti la chiamano amore a prima vista. Il soggetto la chiama ordinaria amministrazione.",
+    "p2": "La buona volontà non è sopravvissuta al fine settimana. Sono stati abbaiati cavalli, con convinzione. È stato tentato — due volte — di trascinare il gruppo di peso in strada, destinazione ignota. E nell'atto finale del caso, cinque minuti dopo essere salito sul treno per tornare a casa, il soggetto ha individuato una quantità di sterco così generosa e vi si è rotolato con tale zelo che nessun testimone ha più saputo dire, in seguito, dove finisse il cane e cominciasse il campo.",
+    "exhibitBCaption": "REPERTO B — SOTTO NUOVA GESTIONE: IL SOGGETTO SUPERVISIONA LA CUCINA",
+    "exhibitCCaption": "REPERTO C — RICOGNIZIONE DEL TERRENO ALLE PRIME LUCI",
+    "exhibitDCaption": "REPERTO D — IN MOVIMENTO, DESTINAZIONE IGNOTA",
+    "exhibitECaption": "REPERTO E — ISPEZIONE DEL PERIMETRO, IN CORSO",
+    "exhibitFCaption": "REPERTO F — SOGGETTO A RIPOSO, EVIDENTI TRACCE DI SFORZO",
+    "stamp": "INCIDENTE REGISTRATO — IL SOGGETTO RESTA IMPENITENTE (E PROFUMATO)"
+  },
   "pigeon": {
     "kicker": "Rapporto d'incidente",
     "title": "UN PICCIONE, UN BALCONE",

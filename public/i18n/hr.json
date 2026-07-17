@@ -7,6 +7,7 @@
     "pigeon": "JEDAN GOLUB, JEDAN BALKON",
     "couch": "KAUČ",
     "trainRide": "VOŽNJA VLAKOM",
+    "escapeCountry": "BIJEG NA SELO",
     "blog": "BLOG",
     "shop": "TRGOVINA"
   },
@@ -84,8 +85,34 @@
       "teaser": "Nijedan osumnjičeni ne smije legalno voziti, pa idu vlakom.",
       "link": "/train-ride",
       "image": "assets/images/train-window-view.jpg"
+    },
+    {
+      "title": "BIJEG NA SELO",
+      "teaser": "Jedno okupljanje sa starim prijateljima, jedna posve osvojena domaćica i livada kravljeg izmeta s njegovim potpisom.",
+      "link": "/escape-to-the-country",
+      "image": "assets/images/gaume-mistress-and-suspect.jpg"
     }
   ],
+  "escapeToCountry": {
+    "kicker": "Terenski izvještaj — raspoređivanje na selo",
+    "title": "BIJEG NA SELO",
+    "locationLabel": "LOKACIJA",
+    "locationVal": "Gaume, južna Belgija",
+    "suspectLabel": "OSUMNJIČENI",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "SVJEDOK",
+    "witnessVal": "Sawito (prisutan, nije poduzeo nikakav značajniji pokušaj intervencije)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Okupljanje sa starim prijateljima, naknadno prošireno na konje, otvorene ulice i jedan (1) neidentificirani pašnjak",
+    "p1": "Ovog proljeća Subjekt je pratio Sawita u Gaume, na jugu Belgije, u posjet prijateljima koje nijedan od njih dvojice nije vidio predugo. Trebalo mu je otprilike koliko traje vožnja automobilom da identificira slabu točku kućanstva. Domaćica je bila očarana, zatim savladana, pa potpuno u njegovoj službi prije nego što je kava bila poslužena. Istražitelji to nazivaju ljubavlju na prvi pogled. Subjekt to naziva svakodnevicom.",
+    "p2": "Dobra volja nije potrajala ni vikend. Na konje se lajalo, i to uvjerljivo. Pokušano je — dvaput — fizički odvući društvo na ulicu, odredište nepoznato. A u završnom činu slučaja, pet minuta nakon ukrcavanja u vlak za kuću, Subjekt je pronašao i izvaljao se u tolikoj količini kravljeg izmeta da nijedan svjedok naknadno nije mogao reći gdje prestaje pas, a počinje livada.",
+    "exhibitBCaption": "DOKAZ B — POD NOVIM VODSTVOM: SUBJEKT NADZIRE KUHINJU",
+    "exhibitCCaption": "DOKAZ C — IZVIĐANJE TERENA U RANU ZORU",
+    "exhibitDCaption": "DOKAZ D — U POKRETU, ODREDIŠTE NEPOZNATO",
+    "exhibitECaption": "DOKAZ E — PREGLED PERIMETRA, U TIJEKU",
+    "exhibitFCaption": "DOKAZ F — SUBJEKT NA ODMORU, VIDLJIVI TRAGOVI NAPORA",
+    "stamp": "INCIDENT ZABILJEŽEN — SUBJEKT OSTAJE BEZ KAJANJA (I MIRISAN)"
+  },
   "pigeon": {
     "kicker": "Izvještaj o incidentu",
     "title": "JEDAN GOLUB, JEDAN BALKON",

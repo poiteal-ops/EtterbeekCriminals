@@ -7,6 +7,7 @@
     "pigeon": "JEDEN GOŁĄB, JEDEN BALKON",
     "couch": "KANAPA",
     "trainRide": "PODRÓŻ POCIĄGIEM",
+    "escapeCountry": "UCIECZKA NA WIEŚ",
     "blog": "BLOG",
     "shop": "SKLEP"
   },
@@ -84,8 +85,34 @@
       "teaser": "Żaden z podejrzanych nie może legalnie prowadzić pojazdu, więc jeżdżą pociągiem.",
       "link": "/train-ride",
       "image": "assets/images/train-window-view.jpg"
+    },
+    {
+      "title": "UCIECZKA NA WIEŚ",
+      "teaser": "Jedno spotkanie po latach, jedna całkowicie oczarowana gospodyni i pole krowiego łajna, na którym już zdążył się podpisać.",
+      "link": "/escape-to-the-country",
+      "image": "assets/images/gaume-mistress-and-suspect.jpg"
     }
   ],
+  "escapeToCountry": {
+    "kicker": "Raport polowy — misja na wsi",
+    "title": "UCIECZKA NA WIEŚ",
+    "locationLabel": "MIEJSCE",
+    "locationVal": "Gaume, południowa Belgia",
+    "suspectLabel": "PODEJRZANY",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "ŚWIADEK",
+    "witnessVal": "Sawito (obecny, bez istotnej próby interwencji)",
+    "motiveLabel": "MOTYW",
+    "motiveVal": "Spotkanie ze starymi przyjaciółmi, później rozszerzone o konie, otwarte ulice i jedno (1) niezidentyfikowane pastwisko",
+    "p1": "Tej wiosny podejrzany towarzyszył Sawito w podróży do Gaume, w południowej Belgii, by odwiedzić przyjaciół, których żaden z nich nie widział od zbyt dawna. Zajęło mu to mniej więcej tyle, ile trwała podróż samochodem, by zlokalizować słaby punkt gospodarstwa domowego. Gospodyni domu została oczarowana, potem ujarzmiona, a zanim zdążono zaparzyć kawę — była już całkowicie na jego usługach. Śledczy nazywają to miłością od pierwszego wejrzenia. Podejrzany nazywa to zwykłym dniem.",
+    "p2": "Dobra wola nie przetrwała nawet weekendu. Szczekano na konie, i to z pełnym przekonaniem. Podjęto próbę — dwukrotnie — siłowego wyciągnięcia całej grupy na ulicę, kierunek nieznany. A w finałowym akcie sprawy, pięć minut po wejściu do pociągu powrotnego, podejrzany odnalazł i wytarzał się w takiej ilości krowiego łajna, że żaden świadek nie potrafił później powiedzieć, gdzie kończył się pies, a zaczynało pole.",
+    "exhibitBCaption": "DOWÓD B — POD NOWYM ZARZĄDEM: PODEJRZANY NADZORUJE KUCHNIĘ",
+    "exhibitCCaption": "DOWÓD C — ROZPOZNANIE TERENU O ŚWICIE",
+    "exhibitDCaption": "DOWÓD D — W RUCHU, KIERUNEK NIEZNANY",
+    "exhibitECaption": "DOWÓD E — INSPEKCJA PERYMETRU W TOKU",
+    "exhibitFCaption": "DOWÓD F — PODEJRZANY W SPOCZYNKU, WYRAŹNE ŚLADY WYSIŁKU",
+    "stamp": "INCYDENT ODNOTOWANO — PODEJRZANY POZOSTAJE BEZ SKRUCHY (I AROMATYCZNY)"
+  },
   "pigeon": {
     "kicker": "Raport z incydentu",
     "title": "JEDEN GOŁĄB, JEDEN BALKON",

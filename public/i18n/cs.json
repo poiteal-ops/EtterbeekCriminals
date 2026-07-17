@@ -7,6 +7,7 @@
     "pigeon": "JEDEN HOLUB, JEDEN BALKÓN",
     "couch": "POHOVKA",
     "trainRide": "JÍZDA VLAKEM",
+    "escapeCountry": "ÚTĚK NA VENKOV",
     "blog": "BLOG",
     "shop": "OBCHOD"
   },
@@ -84,8 +85,34 @@
       "teaser": "Žádný z podezřelých nesmí legálně řídit, takže jezdí vlakem.",
       "link": "/train-ride",
       "image": "assets/images/train-window-view.jpg"
+    },
+    {
+      "title": "ÚTĚK NA VENKOV",
+      "teaser": "Jedno shledání se starými přáteli, jedna dokonale okouzlená hostitelka a louka kravského trusu s jeho podpisem.",
+      "link": "/escape-to-the-country",
+      "image": "assets/images/gaume-mistress-and-suspect.jpg"
     }
   ],
+  "escapeToCountry": {
+    "kicker": "Terénní hlášení — nasazení na venkově",
+    "title": "ÚTĚK NA VENKOV",
+    "locationLabel": "MÍSTO",
+    "locationVal": "Gaume, jižní Belgie",
+    "suspectLabel": "PODEZŘELÝ",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "SVĚDEK",
+    "witnessVal": "Sawito (přítomen, bez výraznějšího pokusu o zásah)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Shledání se starými přáteli, později rozšířené o koně, otevřené ulice a jednu (1) neidentifikovanou pastvinu",
+    "p1": "Letos na jaře doprovodil Subjekt Sawita do Gaume na jihu Belgie za přáteli, které oba příliš dlouho neviděli. Trvalo mu zhruba tak dlouho jako cesta autem, než odhalil slabé místo domácnosti. Paní domu byla okouzlena, poté podmaněna a nakonec zcela v jeho službách, ještě než stihla nalít kávu. Vyšetřovatelé to nazývají láskou na první pohled. Subjekt tomu říká všední den.",
+    "p2": "Dobrá vůle nevydržela ani víkend. Na koně se štěkalo, a to přesvědčivě. Dvakrát došlo k pokusu vyvléct celou společnost fyzicky do ulice, cíl nejasný. A v závěrečném dějství případu, pět minut po nastoupení do vlaku domů, Subjekt nalezl a důkladně se vyválel v takovém množství kravského trusu, že žádný svědek poté nedokázal říct, kde končí pes a kde začíná pole.",
+    "exhibitBCaption": "DŮKAZ B — POD NOVÝM VEDENÍM: SUBJEKT DOHLÍŽÍ NA KUCHYNI",
+    "exhibitCCaption": "DŮKAZ C — PRŮZKUM POZEMKU ZA PRVNÍHO SVĚTLA",
+    "exhibitDCaption": "DŮKAZ D — NA POCHODU, CÍL NEJASNÝ",
+    "exhibitECaption": "DŮKAZ E — KONTROLA PERIMETRU PROBÍHÁ",
+    "exhibitFCaption": "DŮKAZ F — SUBJEKT V KLIDU, ZNÁMKY NÁMAHY PATRNÉ",
+    "stamp": "INCIDENT ZAZNAMENÁN — SUBJEKT ZŮSTÁVÁ BEZ LÍTOSTI (A VONÍCÍ)"
+  },
   "pigeon": {
     "kicker": "Zpráva o incidentu",
     "title": "JEDEN HOLUB, JEDEN BALKÓN",

@@ -7,6 +7,7 @@
     "pigeon": "YKSI KYYHKYNEN, YKSI PARVEKE",
     "couch": "SOHVA",
     "trainRide": "JUNAMATKA",
+    "escapeCountry": "PAKO MAASEUDULLE",
     "blog": "BLOGI",
     "shop": "KAUPPA"
   },
@@ -84,8 +85,34 @@
       "teaser": "Kumpikaan epäilty ei saa laillisesti ajaa, joten he matkustavat junalla.",
       "link": "/train-ride",
       "image": "assets/images/train-window-view.jpg"
+    },
+    {
+      "title": "PAKO MAASEUDULLE",
+      "teaser": "Yksi jälleennäkeminen vanhojen ystävien kanssa, yksi täysin lumoutunut emäntä ja lehmänlantapelto, jossa on hänen nimikirjoituksensa.",
+      "link": "/escape-to-the-country",
+      "image": "assets/images/gaume-mistress-and-suspect.jpg"
     }
   ],
+  "escapeToCountry": {
+    "kicker": "Kenttäraportti — komennus maaseudulle",
+    "title": "PAKO MAASEUDULLE",
+    "locationLabel": "SIJAINTI",
+    "locationVal": "Gaume, Belgian eteläosa",
+    "suspectLabel": "EPÄILTY",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TODISTAJA",
+    "witnessVal": "Sawito (paikalla, ei yrittänyt merkittävästi puuttua asiaan)",
+    "motiveLabel": "MOTIIVI",
+    "motiveVal": "Jälleennäkeminen vanhojen ystävien kanssa, myöhemmin laajentunut kattamaan hevoset, avoimet kadut ja yhden (1) tunnistamattoman laitumen",
+    "p1": "Tänä keväänä Kohde saattoi Sawiton Gaumeen, Belgian eteläosaan, tapaamaan ystäviä, joita kumpikaan ei ollut nähnyt liian pitkään aikaan. Häneltä kului suunnilleen autonmatkan verran aikaa talon heikon kohdan tunnistamiseen. Emäntä lumoutui, sitten alistui, ja oli lopulta täysin hänen palveluksessaan ennen kuin kahvi ehdittiin kaataa. Tutkijat kutsuvat sitä rakkaudeksi ensisilmäyksellä. Kohde kutsuu sitä tavalliseksi arkipäiväksi.",
+    "p2": "Hyvä tahto ei kestänyt edes viikonloppua. Hevosille haukuttiin, ja vakuuttavasti. Yritys tehtiin — kahdesti — raahata seurue väkisin kadulle, määränpää epäselvä. Ja tapauksen loppunäytöksessä, viisi minuuttia kotiin vievään junaan noususta, Kohde löysi ja kieriskeli niin perusteellisesti lehmänlannassa, ettei yksikään todistaja pystynyt jälkeenpäin sanomaan, mistä koira loppui ja mistä pelto alkoi.",
+    "exhibitBCaption": "TODISTE B — UUDEN JOHDON ALLA: KOHDE VALVOO KEITTIÖTÄ",
+    "exhibitCCaption": "TODISTE C — MAASTON TIEDUSTELUA AAMUNKOITTEESSA",
+    "exhibitDCaption": "TODISTE D — LIIKKEELLÄ, MÄÄRÄNPÄÄ EPÄSELVÄ",
+    "exhibitECaption": "TODISTE E — ALUEEN TARKASTUS KÄYNNISSÄ",
+    "exhibitFCaption": "TODISTE F — KOHDE LEPÄÄMÄSSÄ, MERKKEJÄ PONNISTELUSTA",
+    "stamp": "TAPAHTUMA KIRJATTU — KOHDE PYSYY KATUMATTOMANA (JA TUOKSUVANA)"
+  },
   "pigeon": {
     "kicker": "Tapahtumailmoitus",
     "title": "YKSI KYYHKYNEN, YKSI PARVEKE",

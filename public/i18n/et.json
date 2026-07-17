@@ -7,6 +7,7 @@
     "pigeon": "ÜKS TUVI, ÜKS RÕDU",
     "couch": "DIIVAN",
     "trainRide": "RONGISÕIT",
+    "escapeCountry": "PÕGENEMINE MAALE",
     "blog": "BLOGI",
     "shop": "POOD"
   },
@@ -84,8 +85,34 @@
       "teaser": "Kumbki kahtlusalune ei tohi seaduslikult autot juhtida, seega sõidavad nad rongiga.",
       "link": "/train-ride",
       "image": "assets/images/train-window-view.jpg"
+    },
+    {
+      "title": "PÕGENEMINE MAALE",
+      "teaser": "Üks kokkusaamine vanade sõpradega, üks täielikult võlutud võõrustaja ja sõnnikuväli, millel on tema allkiri peal.",
+      "link": "/escape-to-the-country",
+      "image": "assets/images/gaume-mistress-and-suspect.jpg"
     }
   ],
+  "escapeToCountry": {
+    "kicker": "Väliaruanne — lähetus maapiirkonda",
+    "title": "PÕGENEMINE MAALE",
+    "locationLabel": "ASUKOHT",
+    "locationVal": "Gaume, Belgia lõunaosa",
+    "suspectLabel": "KAHTLUSALUNE",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TUNNISTAJA",
+    "witnessVal": "Sawito (kohal, ei üritanud märkimisväärselt sekkuda)",
+    "motiveLabel": "MOTIIV",
+    "motiveVal": "Kokkusaamine vanade sõpradega, hiljem laiendatud hobustele, avatud tänavatele ja ühele (1) tuvastamata karjamaale",
+    "p1": "Sel kevadel saatis Isik Sawitot Gaume'i, Belgia lõunaossa, et kohtuda sõpradega, keda kumbki polnud liiga kaua näinud. Tal kulus majapidamise nõrga koha tuvastamiseks umbes niipalju aega, kui kestis autosõit. Perenaine oli võlutud, seejärel alistatud ning täielikult tema teenistuses juba enne, kui kohvi jõuti valada. Uurijad nimetavad seda armumiseks esimesest silmapilgust. Isik nimetab seda tavaliseks argipäevaks.",
+    "p2": "Heatahtlikkus ei kestnud isegi nädalavahetust välja. Hobuste peale hauguti veendunult. Kaks korda üritati seltskonda füüsiliselt tänavale vedada, sihtkoht teadmata. Ja juhtumi lõppvaatuses, viis minutit pärast koduteele mineva rongi peale astumist, leidis Isik nii rohke koguse sõnnikut ja veeretas end selles, et ükski tunnistaja ei suutnud hiljem öelda, kus koer lõppes ja kus algas põld.",
+    "exhibitBCaption": "TÕEND B — UUE JUHTKONNA ALL: ISIK VALVAB KÖÖKI",
+    "exhibitCCaption": "TÕEND C — MAA-ALA LUUREL ESIMESES VALGUSES",
+    "exhibitDCaption": "TÕEND D — LIIKUMISEL, SIHTKOHT TEADMATA",
+    "exhibitECaption": "TÕEND E — PERIMEETRI KONTROLL KÄIB",
+    "exhibitFCaption": "TÕEND F — ISIK PUHKAB, PINGUTUSE JÄLJED NÄHTAVAL",
+    "stamp": "INTSIDENT REGISTREERITUD — ISIK JÄÄB KAHETSUSETUKS (JA LÕHNAVAKS)"
+  },
   "pigeon": {
     "kicker": "Intsidendi aruanne",
     "title": "ÜKS TUVI, ÜKS RÕDU",

@@ -7,6 +7,7 @@
     "pigeon": "ÉN DUE, ÉN BALKON",
     "couch": "SOFAEN",
     "trainRide": "TOGTUR",
+    "escapeCountry": "FLUGTEN TIL LANDET",
     "blog": "BLOG",
     "shop": "BUTIK"
   },
@@ -84,8 +85,34 @@
       "teaser": "Ingen af de mistænkte må lovligt køre bil, så de tager toget.",
       "link": "/train-ride",
       "image": "assets/images/train-window-view.jpg"
+    },
+    {
+      "title": "FLUGTEN TIL LANDET",
+      "teaser": "Et gensyn med gamle venner, én fuldstændig charmeret værtinde, og en mark kogødning med hans signatur.",
+      "link": "/escape-to-the-country",
+      "image": "assets/images/gaume-mistress-and-suspect.jpg"
     }
   ],
+  "escapeToCountry": {
+    "kicker": "Feltrapport — udstationering på landet",
+    "title": "FLUGTEN TIL LANDET",
+    "locationLabel": "STED",
+    "locationVal": "Gaume, det sydlige Belgien",
+    "suspectLabel": "MISTÆNKT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "VIDNE",
+    "witnessVal": "Sawito (til stede, intet nævneværdigt forsøg på indgriben)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Et gensyn med gamle venner, senere udvidet til at omfatte heste, åbne gader og én (1) uidentificeret græsmark",
+    "p1": "I foråret ledsagede Subjektet Sawito til Gaume i det sydlige Belgien for at besøge venner, som ingen af dem havde set i alt for lang tid. Det tog ham cirka så lang tid som bilturen at afsløre husstandens svage punkt. Værtinden blev charmeret, dernæst underlagt, og til sidst helt i hans tjeneste, inden kaffen var hældt op. Efterforskerne kalder det kærlighed ved første blik. Subjektet kalder det en helt almindelig dag.",
+    "p2": "Den gode vilje varede ikke weekenden ud. Der blev gøet af heste, med stor overbevisning. Der blev gjort forsøg — to gange — på at trække selskabet fysisk ud på gaden, destination ukendt. Og i sagens afsluttende akt, fem minutter efter at have gået om bord på toget hjem, fandt Subjektet og væltede sig i en sådan mængde kogødning, at intet vidne bagefter kunne sige, hvor hunden sluttede, og marken begyndte.",
+    "exhibitBCaption": "BEVIS B — UNDER NY LEDELSE: SUBJEKTET FØRER TILSYN MED KØKKENET",
+    "exhibitCCaption": "BEVIS C — REKOGNOSCERING AF GRUNDEN VED FØRSTE DAGSLYS",
+    "exhibitDCaption": "BEVIS D — PÅ FARTEN, DESTINATION UKENDT",
+    "exhibitECaption": "BEVIS E — PERIMETERINSPEKTION I GANG",
+    "exhibitFCaption": "BEVIS F — SUBJEKTET HVILER, TEGN PÅ ANSTRENGELSE",
+    "stamp": "HÆNDELSE REGISTRERET — SUBJEKTET FORBLIVER ANGERLØS (OG DUFTENDE)"
+  },
   "pigeon": {
     "kicker": "Hændelsesrapport",
     "title": "ÉN DUE, ÉN BALKON",

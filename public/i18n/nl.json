@@ -7,6 +7,7 @@
     "pigeon": "ÉÉN DUIF, ÉÉN BALKON",
     "couch": "DE ZETEL",
     "trainRide": "TREINRIT",
+    "escapeCountry": "ONTSNAPPING NAAR HET PLATTELAND",
     "blog": "BLOG",
     "shop": "SHOP"
   },
@@ -84,8 +85,34 @@
       "teaser": "Geen van beide verdachten mag legaal rijden, dus nemen ze de trein.",
       "link": "/train-ride",
       "image": "assets/images/train-window-view.jpg"
+    },
+    {
+      "title": "ONTSNAPPING NAAR HET PLATTELAND",
+      "teaser": "Eén weerzien, één volledig ingepalmde gastvrouw, en een veld koeienvlaaien met zijn naam erop.",
+      "link": "/escape-to-the-country",
+      "image": "assets/images/gaume-mistress-and-suspect.jpg"
     }
   ],
+  "escapeToCountry": {
+    "kicker": "Veldrapport — inzet op het platteland",
+    "title": "ONTSNAPPING NAAR HET PLATTELAND",
+    "locationLabel": "LOCATIE",
+    "locationVal": "Gaume, zuiden van België",
+    "suspectLabel": "VERDACHTE",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "GETUIGE",
+    "witnessVal": "Sawito (aanwezig, geen noemenswaardige poging tot ingrijpen ondernomen)",
+    "motiveLabel": "MOTIEF",
+    "motiveVal": "Een weerzien met oude vrienden, later uitgebreid met paarden, open straten, en één (1) niet-geïdentificeerde weide",
+    "p1": "Afgelopen lente vergezelde de verdachte Sawito naar Gaume, in het zuiden van België, om vrienden te bezoeken die ze allebei veel te lang niet gezien hadden. Het kostte hem ongeveer de duur van de autorit om de zwakke plek van het huishouden te vinden. De gastvrouw was ingepalmd, dan overmeesterd, dan volledig in zijn dienst nog voor de koffie was ingeschonken. Onderzoekers noemen het liefde op het eerste gezicht. De verdachte noemt het een gewone dag.",
+    "p2": "De goodwill hield het weekend niet vol. Er werd naar paarden geblaft, met overtuiging. Er werd — tweemaal — een poging ondernomen om het gezelschap met geweld de straat op te sleuren, bestemming onbekend. En in de slotscène van de zaak, vijf minuten na het instappen van de trein naar huis, vond de verdachte een partij koeienvlaaien en rolde zich erin, zo grondig dat geen enkele getuige achteraf nog kon zeggen waar de hond ophield en het veld begon.",
+    "exhibitBCaption": "BEWIJSSTUK B — ONDER NIEUW BEHEER: VERDACHTE SUPERVISEERT DE KEUKEN",
+    "exhibitCCaption": "BEWIJSSTUK C — TERREINVERKENNING BIJ ZONSOPGANG",
+    "exhibitDCaption": "BEWIJSSTUK D — IN BEWEGING, BESTEMMING ONBEKEND",
+    "exhibitECaption": "BEWIJSSTUK E — PERIMETERINSPECTIE, LOPENDE",
+    "exhibitFCaption": "BEWIJSSTUK F — VERDACHTE IN RUST, SPOREN VAN INSPANNING ZICHTBAAR",
+    "stamp": "INCIDENT GEREGISTREERD — VERDACHTE BLIJFT ONBEROUWVOL (EN GEURIG)"
+  },
   "pigeon": {
     "kicker": "Incidentrapport",
     "title": "ÉÉN DUIF, ÉÉN BALKON",
