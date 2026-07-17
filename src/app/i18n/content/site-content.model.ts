@@ -184,4 +184,5 @@ export interface SiteContent {
   };
   shopItems: ShopItem[];
   footer: string;
+  footerDisclaimer: string;
 }

@@ -428,4 +428,5 @@ export const EN_CONTENT: SiteContent = {
     },
   ],
   footer: '© THE THIEFFRY CRIMINALS — FILE REMAINS OPEN. ALL RIGHTS RESERVED (ALLEGEDLY).',
+  footerDisclaimer: 'A HOBBY PROJECT, NOT A BUSINESS — NOTHING HERE IS REAL OR FOR SALE.',
 };
