@@ -3,7 +3,8 @@ import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/ro
 import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
 import { filter, map, startWith } from 'rxjs';
 
-import { Lang, TranslationService } from '../../services/translation.service';
+import { TranslationService } from '../../services/translation.service';
+import { CONTENT_LOCALES, DEFAULT_LOCALE, LocaleCode, isKnownLocale, localeDisplayName } from '../../i18n/locale-registry';
 
 const STORY_ROUTES = ['/pigeon', '/couch', '/train-ride'];
 
@@ -20,6 +21,9 @@ export class NavBar {
 
   protected readonly menuOpen = signal(false);
   protected readonly dropdownOpen = signal(false);
+  protected readonly langDropdownOpen = signal(false);
+
+  protected readonly localeOptions = CONTENT_LOCALES;
 
   protected readonly storiesActive = toSignal(
     this.router.events.pipe(
@@ -39,11 +43,20 @@ export class NavBar {
       .subscribe(() => {
         this.menuOpen.set(false);
         this.dropdownOpen.set(false);
+        this.langDropdownOpen.set(false);
       });
   }
 
-  setLang(lang: Lang): void {
-    this.translation.setLang(lang);
+  protected localeLabel(code: LocaleCode): string {
+    return localeDisplayName(code);
+  }
+
+  switchLocale(code: LocaleCode): void {
+    const segments = this.router.url.split(/[?#]/)[0].split('/').filter(Boolean);
+    if (segments.length && isKnownLocale(segments[0])) segments.shift();
+    const target = code === DEFAULT_LOCALE ? ['/', ...segments] : ['/', code, ...segments];
+    this.router.navigate(target);
+    this.langDropdownOpen.set(false);
   }
 
   toggleMenu(): void {
@@ -55,8 +68,14 @@ export class NavBar {
     this.dropdownOpen.update((open) => !open);
   }
 
+  toggleLangDropdown(event: Event): void {
+    event.stopPropagation();
+    this.langDropdownOpen.update((open) => !open);
+  }
+
   @HostListener('document:click')
   closeDropdown(): void {
     this.dropdownOpen.set(false);
+    this.langDropdownOpen.set(false);
   }
 }

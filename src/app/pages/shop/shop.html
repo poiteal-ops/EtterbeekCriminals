@@ -38,7 +38,7 @@
   <div class="grid">
     @for (item of t.shopItems; track item.name) {
       @if (item.slug) {
-        <a class="item" [routerLink]="['/shop', item.slug]">
+        <a class="item" [routerLink]="translation.path('shop', item.slug)">
           <div class="photo"><img [src]="item.image" [alt]="item.name" /></div>
           <div class="details">
             <div class="name">{{ item.name }}</div>

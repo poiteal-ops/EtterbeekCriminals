@@ -1,0 +1,384 @@
+{
+  "nav": {
+    "home": "HOME",
+    "about": "OVER ONS",
+    "story": "HET VERHAAL VAN EEN CRIMINEEL",
+    "stories": "DOSSIERS",
+    "pigeon": "ÉÉN DUIF, ÉÉN BALKON",
+    "couch": "DE ZETEL",
+    "trainRide": "TREINRIT",
+    "blog": "BLOG",
+    "shop": "SHOP"
+  },
+  "home": {
+    "wanted": "GEZOCHT",
+    "fileNo": "DOSSIER NR. 001-CR",
+    "tagline": "Sawito & Le Criminel — gezocht, ondervraagd en grotendeels vergeven",
+    "kicker": "— lokale operatie, twee verdachten —",
+    "intro": "Eén man, één hond, één gedeelde minachting voor de regels van de beleefde samenleving. Blader hieronder door het dossier — de feiten spreken voor zich.",
+    "promoKicker": "NIEUW IN DE BEWIJSKAMER",
+    "promoTitle": "BRUX GANG — \"THUG LIFE, NO RULES\"",
+    "promoTag": "De mixtape waar niemand om vroeg. Hoesontwerp door een zekere Spooky-nog-iets.",
+    "promoCta": "BEKIJK IN DE SHOP",
+    "promoVideoLink": "Bekijk de preview"
+  },
+  "about": {
+    "title": "OVER DE VERDACHTEN",
+    "subtitle": "Dossier 001-CR — verdachten hieronder geïdentificeerd",
+    "sawitoName": "SAWITO",
+    "sawitoAlias": "ALIAS: \"DE OUDE VAN BOVEN\"",
+    "occupation": "BEROEP",
+    "occupationVal": "Hoofdhandlanger",
+    "marksLabel": "KENMERKEN",
+    "sawitoMarks": "Zilveren baard, permanente sigaret, pilotenbril binnen en buiten",
+    "associateLabel": "HANDLANGER",
+    "sawitoAssociate": "Le Criminel (onafscheidelijk, zonder berouw)",
+    "statusLabel": "STATUS",
+    "sawitoStatus": "Voortvluchtig. Vermoedelijk gewapend met snoepjes.",
+    "dogName": "LE CRIMINEL",
+    "dogAlias": "ALIAS: \"DE BALKONBANDIET\"",
+    "breedLabel": "RAS",
+    "breedVal": "Boston Terriër, naar verluidt",
+    "dogMarks": "Zwart-witte vlekken, tactische halsband, onbewogen blik",
+    "dogAssociate": "Sawito (begeleider, min of meer)",
+    "dogStatus": "Gezocht i.v.m. het balkonincident. Zie dossier.",
+    "rapSheetTitle": "STRAFBLAD",
+    "confidential": "VERTROUWELIJK"
+  },
+  "rapSheet": [
+    { "case": "CASE 001", "charge": "Herhaaldelijk weigeren voorrang te verlenen op gedeelde wandelpaden." },
+    { "case": "CASE 002", "charge": "Bezit van ongeoorloofd enthousiasme in de buurt van de postbode." },
+    { "case": "CASE 003", "charge": "Samenzwering tot het begraven van bewijs (één sok, tuin, onopgelost)." },
+    { "case": "CASE 004", "charge": "Verstoring van de openbare orde, 6u15, dagelijks, geen teken van beterschap." },
+    { "case": "CASE 005", "charge": "Aanranding met een dodelijke kwispelstaart." }
+  ],
+  "story": {
+    "kicker": "Dossier 001-CR — achtergrond",
+    "title": "HET VERHAAL VAN EEN CRIMINEEL",
+    "exhibit": "BEWIJSSTUK A — VERDACHTE OP VRIJE VOETEN",
+    "p1": "Elke naam heeft een oorsprong, en deze heeft een papieren spoor. De hond werd niet geboren als \"Le Criminel\". Hij werd, voor zover iemand kan bewijzen, geboren als een volstrekt gewone puppy zonder enig strafblad.",
+    "p2": "De naam kwam later, verdiend met één klein vergrijp tegelijk: hier een gestolen sok, daar een stukgekauwde afstandsbediening, een zetelkussen dat de zomer niet overleefde. Geen enkele daad op zich rechtvaardigde een dossier. Samen rechtvaardigden ze een bijnaam.",
+    "p3": "Het was Sawito die het als eerste zei, half binnensmonds, terwijl hij de hond van een plaats delict zag wegdribbelen met de kalmte van iemand die nog nooit betrapt was: \"Ce chien, c'est un criminel.\" De naam bleef hangen zoals bijnamen dat doen — niet gekozen, gewoon waar.",
+    "p4": "Hij is nooit formeel in staat van beschuldiging gesteld. Hij heeft nooit berouw getoond. Het onderzoek, zoals het is, blijft lopen.",
+    "adventuresKicker": "GESELECTEERDE DOSSIERS",
+    "wantMoreTitle": "WIL JE MEER WETEN?",
+    "wantMoreBody": "Het volledige logboek wordt maandelijks bijgewerkt, elk vergrijp genoteerd.",
+    "wantMoreCta": "LEES HET LOGBOEK",
+    "footer": "GEKLASSEERD ONDER: LOKALE LEGENDES, ONBEVESTIGD"
+  },
+  "adventures": [
+    {
+      "title": "ÉÉN DUIF, ÉÉN BALKON",
+      "teaser": "Een duif, een balkon en één zeer slechte beslissing op hoge snelheid.",
+      "link": "/pigeon",
+      "image": "assets/images/dog-close-lap.jpg"
+    },
+    {
+      "title": "DE ZETEL",
+      "teaser": "Een trage, doelbewuste sloop. De hoek heeft het niet overleefd.",
+      "link": "/couch",
+      "image": "assets/images/couch-crime-scene.jpg"
+    },
+    {
+      "title": "TREINRIT",
+      "teaser": "Geen van beide verdachten mag legaal rijden, dus nemen ze de trein.",
+      "link": "/train-ride",
+      "image": "assets/images/train-window-view.jpg"
+    }
+  ],
+  "pigeon": {
+    "kicker": "Incidentrapport",
+    "title": "ÉÉN DUIF, ÉÉN BALKON",
+    "locationLabel": "LOCATIE",
+    "locationVal": "Balkon op de tweede verdieping, adres niet vrijgegeven",
+    "suspectLabel": "VERDACHTE",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "GETUIGE",
+    "witnessVal": "Sawito (aanwezig, kon niet op tijd ingrijpen)",
+    "motiveLabel": "MOTIEF",
+    "motiveVal": "Eén (1) duif, die stond waar ze niet had mogen staan",
+    "p1": "De verdachte nam een duif van dichtbij waar en nam, zonder iemand te raadplegen, een beslissing. Hij verliet het balkon op hoge snelheid en zonder plan. De zwaartekracht raakte erbij betrokken. De duif werd niet gevangen. Met de hond ging alles goed.",
+    "p2": "Met Sawito ging niet alles goed. In de daaropvolgende paniek ging wat haar verloren — het zijne, niet dat van de hond — en het is nooit teruggevonden.",
+    "aftermathCaption": "BEWIJSSTUK B — VERDACHTE AAN DE BETERHAND, TERUG OP VASTE GROND, ZICHTBAAR ONAANGEDAAN DOOR DIT ALLES",
+    "stamp": "ZAAK GESLOTEN — GEEN VERVOLGING INGESTELD"
+  },
+  "couch": {
+    "kicker": "Rapport materiële schade",
+    "title": "DE ZETEL",
+    "locationLabel": "LOCATIE",
+    "locationVal": "Woonkamer, zuidoosthoek, voorheen bekleed",
+    "suspectLabel": "VERDACHTE",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "GETUIGE",
+    "witnessVal": "Sawito (heel de tijd aanwezig, diende geen klacht in)",
+    "motiveLabel": "MOTIEF",
+    "motiveVal": "Eén (1) losse draad, onaanvaardbaar bevonden",
+    "p1": "Het begon, zoals deze dingen gaan, met één enkele draad. De verdachte lokaliseerde hem, trok eraan en ontdekte — met wat de onderzoekers alleen kunnen omschrijven als professionele voldoening — dat er meer draad volgde. De vooruitgang was traag, doelbewust en volledig ongedocumenteerd tot het veel te laat was om in te grijpen.",
+    "p2": "Tegen de tijd dat de schade werd opgemerkt, was de hoek gereduceerd tot kaal frame en losse vulling, met een draagkabel blootgelegd en, zo blijkt, grondig geïnspecteerd. De verdachte werd even later op de plaats delict aangetroffen, één oog opgelicht door de flits, een touwspeeltje binnen handbereik alsof hij wilde suggereren dat hij daar toevallig passeerde.",
+    "exhibitBCaption": "BEWIJSSTUK B — CLOSE-UP VAN DE SCHADE",
+    "exhibitCCaption": "BEWIJSSTUK C — VERDACHTE IN DE BUURT, GELAATSUITDRUKKING ONLEESBAAR",
+    "stamp": "ZETEL TOTAAL VERLIES VERKLAARD — VERDACHTE ONBEWOGEN"
+  },
+  "trainRide": {
+    "kicker": "Reislogboek",
+    "title": "TREINRIT",
+    "locationLabel": "LOCATIE",
+    "locationVal": "Regionaal spoor, bestemmingen: platteland & kust",
+    "suspectLabel": "VERDACHTE",
+    "suspectVal": "Le Criminel (frequente reiziger)",
+    "witnessLabel": "GETUIGE",
+    "witnessVal": "Sawito (technisch gezien blind, kocht toch de tickets)",
+    "motiveLabel": "MOTIEF",
+    "motiveVal": "Frisse lucht, vooral. Meeuwen, meer bepaald.",
+    "p1": "Geen van beide verdachten mag achter het stuur van een voertuig, om volstrekt verschillende en even diskwalificerende redenen: Sawito is, naar eigen zeggen, technisch gezien blind, en Le Criminel heeft nog nooit zelfs maar een fietsvergunning gekregen. De trein was geen levensstijlkeuze maar de enige overgebleven optie, en het is beter uitgedraaid dan wie dan ook had verwacht.",
+    "p2": "Twee bestemmingen staan in het dossier: het platteland en de kust. Beide vielen in de smaak. De kust is echter de onbetwiste favoriet, vanwege de meeuwen, die de verdachte beschouwt als een persoonlijke uitdaging in plaats van lokale fauna. Hij heeft er nooit één gevangen. Hij is ook nooit gestopt met proberen, en bracht een aanzienlijk deel van één rit door met zijn neus tegen het raam, plannen smedend.",
+    "exhibitBCaption": "BEWIJSSTUK B — GEÏNSTALLEERD VOOR DE RIT",
+    "exhibitCCaption": "BEWIJSSTUK C — INSPECTIE OP VLOERNIVEAU",
+    "exhibitDCaption": "BEWIJSSTUK D — PLATTELAND, VOORBIJRAZEND",
+    "exhibitECaption": "BEWIJSSTUK E — NEUS TEGEN HET GLAS, ERGENS TUSSEN TWEE STATIONS",
+    "exhibitFCaption": "BEWIJSSTUK F — AANKOMST AAN DE KUST",
+    "stamp": "BESTEMMING: OVERAL WAAR MEEUWEN ZIJN"
+  },
+  "blog": {
+    "title": "LOGBOEK",
+    "subtitle": "24 maandelijkse notities — twee jaar ononderbroken observatie, dossier 001-CR blijft open"
+  },
+  "blogPosts": [
+    {
+      "date": "JUL 2024",
+      "case": "CASE LOG 001",
+      "title": "DE DAG DAT DE MENS GEVONDEN WERD",
+      "body": "Aangetroffen op straat, geen leiband, geen plan, geen zichtbare eigenaar. De verdachte besnuffelde hem tweemaal, ging voor hem zitten en weigerde te bewegen tot er een regeling werd getroffen. Er werd een regeling getroffen. De verdachte houdt sindsdien toezicht op hem.",
+      "image": "assets/images/blog-cheek-to-cheek.jpg"
+    },
+    {
+      "date": "AUG 2024",
+      "case": "CASE LOG 002",
+      "title": "INCIDENT EERSTE NACHT",
+      "body": "Eén schoen betrad het pand. Eén schoen verliet het in herkenbare staat. Het onderzoek naar de andere schoen loopt nog.",
+      "image": "assets/images/blog-shoe-inspection.jpg"
+    },
+    {
+      "date": "SEP 2024",
+      "case": "CASE LOG 003",
+      "title": "GEWOONLIJKE GORDIJNSURVEILLANCE",
+      "body": "De verdachte heeft een vaste post ingenomen op de rugleuning van de zetel, gordijn opzijgeschoven met één poot, en houdt de straat in de gaten voor ongeoorloofde voetgangers, fietsers en de occasionele duif. Dienstrooster: vrijwel permanent.",
+      "image": "assets/images/blog-couch-lookout.jpg"
+    },
+    {
+      "date": "OCT 2024",
+      "case": "CASE LOG 004",
+      "title": "ONGEOORLOOFDE BETREDING VAN DE KEUKEN",
+      "body": "De verdachte werd volledig in de keuken staand waargenomen hoewel er nooit een uitnodiging is verstuurd. Ontkent elke kennis van het woord \"buiten\".",
+      "image": "assets/images/blog-shop-entry.jpg"
+    },
+    {
+      "date": "NOV 2024",
+      "case": "CASE LOG 005",
+      "title": "SOKKENDIEFSTALNETWERK OPGEROLD",
+      "body": "Zeven losse sokken teruggevonden onder het bed. Verdachte aanwezig ter plaatse, zichtbaar onaangedaan door het bewijs.",
+      "image": "assets/images/blog-shoulder-selfie.jpg"
+    },
+    {
+      "date": "DEC 2024",
+      "case": "CASE LOG 006",
+      "title": "VERSTORING VAN DE FEESTDAGEN",
+      "body": "Eén kerstbal gesneuveld. De boom staat nog overeind, voorlopig. De verdachte beweert dat de kerstbal \"eerst bewoog\".",
+      "image": "assets/images/blog-bee-costume.jpg"
+    },
+    {
+      "date": "JAN 2025",
+      "case": "CASE LOG 007",
+      "title": "NIEUWJAARSVOORNEMEN GESCHONDEN",
+      "body": "De eigenaar nam zich voor het zetelverbod te handhaven. Het voornemen hield vier uur stand. De verdachte heeft de volledige bezetting hervat.",
+      "image": "assets/images/blog-couch-cuddle-selfie.jpg"
+    },
+    {
+      "date": "FEB 2025",
+      "case": "CASE LOG 008",
+      "title": "EERSTE WAARNEMING VAN VERDACHTE PIKETTE",
+      "body": "Een kat, genaamd Pikette, werd waargenomen op het terrein. Beide partijen werden ogenblikkelijk en wederzijds woedend. Oorzaak onbekend, traditie sindsdien gevestigd.",
+      "image": "assets/images/pikette-windowsill.jpg"
+    },
+    {
+      "date": "MAR 2025",
+      "case": "CASE LOG 009",
+      "title": "POGING TOT ONDERHANDELING MET DE POSTBODE",
+      "body": "De verdachte benaderde de postbode met onduidelijke bedoelingen. De onderhandelingen sprongen binnen enkele seconden af. De post werd, uiteindelijk, bezorgd.",
+      "image": "assets/images/blog-mailman-standoff.jpg"
+    },
+    {
+      "date": "APR 2025",
+      "case": "CASE LOG 010",
+      "title": "HET BALKONINCIDENT",
+      "body": "Volledig rapport apart geklasseerd onder \"Eén Duif, Eén Balkon\". Hier vermeld voor de volledigheid van het dossier."
+    },
+    {
+      "date": "MAY 2025",
+      "case": "CASE LOG 011",
+      "title": "DE ZAAK VAN DE VERDWENEN AFSTANDSBEDIENING",
+      "body": "Afstandsbediening het laatst gezien in de buurt van de verdachte. Drie dagen later teruggevonden onder de radiator, tandafdrukken consistent met eerdere vergrijpen.",
+      "image": "assets/images/blog-bed-nap.jpg"
+    },
+    {
+      "date": "JUN 2025",
+      "case": "CASE LOG 012",
+      "title": "PIKETTE KEERT TERUG, SPANNINGEN ONGEWIJZIGD",
+      "body": "Tweede bezoek van verdachte Pikette. Beide partijen hervatten de vijandelijkheden exact waar ze gebleven waren, alsof er geen tijd verstreken was.",
+      "image": "assets/images/pikette-dog-couch.jpg"
+    },
+    {
+      "date": "JUL 2025",
+      "case": "CASE LOG 013",
+      "title": "ÉÉN JAAR IN HECHTENIS, GEEN VERBETERING VASTGESTELD",
+      "body": "Twaalfmaandelijkse evaluatie afgerond. De verdachte heeft geen meetbare vooruitgang geboekt richting goed gedrag. Is echter onmogelijk geworden om zonder te leven.",
+      "image": "assets/images/blog-garden-wall.jpg"
+    },
+    {
+      "date": "AUG 2025",
+      "case": "CASE LOG 014",
+      "title": "VERDACHTE ONDERGAAT CHIRURGISCHE INGREEP",
+      "body": "De verdachte werd deze maand gecastreerd. Ingreep geslaagd, de waardigheid heeft de kraag der schande niet overleefd. Gedrag volstrekt onveranderd.",
+      "image": "assets/images/blog-park-walk.jpg"
+    },
+    {
+      "date": "SEP 2025",
+      "case": "CASE LOG 015",
+      "title": "HERSTELPERIODE, HUMEUR ONGEWIJZIGD",
+      "body": "Kraag verwijderd. De verdachte vierde dit door onmiddellijk alle eerder verboden activiteiten op volle kracht te hervatten.",
+      "image": "assets/images/blog-full-capacity.jpg"
+    },
+    {
+      "date": "OCT 2025",
+      "case": "CASE LOG 016",
+      "title": "CONFRONTATIE MET PIKETTE, RONDE DRIE",
+      "body": "De operatie heeft de vijandelijkheden met verdachte Pikette niet bekoeld. Integendeel, de verdachte lijkt uit louter principe een wrok te koesteren.",
+      "image": "assets/images/pikette-couch-visit.jpg"
+    },
+    {
+      "date": "NOV 2025",
+      "case": "CASE LOG 017",
+      "title": "AANKLACHT WEGENS DEKENHAMSTEREN",
+      "body": "Al het zachte textiel in het huishouden is verplaatst naar één enkele stapel, momenteel onder exclusieve controle van de verdachte.",
+      "image": "assets/images/blog-blanket-hoard.jpg"
+    },
+    {
+      "date": "DEC 2025",
+      "case": "CASE LOG 018",
+      "title": "VERSTORING VAN DE FEESTDAGEN, RONDE TWEE",
+      "body": "Tweede kerstbal gesneuveld. De verdachte ontkent een gedragspatroon en roept \"toeval\" in als verdediging."
+    },
+    {
+      "date": "JAN 2026",
+      "case": "CASE LOG 019",
+      "title": "ONTSNAPPINGSPOGING VERIJDELD AAN DE DEUR",
+      "body": "De verdachte zette een sprint in richting de open voordeur. Heroverd op de stoep. Geen gewonden, lichte gêne aan beide kanten.",
+      "image": "assets/images/blog-front-door-recapture.jpg"
+    },
+    {
+      "date": "FEB 2026",
+      "case": "CASE LOG 020",
+      "title": "VERDACHTE PIKETTE, SURVEILLANCEFOTO IN HET DOSSIER",
+      "body": "Verdachte Pikette van dichtbij gefotografeerd tijdens een bezoek. Beide partijen blijven, om onduidelijke redenen, niet in staat vreedzaam samen te leven.",
+      "image": "assets/images/pikette-closeup.jpg"
+    },
+    {
+      "date": "MAR 2026",
+      "case": "CASE LOG 021",
+      "title": "VERHOOR INZAKE VERDWENEN SANDWICH",
+      "body": "Eén sandwich, negentig seconden onbewaakt, is niet teruggevonden. De verdachte was in de kamer. De verdachte wil bevestigen noch ontkennen.",
+      "image": "assets/images/blog-cafe-standoff.jpg"
+    },
+    {
+      "date": "APR 2026",
+      "case": "CASE LOG 022",
+      "title": "BUURMAN DIENT FORMELE KLACHT IN",
+      "body": "Klacht ontvangen wegens overmatig geblaf om 6u15. De verdachte is formeel gewaarschuwd. De verdachte heeft zijn schema niet aangepast.",
+      "image": "assets/images/blog-frosty-morning.jpg"
+    },
+    {
+      "date": "MAY 2026",
+      "case": "CASE LOG 023",
+      "title": "VOLLEDIGE LEVENSOVERNAME, BEOORDELING AFGEROND",
+      "body": "De verdachte controleert inmiddels het bed, het schema, de snacks en de meeste belangrijke beslissingen. Onafhankelijkheidsstatus van de eigenaar: ingetrokken.",
+      "image": "assets/images/blog-waffle-watch.jpg"
+    },
+    {
+      "date": "JUN 2026",
+      "case": "CASE LOG 024",
+      "title": "TWEEJAARLIJKSE EVALUATIE",
+      "body": "Twee jaar sinds de opname. Geen beterschap. Ook geen spijt. Zelfs verdachte Pikette werd op een zeldzame rustige avond aangetroffen terwijl ze de zetel deelde. Het dossier blijft open.",
+      "image": "assets/images/blog-belly-flop.jpg"
+    }
+  ],
+  "shop": {
+    "title": "SHOP",
+    "subtitle": "Bewijskamer — enkel ter inzage, niets hier is te koop",
+    "notForSale": "NIET TE KOOP",
+    "previewLabel": "STAAL / PREVIEW",
+    "playLabel": "PREVIEW AFSPELEN",
+    "featuredKicker": "NU TE ZIEN — ALBUMPREVIEW",
+    "itemKicker": "BEWIJSKAMER — ARTIKELDOSSIER",
+    "disclaimerTitle": "NIETS HIER IS ECHT",
+    "disclaimerBody": "Dit artikel is een stuk grap-conceptkunst gemaakt voor deze website. Het is nooit geproduceerd, is niet te koop en kan in geen enkele maat, kleur of hoeveelheid besteld worden — nergens, bij niemand. Elke gelijkenis met een echt product is toevallig en volstrekt onbedoeld.",
+    "backToShop": "← TERUG NAAR DE SHOP"
+  },
+  "shopItems": [
+    {
+      "name": "Brux Gang — \"Thug Life, No Rules\" (Mixtape)",
+      "tag": "Parental advisory. Hoes en video door een zekere Spooky-nog-iets.",
+      "price": "$14",
+      "image": "assets/images/shop-brux-gang.jpg",
+      "videoId": "7l6RhWyPk4s"
+    },
+    {
+      "name": "GEZOCHT-T-shirt",
+      "tag": "Katoen, unisex, schuldig door associatie",
+      "price": "$32",
+      "image": "assets/images/shop-wanted-tee.png",
+      "slug": "wanted-tee",
+      "detail": [
+        "Vooraan in het midden gedrukt: een politiefoto van Le Criminel, die recht in de camera staart met de vlakke, onbewogen blik van een recidivist die nog nooit één seconde aan zijn eigen onschuld heeft getwijfeld. De meetlat achter hem is decoratief — er is nooit een officiële meting uitgevoerd, aangezien de verdachte weigerde stil te staan voor de registratie.",
+        "Stijlnotities, voor het dossier: zware zwarte katoen, verweerde GEZOCHT-belettering en een pasvorm die het best omschreven wordt als \"bewijskamer-chic\". Verkrijgbaar in exact nul maten, want verkrijgbaar in nul exemplaren — zie hieronder.",
+        "Voor alle duidelijkheid: dit T-shirt bestaat niet. Het kan niet gekocht, besteld, nabesteld of in een andere maat aangevraagd worden. Het is een stuk conceptkunst, gegenereerd voor de grap van deze website en niets meer — Le Criminel heeft geen enkele merchandise goedgekeurd, aangezien hij een hond is."
+      ]
+    },
+    {
+      "name": "Mok \"Middelmatigste Crimineel\"",
+      "tag": "Keramiek, bevat koffie en wrok",
+      "price": "$18",
+      "image": "assets/images/shop-okayest-mug.png",
+      "slug": "okayest-mug",
+      "detail": [
+        "Een stenen mok met de minst enthousiaste onderscheiding van het korps: \"Middelmatigste Crimineel\", gestempeld in een rond zegel onder een klein, onbeïndrukt portret van de verdachte. Toegekend niet voor uitmuntendheid, maar voor consistentie — dezelfde vergrijpen, hetzelfde gebrek aan berouw, ochtend na ochtend.",
+        "Bevat een volle mok koffie of, volgens het etiket, een gelijkwaardig volume aan wrok. Vaatwasserbestendigheid is nooit getest, want deze mok bestaat niet om gewassen, bezeten of met wat dan ook gevuld te worden.",
+        "Voor alle duidelijkheid: deze mok bestaat niet. Hij kan niet gekocht, besteld, nabesteld of in een ander glazuur aangevraagd worden. Het is een stuk conceptkunst, gegenereerd voor de grap van deze website en niets meer."
+      ]
+    },
+    {
+      "name": "Balkonincident-poster",
+      "tag": "Herdenkingsprint, kader apart verkocht",
+      "price": "$45",
+      "image": "assets/images/shop-balcony-poster.png",
+      "slug": "balcony-poster",
+      "detail": [
+        "Een herdenkingsprint van de allerslechtste namiddag van het balkon: Le Criminel, halverwege over de reling geleund, starend naar een duif die het gevaar allang heeft opgemerkt en nog één vleugelslag van de vlucht verwijderd is. De daken achter hem zijn die van de buurt, weergegeven in een bewust verouderde stijl à la houtsnede, want het eigenlijke incident leverde geen bruikbare foto's op — alleen getuigen, en heel veel lawaai.",
+        "\"THE BALCONY INCIDENT\" loopt in blokletters over de onderkant, alsof het moment belangrijk genoeg was voor een ingekaderde print. Dat was het waarschijnlijk ook. Zie het volledige incidentrapport voor de versie met minder illustraties en meer gevolgen.",
+        "Voor alle duidelijkheid: deze poster bestaat niet. Hij kan in geen enkel formaat gekocht, gedrukt, ingekaderd of verzonden worden. Het is een stuk conceptkunst, gegenereerd voor de grap van deze website en niets meer."
+      ]
+    },
+    {
+      "name": "Dossier-stickerpack",
+      "tag": "Set van 5, vinyl, weerbestendig",
+      "price": "$9",
+      "image": "assets/images/shop-sticker-pack.png",
+      "slug": "sticker-pack",
+      "detail": [
+        "Vijf vinylstickers uit de grootste momenten van het dossier: de politiefoto, het dossierlabel \"001-CR\", een dienstzegel in pootafdrukvorm, de tot bewijsstuk gereduceerde zetel, en een duif die zelfvoldaan op een reling zit waarop ze geen enkel wettelijk recht heeft. Weerbestendig, in theorie — aangezien volledig theoretisch.",
+        "Ontworpen voor laptops, drinkbussen of de binnenkant van een map met het opschrift VERTROUWELIJK. Niets daarvan doet ertoe, want het pack is nooit geproduceerd en kan niet verzonden, weggegeven of van zijn dragervel losgetrokken worden — het heeft namelijk geen dragervel.",
+        "Voor alle duidelijkheid: dit stickerpack bestaat niet. Het kan in geen enkele hoeveelheid gekocht, besteld of gedrukt worden. Het is een stuk conceptkunst, gegenereerd voor de grap van deze website en niets meer."
+      ]
+    }
+  ],
+  "footer": "© THE THIEFFRY CRIMINALS — HET DOSSIER BLIJFT OPEN. ALLE RECHTEN VOORBEHOUDEN (NAAR VERLUIDT)."
+}

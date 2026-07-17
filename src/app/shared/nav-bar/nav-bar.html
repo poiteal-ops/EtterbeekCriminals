@@ -1,8 +1,8 @@
 @let t = translation.t();
-@let lang = translation.lang();
+@let currentLocale = translation.locale();
 
 <div class="nav">
-  <a routerLink="/" class="brand">THE THIEFFRY CRIMINALS</a>
+  <a [routerLink]="translation.path()" class="brand">THE THIEFFRY CRIMINALS</a>
 
   <button
     type="button"
@@ -18,9 +18,9 @@
   </button>
 
   <div class="links" [class.open]="menuOpen()">
-    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ t.nav.home }}</a>
-    <a routerLink="/about" routerLinkActive="active">{{ t.nav.about }}</a>
-    <a routerLink="/story" routerLinkActive="active">{{ t.nav.story }}</a>
+    <a [routerLink]="translation.path()" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ t.nav.home }}</a>
+    <a [routerLink]="translation.path('about')" routerLinkActive="active">{{ t.nav.about }}</a>
+    <a [routerLink]="translation.path('story')" routerLinkActive="active">{{ t.nav.story }}</a>
     <div class="dropdown" [class.active]="storiesActive()">
       <button
         type="button"
@@ -32,17 +32,28 @@
         {{ t.nav.stories }}
       </button>
       <div class="dropdown-menu" [class.open]="dropdownOpen()">
-        <a routerLink="/pigeon" routerLinkActive="active">{{ t.nav.pigeon }}</a>
-        <a routerLink="/couch" routerLinkActive="active">{{ t.nav.couch }}</a>
-        <a routerLink="/train-ride" routerLinkActive="active">{{ t.nav.trainRide }}</a>
+        <a [routerLink]="translation.path('pigeon')" routerLinkActive="active">{{ t.nav.pigeon }}</a>
+        <a [routerLink]="translation.path('couch')" routerLinkActive="active">{{ t.nav.couch }}</a>
+        <a [routerLink]="translation.path('train-ride')" routerLinkActive="active">{{ t.nav.trainRide }}</a>
       </div>
     </div>
-    <a routerLink="/blog" routerLinkActive="active">{{ t.nav.blog }}</a>
-    <a routerLink="/shop" routerLinkActive="active">{{ t.nav.shop }}</a>
-    <div class="lang-switch">
-      <button type="button" [class.active]="lang === 'en'" (click)="setLang('en')">EN</button>
-      <span class="sep">/</span>
-      <button type="button" [class.active]="lang === 'fr'" (click)="setLang('fr')">FR</button>
+    <a [routerLink]="translation.path('blog')" routerLinkActive="active">{{ t.nav.blog }}</a>
+    <a [routerLink]="translation.path('shop')" routerLinkActive="active">{{ t.nav.shop }}</a>
+    <div class="dropdown lang-dropdown" [class.active]="true">
+      <button
+        type="button"
+        class="dropdown-trigger"
+        [class.open]="langDropdownOpen()"
+        [attr.aria-expanded]="langDropdownOpen()"
+        (click)="toggleLangDropdown($event)"
+      >
+        {{ localeLabel(currentLocale) }}
+      </button>
+      <div class="dropdown-menu" [class.open]="langDropdownOpen()">
+        @for (code of localeOptions; track code) {
+          <a (click)="switchLocale(code)" [class.active]="currentLocale === code">{{ localeLabel(code) }}</a>
+        }
+      </div>
     </div>
   </div>
 </div>
