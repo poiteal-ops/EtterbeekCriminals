@@ -25,6 +25,7 @@ export const EN_CONTENT: SiteContent = {
     promoTag: 'The mixtape nobody asked for. Cover art by a certain Spooky-something.',
     promoCta: 'VIEW IN SHOP',
     promoVideoLink: 'Watch the preview',
+    storiesCta: 'READ THE CASE FILE',
   },
   about: {
     title: 'ABOUT THE SUSPECTS',
