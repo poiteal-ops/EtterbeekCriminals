@@ -1,1 +1,41 @@
-<div class="carousel-wrap"></div>
+@let stories = translation.t().adventures;
+@let story = stories[currentIndex()];
+
+<div class="carousel-wrap">
+  <div class="carousel-kicker">{{ translation.t().story.adventuresKicker }}</div>
+
+  <div
+    class="carousel-card"
+    [class.visible]="visible()"
+    (mouseenter)="pause()"
+    (mouseleave)="resume()"
+    (focusin)="pause()"
+    (focusout)="resume()"
+  >
+    <a class="carousel-main" [routerLink]="translation.path(story.link)">
+      <div class="carousel-photo">
+        <img [src]="story.image" [alt]="story.title" />
+      </div>
+      <div class="carousel-details">
+        <div class="carousel-title">{{ story.title }}</div>
+        <div class="carousel-teaser">{{ story.teaser }}</div>
+      </div>
+    </a>
+    <a class="carousel-cta" [routerLink]="translation.path(story.link)">
+      {{ translation.t().home.storiesCta }}
+    </a>
+  </div>
+
+  <div class="carousel-dots">
+    @for (s of stories; track s.link; let i = $index) {
+      <button
+        type="button"
+        class="carousel-dot"
+        [class.active]="i === currentIndex()"
+        [attr.aria-current]="i === currentIndex() ? 'true' : null"
+        [attr.aria-label]="s.title"
+        (click)="selectStory(i)"
+      ></button>
+    }
+  </div>
+</div>
