@@ -21,7 +21,7 @@ import { pathToFileURL } from 'node:url';
 const ROOT = process.cwd();
 const DIST_DIR = path.join(ROOT, 'dist/etterbeek-criminals/browser');
 const I18N_DIR = path.join(ROOT, 'public/i18n');
-const SITE_ORIGIN = 'https://poiteal-ops.github.io';
+const SITE_ORIGIN = 'https://thieffrycriminals.be';
 
 async function loadEnglishContent() {
   // en.content.ts is a plain JS object literal with one TS type annotation on
@@ -29,7 +29,7 @@ async function loadEnglishContent() {
   // and let Node import the rest as-is, rather than pulling in a TS compiler.
   const src = fs.readFileSync(path.join(ROOT, 'src/app/i18n/content/en.content.ts'), 'utf8');
   const stripped = src
-    .replace(/^import \{ SiteContent \} from '\.\/site-content\.model';\n/m, '')
+    .replace(/^import \{ SiteContent \} from '\.\/site-content\.model';\r?\n/m, '')
     .replace(/export const EN_CONTENT: SiteContent = /, 'export default ');
   const tmpFile = path.join(os.tmpdir(), `en-content-${Date.now()}-${Math.random().toString(36).slice(2)}.mjs`);
   fs.writeFileSync(tmpFile, stripped);

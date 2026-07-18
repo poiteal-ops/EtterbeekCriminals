@@ -24,6 +24,8 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      # base-href must stay "/": the site is served from the custom domain
+      # thieffrycriminals.be at the domain root, not a github.io/<repo> subpath.
       - run: npm run build -- --configuration production --base-href /
       - run: cp dist/etterbeek-criminals/browser/index.html dist/etterbeek-criminals/browser/404.html
       - uses: actions/configure-pages@v5
