@@ -24,7 +24,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npm run build -- --configuration production --base-href /EtterbeekCriminals/
+      - run: npm run build -- --configuration production --base-href /
       - run: cp dist/etterbeek-criminals/browser/index.html dist/etterbeek-criminals/browser/404.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
