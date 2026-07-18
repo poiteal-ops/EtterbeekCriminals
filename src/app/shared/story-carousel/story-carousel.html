@@ -1,17 +1,16 @@
 @let stories = translation.t().adventures;
 @let story = stories[currentIndex()];
 
-<div class="carousel-wrap">
+<div
+  class="carousel-wrap"
+  (mouseenter)="pause()"
+  (mouseleave)="resume()"
+  (focusin)="pause()"
+  (focusout)="resume()"
+>
   <div class="carousel-kicker">{{ translation.t().story.adventuresKicker }}</div>
 
-  <div
-    class="carousel-card"
-    [class.visible]="visible()"
-    (mouseenter)="pause()"
-    (mouseleave)="resume()"
-    (focusin)="pause()"
-    (focusout)="resume()"
-  >
+  <div class="carousel-card" [class.visible]="visible()">
     <a class="carousel-main" [routerLink]="translation.path(story.link)">
       <div class="carousel-photo">
         <img [src]="story.image" [alt]="story.title" />
@@ -33,7 +32,7 @@
         class="carousel-dot"
         [class.active]="i === currentIndex()"
         [attr.aria-current]="i === currentIndex() ? 'true' : null"
-        [attr.aria-label]="s.title"
+        [attr.aria-label]="'Show: ' + s.title"
         (click)="selectStory(i)"
       ></button>
     }
