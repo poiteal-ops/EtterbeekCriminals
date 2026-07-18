@@ -52,6 +52,7 @@ export interface SiteContent {
     promoTag: string;
     promoCta: string;
     promoVideoLink: string;
+    storiesCta: string;
   };
   about: {
     title: string;
