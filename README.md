@@ -7,10 +7,17 @@ Built with Angular.
 
 This repo is published with GitHub Pages, live at:
 
-https://poiteal-ops.github.io/EtterbeekCriminals/
+https://thieffrycriminals.be/
 
 A GitHub Actions workflow (`.github/workflows/deploy.yml`) builds and deploys
 the site automatically on every push to `main`.
+
+### Deployment note
+
+The site is served from the custom domain root, not a `github.io/<repo>`
+subpath, so the production build must always use `--base-href /`. Do not
+reintroduce `--base-href /EtterbeekCriminals/` — that was only correct back
+when the site lived at `poiteal-ops.github.io/EtterbeekCriminals/`.
 
 ## Local development
 
