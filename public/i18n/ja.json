@@ -8,6 +8,7 @@
     "couch": "ソファ",
     "trainRide": "電車の旅",
     "escapeCountry": "田舎への脱出",
+    "theftAndDestruction": "窃盗と破壊",
     "blog": "ブログ",
     "shop": "ショップ"
   },
@@ -92,6 +93,12 @@
       "teaser": "一度の再会、すっかり魅了された女主人、そして彼の名前が刻まれた牛糞まみれの野原。",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "窃盗と破壊",
+      "teaser": "靴、一切れのパン、そして原形をとどめないサッカーボール――それぞれ別々に発見され、同じ容疑者のせいにされた。",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "証拠品E――駅と駅の間のどこかで、窓ガラスに鼻を押し付けて",
     "exhibitFCaption": "証拠品F――海岸への到着",
     "stamp": "行き先:カモメのいる場所ならどこでも"
+  },
+  "theftAndDestruction": {
+    "kicker": "捜査ファイル――常習犯",
+    "title": "窃盗と破壊",
+    "locationLabel": "場所",
+    "locationVal": "複数の場所――庭、リビングルーム",
+    "suspectLabel": "容疑者",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "目撃者",
+    "witnessVal": "Sawito",
+    "motiveLabel": "動機",
+    "motiveVal": "不明。容疑者には前科がある。",
+    "p1": "捜査当局はこれまでに、同一の被疑体に起因する3件の別々の事件を記録している。屋外・屋内両方の資産にまたがるものだ。いずれの事件でも手口は一貫している――許可なく物品を取得し、その後隠蔽を試みることは一切ない。目撃者の協力は最小限にとどまっている。",
+    "p2": "写真の証拠品Aは窃盗の現行犯で回収されたものである:被疑体は緑色の靴をくわえたまま取り押さえられ、靴ひもはすでに損傷しており、尋問の間ずっとまっすぐにカメラへ視線を向けていた。反省の色は一切見られなかった。追加の証拠品(下記)は、原形をとどめないサッカーボールと、キッチンから報告なしに持ち去られたパン一切れを記録している。",
+    "exhibitBCaption": "証拠品B――パン。残りのスライスの手がかりなし。",
+    "exhibitCCaption": "証拠品C――サッカーボール、被害後。",
+    "stamp": "パターンを確認――事件は依然として未解決"
   },
   "blog": {
     "title": "事件記録",

@@ -8,6 +8,7 @@
     "couch": "O SOFÁ",
     "trainRide": "VIAGEM DE COMBOIO",
     "escapeCountry": "FUGA PARA O CAMPO",
+    "theftAndDestruction": "FURTO E DESTRUIÇÃO",
     "blog": "BLOG",
     "shop": "LOJA"
   },
@@ -92,6 +93,12 @@
       "teaser": "Um reencontro, uma anfitriã completamente rendida aos seus encantos, e um campo de estrume com o seu nome escrito.",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "FURTO E DESTRUIÇÃO",
+      "teaser": "Um sapato, uma fatia de pão e uma bola de futebol irreconhecível — recuperados separadamente, atribuídos ao mesmo suspeito.",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "PROVA E — NARIZ NO VIDRO, ALGURES ENTRE ESTAÇÕES",
     "exhibitFCaption": "PROVA F — CHEGADA À COSTA",
     "stamp": "DESTINO: ONDE HOUVER GAIVOTAS"
+  },
+  "theftAndDestruction": {
+    "kicker": "Processo — reincidente",
+    "title": "FURTO E DESTRUIÇÃO",
+    "locationLabel": "LOCAL",
+    "locationVal": "Vários locais — quintal, sala de estar",
+    "suspectLabel": "SUSPEITO",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TESTEMUNHA",
+    "witnessVal": "Sawito",
+    "motiveLabel": "MOTIVO",
+    "motiveVal": "Por determinar; o suspeito tem antecedentes",
+    "p1": "Os investigadores registaram agora três incidentes distintos atribuídos ao mesmo suspeito, abrangendo propriedade tanto exterior como interior. Em cada caso, o padrão é consistente: um objeto é adquirido sem autorização, e não é feita qualquer tentativa de ocultar o ato depois. A cooperação com a testemunha tem sido mínima.",
+    "p2": "A Prova A, retratada, foi recuperada a meio do furto: o suspeito foi apanhado a segurar um sapato verde, com os atacadores já comprometidos, mantendo contacto visual direto durante todo o interrogatório. Não foram observados sinais de arrependimento. Provas adicionais (abaixo) documentam uma bola de futebol tornada irreconhecível e uma fatia de pão retirada da cozinha sem relatório de incidente.",
+    "exhibitBCaption": "PROVA B — O PÃO. SEM PISTAS SOBRE AS FATIAS RESTANTES.",
+    "exhibitCCaption": "PROVA C — A BOLA DE FUTEBOL, DEPOIS.",
+    "stamp": "PADRÃO CONFIRMADO — O PROCESSO CONTINUA EM ABERTO"
   },
   "blog": {
     "title": "REGISTO DO CASO",
