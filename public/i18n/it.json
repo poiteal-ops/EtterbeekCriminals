@@ -8,6 +8,7 @@
     "couch": "IL DIVANO",
     "trainRide": "IN TRENO",
     "escapeCountry": "FUGA IN CAMPAGNA",
+    "theftAndDestruction": "FURTO E DISTRUZIONE",
     "blog": "BLOG",
     "shop": "NEGOZIO"
   },
@@ -92,6 +93,12 @@
       "teaser": "Un ritrovo, una padrona di casa completamente conquistata, e un campo di sterco con il suo nome sopra.",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "FURTO E DISTRUZIONE",
+      "teaser": "Una scarpa, una fetta di pane e un pallone reso irriconoscibile — ritrovati separatamente, attribuiti allo stesso sospettato.",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "REPERTO E — NASO CONTRO IL VETRO, DA QUALCHE PARTE TRA DUE STAZIONI",
     "exhibitFCaption": "REPERTO F — ARRIVO SULLA COSTA",
     "stamp": "DESTINAZIONE: OVUNQUE CI SIANO I GABBIANI"
+  },
+  "theftAndDestruction": {
+    "kicker": "Fascicolo — recidivo",
+    "title": "FURTO E DISTRUZIONE",
+    "locationLabel": "LUOGO",
+    "locationVal": "Più luoghi — giardino, salotto",
+    "suspectLabel": "SOSPETTATO",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TESTIMONE",
+    "witnessVal": "Sawito",
+    "motiveLabel": "MOVENTE",
+    "motiveVal": "Indeterminato; il sospettato ha precedenti",
+    "p1": "Gli inquirenti hanno ormai registrato tre episodi distinti attribuiti allo stesso sospettato, sia all'aperto che in casa. In ogni caso lo schema è lo stesso: un oggetto viene acquisito senza permesso, e in seguito non viene fatto alcun tentativo di occultare il gesto. La collaborazione del testimone è stata minima.",
+    "p2": "Il reperto A, in foto, è stato recuperato a furto in corso: il sospettato è stato sorpreso mentre teneva una scarpa verde, lacci già compromessi, mantenendo un contatto visivo diretto per tutto l'interrogatorio. Non sono stati osservati segni di rimorso. Altri reperti (sotto) documentano un pallone reso irriconoscibile e una fetta di pane sottratta dalla cucina senza rapporto d'incidente.",
+    "exhibitBCaption": "REPERTO B — IL PANE. NESSUNA TRACCIA DELLE FETTE RIMANENTI.",
+    "exhibitCCaption": "REPERTO C — IL PALLONE, DOPO.",
+    "stamp": "SCHEMA CONFERMATO — IL CASO RESTA APERTO"
   },
   "blog": {
     "title": "REGISTRO CASI",

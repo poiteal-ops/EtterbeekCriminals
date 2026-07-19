@@ -8,6 +8,7 @@
     "couch": "DE ZETEL",
     "trainRide": "TREINRIT",
     "escapeCountry": "ONTSNAPPING NAAR HET PLATTELAND",
+    "theftAndDestruction": "DIEFSTAL EN VERNIELING",
     "blog": "BLOG",
     "shop": "SHOP"
   },
@@ -92,6 +93,12 @@
       "teaser": "Eén weerzien, één volledig ingepalmde gastvrouw, en een veld koeienvlaaien met zijn naam erop.",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "DIEFSTAL EN VERNIELING",
+      "teaser": "Een schoen, een snee brood en een tot onherkenbaarheid toegetakelde voetbal — apart teruggevonden, allemaal op naam van dezelfde verdachte.",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "BEWIJSSTUK E — NEUS TEGEN HET GLAS, ERGENS TUSSEN TWEE STATIONS",
     "exhibitFCaption": "BEWIJSSTUK F — AANKOMST AAN DE KUST",
     "stamp": "BESTEMMING: OVERAL WAAR MEEUWEN ZIJN"
+  },
+  "theftAndDestruction": {
+    "kicker": "Dossier — recidivist",
+    "title": "DIEFSTAL EN VERNIELING",
+    "locationLabel": "LOCATIE",
+    "locationVal": "Meerdere locaties — tuin, woonkamer",
+    "suspectLabel": "VERDACHTE",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "GETUIGE",
+    "witnessVal": "Sawito",
+    "motiveLabel": "MOTIEF",
+    "motiveVal": "Onbepaald; de verdachte heeft een strafblad",
+    "p1": "Onderzoekers hebben inmiddels drie afzonderlijke incidenten genoteerd die aan dezelfde verdachte worden toegeschreven, zowel buiten als binnenshuis. In elk geval is het patroon hetzelfde: een voorwerp wordt zonder toestemming verworven, en er wordt achteraf geen poging ondernomen om de daad te verbergen. De medewerking van de getuige was minimaal.",
+    "p2": "Bewijsstuk A, afgebeeld, werd midden in de diefstal aangetroffen: de verdachte werd betrapt terwijl hij een groene schoen vasthield, veters reeds gecompromitteerd, en hield gedurende het hele verhoor rechtstreeks oogcontact. Er werden geen tekenen van berouw waargenomen. Andere bewijsstukken (hieronder) documenteren een tot onherkenbaarheid toegetakelde voetbal en een snee brood die zonder incidentmelding uit de keuken werd verwijderd.",
+    "exhibitBCaption": "BEWIJSSTUK B — HET BROOD. GEEN AANWIJZINGEN OVER DE OVERIGE SNEETJES.",
+    "exhibitCCaption": "BEWIJSSTUK C — DE VOETBAL, ERNA.",
+    "stamp": "PATROON BEVESTIGD — ZAAK BLIJFT OPEN"
   },
   "blog": {
     "title": "LOGBOEK",
