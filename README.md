@@ -19,6 +19,14 @@ subpath, so the production build must always use `--base-href /`. Do not
 reintroduce `--base-href /EtterbeekCriminals/` — that was only correct back
 when the site lived at `poiteal-ops.github.io/EtterbeekCriminals/`.
 
+## Search visibility
+
+The production build generates route-specific HTML, `sitemap.xml`, and
+`robots.txt`. Domain verification, sitemap submission, and indexing checks are
+owner-managed steps documented in [Google Search Console setup](docs/seo/search-console.md).
+
+Search Console does not require analytics or tracking code on this site.
+
 ## Local development
 
 ```
