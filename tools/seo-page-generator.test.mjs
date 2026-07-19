@@ -102,6 +102,27 @@ test('renderPage emits escaped metadata, canonical, self alternate, and x-defaul
   assert.doesNotMatch(html, /og:image:width|og:image:height/);
 });
 
+test('renderPage preserves extra html-tag attributes such as data-beasties-container', () => {
+  const beastiesTemplate = template.replace('<html lang="en">', '<html lang="en" data-beasties-container>');
+  const page = {
+    route: 'about',
+    title: 'About',
+    description: 'About description',
+    image: 'assets/images/about.jpg',
+  };
+  const html = renderPage(beastiesTemplate, {
+    locale: 'fr',
+    page,
+    canonicalUrl: pageUrl('fr', page.route),
+    alternates: [
+      { locale: 'en', url: pageUrl('en', page.route) },
+      { locale: 'fr', url: pageUrl('fr', page.route) },
+    ],
+  });
+
+  assert.match(html, /<html lang="fr" data-beasties-container>/);
+});
+
 test('normalizeRoute and outputDirectory reject traversal input', () => {
   assert.equal(normalizeRoute('/shop/wanted-tee/'), 'shop/wanted-tee');
   assert.throws(() => normalizeRoute('../outside'), /Unsafe route/);
@@ -132,4 +153,14 @@ test('generateSite writes all locale roots and routes but no unsupported locale'
   } finally {
     fs.rmSync(distDir, { recursive: true, force: true });
   }
+});
+
+test('real localized content describes 13 indexable routes per locale', async () => {
+  const source = fs.readFileSync('src/app/i18n/content/en.content.ts', 'utf8');
+  const routeCount = (source.match(/slug:/g) ?? []).length + 9;
+  assert.equal(routeCount, 13);
+
+  const localeCount = 1 + fs.readdirSync('public/i18n').filter((name) => name.endsWith('.json')).length;
+  assert.equal(localeCount, 20);
+  assert.equal(routeCount * localeCount, 260);
 });

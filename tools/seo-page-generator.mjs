@@ -117,7 +117,7 @@ export function renderPage(template, { locale, page, canonicalUrl, alternates })
   const imageUrl = `${SITE_ORIGIN}/${String(page.image ?? DEFAULT_IMAGE).replace(/^\/+/, '')}`;
 
   let html = template;
-  html = replaceRequired(html, /<html lang="[^"]*">/, `<html lang="${escapeHtmlAttribute(locale)}">`, 'html lang');
+  html = replaceRequired(html, /<html lang="[^"]*"/, `<html lang="${escapeHtmlAttribute(locale)}"`, 'html lang');
   html = replaceRequired(html, /<title>[\s\S]*?<\/title>/, `<title>${titleText}</title>`, 'title');
   html = replaceRequired(html, /<meta name="description" content="[^"]*">/, `<meta name="description" content="${description}">`, 'description');
   html = replaceRequired(html, /<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="${titleAttribute}">`, 'og:title');
