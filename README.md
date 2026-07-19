@@ -23,7 +23,7 @@ when the site lived at `poiteal-ops.github.io/EtterbeekCriminals/`.
 
 The production build generates route-specific HTML, `sitemap.xml`, and
 `robots.txt`. Domain verification, sitemap submission, and indexing checks are
-owner-managed steps documented in [Google Search Console setup](docs/seo/search-console.md).
+owner-managed steps (see the local, untracked Search Console setup notes).
 
 Search Console does not require analytics or tracking code on this site.
 

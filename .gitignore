@@ -39,6 +39,7 @@ testem.log
 /typings
 __screenshots__/
 /plans
+/docs
 
 # System files
 .DS_Store
