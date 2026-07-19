@@ -8,6 +8,7 @@
     "postbuild": "node tools/generate-social-previews.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test:seo": "node --test tools/*.test.mjs",
     "prepare": "husky"
   },
   "private": true,
