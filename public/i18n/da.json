@@ -8,6 +8,7 @@
     "couch": "SOFAEN",
     "trainRide": "TOGTUR",
     "escapeCountry": "FLUGTEN TIL LANDET",
+    "theftAndDestruction": "TYVERI OG ØDELÆGGELSE",
     "blog": "BLOG",
     "shop": "BUTIK"
   },
@@ -92,6 +93,12 @@
       "teaser": "Et gensyn med gamle venner, én fuldstændig charmeret værtinde, og en mark kogødning med hans signatur.",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "TYVERI OG ØDELÆGGELSE",
+      "teaser": "En sko, en brødskive og én ukendelig fodbold — genfundet hver for sig, men lagt den samme mistænkte til last.",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "BEVIS E — NÆSE MOD RUDEN, ET STED MELLEM TO STATIONER",
     "exhibitFCaption": "BEVIS F — ANKOMST VED KYSTEN",
     "stamp": "DESTINATION: HVOR SOM HELST DER ER MÅGER"
+  },
+  "theftAndDestruction": {
+    "kicker": "Sagsakt — gengangerforbryder",
+    "title": "TYVERI OG ØDELÆGGELSE",
+    "locationLabel": "STED",
+    "locationVal": "Flere steder — have, stue",
+    "suspectLabel": "MISTÆNKT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "VIDNE",
+    "witnessVal": "Sawito",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Ukendt; den mistænkte har tidligere domme",
+    "p1": "Efterforskerne har nu registreret tre separate hændelser, der kan tilskrives den samme mistænkte, og som spænder over både udendørs og indendørs ejendom. I hvert tilfælde er mønsteret det samme: en genstand erhverves uden tilladelse, og der gøres ingen efterfølgende forsøg på at skjule handlingen. Samarbejdet med vidnet har været minimalt.",
+    "p2": "Bevis A, vist på billedet, blev genfundet midt under tyveriet: den mistænkte blev anholdt, holdende en grøn sko, hvis snørebånd allerede var kompromitteret, mens han fastholdt direkte øjenkontakt gennem hele afhøringen. Der blev ikke observeret tegn på anger. Yderligere beviser (nedenfor) dokumenterer en fodbold gjort ukendelig og en brødskive fjernet fra køkkenet uden nogen hændelsesrapport.",
+    "exhibitBCaption": "BEVIS B — BRØDET. INGEN SPOR AF DE RESTERENDE SKIVER.",
+    "exhibitCCaption": "BEVIS C — FODBOLDEN, EFTER.",
+    "stamp": "MØNSTER BEKRÆFTET — SAGEN FORBLIVER ÅBEN"
   },
   "blog": {
     "title": "SAGSLOG",

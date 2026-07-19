@@ -8,6 +8,7 @@
     "couch": "A KANAPÉ",
     "trainRide": "VONATÚT",
     "escapeCountry": "SZÖKÉS VIDÉKRE",
+    "theftAndDestruction": "LOPÁS ÉS RONGÁLÁS",
     "blog": "BLOG",
     "shop": "BOLT"
   },
@@ -92,6 +93,12 @@
       "teaser": "Egy találkozás régi barátokkal, egy alaposan levett lábú háziasszony, és egy tehéntrágyás mező, rajta az ő aláírásával.",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "LOPÁS ÉS RONGÁLÁS",
+      "teaser": "Egy cipő, egy szelet kenyér, és egy felismerhetetlenné vált focilabda — külön-külön kerültek elő, de mindegyikért ugyanazt a gyanúsítottat hibáztatják.",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "E JELŰ BIZONYÍTÉK — ORR AZ ÜVEGHEZ NYOMVA, VALAHOL KÉT ÁLLOMÁS KÖZÖTT",
     "exhibitFCaption": "F JELŰ BIZONYÍTÉK — PARTRASZÁLLÁS A TENGERPARTON",
     "stamp": "ÚTI CÉL: AHOL SIRÁLYOK VANNAK"
+  },
+  "theftAndDestruction": {
+    "kicker": "Ügyirat — visszaeső bűnöző",
+    "title": "LOPÁS ÉS RONGÁLÁS",
+    "locationLabel": "HELYSZÍN",
+    "locationVal": "Több helyszín — kert, nappali",
+    "suspectLabel": "GYANÚSÍTOTT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TANÚ",
+    "witnessVal": "Sawito",
+    "motiveLabel": "INDÍTÉK",
+    "motiveVal": "Nem megállapítható; a gyanúsítottnak büntetett előélete van",
+    "p1": "A nyomozók mára három különálló esetet vettek nyilvántartásba, amelyeket ugyanannak a gyanúsítottnak tulajdonítanak, és amelyek egyaránt érintik a kültéri és beltéri ingatlant. Minden esetben ugyanaz a minta: egy tárgyat engedély nélkül szereznek meg, és utólag semmilyen kísérlet nem történik a tett eltitkolására. A tanúval való együttműködés minimális volt.",
+    "p2": "Az A jelű bizonyítékot, amely a képen látható, még lopás közben sikerült visszaszerezni: a gyanúsítottat egy zöld cipővel a szájában fogták el, amelynek fűzője már megrongálódott, miközben a kihallgatás alatt végig egyenesen a szemükbe nézett. Megbánásra utaló jelet nem észleltek. A további bizonyítékok (alább) egy felismerhetetlenné vált focilabdát és egy incidensjelentés nélkül eltűnt kenyérszeletet dokumentálnak a konyhából.",
+    "exhibitBCaption": "B JELŰ BIZONYÍTÉK — A KENYÉR. A MEGMARADT SZELETEKRŐL NINCS NYOM.",
+    "exhibitCCaption": "C JELŰ BIZONYÍTÉK — A FOCILABDA, UTÁNA.",
+    "stamp": "A MINTA MEGERŐSÍTVE — AZ ÜGY TOVÁBBRA IS NYITVA"
   },
   "blog": {
     "title": "ÜGYNAPLÓ",
