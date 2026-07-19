@@ -6,7 +6,7 @@ import { filter, map, startWith } from 'rxjs';
 import { TranslationService } from '../../services/translation.service';
 import { CONTENT_LOCALES, DEFAULT_LOCALE, LocaleCode, isKnownLocale, localeDisplayName } from '../../i18n/locale-registry';
 
-const STORY_ROUTES = ['/pigeon', '/couch', '/train-ride', '/escape-to-the-country'];
+const STORY_ROUTES = ['/pigeon', '/couch', '/train-ride', '/escape-to-the-country', '/theft-and-destruction'];
 
 @Component({
   selector: 'app-nav-bar',

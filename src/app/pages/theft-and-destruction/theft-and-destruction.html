@@ -1,0 +1,35 @@
+@let t = translation.t();
+
+<div class="page">
+  <div class="kicker">{{ t.theftAndDestruction.kicker }}</div>
+  <h1 class="title">{{ t.theftAndDestruction.title }}</h1>
+
+  <div class="report">
+    <div class="facts">
+      <div class="label">{{ t.theftAndDestruction.locationLabel }}</div><div>{{ t.theftAndDestruction.locationVal }}</div>
+      <div class="label">{{ t.theftAndDestruction.suspectLabel }}</div><div>{{ t.theftAndDestruction.suspectVal }}</div>
+      <div class="label">{{ t.theftAndDestruction.witnessLabel }}</div><div>{{ t.theftAndDestruction.witnessVal }}</div>
+      <div class="label">{{ t.theftAndDestruction.motiveLabel }}</div><div>{{ t.theftAndDestruction.motiveVal }}</div>
+    </div>
+    <div class="photo">
+      <img src="assets/images/theft-shoe.jpg" alt="Le Criminel apprehended mid-theft with a green shoe" />
+    </div>
+    <div class="body">
+      <p>{{ t.theftAndDestruction.p1 }}</p>
+      <p>{{ t.theftAndDestruction.p2 }}</p>
+    </div>
+
+    <div class="gallery">
+      <figure>
+        <img src="assets/images/theft-bread.jpg" alt="Le Criminel with a stolen slice of bread" />
+        <figcaption>{{ t.theftAndDestruction.exhibitBCaption }}</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/theft-ball.jpg" alt="Le Criminel with the vandalized football" />
+        <figcaption>{{ t.theftAndDestruction.exhibitCCaption }}</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="stamp">{{ t.theftAndDestruction.stamp }}</div>
+</div>

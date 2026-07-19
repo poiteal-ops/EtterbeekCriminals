@@ -8,6 +8,7 @@
     "couch": "KANAPA",
     "trainRide": "PODRÓŻ POCIĄGIEM",
     "escapeCountry": "UCIECZKA NA WIEŚ",
+    "theftAndDestruction": "KRADZIEŻ I ZNISZCZENIE",
     "blog": "BLOG",
     "shop": "SKLEP"
   },
@@ -92,6 +93,12 @@
       "teaser": "Jedno spotkanie po latach, jedna całkowicie oczarowana gospodyni i pole krowiego łajna, na którym już zdążył się podpisać.",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "KRADZIEŻ I ZNISZCZENIE",
+      "teaser": "But, kromka chleba i jedna piłka nożna nie do rozpoznania — odzyskane osobno, przypisane temu samemu podejrzanemu.",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "DOWÓD E — NOS PRZY SZYBIE, GDZIEŚ MIĘDZY STACJAMI",
     "exhibitFCaption": "DOWÓD F — LĄDOWANIE NA WYBRZEŻU",
     "stamp": "KIERUNEK: WSZĘDZIE TAM, GDZIE SĄ MEWY"
+  },
+  "theftAndDestruction": {
+    "kicker": "Akta sprawy — recydywista",
+    "title": "KRADZIEŻ I ZNISZCZENIE",
+    "locationLabel": "MIEJSCE",
+    "locationVal": "Wiele miejsc — podwórko, salon",
+    "suspectLabel": "PODEJRZANY",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "ŚWIADEK",
+    "witnessVal": "Sawito",
+    "motiveLabel": "MOTYW",
+    "motiveVal": "Nieustalony; podejrzany był już wcześniej notowany",
+    "p1": "Śledczy odnotowali już trzy odrębne incydenty przypisywane temu samemu podejrzanemu, obejmujące zarówno mienie na zewnątrz, jak i wewnątrz domu. W każdym przypadku schemat jest taki sam: przedmiot zostaje zdobyty bez pozwolenia, a następnie nie podejmuje się żadnej próby ukrycia czynu. Współpraca ze świadkiem była minimalna.",
+    "p2": "Dowód A, przedstawiony na zdjęciu, odzyskano w trakcie samej kradzieży: podejrzanego przyłapano trzymającego zielony but, którego sznurowadła były już naruszone, przy czym przez cały czas przesłuchania utrzymywał bezpośredni kontakt wzrokowy. Nie zaobserwowano żadnych oznak skruchy. Dodatkowe dowody (poniżej) dokumentują piłkę nożną doprowadzoną do stanu nie do rozpoznania oraz kromkę chleba zabraną z kuchni bez sporządzenia raportu o incydencie.",
+    "exhibitBCaption": "DOWÓD B — CHLEB. BRAK TROPÓW W SPRAWIE POZOSTAŁYCH KROMEK.",
+    "exhibitCCaption": "DOWÓD C — PIŁKA NOŻNA, PO ZDARZENIU.",
+    "stamp": "SCHEMAT POTWIERDZONY — SPRAWA POZOSTAJE OTWARTA"
   },
   "blog": {
     "title": "REJESTR SPRAW",

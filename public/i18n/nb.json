@@ -8,6 +8,7 @@
     "couch": "SOFAEN",
     "trainRide": "TOGTUR",
     "escapeCountry": "FLUKT TIL LANDET",
+    "theftAndDestruction": "TYVERI OG ØDELEGGELSE",
     "blog": "BLOGG",
     "shop": "BUTIKK"
   },
@@ -92,6 +93,12 @@
       "teaser": "Én gjenforening, én fullstendig sjarmert vertinne, og et jorde med kumøkk som allerede bærer hans signatur.",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "TYVERI OG ØDELEGGELSE",
+      "teaser": "En sko, en brødskive og én ugjenkjennelig fotball — gjenfunnet hver for seg, tilskrevet samme mistenkte.",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "BEVIS E — NESE MOT GLASSET, ET STED MELLOM TO STASJONER",
     "exhibitFCaption": "BEVIS F — ANKOMST VED KYSTEN",
     "stamp": "DESTINASJON: HVOR SOM HELST DET FINNES MÅKER"
+  },
+  "theftAndDestruction": {
+    "kicker": "Saksmappe — tilbakevendende lovbryter",
+    "title": "TYVERI OG ØDELEGGELSE",
+    "locationLabel": "STED",
+    "locationVal": "Flere steder — hagen, stuen",
+    "suspectLabel": "MISTENKT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "VITNE",
+    "witnessVal": "Sawito",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Ikke fastslått; den mistenkte har et rulleblad fra før",
+    "p1": "Etterforskerne har nå registrert tre separate hendelser tilskrevet samme mistenkte, som omfatter både utendørs og innendørs eiendom. I hvert tilfelle er mønsteret det samme: en gjenstand tilegnes uten tillatelse, og det gjøres ikke noe forsøk på å skjule handlingen etterpå. Samarbeidet med vitnet har vært minimalt.",
+    "p2": "Bevis A, avbildet, ble gjenfunnet midt i tyveriet: subjektet ble pågrepet holdende en grønn sko, med skolissene allerede kompromittert, og opprettholdt direkte øyekontakt gjennom hele avhøret. Ingen tegn til anger ble observert. Ytterligere bevis (under) dokumenterer en fotball gjort ugjenkjennelig og en brødskive fjernet fra kjøkkenet uten hendelsesrapport.",
+    "exhibitBCaption": "BEVIS B — BRØDET. INGEN SPOR AV DE GJENVÆRENDE SKIVENE.",
+    "exhibitCCaption": "BEVIS C — FOTBALLEN, ETTERPÅ.",
+    "stamp": "MØNSTERET BEKREFTET — SAKEN FORBLIR ÅPEN"
   },
   "blog": {
     "title": "SAKSLOGG",

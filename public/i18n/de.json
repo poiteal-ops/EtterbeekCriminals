@@ -8,6 +8,7 @@
     "couch": "DAS SOFA",
     "trainRide": "ZUGFAHRT",
     "escapeCountry": "FLUCHT AUFS LAND",
+    "theftAndDestruction": "DIEBSTAHL UND ZERSTÖRUNG",
     "blog": "BLOG",
     "shop": "SHOP"
   },
@@ -92,6 +93,12 @@
       "teaser": "Ein Wiedersehen, eine restlos bezirzte Gastgeberin, und ein Feld Kuhmist mit seinem Namen drauf.",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "DIEBSTAHL UND ZERSTÖRUNG",
+      "teaser": "Ein Schuh, eine Scheibe Brot und ein bis zur Unkenntlichkeit ramponierter Fußball — getrennt voneinander gefunden, demselben Verdächtigen zur Last gelegt.",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "BEWEISSTÜCK E — NASE AM GLAS, IRGENDWO ZWISCHEN ZWEI BAHNHÖFEN",
     "exhibitFCaption": "BEWEISSTÜCK F — ANKUNFT AN DER KÜSTE",
     "stamp": "ZIEL: WO ES MÖWEN GIBT"
+  },
+  "theftAndDestruction": {
+    "kicker": "Fallakte — Wiederholungstäter",
+    "title": "DIEBSTAHL UND ZERSTÖRUNG",
+    "locationLabel": "ORT",
+    "locationVal": "Mehrere Orte — Garten, Wohnzimmer",
+    "suspectLabel": "VERDÄCHTIGER",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "ZEUGE",
+    "witnessVal": "Sawito",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Unbestimmt; der Verdächtige ist einschlägig vorbestraft",
+    "p1": "Die Ermittler haben inzwischen drei separate Vorfälle protokolliert, die demselben Verdächtigen zugeschrieben werden und sich sowohl im Außen- als auch im Innenbereich ereigneten. In jedem Fall ist das Muster gleich: Ein Gegenstand wird ohne Erlaubnis erworben, und im Anschluss wird kein Versuch unternommen, die Tat zu verbergen. Die Kooperation mit dem Zeugen war minimal.",
+    "p2": "Beweisstück A, abgebildet, wurde mitten im Diebstahl sichergestellt: Der Verdächtige wurde dabei ertappt, wie er einen grünen Schuh festhielt, die Schnürsenkel bereits in Mitleidenschaft gezogen, und hielt während der gesamten Befragung durchgehend Blickkontakt. Es wurden keine Anzeichen von Reue beobachtet. Weitere Beweisstücke (unten) dokumentieren einen bis zur Unkenntlichkeit ramponierten Fußball sowie eine Scheibe Brot, die ohne Vorfallmeldung aus der Küche verschwand.",
+    "exhibitBCaption": "BEWEISSTÜCK B — DAS BROT. KEINE SPUR VON DEN VERBLEIBENDEN SCHEIBEN.",
+    "exhibitCCaption": "BEWEISSTÜCK C — DER FUSSBALL, DANACH.",
+    "stamp": "MUSTER BESTÄTIGT — FALL BLEIBT OFFEN"
   },
   "blog": {
     "title": "FALLREGISTER",

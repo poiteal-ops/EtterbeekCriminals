@@ -8,6 +8,7 @@
     "couch": "DIIVAN",
     "trainRide": "RONGISÕIT",
     "escapeCountry": "PÕGENEMINE MAALE",
+    "theftAndDestruction": "VARGUS JA HÄVITAMINE",
     "blog": "BLOGI",
     "shop": "POOD"
   },
@@ -92,6 +93,12 @@
       "teaser": "Üks kokkusaamine vanade sõpradega, üks täielikult võlutud võõrustaja ja sõnnikuväli, millel on tema allkiri peal.",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "VARGUS JA HÄVITAMINE",
+      "teaser": "Üks king, üks leivaviil ja üks tundmatuseni purustatud jalgpall — leitud eraldi, kuid süüdistus langeb samale kahtlusalusele.",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "TÕEND E — NINA VASTU KLAASI, KUSKIL JAAMADE VAHEL",
     "exhibitFCaption": "TÕEND F — MAABUMINE RANNIKUL",
     "stamp": "SIHTKOHT: KUS IIAL ON KAJAKAID"
+  },
+  "theftAndDestruction": {
+    "kicker": "Toimik — korduvkurjategija",
+    "title": "VARGUS JA HÄVITAMINE",
+    "locationLabel": "ASUKOHT",
+    "locationVal": "Mitu asukohta — õu, elutuba",
+    "suspectLabel": "KAHTLUSALUNE",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TUNNISTAJA",
+    "witnessVal": "Sawito",
+    "motiveLabel": "MOTIIV",
+    "motiveVal": "Kindlaks tegemata; kahtlusalusel on varasem karistusregister",
+    "p1": "Uurijad on senini registreerinud kolm eraldiseisvat juhtumit, mis on omistatud samale kahtlusalusele ning hõlmavad nii õuealal kui ka siseruumides asuvat vara. Igal juhul on muster sama: ese hangitakse loata ning hiljem ei üritata tegu kuidagi varjata. Koostöö tunnistajaga on olnud minimaalne.",
+    "p2": "Tõend A, pildil kujutatuna, saadi kätte varguse käigus: kahtlusalune tabati rohelist kinga hoidmas, mille paelad olid juba kannatada saanud, säilitades ülekuulamise ajal pidevalt otsest silmsidet. Kahetsuse märke ei täheldatud. Täiendavad tõendid (allpool) dokumenteerivad tundmatuseni muudetud jalgpalli ja köögist eemaldatud leivaviilu, ilma et sellest oleks intsidendiaruannet koostatud.",
+    "exhibitBCaption": "TÕEND B — LEIB. ÜLEJÄÄNUD VIILUDE OSAS VIHJEID POLE.",
+    "exhibitCCaption": "TÕEND C — JALGPALL, PÄRAST.",
+    "stamp": "MUSTER KINNITATUD — JUHTUM JÄÄB AVATUKS"
   },
   "blog": {
     "title": "JUHTUMIPÄEVIK",

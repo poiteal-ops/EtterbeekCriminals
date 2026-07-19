@@ -8,6 +8,7 @@
     "couch": "KAUČ",
     "trainRide": "VOŽNJA VLAKOM",
     "escapeCountry": "BIJEG NA SELO",
+    "theftAndDestruction": "KRAĐA I UNIŠTAVANJE",
     "blog": "BLOG",
     "shop": "TRGOVINA"
   },
@@ -92,6 +93,12 @@
       "teaser": "Jedno okupljanje sa starim prijateljima, jedna posve osvojena domaćica i livada kravljeg izmeta s njegovim potpisom.",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "KRAĐA I UNIŠTAVANJE",
+      "teaser": "Cipela, kriška kruha i jedna neprepoznatljiva lopta za nogomet — pronađene zasebno, pripisane istom osumnjičenom.",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "DOKAZ E — NOS NA STAKLU, NEGDJE IZMEĐU STANICA",
     "exhibitFCaption": "DOKAZ F — DOLAZAK NA OBALU",
     "stamp": "ODREDIŠTE: GDJE GOD IMA GALEBOVA"
+  },
+  "theftAndDestruction": {
+    "kicker": "Spis predmeta — recidivist",
+    "title": "KRAĐA I UNIŠTAVANJE",
+    "locationLabel": "LOKACIJA",
+    "locationVal": "Više lokacija — dvorište, dnevni boravak",
+    "suspectLabel": "OSUMNJIČENI",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "SVJEDOK",
+    "witnessVal": "Sawito",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Neutvrđen; osumnjičeni ima prijašnje prekršaje",
+    "p1": "Istražitelji su dosad zabilježili tri zasebna incidenta pripisana istom osumnjičenom, koji obuhvaćaju i vanjski i unutarnji prostor. U svakom slučaju obrazac je isti: predmet se pribavlja bez dopuštenja, a naknadno se ne poduzima nikakav pokušaj prikrivanja čina. Suradnja sa svjedokom bila je minimalna.",
+    "p2": "Dokaz A, na fotografiji, pronađen je usred krađe: osumnjičeni je uhvaćen kako drži zelenu cipelu, s već oštećenim vezicama, održavajući izravan očni kontakt tijekom cijelog ispitivanja. Nisu zamijećeni znakovi kajanja. Dodatni dokazi (u nastavku) prikazuju loptu za nogomet svedenu do neprepoznatljivosti i krišku kruha uklonjenu iz kuhinje bez prijave incidenta.",
+    "exhibitBCaption": "DOKAZ B — KRUH. NEMA TRAGOVA O PREOSTALIM KRIŠKAMA.",
+    "exhibitCCaption": "DOKAZ C — LOPTA ZA NOGOMET, POSLIJE.",
+    "stamp": "OBRAZAC POTVRĐEN — PREDMET OSTAJE OTVOREN"
   },
   "blog": {
     "title": "DNEVNIK PREDMETA",

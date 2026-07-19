@@ -38,6 +38,7 @@ export interface SiteContent {
     couch: string;
     trainRide: string;
     escapeCountry: string;
+    theftAndDestruction: string;
     blog: string;
     shop: string;
   };
@@ -164,6 +165,23 @@ export interface SiteContent {
     exhibitDCaption: string;
     exhibitECaption: string;
     exhibitFCaption: string;
+    stamp: string;
+  };
+  theftAndDestruction: {
+    kicker: string;
+    title: string;
+    locationLabel: string;
+    locationVal: string;
+    suspectLabel: string;
+    suspectVal: string;
+    witnessLabel: string;
+    witnessVal: string;
+    motiveLabel: string;
+    motiveVal: string;
+    p1: string;
+    p2: string;
+    exhibitBCaption: string;
+    exhibitCCaption: string;
     stamp: string;
   };
   blog: {

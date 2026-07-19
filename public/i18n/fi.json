@@ -8,6 +8,7 @@
     "couch": "SOHVA",
     "trainRide": "JUNAMATKA",
     "escapeCountry": "PAKO MAASEUDULLE",
+    "theftAndDestruction": "VARKAUS JA TUHOTYÖ",
     "blog": "BLOGI",
     "shop": "KAUPPA"
   },
@@ -92,6 +93,12 @@
       "teaser": "Yksi jälleennäkeminen vanhojen ystävien kanssa, yksi täysin lumoutunut emäntä ja lehmänlantapelto, jossa on hänen nimikirjoituksensa.",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "VARKAUS JA TUHOTYÖ",
+      "teaser": "Kenkä, leipäviipale ja yksi tunnistamattomaksi muuttunut jalkapallo — löydetty erikseen, syyksi luettu samalle epäillylle.",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "TODISTE E — NENÄ LASIA VASTEN, JOSSAIN ASEMIEN VÄLISSÄ",
     "exhibitFCaption": "TODISTE F — MAIHINNOUSU RANNIKOLLA",
     "stamp": "MÄÄRÄNPÄÄ: MISSÄ TAHANSA ON LOKKEJA"
+  },
+  "theftAndDestruction": {
+    "kicker": "Asiakirja — uusintarikollinen",
+    "title": "VARKAUS JA TUHOTYÖ",
+    "locationLabel": "SIJAINTI",
+    "locationVal": "Useita sijainteja — piha, olohuone",
+    "suspectLabel": "EPÄILTY",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TODISTAJA",
+    "witnessVal": "Sawito",
+    "motiveLabel": "MOTIIVI",
+    "motiveVal": "Määrittelemätön; epäillyllä on aiempi rikosrekisteri",
+    "p1": "Tutkijat ovat tähän mennessä kirjanneet kolme erillistä tapausta, jotka on yhdistetty samaan epäiltyyn ja jotka koskevat sekä ulko- että sisätiloissa sijaitsevaa omaisuutta. Jokaisessa tapauksessa kaava on sama: esine hankitaan ilman lupaa, eikä tekoa yritetä jälkeenpäin peitellä millään tavoin. Yhteistyö todistajan kanssa on ollut vähäistä.",
+    "p2": "Todiste A, kuvassa, saatiin talteen kesken varkauden: epäilty otettiin kiinni pitäen kiinni vihreästä kengästä, jonka kengännauhat olivat jo kärsineet vaurioita, ja hän piti katsekontaktia suoraan silmiin koko kuulustelun ajan. Katumuksen merkkejä ei havaittu. Lisätodisteet (alla) dokumentoivat tunnistamattomaksi muutetun jalkapallon sekä keittiöstä kadonneen leipäviipaleen ilman tapahtumailmoitusta.",
+    "exhibitBCaption": "TODISTE B — LEIPÄ. EI JOHTOLANKOJA JÄLJELLÄ OLEVISTA VIIPALEISTA.",
+    "exhibitCCaption": "TODISTE C — JALKAPALLO, JÄLKEENPÄIN.",
+    "stamp": "KAAVA VAHVISTETTU — TAPAUS PYSYY AVOINNA"
   },
   "blog": {
     "title": "TAPAUSPÄIVÄKIRJA",

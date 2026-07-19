@@ -8,6 +8,7 @@
     "couch": "CANAPEAUA",
     "trainRide": "CU TRENUL",
     "escapeCountry": "EVADARE LA ȚARĂ",
+    "theftAndDestruction": "FURT ȘI DISTRUGERE",
     "blog": "BLOG",
     "shop": "MAGAZIN"
   },
@@ -92,6 +93,12 @@
       "teaser": "O reîntâlnire, o gazdă cucerită fără drept de apel, și un câmp de bălegar care îi poartă semnătura.",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "FURT ȘI DISTRUGERE",
+      "teaser": "Un pantof, o felie de pâine și o minge de fotbal de nerecunoscut — recuperate separat, puse pe seama aceluiași suspect.",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "PROBA E — NASUL LIPIT DE GEAM, UNDEVA ÎNTRE DOUĂ STAȚII",
     "exhibitFCaption": "PROBA F — SOSIRE PE LITORAL",
     "stamp": "DESTINAȚIE: ORIUNDE SUNT PESCĂRUȘI"
+  },
+  "theftAndDestruction": {
+    "kicker": "Dosar — recidivist",
+    "title": "FURT ȘI DISTRUGERE",
+    "locationLabel": "LOCAȚIE",
+    "locationVal": "Locații multiple — curte, sufragerie",
+    "suspectLabel": "SUSPECT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "MARTOR",
+    "witnessVal": "Sawito",
+    "motiveLabel": "MOBIL",
+    "motiveVal": "Nedeterminat; suspectul are antecedente",
+    "p1": "Anchetatorii au înregistrat până acum trei incidente separate atribuite aceluiași suspect, acoperind atât proprietăți exterioare, cât și interioare. În fiecare caz, tiparul este consecvent: un obiect este obținut fără permisiune, iar ulterior nu se face nicio încercare de a ascunde fapta. Cooperarea cu martorul a fost minimă.",
+    "p2": "Proba A, ilustrată, a fost recuperată în timpul furtului: suspectul a fost prins ținând un pantof verde, cu șireturile deja compromise, menținând contact vizual direct pe tot parcursul interogatoriului. Nu s-au observat semne de remușcare. Probele suplimentare (mai jos) documentează o minge de fotbal făcută de nerecunoscut și o felie de pâine luată din bucătărie fără raport de incident.",
+    "exhibitBCaption": "PROBA B — PÂINEA. NICIO PISTĂ PRIVIND FELIILE RĂMASE.",
+    "exhibitCCaption": "PROBA C — MINGEA DE FOTBAL, DUPĂ.",
+    "stamp": "TIPAR CONFIRMAT — CAZUL RĂMÂNE DESCHIS"
   },
   "blog": {
     "title": "REGISTRUL CAZURILOR",

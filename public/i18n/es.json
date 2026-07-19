@@ -8,6 +8,7 @@
     "couch": "EL SOFÁ",
     "trainRide": "EN TREN",
     "escapeCountry": "ESCAPADA AL CAMPO",
+    "theftAndDestruction": "ROBO Y DESTRUCCIÓN",
     "blog": "BLOG",
     "shop": "TIENDA"
   },
@@ -92,6 +93,12 @@
       "teaser": "Un reencuentro, una anfitriona totalmente conquistada, y un campo de boñigas con su nombre escrito.",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "ROBO Y DESTRUCCIÓN",
+      "teaser": "Un zapato, una rebanada de pan y un balón de fútbol irreconocible — recuperados por separado, todos atribuidos al mismo sospechoso.",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "PRUEBA E — HOCICO CONTRA EL CRISTAL, EN ALGÚN PUNTO ENTRE ESTACIONES",
     "exhibitFCaption": "PRUEBA F — LLEGADA A LA COSTA",
     "stamp": "DESTINO: DONDE HAYA GAVIOTAS"
+  },
+  "theftAndDestruction": {
+    "kicker": "Expediente — reincidente",
+    "title": "ROBO Y DESTRUCCIÓN",
+    "locationLabel": "LUGAR",
+    "locationVal": "Varios lugares — jardín, salón",
+    "suspectLabel": "SOSPECHOSO",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TESTIGO",
+    "witnessVal": "Sawito",
+    "motiveLabel": "MÓVIL",
+    "motiveVal": "Indeterminado; el sospechoso tiene antecedentes",
+    "p1": "Los investigadores han registrado ya tres incidentes distintos atribuidos al mismo sospechoso, tanto en el exterior como en el interior. En cada caso el patrón es el mismo: un objeto se adquiere sin permiso, y después no se hace ningún intento de ocultar el acto. La cooperación del testigo ha sido mínima.",
+    "p2": "La prueba A, en la fotografía, fue recuperada en pleno robo: el sospechoso fue sorprendido sujetando un zapato verde, con los cordones ya comprometidos, mientras mantenía contacto visual directo durante todo el interrogatorio. No se observaron signos de remordimiento. Otras pruebas (a continuación) documentan un balón de fútbol vuelto irreconocible y una rebanada de pan retirada de la cocina sin parte de incidencia.",
+    "exhibitBCaption": "PRUEBA B — EL PAN. SIN PISTAS SOBRE LAS REBANADAS RESTANTES.",
+    "exhibitCCaption": "PRUEBA C — EL BALÓN, DESPUÉS.",
+    "stamp": "PATRÓN CONFIRMADO — EL CASO SIGUE ABIERTO"
   },
   "blog": {
     "title": "REGISTRO DE CASOS",
