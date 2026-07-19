@@ -11,6 +11,7 @@ import { Pigeon } from './pages/pigeon/pigeon';
 import { Shop } from './pages/shop/shop';
 import { ShopItemPage } from './pages/shop-item/shop-item';
 import { Story } from './pages/story/story';
+import { TheftAndDestruction } from './pages/theft-and-destruction/theft-and-destruction';
 import { TrainRide } from './pages/train-ride/train-ride';
 
 const pageRoutes: Routes = [
@@ -21,6 +22,7 @@ const pageRoutes: Routes = [
   { path: 'couch', component: Couch },
   { path: 'train-ride', component: TrainRide },
   { path: 'escape-to-the-country', component: EscapeToTheCountry },
+  { path: 'theft-and-destruction', component: TheftAndDestruction },
   { path: 'blog', component: Blog },
   { path: 'shop', component: Shop },
   { path: 'shop/:slug', component: ShopItemPage },
