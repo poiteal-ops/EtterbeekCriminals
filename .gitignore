@@ -41,6 +41,10 @@ __screenshots__/
 /plans
 /docs
 
+# Local AI tooling, not part of the site
+/.claude/
+/.agents/
+
 # System files
 .DS_Store
 Thumbs.db
