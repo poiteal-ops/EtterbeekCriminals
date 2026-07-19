@@ -164,3 +164,28 @@ test('real localized content describes 13 indexable routes per locale', async ()
   assert.equal(localeCount, 20);
   assert.equal(routeCount * localeCount, 260);
 });
+
+test('CONTENT_LOCALES in locale-registry.ts matches the locales generate-seo-pages.mjs actually builds', () => {
+  const registrySource = fs.readFileSync('src/app/i18n/locale-registry.ts', 'utf8');
+  const blockMatch = registrySource.match(
+    /CONTENT_LOCALES: readonly LocaleCode\[\] = \[([\s\S]*?)\];/,
+  );
+  assert.ok(blockMatch, 'Could not find CONTENT_LOCALES array in locale-registry.ts');
+  const contentLocales = [...blockMatch[1].matchAll(/['"]([a-z]{2})['"]/g)].map((match) => match[1]);
+
+  const generatedLocales = [
+    'en',
+    ...fs
+      .readdirSync('public/i18n')
+      .filter((name) => name.endsWith('.json'))
+      .map((name) => name.slice(0, -'.json'.length)),
+  ];
+
+  const sortedUnique = (values) => [...new Set(values)].sort();
+  assert.deepEqual(
+    sortedUnique(contentLocales),
+    sortedUnique(generatedLocales),
+    'CONTENT_LOCALES (locale-registry.ts) and public/i18n/*.json locales have drifted apart: ' +
+      'the build-time generator and the runtime guard must agree on which locales have content.',
+  );
+});
