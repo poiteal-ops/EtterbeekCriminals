@@ -8,6 +8,7 @@
     "couch": "SOFFAN",
     "trainRide": "TÅGRESA",
     "escapeCountry": "FLYKT TILL LANDET",
+    "theftAndDestruction": "STÖLD OCH FÖRSTÖRELSE",
     "blog": "BLOGG",
     "shop": "BUTIK"
   },
@@ -92,6 +93,12 @@
       "teaser": "En återförening, en fullständigt charmad värdinna, och ett fält kospillning med hans namn på.",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "STÖLD OCH FÖRSTÖRELSE",
+      "teaser": "En sko, en brödskiva och en oigenkännlig fotboll — återfunna var för sig, skyllda på samma misstänkte.",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "BEVIS E — NOS MOT GLASET, NÅGONSTANS MELLAN STATIONERNA",
     "exhibitFCaption": "BEVIS F — ANKOMST VID KUSTEN",
     "stamp": "RESMÅL: VAR SOM HELST DÄR DET FINNS MÅSAR"
+  },
+  "theftAndDestruction": {
+    "kicker": "Fallakt — återfallsförbrytare",
+    "title": "STÖLD OCH FÖRSTÖRELSE",
+    "locationLabel": "PLATS",
+    "locationVal": "Flera platser — trädgården, vardagsrummet",
+    "suspectLabel": "MISSTÄNKT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "VITTNE",
+    "witnessVal": "Sawito",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Ej fastställt; den misstänkte har tidigare belastningar",
+    "p1": "Utredarna har nu registrerat tre separata incidenter som tillskrivs samma misstänkte, vilka omfattar både utomhus- och inomhusegendom. I varje fall är mönstret detsamma: ett föremål tillskansas utan tillstånd, och inget försök görs att dölja handlingen efteråt. Samarbetet med vittnet har varit minimalt.",
+    "p2": "Bevis A, avbildat, återfanns mitt under stölden: den misstänkte greps hållande en grön sko, skosnörena redan äventyrade, med bibehållen ögonkontakt under hela förhöret. Inga tecken på ånger observerades. Ytterligare bevis (nedan) dokumenterar en fotboll gjord oigenkännlig och en brödskiva avlägsnad från köket utan incidentrapport.",
+    "exhibitBCaption": "BEVIS B — BRÖDET. INGA SPÅR AV DE ÅTERSTÅENDE SKIVORNA.",
+    "exhibitCCaption": "BEVIS C — FOTBOLLEN, EFTERÅT.",
+    "stamp": "MÖNSTRET BEKRÄFTAT — FALLET FÖRBLIR ÖPPET"
   },
   "blog": {
     "title": "FALLLOGG",

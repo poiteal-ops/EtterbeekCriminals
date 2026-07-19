@@ -8,6 +8,7 @@
     "couch": "POHOVKA",
     "trainRide": "JÍZDA VLAKEM",
     "escapeCountry": "ÚTĚK NA VENKOV",
+    "theftAndDestruction": "KRÁDEŽ A NIČENÍ",
     "blog": "BLOG",
     "shop": "OBCHOD"
   },
@@ -92,6 +93,12 @@
       "teaser": "Jedno shledání se starými přáteli, jedna dokonale okouzlená hostitelka a louka kravského trusu s jeho podpisem.",
       "link": "/escape-to-the-country",
       "image": "assets/images/gaume-mistress-and-suspect.jpg"
+    },
+    {
+      "title": "KRÁDEŽ A NIČENÍ",
+      "teaser": "Bota, krajíc chleba a jeden fotbalový míč k nepoznání — nalezeny odděleně, přisouzeny témuž podezřelému.",
+      "link": "/theft-and-destruction",
+      "image": "assets/images/theft-shoe.jpg"
     }
   ],
   "escapeToCountry": {
@@ -166,6 +173,23 @@
     "exhibitECaption": "DŮKAZ E — ČUMÁK NA SKLE, NĚKDE MEZI DVĚMA STANICEMI",
     "exhibitFCaption": "DŮKAZ F — PŘISTÁNÍ NA POBŘEŽÍ",
     "stamp": "CÍL CESTY: KDEKOLIV JSOU RACCI"
+  },
+  "theftAndDestruction": {
+    "kicker": "Spis případu — recidivista",
+    "title": "KRÁDEŽ A NIČENÍ",
+    "locationLabel": "MÍSTO",
+    "locationVal": "Více míst — zahrada, obývací pokoj",
+    "suspectLabel": "PODEZŘELÝ",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "SVĚDEK",
+    "witnessVal": "Sawito",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Neurčeno; podezřelý má trestní minulost",
+    "p1": "Vyšetřovatelé nyní zaznamenali tři samostatné incidenty přisouzené témuž podezřelému, zahrnující jak venkovní, tak vnitřní majetek. V každém případě je vzorec stejný: předmět je získán bez svolení a následně není učiněn žádný pokus čin zatajit. Spolupráce se svědkem byla minimální.",
+    "p2": "Důkaz A, na fotografii, byl nalezen uprostřed krádeže: podezřelý byl přistižen, jak drží zelenou botu s tkaničkami už kompromitovanými, přičemž po celou dobu výslechu udržoval přímý oční kontakt. Žádné známky lítosti nebyly zpozorovány. Další důkazy (níže) dokládají fotbalový míč přivedený k nepoznání a krajíc chleba odstraněný z kuchyně bez hlášení incidentu.",
+    "exhibitBCaption": "DŮKAZ B — CHLÉB. ŽÁDNÉ STOPY PO ZBÝVAJÍCÍCH KRAJÍCÍCH.",
+    "exhibitCCaption": "DŮKAZ C — FOTBALOVÝ MÍČ, POTÉ.",
+    "stamp": "VZOREC POTVRZEN — PŘÍPAD ZŮSTÁVÁ OTEVŘENÝ"
   },
   "blog": {
     "title": "DENÍK PŘÍPADŮ",
