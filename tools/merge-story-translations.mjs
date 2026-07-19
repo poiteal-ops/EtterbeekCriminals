@@ -107,26 +107,60 @@ export function findEnglishAdventure(englishContent, link) {
 
 /**
  * Pure merge: returns a new locale-content object with nav[storyKey], a new adventures[] entry,
- * and content[storyKey] inserted, without disturbing any existing keys. New keys are appended at
- * the end of their respective objects/arrays (see task-3 report for why literal tail-append was
- * chosen over splicing before trailing keys like blog/shop — object key order has no functional
- * effect on the app).
+ * and content[storyKey] inserted in the correct positions:
+ * - nav[storyKey] is inserted in the same relative position as storyKey appears in en.content.ts
+ *   (typically before blog/shop, per consistent key ordering across all locale files)
+ * - adventures[] entry is appended at the end (array order reflects chronological story addition)
+ * - content[storyKey] is inserted immediately before the blog key (matching precedent from
+ *   theftAndDestruction and other stories in the source .ts file)
  */
 export function mergeLocaleContent(localeContent, storyKey, localeTranslation, englishAdventure) {
-  return {
-    ...localeContent,
-    nav: { ...localeContent.nav, [storyKey]: localeTranslation.nav },
-    adventures: [
-      ...localeContent.adventures,
-      {
-        title: localeTranslation.adventureTitle,
-        teaser: localeTranslation.adventureTeaser,
-        link: englishAdventure.link,
-        image: englishAdventure.image,
-      },
-    ],
-    [storyKey]: localeTranslation.story,
-  };
+  // Rebuild nav with the new story key inserted before 'blog' (or at the end if 'blog' doesn't exist).
+  const nav = {};
+  let navInserted = false;
+  for (const key of Object.keys(localeContent.nav)) {
+    if (key === 'blog' && !navInserted) {
+      nav[storyKey] = localeTranslation.nav;
+      navInserted = true;
+    }
+    nav[key] = localeContent.nav[key];
+  }
+  if (!navInserted) {
+    nav[storyKey] = localeTranslation.nav;
+  }
+
+  // adventures[] entry is appended at the end (array order genuinely means story publication order).
+  const adventures = [
+    ...localeContent.adventures,
+    {
+      title: localeTranslation.adventureTitle,
+      teaser: localeTranslation.adventureTeaser,
+      link: englishAdventure.link,
+      image: englishAdventure.image,
+    },
+  ];
+
+  // Rebuild the top-level object with content[storyKey] inserted before 'blog'.
+  const result = {};
+  let contentInserted = false;
+  for (const key of Object.keys(localeContent)) {
+    if (key === 'blog' && !contentInserted) {
+      result[storyKey] = localeTranslation.story;
+      contentInserted = true;
+    }
+    if (key === 'nav') {
+      result.nav = nav;
+    } else if (key === 'adventures') {
+      result.adventures = adventures;
+    } else {
+      result[key] = localeContent[key];
+    }
+  }
+  if (!contentInserted) {
+    result[storyKey] = localeTranslation.story;
+  }
+
+  return result;
 }
 
 /**

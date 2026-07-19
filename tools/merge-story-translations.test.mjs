@@ -75,6 +75,66 @@ test('mergeLocaleContent inserts nav/adventures/content keys without disturbing 
   assert.equal(localeContent.nav.theftAndDestruction, undefined);
 });
 
+test('mergeLocaleContent inserts the story key before blog in the top-level object, matching precedent', () => {
+  // Fixture with blog and footer to test insertion position.
+  const localeContent = {
+    nav: { home: 'HOME', couch: 'COUCH', blog: 'BLOG' },
+    home: { tagline: 'tagline' },
+    adventures: [{ title: 'COUCH', teaser: 'teaser', link: '/couch', image: 'assets/images/couch.jpg' }],
+    couch: { kicker: 'Property damage', title: 'THE COUCH' },
+    blog: { title: 'CASE LOG' },
+    footer: 'footer text',
+  };
+  const englishAdventure = { title: 'THEFT', teaser: 'A shoe.', link: '/theft-and-destruction', image: 'assets/images/theft-shoe.jpg' };
+  const translation = {
+    nav: 'VOL',
+    adventureTitle: 'VOL',
+    adventureTeaser: 'Une chaussure.',
+    story: { kicker: 'Dossier', title: 'VOL' },
+  };
+
+  const merged = mergeLocaleContent(localeContent, 'theft', translation, englishAdventure);
+
+  // Verify key order: theft should come before blog, and blog should come before footer.
+  const keys = Object.keys(merged);
+  const theftIdx = keys.indexOf('theft');
+  const blogIdx = keys.indexOf('blog');
+  const footerIdx = keys.indexOf('footer');
+  assert.ok(theftIdx >= 0, 'theft key should be in merged object');
+  assert.ok(theftIdx < blogIdx, 'theft key should come before blog');
+  assert.ok(blogIdx < footerIdx, 'blog should come before footer');
+});
+
+test('mergeLocaleContent inserts nav keys in the same position (before blog) when blog exists in nav', () => {
+  // Fixture with nav including blog and shop to test nav insertion position.
+  const localeContent = {
+    nav: { home: 'HOME', couch: 'COUCH', blog: 'BLOG', shop: 'SHOP' },
+    home: { tagline: 'tagline' },
+    adventures: [{ title: 'COUCH', teaser: 'teaser', link: '/couch', image: 'assets/images/couch.jpg' }],
+    couch: { kicker: 'Property damage', title: 'THE COUCH' },
+    blog: { title: 'CASE LOG' },
+    footer: 'footer text',
+  };
+  const englishAdventure = { title: 'THEFT', teaser: 'A shoe.', link: '/theft-and-destruction', image: 'assets/images/theft-shoe.jpg' };
+  const translation = {
+    nav: 'VOL',
+    adventureTitle: 'VOL',
+    adventureTeaser: 'Une chaussure.',
+    story: { kicker: 'Dossier', title: 'VOL' },
+  };
+
+  const merged = mergeLocaleContent(localeContent, 'theft', translation, englishAdventure);
+
+  // Verify nav key order: theft should come before blog and shop.
+  const navKeys = Object.keys(merged.nav);
+  const theftNavIdx = navKeys.indexOf('theft');
+  const blogNavIdx = navKeys.indexOf('blog');
+  const shopNavIdx = navKeys.indexOf('shop');
+  assert.ok(theftNavIdx >= 0, 'theft key should be in nav');
+  assert.ok(theftNavIdx < blogNavIdx, 'theft nav key should come before blog');
+  assert.ok(blogNavIdx < shopNavIdx, 'blog should come before shop in nav');
+});
+
 test('mergeLocaleContent takes link/image from the English adventure, ignoring whatever the manifest supplies for those fields', () => {
   const localeContent = fixtureLocaleContent('DE');
   const englishAdventure = fixtureEnglishContent().adventures[1];
