@@ -155,14 +155,14 @@ test('generateSite writes all locale roots and routes but no unsupported locale'
   }
 });
 
-test('real localized content describes 13 indexable routes per locale', async () => {
+test('real localized content describes 14 indexable routes per locale', async () => {
   const source = fs.readFileSync('src/app/i18n/content/en.content.ts', 'utf8');
-  const routeCount = (source.match(/slug:/g) ?? []).length + 9;
-  assert.equal(routeCount, 13);
+  const routeCount = (source.match(/slug:/g) ?? []).length + 10;
+  assert.equal(routeCount, 14);
 
   const localeCount = 1 + fs.readdirSync('public/i18n').filter((name) => name.endsWith('.json')).length;
   assert.equal(localeCount, 20);
-  assert.equal(routeCount * localeCount, 260);
+  assert.equal(routeCount * localeCount, 280);
 });
 
 test('CONTENT_LOCALES in locale-registry.ts matches the locales generate-seo-pages.mjs actually builds', () => {
