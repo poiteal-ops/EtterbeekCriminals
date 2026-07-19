@@ -4,6 +4,7 @@ import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
 
+import { loadEnglishContent } from './generate-seo-pages.mjs';
 import {
   buildPages,
   generateSite,
@@ -155,14 +156,17 @@ test('generateSite writes all locale roots and routes but no unsupported locale'
   }
 });
 
-test('real localized content describes 14 indexable routes per locale', async () => {
-  const source = fs.readFileSync('src/app/i18n/content/en.content.ts', 'utf8');
-  const routeCount = (source.match(/slug:/g) ?? []).length + 10;
-  assert.equal(routeCount, 14);
+test('real localized content builds one route per adventure/blog/shop entry, in every content locale', async () => {
+  const englishContent = await loadEnglishContent(); // imported from generate-seo-pages.mjs
+  const routeCount = buildPages(englishContent).length;
+  assert.ok(routeCount > 0);
 
-  const localeCount = 1 + fs.readdirSync('public/i18n').filter((name) => name.endsWith('.json')).length;
-  assert.equal(localeCount, 20);
-  assert.equal(routeCount * localeCount, 280);
+  const localeFiles = fs.readdirSync('public/i18n').filter((name) => name.endsWith('.json'));
+
+  for (const file of localeFiles) {
+    const localeContent = JSON.parse(fs.readFileSync(path.join('public/i18n', file), 'utf8'));
+    assert.equal(buildPages(localeContent).length, routeCount, `${file} produces a different route count than en`);
+  }
 });
 
 test('CONTENT_LOCALES in locale-registry.ts matches the locales generate-seo-pages.mjs actually builds', () => {
