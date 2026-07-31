@@ -9,6 +9,7 @@
     "trainRide": "EN TRAIN",
     "escapeCountry": "ÉVASION À LA CAMPAGNE",
     "theftAndDestruction": "VOL ET DESTRUCTION",
+    "heatwaveSurvival": "L'ACCALMIE DE LA CANICULE",
     "blog": "BLOG",
     "shop": "BOUTIQUE"
   },
@@ -114,6 +115,12 @@
       "teaser": "Une chaussure, une tranche de pain, et un ballon de football méconnaissable — récupérés séparément, imputés au même suspect.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "L'ACCALMIE DE LA CANICULE",
+      "teaser": "Une accalmie record, une scène de crime volée, et un suspect de nouveau en pleine forme dès la fin de la canicule.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -205,6 +212,23 @@
     "exhibitBCaption": "PIÈCE B — LE PAIN. AUCUNE PISTE SUR LES TRANCHES RESTANTES.",
     "exhibitCCaption": "PIÈCE C — LE BALLON, APRÈS.",
     "stamp": "SCHÉMA CONFIRMÉ — L'AFFAIRE RESTE OUVERTE"
+  },
+  "heatwaveSurvival": {
+    "kicker": "Rapport d'incident météorologique",
+    "title": "L'ACCALMIE DE LA CANICULE",
+    "locationLabel": "LIEU",
+    "locationVal": "Etterbeek, patrouilles intérieures et extérieures",
+    "suspectLabel": "SUSPECT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TÉMOIN",
+    "witnessVal": "Sawito (présent tout du long, a proposé de l'eau, refusée)",
+    "motiveLabel": "MOBILE",
+    "motiveVal": "Une alerte canicule de plusieurs jours, suivie d'un besoin urgent de revendiquer des crimes qui ne sont pas les siens",
+    "p1": "Lorsque la canicule a atteint Etterbeek fin juillet, l'activité criminelle est tombée à son niveau le plus bas jamais enregistré dans ce dossier. Le sujet a été retrouvé allongé sur le dos sur le tapis du salon pendant de longues périodes, membres levés à des angles improbables, apparemment incapable de rassembler l'énergie nécessaire pour le moindre délit mineur. Les enquêteurs ont noté qu'il s'agissait de la première période de calme prolongée depuis le début de la surveillance.",
+    "p2": "L'accalmie n'a pas duré. Dès que les températures lui ont permis de ressortir, le sujet a repéré un tas de bouteilles abandonnées sur un carré d'herbe — des méfaits auxquels il n'avait pourtant pris aucune part — et a entrepris d'uriner sur l'ensemble du tas, apparemment pour s'attribuer la scène de crime. Une fois le temps redevenu normal, son énergie était pleinement revenue, et il a repris ses activités sans délai ni explication.",
+    "exhibitBCaption": "PIÈCE B — LE SUSPECT S'APPROPRIE UNE SCÈNE DE CRIME QUI N'ÉTAIT PAS LA SIENNE",
+    "exhibitCCaption": "PIÈCE C — DE NOUVEAU EN PLEINE FORME, QUELQUES INSTANTS APRÈS LA FIN DE LA CANICULE",
+    "stamp": "AFFAIRE ROUVERTE — SUJET COMPLÈTEMENT RÉTABLI"
   },
   "blog": {
     "title": "JOURNAL DE BORD",
