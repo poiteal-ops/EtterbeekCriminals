@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
+import ts from 'typescript';
 
 import {
   buildPages,
@@ -60,6 +61,44 @@ function content(prefix = 'EN') {
       },
     ],
   };
+}
+
+async function loadEnglishContent() {
+  const source = fs.readFileSync('src/app/i18n/content/en.content.ts', 'utf8');
+  const javascript = ts.transpileModule(source, {
+    compilerOptions: {
+      module: ts.ModuleKind.ESNext,
+      target: ts.ScriptTarget.ES2022,
+    },
+  }).outputText;
+  const moduleUrl = `data:text/javascript;base64,${Buffer.from(javascript).toString('base64')}`;
+  return (await import(moduleUrl)).EN_CONTENT;
+}
+
+const protectedTermPattern = /Sawito|Le Criminel|Pikette|Brux Gang|Thug Life, No Rules/giu;
+
+function protectedTermsByPath(value, currentPath = '', result = {}) {
+  if (typeof value === 'string') {
+    const matches = value.match(protectedTermPattern);
+    if (matches) result[currentPath] = matches;
+    return result;
+  }
+
+  if (Array.isArray(value)) {
+    value.forEach((entry, index) =>
+      protectedTermsByPath(entry, `${currentPath}[${index}]`, result),
+    );
+    return result;
+  }
+
+  if (value && typeof value === 'object') {
+    for (const [key, entry] of Object.entries(value)) {
+      const entryPath = currentPath ? `${currentPath}.${key}` : key;
+      protectedTermsByPath(entry, entryPath, result);
+    }
+  }
+
+  return result;
 }
 
 test('buildPages covers every route type and excludes shop entries without slugs', () => {
@@ -188,4 +227,17 @@ test('CONTENT_LOCALES in locale-registry.ts matches the locales generate-seo-pag
     'CONTENT_LOCALES (locale-registry.ts) and public/i18n/*.json locales have drifted apart: ' +
       'the build-time generator and the runtime guard must agree on which locales have content.',
   );
+});
+
+test('Hindi, Tamil, and Marathi preserve protected-term casing at every English field path', async () => {
+  const expectedTermsByPath = protectedTermsByPath(await loadEnglishContent());
+
+  for (const locale of ['hi', 'ta', 'mr']) {
+    const localizedContent = JSON.parse(fs.readFileSync(`public/i18n/${locale}.json`, 'utf8'));
+    assert.deepEqual(
+      protectedTermsByPath(localizedContent),
+      expectedTermsByPath,
+      `${locale}.json protected terms differ from en.content.ts`,
+    );
+  }
 });
