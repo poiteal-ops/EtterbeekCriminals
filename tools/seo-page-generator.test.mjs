@@ -161,8 +161,8 @@ test('real localized content describes 14 indexable routes per locale', async ()
   assert.equal(routeCount, 14);
 
   const localeCount = 1 + fs.readdirSync('public/i18n').filter((name) => name.endsWith('.json')).length;
-  assert.equal(localeCount, 20);
-  assert.equal(routeCount * localeCount, 280);
+  assert.equal(localeCount, 21);
+  assert.equal(routeCount * localeCount, 294);
 });
 
 test('CONTENT_LOCALES in locale-registry.ts matches the locales generate-seo-pages.mjs actually builds', () => {
