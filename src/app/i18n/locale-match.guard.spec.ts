@@ -11,7 +11,7 @@ function matches(code: string): boolean {
 }
 
 describe('localeCanMatch', () => {
-  it.each(['fr', 'nl', 'hi'])('accepts non-default content-backed locale %s', (code) => {
+  it.each(['fr', 'nl', 'hi', 'ta'])('accepts non-default content-backed locale %s', (code) => {
     expect(matches(code)).toBe(true);
   });
 
