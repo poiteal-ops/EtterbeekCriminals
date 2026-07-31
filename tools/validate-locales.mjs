@@ -1,7 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const dir = 'e:/workspace/EtterbeekCriminals/public/i18n';
+const dir = fileURLToPath(new URL('../public/i18n/', import.meta.url));
 const ref = JSON.parse(fs.readFileSync(path.join(dir, 'fr.json'), 'utf8'));
 
 function shape(obj, prefix = '') {
