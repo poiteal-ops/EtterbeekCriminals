@@ -54,3 +54,9 @@ Thumbs.db
 
 # Local-only story drafts, never committed
 /LocalStories/
+
+# Local-only handover notes, never committed
+/handover.md
+
+# Playwright MCP screenshots/logs from manual verification, never committed
+/.playwright-mcp/

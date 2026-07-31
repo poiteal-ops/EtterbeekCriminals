@@ -6,6 +6,7 @@ import { About } from './pages/about/about';
 import { Blog } from './pages/blog/blog';
 import { Couch } from './pages/couch/couch';
 import { EscapeToTheCountry } from './pages/escape-to-the-country/escape-to-the-country';
+import { HeatwaveSurvival } from './pages/heatwave-survival/heatwave-survival';
 import { Home } from './pages/home/home';
 import { Pigeon } from './pages/pigeon/pigeon';
 import { Shop } from './pages/shop/shop';
@@ -23,6 +24,7 @@ const pageRoutes: Routes = [
   { path: 'train-ride', component: TrainRide },
   { path: 'escape-to-the-country', component: EscapeToTheCountry },
   { path: 'theft-and-destruction', component: TheftAndDestruction },
+  { path: 'heatwave-survival', component: HeatwaveSurvival },
   { path: 'blog', component: Blog },
   { path: 'shop', component: Shop },
   { path: 'shop/:slug', component: ShopItemPage },

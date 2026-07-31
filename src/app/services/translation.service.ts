@@ -25,7 +25,17 @@ export class TranslationService {
     this.contentMap()[this.localeSignal()] ? this.localeSignal() : DEFAULT_LOCALE,
   );
 
-  readonly t = computed(() => this.contentMap()[this.contentLocale()] ?? EN_CONTENT);
+  /**
+   * Merged content: any top-level section missing from the active locale's JSON (e.g. a story
+   * shipped in fewer locales than the rest of the site) falls back to English rather than
+   * leaving that section undefined and breaking template bindings. `nav` is merged one level
+   * deeper than the rest, since it's a flat dictionary of per-page labels rather than a single
+   * page's content — a locale can have the `nav` object but still be missing one new label in it.
+   */
+  readonly t = computed(() => {
+    const raw: Partial<SiteContent> = this.contentMap()[this.contentLocale()] ?? {};
+    return { ...EN_CONTENT, ...raw, nav: { ...EN_CONTENT.nav, ...raw.nav } };
+  });
 
   constructor() {
     effect(() => {
@@ -53,14 +63,42 @@ export class TranslationService {
   }
 
   /**
+   * True when the given top-level content section isn't present in the active locale's own
+   * JSON, meaning `t()` is silently serving the English fallback for it (a story shipped before
+   * this locale was translated, or the locale itself failed to load/has no content at all).
+   */
+  isSectionFallback(section: keyof SiteContent): boolean {
+    if (this.localeSignal() === DEFAULT_LOCALE) return false;
+    const raw = this.contentMap()[this.localeSignal()];
+    return !raw || !(section in raw);
+  }
+
+  /**
    * Builds a locale-prefixed routerLink command array, e.g. path('shop', slug) => ['/', 'fr', 'shop', slug]
    * when the active locale is 'fr', or ['/', 'shop', slug] for the default locale.
    * Accepts plain segments or already-slashed strings like '/pigeon'.
    */
   path(...segments: Array<string | number | null | undefined>): unknown[] {
+    return this.buildPath(this.localeSignal(), segments);
+  }
+
+  /**
+   * Like `path()`, but points to the unprefixed English page instead when `section` isn't
+   * translated for the active locale — used for nav links to pages that may not exist yet in
+   * every locale (e.g. a newly shipped story), so the link never lands on a fallback-English
+   * page still wearing the current locale's URL prefix.
+   */
+  pathForSection(
+    section: keyof SiteContent,
+    ...segments: Array<string | number | null | undefined>
+  ): unknown[] {
+    return this.buildPath(this.isSectionFallback(section) ? DEFAULT_LOCALE : this.localeSignal(), segments);
+  }
+
+  private buildPath(locale: LocaleCode, segments: Array<string | number | null | undefined>): unknown[] {
     const parts = segments
       .filter((s): s is string | number => s !== null && s !== undefined && s !== '')
       .flatMap((s) => String(s).split('/').filter(Boolean));
-    return this.localeSignal() === DEFAULT_LOCALE ? ['/', ...parts] : ['/', this.localeSignal(), ...parts];
+    return locale === DEFAULT_LOCALE ? ['/', ...parts] : ['/', locale, ...parts];
   }
 }

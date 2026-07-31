@@ -1,0 +1,29 @@
+.fallback-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 10px 16px;
+  background: #c00000;
+  color: #ffffff;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: center;
+  border: 2px solid #ffffff;
+}
+
+.fallback-banner__gif {
+  flex: 0 0 auto;
+  height: 24px;
+  width: auto;
+  image-rendering: pixelated;
+}
+
+@media (max-width: 480px) {
+  .fallback-banner__gif {
+    display: none;
+  }
+}
