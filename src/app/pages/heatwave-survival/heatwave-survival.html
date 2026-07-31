@@ -1,0 +1,39 @@
+@let t = translation.t();
+
+<div class="page">
+  <app-fallback-banner section="heatwaveSurvival" />
+
+  <div class="kicker">{{ t.heatwaveSurvival.kicker }}</div>
+  <h1 class="title">{{ t.heatwaveSurvival.title }}</h1>
+
+  <div class="report">
+    <div class="facts">
+      <div class="label">{{ t.heatwaveSurvival.locationLabel }}</div><div>{{ t.heatwaveSurvival.locationVal }}</div>
+      <div class="label">{{ t.heatwaveSurvival.suspectLabel }}</div><div>{{ t.heatwaveSurvival.suspectVal }}</div>
+      <div class="label">{{ t.heatwaveSurvival.witnessLabel }}</div><div>{{ t.heatwaveSurvival.witnessVal }}</div>
+      <div class="label">{{ t.heatwaveSurvival.motiveLabel }}</div><div>{{ t.heatwaveSurvival.motiveVal }}</div>
+    </div>
+    <div class="photo">
+      <img src="assets/images/heatwave-collapse.jpg" alt="Le Criminel collapsed on his back on the rug, too heat-drained to move" />
+    </div>
+    <div class="body">
+      <p>{{ t.heatwaveSurvival.p1 }}</p>
+    </div>
+
+    <figure class="exhibit">
+      <img src="assets/images/heatwave-frameup.jpg" alt="Le Criminel at the scene of bottles he did not discard" />
+      <figcaption>{{ t.heatwaveSurvival.exhibitBCaption }}</figcaption>
+    </figure>
+
+    <div class="body">
+      <p>{{ t.heatwaveSurvival.p2 }}</p>
+    </div>
+
+    <figure class="exhibit exhibit--large">
+      <img src="assets/images/heatwave-recovery.jpg" alt="Le Criminel close-up, back at full intensity" />
+      <figcaption>{{ t.heatwaveSurvival.exhibitCCaption }}</figcaption>
+    </figure>
+  </div>
+
+  <div class="stamp">{{ t.heatwaveSurvival.stamp }}</div>
+</div>

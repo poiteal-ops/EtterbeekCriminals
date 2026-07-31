@@ -3,7 +3,7 @@ import { RouterLink } from '@angular/router';
 
 import { TranslationService } from '../../services/translation.service';
 
-const ADVANCE_INTERVAL_MS = 15000;
+const ADVANCE_INTERVAL_MS = 4000;
 const FADE_DURATION_MS = 300;
 
 @Component({

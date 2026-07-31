@@ -39,6 +39,7 @@ export interface SiteContent {
     trainRide: string;
     escapeCountry: string;
     theftAndDestruction: string;
+    heatwaveSurvival: string;
     blog: string;
     shop: string;
   };
@@ -168,6 +169,23 @@ export interface SiteContent {
     stamp: string;
   };
   theftAndDestruction: {
+    kicker: string;
+    title: string;
+    locationLabel: string;
+    locationVal: string;
+    suspectLabel: string;
+    suspectVal: string;
+    witnessLabel: string;
+    witnessVal: string;
+    motiveLabel: string;
+    motiveVal: string;
+    p1: string;
+    p2: string;
+    exhibitBCaption: string;
+    exhibitCCaption: string;
+    stamp: string;
+  };
+  heatwaveSurvival: {
     kicker: string;
     title: string;
     locationLabel: string;
