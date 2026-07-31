@@ -27,6 +27,7 @@ export const LOCALE_CODES = [
   'nb',
   'hi',
   'ta',
+  'mr',
 ] as const;
 
 export type LocaleCode = (typeof LOCALE_CODES)[number];
@@ -60,6 +61,7 @@ export const CONTENT_LOCALES: readonly LocaleCode[] = [
   'hu',
   'hi',
   'ta',
+  'mr',
 ];
 
 const KNOWN_LOCALES = new Set<string>(LOCALE_CODES);
