@@ -24,11 +24,11 @@ describe('StoryCarousel', () => {
     expect(fixture.componentInstance['currentIndex']()).toBe(0);
   });
 
-  it('advances to the next story after 15 seconds', () => {
+  it('advances to the next story after 4 seconds', () => {
     const fixture = TestBed.createComponent(StoryCarousel);
     fixture.detectChanges();
 
-    vi.advanceTimersByTime(15000);
+    vi.advanceTimersByTime(4000);
     vi.advanceTimersByTime(300);
 
     expect(fixture.componentInstance['currentIndex']()).toBe(1);
@@ -40,7 +40,7 @@ describe('StoryCarousel', () => {
     const total = fixture.componentInstance['translation'].t().adventures.length;
 
     for (let i = 0; i < total; i++) {
-      vi.advanceTimersByTime(15000);
+      vi.advanceTimersByTime(4000);
       vi.advanceTimersByTime(300);
     }
 
@@ -52,7 +52,7 @@ describe('StoryCarousel', () => {
     fixture.detectChanges();
     fixture.componentInstance['pause']();
 
-    vi.advanceTimersByTime(15000);
+    vi.advanceTimersByTime(4000);
     vi.advanceTimersByTime(300);
 
     expect(fixture.componentInstance['currentIndex']()).toBe(0);
@@ -64,7 +64,7 @@ describe('StoryCarousel', () => {
     fixture.componentInstance['pause']();
     fixture.componentInstance['resume']();
 
-    vi.advanceTimersByTime(15000);
+    vi.advanceTimersByTime(4000);
     vi.advanceTimersByTime(300);
 
     expect(fixture.componentInstance['currentIndex']()).toBe(1);
@@ -80,19 +80,19 @@ describe('StoryCarousel', () => {
     expect(fixture.componentInstance['currentIndex']()).toBe(2);
   });
 
-  it('selectStory restarts the 15s timer instead of stacking with the old one', () => {
+  it('selectStory restarts the 4s timer instead of stacking with the old one', () => {
     const fixture = TestBed.createComponent(StoryCarousel);
     fixture.detectChanges();
 
-    vi.advanceTimersByTime(10000);
+    vi.advanceTimersByTime(3000);
     fixture.componentInstance['selectStory'](2);
     vi.advanceTimersByTime(300);
 
-    // Only 10s left on a stacked old timer would fire here if selectStory hadn't reset it.
-    vi.advanceTimersByTime(10000);
+    // Only 1s left on a stacked old timer would fire here if selectStory hadn't reset it.
+    vi.advanceTimersByTime(3000);
     expect(fixture.componentInstance['currentIndex']()).toBe(2);
 
-    vi.advanceTimersByTime(5000);
+    vi.advanceTimersByTime(1000);
     vi.advanceTimersByTime(300);
     expect(fixture.componentInstance['currentIndex']()).toBe(3);
   });
