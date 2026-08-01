@@ -12,6 +12,7 @@
     "trainRide": "VOŽNJA VLAKOM",
     "escapeCountry": "BIJEG NA SELO",
     "theftAndDestruction": "KRAĐA I UNIŠTAVANJE",
+    "heatwaveSurvival": "ZATIŠJE TOPLINSKOG VALA",
     "blog": "BLOG",
     "shop": "TRGOVINA"
   },
@@ -52,11 +53,26 @@
     "confidential": "POVJERLJIVO"
   },
   "rapSheet": [
-    { "case": "CASE 001", "charge": "Opetovano nepoštivanje prava prvenstva prolaska na zajedničkim stazama za šetnju." },
-    { "case": "CASE 002", "charge": "Posjedovanje neovlaštenog oduševljenja u blizini poštara." },
-    { "case": "CASE 003", "charge": "Zavjera radi zakopavanja dokaza (jedna čarapa, dvorište, neriješeno)." },
-    { "case": "CASE 004", "charge": "Narušavanje javnog reda i mira, 6:15 ujutro, svakodnevno, bez znakova prestanka." },
-    { "case": "CASE 005", "charge": "Napad smrtonosnim mahanjem repa." }
+    {
+      "case": "CASE 001",
+      "charge": "Opetovano nepoštivanje prava prvenstva prolaska na zajedničkim stazama za šetnju."
+    },
+    {
+      "case": "CASE 002",
+      "charge": "Posjedovanje neovlaštenog oduševljenja u blizini poštara."
+    },
+    {
+      "case": "CASE 003",
+      "charge": "Zavjera radi zakopavanja dokaza (jedna čarapa, dvorište, neriješeno)."
+    },
+    {
+      "case": "CASE 004",
+      "charge": "Narušavanje javnog reda i mira, 6:15 ujutro, svakodnevno, bez znakova prestanka."
+    },
+    {
+      "case": "CASE 005",
+      "charge": "Napad smrtonosnim mahanjem repa."
+    }
   ],
   "story": {
     "kicker": "Spis predmeta 001-CR — pozadina",
@@ -102,6 +118,12 @@
       "teaser": "Cipela, kriška kruha i jedna neprepoznatljiva lopta za nogomet — pronađene zasebno, pripisane istom osumnjičenom.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "ZATIŠJE TOPLINSKOG VALA",
+      "teaser": "Rekordno zatišje, prisvojeno mjesto zločina i osumnjičenik koji se vratio u punoj snazi čim je vrućina popustila.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -193,6 +215,23 @@
     "exhibitBCaption": "DOKAZ B — KRUH. NEMA TRAGOVA O PREOSTALIM KRIŠKAMA.",
     "exhibitCCaption": "DOKAZ C — LOPTA ZA NOGOMET, POSLIJE.",
     "stamp": "OBRAZAC POTVRĐEN — PREDMET OSTAJE OTVOREN"
+  },
+  "heatwaveSurvival": {
+    "kicker": "Izvješće o incidentu povezanom s vremenom",
+    "title": "ZATIŠJE TOPLINSKOG VALA",
+    "locationLabel": "LOKACIJA",
+    "locationVal": "Etterbeek, unutarnje i vanjske patrolne rute",
+    "suspectLabel": "OSUMNJIČENIK",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "SVJEDOK",
+    "witnessVal": "Sawito (prisutan cijelo vrijeme, ponudio vodu, osumnjičenik odbio)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Višednevno upozorenje na toplinski val, nakon čega je uslijedila hitna potreba da ponovno pripiše sebi zasluge za zločine koji nisu bili njegovi",
+    "p1": "Kada je toplinski val krajem srpnja stigao do Etterbeeka, kriminalna je aktivnost pala na najnižu zabilježenu razinu u povijesti slučaja. Osumnjičenik je tijekom duljih razdoblja pronađen kako leži na leđima na tepihu u dnevnoj sobi, s udovima podignutima pod neobičnim kutovima, očito nesposoban prikupiti dovoljno energije čak i za manji prekršaj. Istražitelji su zabilježili da je to bilo prvo dulje razdoblje mira od početka nadzora.",
+    "p2": "Zatišje nije potrajalo. Čim su mu temperature dopustile da ponovno izađe, Osumnjičenik je na travnatoj površini pronašao hrpu odbačenih boca — dokaze nedjela s kojima nije imao nikakve veze — i pomokrio cijelu hrpu, očito kako bi mjesto zločina prisvojio kao svoje. Do trenutka kada je toplinski val potpuno popustio, njegova se energija u cijelosti vratila te je bez odgode ili objašnjenja nastavio s operacijama.",
+    "exhibitBCaption": "DOKAZ B — OSUMNJIČENIK PRISVAJA MJESTO ZLOČINA KOJE NIJE BILO NJEGOVO",
+    "exhibitCCaption": "DOKAZ C — POVRATAK U PUNOJ SNAZI, TRENUTAK NAKON ŠTO JE TOPLINSKI VAL POPUSTIO",
+    "stamp": "SLUČAJ PONOVNO OTVOREN — OSUMNJIČENIK POTPUNO OPORAVLJEN"
   },
   "blog": {
     "title": "DNEVNIK PREDMETA",

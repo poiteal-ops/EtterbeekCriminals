@@ -12,6 +12,7 @@
     "trainRide": "TOGTUR",
     "escapeCountry": "FLUKT TIL LANDET",
     "theftAndDestruction": "TYVERI OG ØDELEGGELSE",
+    "heatwaveSurvival": "VARMEBØLGENS PAUSE",
     "blog": "BLOGG",
     "shop": "BUTIKK"
   },
@@ -52,11 +53,26 @@
     "confidential": "KONFIDENSIELT"
   },
   "rapSheet": [
-    { "case": "CASE 001", "charge": "Gjentatt manglende overholdelse av vikeplikt på delte gangstier." },
-    { "case": "CASE 002", "charge": "Besittelse av uautorisert entusiasme i nærheten av postbudet." },
-    { "case": "CASE 003", "charge": "Konspirasjon om å skjule bevis (én sokk, bakgård, uoppklart)." },
-    { "case": "CASE 004", "charge": "Forstyrrelse av den offentlige ro, kl. 06.15, daglig, ingen tegn til å stoppe." },
-    { "case": "CASE 005", "charge": "Overfall med dødelig halevift." }
+    {
+      "case": "CASE 001",
+      "charge": "Gjentatt manglende overholdelse av vikeplikt på delte gangstier."
+    },
+    {
+      "case": "CASE 002",
+      "charge": "Besittelse av uautorisert entusiasme i nærheten av postbudet."
+    },
+    {
+      "case": "CASE 003",
+      "charge": "Konspirasjon om å skjule bevis (én sokk, bakgård, uoppklart)."
+    },
+    {
+      "case": "CASE 004",
+      "charge": "Forstyrrelse av den offentlige ro, kl. 06.15, daglig, ingen tegn til å stoppe."
+    },
+    {
+      "case": "CASE 005",
+      "charge": "Overfall med dødelig halevift."
+    }
   ],
   "story": {
     "kicker": "Saksmappe 001-CR — bakgrunn",
@@ -102,6 +118,12 @@
       "teaser": "En sko, en brødskive og én ugjenkjennelig fotball — gjenfunnet hver for seg, tilskrevet samme mistenkte.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "VARMEBØLGENS PAUSE",
+      "teaser": "En rekordlang pause, et overtatt åsted og en mistenkt tilbake i full styrke i det øyeblikket hetebølgen brøt.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -193,6 +215,23 @@
     "exhibitBCaption": "BEVIS B — BRØDET. INGEN SPOR AV DE GJENVÆRENDE SKIVENE.",
     "exhibitCCaption": "BEVIS C — FOTBALLEN, ETTERPÅ.",
     "stamp": "MØNSTERET BEKREFTET — SAKEN FORBLIR ÅPEN"
+  },
+  "heatwaveSurvival": {
+    "kicker": "Værrelatert hendelsesrapport",
+    "title": "VARMEBØLGENS PAUSE",
+    "locationLabel": "STED",
+    "locationVal": "Etterbeek, patruljeruter innendørs og utendørs",
+    "suspectLabel": "MISTENKT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "VITNE",
+    "witnessVal": "Sawito (til stede hele tiden, tilbød vann, fikk avslag)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Et varmevarsel over flere dager, etterfulgt av et akutt behov for å ta æren for forbrytelser som ikke var hans egne",
+    "p1": "Da hetebølgen nådde Etterbeek i slutten av juli, sank den kriminelle aktiviteten til sitt laveste registrerte nivå i sakens historie. Den mistenkte ble funnet liggende flatt på ryggen på stuegulvteppet i lengre perioder, med lemmene hevet i merkelige vinkler, tilsynelatende ute av stand til å samle nok energi til selv en mindre forseelse. Etterforskerne noterte at dette var den første vedvarende rolige perioden siden overvåkingen begynte.",
+    "p2": "Roen varte ikke. Så snart temperaturene tillot ham å gå ut igjen, fant den mistenkte en haug med kasserte flasker på en gressflekk — bevis på ugjerninger han ikke hadde hatt noen del i — og begynte å urinere på hele haugen, tilsynelatende for å gjøre åstedet til sitt eget. Da været endelig slo om, var energien tilbake for fullt, og han gjenopptok virksomheten uten opphold eller forklaring.",
+    "exhibitBCaption": "BEVIS B — DEN MISTENKTE GJØR ET ÅSTED SOM IKKE VAR HANS TIL SITT EGET",
+    "exhibitCCaption": "BEVIS C — TILBAKE I FULL STYRKE, ØYEBLIKKET ETTER AT HETEBØLGEN BRØT",
+    "stamp": "SAKEN GJENÅPNET — DEN MISTENKTE FULLT GJENOPPRETTET"
   },
   "blog": {
     "title": "SAKSLOGG",

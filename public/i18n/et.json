@@ -12,6 +12,7 @@
     "trainRide": "RONGISÕIT",
     "escapeCountry": "PÕGENEMINE MAALE",
     "theftAndDestruction": "VARGUS JA HÄVITAMINE",
+    "heatwaveSurvival": "KUUMALAINE VAHEAEG",
     "blog": "BLOGI",
     "shop": "POOD"
   },
@@ -52,11 +53,26 @@
     "confidential": "KONFIDENTSIAALNE"
   },
   "rapSheet": [
-    { "case": "CASE 001", "charge": "Korduv teeandmiskohustuse rikkumine ühiskasutuses jalgteedel." },
-    { "case": "CASE 002", "charge": "Loata entusiasmi omamine postiljoni läheduses." },
-    { "case": "CASE 003", "charge": "Vandenõu tõendite mattmiseks (üks sokk, tagaaed, lahendamata)." },
-    { "case": "CASE 004", "charge": "Avaliku rahu rikkumine kell 6:15 hommikul, igapäevaselt, lõppemise märke pole." },
-    { "case": "CASE 005", "charge": "Rünnak surmava sabaliputusega." }
+    {
+      "case": "CASE 001",
+      "charge": "Korduv teeandmiskohustuse rikkumine ühiskasutuses jalgteedel."
+    },
+    {
+      "case": "CASE 002",
+      "charge": "Loata entusiasmi omamine postiljoni läheduses."
+    },
+    {
+      "case": "CASE 003",
+      "charge": "Vandenõu tõendite mattmiseks (üks sokk, tagaaed, lahendamata)."
+    },
+    {
+      "case": "CASE 004",
+      "charge": "Avaliku rahu rikkumine kell 6:15 hommikul, igapäevaselt, lõppemise märke pole."
+    },
+    {
+      "case": "CASE 005",
+      "charge": "Rünnak surmava sabaliputusega."
+    }
   ],
   "story": {
     "kicker": "Toimik 001-CR — taust",
@@ -102,6 +118,12 @@
       "teaser": "Üks king, üks leivaviil ja üks tundmatuseni purustatud jalgpall — leitud eraldi, kuid süüdistus langeb samale kahtlusalusele.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "KUUMALAINE VAHEAEG",
+      "teaser": "Rekordiline vaheaeg, üks endale võetud kuriteopaik ja kahtlusalune täies jõus tagasi hetkel, mil kuumus taandus.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -193,6 +215,23 @@
     "exhibitBCaption": "TÕEND B — LEIB. ÜLEJÄÄNUD VIILUDE OSAS VIHJEID POLE.",
     "exhibitCCaption": "TÕEND C — JALGPALL, PÄRAST.",
     "stamp": "MUSTER KINNITATUD — JUHTUM JÄÄB AVATUKS"
+  },
+  "heatwaveSurvival": {
+    "kicker": "Ilmastikuga seotud juhtumiaruanne",
+    "title": "KUUMALAINE VAHEAEG",
+    "locationLabel": "ASUKOHT",
+    "locationVal": "Etterbeek, sise- ja välipatrullide marsruudid",
+    "suspectLabel": "KAHTLUSALUNE",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TUNNISTAJA",
+    "witnessVal": "Sawito (viibis kogu aeg kohal, pakkus vett, kuid sellest keelduti)",
+    "motiveLabel": "MOTIIV",
+    "motiveVal": "Mitmepäevane kuumahoiatus, millele järgnes tungiv vajadus võtta au kuritegude eest, milles ta ise ei osalenud",
+    "p1": "Kui kuumalaine juuli lõpus Etterbeeki jõudis, langes kuritegevus juhtumi ajaloos seni registreeritud madalaimale tasemele. Kahtlusalune leiti pikemaks ajaks elutoa vaibalt selili lamamas, jäsemed kummalistes nurkades üles tõstetud, ilmselt suutmata koguda energiat isegi väikese süüteo toimepanemiseks. Uurijad märkisid, et see oli esimene pikem rahulik periood pärast jälgimise algust.",
+    "p2": "Vaheaeg ei jäänud püsima. Niipea kui temperatuur lubas tal taas õue minna, leidis kahtlusalune murulapilt hunniku äravisatud pudeleid — tõendid pahategudest, milles tal polnud mingit osa — ja hakkas kogu hunniku peale urineerima, ilmselt selleks, et kuriteopaik enda omaks kuulutada. Selleks ajaks, kui kuumus täielikult taandus, oli ta energia täielikult taastunud ning ta jätkas oma operatsioone viivituse või selgituseta.",
+    "exhibitBCaption": "TÕEND B — KAHTLUSALUNE MÄRGISTAB ENDALE KURITEOPAIGA, MIS EI OLNUD TEMA OMA",
+    "exhibitCCaption": "TÕEND C — TAGASI TÄIES JÕUS, MÕNI HETK PÄRAST KUUMALAINE TAANDUMIST",
+    "stamp": "JUHTUM UUESTI AVATUD — KAHTLUSALUNE TÄIELIKULT TAASTUNUD"
   },
   "blog": {
     "title": "JUHTUMIPÄEVIK",

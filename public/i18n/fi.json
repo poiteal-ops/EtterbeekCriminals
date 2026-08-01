@@ -12,6 +12,7 @@
     "trainRide": "JUNAMATKA",
     "escapeCountry": "PAKO MAASEUDULLE",
     "theftAndDestruction": "VARKAUS JA TUHOTYÖ",
+    "heatwaveSurvival": "HELLEAALLON TYVEN",
     "blog": "BLOGI",
     "shop": "KAUPPA"
   },
@@ -52,11 +53,26 @@
     "confidential": "LUOTTAMUKSELLINEN"
   },
   "rapSheet": [
-    { "case": "CASE 001", "charge": "Toistuva väistämisvelvollisuuden laiminlyönti yhteiskäytössä olevilla kävelyreiteillä." },
-    { "case": "CASE 002", "charge": "Luvattoman innostuksen hallussapito postinkantajan läheisyydessä." },
-    { "case": "CASE 003", "charge": "Salaliitto todisteiden hautaamiseksi (yksi sukka, takapiha, ratkaisematta)." },
-    { "case": "CASE 004", "charge": "Yleisen järjestyksen häiritseminen, klo 6:15, päivittäin, ei merkkejä loppumisesta." },
-    { "case": "CASE 005", "charge": "Pahoinpitely tappavalla hännänheilutuksella." }
+    {
+      "case": "CASE 001",
+      "charge": "Toistuva väistämisvelvollisuuden laiminlyönti yhteiskäytössä olevilla kävelyreiteillä."
+    },
+    {
+      "case": "CASE 002",
+      "charge": "Luvattoman innostuksen hallussapito postinkantajan läheisyydessä."
+    },
+    {
+      "case": "CASE 003",
+      "charge": "Salaliitto todisteiden hautaamiseksi (yksi sukka, takapiha, ratkaisematta)."
+    },
+    {
+      "case": "CASE 004",
+      "charge": "Yleisen järjestyksen häiritseminen, klo 6:15, päivittäin, ei merkkejä loppumisesta."
+    },
+    {
+      "case": "CASE 005",
+      "charge": "Pahoinpitely tappavalla hännänheilutuksella."
+    }
   ],
   "story": {
     "kicker": "Asiakirja 001-CR — taustaa",
@@ -102,6 +118,12 @@
       "teaser": "Kenkä, leipäviipale ja yksi tunnistamattomaksi muuttunut jalkapallo — löydetty erikseen, syyksi luettu samalle epäillylle.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "HELLEAALLON TYVEN",
+      "teaser": "Ennätyksellinen hiljaisuus, haltuun otettu rikospaikka ja epäilty, joka palasi täyteen voimaansa heti helteen hellitettyä.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -193,6 +215,23 @@
     "exhibitBCaption": "TODISTE B — LEIPÄ. EI JOHTOLANKOJA JÄLJELLÄ OLEVISTA VIIPALEISTA.",
     "exhibitCCaption": "TODISTE C — JALKAPALLO, JÄLKEENPÄIN.",
     "stamp": "KAAVA VAHVISTETTU — TAPAUS PYSYY AVOINNA"
+  },
+  "heatwaveSurvival": {
+    "kicker": "Säähän liittyvä tapahtumaraportti",
+    "title": "HELLEAALLON TYVEN",
+    "locationLabel": "SIJAINTI",
+    "locationVal": "Etterbeek, sisä- ja ulkotilojen partioreitit",
+    "suspectLabel": "EPÄILTY",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TODISTAJA",
+    "witnessVal": "Sawito (paikalla koko ajan, tarjosi vettä, mutta tarjous hylättiin)",
+    "motiveLabel": "MOTIIVI",
+    "motiveVal": "Useita päiviä kestänyt hellevaroitus, jota seurasi kiireellinen tarve ottaa kunnia takaisin rikoksista, jotka eivät olleet hänen tekemiään",
+    "p1": "Kun helleaalto saavutti Etterbeekin heinäkuun lopulla, rikollinen toiminta putosi tapaushistorian alimmalle koskaan kirjattulle tasolle. Epäilty löydettiin makaamasta selällään olohuoneen matolla pitkiä ajanjaksoja kerrallaan, raajat oudoissa kulmissa koholla, ilmeisen kykenemättömänä keräämään energiaa edes pieneen rikkomukseen. Tutkijat totesivat tämän olleen ensimmäinen yhtäjaksoinen hiljainen kausi valvonnan aloittamisen jälkeen.",
+    "p2": "Tyven ei kestänyt. Heti kun lämpötilat sallivat hänen palata ulos, Epäilty löysi nurmialueelta kasan hylättyjä pulloja — todisteita rikkeistä, joihin hänellä ei ollut osaa — ja virtsasi koko kasan päälle, ilmeisesti ottaakseen rikospaikan omakseen. Kun helle lopulta hellitti kokonaan, hänen energiansa oli palannut täydessä määrin, ja hän jatkoi toimintaansa viivyttelemättä tai selityksiä tarjoamatta.",
+    "exhibitBCaption": "TODISTE B — EPÄILTY OTTAMASSA OMISTUKSEENSA RIKOSPAIKKAA, JOKA EI KUULUNUT HÄNELLE",
+    "exhibitCCaption": "TODISTE C — TÄYSISSÄ VOIMISSAAN HETI HELLEAALLON PÄÄTYTTYÄ",
+    "stamp": "TAPAUS AVATTU UUDELLEEN — EPÄILTY TÄYSIN TOIPUNUT"
   },
   "blog": {
     "title": "TAPAUSPÄIVÄKIRJA",

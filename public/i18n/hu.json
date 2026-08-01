@@ -12,6 +12,7 @@
     "trainRide": "VONATÚT",
     "escapeCountry": "SZÖKÉS VIDÉKRE",
     "theftAndDestruction": "LOPÁS ÉS RONGÁLÁS",
+    "heatwaveSurvival": "A HŐHULLÁM SZÜNETE",
     "blog": "BLOG",
     "shop": "BOLT"
   },
@@ -52,11 +53,26 @@
     "confidential": "BIZALMAS"
   },
   "rapSheet": [
-    { "case": "CASE 001", "charge": "Ismétlődő elsőbbségi szabályszegés a közös sétautakon." },
-    { "case": "CASE 002", "charge": "Engedély nélküli lelkesedés birtoklása a postás közelében." },
-    { "case": "CASE 003", "charge": "Bizonyíték elásására irányuló összeesküvés (egy zokni, hátsó kert, lezáratlan ügy)." },
-    { "case": "CASE 004", "charge": "Csendháborítás, reggel 6:15-kor, naponta, leállásra utaló jel nélkül." },
-    { "case": "CASE 005", "charge": "Testi sértés halálos farokcsóválással." }
+    {
+      "case": "CASE 001",
+      "charge": "Ismétlődő elsőbbségi szabályszegés a közös sétautakon."
+    },
+    {
+      "case": "CASE 002",
+      "charge": "Engedély nélküli lelkesedés birtoklása a postás közelében."
+    },
+    {
+      "case": "CASE 003",
+      "charge": "Bizonyíték elásására irányuló összeesküvés (egy zokni, hátsó kert, lezáratlan ügy)."
+    },
+    {
+      "case": "CASE 004",
+      "charge": "Csendháborítás, reggel 6:15-kor, naponta, leállásra utaló jel nélkül."
+    },
+    {
+      "case": "CASE 005",
+      "charge": "Testi sértés halálos farokcsóválással."
+    }
   ],
   "story": {
     "kicker": "Ügyirat 001-CR — előzmények",
@@ -102,6 +118,12 @@
       "teaser": "Egy cipő, egy szelet kenyér, és egy felismerhetetlenné vált focilabda — külön-külön kerültek elő, de mindegyikért ugyanazt a gyanúsítottat hibáztatják.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "A HŐHULLÁM SZÜNETE",
+      "teaser": "Rekordhosszú nyugalom, egy eltulajdonított tetthely, és egy gyanúsított, aki a hőség enyhülésének pillanatában újra teljes erőre kapott.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -193,6 +215,23 @@
     "exhibitBCaption": "B JELŰ BIZONYÍTÉK — A KENYÉR. A MEGMARADT SZELETEKRŐL NINCS NYOM.",
     "exhibitCCaption": "C JELŰ BIZONYÍTÉK — A FOCILABDA, UTÁNA.",
     "stamp": "A MINTA MEGERŐSÍTVE — AZ ÜGY TOVÁBBRA IS NYITVA"
+  },
+  "heatwaveSurvival": {
+    "kicker": "Időjárással kapcsolatos incidensjelentés",
+    "title": "A HŐHULLÁM SZÜNETE",
+    "locationLabel": "HELYSZÍN",
+    "locationVal": "Etterbeek, beltéri és kültéri járőrútvonalak",
+    "suspectLabel": "GYANÚSÍTOTT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TANÚ",
+    "witnessVal": "Sawito (végig jelen volt, vizet kínált, azt elutasították)",
+    "motiveLabel": "INDÍTÉK",
+    "motiveVal": "Több napon át tartó hőségriadó, majd sürgető igény arra, hogy visszaszerezze az olyan bűncselekményekért járó elismerést, amelyekhez nem volt köze",
+    "p1": "Amikor a hőhullám július végén elérte Etterbeeket, a bűnözői tevékenység az ügy történetének eddigi legalacsonyabb szintjére esett vissza. Az alanyt hosszú időszakokra a nappali szőnyegén, hanyatt fekve találták, végtagjai furcsa szögekben álltak, és láthatóan még egy kisebb kihágáshoz szükséges energiát sem tudta összeszedni. A nyomozók megjegyezték, hogy a megfigyelés kezdete óta ez volt az első tartós csendes időszak.",
+    "p2": "A nyugalom nem tartott. Amint a hőmérséklet lehetővé tette, hogy ismét kimenjen, az alany egy füves területen eldobott palackok halmára bukkant — olyan szabálytalanságok bizonyítékára, amelyekben semmi része nem volt —, majd az egész halmot levizelte, láthatóan azért, hogy a tetthelyet a sajátjának nyilvánítsa. Mire az időjárás teljesen megváltozott, az energiája teljesen visszatért, és késedelem vagy magyarázat nélkül folytatta a műveleteit.",
+    "exhibitBCaption": "BIZONYÍTÉK B — A GYANÚSÍTOTT EGY OLYAN TETTHELYET VESZ BIRTOKBA, AMELY NEM AZ ÖVÉ",
+    "exhibitCCaption": "BIZONYÍTÉK C — ISMÉT TELJES ERŐBEDOBÁSSAL, KÖZVETLENÜL A HŐHULLÁM LECSENGÉSE UTÁN",
+    "stamp": "ÜGY ÚJRA MEGNYITVA — AZ ALANY TELJESEN FELÉPÜLT"
   },
   "blog": {
     "title": "ÜGYNAPLÓ",
