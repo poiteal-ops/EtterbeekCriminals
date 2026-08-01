@@ -159,6 +159,14 @@
 @media (max-width: 768px) {
   .nav {
     padding: 16px 20px;
+    min-width: 0;
+  }
+
+  .brand {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .menu-toggle {
