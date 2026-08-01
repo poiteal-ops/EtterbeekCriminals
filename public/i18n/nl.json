@@ -1,4 +1,7 @@
 {
+  "common": {
+    "fallbackBanner": "Sorry, we werken eraan — voorlopig enkel beschikbaar in het Engels."
+  },
   "nav": {
     "home": "HOME",
     "about": "OVER ONS",
@@ -9,6 +12,7 @@
     "trainRide": "TREINRIT",
     "escapeCountry": "ONTSNAPPING NAAR HET PLATTELAND",
     "theftAndDestruction": "DIEFSTAL EN VERNIELING",
+    "heatwaveSurvival": "DE HITTEGOLFSTILTE",
     "blog": "BLOG",
     "shop": "SHOP"
   },
@@ -49,11 +53,26 @@
     "confidential": "VERTROUWELIJK"
   },
   "rapSheet": [
-    { "case": "CASE 001", "charge": "Herhaaldelijk weigeren voorrang te verlenen op gedeelde wandelpaden." },
-    { "case": "CASE 002", "charge": "Bezit van ongeoorloofd enthousiasme in de buurt van de postbode." },
-    { "case": "CASE 003", "charge": "Samenzwering tot het begraven van bewijs (één sok, tuin, onopgelost)." },
-    { "case": "CASE 004", "charge": "Verstoring van de openbare orde, 6u15, dagelijks, geen teken van beterschap." },
-    { "case": "CASE 005", "charge": "Aanranding met een dodelijke kwispelstaart." }
+    {
+      "case": "CASE 001",
+      "charge": "Herhaaldelijk weigeren voorrang te verlenen op gedeelde wandelpaden."
+    },
+    {
+      "case": "CASE 002",
+      "charge": "Bezit van ongeoorloofd enthousiasme in de buurt van de postbode."
+    },
+    {
+      "case": "CASE 003",
+      "charge": "Samenzwering tot het begraven van bewijs (één sok, tuin, onopgelost)."
+    },
+    {
+      "case": "CASE 004",
+      "charge": "Verstoring van de openbare orde, 6u15, dagelijks, geen teken van beterschap."
+    },
+    {
+      "case": "CASE 005",
+      "charge": "Aanranding met een dodelijke kwispelstaart."
+    }
   ],
   "story": {
     "kicker": "Dossier 001-CR — achtergrond",
@@ -99,6 +118,12 @@
       "teaser": "Een schoen, een snee brood en een tot onherkenbaarheid toegetakelde voetbal — apart teruggevonden, allemaal op naam van dezelfde verdachte.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "DE HITTEGOLFSTILTE",
+      "teaser": "Een stilte van ongekende duur, één gestolen plaats delict, en een verdachte die op volle sterkte terugkeerde zodra de hitte brak.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -190,6 +215,23 @@
     "exhibitBCaption": "BEWIJSSTUK B — HET BROOD. GEEN AANWIJZINGEN OVER DE OVERIGE SNEETJES.",
     "exhibitCCaption": "BEWIJSSTUK C — DE VOETBAL, ERNA.",
     "stamp": "PATROON BEVESTIGD — ZAAK BLIJFT OPEN"
+  },
+  "heatwaveSurvival": {
+    "kicker": "Weergerelateerd incidentrapport",
+    "title": "DE HITTEGOLFSTILTE",
+    "locationLabel": "LOCATIE",
+    "locationVal": "Etterbeek, patrouilleroutes binnen en buiten",
+    "suspectLabel": "VERDACHTE",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "GETUIGE",
+    "witnessVal": "Sawito (voortdurend aanwezig, water aangeboden, geweigerd)",
+    "motiveLabel": "MOTIEF",
+    "motiveVal": "Een dagenlange hittewaarschuwing, gevolgd door een dringende behoefte om de eer op te eisen voor misdaden die niet de zijne waren",
+    "p1": "Toen de hittegolf eind juli Etterbeek bereikte, daalde de criminele activiteit tot het laagste niveau ooit opgetekend in dit dossier. De verdachte werd gedurende lange periodes plat op zijn rug aangetroffen op het woonkamerkleed, ledematen in vreemde hoeken opgeheven, blijkbaar niet in staat de energie op te brengen voor zelfs maar een lichte overtreding. Onderzoekers noteerden dat dit de eerste aanhoudende rustperiode was sinds het begin van de observatie.",
+    "p2": "De stilte hield geen stand. Zodra de temperaturen hem weer naar buiten toelieten, lokaliseerde de verdachte een voorraad weggegooide flessen op een grasperk — bewijs van misdrijven waar hij part noch deel aan had — en urineerde vervolgens over de volledige stapel, blijkbaar om de plaats delict als de zijne op te eisen. Tegen de tijd dat het weer volledig omsloeg, was zijn energie volledig teruggekeerd, en hervatte hij de operaties zonder uitstel of uitleg.",
+    "exhibitBCaption": "BEWIJSSTUK B — VERDACHTE EIST EEN PLAATS DELICT OP DIE NIET DE ZIJNE WAS",
+    "exhibitCCaption": "BEWIJSSTUK C — TERUG OP VOLLE STERKTE, MOMENTEN NADAT DE HITTEGOLF BRAK",
+    "stamp": "ZAAK HEROPEND — VERDACHTE VOLLEDIG HERSTELD"
   },
   "blog": {
     "title": "LOGBOEK",

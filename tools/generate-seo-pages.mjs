@@ -9,7 +9,20 @@ const ROOT = process.cwd();
 const DIST_DIR = path.join(ROOT, 'dist/etterbeek-criminals/browser');
 const I18N_DIR = path.join(ROOT, 'public/i18n');
 
-async function loadEnglishContent() {
+export function resolveLangset() {
+  const cliArg = process.argv.find((a) => a.startsWith('--langset='));
+  return cliArg ? cliArg.slice('--langset='.length) : (process.env.LANGSET ?? 'en');
+}
+
+export function selectLocales(langset, availableLocales) {
+  if (langset === 'all') return availableLocales;
+  const requested = langset.split(',').map((s) => s.trim()).filter(Boolean);
+  const unknown = requested.filter((l) => l !== 'en' && !availableLocales.includes(l));
+  if (unknown.length) throw new Error(`LANGSET requested unknown locale(s): ${unknown.join(', ')}`);
+  return availableLocales.filter((l) => l === 'en' || requested.includes(l));
+}
+
+export async function loadEnglishContent() {
   const source = fs.readFileSync(
     path.join(ROOT, 'src/app/i18n/content/en.content.ts'),
     'utf8',
@@ -50,9 +63,18 @@ async function main() {
     throw new Error(`No Angular build output at ${indexPath}`);
   }
 
+  const contentByLocale = await loadContentByLocale();
+  const availableLocales = Object.keys(contentByLocale).sort();
+  const langset = resolveLangset();
+  const selectedLocales = selectLocales(langset, availableLocales);
+
+  const filteredContent = Object.fromEntries(
+    selectedLocales.map((locale) => [locale, contentByLocale[locale]]),
+  );
+
   const result = generateSite({
     template: fs.readFileSync(indexPath, 'utf8'),
-    contentByLocale: await loadContentByLocale(),
+    contentByLocale: filteredContent,
     distDir: DIST_DIR,
   });
 
@@ -61,7 +83,9 @@ async function main() {
   );
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}

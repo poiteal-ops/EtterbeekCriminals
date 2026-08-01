@@ -5,6 +5,7 @@ import path from 'node:path';
 import test from 'node:test';
 import ts from 'typescript';
 
+import { loadEnglishContent } from './generate-seo-pages.mjs';
 import {
   buildPages,
   generateSite,
@@ -61,18 +62,6 @@ function content(prefix = 'EN') {
       },
     ],
   };
-}
-
-async function loadEnglishContent() {
-  const source = fs.readFileSync('src/app/i18n/content/en.content.ts', 'utf8');
-  const javascript = ts.transpileModule(source, {
-    compilerOptions: {
-      module: ts.ModuleKind.ESNext,
-      target: ts.ScriptTarget.ES2022,
-    },
-  }).outputText;
-  const moduleUrl = `data:text/javascript;base64,${Buffer.from(javascript).toString('base64')}`;
-  return (await import(moduleUrl)).EN_CONTENT;
 }
 
 const protectedTermPattern = /Sawito|Le Criminel|Pikette|Brux Gang|Thug Life, No Rules/giu;
@@ -194,14 +183,33 @@ test('generateSite writes all locale roots and routes but no unsupported locale'
   }
 });
 
-test('real localized content describes 14 indexable routes per locale', async () => {
-  const source = fs.readFileSync('src/app/i18n/content/en.content.ts', 'utf8');
-  const routeCount = (source.match(/slug:/g) ?? []).length + 10;
-  assert.equal(routeCount, 14);
+test('real localized content only ever produces routes that also exist in English, and never more of them', async () => {
+  // Locales may legitimately produce FEWER routes than English: some stories are
+  // intentionally rolled out to a partial locale set (e.g. heatwave-survival shipped
+  // to en/fr/hi/ta/mr only, per the per-section fallback mechanism), so route count
+  // parity across all locales is not guaranteed. What must always hold is that a
+  // locale never produces an orphan/typo'd route that doesn't exist in English, and
+  // never exceeds English's total route count.
+  const englishContent = await loadEnglishContent(); // imported from generate-seo-pages.mjs
+  const englishRoutes = new Set(buildPages(englishContent).map((page) => page.route));
+  assert.ok(englishRoutes.size > 0);
 
-  const localeCount = 1 + fs.readdirSync('public/i18n').filter((name) => name.endsWith('.json')).length;
-  assert.equal(localeCount, 23);
-  assert.equal(routeCount * localeCount, 322);
+  const localeFiles = fs.readdirSync('public/i18n').filter((name) => name.endsWith('.json'));
+
+  for (const file of localeFiles) {
+    const localeContent = JSON.parse(fs.readFileSync(path.join('public/i18n', file), 'utf8'));
+    const localeRoutes = buildPages(localeContent).map((page) => page.route);
+    assert.ok(
+      localeRoutes.length <= englishRoutes.size,
+      `${file} produces more routes (${localeRoutes.length}) than en (${englishRoutes.size})`,
+    );
+    for (const route of localeRoutes) {
+      assert.ok(
+        englishRoutes.has(route),
+        `${file} produces route "${route}" that does not exist in en`,
+      );
+    }
+  }
 });
 
 test('CONTENT_LOCALES in locale-registry.ts matches the locales generate-seo-pages.mjs actually builds', () => {

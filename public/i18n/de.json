@@ -1,4 +1,7 @@
 {
+  "common": {
+    "fallbackBanner": "Entschuldigung, wir arbeiten daran — vorerst nur auf Englisch verfügbar."
+  },
   "nav": {
     "home": "START",
     "about": "ÜBER UNS",
@@ -9,6 +12,7 @@
     "trainRide": "ZUGFAHRT",
     "escapeCountry": "FLUCHT AUFS LAND",
     "theftAndDestruction": "DIEBSTAHL UND ZERSTÖRUNG",
+    "heatwaveSurvival": "DIE HITZEFLAUTE",
     "blog": "BLOG",
     "shop": "SHOP"
   },
@@ -49,11 +53,26 @@
     "confidential": "VERTRAULICH"
   },
   "rapSheet": [
-    { "case": "CASE 001", "charge": "Wiederholte Vorfahrtsverweigerung auf gemeinsam genutzten Spazierwegen." },
-    { "case": "CASE 002", "charge": "Besitz von nicht genehmigter Begeisterung in der Nähe des Postboten." },
-    { "case": "CASE 003", "charge": "Verschwörung zur Beweisvergrabung (eine Socke, Garten, ungeklärt)." },
-    { "case": "CASE 004", "charge": "Störung der öffentlichen Ruhe, 6:15 Uhr, täglich, kein Ende in Sicht." },
-    { "case": "CASE 005", "charge": "Körperverletzung mittels tödlichen Schwanzwedelns." }
+    {
+      "case": "CASE 001",
+      "charge": "Wiederholte Vorfahrtsverweigerung auf gemeinsam genutzten Spazierwegen."
+    },
+    {
+      "case": "CASE 002",
+      "charge": "Besitz von nicht genehmigter Begeisterung in der Nähe des Postboten."
+    },
+    {
+      "case": "CASE 003",
+      "charge": "Verschwörung zur Beweisvergrabung (eine Socke, Garten, ungeklärt)."
+    },
+    {
+      "case": "CASE 004",
+      "charge": "Störung der öffentlichen Ruhe, 6:15 Uhr, täglich, kein Ende in Sicht."
+    },
+    {
+      "case": "CASE 005",
+      "charge": "Körperverletzung mittels tödlichen Schwanzwedelns."
+    }
   ],
   "story": {
     "kicker": "Fallakte 001-CR — Hintergrund",
@@ -99,6 +118,12 @@
       "teaser": "Ein Schuh, eine Scheibe Brot und ein bis zur Unkenntlichkeit ramponierter Fußball — getrennt voneinander gefunden, demselben Verdächtigen zur Last gelegt.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "DIE HITZEFLAUTE",
+      "teaser": "Eine Rekord-Flaute, ein gestohlener Tatort und ein Verdächtiger, der in dem Moment wieder auf Hochtouren lief, als die Hitze brach.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -190,6 +215,23 @@
     "exhibitBCaption": "BEWEISSTÜCK B — DAS BROT. KEINE SPUR VON DEN VERBLEIBENDEN SCHEIBEN.",
     "exhibitCCaption": "BEWEISSTÜCK C — DER FUSSBALL, DANACH.",
     "stamp": "MUSTER BESTÄTIGT — FALL BLEIBT OFFEN"
+  },
+  "heatwaveSurvival": {
+    "kicker": "Wetterbedingter Vorfallsbericht",
+    "title": "DIE HITZEFLAUTE",
+    "locationLabel": "ORT",
+    "locationVal": "Etterbeek, Streifenrouten drinnen und draußen",
+    "suspectLabel": "VERDÄCHTIGER",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "ZEUGE",
+    "witnessVal": "Sawito (durchgehend anwesend, bot Wasser an, abgelehnt)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Eine mehrtägige Hitzewarnung, gefolgt von dem dringenden Bedürfnis, sich die Anerkennung für Verbrechen zurückzuholen, die nicht seine eigenen waren",
+    "p1": "Als die Hitzewelle Ende Juli Etterbeek erreichte, sank die kriminelle Aktivität auf den niedrigsten je verzeichneten Stand in der Geschichte des Falls. Die Person wurde über längere Zeiträume flach auf dem Rücken auf dem Wohnzimmerteppich liegend angetroffen, die Gliedmaßen in ungewöhnlichen Winkeln erhoben, offenbar unfähig, auch nur die Energie für ein kleineres Vergehen aufzubringen. Die Ermittler vermerkten, dass dies die erste anhaltende Ruhephase seit Beginn der Überwachung war.",
+    "p2": "Die Flaute hielt nicht an. Sobald die Temperaturen ihm die Rückkehr nach draußen erlaubten, entdeckte die Person auf einem Rasenstück ein Lager weggeworfener Flaschen — Beweismittel für Untaten, an denen er keinerlei Anteil hatte —, und urinierte auf den gesamten Haufen, offenbar um den Tatort als seinen eigenen zu beanspruchen. Als das Wetter endgültig umschlug, war seine Energie vollständig zurückgekehrt, und er nahm den Betrieb ohne Verzögerung oder Erklärung wieder auf.",
+    "exhibitBCaption": "BEWEISSTÜCK B — VERDÄCHTIGER BEANSPRUCHT EINEN TATORT, DER NICHT SEINER WAR",
+    "exhibitCCaption": "BEWEISSTÜCK C — WIEDER AUF VOLLER KRAFT, WENIGE AUGENBLICKE NACHDEM DIE HITZEWELLE BRACH",
+    "stamp": "FALL WIEDERERÖFFNET — PERSON VOLLSTÄNDIG GENESEN"
   },
   "blog": {
     "title": "FALLREGISTER",

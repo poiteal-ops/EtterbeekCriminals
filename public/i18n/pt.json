@@ -1,4 +1,7 @@
 {
+  "common": {
+    "fallbackBanner": "Desculpe, estamos a trabalhar nisso — por agora disponível apenas em inglês."
+  },
   "nav": {
     "home": "INÍCIO",
     "about": "SOBRE",
@@ -9,6 +12,7 @@
     "trainRide": "VIAGEM DE COMBOIO",
     "escapeCountry": "FUGA PARA O CAMPO",
     "theftAndDestruction": "FURTO E DESTRUIÇÃO",
+    "heatwaveSurvival": "A TRÉGUA DA ONDA DE CALOR",
     "blog": "BLOG",
     "shop": "LOJA"
   },
@@ -49,11 +53,26 @@
     "confidential": "CONFIDENCIAL"
   },
   "rapSheet": [
-    { "case": "CASE 001", "charge": "Falha reiterada em ceder a prioridade de passagem em caminhos partilhados." },
-    { "case": "CASE 002", "charge": "Posse de entusiasmo não autorizado nas proximidades do carteiro." },
-    { "case": "CASE 003", "charge": "Conspiração para ocultação de provas (uma meia, no quintal, caso por resolver)." },
-    { "case": "CASE 004", "charge": "Perturbação do sossego público, às 6h15, diariamente, sem sinais de parar." },
-    { "case": "CASE 005", "charge": "Agressão com abanar de cauda letal." }
+    {
+      "case": "CASE 001",
+      "charge": "Falha reiterada em ceder a prioridade de passagem em caminhos partilhados."
+    },
+    {
+      "case": "CASE 002",
+      "charge": "Posse de entusiasmo não autorizado nas proximidades do carteiro."
+    },
+    {
+      "case": "CASE 003",
+      "charge": "Conspiração para ocultação de provas (uma meia, no quintal, caso por resolver)."
+    },
+    {
+      "case": "CASE 004",
+      "charge": "Perturbação do sossego público, às 6h15, diariamente, sem sinais de parar."
+    },
+    {
+      "case": "CASE 005",
+      "charge": "Agressão com abanar de cauda letal."
+    }
   ],
   "story": {
     "kicker": "Processo 001-CR — antecedentes",
@@ -99,6 +118,12 @@
       "teaser": "Um sapato, uma fatia de pão e uma bola de futebol irreconhecível — recuperados separadamente, atribuídos ao mesmo suspeito.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "A TRÉGUA DA ONDA DE CALOR",
+      "teaser": "Uma trégua recorde, uma cena do crime roubada, e um suspeito de volta à plena força assim que o calor abrandou.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -190,6 +215,23 @@
     "exhibitBCaption": "PROVA B — O PÃO. SEM PISTAS SOBRE AS FATIAS RESTANTES.",
     "exhibitCCaption": "PROVA C — A BOLA DE FUTEBOL, DEPOIS.",
     "stamp": "PADRÃO CONFIRMADO — O PROCESSO CONTINUA EM ABERTO"
+  },
+  "heatwaveSurvival": {
+    "kicker": "Relatório de incidente meteorológico",
+    "title": "A TRÉGUA DA ONDA DE CALOR",
+    "locationLabel": "LOCAL",
+    "locationVal": "Etterbeek, rotas de patrulha interiores e exteriores",
+    "suspectLabel": "SUSPEITO",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TESTEMUNHA",
+    "witnessVal": "Sawito (presente do início ao fim, ofereceu água, que foi recusada)",
+    "motiveLabel": "MOTIVO",
+    "motiveVal": "Um aviso de calor de vários dias, seguido de uma necessidade urgente de reivindicar o mérito de crimes que não são seus",
+    "p1": "Quando a onda de calor atingiu Etterbeek, no final de julho, a atividade criminosa caiu para o nível mais baixo alguma vez registado na história do processo. O sujeito foi encontrado deitado de costas sobre o tapete da sala, durante longos períodos, com os membros erguidos em ângulos estranhos, aparentemente incapaz de reunir energia sequer para um delito menor. Os investigadores assinalaram tratar-se do primeiro período de calma prolongada desde o início da vigilância.",
+    "p2": "A trégua não durou. Assim que as temperaturas lhe permitiram voltar para o exterior, o sujeito localizou um monte de garrafas abandonadas num pedaço de relva — provas de más ações nas quais não tivera qualquer participação — e procedeu a urinar sobre a pilha inteira, aparentemente para reivindicar a cena do crime como sua. Quando o tempo finalmente amenizou, a sua energia estava totalmente recuperada, e o sujeito retomou as operações sem demora nem explicação.",
+    "exhibitBCaption": "PROVA B — SUSPEITO A REIVINDICAR UMA CENA DO CRIME QUE NÃO ERA SUA",
+    "exhibitCCaption": "PROVA C — DE VOLTA À PLENA FORÇA, MOMENTOS APÓS O FIM DA ONDA DE CALOR",
+    "stamp": "PROCESSO REABERTO — SUJEITO TOTALMENTE RECUPERADO"
   },
   "blog": {
     "title": "REGISTO DO CASO",

@@ -1,4 +1,7 @@
 {
+  "common": {
+    "fallbackBanner": "Ne pare rău, lucrăm la asta — deocamdată disponibil doar în engleză."
+  },
   "nav": {
     "home": "ACASĂ",
     "about": "DESPRE",
@@ -9,6 +12,7 @@
     "trainRide": "CU TRENUL",
     "escapeCountry": "EVADARE LA ȚARĂ",
     "theftAndDestruction": "FURT ȘI DISTRUGERE",
+    "heatwaveSurvival": "ACALMIA DIN TIMPUL CANICULEI",
     "blog": "BLOG",
     "shop": "MAGAZIN"
   },
@@ -49,11 +53,26 @@
     "confidential": "CONFIDENȚIAL"
   },
   "rapSheet": [
-    { "case": "CASE 001", "charge": "Nerespectare repetată a priorității de trecere pe potecile comune." },
-    { "case": "CASE 002", "charge": "Posesie de entuziasm neautorizat în preajma poștașului." },
-    { "case": "CASE 003", "charge": "Conspirație pentru îngroparea probelor (o șosetă, curtea din spate, caz nerezolvat)." },
-    { "case": "CASE 004", "charge": "Tulburarea liniștii publice, ora 6:15, zilnic, fără semne de oprire." },
-    { "case": "CASE 005", "charge": "Agresiune cu dare din coadă cu potențial letal." }
+    {
+      "case": "CASE 001",
+      "charge": "Nerespectare repetată a priorității de trecere pe potecile comune."
+    },
+    {
+      "case": "CASE 002",
+      "charge": "Posesie de entuziasm neautorizat în preajma poștașului."
+    },
+    {
+      "case": "CASE 003",
+      "charge": "Conspirație pentru îngroparea probelor (o șosetă, curtea din spate, caz nerezolvat)."
+    },
+    {
+      "case": "CASE 004",
+      "charge": "Tulburarea liniștii publice, ora 6:15, zilnic, fără semne de oprire."
+    },
+    {
+      "case": "CASE 005",
+      "charge": "Agresiune cu dare din coadă cu potențial letal."
+    }
   ],
   "story": {
     "kicker": "Dosarul 001-CR — context",
@@ -99,6 +118,12 @@
       "teaser": "Un pantof, o felie de pâine și o minge de fotbal de nerecunoscut — recuperate separat, puse pe seama aceluiași suspect.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "ACALMIA DIN TIMPUL CANICULEI",
+      "teaser": "O acalmie record, o revendicare nejustificată a unui loc al faptei, și un suspect revenit la forța maximă chiar în clipa în care s-a domolit canicula.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -190,6 +215,23 @@
     "exhibitBCaption": "PROBA B — PÂINEA. NICIO PISTĂ PRIVIND FELIILE RĂMASE.",
     "exhibitCCaption": "PROBA C — MINGEA DE FOTBAL, DUPĂ.",
     "stamp": "TIPAR CONFIRMAT — CAZUL RĂMÂNE DESCHIS"
+  },
+  "heatwaveSurvival": {
+    "kicker": "Raport de incident meteorologic",
+    "title": "ACALMIA DIN TIMPUL CANICULEI",
+    "locationLabel": "LOCAȚIE",
+    "locationVal": "Etterbeek, trasee de patrulare interioare și exterioare",
+    "suspectLabel": "SUSPECT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "MARTOR",
+    "witnessVal": "Sawito (prezent pe tot parcursul, i s-a oferit apă, a refuzat)",
+    "motiveLabel": "MOBIL",
+    "motiveVal": "O avertizare de caniculă pe mai multe zile, urmată de o nevoie urgentă de a-și revendica meritul pentru infracțiuni care nu-i aparțineau",
+    "p1": "Când canicula a ajuns la Etterbeek, la sfârșitul lunii iulie, activitatea infracțională a scăzut la cel mai redus nivel înregistrat din istoria dosarului. Subiectul a fost găsit întins pe spate pe covorul din sufragerie, pentru perioade îndelungate, cu membrele ridicate în unghiuri ciudate, aparent incapabil să adune energia necesară pentru măcar o abatere minoră. Anchetatorii au notat că aceasta a fost prima perioadă susținută de liniște de la începutul supravegherii.",
+    "p2": "Acalmia nu a durat. De îndată ce temperaturile i-au permis să iasă din nou afară, subiectul a localizat o grămadă de sticle aruncate pe o porțiune de iarbă — dovezi ale unor fapte la care nu luase parte — și a urinat pe întreaga grămadă, aparent pentru a revendica locul faptei ca fiind al său. Până când vremea s-a răcorit complet, energia îi revenise pe deplin, iar el și-a reluat operațiunile fără nicio întârziere sau explicație.",
+    "exhibitBCaption": "PROBA B — SUSPECTUL REVENDICĂ UN LOC AL FAPTEI CARE NU ERA AL LUI",
+    "exhibitCCaption": "PROBA C — REVENIT LA FORȚA MAXIMĂ, LA CÂTEVA CLIPE DUPĂ CE CANICULA S-A ÎNCHEIAT",
+    "stamp": "CAZ REDESCHIS — SUBIECT COMPLET RECUPERAT"
   },
   "blog": {
     "title": "REGISTRUL CAZURILOR",

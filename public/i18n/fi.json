@@ -1,4 +1,7 @@
 {
+  "common": {
+    "fallbackBanner": "Pahoittelut, työstämme asiaa — toistaiseksi saatavilla vain englanniksi."
+  },
   "nav": {
     "home": "KOTI",
     "about": "TIETOA",

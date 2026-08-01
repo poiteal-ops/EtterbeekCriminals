@@ -28,13 +28,19 @@ export class TranslationService {
   /**
    * Merged content: any top-level section missing from the active locale's JSON (e.g. a story
    * shipped in fewer locales than the rest of the site) falls back to English rather than
-   * leaving that section undefined and breaking template bindings. `nav` is merged one level
-   * deeper than the rest, since it's a flat dictionary of per-page labels rather than a single
-   * page's content — a locale can have the `nav` object but still be missing one new label in it.
+   * leaving that section undefined and breaking template bindings. `nav` and `common` are merged
+   * one level deeper than the rest, since they're flat dictionaries of independent labels rather
+   * than a single page's content — a locale can have the object but still be missing one new key
+   * added to it later.
    */
   readonly t = computed(() => {
     const raw: Partial<SiteContent> = this.contentMap()[this.contentLocale()] ?? {};
-    return { ...EN_CONTENT, ...raw, nav: { ...EN_CONTENT.nav, ...raw.nav } };
+    return {
+      ...EN_CONTENT,
+      ...raw,
+      common: { ...EN_CONTENT.common, ...raw.common },
+      nav: { ...EN_CONTENT.nav, ...raw.nav },
+    };
   });
 
   constructor() {
@@ -80,19 +86,6 @@ export class TranslationService {
    */
   path(...segments: Array<string | number | null | undefined>): unknown[] {
     return this.buildPath(this.localeSignal(), segments);
-  }
-
-  /**
-   * Like `path()`, but points to the unprefixed English page instead when `section` isn't
-   * translated for the active locale — used for nav links to pages that may not exist yet in
-   * every locale (e.g. a newly shipped story), so the link never lands on a fallback-English
-   * page still wearing the current locale's URL prefix.
-   */
-  pathForSection(
-    section: keyof SiteContent,
-    ...segments: Array<string | number | null | undefined>
-  ): unknown[] {
-    return this.buildPath(this.isSectionFallback(section) ? DEFAULT_LOCALE : this.localeSignal(), segments);
   }
 
   private buildPath(locale: LocaleCode, segments: Array<string | number | null | undefined>): unknown[] {

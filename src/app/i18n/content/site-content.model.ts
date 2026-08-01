@@ -29,6 +29,9 @@ export interface AdventureEntry {
 }
 
 export interface SiteContent {
+  common: {
+    fallbackBanner: string;
+  };
   nav: {
     home: string;
     about: string;

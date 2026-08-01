@@ -1,4 +1,7 @@
 {
+  "common": {
+    "fallbackBanner": "Vi ber om ursäkt, vi jobbar på det — tills vidare endast tillgängligt på engelska."
+  },
   "nav": {
     "home": "HEM",
     "about": "OM OSS",

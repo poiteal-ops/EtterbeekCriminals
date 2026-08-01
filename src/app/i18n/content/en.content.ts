@@ -1,6 +1,9 @@
 import { SiteContent } from './site-content.model';
 
 export const EN_CONTENT: SiteContent = {
+  common: {
+    fallbackBanner: 'Sorry, we are working on it — only available in English for now.',
+  },
   nav: {
     home: 'HOME',
     about: 'ABOUT',

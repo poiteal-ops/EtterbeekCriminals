@@ -1,4 +1,7 @@
 {
+  "common": {
+    "fallbackBanner": "Désolé, nous y travaillons — disponible en anglais uniquement pour le moment."
+  },
   "nav": {
     "home": "ACCUEIL",
     "about": "À PROPOS",

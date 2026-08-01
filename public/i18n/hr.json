@@ -1,4 +1,7 @@
 {
+  "common": {
+    "fallbackBanner": "Ispričavamo se, radimo na tome — trenutno dostupno samo na engleskom."
+  },
   "nav": {
     "home": "POČETNA",
     "about": "O NAMA",

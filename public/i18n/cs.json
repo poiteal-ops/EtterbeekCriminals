@@ -1,4 +1,7 @@
 {
+  "common": {
+    "fallbackBanner": "Omlouváme se, pracujeme na tom — zatím dostupné pouze v angličtině."
+  },
   "nav": {
     "home": "DOMŮ",
     "about": "O NÁS",
