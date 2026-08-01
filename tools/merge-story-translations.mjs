@@ -34,24 +34,21 @@ export function getContentLocales(root = ROOT) {
 }
 
 /**
- * Validates that manifest.locales covers exactly the locales this script knows how to write
- * (CONTENT_LOCALES minus 'en' — English lives in en.content.ts, not a public/i18n/*.json file).
- * Reports every missing locale in one error, and every unrecognized one in another, rather than
- * failing on the first problem found.
+ * Validates manifest.locales against the locales this script knows how to write (CONTENT_LOCALES
+ * minus 'en' — English lives in en.content.ts, not a public/i18n/*.json file). A manifest may
+ * cover any non-empty subset of them: a first-ever merge for a story typically covers all of
+ * them, while a top-up run (adding a few more locales to a story that already shipped partially,
+ * e.g. Heatwave Lull) legitimately covers just the new ones. Reports every unrecognized locale in
+ * one error rather than failing on the first.
  */
 export function validateManifestLocales(manifestLocales, contentLocales) {
-  const requiredLocales = contentLocales.filter((locale) => locale !== 'en');
-  const provided = new Set(Object.keys(manifestLocales ?? {}));
-
-  const missing = requiredLocales.filter((locale) => !provided.has(locale));
-  if (missing.length) {
-    throw new Error(
-      `translations.json is missing required locale(s): ${missing.sort().join(', ')}`,
-    );
+  const provided = Object.keys(manifestLocales ?? {});
+  if (provided.length === 0) {
+    throw new Error('translations.json "locales" is empty — nothing to merge.');
   }
 
   const knownLocales = new Set(contentLocales);
-  const unknown = [...provided].filter((locale) => !knownLocales.has(locale));
+  const unknown = provided.filter((locale) => !knownLocales.has(locale));
   if (unknown.length) {
     throw new Error(
       `translations.json contains unrecognized locale(s) not in CONTENT_LOCALES: ${unknown.sort().join(', ')}`,
@@ -164,10 +161,11 @@ export function mergeLocaleContent(localeContent, storyKey, localeTranslation, e
 }
 
 /**
- * Orchestrates the full merge for one story slug: loads the manifest, validates it, loads
- * English content to resolve link/image, then merges + writes every required locale file.
- * Options exist purely for test isolation (temp directories, injected English content) —
- * production use (the CLI entrypoint below) relies entirely on the defaults.
+ * Orchestrates the merge for one story slug: loads the manifest, validates it, loads English
+ * content to resolve link/image, then merges + writes every locale the manifest covers that
+ * doesn't already have the story (locales it already has are skipped, not errored — see
+ * validateManifestLocales). Options exist purely for test isolation (temp directories, injected
+ * English content) — production use (the CLI entrypoint below) relies entirely on the defaults.
  */
 export async function mergeStoryTranslations(slug, options = {}) {
   const root = options.root ?? ROOT;
@@ -196,31 +194,35 @@ export async function mergeStoryTranslations(slug, options = {}) {
   const englishContent = options.englishContent ?? (await loadEnglishContent());
   const englishAdventure = findEnglishAdventure(englishContent, manifest.link);
 
-  const requiredLocales = contentLocales.filter((locale) => locale !== 'en');
-  for (const locale of requiredLocales) {
+  // The locales to actually process are whatever the manifest provides, in CONTENT_LOCALES order
+  // — a first-ever merge typically lists all of them; a top-up run lists just the new ones.
+  const manifestLocaleSet = new Set(Object.keys(manifest.locales));
+  const targetLocales = contentLocales.filter((locale) => manifestLocaleSet.has(locale));
+  for (const locale of targetLocales) {
     validateTranslationShape(locale, manifest.locales[locale]);
   }
 
-  // Read + validate every locale file up front, before writing any of them, so a problem found
-  // partway through (missing file, already-merged story) fails the whole run instead of leaving
-  // some locale files merged and others not.
-  const localeReads = requiredLocales.map((locale) => {
+  // Read every locale file up front, before writing any of them, so a missing file fails the
+  // whole run instead of leaving some locale files merged and others not. A locale file that
+  // already has the story key is not an error — it's marked to skip, so re-running a manifest
+  // (or a top-up manifest for a partially-shipped story) is idempotent per locale.
+  const localeReads = targetLocales.map((locale) => {
     const localePath = path.join(i18nDir, `${locale}.json`);
     if (!fs.existsSync(localePath)) {
       throw new Error(`No locale file found at ${localePath}`);
     }
     const localeContent = JSON.parse(fs.readFileSync(localePath, 'utf8'));
-    if (Object.prototype.hasOwnProperty.call(localeContent, manifest.storyKey)) {
-      throw new Error(
-        `${localePath} already has a top-level "${manifest.storyKey}" key — this story looks ` +
-          `already merged. Refusing to overwrite; remove it first if you intend to re-run.`,
-      );
-    }
-    return { locale, localePath, localeContent };
+    const alreadyMerged = Object.prototype.hasOwnProperty.call(localeContent, manifest.storyKey);
+    return { locale, localePath, localeContent, alreadyMerged };
   });
 
   const mergedLocales = [];
-  for (const { locale, localePath, localeContent } of localeReads) {
+  const skippedLocales = [];
+  for (const { locale, localePath, localeContent, alreadyMerged } of localeReads) {
+    if (alreadyMerged) {
+      skippedLocales.push(locale);
+      continue;
+    }
     const merged = mergeLocaleContent(
       localeContent,
       manifest.storyKey,
@@ -231,7 +233,12 @@ export async function mergeStoryTranslations(slug, options = {}) {
     mergedLocales.push(locale);
   }
 
-  return { storyKey: manifest.storyKey, link: manifest.link, locales: mergedLocales };
+  return {
+    storyKey: manifest.storyKey,
+    link: manifest.link,
+    locales: mergedLocales,
+    skipped: skippedLocales,
+  };
 }
 
 /**
@@ -268,8 +275,13 @@ async function main() {
 
   const result = await mergeStoryTranslations(slug);
   console.log(
-    `merge-story-translations: merged "${result.storyKey}" into ${result.locales.length} locale(s): ${result.locales.join(', ')}`,
+    `merge-story-translations: merged "${result.storyKey}" into ${result.locales.length} locale(s): ${result.locales.join(', ') || '(none)'}`,
   );
+  if (result.skipped.length) {
+    console.log(
+      `merge-story-translations: skipped ${result.skipped.length} already-merged locale(s): ${result.skipped.join(', ')}`,
+    );
+  }
 
   const validationOk = runLocaleValidation(ROOT);
   if (!validationOk) {

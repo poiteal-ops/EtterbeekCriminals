@@ -154,11 +154,16 @@ test('mergeLocaleContent takes link/image from the English adventure, ignoring w
   assert.equal(merged.adventures[1].image, 'assets/images/theft-shoe.jpg');
 });
 
-test('validateManifestLocales throws naming every missing locale at once', () => {
+test('validateManifestLocales does not throw when the manifest covers only a subset of locales (a top-up run)', () => {
+  const contentLocales = ['en', 'fr', 'de', 'nl'];
+  assert.doesNotThrow(() => validateManifestLocales({ nl: {} }, contentLocales));
+});
+
+test('validateManifestLocales throws when the locales object is empty', () => {
   const contentLocales = ['en', 'fr', 'de', 'nl'];
   assert.throws(
-    () => validateManifestLocales({ fr: {} }, contentLocales),
-    /missing required locale\(s\): de, nl/,
+    () => validateManifestLocales({}, contentLocales),
+    /locales.*empty|no locales/i,
   );
 });
 
@@ -264,6 +269,7 @@ test('mergeStoryTranslations merges a manifest into every required locale file o
       storyKey: 'theftAndDestruction',
       link: '/theft-and-destruction',
       locales: ['fr', 'de'],
+      skipped: [],
     });
 
     const frOnDisk = JSON.parse(fs.readFileSync(path.join(root, 'public/i18n/fr.json'), 'utf8'));
@@ -287,7 +293,7 @@ test('mergeStoryTranslations merges a manifest into every required locale file o
   }
 });
 
-test('mergeStoryTranslations throws (and writes nothing) when the manifest is missing a required locale', async () => {
+test('mergeStoryTranslations merges only the locales present in the manifest, leaving the rest of CONTENT_LOCALES untouched (a top-up run)', async () => {
   const root = setupTempRepo();
   try {
     const manifest = {
@@ -300,18 +306,29 @@ test('mergeStoryTranslations throws (and writes nothing) when the manifest is mi
           adventureTeaser: 'Une chaussure.',
           story: { kicker: 'Dossier' },
         },
-        // de missing
+        // de intentionally omitted — this manifest only tops up fr.
       },
     };
     writeManifest(root, 'theft-and-destruction', manifest);
 
-    await assert.rejects(
-      mergeStoryTranslations('theft-and-destruction', { root, englishContent: fixtureEnglishContent() }),
-      /missing required locale\(s\): de/,
-    );
+    const result = await mergeStoryTranslations('theft-and-destruction', {
+      root,
+      englishContent: fixtureEnglishContent(),
+    });
 
-    const frOnDisk = fs.readFileSync(path.join(root, 'public/i18n/fr.json'), 'utf8');
-    assert.doesNotMatch(frOnDisk, /theftAndDestruction/);
+    assert.deepEqual(result, {
+      storyKey: 'theftAndDestruction',
+      link: '/theft-and-destruction',
+      locales: ['fr'],
+      skipped: [],
+    });
+
+    const frOnDisk = JSON.parse(fs.readFileSync(path.join(root, 'public/i18n/fr.json'), 'utf8'));
+    assert.equal(frOnDisk.nav.theftAndDestruction, 'VOL ET DESTRUCTION');
+
+    // de.json was never in the manifest, so it must be byte-identical to its pre-run state.
+    const deOnDisk = fs.readFileSync(path.join(root, 'public/i18n/de.json'), 'utf8');
+    assert.doesNotMatch(deOnDisk, /theftAndDestruction/);
   } finally {
     fs.rmSync(root, { recursive: true, force: true });
   }
@@ -387,7 +404,7 @@ test('mergeStoryTranslations throws when the manifest link matches no English ad
   }
 });
 
-test('mergeStoryTranslations refuses to re-merge a story that already has a top-level key in a locale file', async () => {
+test('mergeStoryTranslations skips a locale that already has the story key and merges the rest, without erroring (idempotent top-up)', async () => {
   const root = setupTempRepo();
   try {
     // Simulate fr.json already having been merged in a previous run.
@@ -416,15 +433,71 @@ test('mergeStoryTranslations refuses to re-merge a story that already has a top-
     };
     writeManifest(root, 'theft-and-destruction', manifest);
 
-    await assert.rejects(
-      mergeStoryTranslations('theft-and-destruction', { root, englishContent: fixtureEnglishContent() }),
-      /already has a top-level "theftAndDestruction" key/,
-    );
+    const result = await mergeStoryTranslations('theft-and-destruction', {
+      root,
+      englishContent: fixtureEnglishContent(),
+    });
 
-    // de.json must be untouched too — the pre-flight check must run for every locale before any
-    // locale file is written, so a collision found on fr does not leave de half-merged.
-    const deOnDisk = fs.readFileSync(path.join(root, 'public/i18n/de.json'), 'utf8');
-    assert.doesNotMatch(deOnDisk, /DIEBSTAHL/);
+    assert.deepEqual(result, {
+      storyKey: 'theftAndDestruction',
+      link: '/theft-and-destruction',
+      locales: ['de'],
+      skipped: ['fr'],
+    });
+
+    // fr.json is untouched — still whatever the previous run left it as, not overwritten.
+    const frOnDisk = JSON.parse(fs.readFileSync(path.join(root, 'public/i18n/fr.json'), 'utf8'));
+    assert.deepEqual(frOnDisk.theftAndDestruction, { kicker: 'already here' });
+
+    // de.json, which didn't already have the key, gets merged normally.
+    const deOnDisk = JSON.parse(fs.readFileSync(path.join(root, 'public/i18n/de.json'), 'utf8'));
+    assert.equal(deOnDisk.nav.theftAndDestruction, 'DIEBSTAHL');
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('mergeStoryTranslations merges nothing and errors on neither when every manifest locale is already merged', async () => {
+  const root = setupTempRepo();
+  try {
+    for (const locale of ['fr', 'de']) {
+      const localePath = path.join(root, `public/i18n/${locale}.json`);
+      const content = JSON.parse(fs.readFileSync(localePath, 'utf8'));
+      content.theftAndDestruction = { kicker: 'already here' };
+      fs.writeFileSync(localePath, JSON.stringify(content, null, 2) + '\n');
+    }
+
+    const manifest = {
+      storyKey: 'theftAndDestruction',
+      link: '/theft-and-destruction',
+      locales: {
+        fr: {
+          nav: 'VOL ET DESTRUCTION',
+          adventureTitle: 'VOL ET DESTRUCTION',
+          adventureTeaser: 'Une chaussure.',
+          story: { kicker: 'Dossier' },
+        },
+        de: {
+          nav: 'DIEBSTAHL',
+          adventureTitle: 'DIEBSTAHL',
+          adventureTeaser: 'Ein Schuh.',
+          story: { kicker: 'Akte' },
+        },
+      },
+    };
+    writeManifest(root, 'theft-and-destruction', manifest);
+
+    const result = await mergeStoryTranslations('theft-and-destruction', {
+      root,
+      englishContent: fixtureEnglishContent(),
+    });
+
+    assert.deepEqual(result, {
+      storyKey: 'theftAndDestruction',
+      link: '/theft-and-destruction',
+      locales: [],
+      skipped: ['fr', 'de'],
+    });
   } finally {
     fs.rmSync(root, { recursive: true, force: true });
   }
