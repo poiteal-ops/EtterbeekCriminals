@@ -183,16 +183,32 @@ test('generateSite writes all locale roots and routes but no unsupported locale'
   }
 });
 
-test('real localized content builds one route per adventure/blog/shop entry, in every content locale', async () => {
+test('real localized content only ever produces routes that also exist in English, and never more of them', async () => {
+  // Locales may legitimately produce FEWER routes than English: some stories are
+  // intentionally rolled out to a partial locale set (e.g. heatwave-survival shipped
+  // to en/fr/hi/ta/mr only, per the per-section fallback mechanism), so route count
+  // parity across all locales is not guaranteed. What must always hold is that a
+  // locale never produces an orphan/typo'd route that doesn't exist in English, and
+  // never exceeds English's total route count.
   const englishContent = await loadEnglishContent(); // imported from generate-seo-pages.mjs
-  const routeCount = buildPages(englishContent).length;
-  assert.ok(routeCount > 0);
+  const englishRoutes = new Set(buildPages(englishContent).map((page) => page.route));
+  assert.ok(englishRoutes.size > 0);
 
   const localeFiles = fs.readdirSync('public/i18n').filter((name) => name.endsWith('.json'));
 
   for (const file of localeFiles) {
     const localeContent = JSON.parse(fs.readFileSync(path.join('public/i18n', file), 'utf8'));
-    assert.equal(buildPages(localeContent).length, routeCount, `${file} produces a different route count than en`);
+    const localeRoutes = buildPages(localeContent).map((page) => page.route);
+    assert.ok(
+      localeRoutes.length <= englishRoutes.size,
+      `${file} produces more routes (${localeRoutes.length}) than en (${englishRoutes.size})`,
+    );
+    for (const route of localeRoutes) {
+      assert.ok(
+        englishRoutes.has(route),
+        `${file} produces route "${route}" that does not exist in en`,
+      );
+    }
   }
 });
 

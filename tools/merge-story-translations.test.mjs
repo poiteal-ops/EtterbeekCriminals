@@ -495,5 +495,5 @@ test('getContentLocales matches the real project locale-registry.ts (sanity chec
   const locales = getContentLocales(process.cwd());
   assert.ok(locales.includes('en'));
   assert.ok(locales.includes('fr'));
-  assert.equal(locales.length, 20);
+  assert.equal(locales.length, 23);
 });
