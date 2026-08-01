@@ -13,6 +13,7 @@
     "escapeCountry": "FLUCHT AUFS LAND",
     "theftAndDestruction": "DIEBSTAHL UND ZERSTÖRUNG",
     "heatwaveSurvival": "DIE HITZEFLAUTE",
+    "juryTampering": "MANIPULATION DER JURY",
     "blog": "BLOG",
     "shop": "SHOP"
   },
@@ -124,6 +125,12 @@
       "teaser": "Eine Rekord-Flaute, ein gestohlener Tatort und ein Verdächtiger, der in dem Moment wieder auf Hochtouren lief, als die Hitze brach.",
       "link": "/heatwave-survival",
       "image": "assets/images/heatwave-collapse.jpg"
+    },
+    {
+      "title": "MANIPULATION DER JURY",
+      "teaser": "Eine besuchende Jury, ein kompromittiertes Urteil und ein Verdächtiger, der sich bei seiner Ankunft das Mitgefühl sicherte.",
+      "link": "/jury-tampering",
+      "image": "assets/images/jury-verdict-awaited.jpg"
     }
   ],
   "escapeToCountry": {
@@ -232,6 +239,37 @@
     "exhibitBCaption": "BEWEISSTÜCK B — VERDÄCHTIGER BEANSPRUCHT EINEN TATORT, DER NICHT SEINER WAR",
     "exhibitCCaption": "BEWEISSTÜCK C — WIEDER AUF VOLLER KRAFT, WENIGE AUGENBLICKE NACHDEM DIE HITZEWELLE BRACH",
     "stamp": "FALL WIEDERERÖFFNET — PERSON VOLLSTÄNDIG GENESEN"
+  },
+  "juryTampering": {
+    "kicker": "Fallakte — kompromittiertes Verfahren",
+    "title": "MANIPULATION DER JURY",
+    "locationLabel": "ORT",
+    "locationVal": "Familienwohnsitz — Wohnzimmer, Küche, nicht offengelegte Gerichtsbarkeit",
+    "suspectLabel": "VERDÄCHTIGER",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "ZEUGE",
+    "witnessVal": "Die Familie von SAWITO, zu Besuch aus Japan (während des gesamten Verfahrens anwesend)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Charakterbeurteilung; Motiv binnen Sekunden kompromittiert",
+    "p1": "Die Familie des Zeugen reiste eigens aus Japan an, um den Charakter des Verdächtigen zu beurteilen und ihm ein angemessenes Maß an Kriminalität zuzuweisen. Das Verfahren war kompromittiert, bevor das Gepäck den Flur verlassen hatte: Der Verdächtige sicherte sich innerhalb von Sekunden nach der Vorstellung das Mitgefühl jedes Geschworenen. Seine erste Enttäuschung folgte kurz darauf, als er feststellte, dass die Verpflegung für den gesamten Raum vorgesehen war.",
+    "p2": "Die Enttäuschung hielt nicht an. Die Schwester des Zeugen, eine versierte Köchin, bereitete während des gesamten Besuchs die Mahlzeiten zu — eine Tatsache, die der Verdächtige sofort registrierte und schamlos ausnutzte, indem er sich jedes Mal zu ihrer ständigen Begleitung ernannte, sobald sie aufrecht und erreichbar war.",
+    "p3": "Sobald sie sich hinsetzte, wurde aus Begleitung eine Rangfrage. Eine formelle Beschwerde wurde nicht eingereicht.",
+    "p4": "Der Schwager des Zeugen erschien mit dem Auftreten eines Mannes von einiger Autorität, der es gewöhnlich gewohnt war, dass man sich nach ihm richtete. Diese Stellung überlebte den Erstkontakt ungefähr so lange, wie er brauchte, um sich hinzuknien. Er war vollständig unterworfen, bevor er wieder aufrecht stand.",
+    "p5": "Das einzige Mitglied einer ansonsten einstimmigen Jury, das sich widersetzte, war das jüngste anwesende Jurymitglied. Es benötigte mehrere Tage für ein Urteil, nachdem es den Verdächtigen zunächst als Kauspielzeug eingestuft hatte.",
+    "p6": "Die Verhandlungen endeten, als sie eigene Süßigkeiten hervorbrachte, darunter Mochi-Eis. Die Bedingungen wurden ohne weitere Anhörung akzeptiert.",
+    "p7": "Die darauf folgende Bindung wurde seither nicht mehr angefochten.",
+    "p8": "Nachdem jeder Geschworene erfasst war, wurde die Jury offiziell als manipuliert eingestuft.",
+    "p9": "Die Personalstärke ist inzwischen auf ihr vorheriges, inakzeptables Niveau zurückgekehrt. Der Verdächtige wurde dabei beobachtet, wie er seinen einzigen verbliebenen Betreuer mit offenem Misstrauen betrachtete, offenbar unfähig, das plötzliche und ungeklärte Verschwinden mehrerer weiterer Bediensteter zu erklären.",
+    "exhibitACaption": "BEWEISSTÜCK A — VERDÄCHTIGER ERWARTET SEIN URTEIL. DAS URTEIL WURDE SPÄTER FÜR GEGENSTANDSLOS ERKLÄRT.",
+    "exhibitBCaption": "BEWEISSTÜCK B — DER VERDÄCHTIGE ENTDECKT, DASS DAS ESSEN FÜR ALLE ZUBEREITET WIRD, NICHT NUR FÜR IHN. SICHTLICH VERWIRRT. SICHTLICH ENTTÄUSCHT.",
+    "exhibitCCaption": "BEWEISSTÜCK C — HAUPTOPFER, DIE SCHWESTER VON SAWITO. ERSTE ANLAUFSTELLE DES VERDÄCHTIGEN, SOBALD SIE NICHT SCHLIEF. ES WURDE NIE BESCHWERDE EINGEREICHT.",
+    "exhibitDCaption": "BEWEISSTÜCK D — DER VERDÄCHTIGE STELLT SEINE DOMINANZ ÜBER DASSELBE OPFER WIEDER HER. ÜBLICHES OBENBLEIB-VERHALTEN.",
+    "exhibitECaption": "BEWEISSTÜCK E — SCHWAGER DES ZEUGEN, ZUVOR EINE AUTORITÄTSPERSON, KURZ NACH DER ANKUNFT VOLLSTÄNDIG UNTERWORFEN.",
+    "exhibitFCaption": "BEWEISSTÜCK F — NICHTE, ANFÄNGLICH MISSTRAUISCH GEGENÜBER DEM VERDÄCHTIGEN. DAS MISSTRAUEN WURDE SPÄTER ALS BERECHTIGT, ABER IRRELEVANT BEWERTET.",
+    "exhibitGCaption": "BEWEISSTÜCK G — EINIGUNG ERZIELT. ZU DEN BEDINGUNGEN GEHÖRTE MOCHI-EIS.",
+    "exhibitHCaption": "BEWEISSTÜCK H — DIE BINDUNG WIRD ALS UNAUFLÖSBAR BESTÄTIGT.",
+    "exhibitICaption": "BEWEISSTÜCK I — DER VERDÄCHTIGE, DER SICH AN REDUZIERTE PERSONALSTÄRKE ANPASST, STELLT DIE AUTORITÄT SEINES EINZIGEN VERBLIEBENEN BETREUERS INFRAGE.",
+    "stamp": "URTEIL GEGENSTANDSLOS — JURY KOMPROMITTIERT"
   },
   "blog": {
     "title": "FALLREGISTER",

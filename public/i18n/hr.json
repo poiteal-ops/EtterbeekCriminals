@@ -13,6 +13,7 @@
     "escapeCountry": "BIJEG NA SELO",
     "theftAndDestruction": "KRAĐA I UNIŠTAVANJE",
     "heatwaveSurvival": "ZATIŠJE TOPLINSKOG VALA",
+    "juryTampering": "UTJECANJE NA POROTU",
     "blog": "BLOG",
     "shop": "TRGOVINA"
   },
@@ -124,6 +125,12 @@
       "teaser": "Rekordno zatišje, prisvojeno mjesto zločina i osumnjičenik koji se vratio u punoj snazi čim je vrućina popustila.",
       "link": "/heatwave-survival",
       "image": "assets/images/heatwave-collapse.jpg"
+    },
+    {
+      "title": "UTJECANJE NA POROTU",
+      "teaser": "Gostujuća porota, kompromitirana presuda i jedan osumnjičenik koji je po dolasku osigurao simpatije.",
+      "link": "/jury-tampering",
+      "image": "assets/images/jury-verdict-awaited.jpg"
     }
   ],
   "escapeToCountry": {
@@ -232,6 +239,37 @@
     "exhibitBCaption": "DOKAZ B — OSUMNJIČENIK PRISVAJA MJESTO ZLOČINA KOJE NIJE BILO NJEGOVO",
     "exhibitCCaption": "DOKAZ C — POVRATAK U PUNOJ SNAZI, TRENUTAK NAKON ŠTO JE TOPLINSKI VAL POPUSTIO",
     "stamp": "SLUČAJ PONOVNO OTVOREN — OSUMNJIČENIK POTPUNO OPORAVLJEN"
+  },
+  "juryTampering": {
+    "kicker": "Spis predmeta — kompromitirani postupak",
+    "title": "UTJECANJE NA POROTU",
+    "locationLabel": "LOKACIJA",
+    "locationVal": "Obiteljska kuća — dnevni boravak, kuhinja, neobjavljena nadležnost",
+    "suspectLabel": "OSUMNJIČENIK",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "SVJEDOK",
+    "witnessVal": "Sawitova obitelj, u posjetu iz Japana (prisutni tijekom cijelog postupka)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Procjena karaktera; motiv kompromitiran u roku od nekoliko sekundi",
+    "p1": "Obitelj svjedoka doputovala je iz Japana s izričitom svrhom procjene karaktera osumnjičenika i određivanja primjerene razine kriminalnosti. Postupak je kompromitiran prije nego što je prtljaga prošla hodnik: osumnjičenik je u roku od nekoliko sekundi nakon predstavljanja osigurao simpatije svakog porotnika. Njegovo prvo razočaranje uslijedilo je ubrzo nakon toga, kada je otkrio da je posluživanje namijenjeno cijeloj prostoriji.",
+    "p2": "Razočaranje nije potrajalo. Svjedokova sestra, vješta kuharica, pripremala je obroke tijekom cijelog posjeta — činjenicu koju je osumnjičenik odmah registrirao i besramno iskoristio, imenujući se njezinim stalnim pratiteljem kad god bi stajala i bila dostupna.",
+    "p3": "Kad god bi sjela, pratnja bi prerasla u nadređeni položaj. Službena pritužba nije podnesena.",
+    "p4": "Svjedokov šogor stigao je ostavljajući dojam osobe s određenim autoritetom, općenito navikle da joj se drugi povinuju. Ta je razlika preživjela prvi kontakt otprilike onoliko koliko mu je trebalo da klekne. Bio je potpuno pokoren prije nego što se ponovno uspio uspraviti.",
+    "p5": "Jedina članica koja nije odmah bila uvjerena u inače jednoglasnoj poroti bila je najmlađa prisutna članica, kojoj je trebalo nekoliko dana da donese presudu jer je osumnjičenika isprva svrstala u kategoriju igračke za žvakanje.",
+    "p6": "Pregovori su zaključeni kada je iznijela vlastite slatkiše, uključujući mochi sladoled. Uvjeti su prihvaćeni bez daljnjeg saslušanja.",
+    "p7": "Veza koja je uslijedila od tada nije osporavana.",
+    "p8": "Nakon što je svaki porotnik evidentiran, vijeće je službeno proglašeno kompromitiranim.",
+    "p9": "Razina osoblja od tada se vratila na prijašnju, neprihvatljivu osnovu. Primijećeno je da osumnjičenik s otvorenom sumnjom promatra svog jedinog preostalog voditelja, očito nesposoban objasniti iznenadni i neobjašnjivi gubitak nekoliko dodatnih slugu.",
+    "exhibitACaption": "DOKAZ A — OSUMNJIČENIK ČEKA PRESUDU. PRESUDA JE KASNIJE PROGLAŠENA BESPREDMETNOM.",
+    "exhibitBCaption": "DOKAZ B — OSUMNJIČENIK OTKRIVA DA SE HRANA PRIPREMA ZA SVE, A NE SAMO ZA NJEGA. VIDLJIVO ZBUNJEN. VIDLJIVO RAZOČARAN.",
+    "exhibitCCaption": "DOKAZ C — GLAVNA ŽRTVA, SAWITOVA SESTRA. OSUMNJIČENIKOVO PRVO ODREDIŠTE KAD GOD NIJE SPAVALA. PRITUŽBA NIKADA NIJE PODNESENA.",
+    "exhibitDCaption": "DOKAZ D — OSUMNJIČENIK PONOVNO USPOSTAVLJA DOMINACIJU NAD ISTOM ŽRTVOM. STANDARDNO PONAŠANJE TIPA „OSTANI NA VRHU”.",
+    "exhibitECaption": "DOKAZ E — SVJEDOKOV ŠOGOR, NEKADAŠNJA OSOBA OD AUTORITETA, POTPUNO POKOREN NEDUGO NAKON DOLASKA.",
+    "exhibitFCaption": "DOKAZ F — NEĆAKINJA, U POČETKU SUMNJIČAVA PREMA OSUMNJIČENIKU. SUMNJA JE KASNIJE PROGLAŠENA OPRAVDANOM, ALI NEBITNOM.",
+    "exhibitGCaption": "DOKAZ G — SPORAZUM JE POSTIGNUT. UVJETI SU UKLJUČIVALI MOCHI SLADOLED.",
+    "exhibitHCaption": "DOKAZ H — POTVRĐENO JE DA JE VEZA NERASKIDIVA.",
+    "exhibitICaption": "DOKAZ I — OSUMNJIČENIK, PRILAGOĐAVAJUĆI SE SMANJENOM BROJU OSOBLJA, PREISPITUJE AUTORITET SVOG JEDINOG PREOSTALOG VODITELJA.",
+    "stamp": "PRESUDA BESPREDMETNA — POROTA KOMPROMITIRANA"
   },
   "blog": {
     "title": "DNEVNIK PREDMETA",

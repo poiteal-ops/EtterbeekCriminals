@@ -13,6 +13,7 @@
     "escapeCountry": "FUGA PARA O CAMPO",
     "theftAndDestruction": "FURTO E DESTRUIÇÃO",
     "heatwaveSurvival": "A TRÉGUA DA ONDA DE CALOR",
+    "juryTampering": "MANIPULAÇÃO DO JÚRI",
     "blog": "BLOG",
     "shop": "LOJA"
   },
@@ -124,6 +125,12 @@
       "teaser": "Uma trégua recorde, uma cena do crime roubada, e um suspeito de volta à plena força assim que o calor abrandou.",
       "link": "/heatwave-survival",
       "image": "assets/images/heatwave-collapse.jpg"
+    },
+    {
+      "title": "MANIPULAÇÃO DO JÚRI",
+      "teaser": "Um júri visitante, um veredicto comprometido e um suspeito que garantiu a simpatia à chegada.",
+      "link": "/jury-tampering",
+      "image": "assets/images/jury-verdict-awaited.jpg"
     }
   ],
   "escapeToCountry": {
@@ -232,6 +239,37 @@
     "exhibitBCaption": "PROVA B — SUSPEITO A REIVINDICAR UMA CENA DO CRIME QUE NÃO ERA SUA",
     "exhibitCCaption": "PROVA C — DE VOLTA À PLENA FORÇA, MOMENTOS APÓS O FIM DA ONDA DE CALOR",
     "stamp": "PROCESSO REABERTO — SUJEITO TOTALMENTE RECUPERADO"
+  },
+  "juryTampering": {
+    "kicker": "Dossiê do caso — processo comprometido",
+    "title": "MANIPULAÇÃO DO JÚRI",
+    "locationLabel": "LOCAL",
+    "locationVal": "Residência da família — sala de estar, cozinha, jurisdição não divulgada",
+    "suspectLabel": "SUSPEITO",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TESTEMUNHA",
+    "witnessVal": "Família de Sawito, de visita do Japão (presente durante todo o processo)",
+    "motiveLabel": "MOTIVO",
+    "motiveVal": "Avaliação de caráter; motivo comprometido em segundos",
+    "p1": "A família da testemunha viajou do Japão expressamente para avaliar o caráter do suspeito e atribuir-lhe um nível adequado de criminalidade. O processo ficou comprometido antes de a bagagem sair do corredor: o suspeito garantiu a simpatia de todos os jurados em segundos após a apresentação. A sua primeira desilusão surgiu pouco depois, ao descobrir que as disposições de catering abrangiam toda a sala.",
+    "p2": "A desilusão não durou. A irmã da testemunha, uma cozinheira talentosa, preparou refeições durante toda a visita — facto que o suspeito registou de imediato e explorou sem pudor, nomeando-se seu companheiro permanente sempre que ela estivesse de pé e ao alcance.",
+    "p3": "Sempre que ela se sentava, a companhia evoluía para uma posição de superioridade. Não foi apresentada qualquer queixa formal.",
+    "p4": "O cunhado da testemunha chegou apresentando-se como uma pessoa de alguma autoridade, geralmente habituada a que lhe cedessem. Essa distinção sobreviveu ao primeiro contacto durante aproximadamente o tempo necessário para ele se ajoelhar. Ficou completamente subjugado antes de recuperar a posição vertical.",
+    "p5": "A única resistência num júri que, de resto, era unânime foi o membro mais jovem presente, que precisou de vários dias para chegar a um veredicto, tendo inicialmente classificado o suspeito como um brinquedo de roer.",
+    "p6": "As negociações terminaram quando ela apresentou doces seus, incluindo gelado de mochi. Os termos foram aceites sem nova audiência.",
+    "p7": "O vínculo que se seguiu nunca mais foi contestado.",
+    "p8": "Com todos os jurados contabilizados, o painel foi oficialmente declarado manipulado.",
+    "p9": "Os níveis de pessoal regressaram entretanto ao seu anterior e inaceitável mínimo. O suspeito foi observado a encarar com aberta desconfiança o seu único cuidador restante, aparentemente incapaz de explicar o desaparecimento súbito e inexplicável de vários servos adicionais.",
+    "exhibitACaption": "PROVA A — SUSPEITO A AGUARDAR JULGAMENTO. VEREDICTO POSTERIORMENTE DECLARADO SEM EFEITO.",
+    "exhibitBCaption": "PROVA B — SUSPEITO DESCOBRE QUE A COMIDA ESTÁ A SER PREPARADA PARA TODOS, NÃO APENAS PARA ELE. VISIVELMENTE PERPLEXO. VISIVELMENTE DESILUDIDO.",
+    "exhibitCCaption": "PROVA C — VÍTIMA PRINCIPAL, IRMÃ DE SAWITO. PRIMEIRO PONTO DE CONTACTO DO SUSPEITO SEMPRE QUE ELA NÃO ESTAVA A DORMIR. NUNCA FOI APRESENTADA QUALQUER QUEIXA.",
+    "exhibitDCaption": "PROVA D — SUSPEITO REAFIRMA O DOMÍNIO SOBRE A MESMA VÍTIMA. COMPORTAMENTO PADRÃO DE «FICAR POR CIMA».",
+    "exhibitECaption": "PROVA E — CUNHADO DA TESTEMUNHA, ANTERIORMENTE UMA PESSOA DE AUTORIDADE, COMPLETAMENTE SUBJUGADO POUCO DEPOIS DA CHEGADA.",
+    "exhibitFCaption": "PROVA F — SOBRINHA, INICIALMENTE DESCONFIADA DO SUSPEITO. A DESCONFIANÇA FOI MAIS TARDE CONSIDERADA JUSTIFICADA, MAS IRRELEVANTE.",
+    "exhibitGCaption": "PROVA G — ACORDO ALCANÇADO. OS TERMOS ENVOLVIAM GELADO DE MOCHI.",
+    "exhibitHCaption": "PROVA H — VÍNCULO CONFIRMADO COMO INQUEBRÁVEL.",
+    "exhibitICaption": "PROVA I — SUSPEITO, A ADAPTAR-SE A NÍVEIS REDUZIDOS DE PESSOAL, QUESTIONA A AUTORIDADE DO SEU ÚNICO CUIDADOR RESTANTE.",
+    "stamp": "VEREDICTO SEM EFEITO — JÚRI COMPROMETIDO"
   },
   "blog": {
     "title": "REGISTO DO CASO",

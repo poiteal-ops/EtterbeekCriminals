@@ -13,6 +13,7 @@
     "escapeCountry": "ÉVASION À LA CAMPAGNE",
     "theftAndDestruction": "VOL ET DESTRUCTION",
     "heatwaveSurvival": "L'ACCALMIE DE LA CANICULE",
+    "juryTampering": "MANIPULATION DU JURY",
     "blog": "BLOG",
     "shop": "BOUTIQUE"
   },
@@ -124,6 +125,12 @@
       "teaser": "Une accalmie record, une scène de crime volée, et un suspect de nouveau en pleine forme dès la fin de la canicule.",
       "link": "/heatwave-survival",
       "image": "assets/images/heatwave-collapse.jpg"
+    },
+    {
+      "title": "MANIPULATION DU JURY",
+      "teaser": "Un jury en visite, un verdict compromis et un suspect qui s'est attiré la sympathie dès son arrivée.",
+      "link": "/jury-tampering",
+      "image": "assets/images/jury-verdict-awaited.jpg"
     }
   ],
   "escapeToCountry": {
@@ -232,6 +239,37 @@
     "exhibitBCaption": "PIÈCE B — LE SUSPECT S'APPROPRIE UNE SCÈNE DE CRIME QUI N'ÉTAIT PAS LA SIENNE",
     "exhibitCCaption": "PIÈCE C — DE NOUVEAU EN PLEINE FORME, QUELQUES INSTANTS APRÈS LA FIN DE LA CANICULE",
     "stamp": "AFFAIRE ROUVERTE — SUJET COMPLÈTEMENT RÉTABLI"
+  },
+  "juryTampering": {
+    "kicker": "Dossier — procédure compromise",
+    "title": "MANIPULATION DU JURY",
+    "locationLabel": "LIEU",
+    "locationVal": "Résidence familiale — salon, cuisine, juridiction non divulguée",
+    "suspectLabel": "SUSPECT",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TÉMOIN",
+    "witnessVal": "La famille de SAWITO, venue du Japon (présente pendant toute la procédure)",
+    "motiveLabel": "MOTIF",
+    "motiveVal": "Évaluation du caractère ; motif compromis en quelques secondes",
+    "p1": "La famille du témoin a fait le voyage depuis le Japon dans le seul but d’évaluer le caractère du suspect et de lui attribuer un niveau de criminalité approprié. La procédure a été compromise avant même que les bagages aient quitté le couloir : le suspect s’est assuré la sympathie de chaque juré quelques secondes après les présentations. Sa première déception est survenue peu après, lorsqu’il a découvert que le dispositif de restauration s’étendait à toute la pièce.",
+    "p2": "La déception n’a pas duré. La sœur du témoin, cuisinière accomplie, a préparé les repas pendant toute la visite — fait que le suspect a immédiatement relevé et exploité sans la moindre honte, se nommant son compagnon permanent chaque fois qu’elle était debout et à portée de lui.",
+    "p3": "Chaque fois qu’elle s’asseyait, la compagnie montait en grade. Aucune plainte officielle n’a été déposée.",
+    "p4": "Le beau-frère du témoin est arrivé avec l’allure d’un homme doté d’une certaine autorité, généralement habitué à ce que l’on s’en remette à lui. Cette distinction a survécu au premier contact pendant environ le temps qu’il lui a fallu pour s’agenouiller. Il était entièrement soumis avant de retrouver la position verticale.",
+    "p5": "Le seul membre récalcitrant d’un jury par ailleurs unanime était la plus jeune personne présente, qui a eu besoin de plusieurs jours pour rendre son verdict, après avoir d’abord classé le suspect parmi les jouets à mâcher.",
+    "p6": "Les négociations ont abouti lorsqu’elle a sorti ses propres sucreries, dont une glace au mochi. Les conditions ont été acceptées sans nouvelle audience.",
+    "p7": "Le lien qui s’ensuivit n’a plus été contesté depuis.",
+    "p8": "Une fois chaque juré comptabilisé, le jury a été officiellement déclaré manipulé.",
+    "p9": "Les effectifs sont depuis revenus à leur niveau antérieur, inacceptable. Le suspect a été observé considérant son unique gardien restant avec une suspicion ouverte, apparemment incapable d’expliquer la disparition soudaine et inexpliquée de plusieurs domestiques supplémentaires.",
+    "exhibitACaption": "PIÈCE A — SUSPECT EN ATTENTE DE JUGEMENT. VERDICT ULTÉRIEUREMENT DÉCLARÉ SANS OBJET.",
+    "exhibitBCaption": "PIÈCE B — LE SUSPECT DÉCOUVRE QUE LA NOURRITURE EST PRÉPARÉE POUR TOUT LE MONDE, ET PAS SEULEMENT POUR LUI. VISIBLEMENT PERPLEXE. VISIBLEMENT DÉÇU.",
+    "exhibitCCaption": "PIÈCE C — VICTIME PRINCIPALE, LA SŒUR DE SAWITO. PREMIER POINT DE CHUTE DU SUSPECT DÈS QU’ELLE N’ÉTAIT PAS ENDORMIE. AUCUNE PLAINTE N’A JAMAIS ÉTÉ DÉPOSÉE.",
+    "exhibitDCaption": "PIÈCE D — LE SUSPECT RÉAFFIRME SA DOMINATION SUR LA MÊME VICTIME. COMPORTEMENT STANDARD DE MAINTIEN AU-DESSUS.",
+    "exhibitECaption": "PIÈCE E — BEAU-FRÈRE DU TÉMOIN, AUPARAVANT HOMME D’AUTORITÉ, ENTIÈREMENT SOUMIS PEU APRÈS SON ARRIVÉE.",
+    "exhibitFCaption": "PIÈCE F — NIÈCE, INITIALEMENT MÉFIANTE À L’ÉGARD DU SUSPECT. MÉFIANCE ULTÉRIEUREMENT JUGÉE FONDÉE MAIS SANS PERTINENCE.",
+    "exhibitGCaption": "PIÈCE G — ACCORD CONCLU. LES CONDITIONS COMPRENAIENT DE LA GLACE AU MOCHI.",
+    "exhibitHCaption": "PIÈCE H — LIEN CONFIRMÉ COMME INDÉFECTIBLE.",
+    "exhibitICaption": "PIÈCE I — LE SUSPECT, S’ADAPTANT À DES EFFECTIFS RÉDUITS, MET EN QUESTION L’AUTORITÉ DE SON UNIQUE GARDIEN RESTANT.",
+    "stamp": "VERDICT SANS OBJET — JURY COMPROMIS"
   },
   "blog": {
     "title": "JOURNAL DE BORD",

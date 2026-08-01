@@ -13,6 +13,7 @@
     "escapeCountry": "FLYKT TILL LANDET",
     "theftAndDestruction": "STÖLD OCH FÖRSTÖRELSE",
     "heatwaveSurvival": "VÄRMEBÖLJANS LUGN",
+    "juryTampering": "JURYPÅVERKAN",
     "blog": "BLOGG",
     "shop": "BUTIK"
   },
@@ -124,6 +125,12 @@
       "teaser": "Ett rekordlångt lugn, en övertagen brottsplats och en misstänkt tillbaka i full styrka i samma ögonblick som värmeböljan bröt.",
       "link": "/heatwave-survival",
       "image": "assets/images/heatwave-collapse.jpg"
+    },
+    {
+      "title": "JURYPÅVERKAN",
+      "teaser": "En besökande jury, en komprometterad dom och en misstänkt som säkrade sympatierna vid ankomsten.",
+      "link": "/jury-tampering",
+      "image": "assets/images/jury-verdict-awaited.jpg"
     }
   ],
   "escapeToCountry": {
@@ -232,6 +239,37 @@
     "exhibitBCaption": "BEVIS B — DEN MISSTÄNKTE GÖR EN BROTTSPLATS SOM INTE VAR HANS TILL SIN EGEN",
     "exhibitCCaption": "BEVIS C — TILLBAKA I FULL STYRKA, ÖGONBLICKET EFTER ATT VÄRMEBÖLJAN BRÖT",
     "stamp": "ÄRENDET ÖPPNAT PÅ NYTT — DEN MISSTÄNKTE HELT ÅTERSTÄLLD"
+  },
+  "juryTampering": {
+    "kicker": "Akten — komprometterad process",
+    "title": "JURYPÅVERKAN",
+    "locationLabel": "PLATS",
+    "locationVal": "Familjebostad — vardagsrum, kök, ej angiven jurisdiktion",
+    "suspectLabel": "MISSTÄNKT",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "VITTNESPERSON",
+    "witnessVal": "Sawitos familj, på besök från Japan (närvarande under hela förfarandet)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Karaktärsbedömning; motivet komprometterades inom några sekunder",
+    "p1": "Vittnespersonens familj reste från Japan med det uttryckliga syftet att bedöma den misstänktes karaktär och tilldela honom en lämplig grad av kriminalitet. Förfarandet var komprometterat innan bagaget hade passerat hallen: den misstänkte säkrade varje jurymedlems sympatier inom sekunder efter presentationen. Hans första besvikelse kom kort därefter, när han upptäckte att serveringen var avsedd för hela rummet.",
+    "p2": "Besvikelsen varade inte. Vittnespersonens syster, en skicklig kock, tillagade måltider under hela besöket — ett faktum den misstänkte registrerade omedelbart och utnyttjade utan skam genom att utse sig själv till hennes ständiga följeslagare när hon stod upp och var nåbar.",
+    "p3": "När hon satte sig ned eskalerade sällskapet till överordnad ställning. Ingen formell anmälan lämnades in.",
+    "p4": "Vittnespersonens svåger anlände med framtoningen hos en person med viss auktoritet, van vid att andra i allmänhet rättade sig efter honom. Denna särskilda ställning överlevde den första kontakten ungefär så länge som det tog honom att gå ned på knä. Han var fullständigt kuvad innan han återfick upprätt position.",
+    "p5": "Den enda kvarvarande avvikaren i en annars enhällig jury var den yngsta närvarande medlemmen, som behövde flera dagar för att nå en dom efter att först ha klassificerat den misstänkte som en tuggleksak.",
+    "p6": "Förhandlingarna avslutades när hon tog fram egna sötsaker, däribland mochi-glass. Villkoren accepterades utan ytterligare förhandling.",
+    "p7": "Det band som följde har inte ifrågasatts sedan dess.",
+    "p8": "När varje jurymedlem var redovisad förklarades panelen officiellt påverkad.",
+    "p9": "Bemanningsnivåerna har sedan dess återgått till sin tidigare, oacceptabla grundnivå. Den misstänkte har observerats betrakta sin enda kvarvarande förare med öppen misstänksamhet och verkar oförmögen att förklara den plötsliga och oförklarliga förlusten av flera ytterligare tjänare.",
+    "exhibitACaption": "UTSTÄLLNINGSFÖREMÅL A — MISSTÄNKT I VÄNTAN PÅ DOM. DOMEN FÖRKLARADES SENARE MENINGSLÖS.",
+    "exhibitBCaption": "UTSTÄLLNINGSFÖREMÅL B — MISSTÄNKT UPPTÄCKER ATT MATEN TILLAGAS FÖR ALLA, INTE BARA FÖR HONOM. SYNLIGT FÖRVÅNAD. SYNLIGT BESVIKEN.",
+    "exhibitCCaption": "UTSTÄLLNINGSFÖREMÅL C — HUVUDSAKLIGT OFFER, SAWITOS SYSTER. DEN MISSTÄNKTES FÖRSTA ANHALT SÅ SNART HON INTE SOV. INGEN ANMÄLAN LÄMNADES NÅGONSIN IN.",
+    "exhibitDCaption": "UTSTÄLLNINGSFÖREMÅL D — MISSTÄNKT ÅTERUPPRÄTTAR SIN DOMINANS ÖVER SAMMA OFFER. STANDARDMÄSSIGT BETEENDE AV TYPEN ”STANNA KVAR ÖVERST”.",
+    "exhibitECaption": "UTSTÄLLNINGSFÖREMÅL E — VITTNESPERSONENS SVÅGER, TIDIGARE EN AUKTORITETSPERSON, FULLSTÄNDIGT KUVAD KORT EFTER ANKOMSTEN.",
+    "exhibitFCaption": "UTSTÄLLNINGSFÖREMÅL F — BRORSDOTTER, INLEDNINGSVIS MISSTÄNKSAM MOT DEN MISSTÄNKTE. MISSTANKEN BEDÖMDES SENARE VARA BERÄTTIGAD MEN IRRELEVANT.",
+    "exhibitGCaption": "UTSTÄLLNINGSFÖREMÅL G — ÖVERENSKOMMELSE NÅDD. VILLKOREN INNEFATTADE MOCHI-GLASS.",
+    "exhibitHCaption": "UTSTÄLLNINGSFÖREMÅL H — BANDET BEKRÄFTAT OBRYTBART.",
+    "exhibitICaption": "UTSTÄLLNINGSFÖREMÅL I — MISSTÄNKT, SOM ANPASSAR SIG TILL MINSKADE BEMANNINGSNIVÅER, IFRÅGASÄTTER SIN ENDA KVARVARANDE FÖRARES AUKTORITET.",
+    "stamp": "DOM MENINGSLÖS — JURY PÅVERKAD"
   },
   "blog": {
     "title": "FALLLOGG",
