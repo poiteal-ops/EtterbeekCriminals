@@ -13,6 +13,7 @@
     "escapeCountry": "FLUKT TIL LANDET",
     "theftAndDestruction": "TYVERI OG ØDELEGGELSE",
     "heatwaveSurvival": "VARMEBØLGENS PAUSE",
+    "juryTampering": "JURYMANIPULERING",
     "blog": "BLOGG",
     "shop": "BUTIKK"
   },
@@ -124,6 +125,12 @@
       "teaser": "En rekordlang pause, et overtatt åsted og en mistenkt tilbake i full styrke i det øyeblikket hetebølgen brøt.",
       "link": "/heatwave-survival",
       "image": "assets/images/heatwave-collapse.jpg"
+    },
+    {
+      "title": "JURYMANIPULERING",
+      "teaser": "En besøkende jury, en kompromittert kjennelse og én mistenkt som sikret seg sympati ved ankomst.",
+      "link": "/jury-tampering",
+      "image": "assets/images/jury-verdict-awaited.jpg"
     }
   ],
   "escapeToCountry": {
@@ -232,6 +239,37 @@
     "exhibitBCaption": "BEVIS B — DEN MISTENKTE GJØR ET ÅSTED SOM IKKE VAR HANS TIL SITT EGET",
     "exhibitCCaption": "BEVIS C — TILBAKE I FULL STYRKE, ØYEBLIKKET ETTER AT HETEBØLGEN BRØT",
     "stamp": "SAKEN GJENÅPNET — DEN MISTENKTE FULLT GJENOPPRETTET"
+  },
+  "juryTampering": {
+    "kicker": "Saksmappe — kompromittert saksbehandling",
+    "title": "JURYMANIPULERING",
+    "locationLabel": "STED",
+    "locationVal": "Familiebolig — stue, kjøkken, ikke oppgitt jurisdiksjon",
+    "suspectLabel": "MISTENKT",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "VITNE",
+    "witnessVal": "Sawitos familie, på besøk fra Japan (til stede under hele saksbehandlingen)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Karaktervurdering; motivet ble kompromittert i løpet av sekunder",
+    "p1": "Vitnets familie reiste fra Japan med det uttrykkelige formålet å vurdere den mistenktes karakter og fastsette et passende nivå av kriminalitet. Saksbehandlingen var kompromittert før bagasjen hadde kommet gjennom gangen: Den mistenkte sikret seg sympatien til hvert jurymedlem i løpet av sekunder etter presentasjonen. Hans første skuffelse kom kort tid senere, da han oppdaget at bevertningen gjaldt hele rommet.",
+    "p2": "Skuffelsen varte ikke. Vitnets søster, en dyktig kokk, tilberedte måltider under hele besøket — et faktum den mistenkte registrerte umiddelbart og utnyttet uten skam ved å utnevne seg selv til hennes faste følgesvenn hver gang hun sto opp og var tilgjengelig.",
+    "p3": "Hver gang hun satte seg, eskalerte selskapet til overordnet status. Ingen formell klage ble levert.",
+    "p4": "Vitnets svoger ankom med fremtoningen til en person med en viss autoritet, vanligvis vant til å bli tatt hensyn til. Dette skillet overlevde første kontakt omtrent så lenge det tok ham å gå ned på kne. Han var fullstendig underkuet før han rakk å reise seg igjen.",
+    "p5": "Det eneste avviket i en ellers enstemmig jury var det yngste tilstedeværende medlemmet, som trengte flere dager på å komme frem til en kjennelse etter først å ha klassifisert den mistenkte som et tyggeleketøy.",
+    "p6": "Forhandlingene ble avsluttet da hun hentet frem egne søtsaker, blant annet mochi-is. Vilkårene ble akseptert uten videre behandling.",
+    "p7": "Båndet som fulgte, har ikke vært bestridt siden.",
+    "p8": "Da hvert jurymedlem var gjort rede for, ble panelet offisielt erklært manipulert.",
+    "p9": "Bemanningsnivået har siden gått tilbake til sitt tidligere, uakseptable utgangspunkt. Den mistenkte er observert mens han betrakter sin eneste gjenværende fører med åpen mistanke, tilsynelatende ute av stand til å forklare det plutselige og uforklarlige tapet av flere ekstra tjenere.",
+    "exhibitACaption": "BEVIS A — MISTENKT AVVENTER DOM. KJENNELSEN BLE SENERE ERKLÆRT UAKTUELL.",
+    "exhibitBCaption": "BEVIS B — MISTENKT OPPDAGER AT MATEN TILBEREDES FOR ALLE, IKKE BARE FOR HAM. SYNLIG FORVIRRET. SYNLIG SKUFFET.",
+    "exhibitCCaption": "BEVIS C — HOVEDOFFER, SAWITOS SØSTER. MISTENKTES FØRSTE STOPP HVER GANG HUN IKKE SOV. INGEN KLAGE BLE NOENSINNE LEVERT.",
+    "exhibitDCaption": "BEVIS D — MISTENKT GJENOPPRETTER DOMINANSEN OVER SAMME OFFER. STANDARD ATFERD AV TYPEN «BLI PÅ TOPPEN».",
+    "exhibitECaption": "BEVIS E — VITNETS SVOGER, TIDLIGERE EN AUTORITETSPERSON, FULLSTENDIG UNDERKUET KORT TID ETTER ANKOMST.",
+    "exhibitFCaption": "BEVIS F — NIESEN, OPPRINNELIG SKEPTISK TIL DEN MISTENKTE. SKEPSISEN BLE SENERE VURDERT SOM BERETTIGET, MEN IRRELEVANT.",
+    "exhibitGCaption": "BEVIS G — AVTALE INNGÅTT. VILKÅRENE INVOLVERTE MOCHI-IS.",
+    "exhibitHCaption": "BEVIS H — BÅNDET BEKREFTET UBROKKELIG.",
+    "exhibitICaption": "BEVIS I — MISTENKT, SOM TILPASSER SEG REDUSERT BEMANNING, SETTER SPØRSMÅLSTEGN VED AUTORITETEN TIL SIN ENESTE GJENVÆRENDE FØRER.",
+    "stamp": "KJENNELSE UAKTUELL — JURY MANIPULERT"
   },
   "blog": {
     "title": "SAKSLOGG",

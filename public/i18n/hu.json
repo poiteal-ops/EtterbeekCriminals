@@ -13,6 +13,7 @@
     "escapeCountry": "SZÖKÉS VIDÉKRE",
     "theftAndDestruction": "LOPÁS ÉS RONGÁLÁS",
     "heatwaveSurvival": "A HŐHULLÁM SZÜNETE",
+    "juryTampering": "AZ ESKÜDTSZÉK BEFOLYÁSOLÁSA",
     "blog": "BLOG",
     "shop": "BOLT"
   },
@@ -124,6 +125,12 @@
       "teaser": "Rekordhosszú nyugalom, egy eltulajdonított tetthely, és egy gyanúsított, aki a hőség enyhülésének pillanatában újra teljes erőre kapott.",
       "link": "/heatwave-survival",
       "image": "assets/images/heatwave-collapse.jpg"
+    },
+    {
+      "title": "AZ ESKÜDTSZÉK BEFOLYÁSOLÁSA",
+      "teaser": "Egy látogató esküdtszék, egy kompromittált ítélet és egy gyanúsított, aki érkezésekor azonnal együttérzést szerzett.",
+      "link": "/jury-tampering",
+      "image": "assets/images/jury-verdict-awaited.jpg"
     }
   ],
   "escapeToCountry": {
@@ -232,6 +239,37 @@
     "exhibitBCaption": "BIZONYÍTÉK B — A GYANÚSÍTOTT EGY OLYAN TETTHELYET VESZ BIRTOKBA, AMELY NEM AZ ÖVÉ",
     "exhibitCCaption": "BIZONYÍTÉK C — ISMÉT TELJES ERŐBEDOBÁSSAL, KÖZVETLENÜL A HŐHULLÁM LECSENGÉSE UTÁN",
     "stamp": "ÜGY ÚJRA MEGNYITVA — AZ ALANY TELJESEN FELÉPÜLT"
+  },
+  "juryTampering": {
+    "kicker": "Ügyirat — kompromittált eljárás",
+    "title": "AZ ESKÜDTSZÉK BEFOLYÁSOLÁSA",
+    "locationLabel": "HELYSZÍN",
+    "locationVal": "Családi lakóhely — nappali, konyha, meg nem nevezett joghatóság",
+    "suspectLabel": "GYANÚSÍTOTT",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TANÚ",
+    "witnessVal": "SAWITO családja, Japánból érkezett látogatóba (a teljes eljáráson jelen volt)",
+    "motiveLabel": "INDÍTÉK",
+    "motiveVal": "Jellemfelmérés; az indíték néhány másodpercen belül kompromittálódott",
+    "p1": "A tanú családja kifejezetten azért utazott Japánból, hogy felmérje a gyanúsított jellemét, és megállapítsa bűnözői mivoltának megfelelő szintjét. Az eljárás még azelőtt kompromittálódott, hogy a csomagok elhagyták volna az előszobát: a gyanúsított a bemutatkozást követő másodpercekben megszerezte minden esküdt együttérzését. Első csalódása röviddel ezután következett, amikor felfedezte, hogy az étkeztetés az egész helyiségre kiterjed.",
+    "p2": "A csalódás nem tartott sokáig. A tanú nővére, aki kiváló szakács, a látogatás teljes ideje alatt ételeket készített — ezt a gyanúsított azonnal rögzítette, majd szégyenkezés nélkül kihasználta: állandó társává nevezte ki magát minden alkalommal, amikor a nő ébren és elérhető állapotban volt.",
+    "p3": "Amikor leült, a társaság rangidőssé lépett elő. Hivatalos panasz nem érkezett.",
+    "p4": "A tanú sógora olyan ember benyomását keltve érkezett, aki bizonyos tekintéllyel rendelkezik, és általában ahhoz szokott, hogy mások igazodnak hozzá. Ez a megkülönböztetés az első találkozást körülbelül addig élte túl, ameddig a férfinak szüksége volt ahhoz, hogy letérdeljen. Mielőtt ismét felegyenesedhetett volna, teljesen engedelmessé vált.",
+    "p5": "Az egyébként egyhangú esküdtszék egyetlen ellenálló tagja a jelenlévő legfiatalabb személy volt, akinek több napra volt szüksége az ítélet meghozatalához, mivel kezdetben rágójátékként sorolta be a gyanúsítottat.",
+    "p6": "A tárgyalások akkor zárultak le, amikor saját édességeket, köztük mochifagylaltot is elővett. A feltételeket további meghallgatás nélkül elfogadták.",
+    "p7": "Az ezt követő köteléket azóta sem támadta meg senki.",
+    "p8": "Miután minden esküdt elszámolásra került, a testületet hivatalosan manipuláltnak nyilvánították.",
+    "p9": "A létszám azóta visszatért a korábbi, elfogadhatatlan alapszintre. A gyanúsítottat nyílt gyanakvással figyelve észlelték egyetlen megmaradt gondozóját, láthatóan képtelenül elszámolni a több további szolga hirtelen és megmagyarázhatatlan eltűnésével.",
+    "exhibitACaption": "A KIÁLLÍTÁSI TÁRGY — A GYANÚSÍTOTT ÍTÉLETRE VÁR. AZ ÍTÉLETET KÉSŐBB TÁRGYTALANNAK NYILVÁNÍTOTTÁK.",
+    "exhibitBCaption": "B KIÁLLÍTÁSI TÁRGY — A GYANÚSÍTOTT FELFEDEZI, HOGY AZ ÉTELT MINDENKINEK KÉSZÍTIK, NEM CSAK NEKI. LÁTHATÓAN ZAVART. LÁTHATÓAN CSALÓDOTT.",
+    "exhibitCCaption": "C KIÁLLÍTÁSI TÁRGY — A FŐÁLDOZAT, SAWITO NŐVÉRE. A GYANÚSÍTOTT ELSŐ ÚTICÉLJA, AMIKOR A NŐ NEM ALUDT. HIVATALOS PANASZ SOHA NEM ÉRKEZETT.",
+    "exhibitDCaption": "D KIÁLLÍTÁSI TÁRGY — A GYANÚSÍTOTT ÚJRA ÉRVÉNYESÍTI FÖLÉNYÉT UGYANAZON ÁLDOZAT FELETT. SZOKÁSOS „MARADJ FÖLÜL” VISELKEDÉS.",
+    "exhibitECaption": "E KIÁLLÍTÁSI TÁRGY — A TANÚ SÓGORA, KORÁBBAN TEKINTÉLYES SZEMÉLY, ÉRKEZÉSE RÖVIDDEL TELJESEN LEIGÁZVA.",
+    "exhibitFCaption": "F KIÁLLÍTÁSI TÁRGY — UNOKAHÚG, KEZDETBEN GYANAKVÓ A GYANÚSÍTOTTAL SZEMBEN. A GYANAKVÁST KÉSŐBB MEGALAPOZOTTNAK, DE IRRELEVÁNSNAK MINŐSÍTETTÉK.",
+    "exhibitGCaption": "G KIÁLLÍTÁSI TÁRGY — MEGÁLLAPODÁS SZÜLETETT. A FELTÉTELEK KÖZÖTT MOCHIFAGYLALT SZEREPELT.",
+    "exhibitHCaption": "H KIÁLLÍTÁSI TÁRGY — A KÖTELÉK FELBONTHATATLANSÁGA MEGERŐSÍTVE.",
+    "exhibitICaption": "I KIÁLLÍTÁSI TÁRGY — A GYANÚSÍTOTT A CSÖKKENTETT LÉTSZÁMHOZ IGAZODVA MEGKÉRDŐJELEZI EGYETLEN MEGMARADT GONDOZÓJÁNAK TEKINTÉLYÉT.",
+    "stamp": "ÍTÉLET TÁRGYTALAN — AZ ESKÜDTSZÉK KOMPROMITTÁLÓDOTT"
   },
   "blog": {
     "title": "ÜGYNAPLÓ",

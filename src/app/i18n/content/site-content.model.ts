@@ -44,6 +44,7 @@ export interface SiteContent {
     escapeCountry: string;
     theftAndDestruction: string;
     heatwaveSurvival: string;
+    juryTampering: string;
     blog: string;
     shop: string;
   };
@@ -204,6 +205,37 @@ export interface SiteContent {
     p2: string;
     exhibitBCaption: string;
     exhibitCCaption: string;
+    stamp: string;
+  };
+  juryTampering: {
+    kicker: string;
+    title: string;
+    locationLabel: string;
+    locationVal: string;
+    suspectLabel: string;
+    suspectVal: string;
+    witnessLabel: string;
+    witnessVal: string;
+    motiveLabel: string;
+    motiveVal: string;
+    p1: string;
+    p2: string;
+    p3: string;
+    p4: string;
+    p5: string;
+    p6: string;
+    p7: string;
+    p8: string;
+    p9: string;
+    exhibitACaption: string;
+    exhibitBCaption: string;
+    exhibitCCaption: string;
+    exhibitDCaption: string;
+    exhibitECaption: string;
+    exhibitFCaption: string;
+    exhibitGCaption: string;
+    exhibitHCaption: string;
+    exhibitICaption: string;
     stamp: string;
   };
   blog: {

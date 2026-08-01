@@ -13,6 +13,7 @@
     "escapeCountry": "ESCAPADA AL CAMPO",
     "theftAndDestruction": "ROBO Y DESTRUCCIÓN",
     "heatwaveSurvival": "LA TREGUA DEL CALOR",
+    "juryTampering": "MANIPULACIÓN DEL JURADO",
     "blog": "BLOG",
     "shop": "TIENDA"
   },
@@ -124,6 +125,12 @@
       "teaser": "Una tregua récord, una escena del crimen robada y un sospechoso a plena potencia en cuanto remitió el calor.",
       "link": "/heatwave-survival",
       "image": "assets/images/heatwave-collapse.jpg"
+    },
+    {
+      "title": "MANIPULACIÓN DEL JURADO",
+      "teaser": "Un jurado de visita, un veredicto comprometido y un sospechoso que se ganó la simpatía nada más llegar.",
+      "link": "/jury-tampering",
+      "image": "assets/images/jury-verdict-awaited.jpg"
     }
   ],
   "escapeToCountry": {
@@ -232,6 +239,37 @@
     "exhibitBCaption": "PRUEBA B — EL SOSPECHOSO RECLAMANDO UNA ESCENA DEL CRIMEN QUE NO ERA SUYA",
     "exhibitCCaption": "PRUEBA C — DE VUELTA A PLENA POTENCIA, MOMENTOS DESPUÉS DE QUE REMITIERA LA OLA DE CALOR",
     "stamp": "CASO REABIERTO — SUJETO TOTALMENTE RECUPERADO"
+  },
+  "juryTampering": {
+    "kicker": "Expediente — procedimiento comprometido",
+    "title": "MANIPULACIÓN DEL JURADO",
+    "locationLabel": "LUGAR",
+    "locationVal": "Residencia familiar — sala de estar, cocina, jurisdicción no revelada",
+    "suspectLabel": "SOSPECHOSO",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TESTIGO",
+    "witnessVal": "La familia de SAWITO, de visita desde Japón (presente durante todo el procedimiento)",
+    "motiveLabel": "MÓVIL",
+    "motiveVal": "Evaluación del carácter; móvil comprometido en cuestión de segundos",
+    "p1": "La familia del testigo viajó desde Japón con el único propósito de evaluar el carácter del sospechoso y asignarle un nivel adecuado de criminalidad. El procedimiento quedó comprometido antes de que el equipaje hubiera salido del pasillo: el sospechoso se aseguró la simpatía de todos los miembros del jurado en cuestión de segundos desde su presentación. Su primera decepción llegó poco después, al descubrir que la comida se había preparado para toda la sala.",
+    "p2": "La decepción no duró. La hermana del testigo, una cocinera consumada, preparó las comidas durante toda la visita — un hecho que el sospechoso registró de inmediato y explotó sin pudor, nombrándose su acompañante permanente cada vez que ella estaba de pie y a su alcance.",
+    "p3": "Cada vez que ella se sentaba, la compañía ascendía de categoría. No se presentó ninguna queja formal.",
+    "p4": "El cuñado del testigo llegó presentándose como una persona con cierta autoridad, generalmente acostumbrada a que los demás cedieran ante él. Esta distinción sobrevivió al primer contacto aproximadamente durante el tiempo que tardó en arrodillarse. Quedó completamente sometido antes de recuperar la posición erguida.",
+    "p5": "La única disidente en un jurado por lo demás unánime fue la integrante más joven presente, que necesitó varios días para llegar a un veredicto, después de haber clasificado inicialmente al sospechoso como un juguete para morder.",
+    "p6": "Las negociaciones concluyeron cuando ella sacó sus propios dulces, incluido helado de mochi. Los términos fueron aceptados sin más audiencia.",
+    "p7": "El vínculo que siguió no ha vuelto a ser impugnado.",
+    "p8": "Con todos los miembros del jurado contabilizados, el panel fue declarado oficialmente manipulado.",
+    "p9": "Desde entonces, los niveles de personal han vuelto a su anterior e inaceptable mínimo. Se ha observado al sospechoso contemplando con abierta desconfianza a su único cuidador restante, aparentemente incapaz de explicar la pérdida repentina e inexplicable de varios sirvientes adicionales.",
+    "exhibitACaption": "PRUEBA A — SOSPECHOSO A LA ESPERA DE JUICIO. EL VEREDICTO FUE DECLARADO POSTERIORMENTE SIN EFECTO.",
+    "exhibitBCaption": "PRUEBA B — EL SOSPECHOSO DESCUBRE QUE SE ESTÁ PREPARANDO COMIDA PARA TODOS, NO SOLO PARA ÉL. VISIBLEMENTE PERPLEJO. VISIBLEMENTE DECEPCIONADO.",
+    "exhibitCCaption": "PRUEBA C — VÍCTIMA PRINCIPAL, LA HERMANA DE SAWITO. PRIMER DESTINO DEL SOSPECHOSO SIEMPRE QUE ELLA NO ESTABA DORMIDA. NUNCA SE PRESENTÓ UNA QUEJA.",
+    "exhibitDCaption": "PRUEBA D — EL SOSPECHOSO REAFIRMA SU DOMINIO SOBRE LA MISMA VÍCTIMA. CONDUCTA ESTÁNDAR DE MANTENERSE ENCIMA.",
+    "exhibitECaption": "PRUEBA E — CUÑADO DEL TESTIGO, ANTERIORMENTE UNA PERSONA CON AUTORIDAD, COMPLETAMENTE SOMETIDO POCO DESPUÉS DE SU LLEGADA.",
+    "exhibitFCaption": "PRUEBA F — SOBRINA, INICIALMENTE SOSPECHOSA DEL SOSPECHOSO. LA SOSPECHA FUE CONSIDERADA POSTERIORMENTE FUNDADA PERO IRRELEVANTE.",
+    "exhibitGCaption": "PRUEBA G — ACUERDO ALCANZADO. LOS TÉRMINOS INCLUÍAN HELADO DE MOCHI.",
+    "exhibitHCaption": "PRUEBA H — VÍNCULO CONFIRMADO COMO INQUEBRANTABLE.",
+    "exhibitICaption": "PRUEBA I — EL SOSPECHOSO, ADAPTÁNDOSE A UN NIVEL DE PERSONAL REDUCIDO, CUESTIONA LA AUTORIDAD DE SU ÚNICO CUIDADOR RESTANTE.",
+    "stamp": "VEREDICTO SIN EFECTO — JURADO COMPROMETIDO"
   },
   "blog": {
     "title": "REGISTRO DE CASOS",

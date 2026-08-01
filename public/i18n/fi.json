@@ -13,6 +13,7 @@
     "escapeCountry": "PAKO MAASEUDULLE",
     "theftAndDestruction": "VARKAUS JA TUHOTYÖ",
     "heatwaveSurvival": "HELLEAALLON TYVEN",
+    "juryTampering": "JURYN MANIPULOINTI",
     "blog": "BLOGI",
     "shop": "KAUPPA"
   },
@@ -124,6 +125,12 @@
       "teaser": "Ennätyksellinen hiljaisuus, haltuun otettu rikospaikka ja epäilty, joka palasi täyteen voimaansa heti helteen hellitettyä.",
       "link": "/heatwave-survival",
       "image": "assets/images/heatwave-collapse.jpg"
+    },
+    {
+      "title": "JURYN MANIPULOINTI",
+      "teaser": "Vieraileva valamiehistö, vaarantunut päätös ja yksi epäilty, joka hankki sympatian heti saavuttuaan.",
+      "link": "/jury-tampering",
+      "image": "assets/images/jury-verdict-awaited.jpg"
     }
   ],
   "escapeToCountry": {
@@ -232,6 +239,37 @@
     "exhibitBCaption": "TODISTE B — EPÄILTY OTTAMASSA OMISTUKSEENSA RIKOSPAIKKAA, JOKA EI KUULUNUT HÄNELLE",
     "exhibitCCaption": "TODISTE C — TÄYSISSÄ VOIMISSAAN HETI HELLEAALLON PÄÄTYTTYÄ",
     "stamp": "TAPAUS AVATTU UUDELLEEN — EPÄILTY TÄYSIN TOIPUNUT"
+  },
+  "juryTampering": {
+    "kicker": "Tapausasiakirja — vaarantunut menettely",
+    "title": "JURYN MANIPULOINTI",
+    "locationLabel": "SIJAINTI",
+    "locationVal": "Perheen asunto — olohuone, keittiö, ilmoittamaton lainkäyttöalue",
+    "suspectLabel": "EPÄILTY",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TODISTAJA",
+    "witnessVal": "Sawiton perhe, vierailulla Japanista (läsnä koko käsittelyn ajan)",
+    "motiveLabel": "MOTIIVI",
+    "motiveVal": "Luonteen arviointi; motiivi vaarantui sekunneissa",
+    "p1": "Todistajan perhe matkusti Japanista nimenomaisena tarkoituksenaan arvioida epäillyn luonnetta ja määrittää tämän rikollisuuden asianmukainen taso. Menettely vaarantui ennen kuin matkatavarat olivat ehtineet pois eteisestä: epäilty saavutti jokaisen valamiehen sympatian sekunneissa esittelyn jälkeen. Ensimmäinen pettymys seurasi pian, kun hän havaitsi tarjoilun koskevan koko huonetta, ei ainoastaan häntä.",
+    "p2": "Pettymys ei kestänyt kauan. Todistajan sisar, taitava kokki, valmisti vierailun aikana aterioita — epäilty rekisteröi tämän välittömästi ja hyödynsi asiaa häpeämättä nimittämällä itsensä sisaren vakituiseksi seuralaiseksi aina, kun tämä oli jalkeilla ja tavoitettavissa.",
+    "p3": "Aina kun sisar istuutui, seuraaminen eskaloitui esimiehisyydeksi. Virallista valitusta ei tehty.",
+    "p4": "Todistajan lanko saapui esiintyen jonkinasteista auktoriteettia omaavana henkilönä, joka oli yleensä tottunut siihen, että muut joustavat hänen tahtonsa mukaan. Tämä asema säilyi ensikontaktissa suunnilleen niin kauan kuin häneltä kesti polvistua. Hänet oli täysin kesytetty ennen kuin hän ehti nousta takaisin pystyyn.",
+    "p5": "Muutoin yksimielisen valamiehistön ainoa vastahankainen jäsen oli paikalla ollut nuorin, joka tarvitsi useita päiviä päätöksen tekemiseen luokiteltuaan epäillyn aluksi puruleluksi.",
+    "p6": "Neuvottelut päättyivät, kun hän toi esiin omat makeisensa, mukaan lukien mochi-jäätelön. Ehdot hyväksyttiin ilman uutta käsittelyä.",
+    "p7": "Sen jälkeen syntynyttä sidettä ei ole sittemmin kyseenalaistettu.",
+    "p8": "Kun jokainen valamies oli saatu tilille, lautakunta julistettiin virallisesti manipuloiduksi.",
+    "p9": "Henkilöstömäärä on sittemmin palannut aiemmalle, hyväksymättömälle tasolle. Epäillyn on havaittu suhtautuvan ainoaan jäljellä olevaan ohjaajaansa avoimen epäluuloisesti, ilmeisen kykenemättömänä selittämään useiden muiden palvelijoiden äkillistä ja selittämätöntä katoamista.",
+    "exhibitACaption": "TODISTE A — EPÄILTY ODOTTAA TUOMIOTA. PÄÄTÖS JULISTETTIIN MYÖHEMMIN MERKITYKSETTÖMÄKSI.",
+    "exhibitBCaption": "TODISTE B — EPÄILTY HAVAITSEE, ETTÄ RUOKAA VALMISTETAAN KAIKILLE, EI VAIN HÄNELLE. NÄKYVÄSTI HÄMMENTYNYT. NÄKYVÄSTI PETTYNYT.",
+    "exhibitCCaption": "TODISTE C — PÄÄUHRI, SAWITON SISAR. EPÄILLYN ENSIMMÄINEN KOHDE AINA, KUN SISAR EI NUKKUNUT. VALITUSTA EI KOSKAAN TEHTY.",
+    "exhibitDCaption": "TODISTE D — EPÄILTY PALAUTTAA VALTA-ASEMANSA SAMAAN UHRIIN NÄHDEN. TAVANOMAINEN ”PYSY PÄÄLLÄ” -KÄYTTÄYTYMINEN.",
+    "exhibitECaption": "TODISTE E — TODISTAJAN LANKO, AIKAISEMMIN AUKTORITEETTIA EDUSTANUT HENKILÖ, TÄYSIN KESYTETTY PIAN SAAPUMISEN JÄLKEEN.",
+    "exhibitFCaption": "TODISTE F — SISARENTYTÄR, ALUKSI EPÄLUULOINEN EPÄILTYÄ KOHTAAN. EPÄLUULO TODETTIIN MYÖHEMMIN AIHEELLISEKSI, MUTTA EPÄRELEVANTIKSI.",
+    "exhibitGCaption": "TODISTE G — SOPIMUS SAAVUTETTU. EHDOT SISÄLSIVÄT MOCHI-JÄÄTELÖÄ.",
+    "exhibitHCaption": "TODISTE H — SIDE VAHVISTETTU MURTUMATTOMAKSI.",
+    "exhibitICaption": "TODISTE I — EPÄILTY SOPEUTUU PIENEMPÄÄN HENKILÖSTÖMÄÄRÄÄN JA KYSEENALAISTAA AINOAN JÄLJELLÄ OLEVAN OHJAAJANSA AUKTORITEETIN.",
+    "stamp": "PÄÄTÖS MERKITYKSETÖN — JURY MANIPULOITU"
   },
   "blog": {
     "title": "TAPAUSPÄIVÄKIRJA",

@@ -13,6 +13,7 @@
     "escapeCountry": "PÕGENEMINE MAALE",
     "theftAndDestruction": "VARGUS JA HÄVITAMINE",
     "heatwaveSurvival": "KUUMALAINE VAHEAEG",
+    "juryTampering": "ŽÜRII MÕJUTAMINE",
     "blog": "BLOGI",
     "shop": "POOD"
   },
@@ -124,6 +125,12 @@
       "teaser": "Rekordiline vaheaeg, üks endale võetud kuriteopaik ja kahtlusalune täies jõus tagasi hetkel, mil kuumus taandus.",
       "link": "/heatwave-survival",
       "image": "assets/images/heatwave-collapse.jpg"
+    },
+    {
+      "title": "ŽÜRII MÕJUTAMINE",
+      "teaser": "Külalisžürii, kompromiteeritud otsus ja üks kahtlusalune, kes võitis saabudes kõigi poolehoiu.",
+      "link": "/jury-tampering",
+      "image": "assets/images/jury-verdict-awaited.jpg"
     }
   ],
   "escapeToCountry": {
@@ -232,6 +239,37 @@
     "exhibitBCaption": "TÕEND B — KAHTLUSALUNE MÄRGISTAB ENDALE KURITEOPAIGA, MIS EI OLNUD TEMA OMA",
     "exhibitCCaption": "TÕEND C — TAGASI TÄIES JÕUS, MÕNI HETK PÄRAST KUUMALAINE TAANDUMIST",
     "stamp": "JUHTUM UUESTI AVATUD — KAHTLUSALUNE TÄIELIKULT TAASTUNUD"
+  },
+  "juryTampering": {
+    "kicker": "Juhtumitoimik — kompromiteeritud menetlus",
+    "title": "ŽÜRII MÕJUTAMINE",
+    "locationLabel": "ASUKOHT",
+    "locationVal": "Perekonna elukoht — elutuba, köök, avalikustamata jurisdiktsioon",
+    "suspectLabel": "KAHTLUSALUNE",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TUNNISTAJA",
+    "witnessVal": "Sawito perekond, külaskäigul Jaapanist (viibis kogu menetluse juures)",
+    "motiveLabel": "MOTIIV",
+    "motiveVal": "Iseloomu hindamine; motiiv kompromiteerus sekunditega",
+    "p1": "Tunnistaja perekond sõitis Jaapanist kohale konkreetselt selleks, et hinnata kahtlusaluse iseloomu ja määrata talle sobiv kuritegelikkuse tase. Menetlus oli kompromiteeritud enne, kui pagas koridorist lahkus: kahtlusalune võitis iga vandekohtuniku poolehoiu mõne sekundiga pärast tutvustamist. Esimene pettumus saabus peagi, kui ta avastas, et toitlustus hõlmas kogu seltskonda, mitte ainult teda.",
+    "p2": "Pettumus ei kestnud kaua. Tunnistaja õde, osav kokk, valmistas kogu külaskäigu vältel süüa — asjaolu, mille kahtlusalune kohe registreeris ja häbenemata ära kasutas, määrates end tema alaliseks kaaslaseks alati, kui õde oli püsti ja käeulatuses.",
+    "p3": "Iga kord, kui ta istus, kasvas seltsilisus üle ülemvõimuks. Ametlikku kaebust ei esitatud.",
+    "p4": "Tunnistaja õemees saabus, esinedes teatava autoriteediga inimesena, kes on üldiselt harjunud, et talle vastu ei vaielda. See eristus püsis esmase kokkupuuteni umbes nii kaua, kui tal kulus põlvili laskumiseks. Enne püsti tõusmist oli ta täielikult alistatud.",
+    "p5": "Ülejäänud üksmeelses žüriis oli ainus kõhkleja kohalviibinud noorim liige, kes vajas otsusele jõudmiseks mitu päeva, olles kahtlusaluse algul närimismänguasjaks liigitanud.",
+    "p6": "Läbirääkimised lõppesid, kui ta tõi välja enda maiustused, sealhulgas mochi-jäätise. Tingimused võeti ilma edasise aruteluta vastu.",
+    "p7": "Sellele järgnenud sidet ei ole sellest ajast saadik vaidlustatud.",
+    "p8": "Kui kõik vandekohtunikud olid arvesse võetud, kuulutati kogu koosseis ametlikult mõjutatuks.",
+    "p9": "Personali arv on sellest ajast naasnud varasemale, vastuvõetamatule tasemele. Kahtlusalust on täheldatud oma ainsa allesjäänud hooldaja suhtes avalikku umbusku ilmutamas, ilmselt suutmata arvestada mitme täiendava teenri äkilise ja seletamatu kadumisega.",
+    "exhibitACaption": "TÕEND A — KAHTLUSALUNE OOTAB KOHTUOTSUST. OTSUS TUNNISTATI HILJEM ASJASSE MITTEPUUTUVAKS.",
+    "exhibitBCaption": "TÕEND B — KAHTLUSALUNE AVASTAB, ET TOITU VALMISTATAKSE KÕIGILE, MITTE AINULT TEMALE. NÄHTAVALT SEGADUSES. NÄHTAVALT PETTUNUD.",
+    "exhibitCCaption": "TÕEND C — PEAMINE OHVER, SAWITO ÕDE. KAHTLUSALUSE ESIMENE SIHTPUNKT, KUI ÕDE EI MAGANUD. KAEBUST EI ESITATUD KUNAGI.",
+    "exhibitDCaption": "TÕEND D — KAHTLUSALUNE TAASTAB DOMINANTSI SAMA OHVRI ÜLE. STANDARDNE „PÜSI PEAL” KÄITUMINE.",
+    "exhibitECaption": "TÕEND E — TUNNISTAJA ÕEMEES, VAREM AUTORITEETNE ISIK, TÄIELIKULT ALISTATUD PEAGU KOHE PÄRAST SAABUMIST.",
+    "exhibitFCaption": "TÕEND F — ÕETÜTAR, ESIALGU KAHTLUSALUSE SUHTES UMBUSKLIK. UMBUSK TUNNISTATI HILJEM PÕHJENDATUKS, KUID ASJASSE MITTEPUUTUVAKS.",
+    "exhibitGCaption": "TÕEND G — KOKKULEPE SAAVUTATUD. TINGIMUSTE HULKA KUULUS MOCHI-JÄÄTIS.",
+    "exhibitHCaption": "TÕEND H — SIDE KINNITATUD PURUNEMATUKS.",
+    "exhibitICaption": "TÕEND I — KAHTLUSALUNE KOHANEB VÄHENENUD PERSONALIGA JA SEAB KAHTLUSE ALLA OMA AINSA ALLESJÄÄNUD HOOLDAJA AUTORITEEDI.",
+    "stamp": "OTSUS ASJASSE MITTEPUUTUV — ŽÜRII MÕJUTATUD"
   },
   "blog": {
     "title": "JUHTUMIPÄEVIK",

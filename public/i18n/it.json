@@ -13,6 +13,7 @@
     "escapeCountry": "FUGA IN CAMPAGNA",
     "theftAndDestruction": "FURTO E DISTRUZIONE",
     "heatwaveSurvival": "LA TREGUA DELLA CANICOLA",
+    "juryTampering": "MANIPOLAZIONE DELLA GIURIA",
     "blog": "BLOG",
     "shop": "NEGOZIO"
   },
@@ -124,6 +125,12 @@
       "teaser": "Una tregua da record, una scena del crimine rubata e un sospettato tornato in piena forma nell'istante in cui il caldo è cessato.",
       "link": "/heatwave-survival",
       "image": "assets/images/heatwave-collapse.jpg"
+    },
+    {
+      "title": "MANIPOLAZIONE DELLA GIURIA",
+      "teaser": "Una giuria in visita, un verdetto compromesso e un sospettato che si è assicurato la simpatia al suo arrivo.",
+      "link": "/jury-tampering",
+      "image": "assets/images/jury-verdict-awaited.jpg"
     }
   ],
   "escapeToCountry": {
@@ -232,6 +239,37 @@
     "exhibitBCaption": "REPERTO B — IL SOSPETTATO RIVENDICA UNA SCENA DEL CRIMINE CHE NON ERA SUA",
     "exhibitCCaption": "REPERTO C — DI NUOVO IN PIENA FORMA, POCHI ISTANTI DOPO LA FINE DELLA CANICOLA",
     "stamp": "CASO RIAPERTO — SOGGETTO COMPLETAMENTE RIPRESO"
+  },
+  "juryTampering": {
+    "kicker": "Fascicolo — procedimento compromesso",
+    "title": "MANIPOLAZIONE DELLA GIURIA",
+    "locationLabel": "LUOGO",
+    "locationVal": "Residenza di famiglia — soggiorno, cucina, giurisdizione non divulgata",
+    "suspectLabel": "SOSPETTATO",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TESTIMONE",
+    "witnessVal": "La famiglia di SAWITO, in visita dal Giappone (presente per l’intera procedura)",
+    "motiveLabel": "MOVENTE",
+    "motiveVal": "Valutazione del carattere; movente compromesso in pochi secondi",
+    "p1": "La famiglia del testimone aveva viaggiato dal Giappone con l’unico scopo di valutare il carattere del sospettato e assegnargli un adeguato livello di criminalità. Il procedimento era compromesso prima ancora che i bagagli avessero lasciato il corridoio: il sospettato si assicurò la simpatia di ogni giurato nel giro di pochi secondi dalla presentazione. La sua prima delusione arrivò poco dopo, quando scoprì che il servizio di ristorazione era destinato all’intera stanza.",
+    "p2": "La delusione non durò. La sorella del testimone, cuoca esperta, preparò i pasti per tutta la visita — un fatto che il sospettato registrò immediatamente e sfruttò senza vergogna, nominando se stesso suo compagno costante ogni volta che lei era in piedi e raggiungibile.",
+    "p3": "Ogni volta che lei si sedeva, la compagnia passava di grado. Non fu presentata alcuna denuncia formale.",
+    "p4": "Il cognato del testimone arrivò presentandosi come una persona dotata di una certa autorità, generalmente abituata a essere assecondata. Questa distinzione sopravvisse al primo contatto per il tempo necessario a inginocchiarsi. Era completamente soggiogato prima di riuscire a rialzarsi.",
+    "p5": "L’unica voce contraria in una giuria per il resto unanime fu il membro più giovane presente, che impiegò diversi giorni per arrivare a un verdetto, avendo inizialmente classificato il sospettato come un giocattolo da mordere.",
+    "p6": "Le trattative si conclusero quando lei tirò fuori dei dolci propri, compreso il gelato al mochi. I termini furono accettati senza un’ulteriore udienza.",
+    "p7": "Il legame che ne seguì non è più stato contestato.",
+    "p8": "Con ogni giurato debitamente registrato, la giuria fu ufficialmente dichiarata manipolata.",
+    "p9": "Da allora il livello del personale è tornato alla precedente, inaccettabile soglia. Il sospettato è stato osservato mentre guardava con aperta diffidenza l’unico tutore rimasto, apparentemente incapace di spiegarsi la perdita improvvisa e inspiegabile di diversi servitori aggiuntivi.",
+    "exhibitACaption": "REPERTO A — SOSPETTATO IN ATTESA DI GIUDIZIO. IL VERDETTO FU SUCCESSIVAMENTE DICHIARATO PRIVO DI OGGETTO.",
+    "exhibitBCaption": "REPERTO B — IL SOSPETTATO SCOPRE CHE SI STA PREPARANDO DA MANGIARE PER TUTTI, NON SOLO PER LUI. VISIBILMENTE PERPLESSO. VISIBILMENTE DELUSO.",
+    "exhibitCCaption": "REPERTO C — VITTIMA PRINCIPALE, LA SORELLA DI SAWITO. PRIMA DESTINAZIONE DEL SOSPETTATO OGNI VOLTA CHE LEI NON DORMIVA. NON FU MAI PRESENTATA ALCUNA DENUNCIA.",
+    "exhibitDCaption": "REPERTO D — IL SOSPETTATO RIAFFERMA IL PROPRIO DOMINIO SULLA STESSA VITTIMA. COMPORTAMENTO STANDARD DEL RESTARE SOPRA.",
+    "exhibitECaption": "REPERTO E — COGNATO DEL TESTIMONE, IN PRECEDENZA PERSONA DOTATA DI AUTORITÀ, COMPLETAMENTE SOGGIOGATO POCO DOPO L’ARRIVO.",
+    "exhibitFCaption": "REPERTO F — NIPOTE, INIZIALMENTE SOSPETTOSA NEI CONFRONTI DEL SOSPETTATO. IL SOSPETTO FU IN SEGUITO RITENUTO FONDATO MA IRRILEVANTE.",
+    "exhibitGCaption": "REPERTO G — ACCORDO RAGGIUNTO. I TERMINI PREVEDEVANO GELATO AL MOCHI.",
+    "exhibitHCaption": "REPERTO H — LEGAME CONFERMATO COME INFRANGIBILE.",
+    "exhibitICaption": "REPERTO I — IL SOSPETTATO, ADATTANDOSI A UN ORGANICO RIDOTTO, METTE IN DISCUSSIONE L’AUTORITÀ DELL’UNICO TUTORE RIMASTO.",
+    "stamp": "VERDETTO PRIVO DI OGGETTO — GIURIA COMPROMESSA"
   },
   "blog": {
     "title": "REGISTRO CASI",

@@ -13,6 +13,7 @@
     "escapeCountry": "ÚTĚK NA VENKOV",
     "theftAndDestruction": "KRÁDEŽ A NIČENÍ",
     "heatwaveSurvival": "ÚTLUM VEDER",
+    "juryTampering": "MANIPULACE POROTY",
     "blog": "BLOG",
     "shop": "OBCHOD"
   },
@@ -124,6 +125,12 @@
       "teaser": "Rekordní útlum, jedno přivlastněné místo činu a podezřelý zpět v plné síle ve chvíli, kdy vedra polevila.",
       "link": "/heatwave-survival",
       "image": "assets/images/heatwave-collapse.jpg"
+    },
+    {
+      "title": "MANIPULACE POROTY",
+      "teaser": "Hostující porota, zmanipulovaný verdikt a jeden podezřelý, který si hned po příjezdu získal sympatie.",
+      "link": "/jury-tampering",
+      "image": "assets/images/jury-verdict-awaited.jpg"
     }
   ],
   "escapeToCountry": {
@@ -232,6 +239,37 @@
     "exhibitBCaption": "DŮKAZ B — PODEZŘELÝ SI PŘIVLASTŇUJE MÍSTO ČINU, KTERÉ MU NEPATŘILO",
     "exhibitCCaption": "DŮKAZ C — ZPĚT V PLNÉ SÍLE, NĚKOLIK OKAMŽIKŮ PO ODEZNĚNÍ VLNY VEDER",
     "stamp": "PŘÍPAD ZNOVU OTEVŘEN — SUBJEKT ZCELA ZOTAVEN"
+  },
+  "juryTampering": {
+    "kicker": "Spis — narušené řízení",
+    "title": "MANIPULACE POROTY",
+    "locationLabel": "MÍSTO",
+    "locationVal": "Rodinné sídlo — obývací pokoj, kuchyně, neurčená jurisdikce",
+    "suspectLabel": "PODEZŘELÝ",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "SVĚDEK",
+    "witnessVal": "Sawitova rodina, na návštěvě z Japonska (přítomna po celou dobu řízení)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Posouzení charakteru; motiv zkompromitován během několika sekund",
+    "p1": "Svědkova rodina přijela z Japonska výhradně za účelem posoudit charakter podezřelého a určit odpovídající míru kriminality. Řízení bylo narušeno ještě předtím, než zavazadla opustila chodbu: podezřelý si během několika sekund po seznámení získal sympatie každého porotce. První zklamání přišlo krátce nato, když zjistil, že občerstvení je určeno celé místnosti.",
+    "p2": "Zklamání netrvalo dlouho. Svědkova sestra, zdatná kuchařka, během návštěvy připravovala jídla — skutečnost, kterou podezřelý okamžitě zaznamenal a bezostyšně využil: kdykoli stála a byla na dosah, jmenoval se jejím stálým průvodcem.",
+    "p3": "Kdykoli se posadila, společnost povýšila na nadřízenost. Formální stížnost podána nebyla.",
+    "p4": "Svědkův švagr dorazil jako osoba s jistou autoritou, obvykle zvyklá na to, že se jí ostatní podřizují. Toto rozlišení přežilo první kontakt přibližně po dobu potřebnou k tomu, aby si klekl. Než se znovu narovnal, byl zcela podroben.",
+    "p5": "Jedinou výjimkou v jinak jednomyslné porotě byl nejmladší přítomný člen, který k verdiktu potřeboval několik dní, protože podezřelého zpočátku zařadil mezi žvýkací hračky.",
+    "p6": "Jednání skončilo, jakmile sama přinesla sladkosti, včetně mochi zmrzliny. Podmínky byly přijaty bez dalšího projednání.",
+    "p7": "Pouto, které následovalo, od té doby nikdo nezpochybnil.",
+    "p8": "Po započtení všech porotců byla porota oficiálně prohlášena za zmanipulovanou.",
+    "p9": "Počet personálu se od té doby vrátil na původní, nepřijatelnou úroveň. U podezřelého bylo pozorováno, že na svého jediného zbývajícího opatrovníka hledí s otevřenou nedůvěrou; zjevně nedokáže vysvětlit náhlou a nevysvětlitelnou ztrátu několika dalších služebníků.",
+    "exhibitACaption": "DŮKAZ A — PODEZŘELÝ ČEKÁ NA ROZSUDEK. VERDIKT BYL POZDĚJI PROHLÁŠEN ZA BEZPŘEDMĚTNÝ.",
+    "exhibitBCaption": "DŮKAZ B — PODEZŘELÝ ZJIŠŤUJE, ŽE SE JÍDLO PŘIPRAVUJE PRO VŠECHNY, NE JEN PRO NĚJ. VIDITELNĚ ZMATENÝ. VIDITELNĚ ZKLAMANÝ.",
+    "exhibitCCaption": "DŮKAZ C — HLAVNÍ OBĚŤ, SAWITOVA SESTRA. PRVNÍ MÍSTO, KAM PODEZŘELÝ MÍŘIL, KDYKOLI NESPALA. STÍŽNOST NIKDY PODÁNA NEBYLA.",
+    "exhibitDCaption": "DŮKAZ D — PODEZŘELÝ ZNOVU UTVRZUJE NADVLÁDU NAD TOUTÉŽ OBĚTÍ. STANDARDNÍ CHOVÁNÍ TYPU „ZŮSTAŇ NAHOŘE“.",
+    "exhibitECaption": "DŮKAZ E — SVĚDKŮV ŠVAGR, DŘÍVE OSOBA S AUTORITOU, KRÁTCE PO PŘÍJEZDU KOMPLETNĚ PODROBEN.",
+    "exhibitFCaption": "DŮKAZ F — NETEŘ, ZPOČÁTKU VŮČI PODEZŘELÉMU PODEZŘÍVAVÁ. PODEZŘENÍ BYLO POZDĚJI UZNÁNO ZA OPODSTATNĚNÉ, AVŠAK NEPODSTATNÉ.",
+    "exhibitGCaption": "DŮKAZ G — DOHODA UZAVŘENA. PODMÍNKY ZAHRNOVALY MOCHI ZMRZLINU.",
+    "exhibitHCaption": "DŮKAZ H — POUTO POTVRZENO JAKO NEROZLOMITELNÉ.",
+    "exhibitICaption": "DŮKAZ I — PODEZŘELÝ SE PŘIZPŮSOBUJE OMEZENÉMU POČTU PERSONÁLU A ZPOCHYBŇUJE AUTORITU SVÉHO JEDINÉHO ZBÝVAJÍCÍHO OPATROVNÍKA.",
+    "stamp": "VERDIKT BEZPŘEDMĚTNÝ — POROTA ZMANIPULOVÁNA"
   },
   "blog": {
     "title": "DENÍK PŘÍPADŮ",

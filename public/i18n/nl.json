@@ -13,6 +13,7 @@
     "escapeCountry": "ONTSNAPPING NAAR HET PLATTELAND",
     "theftAndDestruction": "DIEFSTAL EN VERNIELING",
     "heatwaveSurvival": "DE HITTEGOLFSTILTE",
+    "juryTampering": "JURYMANIPULATIE",
     "blog": "BLOG",
     "shop": "SHOP"
   },
@@ -124,6 +125,12 @@
       "teaser": "Een stilte van ongekende duur, één gestolen plaats delict, en een verdachte die op volle sterkte terugkeerde zodra de hitte brak.",
       "link": "/heatwave-survival",
       "image": "assets/images/heatwave-collapse.jpg"
+    },
+    {
+      "title": "JURYMANIPULATIE",
+      "teaser": "Een jury op bezoek, een gecompromitteerd vonnis en één verdachte die bij aankomst de sympathie wist te winnen.",
+      "link": "/jury-tampering",
+      "image": "assets/images/jury-verdict-awaited.jpg"
     }
   ],
   "escapeToCountry": {
@@ -232,6 +239,37 @@
     "exhibitBCaption": "BEWIJSSTUK B — VERDACHTE EIST EEN PLAATS DELICT OP DIE NIET DE ZIJNE WAS",
     "exhibitCCaption": "BEWIJSSTUK C — TERUG OP VOLLE STERKTE, MOMENTEN NADAT DE HITTEGOLF BRAK",
     "stamp": "ZAAK HEROPEND — VERDACHTE VOLLEDIG HERSTELD"
+  },
+  "juryTampering": {
+    "kicker": "Dossier — gecompromitteerde procedure",
+    "title": "JURYMANIPULATIE",
+    "locationLabel": "LOCATIE",
+    "locationVal": "Familiewoning — woonkamer, keuken, niet nader genoemde jurisdictie",
+    "suspectLabel": "VERDACHTE",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "GETUIGE",
+    "witnessVal": "De familie van SAWITO, op bezoek uit Japan (aanwezig gedurende de volledige procedure)",
+    "motiveLabel": "MOTIEF",
+    "motiveVal": "Karakterbeoordeling; motief binnen enkele seconden gecompromitteerd",
+    "p1": "De familie van de getuige reisde speciaal vanuit Japan af om het karakter van de verdachte te beoordelen en hem een passend niveau van criminaliteit toe te kennen. De procedure was gecompromitteerd voordat de bagage de gang had verlaten: binnen enkele seconden na de kennismaking had de verdachte de sympathie van ieder jurylid verworven. Zijn eerste teleurstelling volgde kort daarna, toen hij ontdekte dat de catering voor de hele kamer bedoeld was.",
+    "p2": "De teleurstelling hield niet aan. De zus van de getuige, een bekwame kok, bereidde tijdens het hele bezoek de maaltijden — een feit dat de verdachte onmiddellijk registreerde en schaamteloos uitbuitte door zichzelf tot haar vaste gezelschap te benoemen zodra zij rechtop en binnen bereik was.",
+    "p3": "Zodra zij ging zitten, promoveerde het gezelschap tot anciënniteit. Er werd geen formele klacht ingediend.",
+    "p4": "De schoonbroer van de getuige arriveerde met de uitstraling van iemand met enig gezag, doorgaans gewend dat anderen naar hem luisterden. Dat onderscheid hield bij het eerste contact ongeveer zo lang stand als nodig was om door de knieën te gaan. Hij was volledig onderworpen voordat hij weer overeind kwam.",
+    "p5": "Het enige lid van een verder unanieme jury dat zich niet liet overtuigen, was het jongste aanwezige jurylid. Zij had meerdere dagen nodig om tot een oordeel te komen, nadat zij de verdachte aanvankelijk als kauwspeeltje had geclassificeerd.",
+    "p6": "De onderhandelingen werden afgerond toen zij zelf meegebrachte zoetigheden tevoorschijn haalde, waaronder mochi-ijs. De voorwaarden werden zonder verdere zitting aanvaard.",
+    "p7": "De band die daarop volgde, is sindsdien niet meer betwist.",
+    "p8": "Toen ieder jurylid was verantwoord, werd de jury officieel als gemanipuleerd beschouwd.",
+    "p9": "De personeelsbezetting is sindsdien teruggekeerd naar het eerdere, onaanvaardbare niveau. De verdachte is waargenomen terwijl hij zijn enige overgebleven begeleider met openlijke argwaan bekeek, kennelijk niet in staat het plotselinge en onverklaarde verlies van meerdere extra bedienden te verklaren.",
+    "exhibitACaption": "BEWIJSSTUK A — VERDACHTE WACHT OP UITSPRAAK. HET VONNIS WERD LATER ALS NIET-TER-ZAKE DOENDE VERKLAARD.",
+    "exhibitBCaption": "BEWIJSSTUK B — VERDACHTE ONTDEKT DAT HET ETEN VOOR IEDEREEN WORDT BEREID, NIET ALLEEN VOOR HEM. ZICHTBAAR VERWARD. ZICHTBAAR TELEURGESTELD.",
+    "exhibitCCaption": "BEWIJSSTUK C — HOOFDSLACHTOFFER, DE ZUS VAN SAWITO. EERSTE AANLOOPPUNT VAN DE VERDACHTE WANNEER ZIJ NIET SLIEP. ER WERD NOOIT EEN KLACHT INGEDIEND.",
+    "exhibitDCaption": "BEWIJSSTUK D — VERDACHTE HERSTELT ZIJN DOMINANTIE OVER HETZELFDE SLACHTOFFER. STANDAARDGEDRAG VAN BOVENOP BLIJVEN.",
+    "exhibitECaption": "BEWIJSSTUK E — SCHOONBROER VAN DE GETUIGE, VOORHEEN EEN GEZAGSFIGUUR, KORT NA AANKOMST VOLLEDIG ONDERWORPEN.",
+    "exhibitFCaption": "BEWIJSSTUK F — NICHTJE, AANVANKELIJK VERDACHT OP HAAR HOEDE VOOR DE VERDACHTE. HET VERMOEDEN WERD LATER TERECHT MAAR IRRELEVANT BEVONDEN.",
+    "exhibitGCaption": "BEWIJSSTUK G — OVEREENKOMST BEREIKT. DE VOORWAARDEN HIELDEN MOCHI-IJS IN.",
+    "exhibitHCaption": "BEWIJSSTUK H — BAND BEVESTIGD ALS ONVERBREKELIJK.",
+    "exhibitICaption": "BEWIJSSTUK I — VERDACHTE, ZICH AANPASSEND AAN DE GEREDUCEERDE PERSONEELSBEZETTING, BETWIST HET GEZAG VAN ZIJN ENIGE OVERGEBLEVEN BEGELEIDER.",
+    "stamp": "VONNIS NIET-TER-ZAKE — JURY GECOMPROMITTEERD"
   },
   "blog": {
     "title": "LOGBOEK",

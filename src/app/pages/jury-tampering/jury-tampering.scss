@@ -1,0 +1,130 @@
+.page {
+  padding: 120px 32px 96px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 96px 20px 64px;
+  }
+}
+
+.kicker {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #8a8a8a;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(32px, 9vw, 52px);
+  letter-spacing: 2px;
+  margin-bottom: 36px;
+}
+
+.report {
+  border: 1px solid #2c2c2c;
+  background: #161616;
+  padding: 32px 36px;
+  min-width: 0;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  font-size: 13px;
+  margin-bottom: 28px;
+
+  .label {
+    color: #8a8a8a;
+  }
+}
+
+.photo {
+  margin: 0 0 24px;
+  border-top: 1px solid #2c2c2c;
+  border-bottom: 1px solid #2c2c2c;
+  padding-bottom: 12px;
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center center;
+    filter: grayscale(1) contrast(1.15);
+  }
+}
+
+.photo,
+.inline-exhibit {
+  figcaption {
+    margin-top: 8px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
+.body {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #cfcfcc;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+
+  p:first-child {
+    margin-top: 0;
+  }
+}
+
+.facts > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.inline-exhibit {
+  margin: 24px 0 28px;
+  padding: 18px 0 0;
+  border-top: 1px solid #2c2c2c;
+
+  img {
+    display: block;
+    width: 100%;
+    max-height: 620px;
+    object-fit: cover;
+    filter: grayscale(1) contrast(1.15);
+    border: 1px solid #2c2c2c;
+  }
+}
+
+@media (max-width: 560px) {
+  .facts {
+    grid-template-columns: 1fr;
+    gap: 4px;
+
+    .label {
+      margin-top: 10px;
+    }
+  }
+}
+
+.stamp {
+  margin-top: 28px;
+  display: inline-block;
+  border: 3px solid #eeeeec;
+  padding: 10px 18px;
+  transform: rotate(-4deg);
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+  font-size: 18px;
+}

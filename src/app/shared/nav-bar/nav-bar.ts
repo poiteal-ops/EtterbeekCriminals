@@ -13,6 +13,7 @@ const STORY_ROUTES = [
   '/escape-to-the-country',
   '/theft-and-destruction',
   '/heatwave-survival',
+  '/jury-tampering',
 ];
 
 @Component({

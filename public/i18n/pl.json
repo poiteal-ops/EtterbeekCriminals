@@ -13,6 +13,7 @@
     "escapeCountry": "UCIECZKA NA WIEŚ",
     "theftAndDestruction": "KRADZIEŻ I ZNISZCZENIE",
     "heatwaveSurvival": "ZASTÓJ PODCZAS FALI UPAŁÓW",
+    "juryTampering": "MANIPULOWANIE ŁAWĄ PRZYSIĘGŁYCH",
     "blog": "BLOG",
     "shop": "SKLEP"
   },
@@ -124,6 +125,12 @@
       "teaser": "Rekordowy zastój, przejęte miejsce przestępstwa i podejrzany, który odzyskał pełnię sił w chwili ustąpienia upałów.",
       "link": "/heatwave-survival",
       "image": "assets/images/heatwave-collapse.jpg"
+    },
+    {
+      "title": "MANIPULOWANIE ŁAWĄ PRZYSIĘGŁYCH",
+      "teaser": "Wizyta ławy przysięgłych, skompromitowany werdykt i jeden podejrzany, który zdobył sympatię natychmiast po przybyciu.",
+      "link": "/jury-tampering",
+      "image": "assets/images/jury-verdict-awaited.jpg"
     }
   ],
   "escapeToCountry": {
@@ -232,6 +239,37 @@
     "exhibitBCaption": "DOWÓD B — PODEJRZANY PRZYWŁASZCZA SOBIE MIEJSCE PRZESTĘPSTWA, KTÓRE NIE BYŁO JEGO",
     "exhibitCCaption": "DOWÓD C — Z POWROTEM W PEŁNI SIŁ, CHWILĘ PO USTĄPIENIU FALI UPAŁÓW",
     "stamp": "SPRAWA WZNOWIONA — PODEJRZANY W PEŁNI ODZYSKAŁ SIŁY"
+  },
+  "juryTampering": {
+    "kicker": "Akta sprawy — postępowanie skompromitowane",
+    "title": "MANIPULOWANIE ŁAWĄ PRZYSIĘGŁYCH",
+    "locationLabel": "MIEJSCE",
+    "locationVal": "Dom rodzinny — salon, kuchnia, jurysdykcja nieujawniona",
+    "suspectLabel": "PODEJRZANY",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "ŚWIADEK",
+    "witnessVal": "Rodzina Sawito, z wizytą z Japonii (obecna przez całe postępowanie)",
+    "motiveLabel": "MOTYW",
+    "motiveVal": "Ocena charakteru; motyw skompromitowany w ciągu kilku sekund",
+    "p1": "Rodzina świadka przyjechała z Japonii wyłącznie po to, by ocenić charakter podejrzanego i przypisać mu odpowiedni poziom przestępczości. Postępowanie zostało skompromitowane, zanim bagaże opuściły korytarz: podejrzany zdobył sympatię każdego ławnika w ciągu kilku sekund od przedstawienia. Jego pierwsze rozczarowanie nastąpiło niedługo później, gdy odkrył, że ustalenia cateringowe obejmowały całą salę.",
+    "p2": "Rozczarowanie nie trwało długo. Siostra świadka, biegła kucharka, przygotowywała posiłki przez cały okres wizyty — fakt, który podejrzany natychmiast odnotował i bezwstydnie wykorzystał, mianując się jej stałym towarzyszem za każdym razem, gdy stała i znajdowała się w zasięgu.",
+    "p3": "Gdy tylko siadała, towarzystwo awansowało do rangi zwierzchnictwa. Nie złożono formalnej skargi.",
+    "p4": "Szwagier świadka przybył jako osoba o pewnym autorytecie, na ogół przyzwyczajona, że inni podporządkowują się jej woli. To rozróżnienie przetrwało pierwszy kontakt mniej więcej tyle, ile zajęło mu uklęknięcie. Został całkowicie obezwładniony, zanim odzyskał pion.",
+    "p5": "Jedyną osobą w skądinąd jednomyślnej ławie przysięgłych, która wstrzymała się z werdyktem, była najmłodsza obecna członkini. Potrzebowała kilku dni, by go wydać, ponieważ początkowo zaklasyfikowała podejrzanego jako gryzak.",
+    "p6": "Negocjacje zakończyły się, gdy sama przyniosła słodycze, w tym lody mochi. Warunki przyjęto bez dalszego przesłuchania.",
+    "p7": "Zawarta wówczas więź nie była od tamtej pory kwestionowana.",
+    "p8": "Po rozliczeniu wszystkich ławników ławę oficjalnie uznano za zmanipulowaną.",
+    "p9": "Poziom obsady powrócił od tego czasu do wcześniejszej, niedopuszczalnej normy. Podejrzanego obserwowano, gdy z otwartą podejrzliwością przyglądał się jedynemu pozostałemu opiekunowi, najwyraźniej niezdolny wyjaśnić nagłego i niewytłumaczalnego zniknięcia kilku dodatkowych służących.",
+    "exhibitACaption": "DOWÓD A — PODEJRZANY OCZEKUJE NA OSĄD. WERDYKT PÓŹNIEJ UZNANY ZA BEZPRZEDMIOTOWY.",
+    "exhibitBCaption": "DOWÓD B — PODEJRZANY ODKRYWA, ŻE JEDZENIE PRZYGOTOWYWANE JEST DLA WSZYSTKICH, NIE TYLKO DLA NIEGO. WYRAŹNIE ZAKŁOPOTANY. WYRAŹNIE ROZCZAROWANY.",
+    "exhibitCCaption": "DOWÓD C — GŁÓWNA OFIARA, SIOSTRA SAWITO. PIERWSZY PUNKT KONTAKTU PODEJRZANEGO, GDY TYLKO NIE SPAŁA. NIGDY NIE ZŁOŻONO SKARGI.",
+    "exhibitDCaption": "DOWÓD D — PODEJRZANY PONOWNIE USTALA DOMINACJĘ NAD TĄ SAMĄ OFIARĄ. STANDARDOWE ZACHOWANIE „ZOSTAŃ NA GÓRZE”.",
+    "exhibitECaption": "DOWÓD E — SZWAGIER ŚWIADKA, WCZEŚNIEJ OSOBA O AUTORYTECIE, CAŁKOWICIE OBEZWŁADNIONY KRÓTKO PO PRZYBYCIU.",
+    "exhibitFCaption": "DOWÓD F — SIOSTRZENICA, POCZĄTKOWO PODEJRZLIWA WOBEC PODEJRZANEGO. PODEJRZENIE PÓŹNIEJ UZNANO ZA UZASADNIONE, LECZ NIEISTOTNE.",
+    "exhibitGCaption": "DOWÓD G — OSIĄGNIĘTO POROZUMIENIE. WARUNKI OBEJMOWAŁY LODY MOCHI.",
+    "exhibitHCaption": "DOWÓD H — WIĘŹ POTWIERDZONA JAKO NIEMOŻLIWA DO ZERWANIA.",
+    "exhibitICaption": "DOWÓD I — PODEJRZANY, PRZYSTOSOWUJĄC SIĘ DO ZMNIEJSZONEJ OBSADY, KWESTIONUJE AUTORYTET JEDYNEGO POZOSTAŁEGO OPIEKUNA.",
+    "stamp": "WERDYKT BEZPRZEDMIOTOWY — ŁAWA PRZYSIĘGŁYCH SKOMPROMITOWANA"
   },
   "blog": {
     "title": "REJESTR SPRAW",

@@ -13,6 +13,7 @@
     "escapeCountry": "EVADARE LA ȚARĂ",
     "theftAndDestruction": "FURT ȘI DISTRUGERE",
     "heatwaveSurvival": "ACALMIA DIN TIMPUL CANICULEI",
+    "juryTampering": "MANIPULAREA JURIULUI",
     "blog": "BLOG",
     "shop": "MAGAZIN"
   },
@@ -124,6 +125,12 @@
       "teaser": "O acalmie record, o revendicare nejustificată a unui loc al faptei, și un suspect revenit la forța maximă chiar în clipa în care s-a domolit canicula.",
       "link": "/heatwave-survival",
       "image": "assets/images/heatwave-collapse.jpg"
+    },
+    {
+      "title": "MANIPULAREA JURIULUI",
+      "teaser": "Un juriu în vizită, un verdict compromis și un suspect care a obținut simpatia la sosire.",
+      "link": "/jury-tampering",
+      "image": "assets/images/jury-verdict-awaited.jpg"
     }
   ],
   "escapeToCountry": {
@@ -232,6 +239,37 @@
     "exhibitBCaption": "PROBA B — SUSPECTUL REVENDICĂ UN LOC AL FAPTEI CARE NU ERA AL LUI",
     "exhibitCCaption": "PROBA C — REVENIT LA FORȚA MAXIMĂ, LA CÂTEVA CLIPE DUPĂ CE CANICULA S-A ÎNCHEIAT",
     "stamp": "CAZ REDESCHIS — SUBIECT COMPLET RECUPERAT"
+  },
+  "juryTampering": {
+    "kicker": "Dosar de caz — procedură compromisă",
+    "title": "MANIPULAREA JURIULUI",
+    "locationLabel": "LOCAȚIE",
+    "locationVal": "Locuința familiei — sufragerie, bucătărie, jurisdicție nedezvăluită",
+    "suspectLabel": "SUSPECT",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "MARTOR",
+    "witnessVal": "Familia lui Sawito, în vizită din Japonia (prezentă pe durata întregii proceduri)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Evaluarea caracterului; motiv compromis în câteva secunde",
+    "p1": "Familia martorului a călătorit din Japonia cu scopul expres de a evalua caracterul suspectului și de a-i atribui un nivel corespunzător de criminalitate. Procedura a fost compromisă înainte ca bagajele să iasă din hol: suspectul a câștigat simpatia fiecărui jurat în câteva secunde de la prezentare. Prima sa dezamăgire a venit la scurt timp după aceea, când a descoperit că aranjamentele de catering se extindeau la întreaga încăpere.",
+    "p2": "Dezamăgirea nu a durat. Sora martorului, o bucătăreasă talentată, a pregătit mesele pe durata întregii vizite — fapt pe care suspectul l-a înregistrat imediat și l-a exploatat fără rușine, numindu-se însoțitorul ei permanent ori de câte ori aceasta era în picioare și putea fi abordată.",
+    "p3": "Ori de câte ori se așeza, compania trecea la un nivel de superioritate. Nu a fost depusă nicio plângere oficială.",
+    "p4": "Cumnatul martorului a sosit prezentându-se ca o persoană cu o anumită autoritate, în general obișnuită ca ceilalți să se conformeze. Această distincție a supraviețuit primului contact aproximativ cât i-a trebuit să îngenuncheze. A fost complet dominat înainte să-și recapete poziția verticală.",
+    "p5": "Singurul membru care a opus rezistență într-un juriu altfel unanim a fost cea mai tânără persoană prezentă, care a avut nevoie de câteva zile pentru a ajunge la un verdict, după ce clasificase inițial suspectul drept jucărie de ros.",
+    "p6": "Negocierile s-au încheiat când ea a scos propriile dulciuri, inclusiv înghețată mochi. Condițiile au fost acceptate fără o nouă audiere.",
+    "p7": "Legătura formată ulterior nu a mai fost contestată de atunci.",
+    "p8": "După ce fiecare jurat a fost identificat, completul a fost declarat oficial manipulat.",
+    "p9": "Nivelul personalului a revenit între timp la nivelul său anterior, inacceptabil. Suspectul a fost observat privindu-și cu suspiciune deschisă singurul îngrijitor rămas, aparent incapabil să explice dispariția bruscă și inexplicabilă a mai multor servitori suplimentari.",
+    "exhibitACaption": "PROBA A — SUSPECTUL AȘTEAPTĂ JUDECAREA. VERDICTUL A FOST DECLARAT ULTERIOR FĂRĂ OBIECT.",
+    "exhibitBCaption": "PROBA B — SUSPECTUL DESCOPERĂ CĂ MÂNCAREA ESTE PREGĂTITĂ PENTRU TOATĂ LUMEA, NU DOAR PENTRU EL. VIZIBIL PERPLEX. VIZIBIL DEZAMĂGIT.",
+    "exhibitCCaption": "PROBA C — VICTIMA PRINCIPALĂ, SORA LUI SAWITO. PRIMA DESTINAȚIE A SUSPECTULUI ORI DE CÂTE ORI NU DORMEA. NU A FOST DEPUSĂ NICIODATĂ VREO PLÂNGERE.",
+    "exhibitDCaption": "PROBA D — SUSPECTUL ÎȘI REAFIRMĂ DOMINAȚIA ASUPRA ACELEIAȘI VICTIME. COMPORTAMENT STANDARD DE TIP „RĂMÂI DEASUPRA”.",
+    "exhibitECaption": "PROBA E — CUMNATUL MARTORULUI, ANTERIOR O PERSOANĂ CU AUTORITATE, COMPLET DOMINAT LA SCURT TIMP DUPĂ SOSIRE.",
+    "exhibitFCaption": "PROBA F — NEPOATA, INIȚIAL SUSPICIOASĂ FAȚĂ DE SUSPECT. SUSPICIUNEA A FOST CONSIDERATĂ ULTERIOR JUSTIFICATĂ, DAR IRRELEVANTĂ.",
+    "exhibitGCaption": "PROBA G — ACORD ÎNCHEIAT. CONDIȚIILE AU INCLUS ÎNGHEȚATĂ MOCHI.",
+    "exhibitHCaption": "PROBA H — LEGĂTURĂ CONFIRMATĂ CA IMPOSIBIL DE RUPT.",
+    "exhibitICaption": "PROBA I — SUSPECTUL, ADAPTÂNDU-SE LA NIVELURI REDUSE DE PERSONAL, PUNE LA ÎNDOIALĂ AUTORITATEA SINGURULUI SĂU ÎNGRIJITOR RĂMAS.",
+    "stamp": "VERDICT FĂRĂ OBIECT — JURIU COMPROMIS"
   },
   "blog": {
     "title": "REGISTRUL CAZURILOR",

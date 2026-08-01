@@ -8,6 +8,7 @@ import { Couch } from './pages/couch/couch';
 import { EscapeToTheCountry } from './pages/escape-to-the-country/escape-to-the-country';
 import { HeatwaveSurvival } from './pages/heatwave-survival/heatwave-survival';
 import { Home } from './pages/home/home';
+import { JuryTampering } from './pages/jury-tampering/jury-tampering';
 import { Pigeon } from './pages/pigeon/pigeon';
 import { Shop } from './pages/shop/shop';
 import { ShopItemPage } from './pages/shop-item/shop-item';
@@ -25,6 +26,7 @@ const pageRoutes: Routes = [
   { path: 'escape-to-the-country', component: EscapeToTheCountry },
   { path: 'theft-and-destruction', component: TheftAndDestruction },
   { path: 'heatwave-survival', component: HeatwaveSurvival },
+  { path: 'jury-tampering', component: JuryTampering },
   { path: 'blog', component: Blog },
   { path: 'shop', component: Shop },
   { path: 'shop/:slug', component: ShopItemPage },
