@@ -22,6 +22,12 @@
   image-rendering: pixelated;
 }
 
+.fallback-banner__lines {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 @media (max-width: 480px) {
   .fallback-banner__gif {
     display: none;
