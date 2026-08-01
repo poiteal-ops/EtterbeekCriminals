@@ -235,7 +235,7 @@
   },
   "blog": {
     "title": "REJESTR SPRAW",
-    "subtitle": "24 comiesięczne wpisy — dwa lata nieprzerwanej obserwacji, sprawa 001-CR pozostaje otwarta"
+    "subtitle": "25 comiesięcznych wpisów — dwa lata nieprzerwanej obserwacji, sprawa 001-CR pozostaje otwarta"
   },
   "blogPosts": [
     {
@@ -403,6 +403,14 @@
       "title": "PRZEGLĄD STATUSU PO DWÓCH LATACH",
       "body": "Dwa lata od przyjęcia sprawy. Bez poprawy. Ale i bez żalu. Nawet podejrzaną Pikette, w jeden z rzadkich spokojnych wieczorów, przyłapano na dzieleniu kanapy. Sprawa pozostaje otwarta.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "NAJCICHSZY ODNOTOWANY TYDZIEŃ",
+      "body": "Wielodniowe ostrzeżenie przed upałem całkowicie uziemiło Podejrzanego — leżał płasko na dywanie w salonie, z łapami ułożonymi pod dziwnymi kątami; przez najdłuższy okres od rozpoczęcia obserwacji nie popełniono żadnych wykroczeń. Cisza skończyła się w chwili, gdy pogoda się załamała: Podejrzany przeniósł się na skrawek trawy, uznał zapas porzuconych butelek za miejsce zbrodni własnej roboty i bez wyjaśnienia wznowił pełną działalność. Pełny raport złożono osobno pod tytułem „ZASTÓJ PODCZAS FALI UPAŁÓW”.",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

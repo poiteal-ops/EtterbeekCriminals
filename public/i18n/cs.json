@@ -235,7 +235,7 @@
   },
   "blog": {
     "title": "DENÍK PŘÍPADŮ",
-    "subtitle": "24 měsíčních záznamů — dva roky nepřetržitého sledování, případ 001-CR zůstává otevřený"
+    "subtitle": "25 měsíčních záznamů — dva roky nepřetržitého sledování, případ 001-CR zůstává otevřený"
   },
   "blogPosts": [
     {
@@ -403,6 +403,14 @@
       "title": "DVOULETÉ HODNOCENÍ STAVU",
       "body": "Dva roky od přijetí do péče. Žádná náprava. Ale ani žádná lítost. Dokonce i podezřelá Pikette byla při vzácném klidném večeru přistižena, jak sdílí pohovku. Případ zůstává otevřený.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "NEJTIŠŠÍ TÝDEN V ZÁZNAMECH",
+      "body": "Vícedenní výstraha před vedrem držela Subjekt zcela při zemi — ležel rozplácnutý na koberci v obýváku, končetiny v podivných úhlech, bez jediného přestupku po nejdelší dobu od zahájení sledování. Klid skončil v okamžiku, kdy se počasí zlomilo: Subjekt se přesunul na kus trávy, označil hromádku odhozených lahví za místo činu, které si vytvořil sám, a bez vysvětlení obnovil plný provoz. Úplná zpráva je založena samostatně pod názvem „Vedrem vynucený klid.“",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

@@ -235,7 +235,7 @@
   },
   "blog": {
     "title": "ÜGYNAPLÓ",
-    "subtitle": "24 havi bejegyzés — két év folyamatos megfigyelés, a 001-CR ügy továbbra is nyitva"
+    "subtitle": "25 havi bejegyzés — két év folyamatos megfigyelés, a 001-CR ügy továbbra is nyitva"
   },
   "blogPosts": [
     {
@@ -403,6 +403,14 @@
       "title": "KÉTÉVES ÁLLAPOTFELMÉRÉS",
       "body": "Két év telt el a befogadás óta. Nincs javulás. De megbánás sincs. Még Pikette gyanúsítottat is, egy ritka csendes estén, a kanapén osztozva találták. Az ügy továbbra is nyitva.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "A VALAHA FELJEGYZETT LEGHALKABB HÉT",
+      "body": "A több napon át tartó hőségriadó teljesen a földre kényszerítette az Alanyt — hanyatt fekve hevert a nappali szőnyegén, végtagjai furcsa szögekben álltak, és a megfigyelés kezdete óta a leghosszabb időszak telt el kihágás nélkül. A csendnek abban a pillanatban vége szakadt, hogy megváltozott az időjárás: az Alany átköltözött egy füves foltra, a kidobott palackok halmát saját készítésű bűnügyi helyszínként kisajátította, majd minden magyarázat nélkül teljes üzemmódban folytatta a műveleteket. A teljes jelentést külön, „A hőhullám csendje” címen iktattuk.",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

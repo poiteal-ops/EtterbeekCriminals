@@ -235,7 +235,7 @@
   },
   "blog": {
     "title": "REGISTRO CASI",
-    "subtitle": "24 voci mensili — due anni di sorveglianza continua, il caso 001-CR resta aperto"
+    "subtitle": "25 voci mensili — due anni di sorveglianza continua, il caso 001-CR resta aperto"
   },
   "blogPosts": [
     {
@@ -403,6 +403,14 @@
       "title": "BILANCIO DEI DUE ANNI",
       "body": "Due anni dalla presa in carico. Nessuna riforma. Ma nemmeno alcun rimpianto. Persino la sospettata Pikette, in una rara serata tranquilla, è stata trovata a condividere il divano. Il caso resta aperto.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "LA SETTIMANA PIÙ TRANQUILLA DI SEMPRE",
+      "body": "Un’allerta per il caldo durata diversi giorni ha messo completamente fuori combattimento il Soggetto — disteso sul tappeto del soggiorno, con gli arti ad angoli insoliti e nessuna infrazione commessa per il periodo più lungo dall’inizio della sorveglianza. La tregua è finita non appena il tempo è cambiato: il Soggetto si è trasferito su una chiazza d’erba, ha rivendicato una scorta di bottiglie abbandonate come scena del crimine di propria creazione e ha ripreso a pieno regime tutte le operazioni senza fornire spiegazioni. Rapporto completo depositato separatamente alla voce « La pausa dell’ondata di calore. »",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

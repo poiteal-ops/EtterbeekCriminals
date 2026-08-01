@@ -235,7 +235,7 @@
   },
   "blog": {
     "title": "FALLLOGG",
-    "subtitle": "24 månatliga poster — två års kontinuerlig övervakning, fall 001-CR förblir öppet"
+    "subtitle": "25 månatliga poster — två års kontinuerlig övervakning, fall 001-CR förblir öppet"
   },
   "blogPosts": [
     {
@@ -403,6 +403,14 @@
       "title": "TVÅÅRSSTATUSGENOMGÅNG",
       "body": "Två år sedan intag. Ingen förbättring. Men heller ingen ånger. Till och med den misstänkta Pikette hittades, under en sällsynt lugn kväll, dela soffan. Fallet förblir öppet.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "DEN LUGNASTE VECKAN SOM UPPMÄTTS",
+      "body": "En flera dagar lång värmevarning fick Subjektet att ligga helt stilla — utsträckt på vardagsrumsmattan, med lemmarna i märkliga vinklar och utan ett enda brott begånget under den längsta sammanhängande perioden sedan övervakningen började. Lugnperioden tog slut i samma ögonblick som vädret bröt: Subjektet förflyttade sig till en gräsplätt, gjorde anspråk på ett förråd kasserade flaskor som en brottsplats skapad av honom själv och återupptog full verksamhet utan förklaring. Den fullständiga rapporten arkiverades separat under ”VÄRMEBÖLJANS LUGN”.",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

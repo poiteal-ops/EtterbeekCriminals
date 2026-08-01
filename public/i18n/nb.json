@@ -235,7 +235,7 @@
   },
   "blog": {
     "title": "SAKSLOGG",
-    "subtitle": "24 månedlige oppføringer — to år med kontinuerlig overvåking, sak 001-CR er fortsatt åpen"
+    "subtitle": "25 månedlige oppføringer — to år med kontinuerlig overvåking, sak 001-CR er fortsatt åpen"
   },
   "blogPosts": [
     {
@@ -403,6 +403,14 @@
       "title": "TOÅRSSTATUSGJENNOMGANG",
       "body": "To år siden inntak. Ingen bedring. Men heller ingen anger. Selv den mistenkte Pikette ble, en sjelden rolig kveld, funnet delende sofaen. Saken er fortsatt åpen.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "DEN ROLIGSTE UKEN SOM NOENSINNE ER REGISTRERT",
+      "body": "Et varmevarsel over flere dager satte den mistenkte helt ut av spill — flatt på ryggen på stueteppet, med lemmene i merkelige vinkler, uten en eneste forseelse i den lengste rolige perioden siden overvåkingen begynte. Stillheten tok slutt idet været slo om: Den mistenkte forflyttet seg til en gressflekk, gjorde en haug med kasserte flasker til et åsted han selv hadde skapt, og gjenopptok full virksomhet uten forklaring. Hele rapporten er arkivert separat under «Hetebølgens stillhet». ",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

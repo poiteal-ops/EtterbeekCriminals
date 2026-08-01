@@ -235,7 +235,7 @@
   },
   "blog": {
     "title": "LOGBOEK",
-    "subtitle": "24 maandelijkse notities — twee jaar ononderbroken observatie, dossier 001-CR blijft open"
+    "subtitle": "25 maandelijkse notities — twee jaar ononderbroken observatie, dossier 001-CR blijft open"
   },
   "blogPosts": [
     {
@@ -403,6 +403,14 @@
       "title": "TWEEJAARLIJKSE EVALUATIE",
       "body": "Twee jaar sinds de opname. Geen beterschap. Ook geen spijt. Zelfs verdachte Pikette werd op een zeldzame rustige avond aangetroffen terwijl ze de zetel deelde. Het dossier blijft open.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "DE STILSTE WEEK OOIT VASTGELEGD",
+      "body": "Een meerdaagse hittewaarschuwing legde Subject volledig plat — languit op het woonkamerkleed, met de ledematen in vreemde hoeken, zonder overtredingen gedurende de langste periode sinds het toezicht begon. De luwte eindigde zodra het weer omsloeg: Subject verhuisde naar een stukje gras, eigende zich een voorraad afgedankte flessen toe als een plaats delict van eigen makelij en hervatte zonder uitleg de volledige operatie. Volledig rapport afzonderlijk opgenomen onder « De hittegolfstilte ».",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

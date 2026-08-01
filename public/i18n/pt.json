@@ -235,7 +235,7 @@
   },
   "blog": {
     "title": "REGISTO DO CASO",
-    "subtitle": "24 entradas mensais — dois anos de vigilância contínua, o processo 001-CR permanece em aberto"
+    "subtitle": "25 entradas mensais — dois anos de vigilância contínua, o processo 001-CR permanece em aberto"
   },
   "blogPosts": [
     {
@@ -403,6 +403,14 @@
       "title": "BALANÇO DOS DOIS ANOS",
       "body": "Dois anos desde a admissão. Sem reforma. Mas também sem arrependimentos. Até a suspeita Pikette, numa rara noite tranquila, foi encontrada a partilhar o sofá. O caso permanece em aberto.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "A SEMANA MAIS CALMA DE QUE HÁ REGISTO",
+      "body": "Um alerta de calor com vários dias deixou o Sujeito completamente fora de combate — estendido sobre a alcatifa da sala, com os membros em ângulos estranhos, sem cometer qualquer infração durante o período mais longo desde o início da vigilância. A calmaria terminou assim que o tempo mudou: o Sujeito mudou-se para um pedaço de relva, reivindicou um esconderijo de garrafas descartadas como cena de crime da sua própria autoria e retomou todas as operações sem qualquer explicação. Relatório completo arquivado separadamente sob « A Calmaria da Onda de Calor. »",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

@@ -235,7 +235,7 @@
   },
   "blog": {
     "title": "JOURNAL DE BORD",
-    "subtitle": "Dossier 001-CR — 24 entrées mensuelles, deux ans de surveillance continue, le dossier reste ouvert"
+    "subtitle": "Dossier 001-CR — 25 entrées mensuelles, deux ans de surveillance continue, le dossier reste ouvert"
   },
   "blogPosts": [
     {
@@ -403,6 +403,14 @@
       "title": "BILAN DES DEUX ANS",
       "body": "Deux ans depuis la prise en charge. Aucune réforme. Aucun regret non plus. Même la suspecte Pikette, lors d’une rare soirée calme, a été retrouvée partageant le canapé. Le dossier reste ouvert.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "LA SEMAINE LA PLUS CALME JAMAIS CONSIGNÉE",
+      "body": "Une alerte canicule de plusieurs jours a cloué le Sujet au sol — étendu sur le tapis du salon, les membres dans des angles improbables, aucune infraction commise pendant la plus longue période de calme depuis le début de la surveillance. L’accalmie a pris fin dès que le temps s’est rafraîchi : le Sujet s’est déplacé vers une parcelle d’herbe, s’est approprié un stock de bouteilles abandonnées comme scène de crime de sa propre fabrication, puis a repris ses opérations à plein régime sans la moindre explication. Rapport complet classé séparément sous « L’Accalmie caniculaire. »",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

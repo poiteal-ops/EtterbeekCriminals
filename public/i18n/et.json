@@ -235,7 +235,7 @@
   },
   "blog": {
     "title": "JUHTUMIPÄEVIK",
-    "subtitle": "24 igakuist kannet — kaks aastat pidevat jälgimist, toimik 001-CR jääb avatuks"
+    "subtitle": "25 igakuist kannet — kaks aastat pidevat jälgimist, toimik 001-CR jääb avatuks"
   },
   "blogPosts": [
     {
@@ -403,6 +403,14 @@
       "title": "KAHEAASTANE OLUKORRA ÜLEVAADE",
       "body": "Kaks aastat vastuvõtust. Paranemist ei ole. Kahetsust samuti mitte. Isegi kahtlusalune Pikette leiti ühel harval vaiksel õhtul diivanit jagamas. Toimik jääb avatuks.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "REKORDILISELT VAIKNE NÄDAL",
+      "body": "Mitmepäevane kuumahoiatus sundis Subjekti täielikult pikali — elutoa vaibal, jäsemed veidrate nurkade all, ühtegi rikkumist toime panemata pikema aja jooksul kui kunagi pärast jälgimise algust. Vaikus lõppes hetkel, mil ilm muutus: Subjekt siirdus murulapile, kuulutas äravisatud pudelite hulga enda loodud kuriteopaigaks ja jätkas täiel määral tegevust ilma selgituseta. Täielik aruanne on eraldi esitatud pealkirja „Kuumalaine vaikus” all.",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

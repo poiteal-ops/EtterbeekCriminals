@@ -235,7 +235,7 @@
   },
   "blog": {
     "title": "REGISTRUL CAZURILOR",
-    "subtitle": "24 de intrări lunare — doi ani de supraveghere continuă, cazul 001-CR rămâne deschis"
+    "subtitle": "25 de intrări lunare — doi ani de supraveghere continuă, cazul 001-CR rămâne deschis"
   },
   "blogPosts": [
     {
@@ -403,6 +403,14 @@
       "title": "BILANȚ LA DOI ANI",
       "body": "Doi ani de la preluare. Nicio reformă. Dar nici regrete. Chiar și suspecta Pikette, într-o seară rară de liniște, a fost găsită împărțind canapeaua. Cazul rămâne deschis.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "CEA MAI LINIȘTITĂ SĂPTĂMÂNĂ ÎNREGISTRATĂ",
+      "body": "O avertizare de caniculă emisă pentru mai multe zile l-a țintuit complet pe Subiect — întins pe covorul din sufragerie, cu membrele în unghiuri ciudate, fără nicio abatere comisă pentru cea mai lungă perioadă de la începutul supravegherii. Acalmia s-a încheiat în clipa în care vremea s-a stricat: Subiectul s-a mutat pe o bucată de iarbă, a declarat un teanc de sticle aruncate drept propria sa scenă a crimei și și-a reluat întreaga activitate fără explicații. Raportul complet a fost depus separat sub titlul „ACALMIA DIN TIMPUL CANICULEI”.",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

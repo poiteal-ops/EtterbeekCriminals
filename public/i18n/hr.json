@@ -235,7 +235,7 @@
   },
   "blog": {
     "title": "DNEVNIK PREDMETA",
-    "subtitle": "24 mjesečna zapisa — dvije godine neprekidnog nadzora, predmet 001-CR ostaje otvoren"
+    "subtitle": "25 mjesečnih zapisa — dvije godine neprekidnog nadzora, predmet 001-CR ostaje otvoren"
   },
   "blogPosts": [
     {
@@ -403,6 +403,14 @@
       "title": "DVOGODIŠNJI PREGLED STANJA",
       "body": "Dvije godine od prijema. Nema reforme. Nema ni kajanja. Čak je i osumnjičena Pikette, jedne rijetke mirne večeri, zatečena kako dijeli kauč. Predmet ostaje otvoren.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "NAJTIŠI TJEDAN IKAD ZABILJEŽEN",
+      "body": "Višednevno upozorenje na toplinski val potpuno je prizemljilo Subjekta — ležao je na leđima na tepihu u dnevnoj sobi, s udovima pod čudnim kutovima, bez ijednog prekršaja tijekom najduljeg zatišja od početka nadzora. Zatišje je završilo čim se vrijeme promijenilo: Subjekt se preselio na travnatu površinu, proglasio hrpu odbačenih boca mjestom zločina po vlastitoj izradi i bez objašnjenja nastavio s punim operacijama. Cjelovito izvješće zasebno je podneseno pod naslovom „Zatišje toplinskog vala.“",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

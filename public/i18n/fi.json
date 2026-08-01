@@ -235,7 +235,7 @@
   },
   "blog": {
     "title": "TAPAUSPÄIVÄKIRJA",
-    "subtitle": "24 kuukausittaista merkintää — kaksi vuotta jatkuvaa valvontaa, tapaus 001-CR pysyy avoimena"
+    "subtitle": "25 kuukausittaista merkintää — kaksi vuotta jatkuvaa valvontaa, tapaus 001-CR pysyy avoimena"
   },
   "blogPosts": [
     {
@@ -403,6 +403,14 @@
       "title": "KAHDEN VUODEN TILANNEKATSAUS",
       "body": "Kaksi vuotta vastaanotosta. Ei parannusta. Ei myöskään katumusta. Jopa epäilty Pikette löydettiin harvinaisena rauhallisena iltana jakamassa sohvaa. Tapaus pysyy avoimena.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "HISTORIAN HILJAISIN VIIKKO",
+      "body": "Useita päiviä kestänyt hellevaroitus pysäytti Kohteen täysin — Kohde makasi olohuoneen matolla raajat oudoissa kulmissa, eikä syyllistynyt yhteenkään rikkomukseen pisimmän yhtäjaksoisen ajanjakson aikana valvonnan alkamisen jälkeen. Hiljaisuus päättyi heti sään muuttuessa: Kohde siirtyi ruohikolle, julisti hylättyjen pullojen kätkön itse luomakseen rikospaikaksi ja jatkoi täysimittaista toimintaansa ilman selitystä. Täydellinen raportti on arkistoitu erikseen nimellä ”Helleaallon tyyni hetki.”",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {
