@@ -1,4 +1,7 @@
 {
+  "common": {
+    "fallbackBanner": "Beklager, vi arbejder på det — indtil videre kun tilgængeligt på engelsk."
+  },
   "nav": {
     "home": "HJEM",
     "about": "OM OS",

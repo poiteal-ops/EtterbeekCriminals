@@ -1,4 +1,7 @@
 {
+  "common": {
+    "fallbackBanner": "Vabandame, tegeleme sellega — praegu saadaval ainult inglise keeles."
+  },
   "nav": {
     "home": "AVALEHT",
     "about": "MEIST",

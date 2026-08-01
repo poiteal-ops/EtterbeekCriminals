@@ -1,4 +1,7 @@
 {
+  "common": {
+    "fallbackBanner": "Elnézést, dolgozunk rajta — egyelőre csak angolul érhető el."
+  },
   "nav": {
     "home": "KEZDŐLAP",
     "about": "GYANÚSÍTOTTAK",
