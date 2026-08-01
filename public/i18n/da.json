@@ -12,6 +12,7 @@
     "trainRide": "TOGTUR",
     "escapeCountry": "FLUGTEN TIL LANDET",
     "theftAndDestruction": "TYVERI OG ØDELÆGGELSE",
+    "heatwaveSurvival": "PAUSEN I VARMEBØLGEN",
     "blog": "BLOG",
     "shop": "BUTIK"
   },
@@ -52,11 +53,26 @@
     "confidential": "FORTROLIGT"
   },
   "rapSheet": [
-    { "case": "CASE 001", "charge": "Gentagne overtrædelser af vigepligten på delte gangstier." },
-    { "case": "CASE 002", "charge": "Besiddelse af uautoriseret begejstring i nærheden af postbuddet." },
-    { "case": "CASE 003", "charge": "Sammensværgelse om at skjule beviser (én sok, baghave, uopklaret)." },
-    { "case": "CASE 004", "charge": "Forstyrrelse af den offentlige orden, kl. 6.15, dagligt, ingen tegn på ophør." },
-    { "case": "CASE 005", "charge": "Overfald med dødbringende halevift." }
+    {
+      "case": "CASE 001",
+      "charge": "Gentagne overtrædelser af vigepligten på delte gangstier."
+    },
+    {
+      "case": "CASE 002",
+      "charge": "Besiddelse af uautoriseret begejstring i nærheden af postbuddet."
+    },
+    {
+      "case": "CASE 003",
+      "charge": "Sammensværgelse om at skjule beviser (én sok, baghave, uopklaret)."
+    },
+    {
+      "case": "CASE 004",
+      "charge": "Forstyrrelse af den offentlige orden, kl. 6.15, dagligt, ingen tegn på ophør."
+    },
+    {
+      "case": "CASE 005",
+      "charge": "Overfald med dødbringende halevift."
+    }
   ],
   "story": {
     "kicker": "Sagsakt 001-CR — baggrund",
@@ -102,6 +118,12 @@
       "teaser": "En sko, en brødskive og én ukendelig fodbold — genfundet hver for sig, men lagt den samme mistænkte til last.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "PAUSEN I VARMEBØLGEN",
+      "teaser": "En rekordlang pause, et gerningssted, han tog æren for, og en mistænkt tilbage i fuld styrke i det øjeblik, varmen brød.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -194,9 +216,26 @@
     "exhibitCCaption": "BEVIS C — FODBOLDEN, EFTER.",
     "stamp": "MØNSTER BEKRÆFTET — SAGEN FORBLIVER ÅBEN"
   },
+  "heatwaveSurvival": {
+    "kicker": "Vejrrelateret hændelsesrapport",
+    "title": "PAUSEN I VARMEBØLGEN",
+    "locationLabel": "STED",
+    "locationVal": "Etterbeek, indendørs og udendørs patruljeruter",
+    "suspectLabel": "MISTÆNKT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "VIDNE",
+    "witnessVal": "Sawito (til stede hele tiden, tilbød vand, tilbuddet blev afvist)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "En varmeadvarsel på flere dage, efterfulgt af et presserende behov for at tage æren for forbrydelser, der ikke var hans",
+    "p1": "Da hedebølgen nåede Etterbeek sidst i juli, faldt den kriminelle aktivitet til det laveste registrerede niveau i sagens historie. Subjektet blev fundet liggende fladt på ryggen på stuens tæppe i længere perioder, med lemmerne løftet i mærkelige vinkler, tilsyneladende ude af stand til at samle energi til så meget som en mindre forseelse. Efterforskerne bemærkede, at dette var den første længerevarende stille periode, siden overvågningen begyndte.",
+    "p2": "Pausen holdt ikke. Så snart temperaturerne tillod ham at gå udenfor igen, fandt den mistænkte en bunke kasserede flasker på et stykke græs — bevis på misgerninger, han ikke havde haft del i — og begyndte at urinere på hele bunken, tilsyneladende for at gøre gerningsstedet til sit eget. Da varmen endelig brød, var hans energi vendt fuldt tilbage, og han genoptog sine operationer uden tøven eller forklaring.",
+    "exhibitBCaption": "BEVIS B — MISTÆNKT GØR ET GERNINGSSTED, DER IKKE VAR HANS, TIL SIT EGET",
+    "exhibitCCaption": "BEVIS C — TILBAGE I FULD STYRKE FÅ ØJEBLIKKE EFTER HEDEBØLGEN BRØD",
+    "stamp": "SAGEN GENÅBNET — SUBJEKTET FULDT RESTITUERET"
+  },
   "blog": {
     "title": "SAGSLOG",
-    "subtitle": "24 månedlige indlæg — to års kontinuerlig overvågning, sag 001-CR forbliver åben"
+    "subtitle": "25 månedlige indlæg — to års kontinuerlig overvågning, sag 001-CR forbliver åben"
   },
   "blogPosts": [
     {
@@ -364,6 +403,14 @@
       "title": "TOÅRS STATUSGENNEMGANG",
       "body": "To år siden indtagelse. Ingen forbedring. Men heller ingen fortrydelse. Selv den mistænkte Pikette blev, en sjælden stille aften, fundet delende sofaen. Sagen forbliver åben.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "DEN STILLESTE UGE NOGENSINDE REGISTRERET",
+      "body": "En flerdages varmeadvarsel satte Subjektet helt ud af spillet — fladt på stuegulvet, med lemmerne i mærkelige vinkler og uden nogen forseelser i den længste periode siden overvågningen begyndte. Stilheden sluttede i det øjeblik, vejret slog om: Subjektet flyttede sig til et stykke græs, erklærede en bunke kasserede flasker for et gerningssted, han selv havde skabt, og genoptog fuld drift uden forklaring. Den fulde rapport er indgivet særskilt under »Hedebølgedvalen.«",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

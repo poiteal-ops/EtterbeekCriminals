@@ -239,7 +239,7 @@ export const EN_CONTENT: SiteContent = {
   },
   blog: {
     title: 'CASE LOG',
-    subtitle: '24 monthly entries — two years of continuous surveillance, case 001-CR remains open',
+    subtitle: '25 monthly entries — just over two years of continuous surveillance, case 001-CR remains open',
   },
   blogPosts: [
     {
@@ -407,6 +407,14 @@ export const EN_CONTENT: SiteContent = {
       title: 'TWO-YEAR STATUS REVIEW',
       body: 'Two years since intake. No reform. No regrets either. Even suspect Pikette, on a rare quiet evening, was found sharing the couch. Case remains open.',
       image: 'assets/images/blog-belly-flop.jpg',
+    },
+    {
+      date: 'JUL 2026',
+      case: 'CASE LOG 025',
+      title: 'THE QUIETEST WEEK ON RECORD',
+      body: 'A multi-day heat advisory grounded Subject entirely — flat on the living room rug, limbs at odd angles, no offenses committed for the longest stretch since surveillance began. The lull ended the moment the weather broke: Subject relocated to a patch of grass, claimed a stash of discarded bottles as a crime scene of his own making, and resumed full operations without explanation. Full report filed separately under "The Heatwave Lull."',
+      image: 'assets/images/heatwave-collapse.jpg',
+      link: '/heatwave-survival',
     },
   ],
   shop: {

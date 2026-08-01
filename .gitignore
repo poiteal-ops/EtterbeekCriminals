@@ -42,6 +42,7 @@ __screenshots__/
 /docs
 
 # Local AI tooling, not part of the site
+/AGENTS.md
 /.claude/
 /.agents/
 

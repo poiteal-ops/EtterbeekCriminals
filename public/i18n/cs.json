@@ -12,6 +12,7 @@
     "trainRide": "JÍZDA VLAKEM",
     "escapeCountry": "ÚTĚK NA VENKOV",
     "theftAndDestruction": "KRÁDEŽ A NIČENÍ",
+    "heatwaveSurvival": "ÚTLUM VEDER",
     "blog": "BLOG",
     "shop": "OBCHOD"
   },
@@ -52,11 +53,26 @@
     "confidential": "DŮVĚRNÉ"
   },
   "rapSheet": [
-    { "case": "CASE 001", "charge": "Opakované nedání přednosti na sdílených stezkách." },
-    { "case": "CASE 002", "charge": "Přechovávání neschváleného nadšení v blízkosti pošťáka." },
-    { "case": "CASE 003", "charge": "Spolčení za účelem ukrytí důkazů (jedna ponožka, zahrada, nevyřešeno)." },
-    { "case": "CASE 004", "charge": "Rušení nočního klidu, 6:15 ráno, denně, bez známek ustání." },
-    { "case": "CASE 005", "charge": "Napadení smrtícím vrtěním ocasu." }
+    {
+      "case": "CASE 001",
+      "charge": "Opakované nedání přednosti na sdílených stezkách."
+    },
+    {
+      "case": "CASE 002",
+      "charge": "Přechovávání neschváleného nadšení v blízkosti pošťáka."
+    },
+    {
+      "case": "CASE 003",
+      "charge": "Spolčení za účelem ukrytí důkazů (jedna ponožka, zahrada, nevyřešeno)."
+    },
+    {
+      "case": "CASE 004",
+      "charge": "Rušení nočního klidu, 6:15 ráno, denně, bez známek ustání."
+    },
+    {
+      "case": "CASE 005",
+      "charge": "Napadení smrtícím vrtěním ocasu."
+    }
   ],
   "story": {
     "kicker": "Spis 001-CR — pozadí případu",
@@ -102,6 +118,12 @@
       "teaser": "Bota, krajíc chleba a jeden fotbalový míč k nepoznání — nalezeny odděleně, přisouzeny témuž podezřelému.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "ÚTLUM VEDER",
+      "teaser": "Rekordní útlum, jedno přivlastněné místo činu a podezřelý zpět v plné síle ve chvíli, kdy vedra polevila.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -194,9 +216,26 @@
     "exhibitCCaption": "DŮKAZ C — FOTBALOVÝ MÍČ, POTÉ.",
     "stamp": "VZOREC POTVRZEN — PŘÍPAD ZŮSTÁVÁ OTEVŘENÝ"
   },
+  "heatwaveSurvival": {
+    "kicker": "Zpráva o incidentu souvisejícím s počasím",
+    "title": "ÚTLUM VEDER",
+    "locationLabel": "MÍSTO",
+    "locationVal": "Etterbeek, vnitřní i venkovní hlídkové trasy",
+    "suspectLabel": "PODEZŘELÝ",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "SVĚDEK",
+    "witnessVal": "Sawito (přítomen po celou dobu, nabídl vodu, ta byla odmítnuta)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Několikadenní výstraha před vedrem, po níž následovala naléhavá potřeba připsat si zásluhy za zločiny, které nespáchal",
+    "p1": "Když koncem července dorazila vlna veder do Etterbeeku, klesla trestná činnost na nejnižší zaznamenanou úroveň v historii případu. Subjekt byl po delší dobu nalezen ležící na zádech na koberci v obývacím pokoji, s končetinami zvednutými v podivných úhlech, zjevně neschopen sebrat energii ani na drobný přestupek. Vyšetřovatelé poznamenali, že šlo o první delší období klidu od zahájení sledování.",
+    "p2": "Klid nevydržel. Jakmile teploty dovolily subjektu znovu vyjít ven, objevil na kousku trávy hromadu odhozených lahví — důkaz přečinů, s nimiž neměl nic společného — a začal močit na celou hromadu, zjevně aby si místo činu přivlastnil. Než se počasí zcela umoudřilo, energie se mu vrátila v plné síle a bez prodlení či vysvětlení znovu zahájil své operace.",
+    "exhibitBCaption": "DŮKAZ B — PODEZŘELÝ SI PŘIVLASTŇUJE MÍSTO ČINU, KTERÉ MU NEPATŘILO",
+    "exhibitCCaption": "DŮKAZ C — ZPĚT V PLNÉ SÍLE, NĚKOLIK OKAMŽIKŮ PO ODEZNĚNÍ VLNY VEDER",
+    "stamp": "PŘÍPAD ZNOVU OTEVŘEN — SUBJEKT ZCELA ZOTAVEN"
+  },
   "blog": {
     "title": "DENÍK PŘÍPADŮ",
-    "subtitle": "24 měsíčních záznamů — dva roky nepřetržitého sledování, případ 001-CR zůstává otevřený"
+    "subtitle": "25 měsíčních záznamů — dva roky nepřetržitého sledování, případ 001-CR zůstává otevřený"
   },
   "blogPosts": [
     {
@@ -364,6 +403,14 @@
       "title": "DVOULETÉ HODNOCENÍ STAVU",
       "body": "Dva roky od přijetí do péče. Žádná náprava. Ale ani žádná lítost. Dokonce i podezřelá Pikette byla při vzácném klidném večeru přistižena, jak sdílí pohovku. Případ zůstává otevřený.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "NEJTIŠŠÍ TÝDEN V ZÁZNAMECH",
+      "body": "Vícedenní výstraha před vedrem držela Subjekt zcela při zemi — ležel rozplácnutý na koberci v obýváku, končetiny v podivných úhlech, bez jediného přestupku po nejdelší dobu od zahájení sledování. Klid skončil v okamžiku, kdy se počasí zlomilo: Subjekt se přesunul na kus trávy, označil hromádku odhozených lahví za místo činu, které si vytvořil sám, a bez vysvětlení obnovil plný provoz. Úplná zpráva je založena samostatně pod názvem „Vedrem vynucený klid.“",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

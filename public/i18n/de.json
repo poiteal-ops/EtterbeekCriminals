@@ -235,7 +235,7 @@
   },
   "blog": {
     "title": "FALLREGISTER",
-    "subtitle": "24 monatliche Einträge — zwei Jahre lückenlose Überwachung, Fall 001-CR bleibt offen"
+    "subtitle": "25 monatliche Einträge — zwei Jahre lückenlose Überwachung, Fall 001-CR bleibt offen"
   },
   "blogPosts": [
     {
@@ -403,6 +403,14 @@
       "title": "ZWEIJAHRESBILANZ",
       "body": "Zwei Jahre seit der Aufnahme. Keine Besserung. Aber auch keine Reue. Selbst die Verdächtige Pikette wurde an einem seltenen ruhigen Abend beim Teilen des Sofas angetroffen. Der Fall bleibt offen.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "DIE RUHIGSTE WOCHE SEIT BEGINN DER AUFZEICHNUNGEN",
+      "body": "Eine mehrtägige Hitzewarnung setzte das Subjekt vollständig außer Gefecht — flach auf dem Wohnzimmerteppich, die Gliedmaßen in seltsamen Winkeln, ohne jeden Verstoß über den längsten Zeitraum seit Beginn der Überwachung. Die Flaute endete in dem Moment, als das Wetter umschlug: Das Subjekt begab sich auf eine Rasenfläche, erklärte einen Vorrat weggeworfener Flaschen zum Tatort seiner eigenen Machart und nahm ohne jede Erklärung den Vollbetrieb wieder auf. Vollständiger Bericht separat unter « Die Hitzewellen-Flaute » abgelegt.",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

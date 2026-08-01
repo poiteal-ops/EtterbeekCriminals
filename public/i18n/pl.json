@@ -12,6 +12,7 @@
     "trainRide": "PODRÓŻ POCIĄGIEM",
     "escapeCountry": "UCIECZKA NA WIEŚ",
     "theftAndDestruction": "KRADZIEŻ I ZNISZCZENIE",
+    "heatwaveSurvival": "ZASTÓJ PODCZAS FALI UPAŁÓW",
     "blog": "BLOG",
     "shop": "SKLEP"
   },
@@ -52,11 +53,26 @@
     "confidential": "POUFNE"
   },
   "rapSheet": [
-    { "case": "CASE 001", "charge": "Wielokrotne nieustępowanie pierwszeństwa na wspólnych ścieżkach spacerowych." },
-    { "case": "CASE 002", "charge": "Posiadanie nieautoryzowanego entuzjazmu w pobliżu listonosza." },
-    { "case": "CASE 003", "charge": "Zmowa w celu ukrycia dowodów (jedna skarpetka, ogród, sprawa nierozwiązana)." },
-    { "case": "CASE 004", "charge": "Zakłócanie spokoju publicznego, godz. 6:15, codziennie, bez oznak ustąpienia." },
-    { "case": "CASE 005", "charge": "Napaść z użyciem śmiercionośnego machania ogonem." }
+    {
+      "case": "CASE 001",
+      "charge": "Wielokrotne nieustępowanie pierwszeństwa na wspólnych ścieżkach spacerowych."
+    },
+    {
+      "case": "CASE 002",
+      "charge": "Posiadanie nieautoryzowanego entuzjazmu w pobliżu listonosza."
+    },
+    {
+      "case": "CASE 003",
+      "charge": "Zmowa w celu ukrycia dowodów (jedna skarpetka, ogród, sprawa nierozwiązana)."
+    },
+    {
+      "case": "CASE 004",
+      "charge": "Zakłócanie spokoju publicznego, godz. 6:15, codziennie, bez oznak ustąpienia."
+    },
+    {
+      "case": "CASE 005",
+      "charge": "Napaść z użyciem śmiercionośnego machania ogonem."
+    }
   ],
   "story": {
     "kicker": "Akta sprawy 001-CR — tło sprawy",
@@ -102,6 +118,12 @@
       "teaser": "But, kromka chleba i jedna piłka nożna nie do rozpoznania — odzyskane osobno, przypisane temu samemu podejrzanemu.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "ZASTÓJ PODCZAS FALI UPAŁÓW",
+      "teaser": "Rekordowy zastój, przejęte miejsce przestępstwa i podejrzany, który odzyskał pełnię sił w chwili ustąpienia upałów.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -194,9 +216,26 @@
     "exhibitCCaption": "DOWÓD C — PIŁKA NOŻNA, PO ZDARZENIU.",
     "stamp": "SCHEMAT POTWIERDZONY — SPRAWA POZOSTAJE OTWARTA"
   },
+  "heatwaveSurvival": {
+    "kicker": "Raport z incydentu związanego z pogodą",
+    "title": "ZASTÓJ PODCZAS FALI UPAŁÓW",
+    "locationLabel": "MIEJSCE",
+    "locationVal": "Etterbeek, wewnętrzne i zewnętrzne trasy patrolowe",
+    "suspectLabel": "PODEJRZANY",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "ŚWIADEK",
+    "witnessVal": "Sawito (obecny przez cały czas, zaoferował wodę, podejrzany odmówił)",
+    "motiveLabel": "MOTYW",
+    "motiveVal": "Wielodniowe ostrzeżenie przed upałami, a następnie pilna potrzeba przypisania sobie zasług za przestępstwa, z którymi nie miał nic wspólnego",
+    "p1": "Kiedy pod koniec lipca fala upałów dotarła do Etterbeek, aktywność przestępcza spadła do najniższego odnotowanego poziomu w historii sprawy. Podejrzanego przez dłuższy czas znajdowano leżącego płasko na plecach na dywanie w salonie, z kończynami uniesionymi pod dziwnymi kątami, najwyraźniej niezdolnego do zebrania energii nawet na drobne wykroczenie. Śledczy odnotowali, że był to pierwszy dłuższy okres spokoju od rozpoczęcia obserwacji.",
+    "p2": "Zastój nie trwał długo. Gdy tylko temperatury pozwoliły mu ponownie wyjść na zewnątrz, podejrzany znalazł na skrawku trawy stos porzuconych butelek — dowody przewinień, w których nie brał udziału — po czym oddał mocz na cały stos, najwyraźniej aby uznać miejsce przestępstwa za własne. Gdy pogoda całkowicie się poprawiła, energia wróciła mu w pełni i bez zwłoki ani wyjaśnienia wznowił działalność.",
+    "exhibitBCaption": "DOWÓD B — PODEJRZANY PRZYWŁASZCZA SOBIE MIEJSCE PRZESTĘPSTWA, KTÓRE NIE BYŁO JEGO",
+    "exhibitCCaption": "DOWÓD C — Z POWROTEM W PEŁNI SIŁ, CHWILĘ PO USTĄPIENIU FALI UPAŁÓW",
+    "stamp": "SPRAWA WZNOWIONA — PODEJRZANY W PEŁNI ODZYSKAŁ SIŁY"
+  },
   "blog": {
     "title": "REJESTR SPRAW",
-    "subtitle": "24 comiesięczne wpisy — dwa lata nieprzerwanej obserwacji, sprawa 001-CR pozostaje otwarta"
+    "subtitle": "25 comiesięcznych wpisów — dwa lata nieprzerwanej obserwacji, sprawa 001-CR pozostaje otwarta"
   },
   "blogPosts": [
     {
@@ -364,6 +403,14 @@
       "title": "PRZEGLĄD STATUSU PO DWÓCH LATACH",
       "body": "Dwa lata od przyjęcia sprawy. Bez poprawy. Ale i bez żalu. Nawet podejrzaną Pikette, w jeden z rzadkich spokojnych wieczorów, przyłapano na dzieleniu kanapy. Sprawa pozostaje otwarta.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "NAJCICHSZY ODNOTOWANY TYDZIEŃ",
+      "body": "Wielodniowe ostrzeżenie przed upałem całkowicie uziemiło Podejrzanego — leżał płasko na dywanie w salonie, z łapami ułożonymi pod dziwnymi kątami; przez najdłuższy okres od rozpoczęcia obserwacji nie popełniono żadnych wykroczeń. Cisza skończyła się w chwili, gdy pogoda się załamała: Podejrzany przeniósł się na skrawek trawy, uznał zapas porzuconych butelek za miejsce zbrodni własnej roboty i bez wyjaśnienia wznowił pełną działalność. Pełny raport złożono osobno pod tytułem „ZASTÓJ PODCZAS FALI UPAŁÓW”.",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

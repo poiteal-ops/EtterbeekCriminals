@@ -12,6 +12,7 @@
     "trainRide": "TÅGRESA",
     "escapeCountry": "FLYKT TILL LANDET",
     "theftAndDestruction": "STÖLD OCH FÖRSTÖRELSE",
+    "heatwaveSurvival": "VÄRMEBÖLJANS LUGN",
     "blog": "BLOGG",
     "shop": "BUTIK"
   },
@@ -52,11 +53,26 @@
     "confidential": "KONFIDENTIELLT"
   },
   "rapSheet": [
-    { "case": "CASE 001", "charge": "Upprepad underlåtenhet att lämna företräde på delade promenadstråk." },
-    { "case": "CASE 002", "charge": "Innehav av otillåten entusiasm i brevbärarens närhet." },
-    { "case": "CASE 003", "charge": "Konspiration för att gömma bevis (en strumpa, bakgården, olöst fall)." },
-    { "case": "CASE 004", "charge": "Störande av allmän ordning, kl. 6:15, dagligen, inga tecken på att upphöra." },
-    { "case": "CASE 005", "charge": "Misshandel med dödlig svansviftning." }
+    {
+      "case": "CASE 001",
+      "charge": "Upprepad underlåtenhet att lämna företräde på delade promenadstråk."
+    },
+    {
+      "case": "CASE 002",
+      "charge": "Innehav av otillåten entusiasm i brevbärarens närhet."
+    },
+    {
+      "case": "CASE 003",
+      "charge": "Konspiration för att gömma bevis (en strumpa, bakgården, olöst fall)."
+    },
+    {
+      "case": "CASE 004",
+      "charge": "Störande av allmän ordning, kl. 6:15, dagligen, inga tecken på att upphöra."
+    },
+    {
+      "case": "CASE 005",
+      "charge": "Misshandel med dödlig svansviftning."
+    }
   ],
   "story": {
     "kicker": "Fallakt 001-CR — bakgrund",
@@ -102,6 +118,12 @@
       "teaser": "En sko, en brödskiva och en oigenkännlig fotboll — återfunna var för sig, skyllda på samma misstänkte.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "VÄRMEBÖLJANS LUGN",
+      "teaser": "Ett rekordlångt lugn, en övertagen brottsplats och en misstänkt tillbaka i full styrka i samma ögonblick som värmeböljan bröt.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -194,9 +216,26 @@
     "exhibitCCaption": "BEVIS C — FOTBOLLEN, EFTERÅT.",
     "stamp": "MÖNSTRET BEKRÄFTAT — FALLET FÖRBLIR ÖPPET"
   },
+  "heatwaveSurvival": {
+    "kicker": "Väderrelaterad incidentrapport",
+    "title": "VÄRMEBÖLJANS LUGN",
+    "locationLabel": "PLATS",
+    "locationVal": "Etterbeek, patrullvägar inomhus och utomhus",
+    "suspectLabel": "MISSTÄNKT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "VITTNE",
+    "witnessVal": "Sawito (närvarande hela tiden, erbjöd vatten, vilket avböjdes)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "En värmevarning som pågick i flera dagar, följd av ett akut behov av att återta äran för brott som inte var hans",
+    "p1": "När värmeböljan nådde Etterbeek i slutet av juli sjönk den kriminella aktiviteten till den lägsta noterade nivån i ärendets historia. Den misstänkte påträffades liggande platt på rygg på vardagsrumsmattan under längre perioder, med lemmarna upplyfta i märkliga vinklar, till synes oförmögen att uppbåda energi till ens en mindre förseelse. Utredarna noterade att detta var den första längre lugna perioden sedan övervakningen inleddes.",
+    "p2": "Lugnet varade inte. Så snart temperaturerna tillät honom att gå ut igen hittade den misstänkte en hög kasserade flaskor på en gräsplätt — bevis på missgärningar som han inte hade någon del i — och började urinera på hela högen, uppenbarligen för att göra brottsplatsen till sin egen. När vädret till slut slog om helt hade energin återvänt, och han återupptog verksamheten utan dröjsmål eller förklaring.",
+    "exhibitBCaption": "BEVIS B — DEN MISSTÄNKTE GÖR EN BROTTSPLATS SOM INTE VAR HANS TILL SIN EGEN",
+    "exhibitCCaption": "BEVIS C — TILLBAKA I FULL STYRKA, ÖGONBLICKET EFTER ATT VÄRMEBÖLJAN BRÖT",
+    "stamp": "ÄRENDET ÖPPNAT PÅ NYTT — DEN MISSTÄNKTE HELT ÅTERSTÄLLD"
+  },
   "blog": {
     "title": "FALLLOGG",
-    "subtitle": "24 månatliga poster — två års kontinuerlig övervakning, fall 001-CR förblir öppet"
+    "subtitle": "25 månatliga poster — två års kontinuerlig övervakning, fall 001-CR förblir öppet"
   },
   "blogPosts": [
     {
@@ -364,6 +403,14 @@
       "title": "TVÅÅRSSTATUSGENOMGÅNG",
       "body": "Två år sedan intag. Ingen förbättring. Men heller ingen ånger. Till och med den misstänkta Pikette hittades, under en sällsynt lugn kväll, dela soffan. Fallet förblir öppet.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "DEN LUGNASTE VECKAN SOM UPPMÄTTS",
+      "body": "En flera dagar lång värmevarning fick Subjektet att ligga helt stilla — utsträckt på vardagsrumsmattan, med lemmarna i märkliga vinklar och utan ett enda brott begånget under den längsta sammanhängande perioden sedan övervakningen började. Lugnperioden tog slut i samma ögonblick som vädret bröt: Subjektet förflyttade sig till en gräsplätt, gjorde anspråk på ett förråd kasserade flaskor som en brottsplats skapad av honom själv och återupptog full verksamhet utan förklaring. Den fullständiga rapporten arkiverades separat under ”VÄRMEBÖLJANS LUGN”.",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {

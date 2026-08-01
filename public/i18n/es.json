@@ -235,7 +235,7 @@
   },
   "blog": {
     "title": "REGISTRO DE CASOS",
-    "subtitle": "24 entradas mensuales — dos años de vigilancia continua, el expediente 001-CR sigue abierto"
+    "subtitle": "25 entradas mensuales — dos años de vigilancia continua, el expediente 001-CR sigue abierto"
   },
   "blogPosts": [
     {
@@ -403,6 +403,14 @@
       "title": "REVISIÓN DE LOS DOS AÑOS",
       "body": "Dos años desde el ingreso. Ninguna reforma. Ningún arrepentimiento tampoco. Hasta la sospechosa Pikette, en una rara tarde tranquila, fue hallada compartiendo el sofá. El caso sigue abierto.",
       "image": "assets/images/blog-belly-flop.jpg"
+    },
+    {
+      "date": "JUL 2026",
+      "case": "CASE LOG 025",
+      "title": "LA SEMANA MÁS TRANQUILA JAMÁS REGISTRADA",
+      "body": "Una alerta de calor de varios días dejó al Sujeto completamente fuera de combate — tumbado sobre la alfombra del salón, con las extremidades en ángulos extraños y sin cometer ninguna infracción durante el periodo más largo desde que comenzó la vigilancia. La tregua terminó en cuanto cambió el tiempo: el Sujeto se trasladó a una parcela de césped, reclamó un alijo de botellas desechadas como escena del crimen de su propia invención y reanudó todas sus operaciones sin explicación alguna. Informe completo archivado por separado bajo «La tregua de la ola de calor.»",
+      "image": "assets/images/heatwave-collapse.jpg",
+      "link": "/heatwave-survival"
     }
   ],
   "shop": {
