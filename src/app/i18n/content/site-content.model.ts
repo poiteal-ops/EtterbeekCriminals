@@ -9,6 +9,7 @@ export interface BlogPost {
   title: string;
   body: string;
   image?: string;
+  link?: string;
 }
 
 export interface ShopItem {
