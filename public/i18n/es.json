@@ -1,4 +1,7 @@
 {
+  "common": {
+    "fallbackBanner": "Lo sentimos, estamos trabajando en ello — por ahora solo disponible en inglés."
+  },
   "nav": {
     "home": "INICIO",
     "about": "SOBRE NOSOTROS",
@@ -9,6 +12,7 @@
     "trainRide": "EN TREN",
     "escapeCountry": "ESCAPADA AL CAMPO",
     "theftAndDestruction": "ROBO Y DESTRUCCIÓN",
+    "heatwaveSurvival": "LA TREGUA DEL CALOR",
     "blog": "BLOG",
     "shop": "TIENDA"
   },
@@ -49,11 +53,26 @@
     "confidential": "CONFIDENCIAL"
   },
   "rapSheet": [
-    { "case": "CASE 001", "charge": "Negativa reiterada a ceder el paso en senderos compartidos." },
-    { "case": "CASE 002", "charge": "Posesión de entusiasmo no autorizado cerca del cartero." },
-    { "case": "CASE 003", "charge": "Conspiración para enterrar pruebas (un calcetín, jardín, sin resolver)." },
-    { "case": "CASE 004", "charge": "Alteración del orden público, 6:15 de la mañana, a diario, sin señales de cesar." },
-    { "case": "CASE 005", "charge": "Agresión con meneo de cola mortífero." }
+    {
+      "case": "CASE 001",
+      "charge": "Negativa reiterada a ceder el paso en senderos compartidos."
+    },
+    {
+      "case": "CASE 002",
+      "charge": "Posesión de entusiasmo no autorizado cerca del cartero."
+    },
+    {
+      "case": "CASE 003",
+      "charge": "Conspiración para enterrar pruebas (un calcetín, jardín, sin resolver)."
+    },
+    {
+      "case": "CASE 004",
+      "charge": "Alteración del orden público, 6:15 de la mañana, a diario, sin señales de cesar."
+    },
+    {
+      "case": "CASE 005",
+      "charge": "Agresión con meneo de cola mortífero."
+    }
   ],
   "story": {
     "kicker": "Expediente 001-CR — antecedentes",
@@ -99,6 +118,12 @@
       "teaser": "Un zapato, una rebanada de pan y un balón de fútbol irreconocible — recuperados por separado, todos atribuidos al mismo sospechoso.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "LA TREGUA DEL CALOR",
+      "teaser": "Una tregua récord, una escena del crimen robada y un sospechoso a plena potencia en cuanto remitió el calor.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -190,6 +215,23 @@
     "exhibitBCaption": "PRUEBA B — EL PAN. SIN PISTAS SOBRE LAS REBANADAS RESTANTES.",
     "exhibitCCaption": "PRUEBA C — EL BALÓN, DESPUÉS.",
     "stamp": "PATRÓN CONFIRMADO — EL CASO SIGUE ABIERTO"
+  },
+  "heatwaveSurvival": {
+    "kicker": "Informe de incidente meteorológico",
+    "title": "LA TREGUA DEL CALOR",
+    "locationLabel": "LUGAR",
+    "locationVal": "Etterbeek, rutas de patrulla interiores y exteriores",
+    "suspectLabel": "SOSPECHOSO",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TESTIGO",
+    "witnessVal": "Sawito (presente en todo momento, ofreció agua, rechazada)",
+    "motiveLabel": "MÓVIL",
+    "motiveVal": "Un aviso de calor de varios días, seguido de una urgente necesidad de reclamar la autoría de delitos ajenos",
+    "p1": "Cuando la ola de calor alcanzó Etterbeek a finales de julio, la actividad delictiva cayó al nivel más bajo registrado en la historia del expediente. El sujeto fue hallado tumbado boca arriba sobre la alfombra del salón durante largos periodos, con las extremidades levantadas en ángulos extraños, aparentemente incapaz de reunir la energía necesaria ni para un delito menor. Los investigadores señalaron que se trataba del primer periodo de calma sostenida desde el inicio de la vigilancia.",
+    "p2": "La tregua no duró. En cuanto las temperaturas le permitieron volver al exterior, el sujeto localizó un alijo de botellas abandonadas sobre un parche de hierba —pruebas de fechorías en las que no había tenido parte alguna— y procedió a orinar sobre el montón entero, aparentemente para reclamar la escena del crimen como propia. Para cuando el tiempo remitió por completo, su energía había vuelto en su totalidad, y reanudó las operaciones sin demora ni explicación.",
+    "exhibitBCaption": "PRUEBA B — EL SOSPECHOSO RECLAMANDO UNA ESCENA DEL CRIMEN QUE NO ERA SUYA",
+    "exhibitCCaption": "PRUEBA C — DE VUELTA A PLENA POTENCIA, MOMENTOS DESPUÉS DE QUE REMITIERA LA OLA DE CALOR",
+    "stamp": "CASO REABIERTO — SUJETO TOTALMENTE RECUPERADO"
   },
   "blog": {
     "title": "REGISTRO DE CASOS",

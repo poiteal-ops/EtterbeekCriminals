@@ -1,4 +1,7 @@
 {
+  "common": {
+    "fallbackBanner": "Ci scusiamo, ci stiamo lavorando — per ora disponibile solo in inglese."
+  },
   "nav": {
     "home": "HOME",
     "about": "CHI SIAMO",
@@ -9,6 +12,7 @@
     "trainRide": "IN TRENO",
     "escapeCountry": "FUGA IN CAMPAGNA",
     "theftAndDestruction": "FURTO E DISTRUZIONE",
+    "heatwaveSurvival": "LA TREGUA DELLA CANICOLA",
     "blog": "BLOG",
     "shop": "NEGOZIO"
   },
@@ -49,11 +53,26 @@
     "confidential": "RISERVATO"
   },
   "rapSheet": [
-    { "case": "CASE 001", "charge": "Reiterato mancato rispetto della precedenza sui sentieri condivisi." },
-    { "case": "CASE 002", "charge": "Possesso di entusiasmo non autorizzato nei pressi del postino." },
-    { "case": "CASE 003", "charge": "Cospirazione per occultamento di prove (un calzino, giardino, caso irrisolto)." },
-    { "case": "CASE 004", "charge": "Disturbo della quiete pubblica, ore 6:15, quotidiano, nessun segno di cedimento." },
-    { "case": "CASE 005", "charge": "Aggressione con coda scodinzolante letale." }
+    {
+      "case": "CASE 001",
+      "charge": "Reiterato mancato rispetto della precedenza sui sentieri condivisi."
+    },
+    {
+      "case": "CASE 002",
+      "charge": "Possesso di entusiasmo non autorizzato nei pressi del postino."
+    },
+    {
+      "case": "CASE 003",
+      "charge": "Cospirazione per occultamento di prove (un calzino, giardino, caso irrisolto)."
+    },
+    {
+      "case": "CASE 004",
+      "charge": "Disturbo della quiete pubblica, ore 6:15, quotidiano, nessun segno di cedimento."
+    },
+    {
+      "case": "CASE 005",
+      "charge": "Aggressione con coda scodinzolante letale."
+    }
   ],
   "story": {
     "kicker": "Fascicolo 001-CR — contesto",
@@ -99,6 +118,12 @@
       "teaser": "Una scarpa, una fetta di pane e un pallone reso irriconoscibile — ritrovati separatamente, attribuiti allo stesso sospettato.",
       "link": "/theft-and-destruction",
       "image": "assets/images/theft-shoe.jpg"
+    },
+    {
+      "title": "LA TREGUA DELLA CANICOLA",
+      "teaser": "Una tregua da record, una scena del crimine rubata e un sospettato tornato in piena forma nell'istante in cui il caldo è cessato.",
+      "link": "/heatwave-survival",
+      "image": "assets/images/heatwave-collapse.jpg"
     }
   ],
   "escapeToCountry": {
@@ -190,6 +215,23 @@
     "exhibitBCaption": "REPERTO B — IL PANE. NESSUNA TRACCIA DELLE FETTE RIMANENTI.",
     "exhibitCCaption": "REPERTO C — IL PALLONE, DOPO.",
     "stamp": "SCHEMA CONFERMATO — IL CASO RESTA APERTO"
+  },
+  "heatwaveSurvival": {
+    "kicker": "Rapporto d'incidente meteorologico",
+    "title": "LA TREGUA DELLA CANICOLA",
+    "locationLabel": "LUOGO",
+    "locationVal": "Etterbeek, percorsi di pattugliamento interni ed esterni",
+    "suspectLabel": "SOSPETTATO",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "TESTIMONE",
+    "witnessVal": "Sawito (presente dall'inizio alla fine, ha offerto acqua, rifiutata)",
+    "motiveLabel": "MOVENTE",
+    "motiveVal": "Un'allerta canicola di più giorni, seguita dall'urgente necessità di rivendicare il merito di crimini non suoi",
+    "p1": "Quando la canicola ha raggiunto Etterbeek verso la fine di luglio, l'attività criminale è scesa al livello più basso mai registrato nella storia del fascicolo. Il soggetto è stato ritrovato disteso sulla schiena sul tappeto del salotto per periodi prolungati, con gli arti sollevati in angolazioni improbabili, apparentemente incapace di racimolare l'energia necessaria anche solo per un reato minore. Gli inquirenti hanno segnalato che si è trattato del primo periodo di quiete prolungata dall'inizio della sorveglianza.",
+    "p2": "La tregua non è durata. Non appena le temperature gli hanno permesso di tornare all'aperto, il soggetto ha individuato un deposito di bottiglie abbandonate su un lembo d'erba — prove di misfatti a cui non aveva preso parte — e ha proceduto a urinare sull'intero mucchio, apparentemente per rivendicarne la scena del crimine come propria. Quando il caldo è finalmente cessato del tutto, la sua energia era tornata al completo, e ha ripreso le operazioni senza indugio né spiegazione.",
+    "exhibitBCaption": "REPERTO B — IL SOSPETTATO RIVENDICA UNA SCENA DEL CRIMINE CHE NON ERA SUA",
+    "exhibitCCaption": "REPERTO C — DI NUOVO IN PIENA FORMA, POCHI ISTANTI DOPO LA FINE DELLA CANICOLA",
+    "stamp": "CASO RIAPERTO — SOGGETTO COMPLETAMENTE RIPRESO"
   },
   "blog": {
     "title": "REGISTRO CASI",
