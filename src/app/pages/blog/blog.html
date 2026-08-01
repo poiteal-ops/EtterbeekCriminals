@@ -32,16 +32,18 @@
       <button
         type="button"
         class="page-nav"
+        aria-label="Newer"
         [disabled]="page() === 1"
         (click)="goToPage(page() - 1)"
-      >&larr; NEWER</button>
+      >&larr;</button>
       <div class="page-status">PAGE {{ page() }} OF {{ totalPages() }}</div>
       <button
         type="button"
         class="page-nav"
+        aria-label="Older"
         [disabled]="page() === totalPages()"
         (click)="goToPage(page() + 1)"
-      >OLDER &rarr;</button>
+      >&rarr;</button>
     </div>
   }
 </div>
