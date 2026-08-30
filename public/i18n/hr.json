@@ -14,6 +14,7 @@
     "theftAndDestruction": "KRAĐA I UNIŠTAVANJE",
     "heatwaveSurvival": "ZATIŠJE TOPLINSKOG VALA",
     "juryTampering": "UTJECANJE NA POROTU",
+    "aDayWithBestie": "DAN S BESTIE",
     "blog": "BLOG",
     "shop": "TRGOVINA"
   },
@@ -131,6 +132,12 @@
       "teaser": "Gostujuća porota, kompromitirana presuda i jedan osumnjičenik koji je po dolasku osigurao simpatije.",
       "link": "/jury-tampering",
       "image": "assets/images/jury-verdict-awaited.jpg"
+    },
+    {
+      "title": "DAN S BESTIE",
+      "teaser": "Kućna pomoćnica, neprijateljski usisavač i jedan osumnjičenik odlučan nadzirati svaku operaciju.",
+      "link": "/a-day-with-bestie",
+      "image": "assets/images/bestie-hoover-chaos.jpg"
     }
   ],
   "escapeToCountry": {
@@ -270,6 +277,26 @@
     "exhibitHCaption": "DOKAZ H — POTVRĐENO JE DA JE VEZA NERASKIDIVA.",
     "exhibitICaption": "DOKAZ I — OSUMNJIČENIK, PRILAGOĐAVAJUĆI SE SMANJENOM BROJU OSOBLJA, PREISPITUJE AUTORITET SVOG JEDINOG PREOSTALOG VODITELJA.",
     "stamp": "PRESUDA BESPREDMETNA — POROTA KOMPROMITIRANA"
+  },
+  "aDayWithBestie": {
+    "kicker": "SPIS PREDMETA — KUĆNA SABOTAŽA",
+    "title": "DAN S BESTIE",
+    "locationLabel": "LOKACIJA",
+    "locationVal": "Obiteljska rezidencija — dnevni boravak, neotkrivena jurisdikcija",
+    "suspectLabel": "OSUMNJIČENIK",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "SVJEDOK",
+    "witnessVal": "Kućna pomoćnica, u nastavku nazvana „Bestie”",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Potpuna operativna kontrola nad kućanstvom; usisavač se smatra neprijateljskom okupacijskom silom",
+    "p1": "Osumnjičenik tjedni dolazak kućne pomoćnice koju naziva „Bestie” smatra vrhuncem svakog tjedna. Naklonost iskazuje prvenstveno nadzorom: nijedan zadatak ne smije napredovati bez praćenja, nijedna se površina ne smije očistiti bez naknadne inspekcije, a nijedna hrana nakratko ostavljena bez nadzora u kuhinji ne preživi susret. Istražitelji bilježe da se njegov entuzijazam dosad nijednom nije pretočio u stvarnu pomoć.",
+    "p2": "Usisavač ne dobiva takav doček. Čim se pojavi, tretira se kao neprijateljska okupacijska sila — prilazi mu se, ometa ga se i, kad je moguće, fizički se s njim obračunava — bez obzira na to tko njime upravlja, što radi ili koliko se puta to već danas dogodilo.",
+    "p3": "Nakon dovršene inspekcije osumnjičenik je prešao na stvarno zanimanje tog dana: poništavanje svakog upravo ostvarenog napretka. Jastuci su preraspodijeljeni. Igračke su ponovno uvedene na upravo očišćen prostor poda. Krevet za psa, ispražnjen zbog čišćenja, vraćen je na položaj maksimalne smetnje prije nego što je usisavač uopće napustio prostoriju.",
+    "p4": "Do večeri je kućanstvo bilo temeljito nadzirano, usisavač odbijen u više navrata, a svaki dovršeni zadatak tiho preokrenut. S dnevnim radom dovršenim, osumnjičenik se povukao.",
+    "exhibitACaption": "Dokaz A — uvjeti na bojištu ubrzo nakon Bestieina dolaska. Usisavač raspoređen, osumnjičenik u zraku, krevet za psa bez ovlaštenja premješten na dobar tepih.",
+    "exhibitBCaption": "Dokaz B — osumnjičenik provodi inspekciju kvalitete Bestieine tehnike iz neposredne blizine, smješten izravno pod nogama radi maksimalnog ometanja.",
+    "exhibitCCaption": "Dokaz C — osumnjičenik odmara među jastucima, na kraju smjene, iscrpljen nakon cjelodnevnog zlostavljanja.",
+    "stamp": "SLUČAJ ZAKLJUČEN — BESTIE SE VRAĆA SLJEDEĆI TJEDAN"
   },
   "blog": {
     "title": "DNEVNIK PREDMETA",

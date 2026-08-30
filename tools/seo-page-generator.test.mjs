@@ -131,7 +131,10 @@ test('renderPage emits escaped metadata, canonical, self alternate, and x-defaul
 });
 
 test('renderPage preserves extra html-tag attributes such as data-beasties-container', () => {
-  const beastiesTemplate = template.replace('<html lang="en">', '<html lang="en" data-beasties-container>');
+  const beastiesTemplate = template.replace(
+    '<html lang="en">',
+    '<html lang="en" data-beasties-container>',
+  );
   const page = {
     route: 'about',
     title: 'About',
@@ -173,7 +176,10 @@ test('generateSite writes all locale roots and routes but no unsupported locale'
     assert.ok(fs.existsSync(path.join(distDir, 'fr', 'index.html')));
     assert.ok(fs.existsSync(path.join(distDir, 'fr', 'about', 'index.html')));
     assert.ok(!fs.existsSync(path.join(distDir, 'ga')));
-    assert.match(fs.readFileSync(path.join(distDir, 'sitemap.xml'), 'utf8'), /<loc>https:\/\/thieffrycriminals\.be\/fr\/about\/<\/loc>/);
+    assert.match(
+      fs.readFileSync(path.join(distDir, 'sitemap.xml'), 'utf8'),
+      /<loc>https:\/\/thieffrycriminals\.be\/fr\/about\/<\/loc>/,
+    );
     assert.equal(
       fs.readFileSync(path.join(distDir, 'robots.txt'), 'utf8'),
       'User-agent: *\nAllow: /\nSitemap: https://thieffrycriminals.be/sitemap.xml\n',
@@ -212,13 +218,28 @@ test('real localized content only ever produces routes that also exist in Englis
   }
 });
 
+test('A Day With Bestie is available in every shipped content locale', async () => {
+  const expectedRoute = 'a-day-with-bestie';
+  const englishRoutes = buildPages(await loadEnglishContent()).map((page) => page.route);
+  assert.ok(englishRoutes.includes(expectedRoute), 'English content is missing /a-day-with-bestie');
+
+  const localeFiles = fs.readdirSync('public/i18n').filter((name) => name.endsWith('.json'));
+  for (const file of localeFiles) {
+    const localeContent = JSON.parse(fs.readFileSync(path.join('public/i18n', file), 'utf8'));
+    const localeRoutes = buildPages(localeContent).map((page) => page.route);
+    assert.ok(localeRoutes.includes(expectedRoute), `${file} is missing /a-day-with-bestie`);
+  }
+});
+
 test('CONTENT_LOCALES in locale-registry.ts matches the locales generate-seo-pages.mjs actually builds', () => {
   const registrySource = fs.readFileSync('src/app/i18n/locale-registry.ts', 'utf8');
   const blockMatch = registrySource.match(
     /CONTENT_LOCALES: readonly LocaleCode\[\] = \[([\s\S]*?)\];/,
   );
   assert.ok(blockMatch, 'Could not find CONTENT_LOCALES array in locale-registry.ts');
-  const contentLocales = [...blockMatch[1].matchAll(/['"]([a-z]{2})['"]/g)].map((match) => match[1]);
+  const contentLocales = [...blockMatch[1].matchAll(/['"]([a-z]{2})['"]/g)].map(
+    (match) => match[1],
+  );
 
   const generatedLocales = [
     'en',

@@ -14,6 +14,7 @@
     "theftAndDestruction": "FURTO E DISTRUZIONE",
     "heatwaveSurvival": "LA TREGUA DELLA CANICOLA",
     "juryTampering": "MANIPOLAZIONE DELLA GIURIA",
+    "aDayWithBestie": "UNA GIORNATA CON BESTIE",
     "blog": "BLOG",
     "shop": "NEGOZIO"
   },
@@ -131,6 +132,12 @@
       "teaser": "Una giuria in visita, un verdetto compromesso e un sospettato che si è assicurato la simpatia al suo arrivo.",
       "link": "/jury-tampering",
       "image": "assets/images/jury-verdict-awaited.jpg"
+    },
+    {
+      "title": "UNA GIORNATA CON BESTIE",
+      "teaser": "Una collaboratrice domestica, un aspirapolvere ostile e un sospettato deciso a supervisionare ogni operazione.",
+      "link": "/a-day-with-bestie",
+      "image": "assets/images/bestie-hoover-chaos.jpg"
     }
   ],
   "escapeToCountry": {
@@ -270,6 +277,26 @@
     "exhibitHCaption": "REPERTO H — LEGAME CONFERMATO COME INFRANGIBILE.",
     "exhibitICaption": "REPERTO I — IL SOSPETTATO, ADATTANDOSI A UN ORGANICO RIDOTTO, METTE IN DISCUSSIONE L’AUTORITÀ DELL’UNICO TUTORE RIMASTO.",
     "stamp": "VERDETTO PRIVO DI OGGETTO — GIURIA COMPROMESSA"
+  },
+  "aDayWithBestie": {
+    "kicker": "FASCICOLO — SABOTAGGIO DOMESTICO",
+    "title": "UNA GIORNATA CON BESTIE",
+    "locationLabel": "LUOGO",
+    "locationVal": "Residenza familiare — soggiorno, giurisdizione non divulgata",
+    "suspectLabel": "SOSPETTATO",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TESTIMONE",
+    "witnessVal": "La collaboratrice domestica, indicata nel fascicolo come «Bestie»",
+    "motiveLabel": "MOVENTE",
+    "motiveVal": "Controllo operativo totale della casa; l'aspirapolvere è considerato una forza d'occupazione ostile",
+    "p1": "Il sospettato considera l'arrivo settimanale della collaboratrice domestica che chiama «Bestie» il momento culminante di ogni settimana. L'affetto si esprime soprattutto attraverso la supervisione: nessun compito può procedere senza controllo, nessuna superficie può essere pulita senza un'ispezione successiva e nessun cibo lasciato brevemente incustodito in cucina sopravvive al contatto. Gli investigatori rilevano che il suo entusiasmo non si è, a oggi, mai tradotto in un aiuto concreto.",
+    "p2": "L'aspirapolvere non riceve la stessa accoglienza. Non appena viene avvistato, viene trattato come una forza d'occupazione ostile — avvicinato, ostacolato e, dove possibile, affrontato fisicamente — indipendentemente da chi lo manovri, da cosa stia facendo o da quante volte ciò sia già accaduto oggi.",
+    "p3": "Completata l'ispezione, il sospettato ha proceduto con la sua vera occupazione della giornata: disfare qualunque progresso fosse stato appena compiuto. I cuscini sono stati ridistribuiti. I giocattoli sono stati reintrodotti sullo spazio del pavimento appena liberato. La cuccia del cane, sgomberata per la pulizia, è stata rimessa in una posizione di massimo intralcio prima ancora che l'aspirapolvere avesse lasciato la stanza.",
+    "p4": "A sera la casa era stata accuratamente supervisionata, l'aspirapolvere respinto in più occasioni e ogni compito completato silenziosamente annullato. Terminato il proprio lavoro per la giornata, il sospettato si è ritirato.",
+    "exhibitACaption": "Reperto A — condizioni da campo di battaglia poco dopo l'arrivo di Bestie. Aspirapolvere schierato, sospettato in aria, cuccia del cane spostata senza autorizzazione sul tappeto buono.",
+    "exhibitBCaption": "Reperto B — il sospettato effettua un'ispezione di qualità a distanza ravvicinata della tecnica di Bestie, piazzato direttamente sotto i suoi piedi per la massima interferenza.",
+    "exhibitCCaption": "Reperto C — sospettato a riposo tra i cuscini, fine turno, esausto dopo un'intera giornata di vessazioni.",
+    "stamp": "CASO CHIUSO — BESTIE TORNA LA PROSSIMA SETTIMANA"
   },
   "blog": {
     "title": "REGISTRO CASI",

@@ -18,7 +18,12 @@
   </button>
 
   <div class="links" [class.open]="menuOpen()">
-    <a [routerLink]="translation.path()" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ t.nav.home }}</a>
+    <a
+      [routerLink]="translation.path()"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >{{ t.nav.home }}</a
+    >
     <a [routerLink]="translation.path('about')" routerLinkActive="active">{{ t.nav.about }}</a>
     <a [routerLink]="translation.path('story')" routerLinkActive="active">{{ t.nav.story }}</a>
     <div class="dropdown" [class.active]="storiesActive()">
@@ -32,13 +37,28 @@
         {{ t.nav.stories }}
       </button>
       <div class="dropdown-menu" [class.open]="dropdownOpen()">
-        <a [routerLink]="translation.path('pigeon')" routerLinkActive="active">{{ t.nav.pigeon }}</a>
+        <a [routerLink]="translation.path('pigeon')" routerLinkActive="active">{{
+          t.nav.pigeon
+        }}</a>
         <a [routerLink]="translation.path('couch')" routerLinkActive="active">{{ t.nav.couch }}</a>
-        <a [routerLink]="translation.path('train-ride')" routerLinkActive="active">{{ t.nav.trainRide }}</a>
-        <a [routerLink]="translation.path('escape-to-the-country')" routerLinkActive="active">{{ t.nav.escapeCountry }}</a>
-        <a [routerLink]="translation.path('theft-and-destruction')" routerLinkActive="active">{{ t.nav.theftAndDestruction }}</a>
-        <a [routerLink]="translation.path('heatwave-survival')" routerLinkActive="active">{{ t.nav.heatwaveSurvival }}</a>
-        <a [routerLink]="translation.path('jury-tampering')" routerLinkActive="active">{{ t.nav.juryTampering }}</a>
+        <a [routerLink]="translation.path('train-ride')" routerLinkActive="active">{{
+          t.nav.trainRide
+        }}</a>
+        <a [routerLink]="translation.path('escape-to-the-country')" routerLinkActive="active">{{
+          t.nav.escapeCountry
+        }}</a>
+        <a [routerLink]="translation.path('theft-and-destruction')" routerLinkActive="active">{{
+          t.nav.theftAndDestruction
+        }}</a>
+        <a [routerLink]="translation.path('heatwave-survival')" routerLinkActive="active">{{
+          t.nav.heatwaveSurvival
+        }}</a>
+        <a [routerLink]="translation.path('jury-tampering')" routerLinkActive="active">{{
+          t.nav.juryTampering
+        }}</a>
+        <a [routerLink]="translation.path('a-day-with-bestie')" routerLinkActive="active">{{
+          t.nav.aDayWithBestie
+        }}</a>
       </div>
     </div>
     <a [routerLink]="translation.path('blog')" routerLinkActive="active">{{ t.nav.blog }}</a>
@@ -55,7 +75,9 @@
       </button>
       <div class="dropdown-menu" [class.open]="langDropdownOpen()">
         @for (code of localeOptions; track code) {
-          <a (click)="switchLocale(code)" [class.active]="currentLocale === code">{{ localeLabel(code) }}</a>
+          <a (click)="switchLocale(code)" [class.active]="currentLocale === code">{{
+            localeLabel(code)
+          }}</a>
         }
       </div>
     </div>

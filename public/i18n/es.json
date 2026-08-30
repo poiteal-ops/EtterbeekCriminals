@@ -14,6 +14,7 @@
     "theftAndDestruction": "ROBO Y DESTRUCCIÓN",
     "heatwaveSurvival": "LA TREGUA DEL CALOR",
     "juryTampering": "MANIPULACIÓN DEL JURADO",
+    "aDayWithBestie": "UN DÍA CON BESTIE",
     "blog": "BLOG",
     "shop": "TIENDA"
   },
@@ -131,6 +132,12 @@
       "teaser": "Un jurado de visita, un veredicto comprometido y un sospechoso que se ganó la simpatía nada más llegar.",
       "link": "/jury-tampering",
       "image": "assets/images/jury-verdict-awaited.jpg"
+    },
+    {
+      "title": "UN DÍA CON BESTIE",
+      "teaser": "Una empleada del hogar, una aspiradora hostil y un sospechoso decidido a supervisar cada operación.",
+      "link": "/a-day-with-bestie",
+      "image": "assets/images/bestie-hoover-chaos.jpg"
     }
   ],
   "escapeToCountry": {
@@ -270,6 +277,26 @@
     "exhibitHCaption": "PRUEBA H — VÍNCULO CONFIRMADO COMO INQUEBRANTABLE.",
     "exhibitICaption": "PRUEBA I — EL SOSPECHOSO, ADAPTÁNDOSE A UN NIVEL DE PERSONAL REDUCIDO, CUESTIONA LA AUTORIDAD DE SU ÚNICO CUIDADOR RESTANTE.",
     "stamp": "VEREDICTO SIN EFECTO — JURADO COMPROMETIDO"
+  },
+  "aDayWithBestie": {
+    "kicker": "EXPEDIENTE — SABOTAJE DOMÉSTICO",
+    "title": "UN DÍA CON BESTIE",
+    "locationLabel": "LUGAR",
+    "locationVal": "Residencia familiar — salón, jurisdicción no revelada",
+    "suspectLabel": "SOSPECHOSO",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TESTIGO",
+    "witnessVal": "La empleada del hogar, mencionada en todo el expediente como «Bestie»",
+    "motiveLabel": "MOTIVO",
+    "motiveVal": "Control operativo total del hogar; la aspiradora es considerada una fuerza de ocupación hostil",
+    "p1": "El sospechoso considera la llegada semanal de la empleada del hogar a la que llama «Bestie» como el punto culminante de cualquier semana. El afecto se expresa principalmente mediante supervisión: no se permite que ninguna tarea continúe sin vigilancia, ninguna superficie puede limpiarse sin una inspección posterior y ningún alimento dejado brevemente sin vigilancia en la cocina sobrevive al contacto. Los investigadores señalan que, hasta la fecha, su entusiasmo jamás se ha traducido en ayuda efectiva.",
+    "p2": "La aspiradora no recibe tal bienvenida. En cuanto aparece, se la trata como una fuerza de ocupación hostil — se la aborda, se la obstaculiza y, cuando es posible, se la combate físicamente — sin importar quién la maneje, qué esté haciendo o cuántas veces haya sucedido ya hoy.",
+    "p3": "Concluida la inspección, el sospechoso procedió a su verdadera ocupación del día: deshacer cualquier progreso que acabara de lograrse. Los cojines fueron redistribuidos. Los juguetes fueron reintroducidos en el espacio recién despejado del suelo. La cama del perro, retirada para limpiarla, volvió a colocarse en una posición de máxima incomodidad antes de que la aspiradora hubiera siquiera salido de la habitación.",
+    "p4": "Al anochecer, el hogar había sido supervisado a fondo, la aspiradora repelida en múltiples ocasiones y cada tarea terminada discretamente revertida. Completado su trabajo del día, el sospechoso se retiró.",
+    "exhibitACaption": "Prueba A — condiciones de campo de batalla poco después de la llegada de Bestie. Aspiradora desplegada, sospechoso en el aire, cama del perro trasladada sin autorización a la buena alfombra.",
+    "exhibitBCaption": "Prueba B — el sospechoso realiza una inspección de calidad de la técnica de Bestie a corta distancia, apostado directamente bajo sus pies para causar la máxima interferencia.",
+    "exhibitCCaption": "Prueba C — sospechoso descansando entre los cojines, fin de turno, exhausto tras una jornada completa de acoso.",
+    "stamp": "CASO CERRADO — BESTIE REGRESA LA PRÓXIMA SEMANA"
   },
   "blog": {
     "title": "REGISTRO DE CASOS",

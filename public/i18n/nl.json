@@ -14,6 +14,7 @@
     "theftAndDestruction": "DIEFSTAL EN VERNIELING",
     "heatwaveSurvival": "DE HITTEGOLFSTILTE",
     "juryTampering": "JURYMANIPULATIE",
+    "aDayWithBestie": "EEN DAG MET BESTIE",
     "blog": "BLOG",
     "shop": "SHOP"
   },
@@ -131,6 +132,12 @@
       "teaser": "Een jury op bezoek, een gecompromitteerd vonnis en één verdachte die bij aankomst de sympathie wist te winnen.",
       "link": "/jury-tampering",
       "image": "assets/images/jury-verdict-awaited.jpg"
+    },
+    {
+      "title": "EEN DAG MET BESTIE",
+      "teaser": "Een huishoudhulp, een vijandige stofzuiger en één verdachte die vastbesloten is elke operatie te superviseren.",
+      "link": "/a-day-with-bestie",
+      "image": "assets/images/bestie-hoover-chaos.jpg"
     }
   ],
   "escapeToCountry": {
@@ -270,6 +277,26 @@
     "exhibitHCaption": "BEWIJSSTUK H — BAND BEVESTIGD ALS ONVERBREKELIJK.",
     "exhibitICaption": "BEWIJSSTUK I — VERDACHTE, ZICH AANPASSEND AAN DE GEREDUCEERDE PERSONEELSBEZETTING, BETWIST HET GEZAG VAN ZIJN ENIGE OVERGEBLEVEN BEGELEIDER.",
     "stamp": "VONNIS NIET-TER-ZAKE — JURY GECOMPROMITTEERD"
+  },
+  "aDayWithBestie": {
+    "kicker": "DOSSIER — HUISHOUDELIJKE SABOTAGE",
+    "title": "EEN DAG MET BESTIE",
+    "locationLabel": "LOCATIE",
+    "locationVal": "Gezinswoning — woonkamer, niet nader genoemde jurisdictie",
+    "suspectLabel": "VERDACHTE",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "GETUIGE",
+    "witnessVal": "De huishoudhulp, in dit dossier consequent aangeduid als „Bestie“",
+    "motiveLabel": "MOTIEF",
+    "motiveVal": "Volledige operationele controle over het huishouden; de stofzuiger wordt beschouwd als een vijandige bezettingsmacht",
+    "p1": "De verdachte beschouwt de wekelijkse komst van de huishoudhulp die hij „Bestie“ noemt als het hoogtepunt van elke willekeurige week. Genegenheid wordt vooral via toezicht uitgedrukt: geen taak mag zonder toezicht doorgaan, geen oppervlak mag worden gereinigd zonder een vervolginspectie, en geen voedsel dat kort onbeheerd in de keuken wordt achtergelaten, overleeft het contact. Onderzoekers merken op dat zijn enthousiasme tot op heden nog nooit heeft geleid tot daadwerkelijke hulp.",
+    "p2": "De stofzuiger krijgt niet dezelfde ontvangst. Zodra hij wordt waargenomen, wordt hij behandeld als een vijandige bezettingsmacht — benaderd, gehinderd en waar mogelijk fysiek bestreden — ongeacht wie hem bedient, wat hij doet of hoe vaak dit vandaag al is gebeurd.",
+    "p3": "Na afloop van de inspectie ging de verdachte verder met zijn werkelijke dagtaak: elke zojuist geboekte vooruitgang ongedaan maken. Kussens werden herverdeeld. Speelgoed werd opnieuw op de pas vrijgemaakte vloer geplaatst. De voor reiniging verplaatste hondenmand werd teruggezet op een plek van maximaal ongemak, nog voordat de stofzuiger de kamer had verlaten.",
+    "p4": "Tegen de avond was het huishouden grondig gesuperviseerd, de stofzuiger meermaals afgeslagen en elke voltooide taak stilzwijgend teruggedraaid. Zijn werk voor die dag voltooid, trok de verdachte zich terug.",
+    "exhibitACaption": "Bewijsstuk A — slagveldomstandigheden kort na de komst van Bestie. Stofzuiger ingezet, verdachte in de lucht, hondenmand zonder toestemming naar het goede tapijt verplaatst.",
+    "exhibitBCaption": "Bewijsstuk B — verdachte voert een kwaliteitsinspectie van Besties techniek van zeer dichtbij uit, rechtstreeks onder haar voeten geposteerd voor maximale hinder.",
+    "exhibitCCaption": "Bewijsstuk C — verdachte rust tussen de kussens, einde dienst, uitgeput na een volledige dag pesten.",
+    "stamp": "ZAAK GESLOTEN — BESTIE KEERT VOLGENDE WEEK TERUG"
   },
   "blog": {
     "title": "LOGBOEK",

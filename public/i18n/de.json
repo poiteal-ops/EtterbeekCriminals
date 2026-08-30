@@ -14,6 +14,7 @@
     "theftAndDestruction": "DIEBSTAHL UND ZERSTÖRUNG",
     "heatwaveSurvival": "DIE HITZEFLAUTE",
     "juryTampering": "MANIPULATION DER JURY",
+    "aDayWithBestie": "EIN TAG MIT BESTIE",
     "blog": "BLOG",
     "shop": "SHOP"
   },
@@ -131,6 +132,12 @@
       "teaser": "Eine besuchende Jury, ein kompromittiertes Urteil und ein Verdächtiger, der sich bei seiner Ankunft das Mitgefühl sicherte.",
       "link": "/jury-tampering",
       "image": "assets/images/jury-verdict-awaited.jpg"
+    },
+    {
+      "title": "EIN TAG MIT BESTIE",
+      "teaser": "Eine Haushaltshilfe, ein feindseliger Staubsauger und ein Verdächtiger, der entschlossen ist, jede Operation zu überwachen.",
+      "link": "/a-day-with-bestie",
+      "image": "assets/images/bestie-hoover-chaos.jpg"
     }
   ],
   "escapeToCountry": {
@@ -270,6 +277,26 @@
     "exhibitHCaption": "BEWEISSTÜCK H — DIE BINDUNG WIRD ALS UNAUFLÖSBAR BESTÄTIGT.",
     "exhibitICaption": "BEWEISSTÜCK I — DER VERDÄCHTIGE, DER SICH AN REDUZIERTE PERSONALSTÄRKE ANPASST, STELLT DIE AUTORITÄT SEINES EINZIGEN VERBLIEBENEN BETREUERS INFRAGE.",
     "stamp": "URTEIL GEGENSTANDSLOS — JURY KOMPROMITTIERT"
+  },
+  "aDayWithBestie": {
+    "kicker": "AKTE — HÄUSLICHE SABOTAGE",
+    "title": "EIN TAG MIT BESTIE",
+    "locationLabel": "ORT",
+    "locationVal": "Familienresidenz — Wohnzimmer, nicht näher benannter Gerichtsbezirk",
+    "suspectLabel": "VERDÄCHTIGER",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "ZEUGIN",
+    "witnessVal": "Die Haushaltshilfe, im gesamten Vorgang als „Bestie“ bezeichnet",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Vollständige operative Kontrolle über den Haushalt; der Staubsauger gilt als feindliche Besatzungsmacht",
+    "p1": "Der Verdächtige betrachtet die wöchentliche Ankunft der Haushaltshilfe, die er „Bestie“ nennt, als Höhepunkt jeder beliebigen Woche. Zuneigung äußert sich vor allem durch Aufsicht: Keine Aufgabe darf unbeobachtet fortgesetzt werden, keine Oberfläche ohne nachfolgende Kontrolle gereinigt werden, und keine in der Küche kurz unbeaufsichtigte Nahrung überlebt den Kontakt. Die Ermittler stellen fest, dass sein Enthusiasmus bis heute nicht ein einziges Mal in tatsächliche Hilfe mündete.",
+    "p2": "Der Staubsauger erfährt keinen solchen Empfang. Sobald er gesichtet wird, gilt er als feindliche Besatzungsmacht — wird angegangen, behindert und, wo möglich, körperlich bekämpft — unabhängig davon, wer ihn bedient, was er gerade tut oder wie oft dies heute bereits geschehen ist.",
+    "p3": "Nach Abschluss der Inspektion nahm der Verdächtige seine eigentliche Tagesbeschäftigung auf: jeden gerade erzielten Fortschritt rückgängig zu machen. Kissen wurden umverteilt. Spielzeug wurde erneut auf die frisch geräumte Bodenfläche gebracht. Das zur Reinigung weggeräumte Hundebett wurde wieder an einem Ort maximaler Behinderung platziert, noch bevor der Staubsauger den Raum verlassen hatte.",
+    "p4": "Am Abend war der Haushalt gründlich überwacht, der Staubsauger mehrfach zurückgeschlagen und jede erledigte Aufgabe stillschweigend rückgängig gemacht worden. Sein Tageswerk vollendet, zog sich der Verdächtige zurück.",
+    "exhibitACaption": "Beweisstück A — Zustände auf dem Schlachtfeld kurz nach Besties Ankunft. Staubsauger im Einsatz, Verdächtiger in der Luft, Hundebett ohne Genehmigung auf den guten Teppich verlegt.",
+    "exhibitBCaption": "Beweisstück B — der Verdächtige führt eine Qualitätskontrolle von Besties Technik aus nächster Nähe durch und steht für maximale Behinderung direkt unter ihren Füßen.",
+    "exhibitCCaption": "Beweisstück C — Verdächtiger ruht zwischen den Kissen, Dienstschluss, erschöpft von einem ganzen Tag Schikanen.",
+    "stamp": "AKTE GESCHLOSSEN — BESTIE KEHRT NÄCHSTE WOCHE ZURÜCK"
   },
   "blog": {
     "title": "FALLREGISTER",

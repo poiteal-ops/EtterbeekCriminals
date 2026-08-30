@@ -45,6 +45,7 @@ export interface SiteContent {
     theftAndDestruction: string;
     heatwaveSurvival: string;
     juryTampering: string;
+    aDayWithBestie: string;
     blog: string;
     shop: string;
   };
@@ -236,6 +237,26 @@ export interface SiteContent {
     exhibitGCaption: string;
     exhibitHCaption: string;
     exhibitICaption: string;
+    stamp: string;
+  };
+  aDayWithBestie: {
+    kicker: string;
+    title: string;
+    locationLabel: string;
+    locationVal: string;
+    suspectLabel: string;
+    suspectVal: string;
+    witnessLabel: string;
+    witnessVal: string;
+    motiveLabel: string;
+    motiveVal: string;
+    p1: string;
+    p2: string;
+    p3: string;
+    p4: string;
+    exhibitACaption: string;
+    exhibitBCaption: string;
+    exhibitCCaption: string;
     stamp: string;
   };
   blog: {

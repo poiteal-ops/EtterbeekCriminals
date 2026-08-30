@@ -14,6 +14,7 @@
     "theftAndDestruction": "LOPÁS ÉS RONGÁLÁS",
     "heatwaveSurvival": "A HŐHULLÁM SZÜNETE",
     "juryTampering": "AZ ESKÜDTSZÉK BEFOLYÁSOLÁSA",
+    "aDayWithBestie": "EGY NAP BESTIE-VEL",
     "blog": "BLOG",
     "shop": "BOLT"
   },
@@ -131,6 +132,12 @@
       "teaser": "Egy látogató esküdtszék, egy kompromittált ítélet és egy gyanúsított, aki érkezésekor azonnal együttérzést szerzett.",
       "link": "/jury-tampering",
       "image": "assets/images/jury-verdict-awaited.jpg"
+    },
+    {
+      "title": "EGY NAP BESTIE-VEL",
+      "teaser": "Egy házvezetőnő, egy ellenséges porszívó és egy gyanúsított, aki eltökélten felügyel minden műveletet.",
+      "link": "/a-day-with-bestie",
+      "image": "assets/images/bestie-hoover-chaos.jpg"
     }
   ],
   "escapeToCountry": {
@@ -270,6 +277,26 @@
     "exhibitHCaption": "H KIÁLLÍTÁSI TÁRGY — A KÖTELÉK FELBONTHATATLANSÁGA MEGERŐSÍTVE.",
     "exhibitICaption": "I KIÁLLÍTÁSI TÁRGY — A GYANÚSÍTOTT A CSÖKKENTETT LÉTSZÁMHOZ IGAZODVA MEGKÉRDŐJELEZI EGYETLEN MEGMARADT GONDOZÓJÁNAK TEKINTÉLYÉT.",
     "stamp": "ÍTÉLET TÁRGYTALAN — AZ ESKÜDTSZÉK KOMPROMITTÁLÓDOTT"
+  },
+  "aDayWithBestie": {
+    "kicker": "ÜGYIRAT — HÁZTARTÁSI SZABOTÁZS",
+    "title": "EGY NAP BESTIE-VEL",
+    "locationLabel": "HELYSZÍN",
+    "locationVal": "Családi otthon — nappali, meg nem nevezett illetékességi terület",
+    "suspectLabel": "GYANÚSÍTOTT",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TANÚ",
+    "witnessVal": "A házvezetőnő, a továbbiakban „Bestie”",
+    "motiveLabel": "INDÍTÉK",
+    "motiveVal": "Teljes operatív ellenőrzés a háztartás felett; a porszívót ellenséges megszálló erőnek tekinti",
+    "p1": "A gyanúsított a „Bestie”-nek nevezett házvezetőnő heti érkezését minden hét csúcspontjának tekinti. A ragaszkodást elsősorban felügyelettel fejezi ki: egyetlen feladat sem haladhat ellenőrzés nélkül, egyetlen felület sem tisztítható utólagos vizsgálat nélkül, és a konyhában rövid időre őrizetlenül hagyott étel sem éli túl a vele való találkozást. A nyomozók megjegyzik, hogy lelkesedése mindeddig egyszer sem fordult át tényleges segítségbe.",
+    "p2": "A porszívó nem részesül ilyen fogadtatásban. Már puszta látványára ellenséges megszálló erőnek minősül — megközelítik, akadályozzák, és amikor csak lehet, fizikailag is harcba szállnak vele — függetlenül attól, ki kezeli, mit csinál, vagy hányszor történt ez már meg aznap.",
+    "p3": "Az ellenőrzés befejeztével a gyanúsított rátért a nap valódi foglalkozására: mindannak visszacsinálására, amit épp elvégeztek. A párnákat újraosztották. A játékok visszakerültek a frissen felszabadított padlófelületre. A tisztítás miatt félretett kutyaágy a lehető legkényelmetlenebb helyzetbe került vissza, még mielőtt a porszívó elhagyta volna a szobát.",
+    "p4": "Estére a háztartást alaposan felügyelték, a porszívót több alkalommal visszaverték, és minden elvégzett feladatot csendben visszafordítottak. Napi munkáját befejezve a gyanúsított visszavonult.",
+    "exhibitACaption": "A kiállítási tárgy — harctéri állapotok röviddel Bestie érkezése után. A porszívó bevetve, a gyanúsított a levegőben, a kutyaágy engedély nélkül áthelyezve a jó szőnyegre.",
+    "exhibitBCaption": "B kiállítási tárgy — a gyanúsított közvetlen közelről ellenőrzi Bestie technikáját, a lehető legnagyobb akadályozás érdekében közvetlenül a lába alatt állomásozva.",
+    "exhibitCCaption": "C kiállítási tárgy — a gyanúsított pihen, a párnák között, műszak végeztével, kimerülve az egész napos zaklatástól.",
+    "stamp": "ÜGY LEZÁRVA — BESTIE JÖVŐ HÉTEN VISSZATÉR"
   },
   "blog": {
     "title": "ÜGYNAPLÓ",

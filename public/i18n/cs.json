@@ -14,6 +14,7 @@
     "theftAndDestruction": "KRÁDEŽ A NIČENÍ",
     "heatwaveSurvival": "ÚTLUM VEDER",
     "juryTampering": "MANIPULACE POROTY",
+    "aDayWithBestie": "DEN S BESTIE",
     "blog": "BLOG",
     "shop": "OBCHOD"
   },
@@ -131,6 +132,12 @@
       "teaser": "Hostující porota, zmanipulovaný verdikt a jeden podezřelý, který si hned po příjezdu získal sympatie.",
       "link": "/jury-tampering",
       "image": "assets/images/jury-verdict-awaited.jpg"
+    },
+    {
+      "title": "DEN S BESTIE",
+      "teaser": "Hospodyně, nepřátelský vysavač a jeden podezřelý odhodlaný dohlížet na každou operaci.",
+      "link": "/a-day-with-bestie",
+      "image": "assets/images/bestie-hoover-chaos.jpg"
     }
   ],
   "escapeToCountry": {
@@ -270,6 +277,26 @@
     "exhibitHCaption": "DŮKAZ H — POUTO POTVRZENO JAKO NEROZLOMITELNÉ.",
     "exhibitICaption": "DŮKAZ I — PODEZŘELÝ SE PŘIZPŮSOBUJE OMEZENÉMU POČTU PERSONÁLU A ZPOCHYBŇUJE AUTORITU SVÉHO JEDINÉHO ZBÝVAJÍCÍHO OPATROVNÍKA.",
     "stamp": "VERDIKT BEZPŘEDMĚTNÝ — POROTA ZMANIPULOVÁNA"
+  },
+  "aDayWithBestie": {
+    "kicker": "SPIS PŘÍPADU — DOMÁCÍ SABOTÁŽ",
+    "title": "DEN S BESTIE",
+    "locationLabel": "MÍSTO",
+    "locationVal": "Rodinné sídlo — obývací pokoj, nezveřejněná jurisdikce",
+    "suspectLabel": "PODEZŘELÝ",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "SVĚDEK",
+    "witnessVal": "Hospodyně, v celém spise uváděná jako „Bestie“",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Úplná operační kontrola domácnosti; vysavač je považován za nepřátelskou okupační sílu",
+    "p1": "Podezřelý považuje týdenní příchod hospodyně, které říká „Bestie“, za vrchol každého týdne. Náklonnost vyjadřuje především dohledem: žádný úkon nesmí proběhnout bez dozoru, žádný povrch nesmí být vyčištěn bez následné kontroly a žádné jídlo ponechané v kuchyni byť jen krátce bez dohledu nepřežije kontakt. Vyšetřovatelé konstatují, že se jeho nadšení dosud ani jednou nepřetavilo ve skutečnou pomoc.",
+    "p2": "Vysavači se takového přijetí nedostává. Jakmile ho zahlédne, zachází s ním jako s nepřátelskou okupační silou — přibližuje se k němu, brání mu v práci a kdykoli je to možné, fyzicky se s ním střetává — bez ohledu na to, kdo jej obsluhuje, co právě dělá nebo kolikrát se to dnes už stalo.",
+    "p3": "Po dokončení inspekce se podezřelý pustil do své skutečné denní činnosti: mařit všechen právě dosažený pokrok. Polštáře byly přerozděleny. Hračky se vrátily na čerstvě uvolněnou podlahu. Psí pelíšek, vyklizený kvůli úklidu, byl vrácen na místo s maximálním stupněm překážení ještě předtím, než vysavač vůbec opustil místnost.",
+    "p4": "Do večera byla domácnost důkladně pod dohledem, vysavač při několika příležitostech odražen a každý dokončený úkol nenápadně zvrácen. S denní prací hotovou se podezřelý odebral k odpočinku.",
+    "exhibitACaption": "Exponát A — podmínky na bojišti krátce po Bestiině příchodu. Vysavač nasazen, podezřelý ve vzduchu, psí pelíšek bez povolení přemístěn na lepší koberec.",
+    "exhibitBCaption": "Exponát B — podezřelý provádí z bezprostřední blízkosti kontrolu kvality Bestiiny techniky a pro maximální rušení stojí přímo pod nohama.",
+    "exhibitCCaption": "Exponát C — podezřelý v klidu mezi polštáři na konci směny, vyčerpán celodenním šikanováním.",
+    "stamp": "PŘÍPAD UZAVŘEN — BESTIE SE VRÁTÍ PŘÍŠTÍ TÝDEN"
   },
   "blog": {
     "title": "DENÍK PŘÍPADŮ",

@@ -14,6 +14,7 @@
     "theftAndDestruction": "KRADZIEŻ I ZNISZCZENIE",
     "heatwaveSurvival": "ZASTÓJ PODCZAS FALI UPAŁÓW",
     "juryTampering": "MANIPULOWANIE ŁAWĄ PRZYSIĘGŁYCH",
+    "aDayWithBestie": "DZIEŃ Z Bestie",
     "blog": "BLOG",
     "shop": "SKLEP"
   },
@@ -131,6 +132,12 @@
       "teaser": "Wizyta ławy przysięgłych, skompromitowany werdykt i jeden podejrzany, który zdobył sympatię natychmiast po przybyciu.",
       "link": "/jury-tampering",
       "image": "assets/images/jury-verdict-awaited.jpg"
+    },
+    {
+      "title": "DZIEŃ Z Bestie",
+      "teaser": "Gospodyni domowa, wrogi odkurzacz i podejrzany zdeterminowany, by nadzorować każdą operację.",
+      "link": "/a-day-with-bestie",
+      "image": "assets/images/bestie-hoover-chaos.jpg"
     }
   ],
   "escapeToCountry": {
@@ -270,6 +277,26 @@
     "exhibitHCaption": "DOWÓD H — WIĘŹ POTWIERDZONA JAKO NIEMOŻLIWA DO ZERWANIA.",
     "exhibitICaption": "DOWÓD I — PODEJRZANY, PRZYSTOSOWUJĄC SIĘ DO ZMNIEJSZONEJ OBSADY, KWESTIONUJE AUTORYTET JEDYNEGO POZOSTAŁEGO OPIEKUNA.",
     "stamp": "WERDYKT BEZPRZEDMIOTOWY — ŁAWA PRZYSIĘGŁYCH SKOMPROMITOWANA"
+  },
+  "aDayWithBestie": {
+    "kicker": "AKTA SPRAWY — SABOTAŻ DOMOWY",
+    "title": "DZIEŃ Z Bestie",
+    "locationLabel": "LOKALIZACJA",
+    "locationVal": "Dom rodzinny — salon, nieujawniona jurysdykcja",
+    "suspectLabel": "PODEJRZANY",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "ŚWIADEK",
+    "witnessVal": "Gospodyni domowa, określana w całych aktach jako \"Bestie\"",
+    "motiveLabel": "MOTYW",
+    "motiveVal": "Pełna kontrola operacyjna nad gospodarstwem domowym; odkurzacz uznany za wrogą siłę okupacyjną",
+    "p1": "Podejrzany uważa cotygodniowe przybycie gospodyni domowej, którą nazywa \"Bestie\", za najważniejszy moment każdego tygodnia. Uczucie wyraża przede wszystkim poprzez nadzór: żadna czynność nie może postępować bez obserwacji, żadna powierzchnia nie może zostać wyczyszczona bez kontroli następczej, a żadne jedzenie pozostawione na krótko bez opieki w kuchni nie przetrwa kontaktu. Śledczy odnotowują, że jego entuzjazm nigdy dotąd nie przełożył się na faktyczną pomoc.",
+    "p2": "Odkurzacz nie otrzymuje podobnego powitania. Na sam jego widok jest traktowany jak wroga siła okupacyjna — podchodzony, blokowany i, gdy to możliwe, fizycznie angażowany — niezależnie od tego, kto go obsługuje, co robi ani ile razy zdarzyło się to już dzisiaj.",
+    "p3": "Po zakończeniu inspekcji podejrzany przystąpił do swojego właściwego zajęcia na ten dzień: cofania wszelkich postępów, które właśnie poczyniono. Poduszki zostały rozlokowane na nowo. Zabawki ponownie wprowadzono na świeżo oczyszczoną przestrzeń podłogi. Legowisko psa, opróżnione do czyszczenia, wróciło na pozycję maksymalnej niedogodności, zanim odkurzacz zdążył w ogóle opuścić pokój.",
+    "p4": "Wieczorem gospodarstwo domowe zostało już gruntownie nadzorowane, odkurzacz wielokrotnie odparty, a każde ukończone zadanie po cichu odwrócone. Po wykonaniu pracy na ten dzień podejrzany wycofał się.",
+    "exhibitACaption": "Dowód A — warunki pola bitwy krótko po przybyciu Bestie. Odkurzacz rozstawiony, podejrzany w powietrzu, legowisko psa przeniesione bez upoważnienia na dobry dywan.",
+    "exhibitBCaption": "Dowód B — podejrzany przeprowadza z bliskiej odległości kontrolę jakości techniki Bestie, ustawiony bezpośrednio pod nogami dla maksymalnego utrudnienia.",
+    "exhibitCCaption": "Dowód C — podejrzany odpoczywa wśród poduszek, koniec zmiany, wyczerpany po całym dniu znęcania się.",
+    "stamp": "SPRAWA ZAMKNIĘTA — Bestie WRACA W PRZYSZŁYM TYGODNIU"
   },
   "blog": {
     "title": "REJESTR SPRAW",
