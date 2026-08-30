@@ -14,6 +14,7 @@
     "theftAndDestruction": "STÖLD OCH FÖRSTÖRELSE",
     "heatwaveSurvival": "VÄRMEBÖLJANS LUGN",
     "juryTampering": "JURYPÅVERKAN",
+    "aDayWithBestie": "EN DAG MED BESTIE",
     "blog": "BLOGG",
     "shop": "BUTIK"
   },
@@ -131,6 +132,12 @@
       "teaser": "En besökande jury, en komprometterad dom och en misstänkt som säkrade sympatierna vid ankomsten.",
       "link": "/jury-tampering",
       "image": "assets/images/jury-verdict-awaited.jpg"
+    },
+    {
+      "title": "EN DAG MED BESTIE",
+      "teaser": "En hushållerska, en fientlig dammsugare och en misstänkt fast besluten att övervaka varje insats.",
+      "link": "/a-day-with-bestie",
+      "image": "assets/images/bestie-hoover-chaos.jpg"
     }
   ],
   "escapeToCountry": {
@@ -270,6 +277,26 @@
     "exhibitHCaption": "UTSTÄLLNINGSFÖREMÅL H — BANDET BEKRÄFTAT OBRYTBART.",
     "exhibitICaption": "UTSTÄLLNINGSFÖREMÅL I — MISSTÄNKT, SOM ANPASSAR SIG TILL MINSKADE BEMANNINGSNIVÅER, IFRÅGASÄTTER SIN ENDA KVARVARANDE FÖRARES AUKTORITET.",
     "stamp": "DOM MENINGSLÖS — JURY PÅVERKAD"
+  },
+  "aDayWithBestie": {
+    "kicker": "AKT — HUSHÅLLSSABOTAGE",
+    "title": "EN DAG MED BESTIE",
+    "locationLabel": "PLATS",
+    "locationVal": "Familjebostad — vardagsrum, ej angiven jurisdiktion",
+    "suspectLabel": "MISSTÄNKT",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "VITTNE",
+    "witnessVal": "Hushållerskan, fortsättningsvis benämnd ”Bestie”",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Fullständig operativ kontroll över hushållet; dammsugaren betraktas som en fientlig ockupationsmakt",
+    "p1": "Den misstänkte betraktar det veckovisa besöket av hushållerskan, som han kallar ”Bestie”, som höjdpunkten i varje vecka. Tillgivenhet uttrycks främst genom övervakning: ingen uppgift får fortgå utan uppsikt, ingen yta får rengöras utan en efterföljande inspektion, och ingen mat som tillfälligt lämnas utan uppsikt i köket överlever kontakten. Utredarna noterar att hans entusiasm hittills inte en enda gång har omsatts i faktisk hjälp.",
+    "p2": "Dammsugaren får inget sådant välkomnande. Vid åsynen av den behandlas den som en fientlig ockupationsmakt — den uppsöks, hindras och, där så är möjligt, angrips fysiskt — oavsett vem som manövrerar den, vad den gör eller hur många gånger detta redan har hänt i dag.",
+    "p3": "Inspektionen avslutad övergick den misstänkte till dagens egentliga sysselsättning: att upphäva vilka framsteg som just hade gjorts. Kuddarna omfördelades. Leksaker återinfördes på den nyss röjda golvytan. Hundbädden, utrymd för rengöring, återfördes till ett läge av största möjliga besvär innan dammsugaren ens hade lämnat rummet.",
+    "p4": "Vid kvällen hade hushållet övervakats grundligt, dammsugaren avvärjts vid flera tillfällen och varje avslutad uppgift stilla återställts. Med dagens arbete utfört drog sig den misstänkte tillbaka.",
+    "exhibitACaption": "Utställningsföremål A — förhållanden på slagfältet strax efter Besties ankomst. Dammsugaren insatt, den misstänkte luftburen, hundbädden flyttad till den fina mattan utan tillstånd.",
+    "exhibitBCaption": "Utställningsföremål B — den misstänkte genomför en kvalitetsinspektion på nära håll av Besties teknik, placerad direkt under fötterna för maximal störning.",
+    "exhibitCCaption": "Utställningsföremål C — den misstänkte i vila bland kuddarna, skiftets slut, utmattad efter en hel dags mobbning.",
+    "stamp": "ÄRENDET AVSLUTAT — BESTIE ÅTERVÄNDER NÄSTA VECKA"
   },
   "blog": {
     "title": "FALLLOGG",

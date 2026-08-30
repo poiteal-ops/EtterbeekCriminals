@@ -14,6 +14,7 @@
     "theftAndDestruction": "FURT ȘI DISTRUGERE",
     "heatwaveSurvival": "ACALMIA DIN TIMPUL CANICULEI",
     "juryTampering": "MANIPULAREA JURIULUI",
+    "aDayWithBestie": "O ZI CU Bestie",
     "blog": "BLOG",
     "shop": "MAGAZIN"
   },
@@ -131,6 +132,12 @@
       "teaser": "Un juriu în vizită, un verdict compromis și un suspect care a obținut simpatia la sosire.",
       "link": "/jury-tampering",
       "image": "assets/images/jury-verdict-awaited.jpg"
+    },
+    {
+      "title": "O ZI CU Bestie",
+      "teaser": "O menajeră, un aspirator ostil și un suspect hotărât să supravegheze fiecare operațiune.",
+      "link": "/a-day-with-bestie",
+      "image": "assets/images/bestie-hoover-chaos.jpg"
     }
   ],
   "escapeToCountry": {
@@ -270,6 +277,26 @@
     "exhibitHCaption": "PROBA H — LEGĂTURĂ CONFIRMATĂ CA IMPOSIBIL DE RUPT.",
     "exhibitICaption": "PROBA I — SUSPECTUL, ADAPTÂNDU-SE LA NIVELURI REDUSE DE PERSONAL, PUNE LA ÎNDOIALĂ AUTORITATEA SINGURULUI SĂU ÎNGRIJITOR RĂMAS.",
     "stamp": "VERDICT FĂRĂ OBIECT — JURIU COMPROMIS"
+  },
+  "aDayWithBestie": {
+    "kicker": "DOSAR DE CAZ — SABOTAJ DOMESTIC",
+    "title": "O ZI CU Bestie",
+    "locationLabel": "LOCAȚIE",
+    "locationVal": "Reședința familiei — camera de zi, jurisdicție nedivulgată",
+    "suspectLabel": "SUSPECT",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "MARTOR",
+    "witnessVal": "Menajera, numită pe tot parcursul dosarului \"Bestie\"",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Control operațional total asupra gospodăriei; aspiratorul este considerat o forță de ocupație ostilă",
+    "p1": "Suspectul consideră sosirea săptămânală a menajerei pe care o numește \"Bestie\" drept punctul culminant al oricărei săptămâni. Afecțiunea se exprimă în principal prin supraveghere: nicio sarcină nu are voie să continue fără monitorizare, nicio suprafață nu poate fi curățată fără o inspecție ulterioară, iar nicio mâncare lăsată pentru scurt timp nesupravegheată în bucătărie nu supraviețuiește contactului. Anchetatorii notează că entuziasmul său nu s-a tradus până acum niciodată în ajutor concret.",
+    "p2": "Aspiratorul nu primește aceeași primire. De îndată ce este zărit, este tratat ca o forță de ocupație ostilă — abordat, obstrucționat și, când este posibil, angajat fizic — indiferent cine îl manevrează, ce face sau de câte ori s-a mai întâmplat acest lucru astăzi.",
+    "p3": "Inspecția încheiată, suspectul a trecut la adevărata sa ocupație a zilei: să anuleze orice progres tocmai realizat. Pernele au fost redistribuite. Jucăriile au fost reintroduse pe podeaua proaspăt eliberată. Patul câinelui, golit pentru curățare, a fost readus într-o poziție de maxim inconvenient înainte ca aspiratorul să fi părăsit măcar încăperea.",
+    "p4": "Până seara, gospodăria fusese supravegheată temeinic, aspiratorul respins în mai multe rânduri, iar fiecare sarcină finalizată fusese inversată în liniște. Cu munca zilei încheiată, suspectul s-a retras.",
+    "exhibitACaption": "Proba A — condiții de câmp de luptă la scurt timp după sosirea lui Bestie. Aspirator desfășurat, suspect aeropurtat, patul câinelui mutat fără autorizație pe covorul bun.",
+    "exhibitBCaption": "Proba B — suspectul efectuează de la mică distanță o inspecție de calitate a tehnicii lui Bestie, poziționat direct sub picioare pentru interferență maximă.",
+    "exhibitCCaption": "Proba C — suspectul se odihnește printre perne, la final de tură, epuizat după o zi întreagă de intimidare.",
+    "stamp": "CAZ ÎNCHIS — Bestie revine săptămâna viitoare"
   },
   "blog": {
     "title": "REGISTRUL CAZURILOR",

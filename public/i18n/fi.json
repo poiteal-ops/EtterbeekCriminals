@@ -14,6 +14,7 @@
     "theftAndDestruction": "VARKAUS JA TUHOTYÖ",
     "heatwaveSurvival": "HELLEAALLON TYVEN",
     "juryTampering": "JURYN MANIPULOINTI",
+    "aDayWithBestie": "PÄIVÄ BESTIEN KANSSA",
     "blog": "BLOGI",
     "shop": "KAUPPA"
   },
@@ -131,6 +132,12 @@
       "teaser": "Vieraileva valamiehistö, vaarantunut päätös ja yksi epäilty, joka hankki sympatian heti saavuttuaan.",
       "link": "/jury-tampering",
       "image": "assets/images/jury-verdict-awaited.jpg"
+    },
+    {
+      "title": "PÄIVÄ BESTIEN KANSSA",
+      "teaser": "Taloudenhoitaja, vihamielinen imuri ja yksi epäilty, joka on päättänyt valvoa jokaista toimenpidettä.",
+      "link": "/a-day-with-bestie",
+      "image": "assets/images/bestie-hoover-chaos.jpg"
     }
   ],
   "escapeToCountry": {
@@ -270,6 +277,26 @@
     "exhibitHCaption": "TODISTE H — SIDE VAHVISTETTU MURTUMATTOMAKSI.",
     "exhibitICaption": "TODISTE I — EPÄILTY SOPEUTUU PIENEMPÄÄN HENKILÖSTÖMÄÄRÄÄN JA KYSEENALAISTAA AINOAN JÄLJELLÄ OLEVAN OHJAAJANSA AUKTORITEETIN.",
     "stamp": "PÄÄTÖS MERKITYKSETÖN — JURY MANIPULOITU"
+  },
+  "aDayWithBestie": {
+    "kicker": "ASIAKIRJA — KOTISABOTAASI",
+    "title": "PÄIVÄ BESTIEN KANSSA",
+    "locationLabel": "PAIKKA",
+    "locationVal": "Perheen asunto — olohuone, julkistamaton lainkäyttöalue",
+    "suspectLabel": "EPÄILTY",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TODISTAJA",
+    "witnessVal": "Taloudenhoitaja, johon viitataan kauttaaltaan nimellä „Bestie“",
+    "motiveLabel": "MOTIIVI",
+    "motiveVal": "Täydellinen operatiivinen hallinta kotitaloudessa; imuria pidetään vihamielisenä miehitysjoukkona",
+    "p1": "Epäilty pitää Bestieksi kutsumansa taloudenhoitajan viikoittaista saapumista jokaisen viikon kohokohtana. Kiintymys ilmenee pääasiassa valvontana: minkään tehtävän ei anneta jatkua tarkkailematta, mitään pintaa ei saa puhdistaa ilman jälkitarkastusta, eikä yksikään keittiöön hetkeksikään vartioimatta jätetty ruoka selviä kosketuksesta. Tutkijat toteavat, ettei hänen innostuksensa ole toistaiseksi kertaakaan muuttunut varsinaiseksi avuksi.",
+    "p2": "Imuri ei saa vastaavaa vastaanottoa. Näkyviin tullessaan sitä kohdellaan vihamielisenä miehitysjoukkona — sitä lähestytään, sen kulku estetään ja mahdollisuuksien mukaan siihen käydään fyysisesti käsiksi — riippumatta siitä, kuka sitä käyttää, mitä se tekee tai kuinka monta kertaa näin on jo tänään tapahtunut.",
+    "p3": "Tarkastuksen valmistuttua epäilty siirtyi päivän varsinaiseen työhönsä: kumoamaan kaiken juuri saavutetun edistyksen. Tyynyt järjesteltiin uudelleen. Lelut palautettiin vastikään raivatulle lattiatilalle. Siivousta varten tyhjennetty koiranpeti palautettiin mahdollisimman hankalaan paikkaan jo ennen kuin imuri oli edes poistunut huoneesta.",
+    "p4": "Iltaan mennessä kotitaloutta oli valvottu perusteellisesti, imuri torjuttu useaan otteeseen ja jokainen valmis tehtävä hiljaa kumottu. Päivän työn valmistuttua epäilty vetäytyi lepoon.",
+    "exhibitACaption": "Todiste A — taistelukentän olosuhteet pian Bestien saapumisen jälkeen. Imuri otettu käyttöön, epäilty ilmassa, koiranpeti siirretty luvatta paremmalle matolle.",
+    "exhibitBCaption": "Todiste B — epäilty suorittaa Bestien työskentelytavan lähietäisyydeltä laaduntarkastuksen, sijoittuen suoraan jalkoihin mahdollisimman suuren häiriön varmistamiseksi.",
+    "exhibitCCaption": "Todiste C — epäilty lepää tyynyjen keskellä työvuoron päättyessä, uupuneena kokonaisen kiusaamispäivän jäljiltä.",
+    "stamp": "TAPAUS SULJETTU — BESTIE PALAA ENSI VIIKOLLA"
   },
   "blog": {
     "title": "TAPAUSPÄIVÄKIRJA",

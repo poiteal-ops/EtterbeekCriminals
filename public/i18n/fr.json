@@ -14,6 +14,7 @@
     "theftAndDestruction": "VOL ET DESTRUCTION",
     "heatwaveSurvival": "L'ACCALMIE DE LA CANICULE",
     "juryTampering": "MANIPULATION DU JURY",
+    "aDayWithBestie": "UNE JOURNÉE AVEC BESTIE",
     "blog": "BLOG",
     "shop": "BOUTIQUE"
   },
@@ -131,6 +132,12 @@
       "teaser": "Un jury en visite, un verdict compromis et un suspect qui s'est attiré la sympathie dès son arrivée.",
       "link": "/jury-tampering",
       "image": "assets/images/jury-verdict-awaited.jpg"
+    },
+    {
+      "title": "UNE JOURNÉE AVEC BESTIE",
+      "teaser": "Une femme de ménage, un aspirateur hostile et un suspect déterminé à superviser chaque opération.",
+      "link": "/a-day-with-bestie",
+      "image": "assets/images/bestie-hoover-chaos.jpg"
     }
   ],
   "escapeToCountry": {
@@ -270,6 +277,26 @@
     "exhibitHCaption": "PIÈCE H — LIEN CONFIRMÉ COMME INDÉFECTIBLE.",
     "exhibitICaption": "PIÈCE I — LE SUSPECT, S’ADAPTANT À DES EFFECTIFS RÉDUITS, MET EN QUESTION L’AUTORITÉ DE SON UNIQUE GARDIEN RESTANT.",
     "stamp": "VERDICT SANS OBJET — JURY COMPROMIS"
+  },
+  "aDayWithBestie": {
+    "kicker": "DOSSIER — SABOTAGE DOMESTIQUE",
+    "title": "UNE JOURNÉE AVEC BESTIE",
+    "locationLabel": "LIEU",
+    "locationVal": "Résidence familiale — salon, juridiction non divulguée",
+    "suspectLabel": "SUSPECT",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TÉMOIN",
+    "witnessVal": "La femme de ménage, désignée tout au long du dossier comme « Bestie »",
+    "motiveLabel": "MOBILE",
+    "motiveVal": "Contrôle opérationnel total du foyer ; l'aspirateur est considéré comme une force d'occupation hostile",
+    "p1": "Le suspect considère l'arrivée hebdomadaire de la femme de ménage qu'il appelle « Bestie » comme le point culminant de toute semaine donnée. Son affection s'exprime principalement par la supervision : aucune tâche n'est autorisée à se poursuivre sans surveillance, aucune surface ne peut être nettoyée sans inspection de suivi, et aucune nourriture laissée brièvement sans surveillance dans la cuisine ne survit au contact. Les enquêteurs notent que son enthousiasme ne s'est, à ce jour, jamais traduit par une aide effective.",
+    "p2": "L'aspirateur ne reçoit pas un tel accueil. Dès qu'il est aperçu, il est traité comme une force d'occupation hostile — approché, entravé et, lorsque possible, physiquement engagé — sans égard à la personne qui le manœuvre, à ce qu'il fait ou au nombre de fois où cela s'est déjà produit aujourd'hui.",
+    "p3": "Inspection achevée, le suspect s'est consacré à sa véritable occupation du jour : défaire tout progrès qui venait d'être accompli. Les coussins ont été redistribués. Les jouets ont été réintroduits dans l'espace au sol fraîchement dégagé. Le panier du chien, évacué pour nettoyage, a retrouvé une position d'inconvénient maximal avant même que l'aspirateur ait quitté la pièce.",
+    "p4": "Le soir venu, le foyer avait été minutieusement supervisé, l'aspirateur repoussé à plusieurs reprises et chaque tâche accomplie discrètement annulée. Son travail de la journée terminé, le suspect s'est retiré.",
+    "exhibitACaption": "Pièce A — conditions de champ de bataille peu après l'arrivée de Bestie. Aspirateur déployé, suspect en vol, panier du chien déplacé sur le beau tapis sans autorisation.",
+    "exhibitBCaption": "Pièce B — le suspect mène une inspection de qualité à courte distance de la technique de Bestie, posté directement dans ses jambes pour une gêne maximale.",
+    "exhibitCCaption": "Pièce C — suspect au repos parmi les coussins, fin de service, épuisé par une journée entière de harcèlement.",
+    "stamp": "AFFAIRE CLASSÉE — BESTIE REVIENT LA SEMAINE PROCHAINE"
   },
   "blog": {
     "title": "JOURNAL DE BORD",

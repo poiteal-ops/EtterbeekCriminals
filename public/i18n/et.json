@@ -14,6 +14,7 @@
     "theftAndDestruction": "VARGUS JA HÄVITAMINE",
     "heatwaveSurvival": "KUUMALAINE VAHEAEG",
     "juryTampering": "ŽÜRII MÕJUTAMINE",
+    "aDayWithBestie": "PÄEV BESTIEGA",
     "blog": "BLOGI",
     "shop": "POOD"
   },
@@ -131,6 +132,12 @@
       "teaser": "Külalisžürii, kompromiteeritud otsus ja üks kahtlusalune, kes võitis saabudes kõigi poolehoiu.",
       "link": "/jury-tampering",
       "image": "assets/images/jury-verdict-awaited.jpg"
+    },
+    {
+      "title": "PÄEV BESTIEGA",
+      "teaser": "Majapidajanna, vaenulik tolmuimeja ja üks kahtlusalune, kes on otsustanud iga operatsiooni üle valvata.",
+      "link": "/a-day-with-bestie",
+      "image": "assets/images/bestie-hoover-chaos.jpg"
     }
   ],
   "escapeToCountry": {
@@ -270,6 +277,26 @@
     "exhibitHCaption": "TÕEND H — SIDE KINNITATUD PURUNEMATUKS.",
     "exhibitICaption": "TÕEND I — KAHTLUSALUNE KOHANEB VÄHENENUD PERSONALIGA JA SEAB KAHTLUSE ALLA OMA AINSA ALLESJÄÄNUD HOOLDAJA AUTORITEEDI.",
     "stamp": "OTSUS ASJASSE MITTEPUUTUV — ŽÜRII MÕJUTATUD"
+  },
+  "aDayWithBestie": {
+    "kicker": "TOIMIK — KODUNE SABOTAAŽ",
+    "title": "PÄEV BESTIEGA",
+    "locationLabel": "ASUKOHT",
+    "locationVal": "Perekonna elukoht — elutuba, avalikustamata jurisdiktsioon",
+    "suspectLabel": "KAHTLUSALUNE",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TUNNISTAJA",
+    "witnessVal": "Majapidajanna, keda kogu toimikus nimetatakse „Bestie’ks“",
+    "motiveLabel": "MOTIIV",
+    "motiveVal": "Täielik operatiivne kontroll majapidamise üle; tolmuimejat peetakse vaenulikuks okupatsioonijõuks",
+    "p1": "Kahtlusalune peab majapidajanna, keda ta kutsub „Bestie’ks“, iganädalast saabumist iga nädala kõrgpunktiks. Kiindumust väljendab ta peamiselt järelevalve kaudu: ühelgi ülesandel ei lubata jätkuda ilma vaatluseta, ühtki pinda ei tohi puhastada ilma järelkontrollita ning ükski kööki kas või lühikeseks ajaks järelevalveta jäetud toit ei ela kontakti üle. Uurijad märgivad, et tema entusiasm ei ole seni kordagi muutunud tegelikuks abiks.",
+    "p2": "Tolmuimeja sellist vastuvõttu ei saa. Niipea kui see silma hakkab, koheldakse seda vaenuliku okupatsioonijõuna — sellele lähenetakse, selle tööd takistatakse ja võimaluse korral astutakse sellega füüsilisse kontakti — sõltumata sellest, kes seda kasutab, mida see teeb või mitu korda see täna juba juhtunud on.",
+    "p3": "Pärast ülevaatuse lõpetamist asus kahtlusalune päeva tegeliku tegevuse juurde: äsja tehtud edusammude tühistamisele. Padjad jaotati ümber. Mänguasjad toodi tagasi värskelt vabastatud põrandapinnale. Puhastamiseks tühjendatud koeravoodi viidi tagasi kõige ebamugavamasse asendisse veel enne, kui tolmuimeja oli ruumist lahkunud.",
+    "p4": "Õhtuks oli majapidamine põhjalikult järele valvatud, tolmuimeja mitmel korral tagasi tõrjutud ja iga lõpetatud ülesanne vaikselt ümber pööratud. Päevatöö lõppenud, taandus kahtlusalune puhkama.",
+    "exhibitACaption": "Eksponaat A — lahinguvälja olukord vahetult pärast Bestie saabumist. Tolmuimeja kasutusele võetud, kahtlusalune õhus, koeravoodi ilma loata paremale vaibale ümber paigutatud.",
+    "exhibitBCaption": "Eksponaat B — kahtlusalune kontrollib Bestie töövõtet lähedalt, paiknedes maksimaalse segamise eesmärgil otse jalge all.",
+    "exhibitCCaption": "Eksponaat C — kahtlusalune puhkab patjade vahel vahetuse lõpus, kurnatud täispikast kiusamispäevast.",
+    "stamp": "JUHTUM LÕPETATUD — BESTIE TULEB JÄRGMISEL NÄDALAL TAGASI"
   },
   "blog": {
     "title": "JUHTUMIPÄEVIK",

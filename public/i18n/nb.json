@@ -14,6 +14,7 @@
     "theftAndDestruction": "TYVERI OG ØDELEGGELSE",
     "heatwaveSurvival": "VARMEBØLGENS PAUSE",
     "juryTampering": "JURYMANIPULERING",
+    "aDayWithBestie": "EN DAG MED BESTIE",
     "blog": "BLOGG",
     "shop": "BUTIKK"
   },
@@ -131,6 +132,12 @@
       "teaser": "En besøkende jury, en kompromittert kjennelse og én mistenkt som sikret seg sympati ved ankomst.",
       "link": "/jury-tampering",
       "image": "assets/images/jury-verdict-awaited.jpg"
+    },
+    {
+      "title": "EN DAG MED BESTIE",
+      "teaser": "En husholderske, en fiendtlig støvsuger og én mistenkt fast bestemt på å føre tilsyn med enhver operasjon.",
+      "link": "/a-day-with-bestie",
+      "image": "assets/images/bestie-hoover-chaos.jpg"
     }
   ],
   "escapeToCountry": {
@@ -270,6 +277,26 @@
     "exhibitHCaption": "BEVIS H — BÅNDET BEKREFTET UBROKKELIG.",
     "exhibitICaption": "BEVIS I — MISTENKT, SOM TILPASSER SEG REDUSERT BEMANNING, SETTER SPØRSMÅLSTEGN VED AUTORITETEN TIL SIN ENESTE GJENVÆRENDE FØRER.",
     "stamp": "KJENNELSE UAKTUELL — JURY MANIPULERT"
+  },
+  "aDayWithBestie": {
+    "kicker": "SAKSMAPPE — HUSSABOTASJE",
+    "title": "EN DAG MED BESTIE",
+    "locationLabel": "STED",
+    "locationVal": "Familiebolig — stue, uoppgitt jurisdiksjon",
+    "suspectLabel": "MISTENKT",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "VITNE",
+    "witnessVal": "Husholdersken, heretter omtalt som «Bestie»",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Full operativ kontroll over husholdningen; støvsugeren anses som en fiendtlig okkupasjonsstyrke",
+    "p1": "Den mistenkte anser det ukentlige besøket av husholdersken han kaller «Bestie», som høydepunktet i enhver uke. Hengivenhet uttrykkes først og fremst gjennom tilsyn: ingen oppgave får fortsette uten overvåking, ingen flate får rengjøres uten en etterfølgende inspeksjon, og ingen mat som kortvarig blir stående uten tilsyn på kjøkkenet, overlever kontakt. Etterforskerne bemerker at hans entusiasme hittil ikke én eneste gang har blitt omsatt i faktisk hjelp.",
+    "p2": "Støvsugeren får ingen slik velkomst. Ved første øyekast behandles den som en fiendtlig okkupasjonsstyrke — den oppsøkes, blokkeres og, der det er mulig, angripes fysisk — uavhengig av hvem som betjener den, hva den gjør eller hvor mange ganger dette allerede har skjedd i dag.",
+    "p3": "Med inspeksjonen fullført gikk den mistenkte videre til dagens egentlige beskjeftigelse: å oppheve ethvert fremskritt som nettopp var oppnådd. Putene ble omfordelt. Leker ble gjeninnført på nylig ryddet gulvplass. Hundesengen, tømt for rengjøring, ble ført tilbake til en posisjon med maksimal ulempe før støvsugeren i det hele tatt hadde forlatt rommet.",
+    "p4": "Ved kvelden var husholdningen blitt grundig overvåket, støvsugeren avverget ved flere anledninger og enhver fullført oppgave stille reversert. Med dagens arbeid fullført trakk den mistenkte seg tilbake.",
+    "exhibitACaption": "Bevis A — forhold på slagmarken kort etter Besties ankomst. Støvsugeren satt inn, den mistenkte luftbåren, hundesengen flyttet til det fine teppet uten tillatelse.",
+    "exhibitBCaption": "Bevis B — den mistenkte utfører en kvalitetsinspeksjon på nært hold av Besties teknikk, plassert rett under føttene for maksimal forstyrrelse.",
+    "exhibitCCaption": "Bevis C — den mistenkte i hvile blant putene, ved skiftets slutt, utslitt etter en hel dag med mobbing.",
+    "stamp": "SAKEN HENLAGT — BESTIE KOMMER TILBAKE NESTE UKE"
   },
   "blog": {
     "title": "SAKSLOGG",

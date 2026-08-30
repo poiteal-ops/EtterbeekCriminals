@@ -14,6 +14,7 @@
     "theftAndDestruction": "TYVERI OG ØDELÆGGELSE",
     "heatwaveSurvival": "PAUSEN I VARMEBØLGEN",
     "juryTampering": "JURYMANIPULATION",
+    "aDayWithBestie": "EN DAG MED BESTIE",
     "blog": "BLOG",
     "shop": "BUTIK"
   },
@@ -131,6 +132,12 @@
       "teaser": "En besøgende jury, en kompromitteret kendelse og én mistænkt, der sikrede sig sympati ved ankomsten.",
       "link": "/jury-tampering",
       "image": "assets/images/jury-verdict-awaited.jpg"
+    },
+    {
+      "title": "EN DAG MED BESTIE",
+      "teaser": "En hushjælp, en fjendtlig støvsuger og én mistænkt, der er fast besluttet på at føre tilsyn med enhver operation.",
+      "link": "/a-day-with-bestie",
+      "image": "assets/images/bestie-hoover-chaos.jpg"
     }
   ],
   "escapeToCountry": {
@@ -270,6 +277,26 @@
     "exhibitHCaption": "BEVIS H — BÅND BEKRÆFTET UBRYDELIGT.",
     "exhibitICaption": "BEVIS I — MISTÆNKT TILPASSER SIG REDUCERET BEMANDING OG SÆTTER SPØRGSMÅLSTEGN VED SIN ENE TILBAGEVÆRENDE HÅNDTERERS AUTORITET.",
     "stamp": "KENDELSE UDEN GENSTAND — JURY KOMPROMITTERET"
+  },
+  "aDayWithBestie": {
+    "kicker": "SAGSARKIV — HUSSABOTAGE",
+    "title": "EN DAG MED BESTIE",
+    "locationLabel": "STED",
+    "locationVal": "Familiebolig — stue, uoplyst jurisdiktion",
+    "suspectLabel": "MISTÆNKT",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "VIDNE",
+    "witnessVal": "Hushjælpen, omtalt gennem hele sagen som „Bestie“",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Fuld operationel kontrol over husstanden; støvsugeren betragtes som en fjendtlig besættelsesstyrke",
+    "p1": "Den mistænkte betragter det ugentlige besøg af hushjælpen, han kalder „Bestie“, som højdepunktet i enhver uge. Hengivenheden kommer primært til udtryk gennem overvågning: ingen opgave må fortsætte uden opsyn, ingen overflade må rengøres uden en efterfølgende inspektion, og ingen mad, der kortvarigt efterlades uden opsyn i køkkenet, overlever kontakten. Efterforskerne noterer, at hans entusiasme til dato aldrig har udmøntet sig i egentlig hjælp.",
+    "p2": "Støvsugeren får ingen sådan velkomst. Ved synet af den behandles den som en fjendtlig besættelsesstyrke — den opsøges, blokeres og, når det er muligt, konfronteres fysisk — uanset hvem der betjener den, hvad den foretager sig, eller hvor mange gange dette allerede er sket i dag.",
+    "p3": "Efter afsluttet inspektion gik den mistænkte videre til dagens egentlige beskæftigelse: at ophæve ethvert fremskridt, der netop var blevet gjort. Puder blev omfordelt. Legetøj blev genindført på nyrenset gulvareal. Hundekurven, ryddet til rengøring, blev bragt tilbage til sin mest besværlige placering, før støvsugeren overhovedet havde forladt rummet.",
+    "p4": "Ved aftenstid var husstanden blevet grundigt overvåget, støvsugeren afvist ved flere lejligheder og enhver færdig opgave stilfærdigt omgjort. Med dagens arbejde afsluttet trak den mistænkte sig tilbage.",
+    "exhibitACaption": "Bilag A — kampforhold kort efter Besties ankomst. Støvsuger indsat, mistænkt i luften, hundekurv flyttet til det gode tæppe uden tilladelse.",
+    "exhibitBCaption": "Bilag B — den mistænkte udfører en kvalitetstjek på nært hold af Besties teknik, placeret direkte under fødderne for maksimal forstyrrelse.",
+    "exhibitCCaption": "Bilag C — den mistænkte i hvile blandt puderne ved fyraften, udmattet efter en hel dags bøllevirksomhed.",
+    "stamp": "SAGEN LUKKET — BESTIE VENDER TILBAGE NÆSTE UGE"
   },
   "blog": {
     "title": "SAGSLOG",
