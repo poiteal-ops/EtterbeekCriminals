@@ -16,6 +16,7 @@ export const EN_CONTENT: SiteContent = {
     theftAndDestruction: 'THEFT AND DESTRUCTION',
     heatwaveSurvival: 'THE HEATWAVE LULL',
     juryTampering: 'JURY TAMPERING',
+    aDayWithBestie: 'A DAY WITH BESTIE',
     blog: 'BLOG',
     shop: 'SHOP',
   },
@@ -113,27 +114,38 @@ export const EN_CONTENT: SiteContent = {
     },
     {
       title: 'ESCAPE TO THE COUNTRY',
-      teaser: 'One reunion, one thoroughly charmed hostess, and a field of cow dung with his name on it.',
+      teaser:
+        'One reunion, one thoroughly charmed hostess, and a field of cow dung with his name on it.',
       link: '/escape-to-the-country',
       image: 'assets/images/gaume-mistress-and-suspect.jpg',
     },
     {
       title: 'THEFT AND DESTRUCTION',
-      teaser: 'A shoe, a slice of bread, and one unrecognizable football — recovered separately, blamed on the same suspect.',
+      teaser:
+        'A shoe, a slice of bread, and one unrecognizable football — recovered separately, blamed on the same suspect.',
       link: '/theft-and-destruction',
       image: 'assets/images/theft-shoe.jpg',
     },
     {
       title: 'THE HEATWAVE LULL',
-      teaser: 'A record-breaking lull, one stolen crime scene, and a suspect back to full strength the moment the heat broke.',
+      teaser:
+        'A record-breaking lull, one stolen crime scene, and a suspect back to full strength the moment the heat broke.',
       link: '/heatwave-survival',
       image: 'assets/images/heatwave-collapse.jpg',
     },
     {
       title: 'JURY TAMPERING',
-      teaser: 'A visiting jury, a compromised verdict, and one suspect who secured sympathy on arrival.',
+      teaser:
+        'A visiting jury, a compromised verdict, and one suspect who secured sympathy on arrival.',
       link: '/jury-tampering',
       image: 'assets/images/jury-verdict-awaited.jpg',
+    },
+    {
+      title: 'A DAY WITH BESTIE',
+      teaser:
+        'A housekeeper, a hostile hoover, and one suspect determined to supervise every operation.',
+      link: '/a-day-with-bestie',
+      image: 'assets/images/bestie-hoover-chaos.jpg',
     },
   ],
   escapeToCountry: {
@@ -146,7 +158,8 @@ export const EN_CONTENT: SiteContent = {
     witnessLabel: 'WITNESS',
     witnessVal: 'Sawito (present, no meaningful intervention attempted)',
     motiveLabel: 'MOTIVE',
-    motiveVal: 'A reunion with old friends, later revised to include horses, open streets, and one (1) unidentified pasture',
+    motiveVal:
+      'A reunion with old friends, later revised to include horses, open streets, and one (1) unidentified pasture',
     p1: 'This past spring, Subject accompanied Sawito to Gaume, in the south of Belgium, to see friends neither of them had seen in far too long. It took him roughly the length of the car ride to identify the household’s weak point. The mistress of the house was charmed, then subdued, then fully in his employ before the coffee was poured. Investigators are calling it love at first sight. Subject is calling it Tuesday.',
     p2: 'The goodwill did not last the weekend. Horses were barked at, with conviction. An attempt was made — twice — to drag the party bodily into the street, destination unclear. And in the case’s closing act, five minutes after boarding the train home, Subject located and rolled in a quantity of cow dung so thorough that no witness could say afterward where the dog ended and the field began.',
     exhibitBCaption: 'EXHIBIT B — UNDER NEW MANAGEMENT: SUBJECT SUPERVISES THE KITCHEN',
@@ -237,10 +250,11 @@ export const EN_CONTENT: SiteContent = {
     witnessLabel: 'WITNESS',
     witnessVal: 'Sawito (present throughout, offered water, declined)',
     motiveLabel: 'MOTIVE',
-    motiveVal: 'A multi-day heat advisory, followed by an urgent need to reclaim credit for crimes not his own',
-    p1: 'When the heatwave reached Etterbeek in late July, criminal activity fell to its lowest recorded level in the case\'s history. Subject was found flat on his back on the living room rug for extended periods, limbs raised at odd angles, apparently unable to summon the energy for so much as a minor offense. Investigators noted this was the first sustained quiet period since surveillance began.',
+    motiveVal:
+      'A multi-day heat advisory, followed by an urgent need to reclaim credit for crimes not his own',
+    p1: "When the heatwave reached Etterbeek in late July, criminal activity fell to its lowest recorded level in the case's history. Subject was found flat on his back on the living room rug for extended periods, limbs raised at odd angles, apparently unable to summon the energy for so much as a minor offense. Investigators noted this was the first sustained quiet period since surveillance began.",
     p2: 'The lull did not hold. Once temperatures allowed him back outside, Subject located a stash of discarded bottles on a patch of grass — evidence of misdeeds he had no part in — and proceeded to urinate on the entire pile, apparently to claim the crime scene as his own. By the time the weather broke fully, his energy had returned in full, and he resumed operations without delay or explanation.',
-    exhibitBCaption: 'EXHIBIT B — SUSPECT CLAIMING A CRIME SCENE THAT WASN\'T HIS',
+    exhibitBCaption: "EXHIBIT B — SUSPECT CLAIMING A CRIME SCENE THAT WASN'T HIS",
     exhibitCCaption: 'EXHIBIT C — BACK TO FULL STRENGTH, MOMENTS AFTER THE HEATWAVE BROKE',
     stamp: 'CASE REOPENED — SUBJECT FULLY RECOVERED',
   },
@@ -265,19 +279,50 @@ export const EN_CONTENT: SiteContent = {
     p8: 'With every juror accounted for, the panel was declared, officially, tampered with.',
     p9: 'Staffing levels have since returned to their prior, unacceptable baseline. The suspect has been observed regarding his one remaining handler with open suspicion, apparently unable to account for the sudden and unexplained loss of several additional servants.',
     exhibitACaption: 'EXHIBIT A — SUSPECT AWAITING JUDGMENT. VERDICT LATER DECLARED MOOT.',
-    exhibitBCaption: 'EXHIBIT B — SUSPECT DISCOVERS FOOD IS BEING PREPARED FOR EVERYONE, NOT JUST HIM. VISIBLY PUZZLED. VISIBLY DISAPPOINTED.',
-    exhibitCCaption: 'EXHIBIT C — MAIN VICTIM, SAWITO’S SISTER. SUSPECT’S FIRST PORT OF CALL WHENEVER SHE WAS NOT ASLEEP. NO COMPLAINT WAS EVER FILED.',
-    exhibitDCaption: 'EXHIBIT D — SUSPECT REASSERTS DOMINANCE OVER SAME VICTIM. STANDARD "STAY ON TOP" BEHAVIOUR.',
-    exhibitECaption: 'EXHIBIT E — WITNESS’S BROTHER-IN-LAW, PREVIOUSLY A PERSON OF AUTHORITY, COMPREHENSIVELY SUBDUED SHORTLY AFTER ARRIVAL.',
-    exhibitFCaption: 'EXHIBIT F — NIECE, INITIALLY SUSPICIOUS OF SUSPECT. SUSPICION LATER DEEMED WARRANTED BUT IRRELEVANT.',
+    exhibitBCaption:
+      'EXHIBIT B — SUSPECT DISCOVERS FOOD IS BEING PREPARED FOR EVERYONE, NOT JUST HIM. VISIBLY PUZZLED. VISIBLY DISAPPOINTED.',
+    exhibitCCaption:
+      'EXHIBIT C — MAIN VICTIM, SAWITO’S SISTER. SUSPECT’S FIRST PORT OF CALL WHENEVER SHE WAS NOT ASLEEP. NO COMPLAINT WAS EVER FILED.',
+    exhibitDCaption:
+      'EXHIBIT D — SUSPECT REASSERTS DOMINANCE OVER SAME VICTIM. STANDARD "STAY ON TOP" BEHAVIOUR.',
+    exhibitECaption:
+      'EXHIBIT E — WITNESS’S BROTHER-IN-LAW, PREVIOUSLY A PERSON OF AUTHORITY, COMPREHENSIVELY SUBDUED SHORTLY AFTER ARRIVAL.',
+    exhibitFCaption:
+      'EXHIBIT F — NIECE, INITIALLY SUSPICIOUS OF SUSPECT. SUSPICION LATER DEEMED WARRANTED BUT IRRELEVANT.',
     exhibitGCaption: 'EXHIBIT G — AGREEMENT REACHED. TERMS INVOLVED MOCHI ICE CREAM.',
     exhibitHCaption: 'EXHIBIT H — BOND CONFIRMED UNBREAKABLE.',
-    exhibitICaption: 'EXHIBIT I — SUSPECT, ADJUSTING TO REDUCED STAFFING LEVELS, QUESTIONS THE AUTHORITY OF HIS ONE REMAINING HANDLER.',
+    exhibitICaption:
+      'EXHIBIT I — SUSPECT, ADJUSTING TO REDUCED STAFFING LEVELS, QUESTIONS THE AUTHORITY OF HIS ONE REMAINING HANDLER.',
     stamp: 'VERDICT MOOT — JURY COMPROMISED',
+  },
+  aDayWithBestie: {
+    kicker: 'CASE FILE — DOMESTIC SABOTAGE',
+    title: 'A DAY WITH BESTIE',
+    locationLabel: 'LOCATION',
+    locationVal: 'Family residence — living room, undisclosed jurisdiction',
+    suspectLabel: 'SUSPECT',
+    suspectVal: 'LE CRIMINEL',
+    witnessLabel: 'WITNESS',
+    witnessVal: 'The housekeeper, referred to throughout as "Bestie"',
+    motiveLabel: 'MOTIVE',
+    motiveVal:
+      'Total operational control of the household; the hoover regarded as a hostile occupying force',
+    p1: 'The suspect regards the weekly arrival of the housekeeper he calls "Bestie" as the high point of any given week. Affection is expressed primarily through supervision: no task is permitted to proceed unmonitored, no surface may be cleaned without a follow-up inspection, and no food left briefly unattended in the kitchen survives contact. Investigators note that his enthusiasm has, to date, never once translated into actual assistance.',
+    p2: 'The hoover receives no such welcome. On sight, it is treated as a hostile occupying force — approached, obstructed, and where possible physically engaged — regardless of who is operating it, what it is doing, or how many times this has already happened today.',
+    p3: 'Inspection complete, the suspect proceeded to his real occupation for the day: undoing whatever progress had just been made. Cushions were redistributed. Toys were reintroduced to freshly cleared floor space. The dog bed, vacated for cleaning, was returned to a position of maximum inconvenience before the vacuum had even left the room.',
+    p4: 'By evening the household had been thoroughly supervised, the hoover repelled on multiple occasions, and every completed task quietly reversed. His work for the day complete, the suspect retired.',
+    exhibitACaption:
+      "Exhibit A — battlefield conditions shortly after Bestie's arrival. Hoover deployed, suspect airborne, dog bed relocated to the good rug without authorization.",
+    exhibitBCaption:
+      "Exhibit B — suspect conducts a close-range quality inspection of Bestie's technique, stationed directly underfoot for maximum interference.",
+    exhibitCCaption:
+      'Exhibit C — suspect at rest among the cushions, end of shift, worn out from a full day of bullying.',
+    stamp: 'CASE CLOSED — BESTIE RETURNS NEXT WEEK',
   },
   blog: {
     title: 'CASE LOG',
-    subtitle: '25 monthly entries — just over two years of continuous surveillance, case 001-CR remains open',
+    subtitle:
+      '25 monthly entries — just over two years of continuous surveillance, case 001-CR remains open',
   },
   blogPosts: [
     {

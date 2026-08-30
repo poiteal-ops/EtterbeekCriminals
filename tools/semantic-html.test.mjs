@@ -10,6 +10,7 @@ const pageTemplates = [
   'src/app/pages/couch/couch.html',
   'src/app/pages/train-ride/train-ride.html',
   'src/app/pages/escape-to-the-country/escape-to-the-country.html',
+  'src/app/pages/a-day-with-bestie/a-day-with-bestie.html',
   'src/app/pages/blog/blog.html',
   'src/app/pages/shop/shop.html',
   'src/app/pages/shop-item/shop-item.html',

@@ -4,7 +4,13 @@ import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
 import { filter, map, startWith } from 'rxjs';
 
 import { TranslationService } from '../../services/translation.service';
-import { CONTENT_LOCALES, DEFAULT_LOCALE, LocaleCode, isKnownLocale, localeDisplayName } from '../../i18n/locale-registry';
+import {
+  CONTENT_LOCALES,
+  DEFAULT_LOCALE,
+  LocaleCode,
+  isKnownLocale,
+  localeDisplayName,
+} from '../../i18n/locale-registry';
 
 const STORY_ROUTES = [
   '/pigeon',
@@ -14,7 +20,14 @@ const STORY_ROUTES = [
   '/theft-and-destruction',
   '/heatwave-survival',
   '/jury-tampering',
+  '/a-day-with-bestie',
 ];
+
+function isStoryRoute(url: string): boolean {
+  const segments = url.split(/[?#]/)[0].split('/').filter(Boolean);
+  if (segments.length && isKnownLocale(segments[0])) segments.shift();
+  return segments.length === 1 && STORY_ROUTES.includes(`/${segments[0]}`);
+}
 
 @Component({
   selector: 'app-nav-bar',
@@ -36,8 +49,8 @@ export class NavBar {
   protected readonly storiesActive = toSignal(
     this.router.events.pipe(
       filter((event) => event instanceof NavigationEnd),
-      map(() => STORY_ROUTES.some((route) => this.router.url.startsWith(route))),
-      startWith(STORY_ROUTES.some((route) => this.router.url.startsWith(route))),
+      map(() => isStoryRoute(this.router.url)),
+      startWith(isStoryRoute(this.router.url)),
     ),
     { initialValue: false },
   );

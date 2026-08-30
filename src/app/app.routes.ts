@@ -3,6 +3,7 @@ import { Routes } from '@angular/router';
 import { localeCanMatch } from './i18n/locale-match.guard';
 import { localeResolver } from './i18n/locale.resolver';
 import { About } from './pages/about/about';
+import { ADayWithBestie } from './pages/a-day-with-bestie/a-day-with-bestie';
 import { Blog } from './pages/blog/blog';
 import { Couch } from './pages/couch/couch';
 import { EscapeToTheCountry } from './pages/escape-to-the-country/escape-to-the-country';
@@ -27,6 +28,7 @@ const pageRoutes: Routes = [
   { path: 'theft-and-destruction', component: TheftAndDestruction },
   { path: 'heatwave-survival', component: HeatwaveSurvival },
   { path: 'jury-tampering', component: JuryTampering },
+  { path: 'a-day-with-bestie', component: ADayWithBestie },
   { path: 'blog', component: Blog },
   { path: 'shop', component: Shop },
   { path: 'shop/:slug', component: ShopItemPage },
@@ -34,6 +36,11 @@ const pageRoutes: Routes = [
 
 export const routes: Routes = [
   { path: '', resolve: { locale: localeResolver }, children: pageRoutes },
-  { path: ':lang', canMatch: [localeCanMatch], resolve: { locale: localeResolver }, children: pageRoutes },
+  {
+    path: ':lang',
+    canMatch: [localeCanMatch],
+    resolve: { locale: localeResolver },
+    children: pageRoutes,
+  },
   { path: '**', redirectTo: '' },
 ];
