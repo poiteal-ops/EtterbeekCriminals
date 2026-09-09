@@ -61,3 +61,6 @@ Thumbs.db
 
 # Playwright MCP screenshots/logs from manual verification, never committed
 /.playwright-mcp/
+
+# Local VLC CLI help dump, not part of the site
+/vlc-help.txt
