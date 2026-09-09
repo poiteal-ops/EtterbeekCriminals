@@ -10,6 +10,7 @@ import { EscapeToTheCountry } from './pages/escape-to-the-country/escape-to-the-
 import { HeatwaveSurvival } from './pages/heatwave-survival/heatwave-survival';
 import { Home } from './pages/home/home';
 import { JuryTampering } from './pages/jury-tampering/jury-tampering';
+import { KandeNadege } from './pages/kande-nadege/kande-nadege';
 import { Pigeon } from './pages/pigeon/pigeon';
 import { Shop } from './pages/shop/shop';
 import { ShopItemPage } from './pages/shop-item/shop-item';
@@ -29,6 +30,7 @@ const pageRoutes: Routes = [
   { path: 'heatwave-survival', component: HeatwaveSurvival },
   { path: 'jury-tampering', component: JuryTampering },
   { path: 'a-day-with-bestie', component: ADayWithBestie },
+  { path: 'kande-nadege', component: KandeNadege },
   { path: 'blog', component: Blog },
   { path: 'shop', component: Shop },
   { path: 'shop/:slug', component: ShopItemPage },

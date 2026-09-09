@@ -15,6 +15,7 @@
     "heatwaveSurvival": "DE HITTEGOLFSTILTE",
     "juryTampering": "JURYMANIPULATIE",
     "aDayWithBestie": "EEN DAG MET BESTIE",
+    "kandeNadege": "KANDE NADÈGE",
     "blog": "BLOG",
     "shop": "SHOP"
   },
@@ -138,6 +139,12 @@
       "teaser": "Een huishoudhulp, een vijandige stofzuiger en één verdachte die vastbesloten is elke operatie te superviseren.",
       "link": "/a-day-with-bestie",
       "image": "assets/images/bestie-hoover-chaos.jpg"
+    },
+    {
+      "title": "KANDE NADÈGE",
+      "teaser": "Een undercoverbegeleider, een gecompromitteerde operatie en één verdachte in alarmerend uitstekende conditie.",
+      "link": "/kande-nadege",
+      "image": "assets/images/otto-forest-sprint.jpg"
     }
   ],
   "escapeToCountry": {
@@ -297,6 +304,40 @@
     "exhibitBCaption": "Bewijsstuk B — verdachte voert een kwaliteitsinspectie van Besties techniek van zeer dichtbij uit, rechtstreeks onder haar voeten geposteerd voor maximale hinder.",
     "exhibitCCaption": "Bewijsstuk C — verdachte rust tussen de kussens, einde dienst, uitgeput na een volledige dag pesten.",
     "stamp": "ZAAK GESLOTEN — BESTIE KEERT VOLGENDE WEEK TERUG"
+  },
+  "kandeNadege": {
+    "kicker": "HOOFDDOSSIER — KANDE NADÈGE",
+    "title": "DE BEGELEIDER IS GECOMPROMITTEERD",
+    "locationLabel": "LOCATIE",
+    "locationVal": "Etterbeek — parken, paden en één zwaar gecompromitteerde deurbel",
+    "suspectLabel": "VERDACHTE",
+    "suspectVal": "LE CRIMINEL (fysieke conditie: verontrustend uitstekend)",
+    "witnessLabel": "BEGELEIDER",
+    "witnessVal": "Kande Nadège (personal trainer; undercoveropdracht gecompromitteerd)",
+    "motiveLabel": "MOTIEF",
+    "motiveVal": "Behoud van conditie, gedragsmatige beheersing en gedocumenteerde missiedrift",
+    "p1": "Kande Nadège kwam in het dossier terecht als undercoveronderzoeker onder de dekmantelidentiteit van „personal trainer”. Haar instructies waren duidelijk: LE CRIMINEL te allen tijde gezond en fit houden, terwijl de omvang van zijn ruimere activiteiten stilletjes werd beperkt. Het eerste doel is met alarmerende bekwaamheid uitgevoerd. Het tweede niet.",
+    "p2": "Herhaalde blootstelling aan het Subject lijkt de loyaliteit van de operatieve te hebben gewijzigd. Nadège begeleidt nu achtervolgingsoefeningen op hoge snelheid, duurwerk, manoeuvres over uiteenlopend terrein en gestructureerd contact met bekende medestanders. LE CRIMINEL is sterker, sneller en wezenlijk moeilijker in bedwang te houden geworden. Onderzoekers hebben daarom geconcludeerd dat de criminele geest de overhand heeft gekregen. Er bevindt zich momenteel geen herstelplan in het dossier.",
+    "doorbellLabel": "DEURBELVASTSTELLING",
+    "doorbellFinding": "Herkenning begint vóór visueel contact. Wanneer Nadège aanbelt, bereikt LE CRIMINEL onmiddellijk een geschatte verticale verplaatsing van tien voet. Deze beweging wordt ongeveer tien minuten zonder onderbreking herhaald, waarna de training kennelijk als klaar om te beginnen wordt beschouwd.",
+    "closing": "De undercoveroperatie wordt als gecompromitteerd beschouwd. Het fitnessprogramma blijft volledig operationeel.",
+    "exhibitACaption": "BEWIJSSTUK A — SUBJECT BEGINT CONDITIELOOP MET NIET-GEAUTORISEERDE SNELHEID",
+    "exhibitBCaption": "BEWIJSSTUK B — SOCIAAL CONTACT TIJDENS EEN BEGELEIDE VELDOPERATIE",
+    "exhibitCCaption": "BEWIJSSTUK C — SUBJECT REAGEERT OP EEN FITNESSRICHTLIJN MET BUITENSPORIGE KRACHT",
+    "exhibitDCaption": "BEWIJSSTUK D — ZIJWAARTSE ONTWIJKINGSOEFENING, DOEL NIET BEKENDGEMAAKT",
+    "exhibitECaption": "BEWIJSSTUK E — CONDITIEPROGRAMMA LEVERT ZORGWEKKENDE RESULTATEN OP",
+    "motionACaption": "BEWEGEND BEWIJS A — BEWEGING OP BOSROUTE, TIEN AANEENGESLOTEN SECONDEN",
+    "motionBCaption": "BEWEGEND BEWIJS B — SPRINT OVER OPEN VELD, BEPERKINGSSYSTEEM ONDER BELASTING",
+    "motionCCaption": "BEWEGEND BEWIJS C — SPRINT LANGS BOMENRIJ, BEHEERSINGSSTATUS ONDUIDELIJK",
+    "stillEvidenceTitle": "STILSTAAND BEWIJS",
+    "stillEvidenceNote": "ALLE STILSTAANDE FOTO’S ZIJN IN ZWART-WIT VERWERKT",
+    "motionEvidenceTitle": "BEWEGEND BEWIJS",
+    "motionEvidenceNote": "KLEURENBEELDEN ZIJN BEWAARD UIT OPERATIONELE NOODZAAK",
+    "stamp": "OPERATIE GECOMPROMITTEERD — SUBJECT BLIJFT IN UITSTEKENDE CONDITIE",
+    "contactTitle": "CONTACT MET DE OPERATIEVE",
+    "contactIntro": "Voor legitieme coaching van honden en katten, raadpleeg de operatieve rechtstreeks:",
+    "websiteLabel": "Kande Nadège — NAdK Coach Canin",
+    "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
   "blog": {
     "title": "LOGBOEK",

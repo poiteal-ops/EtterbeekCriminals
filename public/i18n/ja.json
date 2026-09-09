@@ -15,6 +15,7 @@
     "heatwaveSurvival": "熱波の凪",
     "juryTampering": "陪審干渉",
     "aDayWithBestie": "Bestieとの一日",
+    "kandeNadege": "KANDE NADÈGE",
     "blog": "ブログ",
     "shop": "ショップ"
   },
@@ -138,6 +139,12 @@
       "teaser": "家政婦、敵対的な掃除機、そしてあらゆる作業を監督しようとする一匹の容疑者。",
       "link": "/a-day-with-bestie",
       "image": "assets/images/bestie-hoover-chaos.jpg"
+    },
+    {
+      "title": "KANDE NADÈGE",
+      "teaser": "潜入担当者、破綻した作戦、そして驚くほど絶好調の容疑者一名。",
+      "link": "/kande-nadege",
+      "image": "assets/images/otto-forest-sprint.jpg"
     }
   ],
   "escapeToCountry": {
@@ -297,6 +304,40 @@
     "exhibitBCaption": "証拠品B — 容疑者は最大限の妨害を目的として足元に陣取り、至近距離からBestieの手法の品質検査を実施する。",
     "exhibitCCaption": "証拠品C — クッションに囲まれて休息する容疑者。勤務終了、一日中いじめに従事した疲労が見られる。",
     "stamp": "事件終結 — Bestieは来週戻る"
+  },
+  "kandeNadege": {
+    "kicker": "主要事件ファイル — KANDE NADÈGE",
+    "title": "ハンドラーは取り込まれた",
+    "locationLabel": "場所",
+    "locationVal": "Etterbeek — 公園、通路、そして深刻に侵害された一つのドアベル",
+    "suspectLabel": "容疑者",
+    "suspectVal": "LE CRIMINEL（身体状態：驚くほど優秀）",
+    "witnessLabel": "ハンドラー",
+    "witnessVal": "Kande Nadège（パーソナルトレーナー；潜入任務は破綻）",
+    "motiveLabel": "動機",
+    "motiveVal": "体力の維持、行動の封じ込め、記録済みの任務逸脱",
+    "p1": "Kande Nadègeは、「パーソナルトレーナー」という偽装身分で活動する潜入捜査員としてファイルに記載された。指示は明快だった。LE CRIMINELを常に健康かつ良好な体調に保ちつつ、より広範な活動の規模を静かに縮小すること。第一目標は、驚くべき有能さで遂行された。第二目標は、そうではなかった。",
+    "p2": "対象者への反復的な接触により、工作員の忠誠は変化したものと見られる。Nadègeは現在、高速追跡訓練、持久力訓練、異なる地形での機動、既知の関係者との計画的接触を監督している。LE CRIMINELはより強く、より速く、物理的にも封じ込めが困難になった。捜査員らはしたがって、犯罪的精神が主導権を握ったと結論づけた。回復計画は現在、ファイル内に存在しない。",
+    "doorbellLabel": "ドアベル所見",
+    "doorbellFinding": "認識は視覚的接触の前に始まる。Nadègeがドアベルを鳴らすと、LE CRIMINELは直ちに推定十フィートの垂直移動を達成する。この動きはおよそ十分間、休止なく繰り返され、その後になって訓練開始の準備が整ったものと扱われる。",
+    "closing": "潜入作戦は破綻したものと見なされる。体力強化プログラムは完全に稼働中である。",
+    "exhibitACaption": "証拠品A — 対象者、無許可の速度でコンディショニング走を開始",
+    "exhibitBCaption": "証拠品B — 監督下の現場作戦中における社会的接触",
+    "exhibitCCaption": "証拠品C — 対象者、フィットネス指令に過剰な力で応答",
+    "exhibitDCaption": "証拠品D — 横方向回避訓練、目的は非開示",
+    "exhibitECaption": "証拠品E — コンディショニング計画、懸念すべき結果を生成",
+    "motionACaption": "動画証拠A — 森林経路上の移動、連続十秒",
+    "motionBCaption": "動画証拠B — 開けた野原での疾走、拘束システムに負荷",
+    "motionCCaption": "動画証拠C — 並木道での全力疾走、封じ込め状況は不明",
+    "stillEvidenceTitle": "静止証拠",
+    "stillEvidenceNote": "すべての静止写真は白黒で処理済み",
+    "motionEvidenceTitle": "動画証拠",
+    "motionEvidenceNote": "カラー映像は作戦上の必要性により保持",
+    "stamp": "作戦破綻 — 対象者は優秀な状態を維持",
+    "contactTitle": "工作員連絡先",
+    "contactIntro": "正規の犬・猫向けコーチングについては、工作員に直接問い合わせること：",
+    "websiteLabel": "Kande Nadège — NAdK Coach Canin",
+    "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
   "blog": {
     "title": "事件記録",

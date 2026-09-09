@@ -15,6 +15,7 @@
     "heatwaveSurvival": "KUUMALAINE VAHEAEG",
     "juryTampering": "ŽÜRII MÕJUTAMINE",
     "aDayWithBestie": "PÄEV BESTIEGA",
+    "kandeNadege": "Kande Nadège",
     "blog": "BLOGI",
     "shop": "POOD"
   },
@@ -138,6 +139,12 @@
       "teaser": "Majapidajanna, vaenulik tolmuimeja ja üks kahtlusalune, kes on otsustanud iga operatsiooni üle valvata.",
       "link": "/a-day-with-bestie",
       "image": "assets/images/bestie-hoover-chaos.jpg"
+    },
+    {
+      "title": "JUHENDAJA ON KOMPROMITEERITUD",
+      "teaser": "Varjatud juhendaja, kompromiteeritud operatsioon ja üks häirivalt suurepärases vormis kahtlusalune.",
+      "link": "/kande-nadege",
+      "image": "assets/images/otto-forest-sprint.jpg"
     }
   ],
   "escapeToCountry": {
@@ -297,6 +304,40 @@
     "exhibitBCaption": "Eksponaat B — kahtlusalune kontrollib Bestie töövõtet lähedalt, paiknedes maksimaalse segamise eesmärgil otse jalge all.",
     "exhibitCCaption": "Eksponaat C — kahtlusalune puhkab patjade vahel vahetuse lõpus, kurnatud täispikast kiusamispäevast.",
     "stamp": "JUHTUM LÕPETATUD — BESTIE TULEB JÄRGMISEL NÄDALAL TAGASI"
+  },
+  "kandeNadege": {
+    "kicker": "PEAMINE TOIMIK — KANDE NADÈGE",
+    "title": "JUHENDAJA ON KOMPROMITEERITUD",
+    "locationLabel": "ASUKOHT",
+    "locationVal": "Etterbeek — pargid, rajad ja üks põhjalikult kompromiteeritud uksekell",
+    "suspectLabel": "KAHTLUSALUNE",
+    "suspectVal": "LE CRIMINEL (füüsiline seisund: häirivalt suurepärane)",
+    "witnessLabel": "JUHENDAJA",
+    "witnessVal": "Kande Nadège (personaaltreener; varjatud ülesanne kompromiteeritud)",
+    "motiveLabel": "MOTIIV",
+    "motiveVal": "Vormi hoidmine, käitumise ohjamine ja dokumenteeritud missioonist kõrvalekaldumine",
+    "p1": "Kande Nadège jõudis toimikusse varjatud uurijana, tegutsedes katteidentiteedi „personaaltreener” all. Juhised olid lihtsad: hoida LE CRIMINEL igal ajal terve ja heas vormis, vähendades samal ajal vaikselt tema laiemate tegevuste ulatust. Esimene eesmärk on täidetud häiriva pädevusega. Teine ei ole.",
+    "p2": "Korduv kokkupuude Subjektiga näib olevat muutnud operatiivi lojaalsust. Nadège juhendab nüüd kiireid jälitusharjutusi, vastupidavustreeningut, maastikuüleseid manöövreid ja korraldatud kontakti tuntud kaasosalistega. LE CRIMINEL on muutunud tugevamaks, kiiremaks ja märgatavalt raskemini ohjatavaks. Uurijad on seetõttu järeldanud, et kuritegelik mõistus on võimu üle võtnud. Taastamisplaani toimikus praegu ei ole.",
+    "doorbellLabel": "UKSEKELLA REAKTSIOON — KINNITATUD",
+    "doorbellFinding": "Äratundmine algab enne nägemiskontakti. Kui Nadège uksekella helistab, saavutab LE CRIMINEL viivitamatult hinnanguliselt kolme meetri suuruse vertikaalse nihke. Liigutust korratakse pausita umbes kümne minuti jooksul, mille järel peetakse treeningut ilmselt alustamisvalmiks.",
+    "closing": "Varjatud operatsiooni peetakse kompromiteerituks. Treeningprogramm töötab täiel määral edasi.",
+    "exhibitACaption": "TÕEND A — SUBJEKT ALUSTAB KONDITSIOONIJOOKSU LOATA KIIRUSEGA",
+    "exhibitBCaption": "TÕEND B — SOTSIAALNE KONTAKT JÄRELEVALVEGA VÄLIOPERATSIOONI AJAL",
+    "exhibitCCaption": "TÕEND C — SUBJEKT VASTAB TREENINGUKORRALDUSELE ÜLELIIGSE JÕUGA",
+    "exhibitDCaption": "TÕEND D — KÜLGSUUNALINE PÕIKUMISHARJUTUS, EESMÄRK AVALDAMATA",
+    "exhibitECaption": "TÕEND E — KONDITSIOONIPROGRAMM ANNAB MURETTEKITAVAID TULEMUSI",
+    "motionACaption": "LIIKUMISTÕEND A — LIIKUMINE METSARAJAL, KÜMME JÄRJESTIKUST SEKUNDIT",
+    "motionBCaption": "LIIKUMISTÕEND B — SPRINT LAGEDAL VÄLJAL, PIDURDUSSÜSTEEM KOORMUSE ALL",
+    "motionCCaption": "LIIKUMISTÕEND C — SPRINT PUUDE VAHEL, OHJAMISE STAATUS EBASELGE",
+    "stillEvidenceTitle": "FOTOTÕENDID",
+    "stillEvidenceNote": "Osakonna standardite kohaselt rakendatud ühevärviline töötlus",
+    "motionEvidenceTitle": "LIIKUMISTÕENDID",
+    "motionEvidenceNote": "Värviline salvestis säilitati operatiivsete detailide hoidmiseks",
+    "stamp": "OPERATSIOON KOMPROMITEERITUD — SUBJEKT ON ENDSELT VÄGA HEAS VORMIS",
+    "contactTitle": "VÕTA ÜHENDUST OPERATIIVIGA",
+    "contactIntro": "Õiguspärase koerte ja kasside treeningu asjus pöördu otse operatiivi poole:",
+    "websiteLabel": "Kande Nadège — NAdK Coach Canin",
+    "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
   "blog": {
     "title": "JUHTUMIPÄEVIK",

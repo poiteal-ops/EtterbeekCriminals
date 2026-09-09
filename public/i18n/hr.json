@@ -15,6 +15,7 @@
     "heatwaveSurvival": "ZATIŠJE TOPLINSKOG VALA",
     "juryTampering": "UTJECANJE NA POROTU",
     "aDayWithBestie": "DAN S BESTIE",
+    "kandeNadege": "KANDE NADÈGE",
     "blog": "BLOG",
     "shop": "TRGOVINA"
   },
@@ -138,6 +139,12 @@
       "teaser": "Kućna pomoćnica, neprijateljski usisavač i jedan osumnjičenik odlučan nadzirati svaku operaciju.",
       "link": "/a-day-with-bestie",
       "image": "assets/images/bestie-hoover-chaos.jpg"
+    },
+    {
+      "title": "VODITELJICA JE KOMPROMITIRANA",
+      "teaser": "Tajna voditeljica, kompromitirana operacija i jedan osumnjičenik u alarmantno izvrsnoj formi.",
+      "link": "/kande-nadege",
+      "image": "assets/images/otto-forest-sprint.jpg"
     }
   ],
   "escapeToCountry": {
@@ -297,6 +304,40 @@
     "exhibitBCaption": "Dokaz B — osumnjičenik provodi inspekciju kvalitete Bestieine tehnike iz neposredne blizine, smješten izravno pod nogama radi maksimalnog ometanja.",
     "exhibitCCaption": "Dokaz C — osumnjičenik odmara među jastucima, na kraju smjene, iscrpljen nakon cjelodnevnog zlostavljanja.",
     "stamp": "SLUČAJ ZAKLJUČEN — BESTIE SE VRAĆA SLJEDEĆI TJEDAN"
+  },
+  "kandeNadege": {
+    "kicker": "GLAVNI SPIS PREDMETA — KANDE NADÈGE",
+    "title": "VODITELJICA JE KOMPROMITIRANA",
+    "locationLabel": "LOKACIJA",
+    "locationVal": "Etterbeek — parkovi, staze i jedno krajnje kompromitirano zvono na vratima",
+    "suspectLabel": "OSUMNJIČENIK",
+    "suspectVal": "LE CRIMINEL (fizičko stanje: alarmantno izvrsno)",
+    "witnessLabel": "VODITELJICA",
+    "witnessVal": "Kande Nadège (osobna trenerica; tajni zadatak kompromitiran)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Održavanje kondicije, obuzdavanje ponašanja i dokumentirano skretanje misije",
+    "p1": "Kande Nadège ušla je u spis kao tajna istražiteljica pod pokrićem «osobne trenerice». Upute su joj bile jednostavne: držati LE CRIMINEL zdravim i u formi u svakom trenutku, istodobno tiho smanjujući razmjer njegovih širih aktivnosti. Prvi je cilj izvršen s alarmantnom stručnošću. Drugi nije.",
+    "p2": "Čini se da je opetovano izlaganje Subjektu promijenilo odanost operativke. Nadège sada nadzire vježbe potjere velikom brzinom, rad na izdržljivosti, manevre preko različitih terena i strukturirani kontakt s poznatim suradnicima. LE CRIMINEL postao je snažniji, brži i bitno ga je teže obuzdati. Istražitelji su stoga zaključili da je kriminalni um preuzeo kontrolu. U spisu trenutačno nema plana oporavka.",
+    "doorbellLabel": "REAKCIJA NA ZVONO — POTVRĐENO",
+    "doorbellFinding": "Prepoznavanje počinje prije vizualnog kontakta. Kad Nadège pozvoni, LE CRIMINEL odmah postiže procijenjeni okomiti pomak od tri metra. Taj se pokret bez stanke ponavlja otprilike deset minuta, nakon čega se trening očito smatra spremnim za početak.",
+    "closing": "Tajna se operacija smatra kompromitiranom. Program kondicije ostaje potpuno operativan.",
+    "exhibitACaption": "DOKAZ A — SUBJEKT ZAPOČINJE KONDICIJSKO TRČANJE NEDOPUŠTENOM BRZINOM",
+    "exhibitBCaption": "DOKAZ B — DRUŠTVENI KONTAKT TIJEKOM NADZIRANE TERENSKE OPERACIJE",
+    "exhibitCCaption": "DOKAZ C — SUBJEKT ODGOVARA NA KONDICIJSKU UPUTU PREKOMJERNOM SILOM",
+    "exhibitDCaption": "DOKAZ D — VJEŽBA BOČNOG IZBJEGAVANJA, SVRHA NEOBJAVLJENA",
+    "exhibitECaption": "DOKAZ E — PROGRAM KONDICIJE DAJE ZABRINJAVAJUĆE REZULTATE",
+    "motionACaption": "POKRETNI DOKAZ A — KRETANJE ŠUMSKOM RUTOM, DESET NEPREKIDNIH SEKUNDI",
+    "motionBCaption": "POKRETNI DOKAZ B — SPRINT PREKO OTVORENOG POLJA, SUSTAV ZADRŽAVANJA POD OPTEREĆENJEM",
+    "motionCCaption": "POKRETNI DOKAZ C — SPRINT UZ DRVORED, STATUS OBUZDAVANJA NEJASAN",
+    "stillEvidenceTitle": "NEPOKRETNI DOKAZI",
+    "stillEvidenceNote": "Monokromatska obrada primijenjena je u skladu s odjelnim standardima",
+    "motionEvidenceTitle": "POKRETNI DOKAZI",
+    "motionEvidenceNote": "Snimke u boji zadržane su radi očuvanja operativnih pojedinosti",
+    "stamp": "OPERACIJA KOMPROMITIRANA — SUBJEKT OSTAJE U IZVRSNOJ FORMI",
+    "contactTitle": "KONTAKTIRAJTE OPERATIVKU",
+    "contactIntro": "Za legitimno podučavanje pasa i mačaka obratite se izravno operativki:",
+    "websiteLabel": "Kande Nadège — NAdK Coach Canin",
+    "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
   "blog": {
     "title": "DNEVNIK PREDMETA",

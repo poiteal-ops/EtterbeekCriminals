@@ -15,6 +15,7 @@
     "heatwaveSurvival": "VARMEBØLGENS PAUSE",
     "juryTampering": "JURYMANIPULERING",
     "aDayWithBestie": "EN DAG MED BESTIE",
+    "kandeNadege": "KANDE NADÈGE",
     "blog": "BLOGG",
     "shop": "BUTIKK"
   },
@@ -138,6 +139,12 @@
       "teaser": "En husholderske, en fiendtlig støvsuger og én mistenkt fast bestemt på å føre tilsyn med enhver operasjon.",
       "link": "/a-day-with-bestie",
       "image": "assets/images/bestie-hoover-chaos.jpg"
+    },
+    {
+      "title": "FØREREN ER KOMPROMITTERT",
+      "teaser": "En hemmelig fører, en kompromittert operasjon og en mistenkt i alarmerende utmerket form.",
+      "link": "/kande-nadege",
+      "image": "assets/images/otto-forest-sprint.jpg"
     }
   ],
   "escapeToCountry": {
@@ -297,6 +304,40 @@
     "exhibitBCaption": "Bevis B — den mistenkte utfører en kvalitetsinspeksjon på nært hold av Besties teknikk, plassert rett under føttene for maksimal forstyrrelse.",
     "exhibitCCaption": "Bevis C — den mistenkte i hvile blant putene, ved skiftets slutt, utslitt etter en hel dag med mobbing.",
     "stamp": "SAKEN HENLAGT — BESTIE KOMMER TILBAKE NESTE UKE"
+  },
+  "kandeNadege": {
+    "kicker": "HOVEDSAKSAKT — KANDE NADÈGE",
+    "title": "FØREREN ER KOMPROMITTERT",
+    "locationLabel": "STED",
+    "locationVal": "Etterbeek — parker, stier og én sterkt kompromittert ringeklokke",
+    "suspectLabel": "MISTENKT",
+    "suspectVal": "LE CRIMINEL (fysisk tilstand: alarmerende utmerket)",
+    "witnessLabel": "FØRER",
+    "witnessVal": "Kande Nadège (personlig trener; hemmelig oppdrag kompromittert)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Vedlikehold av kondisjon, atferdsmessig inneslutning og dokumentert oppdragsglidning",
+    "p1": "Kande Nadège kom inn i akten som en hemmelig etterforsker under dekke av å være «personlig trener». Instruksjonene hennes var enkle: Hold LE CRIMINEL sunn og i form til enhver tid, samtidig som omfanget av hans videre aktiviteter skulle reduseres diskret. Det første målet er gjennomført med alarmerende dyktighet. Det andre er ikke det.",
+    "p2": "Gjentatt eksponering for Subjektet ser ut til å ha endret operatørens lojalitet. Nadège overvåker nå forfølgelsesøvelser i høy hastighet, utholdenhetsarbeid, manøvrer på tvers av terreng og strukturert kontakt med kjente medhjelpere. LE CRIMINEL har blitt sterkere, raskere og vesentlig vanskeligere å holde tilbake. Etterforskerne har derfor konkludert med at det kriminelle sinnet har tatt over. Ingen gjenopprettingsplan finnes for øyeblikket i akten.",
+    "doorbellLabel": "REAKSJON PÅ RINGEKLOKKE — VERIFISERT",
+    "doorbellFinding": "Gjenkjennelsen begynner før visuell kontakt. Når Nadège ringer på, oppnår LE CRIMINEL umiddelbart en anslått vertikal forflytning på tre meter. Bevegelsen gjentas uten opphold i omtrent ti minutter, hvoretter treningen tilsynelatende anses klar til å begynne.",
+    "closing": "Den hemmelige operasjonen anses som kompromittert. Kondisjonsprogrammet er fortsatt fullt operativt.",
+    "exhibitACaption": "BEVIS A — SUBJEKTET STARTER KONDISJONSLØP I UAUTORISERT HASTIGHET",
+    "exhibitBCaption": "BEVIS B — SOSIAL KONTAKT UNDER EN OVERVÅKET FELTOPERASJON",
+    "exhibitCCaption": "BEVIS C — SUBJEKTET SVARER PÅ ET KONDISJONSDIREKTIV MED OVERDREVEN KRAFT",
+    "exhibitDCaption": "BEVIS D — SIDEVEIS UNNVIKEØVELSE, FORMÅL IKKE OPPGITT",
+    "exhibitECaption": "BEVIS E — KONDISJONSPROGRAMMET GIR BEKYMRINGSFULLE RESULTATER",
+    "motionACaption": "BEVEGELIG BEVIS A — BEVEGELSE PÅ SKOGRUTE, TI SAMMENHENGENDE SEKUNDER",
+    "motionBCaption": "BEVEGELIG BEVIS B — SPURT OVER ÅPENT FELT, FASTHOLDELSESSYSTEM UNDER BELASTNING",
+    "motionCCaption": "BEVEGELIG BEVIS C — SPRINT LANGS EN VEI KANTET MED TRÆR, INNESLUTNINGSSTATUS UKLAR",
+    "stillEvidenceTitle": "STILLBILDEBEVIS",
+    "stillEvidenceNote": "Monokrom behandling anvendt i samsvar med avdelingens standarder",
+    "motionEvidenceTitle": "BEVEGELIGE BEVIS",
+    "motionEvidenceNote": "Fargeopptak er beholdt for å bevare operative detaljer",
+    "stamp": "OPERASJONEN KOMPROMITTERT — SUBJEKTET ER FORTSATT I UTMERKET FORM",
+    "contactTitle": "KONTAKT OPERATØREN",
+    "contactIntro": "For legitim veiledning av hunder og katter, kontakt operatøren direkte:",
+    "websiteLabel": "Kande Nadège — NAdK Coach Canin",
+    "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
   "blog": {
     "title": "SAKSLOGG",

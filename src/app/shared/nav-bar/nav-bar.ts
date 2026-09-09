@@ -21,6 +21,7 @@ const STORY_ROUTES = [
   '/heatwave-survival',
   '/jury-tampering',
   '/a-day-with-bestie',
+  '/kande-nadege',
 ];
 
 function isStoryRoute(url: string): boolean {

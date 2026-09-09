@@ -46,6 +46,7 @@ export interface SiteContent {
     heatwaveSurvival: string;
     juryTampering: string;
     aDayWithBestie: string;
+    kandeNadege: string;
     blog: string;
     shop: string;
   };
@@ -258,6 +259,40 @@ export interface SiteContent {
     exhibitBCaption: string;
     exhibitCCaption: string;
     stamp: string;
+  };
+  kandeNadege: {
+    kicker: string;
+    title: string;
+    locationLabel: string;
+    locationVal: string;
+    suspectLabel: string;
+    suspectVal: string;
+    witnessLabel: string;
+    witnessVal: string;
+    motiveLabel: string;
+    motiveVal: string;
+    p1: string;
+    p2: string;
+    doorbellLabel: string;
+    doorbellFinding: string;
+    closing: string;
+    exhibitACaption: string;
+    exhibitBCaption: string;
+    exhibitCCaption: string;
+    exhibitDCaption: string;
+    exhibitECaption: string;
+    motionACaption: string;
+    motionBCaption: string;
+    motionCCaption: string;
+    stillEvidenceTitle: string;
+    stillEvidenceNote: string;
+    motionEvidenceTitle: string;
+    motionEvidenceNote: string;
+    stamp: string;
+    contactTitle: string;
+    contactIntro: string;
+    websiteLabel: string;
+    instagramLabel: string;
   };
   blog: {
     title: string;
