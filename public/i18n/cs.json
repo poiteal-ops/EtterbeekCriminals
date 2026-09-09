@@ -15,6 +15,7 @@
     "heatwaveSurvival": "ÚTLUM VEDER",
     "juryTampering": "MANIPULACE POROTY",
     "aDayWithBestie": "DEN S BESTIE",
+    "kandeNadege": "KANDE NADÈGE",
     "blog": "BLOG",
     "shop": "OBCHOD"
   },
@@ -138,6 +139,12 @@
       "teaser": "Hospodyně, nepřátelský vysavač a jeden podezřelý odhodlaný dohlížet na každou operaci.",
       "link": "/a-day-with-bestie",
       "image": "assets/images/bestie-hoover-chaos.jpg"
+    },
+    {
+      "title": "PSOVODKA BYLA KOMPROMITOVÁNA",
+      "teaser": "Tajná psovodka, kompromitovaná operace a jeden podezřelý v alarmujícím výborném stavu.",
+      "link": "/kande-nadege",
+      "image": "assets/images/otto-forest-sprint.jpg"
     }
   ],
   "escapeToCountry": {
@@ -297,6 +304,40 @@
     "exhibitBCaption": "Exponát B — podezřelý provádí z bezprostřední blízkosti kontrolu kvality Bestiiny techniky a pro maximální rušení stojí přímo pod nohama.",
     "exhibitCCaption": "Exponát C — podezřelý v klidu mezi polštáři na konci směny, vyčerpán celodenním šikanováním.",
     "stamp": "PŘÍPAD UZAVŘEN — BESTIE SE VRÁTÍ PŘÍŠTÍ TÝDEN"
+  },
+  "kandeNadege": {
+    "kicker": "HLAVNÍ SPIS PŘÍPADU — KANDE NADÈGE",
+    "title": "PSOVODKA BYLA KOMPROMITOVÁNA",
+    "locationLabel": "MÍSTO",
+    "locationVal": "Etterbeek — parky, cesty a jeden značně kompromitovaný zvonek",
+    "suspectLabel": "PODEZŘELÝ",
+    "suspectVal": "LE CRIMINEL (fyzický stav: alarmujícím způsobem výborný)",
+    "witnessLabel": "PSOVODKA",
+    "witnessVal": "Kande Nadège (osobní trenérka; tajné nasazení kompromitováno)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Udržování kondice, behaviorální omezení a zdokumentovaný odklon od mise",
+    "p1": "Kande Nadège vstoupila do spisu jako tajná vyšetřovatelka pod krycí identitou „osobní trenérka“. Její pokyny byly přímočaré: udržovat LE CRIMINEL neustále zdravého a ve formě a zároveň nenápadně omezovat rozsah jeho širších aktivit. První cíl byl proveden s alarmující kompetencí. Druhý nikoli.",
+    "p2": "Zdá se, že opakované vystavení Subjektu změnilo loajalitu operativky. Nadège nyní dohlíží na vysokorychlostní stíhací cvičení, vytrvalostní práci, manévry napříč terénem a strukturovaný kontakt se známými společníky. LE CRIMINEL zesílil, zrychlil a je podstatně obtížnější jej udržet pod kontrolou. Vyšetřovatelé proto dospěli k závěru, že zločinecká mysl převzala vládu. Ve spisu momentálně není žádný plán nápravy.",
+    "doorbellLabel": "REAKCE NA ZVONEK — OVĚŘENO",
+    "doorbellFinding": "Rozpoznání začíná ještě před vizuálním kontaktem. Když Nadège zazvoní, LE CRIMINEL okamžitě dosáhne odhadovaného svislého posunu tří metrů. Tento pohyb se bez přestávky opakuje přibližně deset minut, po nichž je výcvik zjevně považován za připravený k zahájení.",
+    "closing": "Tajná operace je považována za kompromitovanou. Kondiční program zůstává plně funkční.",
+    "exhibitACaption": "DŮKAZ A — SUBJEKT ZAHAJUJE KONDIČNÍ BĚH NEPOVOLENOU RYCHLOSTÍ",
+    "exhibitBCaption": "DŮKAZ B — SOCIÁLNÍ KONTAKT BĚHEM DOZOROVANÉ TERÉNNÍ OPERACE",
+    "exhibitCCaption": "DŮKAZ C — SUBJEKT ODPOVÍDÁ NA KONDIČNÍ POKYN NADMĚRNOU SILOU",
+    "exhibitDCaption": "DŮKAZ D — CVIČENÍ BOČNÍHO ÚHYBU, ÚČEL NEUVEDEN",
+    "exhibitECaption": "DŮKAZ E — KONDIČNÍ PROGRAM PŘINÁŠÍ ZNEPOKOJIVÉ VÝSLEDKY",
+    "motionACaption": "POHYBOVÝ DŮKAZ A — POHYB PO LESNÍ TRASE, DESET SOUVISLÝCH SEKUND",
+    "motionBCaption": "POHYBOVÝ DŮKAZ B — SPRINT PŘES OTEVŘENÉ POLE, ZÁDRŽNÝ SYSTÉM POD ZÁTĚŽÍ",
+    "motionCCaption": "POHYBOVÝ DŮKAZ C — SPRINT PODÉL STROMOŘADÍ, STAV OMEZENÍ NEJASNÝ",
+    "stillEvidenceTitle": "STATICKÉ DŮKAZY",
+    "stillEvidenceNote": "Monochromatické zpracování bylo použito v souladu s resortními standardy",
+    "motionEvidenceTitle": "POHYBOVÉ DŮKAZY",
+    "motionEvidenceNote": "Barevný záznam byl zachován pro uchování operačních podrobností",
+    "stamp": "OPERACE KOMPROMITOVÁNA — SUBJEKT ZŮSTÁVÁ VE VÝBORNÉ FORMĚ",
+    "contactTitle": "KONTAKTUJTE OPERATIVKU",
+    "contactIntro": "Pro legitimní výcvik psů a koček kontaktujte operativku přímo:",
+    "websiteLabel": "Kande Nadège — NAdK Coach Canin",
+    "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
   "blog": {
     "title": "DENÍK PŘÍPADŮ",

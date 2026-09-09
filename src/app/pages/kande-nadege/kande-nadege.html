@@ -1,0 +1,85 @@
+@let t = translation.t();
+
+<div class="page">
+  <div class="kicker">{{ t.kandeNadege.kicker }}</div>
+  <h1 class="title">{{ t.kandeNadege.title }}</h1>
+
+  <article class="report">
+    <div class="facts">
+      <div class="label">{{ t.kandeNadege.locationLabel }}</div><div>{{ t.kandeNadege.locationVal }}</div>
+      <div class="label">{{ t.kandeNadege.suspectLabel }}</div><div>{{ t.kandeNadege.suspectVal }}</div>
+      <div class="label">{{ t.kandeNadege.witnessLabel }}</div><div>{{ t.kandeNadege.witnessVal }}</div>
+      <div class="label">{{ t.kandeNadege.motiveLabel }}</div><div>{{ t.kandeNadege.motiveVal }}</div>
+    </div>
+
+    <figure class="photo">
+      <img src="assets/images/otto-forest-sprint.jpg" alt="Le Criminel running along a wooded path during training" />
+      <figcaption>{{ t.kandeNadege.exhibitACaption }}</figcaption>
+    </figure>
+
+    <div class="body">
+      <p>{{ t.kandeNadege.p1 }}</p>
+
+      <figure class="motion-single">
+        <img src="assets/images/otto-forest-run-10s.gif" alt="Colour footage of Le Criminel running through a wooded route" />
+        <figcaption>{{ t.kandeNadege.motionACaption }}</figcaption>
+      </figure>
+
+      <p>{{ t.kandeNadege.p2 }}</p>
+
+      <aside class="doorbell-finding">
+        <span class="finding-label">{{ t.kandeNadege.doorbellLabel }}</span>
+        {{ t.kandeNadege.doorbellFinding }}
+      </aside>
+    </div>
+
+    <h2 class="section-heading">{{ t.kandeNadege.stillEvidenceTitle }}</h2>
+    <p class="section-note">{{ t.kandeNadege.stillEvidenceNote }}</p>
+    <div class="still-grid">
+      <figure class="still-card">
+        <img loading="lazy" src="assets/images/otto-dog-play.jpg" alt="Le Criminel moving beside another dog during a supervised encounter" />
+        <figcaption>{{ t.kandeNadege.exhibitBCaption }}</figcaption>
+      </figure>
+      <figure class="still-card">
+        <img loading="lazy" src="assets/images/otto-grass-charge.jpg" alt="Le Criminel charging forward across grass during training" />
+        <figcaption>{{ t.kandeNadege.exhibitCCaption }}</figcaption>
+      </figure>
+      <figure class="still-card">
+        <img loading="lazy" src="assets/images/otto-meadow-run.jpg" alt="Le Criminel running laterally across a meadow" />
+        <figcaption>{{ t.kandeNadege.exhibitDCaption }}</figcaption>
+      </figure>
+      <figure class="still-card">
+        <img loading="lazy" src="assets/images/otto-path-sprint.jpg" alt="Le Criminel sprinting away along a tree-lined path" />
+        <figcaption>{{ t.kandeNadege.exhibitECaption }}</figcaption>
+      </figure>
+    </div>
+
+    <h2 class="section-heading">{{ t.kandeNadege.motionEvidenceTitle }}</h2>
+    <p class="section-note">{{ t.kandeNadege.motionEvidenceNote }}</p>
+    <div class="motion-grid">
+      <figure class="motion-card">
+        <img loading="lazy" src="assets/images/otto-meadow-dash-10s.gif" alt="Colour footage of Le Criminel dashing across an open field" />
+        <figcaption>{{ t.kandeNadege.motionBCaption }}</figcaption>
+      </figure>
+      <figure class="motion-card">
+        <img loading="lazy" src="assets/images/otto-avenue-sprint-10s.gif" alt="Colour footage of Le Criminel sprinting along a tree-lined avenue" />
+        <figcaption>{{ t.kandeNadege.motionCCaption }}</figcaption>
+      </figure>
+    </div>
+
+    <div class="body closing">
+      <p>{{ t.kandeNadege.closing }}</p>
+    </div>
+
+    <div class="stamp">{{ t.kandeNadege.stamp }}</div>
+
+    <section class="external-links" aria-labelledby="operative-links-title">
+      <h2 class="section-heading" id="operative-links-title">{{ t.kandeNadege.contactTitle }}</h2>
+      <p>{{ t.kandeNadege.contactIntro }}</p>
+      <nav aria-label="Kande Nadège links">
+        <a href="https://nadkcoachcanin.com/" target="_blank" rel="noopener noreferrer">{{ t.kandeNadege.websiteLabel }} ↗</a>
+        <a href="https://www.instagram.com/caninfelin.coach_nadk" target="_blank" rel="noopener noreferrer">{{ t.kandeNadege.instagramLabel }} ↗</a>
+      </nav>
+    </section>
+  </article>
+</div>

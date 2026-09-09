@@ -15,6 +15,7 @@
     "heatwaveSurvival": "ZASTÓJ PODCZAS FALI UPAŁÓW",
     "juryTampering": "MANIPULOWANIE ŁAWĄ PRZYSIĘGŁYCH",
     "aDayWithBestie": "DZIEŃ Z Bestie",
+    "kandeNadege": "KANDE NADÈGE",
     "blog": "BLOG",
     "shop": "SKLEP"
   },
@@ -138,6 +139,12 @@
       "teaser": "Gospodyni domowa, wrogi odkurzacz i podejrzany zdeterminowany, by nadzorować każdą operację.",
       "link": "/a-day-with-bestie",
       "image": "assets/images/bestie-hoover-chaos.jpg"
+    },
+    {
+      "title": "KANDE NADÈGE",
+      "teaser": "Prowadząca pod przykryciem, skompromitowana operacja i jeden podejrzany w alarmująco doskonałej formie.",
+      "link": "/kande-nadege",
+      "image": "assets/images/otto-forest-sprint.jpg"
     }
   ],
   "escapeToCountry": {
@@ -297,6 +304,40 @@
     "exhibitBCaption": "Dowód B — podejrzany przeprowadza z bliskiej odległości kontrolę jakości techniki Bestie, ustawiony bezpośrednio pod nogami dla maksymalnego utrudnienia.",
     "exhibitCCaption": "Dowód C — podejrzany odpoczywa wśród poduszek, koniec zmiany, wyczerpany po całym dniu znęcania się.",
     "stamp": "SPRAWA ZAMKNIĘTA — Bestie WRACA W PRZYSZŁYM TYGODNIU"
+  },
+  "kandeNadege": {
+    "kicker": "GŁÓWNE AKTA SPRAWY — KANDE NADÈGE",
+    "title": "PROWADZĄCA ZOSTAŁA SKOMPROMITOWANA",
+    "locationLabel": "LOKALIZACJA",
+    "locationVal": "Etterbeek — parki, ścieżki i jeden poważnie skompromitowany dzwonek do drzwi",
+    "suspectLabel": "PODEJRZANY",
+    "suspectVal": "LE CRIMINEL (stan fizyczny: alarmująco doskonały)",
+    "witnessLabel": "PROWADZĄCA",
+    "witnessVal": "Kande Nadège (trenerka personalna; zadanie pod przykryciem skompromitowane)",
+    "motiveLabel": "MOTYW",
+    "motiveVal": "Utrzymanie kondycji, ograniczanie zachowania i udokumentowane odejście od misji",
+    "p1": "Kande Nadège trafiła do akt jako śledcza pod przykryciem, działająca pod legendą „trenerki personalnej”. Jej instrukcje były proste: utrzymywać LE CRIMINEL w zdrowiu i formie przez cały czas, jednocześnie dyskretnie ograniczając skalę jego szerszej działalności. Pierwszy cel został wykonany z alarmującą kompetencją. Drugi nie.",
+    "p2": "Powtarzająca się styczność z Subiektem najwyraźniej zmieniła lojalność operatorki. Nadège nadzoruje teraz szybkie ćwiczenia pościgowe, pracę nad wytrzymałością, manewry w zróżnicowanym terenie oraz zorganizowane kontakty ze znanymi współpracownikami. LE CRIMINEL stał się silniejszy, szybszy i wyraźnie trudniejszy do powstrzymania. Śledczy uznali zatem, że kontrolę przejął przestępczy umysł. W aktach nie ma obecnie planu odzyskania sytuacji.",
+    "doorbellLabel": "REAKCJA NA DZWONEK — POTWIERDZONA",
+    "doorbellFinding": "Rozpoznanie rozpoczyna się przed kontaktem wzrokowym. Gdy Nadège dzwoni do drzwi, LE CRIMINEL natychmiast osiąga szacunkowe przemieszczenie pionowe wynoszące trzy metry. Ruch jest powtarzany bez przerwy przez około dziesięć minut, po czym trening najwyraźniej uznaje się za gotowy do rozpoczęcia.",
+    "closing": "Operację pod przykryciem uznaje się za skompromitowaną. Program kondycyjny pozostaje w pełni operacyjny.",
+    "exhibitACaption": "DOWÓD A — SUBIEKT ROZPOCZYNA BIEG KONDYCYJNY Z NIEAUTORYZOWANĄ PRĘDKOŚCIĄ",
+    "exhibitBCaption": "DOWÓD B — KONTAKT SPOŁECZNY PODCZAS NADZOROWANEJ OPERACJI TERENOWEJ",
+    "exhibitCCaption": "DOWÓD C — SUBIEKT REAGUJE NA POLECENIE TRENINGOWE NADMIERNĄ SIŁĄ",
+    "exhibitDCaption": "DOWÓD D — ĆWICZENIE UNIKU BOCZNEGO, CEL NIEUJAWNIONY",
+    "exhibitECaption": "DOWÓD E — PROGRAM KONDYCYJNY PRZYNOSZĄCY NIEPOKOJĄCE REZULTATY",
+    "motionACaption": "DOWÓD RUCHOMY A — RUCH PO LEŚNEJ TRASIE, DZIESIĘĆ CIĄGŁYCH SEKUND",
+    "motionBCaption": "DOWÓD RUCHOMY B — SPRINT NA OTWARTYM TERENIE, SYSTEM OGRANICZAJĄCY POD OBCIĄŻENIEM",
+    "motionCCaption": "DOWÓD RUCHOMY C — SPRINT ALEJĄ DRZEW, STATUS OGRANICZENIA NIEJASNY",
+    "stillEvidenceTitle": "DOWODY STATYCZNE",
+    "stillEvidenceNote": "OBRÓBKĘ MONOCHROMATYCZNĄ ZASTOSOWANO ZGODNIE ZE STANDARDAMI DEPARTAMENTU",
+    "motionEvidenceTitle": "DOWODY RUCHOME",
+    "motionEvidenceNote": "MATERIAŁ KOLOROWY ZACHOWANO W CELU UTRZYMANIA SZCZEGÓŁÓW OPERACYJNYCH",
+    "stamp": "OPERACJA SKOMPROMITOWANA — SUBIEKT POZOSTAJE W DOSKONAŁEJ FORMIE",
+    "contactTitle": "KONTAKT Z OPERATORKĄ",
+    "contactIntro": "W sprawie legalnego szkolenia psów i kotów należy skontaktować się bezpośrednio z operatorką:",
+    "websiteLabel": "Kande Nadège — NAdK Coach Canin",
+    "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
   "blog": {
     "title": "REJESTR SPRAW",

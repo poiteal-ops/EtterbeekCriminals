@@ -15,6 +15,7 @@
     "heatwaveSurvival": "A HŐHULLÁM SZÜNETE",
     "juryTampering": "AZ ESKÜDTSZÉK BEFOLYÁSOLÁSA",
     "aDayWithBestie": "EGY NAP BESTIE-VEL",
+    "kandeNadege": "Kande Nadège",
     "blog": "BLOG",
     "shop": "BOLT"
   },
@@ -138,6 +139,12 @@
       "teaser": "Egy házvezetőnő, egy ellenséges porszívó és egy gyanúsított, aki eltökélten felügyel minden műveletet.",
       "link": "/a-day-with-bestie",
       "image": "assets/images/bestie-hoover-chaos.jpg"
+    },
+    {
+      "title": "A KEZELŐ KOMPROMITTÁLÓDOTT",
+      "teaser": "Egy fedett kezelő, egy kompromittált művelet és egy riasztóan kiváló állapotban lévő gyanúsított.",
+      "link": "/kande-nadege",
+      "image": "assets/images/otto-forest-sprint.jpg"
     }
   ],
   "escapeToCountry": {
@@ -297,6 +304,40 @@
     "exhibitBCaption": "B kiállítási tárgy — a gyanúsított közvetlen közelről ellenőrzi Bestie technikáját, a lehető legnagyobb akadályozás érdekében közvetlenül a lába alatt állomásozva.",
     "exhibitCCaption": "C kiállítási tárgy — a gyanúsított pihen, a párnák között, műszak végeztével, kimerülve az egész napos zaklatástól.",
     "stamp": "ÜGY LEZÁRVA — BESTIE JÖVŐ HÉTEN VISSZATÉR"
+  },
+  "kandeNadege": {
+    "kicker": "FŐ ÜGYIRAT — KANDE NADÈGE",
+    "title": "A KEZELŐ KOMPROMITTÁLÓDOTT",
+    "locationLabel": "HELYSZÍN",
+    "locationVal": "Etterbeek — parkok, ösvények és egy súlyosan kompromittált csengő",
+    "suspectLabel": "GYANÚSÍTOTT",
+    "suspectVal": "LE CRIMINEL (fizikai állapot: riasztóan kiváló)",
+    "witnessLabel": "KEZELŐ",
+    "witnessVal": "Kande Nadège (személyi edző; fedett megbízás kompromittálódott)",
+    "motiveLabel": "INDÍTÉK",
+    "motiveVal": "Erőnlétfenntartás, viselkedési visszatartás és dokumentált küldetéseltérítés",
+    "p1": "Kande Nadège fedett nyomozóként került az iratba, „személyi edző” fedőazonosságban. Utasításai egyértelműek voltak: LE CRIMINEL maradjon mindenkor egészséges és fitt, miközben szélesebb körű tevékenységeinek léptékét csendben csökkenteni kell. Az első cél riasztó hozzáértéssel teljesült. A második nem.",
+    "p2": "Az Alannyal való ismételt érintkezés láthatóan megváltoztatta az operatív tiszt lojalitását. Nadège immár nagysebességű üldözési gyakorlatokat, állóképességi munkát, terepen átívelő manővereket és ismert cinkosokkal való szervezett kapcsolatot felügyel. LE CRIMINEL erősebb, gyorsabb és számottevően nehezebben visszatartható lett. A nyomozók ezért arra jutottak, hogy a bűnözői elme átvette az irányítást. Jelenleg nincs helyreállítási terv az iratban.",
+    "doorbellLabel": "CSENGŐREAKCIÓ — ELLENŐRIZVE",
+    "doorbellFinding": "A felismerés a vizuális kapcsolat előtt megkezdődik. Amikor Nadège megnyomja a csengőt, LE CRIMINEL azonnal becslés szerint háromméteres függőleges elmozdulást ér el. A mozdulat körülbelül tíz percen át szünet nélkül ismétlődik, amely után az edzést láthatóan kezdésre késznek tekintik.",
+    "closing": "A fedett műveletet kompromittáltnak tekintik. A fitneszprogram teljes mértékben működőképes marad.",
+    "exhibitACaption": "A BIZONYÍTÉK — AZ ALANY ENGEDÉLYEZETLEN SEBESSÉGGEL KEZDI A KONDIS FUTÁST",
+    "exhibitBCaption": "B BIZONYÍTÉK — TÁRSAS ÉRINTKEZÉS FELÜGYELT TEREPMŰVELET KÖZBEN",
+    "exhibitCCaption": "C BIZONYÍTÉK — AZ ALANY TÚLZOTT ERŐVEL VÁLASZOL EGY FITNESSZUTASÍTÁSRA",
+    "exhibitDCaption": "D BIZONYÍTÉK — OLDALIRÁNYÚ KITÉRÉSI GYAKORLAT, CÉLJA NEM KÖZÖLT",
+    "exhibitECaption": "E BIZONYÍTÉK — AZ ERŐNLÉTI PROGRAM NYUGTALANÍTÓ EREDMÉNYEKET HOZ",
+    "motionACaption": "MOZGÁSBIZONYÍTÉK A — ERDEI ÚTVONALON HALADÁS, TÍZ FOLYAMATOS MÁSODPERC",
+    "motionBCaption": "MOZGÁSBIZONYÍTÉK B — VÁGTA NYÍLT MEZŐN, VISSZATARTÓ RENDSZER TERHELÉS ALATT",
+    "motionCCaption": "MOZGÁSBIZONYÍTÉK C — FÁKKAL SZEGÉLYEZETT SPRINT, A VISSZATARTÁS ÁLLAPOTA NEM EGYÉRTELMŰ",
+    "stillEvidenceTitle": "ÁLLÓKÉPES BIZONYÍTÉK",
+    "stillEvidenceNote": "Monokróm feldolgozás az osztály előírásainak megfelelően alkalmazva",
+    "motionEvidenceTitle": "MOZGÁSBIZONYÍTÉK",
+    "motionEvidenceNote": "A színes felvétel megőrizve az operatív részletek fenntartása érdekében",
+    "stamp": "A MŰVELET KOMPROMITTÁLÓDOTT — AZ ALANY TOVÁBBRA IS KIVÁLÓ ÁLLAPOTBAN VAN",
+    "contactTitle": "LÉPJEN KAPCSOLATBA AZ OPERATÍV TISZTTEL",
+    "contactIntro": "Jogos kutya- és macskatréninghez forduljon közvetlenül az operatív tiszthez:",
+    "websiteLabel": "Kande Nadège — NAdK Coach Canin",
+    "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
   "blog": {
     "title": "ÜGYNAPLÓ",

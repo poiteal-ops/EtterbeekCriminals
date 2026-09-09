@@ -15,6 +15,7 @@
     "heatwaveSurvival": "DIE HITZEFLAUTE",
     "juryTampering": "MANIPULATION DER JURY",
     "aDayWithBestie": "EIN TAG MIT BESTIE",
+    "kandeNadege": "KANDE NADÈGE",
     "blog": "BLOG",
     "shop": "SHOP"
   },
@@ -138,6 +139,12 @@
       "teaser": "Eine Haushaltshilfe, ein feindseliger Staubsauger und ein Verdächtiger, der entschlossen ist, jede Operation zu überwachen.",
       "link": "/a-day-with-bestie",
       "image": "assets/images/bestie-hoover-chaos.jpg"
+    },
+    {
+      "title": "KANDE NADÈGE",
+      "teaser": "Eine verdeckte Betreuungsperson, eine kompromittierte Operation und ein Verdächtiger in beunruhigend hervorragendem Zustand.",
+      "link": "/kande-nadege",
+      "image": "assets/images/otto-forest-sprint.jpg"
     }
   ],
   "escapeToCountry": {
@@ -297,6 +304,40 @@
     "exhibitBCaption": "Beweisstück B — der Verdächtige führt eine Qualitätskontrolle von Besties Technik aus nächster Nähe durch und steht für maximale Behinderung direkt unter ihren Füßen.",
     "exhibitCCaption": "Beweisstück C — Verdächtiger ruht zwischen den Kissen, Dienstschluss, erschöpft von einem ganzen Tag Schikanen.",
     "stamp": "AKTE GESCHLOSSEN — BESTIE KEHRT NÄCHSTE WOCHE ZURÜCK"
+  },
+  "kandeNadege": {
+    "kicker": "HAUPTFALLAKTE — KANDE NADÈGE",
+    "title": "DIE BETREUUNGSPERSON IST KOMPROMITTIERT",
+    "locationLabel": "ORT",
+    "locationVal": "Etterbeek — Parks, Wege und eine schwer kompromittierte Türklingel",
+    "suspectLabel": "VERDÄCHTIGER",
+    "suspectVal": "LE CRIMINEL (körperlicher Zustand: beunruhigend hervorragend)",
+    "witnessLabel": "BETREUUNGSPERSON",
+    "witnessVal": "Kande Nadège (Personal Trainerin; verdeckter Auftrag kompromittiert)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Erhalt der Fitness, Verhaltensbegrenzung und dokumentierte Auftragsabweichung",
+    "p1": "Kande Nadège erschien in der Akte als verdeckte Ermittlerin unter der Tarnidentität „Personal Trainerin“. Ihre Anweisungen waren eindeutig: LE CRIMINEL jederzeit gesund und fit halten und gleichzeitig den Umfang seiner weitergehenden Aktivitäten unauffällig verringern. Das erste Ziel wurde mit beunruhigender Kompetenz ausgeführt. Das zweite nicht.",
+    "p2": "Wiederholter Kontakt mit dem Subjekt scheint die Loyalität der Einsatzkraft verändert zu haben. Nadège beaufsichtigt nun Hochgeschwindigkeits-Verfolgungsübungen, Ausdauerarbeit, Manöver über unterschiedliches Gelände und strukturierten Kontakt mit bekannten Mitstreitern. LE CRIMINEL ist stärker, schneller und materiell schwerer einzudämmen geworden. Die Ermittler haben daher geschlossen, dass der kriminelle Geist die Kontrolle übernommen hat. Ein Wiederherstellungsplan befindet sich derzeit nicht in der Akte.",
+    "doorbellLabel": "TÜRKLINGELBEFUND",
+    "doorbellFinding": "Die Wiedererkennung beginnt vor dem Sichtkontakt. Wenn Nadège an der Tür klingelt, erreicht LE CRIMINEL unverzüglich eine geschätzte vertikale Verlagerung von zehn Fuß. Diese Bewegung wird etwa zehn Minuten lang pausenlos wiederholt; danach gilt das Training offenbar als bereit, zu beginnen.",
+    "closing": "Die verdeckte Operation gilt als kompromittiert. Das Fitnessprogramm bleibt voll einsatzfähig.",
+    "exhibitACaption": "BEWEISSTÜCK A — SUBJEKT BEGINNT KONDITIONSLAUF MIT NICHT GENEHMIGTER GESCHWINDIGKEIT",
+    "exhibitBCaption": "BEWEISSTÜCK B — SOZIALER KONTAKT WÄHREND EINER BEAUFSICHTIGTEN FELDOPERATION",
+    "exhibitCCaption": "BEWEISSTÜCK C — SUBJEKT REAGIERT MIT ÜBERMÄSSIGER KRAFT AUF EINE FITNESSANWEISUNG",
+    "exhibitDCaption": "BEWEISSTÜCK D — SEITLICHE AUSWEICHÜBUNG, ZWECK NICHT OFFENGELEGT",
+    "exhibitECaption": "BEWEISSTÜCK E — KONDITIONSPROGRAMM ERZEUGT BESORGNISERREGENDE ERGEBNISSE",
+    "motionACaption": "BEWEGTBILD-BEWEIS A — BEWEGUNG AUF WALDROUTE, ZEHN FORTLAUFENDE SEKUNDEN",
+    "motionBCaption": "BEWEGTBILD-BEWEIS B — SPRINT AUF OFFENEM FELD, RÜCKHALTESYSTEM UNTER LAST",
+    "motionCCaption": "BEWEGTBILD-BEWEIS C — SPRINT ENTLANG EINER BAUMREIHE, EINDÄMMUNGSSTATUS UNKLAR",
+    "stillEvidenceTitle": "STANDBILD-BEWEISE",
+    "stillEvidenceNote": "ALLE STANDBILDFOTOGRAFIEN WURDEN SCHWARZ-WEISS VERARBEITET",
+    "motionEvidenceTitle": "BEWEGTBILD-BEWEISE",
+    "motionEvidenceNote": "FARBAUFNAHMEN WURDEN AUS OPERATIVER NOTWENDIGKEIT BEIBEHALTEN",
+    "stamp": "OPERATION KOMPROMITTIERT — SUBJEKT BLEIBT IN HERVORRAGENDEM ZUSTAND",
+    "contactTitle": "EINSATZKONTAKT",
+    "contactIntro": "Für legitimes Coaching von Hunden und Katzen wenden Sie sich direkt an die Einsatzkraft:",
+    "websiteLabel": "Kande Nadège — NAdK Coach Canin",
+    "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
   "blog": {
     "title": "FALLREGISTER",

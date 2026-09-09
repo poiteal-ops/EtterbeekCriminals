@@ -15,6 +15,7 @@
     "heatwaveSurvival": "A TRÉGUA DA ONDA DE CALOR",
     "juryTampering": "MANIPULAÇÃO DO JÚRI",
     "aDayWithBestie": "UM DIA COM Bestie",
+    "kandeNadege": "KANDE NADÈGE",
     "blog": "BLOG",
     "shop": "LOJA"
   },
@@ -138,6 +139,12 @@
       "teaser": "Uma empregada doméstica, um aspirador hostil e um suspeito determinado a supervisionar todas as operações.",
       "link": "/a-day-with-bestie",
       "image": "assets/images/bestie-hoover-chaos.jpg"
+    },
+    {
+      "title": "KANDE NADÈGE",
+      "teaser": "Uma condutora infiltrada, uma operação comprometida e um suspeito em condição física alarmantemente excelente.",
+      "link": "/kande-nadege",
+      "image": "assets/images/otto-forest-sprint.jpg"
     }
   ],
   "escapeToCountry": {
@@ -297,6 +304,40 @@
     "exhibitBCaption": "Prova B — o suspeito realiza uma inspecção de qualidade à técnica de Bestie à queima-roupa, instalado directamente sob os pés para causar o máximo de interferência.",
     "exhibitCCaption": "Prova C — suspeito em repouso entre as almofadas, fim de turno, exausto de um dia inteiro de intimidação.",
     "stamp": "PROCESSO ENCERRADO — Bestie VOLTA PARA A SEMANA"
+  },
+  "kandeNadege": {
+    "kicker": "FICHEIRO PRINCIPAL DO CASO — KANDE NADÈGE",
+    "title": "A CONDUTORA FOI COMPROMETIDA",
+    "locationLabel": "LOCAL",
+    "locationVal": "Etterbeek — parques, caminhos e uma campainha altamente comprometida",
+    "suspectLabel": "SUSPEITO",
+    "suspectVal": "LE CRIMINEL (condição física: alarmantemente excelente)",
+    "witnessLabel": "CONDUTORA",
+    "witnessVal": "Kande Nadège (personal trainer; missão infiltrada comprometida)",
+    "motiveLabel": "MOTIVO",
+    "motiveVal": "Manutenção da forma física, contenção comportamental e desvio de missão documentado",
+    "p1": "Kande Nadège entrou no ficheiro como investigadora infiltrada, operando sob a identidade de cobertura de «personal trainer». As suas instruções eram simples: manter LE CRIMINEL saudável e em forma em todos os momentos, enquanto reduzia discretamente a escala das suas atividades mais amplas. O primeiro objetivo foi executado com competência alarmante. O segundo não.",
+    "p2": "A exposição repetida ao Sujeito parece ter alterado a lealdade da operativa. Nadège supervisiona agora exercícios de perseguição a alta velocidade, trabalho de resistência, manobras em terrenos variados e contacto estruturado com associados conhecidos. LE CRIMINEL tornou-se mais forte, mais rápido e materialmente mais difícil de conter. Os investigadores concluíram, por isso, que a mente criminosa assumiu o controlo. Não existe atualmente qualquer plano de recuperação no ficheiro.",
+    "doorbellLabel": "CONSTATAÇÃO SOBRE A CAMPAINHA",
+    "doorbellFinding": "O reconhecimento começa antes do contacto visual. Quando Nadège toca à campainha, LE CRIMINEL atinge imediatamente um deslocamento vertical estimado de dez pés. Este movimento é repetido sem pausa durante aproximadamente dez minutos, após os quais o treino é aparentemente considerado pronto para começar.",
+    "closing": "A operação infiltrada é considerada comprometida. O programa de condicionamento físico mantém-se plenamente operacional.",
+    "exhibitACaption": "PEÇA A — SUJEITO INICIA CORRIDA DE CONDICIONAMENTO A VELOCIDADE NÃO AUTORIZADA",
+    "exhibitBCaption": "PEÇA B — CONTACTO SOCIAL DURANTE UMA OPERAÇÃO DE CAMPO SUPERVISIONADA",
+    "exhibitCCaption": "PEÇA C — SUJEITO RESPONDE A UMA DIRETIVA DE FORMA FÍSICA COM FORÇA EXCESSIVA",
+    "exhibitDCaption": "PEÇA D — EXERCÍCIO DE EVASÃO LATERAL, FINALIDADE NÃO DIVULGADA",
+    "exhibitECaption": "PEÇA E — PROGRAMA DE CONDICIONAMENTO PRODUZ RESULTADOS PREOCUPANTES",
+    "motionACaption": "PROVA EM MOVIMENTO A — DESLOCAÇÃO EM PERCURSO BOSCOSO, DEZ SEGUNDOS CONTÍNUOS",
+    "motionBCaption": "PROVA EM MOVIMENTO B — ARRANCADA EM CAMPO ABERTO, SISTEMA DE CONTENÇÃO SOB CARGA",
+    "motionCCaption": "PROVA EM MOVIMENTO C — SPRINT EM ALAMEDA, ESTADO DA CONTENÇÃO INCERTO",
+    "stillEvidenceTitle": "PROVAS FIXAS",
+    "stillEvidenceNote": "TODAS AS FOTOGRAFIAS FIXAS FORAM PROCESSADAS A PRETO E BRANCO",
+    "motionEvidenceTitle": "PROVAS EM MOVIMENTO",
+    "motionEvidenceNote": "AS IMAGENS A CORES FORAM RETIDAS POR NECESSIDADE OPERACIONAL",
+    "stamp": "OPERAÇÃO COMPROMETIDA — O SUJEITO MANTÉM-SE EM EXCELENTE CONDIÇÃO",
+    "contactTitle": "CONTACTO DA OPERATIVA",
+    "contactIntro": "Para treino canino e felino legítimo, contacte diretamente a operativa:",
+    "websiteLabel": "Kande Nadège — NAdK Coach Canin",
+    "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
   "blog": {
     "title": "REGISTO DO CASO",

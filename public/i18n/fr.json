@@ -15,6 +15,7 @@
     "heatwaveSurvival": "L'ACCALMIE DE LA CANICULE",
     "juryTampering": "MANIPULATION DU JURY",
     "aDayWithBestie": "UNE JOURNÉE AVEC BESTIE",
+    "kandeNadege": "KANDE NADÈGE",
     "blog": "BLOG",
     "shop": "BOUTIQUE"
   },
@@ -138,6 +139,12 @@
       "teaser": "Une femme de ménage, un aspirateur hostile et un suspect déterminé à superviser chaque opération.",
       "link": "/a-day-with-bestie",
       "image": "assets/images/bestie-hoover-chaos.jpg"
+    },
+    {
+      "title": "KANDE NADÈGE",
+      "teaser": "Une agente traitante sous couverture, une opération compromise et un suspect dans un état de forme alarmant.",
+      "link": "/kande-nadege",
+      "image": "assets/images/otto-forest-sprint.jpg"
     }
   ],
   "escapeToCountry": {
@@ -297,6 +304,40 @@
     "exhibitBCaption": "Pièce B — le suspect mène une inspection de qualité à courte distance de la technique de Bestie, posté directement dans ses jambes pour une gêne maximale.",
     "exhibitCCaption": "Pièce C — suspect au repos parmi les coussins, fin de service, épuisé par une journée entière de harcèlement.",
     "stamp": "AFFAIRE CLASSÉE — BESTIE REVIENT LA SEMAINE PROCHAINE"
+  },
+  "kandeNadege": {
+    "kicker": "DOSSIER PRINCIPAL — KANDE NADÈGE",
+    "title": "L’AGENTE TRAITANTE A ÉTÉ COMPROMISE",
+    "locationLabel": "LIEU",
+    "locationVal": "Etterbeek — parcs, sentiers et une sonnette hautement compromise",
+    "suspectLabel": "SUSPECT",
+    "suspectVal": "LE CRIMINEL (condition physique : excellente à un degré alarmant)",
+    "witnessLabel": "AGENTE TRAITANTE",
+    "witnessVal": "Kande Nadège (coach sportif ; affectation sous couverture compromise)",
+    "motiveLabel": "MOBILE",
+    "motiveVal": "Maintien de la forme, contention comportementale et dérive de mission documentée",
+    "p1": "Kande Nadège est entrée au dossier comme enquêtrice sous couverture, opérant sous l’identité de « coach sportif ». Ses instructions étaient simples : maintenir LE CRIMINEL en bonne santé et en forme en permanence, tout en réduisant discrètement l’ampleur de ses activités plus larges. Le premier objectif a été exécuté avec une compétence alarmante. Le second, non.",
+    "p2": "L’exposition répétée au Sujet semble avoir modifié l’allégeance de l’agente. Nadège supervise désormais des exercices de poursuite à grande vitesse, du travail d’endurance, des manœuvres sur terrain varié et des contacts structurés avec des associés connus. LE CRIMINEL est devenu plus fort, plus rapide et matériellement plus difficile à contenir. Les enquêteurs ont donc conclu que l’esprit criminel a pris le contrôle. Aucun plan de récupération ne figure actuellement au dossier.",
+    "doorbellLabel": "CONSTAT RELATIF À LA SONNETTE",
+    "doorbellFinding": "La reconnaissance commence avant le contact visuel. Lorsque Nadège sonne à la porte, LE CRIMINEL effectue immédiatement un déplacement vertical estimé à dix pieds. Ce mouvement est répété sans interruption pendant environ dix minutes, après quoi l’entraînement est apparemment considéré comme prêt à commencer.",
+    "closing": "L’opération sous couverture est considérée comme compromise. Le programme de remise en forme reste pleinement opérationnel.",
+    "exhibitACaption": "PIÈCE A — SUJET COMMENÇANT UNE COURSE DE CONDITIONNEMENT À UNE VITESSE NON AUTORISÉE",
+    "exhibitBCaption": "PIÈCE B — CONTACT SOCIAL LORS D’UNE OPÉRATION DE TERRAIN SUPERVISÉE",
+    "exhibitCCaption": "PIÈCE C — SUJET RÉPONDANT À UNE DIRECTIVE DE FORME PHYSIQUE AVEC UNE FORCE EXCESSIVE",
+    "exhibitDCaption": "PIÈCE D — EXERCICE D’ÉVASION LATÉRALE, OBJECTIF NON DIVULGUÉ",
+    "exhibitECaption": "PIÈCE E — PROGRAMME DE CONDITIONNEMENT PRODUISANT DES RÉSULTATS PRÉOCCUPANTS",
+    "motionACaption": "PREUVE ANIMÉE A — MOUVEMENT SUR ITINÉRAIRE BOISÉ, DIX SECONDES CONTINUES",
+    "motionBCaption": "PREUVE ANIMÉE B — SPRINT EN TERRAIN OUVERT, SYSTÈME DE RETENUE SOUS CHARGE",
+    "motionCCaption": "PREUVE ANIMÉE C — SPRINT BORDÉ D’ARBRES, STATUT DU CONFINEMENT INCERTAIN",
+    "stillEvidenceTitle": "PREUVES FIXES",
+    "stillEvidenceNote": "TOUTES LES PHOTOGRAPHIES FIXES ONT ÉTÉ TRAITÉES EN NOIR ET BLANC",
+    "motionEvidenceTitle": "PREUVES ANIMÉES",
+    "motionEvidenceNote": "LES IMAGES EN COULEUR SONT CONSERVÉES PAR NÉCESSITÉ OPÉRATIONNELLE",
+    "stamp": "OPÉRATION COMPROMISE — LE SUJET RESTE EN EXCELLENTE CONDITION",
+    "contactTitle": "CONTACT DE L’AGENTE",
+    "contactIntro": "Pour un accompagnement canin et félin légitime, consultez directement l’agente :",
+    "websiteLabel": "Kande Nadège — NAdK Coach Canin",
+    "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
   "blog": {
     "title": "JOURNAL DE BORD",

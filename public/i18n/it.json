@@ -15,6 +15,7 @@
     "heatwaveSurvival": "LA TREGUA DELLA CANICOLA",
     "juryTampering": "MANIPOLAZIONE DELLA GIURIA",
     "aDayWithBestie": "UNA GIORNATA CON BESTIE",
+    "kandeNadege": "KANDE NADÈGE",
     "blog": "BLOG",
     "shop": "NEGOZIO"
   },
@@ -138,6 +139,12 @@
       "teaser": "Una collaboratrice domestica, un aspirapolvere ostile e un sospettato deciso a supervisionare ogni operazione.",
       "link": "/a-day-with-bestie",
       "image": "assets/images/bestie-hoover-chaos.jpg"
+    },
+    {
+      "title": "KANDE NADÈGE",
+      "teaser": "Un’operatrice sotto copertura, un’operazione compromessa e un sospettato in condizioni fisiche allarmantemente eccellenti.",
+      "link": "/kande-nadege",
+      "image": "assets/images/otto-forest-sprint.jpg"
     }
   ],
   "escapeToCountry": {
@@ -297,6 +304,40 @@
     "exhibitBCaption": "Reperto B — il sospettato effettua un'ispezione di qualità a distanza ravvicinata della tecnica di Bestie, piazzato direttamente sotto i suoi piedi per la massima interferenza.",
     "exhibitCCaption": "Reperto C — sospettato a riposo tra i cuscini, fine turno, esausto dopo un'intera giornata di vessazioni.",
     "stamp": "CASO CHIUSO — BESTIE TORNA LA PROSSIMA SETTIMANA"
+  },
+  "kandeNadege": {
+    "kicker": "FASCICOLO PRINCIPALE — KANDE NADÈGE",
+    "title": "L’OPERATRICE È STATA COMPROMESSA",
+    "locationLabel": "LUOGO",
+    "locationVal": "Etterbeek — parchi, sentieri e un campanello altamente compromesso",
+    "suspectLabel": "SOSPETTATO",
+    "suspectVal": "LE CRIMINEL (condizioni fisiche: allarmantemente eccellenti)",
+    "witnessLabel": "OPERATRICE",
+    "witnessVal": "Kande Nadège (personal trainer; incarico sotto copertura compromesso)",
+    "motiveLabel": "MOVENTE",
+    "motiveVal": "Mantenimento della forma fisica, contenimento comportamentale e deriva della missione documentata",
+    "p1": "Kande Nadège è entrata nel fascicolo come investigatrice sotto copertura, operante sotto l’identità di copertura di «personal trainer». Le sue istruzioni erano chiare: mantenere LE CRIMINEL sano e in forma in ogni momento, riducendo al contempo con discrezione la portata delle sue attività più ampie. Il primo obiettivo è stato eseguito con competenza allarmante. Il secondo no.",
+    "p2": "L’esposizione ripetuta al Soggetto sembra aver alterato la lealtà dell’operatrice. Nadège ora supervisiona esercizi di inseguimento ad alta velocità, lavoro di resistenza, manovre su terreni diversi e contatti strutturati con associati noti. LE CRIMINEL è diventato più forte, più veloce e materialmente più difficile da contenere. Gli investigatori hanno pertanto concluso che la mente criminale ha preso il controllo. Al momento non risulta agli atti alcun piano di recupero.",
+    "doorbellLabel": "RISCONTRO SUL CAMPANELLO",
+    "doorbellFinding": "Il riconoscimento comincia prima del contatto visivo. Quando Nadège suona il campanello, LE CRIMINEL raggiunge immediatamente uno spostamento verticale stimato di dieci piedi. Il movimento viene ripetuto senza pausa per circa dieci minuti, dopo i quali l’addestramento è apparentemente considerato pronto a iniziare.",
+    "closing": "L’operazione sotto copertura è considerata compromessa. Il programma di condizionamento resta pienamente operativo.",
+    "exhibitACaption": "REPERTO A — SOGGETTO INIZIA CORSA DI CONDIZIONAMENTO A VELOCITÀ NON AUTORIZZATA",
+    "exhibitBCaption": "REPERTO B — CONTATTO SOCIALE DURANTE UN’OPERAZIONE SUL CAMPO SUPERVISIONATA",
+    "exhibitCCaption": "REPERTO C — SOGGETTO RISPONDE A UNA DIRETTIVA DI FORMA FISICA CON FORZA ECCESSIVA",
+    "exhibitDCaption": "REPERTO D — ESERCIZIO DI EVASIONE LATERALE, SCOPO NON DIVULGATO",
+    "exhibitECaption": "REPERTO E — PROGRAMMA DI CONDIZIONAMENTO PRODUCE RISULTATI PREOCCUPANTI",
+    "motionACaption": "PROVA IN MOVIMENTO A — SPOSTAMENTO SU PERCORSO BOSCOSO, DIECI SECONDI CONTINUI",
+    "motionBCaption": "PROVA IN MOVIMENTO B — SCATTO IN CAMPO APERTO, SISTEMA DI CONTENIMENTO SOTTO CARICO",
+    "motionCCaption": "PROVA IN MOVIMENTO C — SCATTO TRA GLI ALBERI, STATO DEL CONTENIMENTO INCERTO",
+    "stillEvidenceTitle": "PROVE FISSE",
+    "stillEvidenceNote": "TUTTE LE FOTOGRAFIE FISSE SONO STATE ELABORATE IN BIANCO E NERO",
+    "motionEvidenceTitle": "PROVE IN MOVIMENTO",
+    "motionEvidenceNote": "LE RIPRESE A COLORI SONO CONSERVATE PER NECESSITÀ OPERATIVA",
+    "stamp": "OPERAZIONE COMPROMESSA — IL SOGGETTO RESTA IN CONDIZIONI ECCELLENTI",
+    "contactTitle": "CONTATTO DELL’OPERATRICE",
+    "contactIntro": "Per un addestramento canino e felino legittimo, rivolgersi direttamente all’operatrice:",
+    "websiteLabel": "Kande Nadège — NAdK Coach Canin",
+    "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
   "blog": {
     "title": "REGISTRO CASI",

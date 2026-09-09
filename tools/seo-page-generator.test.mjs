@@ -231,6 +231,12 @@ test('A Day With Bestie is available in every shipped content locale', async () 
   }
 });
 
+test('Kande Nadege is available in English content', async () => {
+  const englishRoutes = buildPages(await loadEnglishContent()).map((page) => page.route);
+
+  assert.ok(englishRoutes.includes('kande-nadege'), 'English content is missing /kande-nadege');
+});
+
 test('CONTENT_LOCALES in locale-registry.ts matches the locales generate-seo-pages.mjs actually builds', () => {
   const registrySource = fs.readFileSync('src/app/i18n/locale-registry.ts', 'utf8');
   const blockMatch = registrySource.match(

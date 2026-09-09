@@ -15,6 +15,7 @@
     "heatwaveSurvival": "HELLEAALLON TYVEN",
     "juryTampering": "JURYN MANIPULOINTI",
     "aDayWithBestie": "PÄIVÄ BESTIEN KANSSA",
+    "kandeNadege": "Kande Nadège",
     "blog": "BLOGI",
     "shop": "KAUPPA"
   },
@@ -138,6 +139,12 @@
       "teaser": "Taloudenhoitaja, vihamielinen imuri ja yksi epäilty, joka on päättänyt valvoa jokaista toimenpidettä.",
       "link": "/a-day-with-bestie",
       "image": "assets/images/bestie-hoover-chaos.jpg"
+    },
+    {
+      "title": "OHJAAJA ON KOMPROMETTOITU",
+      "teaser": "Peitetoiminen ohjaaja, kompromettoitunut operaatio ja yksi hälyttävän erinomaisessa kunnossa oleva epäilty.",
+      "link": "/kande-nadege",
+      "image": "assets/images/otto-forest-sprint.jpg"
     }
   ],
   "escapeToCountry": {
@@ -297,6 +304,40 @@
     "exhibitBCaption": "Todiste B — epäilty suorittaa Bestien työskentelytavan lähietäisyydeltä laaduntarkastuksen, sijoittuen suoraan jalkoihin mahdollisimman suuren häiriön varmistamiseksi.",
     "exhibitCCaption": "Todiste C — epäilty lepää tyynyjen keskellä työvuoron päättyessä, uupuneena kokonaisen kiusaamispäivän jäljiltä.",
     "stamp": "TAPAUS SULJETTU — BESTIE PALAA ENSI VIIKOLLA"
+  },
+  "kandeNadege": {
+    "kicker": "PÄÄASIATIEDOSTO — KANDE NADÈGE",
+    "title": "OHJAAJA ON KOMPROMETTOITU",
+    "locationLabel": "SIJAINTI",
+    "locationVal": "Etterbeek — puistot, polut ja yksi perusteellisesti kompromettoitunut ovikello",
+    "suspectLabel": "EPÄILTY",
+    "suspectVal": "LE CRIMINEL (fyysinen kunto: hälyttävän erinomainen)",
+    "witnessLabel": "OHJAAJA",
+    "witnessVal": "Kande Nadège (personal trainer; peitetehtävä kompromettoitunut)",
+    "motiveLabel": "MOTIIVI",
+    "motiveVal": "Kunnon ylläpito, käyttäytymisen hallinta ja dokumentoitu tehtävästä harhautuminen",
+    "p1": "Kande Nadège tuli tiedostoon peitetoimisena tutkijana, jonka peitehenkilöllisyys oli ”personal trainer”. Ohjeet olivat suoraviivaiset: pidä LE CRIMINEL aina terveenä ja hyvässä kunnossa ja vähennä samalla huomaamattomasti hänen laajempien toimiensa mittakaavaa. Ensimmäinen tavoite on toteutettu hälyttävällä pätevyydellä. Toinen ei.",
+    "p2": "Toistuva altistuminen Kohteelle näyttää muuttaneen operatiivin lojaalisuutta. Nadège valvoo nyt nopeita takaa-ajoharjoituksia, kestävyysharjoittelua, maastoa ylittäviä liikkeitä ja järjestettyä yhteydenpitoa tunnettuihin rikoskumppaneihin. LE CRIMINEL on tullut vahvemmaksi, nopeammaksi ja olennaisesti vaikeammaksi hallita. Tutkijat ovat siksi päätelleet rikollisen mielen ottaneen vallan. Tiedostossa ei tällä hetkellä ole palautumissuunnitelmaa.",
+    "doorbellLabel": "OVIKELLOREAKTIO — VARMISTETTU",
+    "doorbellFinding": "Tunnistus alkaa ennen näköyhteyttä. Kun Nadège soittaa ovikelloa, LE CRIMINEL saavuttaa välittömästi arviolta kolmen metrin pystysuuntaisen siirtymän. Liike toistuu tauotta noin kymmenen minuutin ajan, minkä jälkeen harjoittelun katsotaan ilmeisesti olevan valmis alkamaan.",
+    "closing": "Peiteoperaation katsotaan kompromettoituneen. Kunto-ohjelma on edelleen täysin toiminnassa.",
+    "exhibitACaption": "TODISTE A — KOHDE ALOITTAA KUNTOJUOKSUN LUVATTOMALLA NOPEUDELLA",
+    "exhibitBCaption": "TODISTE B — SOSIAALINEN KONTAKTI VALVOTUN KENTTÄOPERAATION AIKANA",
+    "exhibitCCaption": "TODISTE C — KOHDE VASTAA KUNTOILUMÄÄRÄYKSEEN LIIALLISELLA VOIMALLA",
+    "exhibitDCaption": "TODISTE D — SIVUTTAINEN VÄISTÖHARJOITUS, TARKOITUS ILMOITTAMATTA",
+    "exhibitECaption": "TODISTE E — KUNTO-OHJELMA TUOTTAA HUOLESTUTTAVIA TULOKSIA",
+    "motionACaption": "LIIKETODISTE A — LIIKE METSÄREITILLÄ, KYMMENEN YHTÄJAKSOISTA SEKUNTIA",
+    "motionBCaption": "LIIKETODISTE B — SPRINTTI AVOIMELLA KENTÄLLÄ, HILLINTÄJÄRJESTELMÄ KUORMITUKSESSA",
+    "motionCCaption": "LIIKETODISTE C — PUURIVISTÖN LÄPI, HALLINTATILA EPÄSELVÄ",
+    "stillEvidenceTitle": "VALOKUVATODISTEET",
+    "stillEvidenceNote": "Yksiväritulkinta tehty osaston standardien mukaisesti",
+    "motionEvidenceTitle": "LIIKETODISTEET",
+    "motionEvidenceNote": "Värikuva säilytetty operatiivisten yksityiskohtien säilyttämiseksi",
+    "stamp": "OPERAATIO KOMPROMETTOITU — KOHDE PYSYY ERINOMAISESSA KUNNOSSA",
+    "contactTitle": "OTA YHTEYTTÄ OPERATIIVIIN",
+    "contactIntro": "Ota yhteyttä operatiiviin suoraan laillista koira- ja kissakoulutusta varten:",
+    "websiteLabel": "Kande Nadège — NAdK Coach Canin",
+    "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
   "blog": {
     "title": "TAPAUSPÄIVÄKIRJA",

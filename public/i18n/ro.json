@@ -15,6 +15,7 @@
     "heatwaveSurvival": "ACALMIA DIN TIMPUL CANICULEI",
     "juryTampering": "MANIPULAREA JURIULUI",
     "aDayWithBestie": "O ZI CU Bestie",
+    "kandeNadege": "KANDE NADÈGE",
     "blog": "BLOG",
     "shop": "MAGAZIN"
   },
@@ -138,6 +139,12 @@
       "teaser": "O menajeră, un aspirator ostil și un suspect hotărât să supravegheze fiecare operațiune.",
       "link": "/a-day-with-bestie",
       "image": "assets/images/bestie-hoover-chaos.jpg"
+    },
+    {
+      "title": "KANDE NADÈGE",
+      "teaser": "O operatoare sub acoperire, o operațiune compromisă și un suspect într-o formă fizică alarmant de excelentă.",
+      "link": "/kande-nadege",
+      "image": "assets/images/otto-forest-sprint.jpg"
     }
   ],
   "escapeToCountry": {
@@ -297,6 +304,40 @@
     "exhibitBCaption": "Proba B — suspectul efectuează de la mică distanță o inspecție de calitate a tehnicii lui Bestie, poziționat direct sub picioare pentru interferență maximă.",
     "exhibitCCaption": "Proba C — suspectul se odihnește printre perne, la final de tură, epuizat după o zi întreagă de intimidare.",
     "stamp": "CAZ ÎNCHIS — Bestie revine săptămâna viitoare"
+  },
+  "kandeNadege": {
+    "kicker": "DOSAR PRINCIPAL — KANDE NADÈGE",
+    "title": "OPERATOAREA A FOST COMPROMISĂ",
+    "locationLabel": "LOCAȚIE",
+    "locationVal": "Etterbeek — parcuri, alei și o sonerie grav compromisă",
+    "suspectLabel": "SUSPECT",
+    "suspectVal": "LE CRIMINEL (condiție fizică: alarmant de excelentă)",
+    "witnessLabel": "OPERATOARE",
+    "witnessVal": "Kande Nadège (antrenoare personală; misiune sub acoperire compromisă)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Menținerea condiției fizice, contenție comportamentală și deviere documentată a misiunii",
+    "p1": "Kande Nadège a intrat în dosar ca investigatoare sub acoperire, operând sub identitatea de paravan de „antrenoare personală”. Instrucțiunile sale au fost clare: să mențină LE CRIMINEL sănătos și în formă în permanență, reducând în același timp, discret, amploarea activităților sale mai largi. Primul obiectiv a fost executat cu o competență alarmantă. Al doilea nu.",
+    "p2": "Expunerea repetată la Subiect pare să fi modificat loialitatea operatoarei. Nadège supraveghează acum exerciții de urmărire la viteză mare, lucru de anduranță, manevre pe terenuri variate și contact structurat cu asociați cunoscuți. LE CRIMINEL a devenit mai puternic, mai rapid și în mod concret mai greu de ținut sub control. Anchetatorii au concluzionat, prin urmare, că mintea criminală a preluat controlul. În prezent, dosarul nu conține niciun plan de recuperare.",
+    "doorbellLabel": "CONSTATARE PRIVIND SONERIA",
+    "doorbellFinding": "Recunoașterea începe înainte de contactul vizual. Când Nadège sună la ușă, LE CRIMINEL atinge imediat o deplasare verticală estimată la zece picioare. Această mișcare este repetată fără pauză timp de aproximativ zece minute, după care antrenamentul este aparent considerat pregătit să înceapă.",
+    "closing": "Operațiunea sub acoperire este considerată compromisă. Programul de condiționare fizică rămâne pe deplin operațional.",
+    "exhibitACaption": "PROBĂ A — SUBIECTUL ÎNCEPE ALERGAREA DE CONDIȚIONARE LA VITEZĂ NEAUTORIZATĂ",
+    "exhibitBCaption": "PROBĂ B — CONTACT SOCIAL ÎN TIMPUL UNEI OPERAȚIUNI DE TEREN SUPRAVEGHEATE",
+    "exhibitCCaption": "PROBĂ C — SUBIECTUL RĂSPUNDE UNEI DIRECTIVE DE FITNESS CU FORȚĂ EXCESIVĂ",
+    "exhibitDCaption": "PROBĂ D — EXERCIȚIU DE EVAZIUNE LATERALĂ, SCOP NEDECLARAT",
+    "exhibitECaption": "PROBĂ E — PROGRAM DE CONDIȚIONARE CARE PRODUCE REZULTATE ÎNGRIJORĂTOARE",
+    "motionACaption": "PROBĂ ÎN MIȘCARE A — DEPLASARE PE TRASEU ÎMPĂDURIT, ZECE SECUNDE CONTINUE",
+    "motionBCaption": "PROBĂ ÎN MIȘCARE B — SPRINT PE CÂMP DESCHIS, SISTEM DE REȚINERE SUB SARCINĂ",
+    "motionCCaption": "PROBĂ ÎN MIȘCARE C — SPRINT MĂRGINIT DE COPACI, STATUTUL CONȚINERII NECUNOSCUT",
+    "stillEvidenceTitle": "PROBE STATICE",
+    "stillEvidenceNote": "TOATE FOTOGRAFIILE STATICE AU FOST PRELUCRATE ÎN ALB-NEGRU",
+    "motionEvidenceTitle": "PROBE ÎN MIȘCARE",
+    "motionEvidenceNote": "IMAGINILE COLOR AU FOST PĂSTRATE DIN NECESITATE OPERAȚIONALĂ",
+    "stamp": "OPERAȚIUNE COMPROMISĂ — SUBIECTUL RĂMÂNE ÎN CONDIȚIE EXCELENTĂ",
+    "contactTitle": "CONTACT OPERATIV",
+    "contactIntro": "Pentru instruire canină și felină legitimă, consultați direct operatoarea:",
+    "websiteLabel": "Kande Nadège — NAdK Coach Canin",
+    "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
   "blog": {
     "title": "REGISTRUL CAZURILOR",
