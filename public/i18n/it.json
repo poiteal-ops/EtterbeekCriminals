@@ -341,7 +341,7 @@
   },
   "blog": {
     "title": "REGISTRO CASI",
-    "subtitle": "25 voci mensili — due anni di sorveglianza continua, il caso 001-CR resta aperto"
+    "subtitle": "26 voci mensili — due anni di sorveglianza continua, il caso 001-CR resta aperto"
   },
   "blogPosts": [
     {
@@ -517,6 +517,13 @@
       "body": "Un’allerta per il caldo durata diversi giorni ha messo completamente fuori combattimento il Soggetto — disteso sul tappeto del soggiorno, con gli arti ad angoli insoliti e nessuna infrazione commessa per il periodo più lungo dall’inizio della sorveglianza. La tregua è finita non appena il tempo è cambiato: il Soggetto si è trasferito su una chiazza d’erba, ha rivendicato una scorta di bottiglie abbandonate come scena del crimine di propria creazione e ha ripreso a pieno regime tutte le operazioni senza fornire spiegazioni. Rapporto completo depositato separatamente alla voce « La pausa dell’ondata di calore. »",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "PARCHI LOCALI COMPROMESSI",
+      "body": "Il Soggetto è rimasto a Bruxelles per tutto agosto. Il bel tempo ha consentito ripetute operazioni nei parchi locali, solitamente seguite dall’acquisizione e dal consumo illeciti di frammenti di croissant. La frequenza dei pattugliamenti è aumentata. La sicurezza dei prodotti da forno resta inadeguata.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

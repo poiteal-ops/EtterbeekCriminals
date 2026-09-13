@@ -341,7 +341,7 @@
   },
   "blog": {
     "title": "SAKSLOGG",
-    "subtitle": "25 månedlige oppføringer — to år med kontinuerlig overvåking, sak 001-CR er fortsatt åpen"
+    "subtitle": "26 månedlige oppføringer — to år med kontinuerlig overvåking, sak 001-CR er fortsatt åpen"
   },
   "blogPosts": [
     {
@@ -517,6 +517,13 @@
       "body": "Et varmevarsel over flere dager satte den mistenkte helt ut av spill — flatt på ryggen på stueteppet, med lemmene i merkelige vinkler, uten en eneste forseelse i den lengste rolige perioden siden overvåkingen begynte. Stillheten tok slutt idet været slo om: Den mistenkte forflyttet seg til en gressflekk, gjorde en haug med kasserte flasker til et åsted han selv hadde skapt, og gjenopptok full virksomhet uten forklaring. Hele rapporten er arkivert separat under «Hetebølgens stillhet». ",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "LOKALE PARKER KOMPROMITTERT",
+      "body": "Subjektet oppholdt seg i Brussel gjennom hele august. Det fine været muliggjorde gjentatte operasjoner i lokale parker, som regel etterfulgt av ulovlig tilegnelse og inntak av croissantbiter. Patruljefrekvensen økte. Sikkerheten rundt bakverk er fortsatt utilstrekkelig.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

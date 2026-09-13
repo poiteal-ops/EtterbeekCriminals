@@ -341,7 +341,7 @@
   },
   "blog": {
     "title": "TAPAUSPÄIVÄKIRJA",
-    "subtitle": "25 kuukausittaista merkintää — kaksi vuotta jatkuvaa valvontaa, tapaus 001-CR pysyy avoimena"
+    "subtitle": "26 kuukausittaista merkintää — kaksi vuotta jatkuvaa valvontaa, tapaus 001-CR pysyy avoimena"
   },
   "blogPosts": [
     {
@@ -517,6 +517,13 @@
       "body": "Useita päiviä kestänyt hellevaroitus pysäytti Kohteen täysin — Kohde makasi olohuoneen matolla raajat oudoissa kulmissa, eikä syyllistynyt yhteenkään rikkomukseen pisimmän yhtäjaksoisen ajanjakson aikana valvonnan alkamisen jälkeen. Hiljaisuus päättyi heti sään muuttuessa: Kohde siirtyi ruohikolle, julisti hylättyjen pullojen kätkön itse luomakseen rikospaikaksi ja jatkoi täysimittaista toimintaansa ilman selitystä. Täydellinen raportti on arkistoitu erikseen nimellä ”Helleaallon tyyni hetki.”",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "PAIKALLISET PUISTOT VAARANTUNEET",
+      "body": "Kohde pysyi Brysselissä koko elokuun. Suotuisa sää mahdollisti toistuvat operaatiot paikallisissa puistoissa, joita seurasi yleensä croissantinpalojen luvaton haltuunotto ja nauttiminen. Partiointitiheys kasvoi. Leivonnaisten suojaus on edelleen riittämätön.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

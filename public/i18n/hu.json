@@ -341,7 +341,7 @@
   },
   "blog": {
     "title": "ÜGYNAPLÓ",
-    "subtitle": "25 havi bejegyzés — két év folyamatos megfigyelés, a 001-CR ügy továbbra is nyitva"
+    "subtitle": "26 havi bejegyzés — két év folyamatos megfigyelés, a 001-CR ügy továbbra is nyitva"
   },
   "blogPosts": [
     {
@@ -517,6 +517,13 @@
       "body": "A több napon át tartó hőségriadó teljesen a földre kényszerítette az Alanyt — hanyatt fekve hevert a nappali szőnyegén, végtagjai furcsa szögekben álltak, és a megfigyelés kezdete óta a leghosszabb időszak telt el kihágás nélkül. A csendnek abban a pillanatban vége szakadt, hogy megváltozott az időjárás: az Alany átköltözött egy füves foltra, a kidobott palackok halmát saját készítésű bűnügyi helyszínként kisajátította, majd minden magyarázat nélkül teljes üzemmódban folytatta a műveleteket. A teljes jelentést külön, „A hőhullám csendje” címen iktattuk.",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "A HELYI PARKOK BIZTONSÁGA MEGRENDÜLT",
+      "body": "Az Alany egész augusztusban Brüsszelben maradt. A kellemes időjárás ismételt műveleteket tett lehetővé a helyi parkokban, amelyeket rendszerint croissant-darabok jogellenes megszerzése és elfogyasztása követett. A járőrözések gyakorisága nőtt. A péksütemények védelme továbbra sem kielégítő.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

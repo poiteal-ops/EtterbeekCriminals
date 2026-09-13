@@ -341,7 +341,7 @@
   },
   "blog": {
     "title": "DENÍK PŘÍPADŮ",
-    "subtitle": "25 měsíčních záznamů — dva roky nepřetržitého sledování, případ 001-CR zůstává otevřený"
+    "subtitle": "26 měsíčních záznamů — dva roky nepřetržitého sledování, případ 001-CR zůstává otevřený"
   },
   "blogPosts": [
     {
@@ -517,6 +517,13 @@
       "body": "Vícedenní výstraha před vedrem držela Subjekt zcela při zemi — ležel rozplácnutý na koberci v obýváku, končetiny v podivných úhlech, bez jediného přestupku po nejdelší dobu od zahájení sledování. Klid skončil v okamžiku, kdy se počasí zlomilo: Subjekt se přesunul na kus trávy, označil hromádku odhozených lahví za místo činu, které si vytvořil sám, a bez vysvětlení obnovil plný provoz. Úplná zpráva je založena samostatně pod názvem „Vedrem vynucený klid.“",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "MÍSTNÍ PARKY INFILTROVÁNY",
+      "body": "Subjekt zůstal po celý srpen v Bruselu. Příznivé počasí umožnilo opakované operace v místních parcích, po nichž obvykle následovalo nezákonné získání a konzumace kousků croissantu. Frekvence hlídek vzrostla. Zabezpečení pečiva zůstává nedostatečné.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

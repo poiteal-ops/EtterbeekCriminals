@@ -341,7 +341,7 @@
   },
   "blog": {
     "title": "JUHTUMIPÄEVIK",
-    "subtitle": "25 igakuist kannet — kaks aastat pidevat jälgimist, toimik 001-CR jääb avatuks"
+    "subtitle": "26 igakuist kannet — kaks aastat pidevat jälgimist, toimik 001-CR jääb avatuks"
   },
   "blogPosts": [
     {
@@ -517,6 +517,13 @@
       "body": "Mitmepäevane kuumahoiatus sundis Subjekti täielikult pikali — elutoa vaibal, jäsemed veidrate nurkade all, ühtegi rikkumist toime panemata pikema aja jooksul kui kunagi pärast jälgimise algust. Vaikus lõppes hetkel, mil ilm muutus: Subjekt siirdus murulapile, kuulutas äravisatud pudelite hulga enda loodud kuriteopaigaks ja jätkas täiel määral tegevust ilma selgituseta. Täielik aruanne on eraldi esitatud pealkirja „Kuumalaine vaikus” all.",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "KOHALIKUD PARGID OHUSTATUD",
+      "body": "Subjekt viibis kogu augusti Brüsselis. Ilus ilm võimaldas kohalikes parkides korduvaid operatsioone, millele järgnes tavaliselt sarvesaiatükkide ebaseaduslik omandamine ja tarbimine. Patrullide sagedus suurenes. Küpsetiste turvalisus on endiselt puudulik.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

@@ -341,7 +341,7 @@
   },
   "blog": {
     "title": "REJESTR SPRAW",
-    "subtitle": "25 comiesięcznych wpisów — dwa lata nieprzerwanej obserwacji, sprawa 001-CR pozostaje otwarta"
+    "subtitle": "26 comiesięcznych wpisów — dwa lata nieprzerwanej obserwacji, sprawa 001-CR pozostaje otwarta"
   },
   "blogPosts": [
     {
@@ -517,6 +517,13 @@
       "body": "Wielodniowe ostrzeżenie przed upałem całkowicie uziemiło Podejrzanego — leżał płasko na dywanie w salonie, z łapami ułożonymi pod dziwnymi kątami; przez najdłuższy okres od rozpoczęcia obserwacji nie popełniono żadnych wykroczeń. Cisza skończyła się w chwili, gdy pogoda się załamała: Podejrzany przeniósł się na skrawek trawy, uznał zapas porzuconych butelek za miejsce zbrodni własnej roboty i bez wyjaśnienia wznowił pełną działalność. Pełny raport złożono osobno pod tytułem „ZASTÓJ PODCZAS FALI UPAŁÓW”.",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "LOKALNE PARKI ZINFILTROWANE",
+      "body": "Obiekt pozostawał w Brukseli przez cały sierpień. Ładna pogoda umożliwiła wielokrotne operacje w lokalnych parkach, po których zwykle następowało bezprawne pozyskanie i spożycie fragmentów croissanta. Częstotliwość patroli wzrosła. Ochrona wypieków pozostaje niewystarczająca.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

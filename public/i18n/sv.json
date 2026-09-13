@@ -341,7 +341,7 @@
   },
   "blog": {
     "title": "FALLLOGG",
-    "subtitle": "25 månatliga poster — två års kontinuerlig övervakning, fall 001-CR förblir öppet"
+    "subtitle": "26 månatliga poster — två års kontinuerlig övervakning, fall 001-CR förblir öppet"
   },
   "blogPosts": [
     {
@@ -517,6 +517,13 @@
       "body": "En flera dagar lång värmevarning fick Subjektet att ligga helt stilla — utsträckt på vardagsrumsmattan, med lemmarna i märkliga vinklar och utan ett enda brott begånget under den längsta sammanhängande perioden sedan övervakningen började. Lugnperioden tog slut i samma ögonblick som vädret bröt: Subjektet förflyttade sig till en gräsplätt, gjorde anspråk på ett förråd kasserade flaskor som en brottsplats skapad av honom själv och återupptog full verksamhet utan förklaring. Den fullständiga rapporten arkiverades separat under ”VÄRMEBÖLJANS LUGN”.",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "LOKALA PARKER KOMPROMETTERADE",
+      "body": "Subjektet stannade i Bryssel under hela augusti. Det fina vädret möjliggjorde upprepade operationer i lokala parker, vanligtvis följda av olovligt införskaffande och konsumtion av croissantbitar. Patrullfrekvensen ökade. Säkerheten kring bakverk är fortfarande otillräcklig.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

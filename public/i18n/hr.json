@@ -341,7 +341,7 @@
   },
   "blog": {
     "title": "DNEVNIK PREDMETA",
-    "subtitle": "25 mjesečnih zapisa — dvije godine neprekidnog nadzora, predmet 001-CR ostaje otvoren"
+    "subtitle": "26 mjesečnih zapisa — dvije godine neprekidnog nadzora, predmet 001-CR ostaje otvoren"
   },
   "blogPosts": [
     {
@@ -517,6 +517,13 @@
       "body": "Višednevno upozorenje na toplinski val potpuno je prizemljilo Subjekta — ležao je na leđima na tepihu u dnevnoj sobi, s udovima pod čudnim kutovima, bez ijednog prekršaja tijekom najduljeg zatišja od početka nadzora. Zatišje je završilo čim se vrijeme promijenilo: Subjekt se preselio na travnatu površinu, proglasio hrpu odbačenih boca mjestom zločina po vlastitoj izradi i bez objašnjenja nastavio s punim operacijama. Cjelovito izvješće zasebno je podneseno pod naslovom „Zatišje toplinskog vala.“",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "LOKALNI PARKOVI KOMPROMITIRANI",
+      "body": "Subjekt je cijeli kolovoz ostao u Bruxellesu. Lijepo vrijeme omogućilo je ponovljene operacije u lokalnim parkovima, nakon kojih je obično slijedilo nezakonito pribavljanje i konzumiranje komadića kroasana. Učestalost ophodnji se povećala. Sigurnost peciva i dalje je nedostatna.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

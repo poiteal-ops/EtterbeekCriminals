@@ -341,7 +341,7 @@
   },
   "blog": {
     "title": "JOURNAL DE BORD",
-    "subtitle": "Dossier 001-CR — 25 entrées mensuelles, deux ans de surveillance continue, le dossier reste ouvert"
+    "subtitle": "Dossier 001-CR — 26 entrées mensuelles, deux ans de surveillance continue, le dossier reste ouvert"
   },
   "blogPosts": [
     {
@@ -517,6 +517,13 @@
       "body": "Une alerte canicule de plusieurs jours a cloué le Sujet au sol — étendu sur le tapis du salon, les membres dans des angles improbables, aucune infraction commise pendant la plus longue période de calme depuis le début de la surveillance. L’accalmie a pris fin dès que le temps s’est rafraîchi : le Sujet s’est déplacé vers une parcelle d’herbe, s’est approprié un stock de bouteilles abandonnées comme scène de crime de sa propre fabrication, puis a repris ses opérations à plein régime sans la moindre explication. Rapport complet classé séparément sous « L’Accalmie caniculaire. »",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "PARCS LOCAUX COMPROMIS",
+      "body": "Le Sujet est resté à Bruxelles pendant tout le mois d’août. Le beau temps a permis des opérations répétées dans les parcs locaux, généralement suivies de l’acquisition et de la consommation illicites de morceaux de croissant. La fréquence des patrouilles a augmenté. La sécurité des viennoiseries reste insuffisante.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

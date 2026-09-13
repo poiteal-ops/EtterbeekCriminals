@@ -341,7 +341,7 @@
   },
   "blog": {
     "title": "SAGSLOG",
-    "subtitle": "25 månedlige indlæg — to års kontinuerlig overvågning, sag 001-CR forbliver åben"
+    "subtitle": "26 månedlige indlæg — to års kontinuerlig overvågning, sag 001-CR forbliver åben"
   },
   "blogPosts": [
     {
@@ -517,6 +517,13 @@
       "body": "En flerdages varmeadvarsel satte Subjektet helt ud af spillet — fladt på stuegulvet, med lemmerne i mærkelige vinkler og uden nogen forseelser i den længste periode siden overvågningen begyndte. Stilheden sluttede i det øjeblik, vejret slog om: Subjektet flyttede sig til et stykke græs, erklærede en bunke kasserede flasker for et gerningssted, han selv havde skabt, og genoptog fuld drift uden forklaring. Den fulde rapport er indgivet særskilt under »Hedebølgedvalen.«",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "LOKALE PARKER KOMPROMITTERET",
+      "body": "Subjektet opholdt sig i Bruxelles hele august. Det gode vejr muliggjorde gentagne operationer i lokale parker, som regel efterfulgt af ulovlig tilegnelse og indtagelse af croissantstykker. Patruljefrekvensen steg. Sikkerheden omkring bagværk er fortsat utilstrækkelig.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

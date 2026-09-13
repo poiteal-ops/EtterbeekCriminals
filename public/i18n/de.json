@@ -341,7 +341,7 @@
   },
   "blog": {
     "title": "FALLREGISTER",
-    "subtitle": "25 monatliche Einträge — zwei Jahre lückenlose Überwachung, Fall 001-CR bleibt offen"
+    "subtitle": "26 monatliche Einträge — zwei Jahre lückenlose Überwachung, Fall 001-CR bleibt offen"
   },
   "blogPosts": [
     {
@@ -517,6 +517,13 @@
       "body": "Eine mehrtägige Hitzewarnung setzte das Subjekt vollständig außer Gefecht — flach auf dem Wohnzimmerteppich, die Gliedmaßen in seltsamen Winkeln, ohne jeden Verstoß über den längsten Zeitraum seit Beginn der Überwachung. Die Flaute endete in dem Moment, als das Wetter umschlug: Das Subjekt begab sich auf eine Rasenfläche, erklärte einen Vorrat weggeworfener Flaschen zum Tatort seiner eigenen Machart und nahm ohne jede Erklärung den Vollbetrieb wieder auf. Vollständiger Bericht separat unter « Die Hitzewellen-Flaute » abgelegt.",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "ÖRTLICHE PARKS KOMPROMITTIERT",
+      "body": "Das Subjekt hielt sich den gesamten August über in Brüssel auf. Das freundliche Wetter ermöglichte wiederholte Einsätze in örtlichen Parks, meist gefolgt von der unrechtmäßigen Beschaffung und dem Verzehr von Croissantstücken. Die Patrouillenfrequenz nahm zu. Die Gebäckabsicherung bleibt unzureichend.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

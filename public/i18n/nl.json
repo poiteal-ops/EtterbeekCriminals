@@ -341,7 +341,7 @@
   },
   "blog": {
     "title": "LOGBOEK",
-    "subtitle": "25 maandelijkse notities — twee jaar ononderbroken observatie, dossier 001-CR blijft open"
+    "subtitle": "26 maandelijkse notities — twee jaar ononderbroken observatie, dossier 001-CR blijft open"
   },
   "blogPosts": [
     {
@@ -517,6 +517,13 @@
       "body": "Een meerdaagse hittewaarschuwing legde Subject volledig plat — languit op het woonkamerkleed, met de ledematen in vreemde hoeken, zonder overtredingen gedurende de langste periode sinds het toezicht begon. De luwte eindigde zodra het weer omsloeg: Subject verhuisde naar een stukje gras, eigende zich een voorraad afgedankte flessen toe als een plaats delict van eigen makelij en hervatte zonder uitleg de volledige operatie. Volledig rapport afzonderlijk opgenomen onder « De hittegolfstilte ».",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "LOKALE PARKEN GECOMPROMITTEERD",
+      "body": "Het Subject bleef de hele maand augustus in Brussel. Het mooie weer maakte herhaalde operaties in lokale parken mogelijk, meestal gevolgd door de wederrechtelijke verwerving en consumptie van stukjes croissant. De patrouillefrequentie nam toe. De beveiliging van gebak blijft ontoereikend.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

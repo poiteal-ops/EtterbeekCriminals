@@ -341,7 +341,7 @@
   },
   "blog": {
     "title": "REGISTRO DE CASOS",
-    "subtitle": "25 entradas mensuales — dos años de vigilancia continua, el expediente 001-CR sigue abierto"
+    "subtitle": "26 entradas mensuales — dos años de vigilancia continua, el expediente 001-CR sigue abierto"
   },
   "blogPosts": [
     {
@@ -517,6 +517,13 @@
       "body": "Una alerta de calor de varios días dejó al Sujeto completamente fuera de combate — tumbado sobre la alfombra del salón, con las extremidades en ángulos extraños y sin cometer ninguna infracción durante el periodo más largo desde que comenzó la vigilancia. La tregua terminó en cuanto cambió el tiempo: el Sujeto se trasladó a una parcela de césped, reclamó un alijo de botellas desechadas como escena del crimen de su propia invención y reanudó todas sus operaciones sin explicación alguna. Informe completo archivado por separado bajo «La tregua de la ola de calor.»",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "PARQUES LOCALES COMPROMETIDOS",
+      "body": "El Sujeto permaneció en Bruselas durante todo agosto. El buen tiempo permitió efectuar operaciones repetidas en los parques locales, generalmente seguidas de la adquisición y el consumo ilícitos de fragmentos de cruasán. Aumentó la frecuencia de las patrullas. La seguridad de la bollería sigue siendo insuficiente.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

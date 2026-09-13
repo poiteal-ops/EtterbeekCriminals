@@ -341,7 +341,7 @@
   },
   "blog": {
     "title": "REGISTRUL CAZURILOR",
-    "subtitle": "25 de intrări lunare — doi ani de supraveghere continuă, cazul 001-CR rămâne deschis"
+    "subtitle": "26 de intrări lunare — doi ani de supraveghere continuă, cazul 001-CR rămâne deschis"
   },
   "blogPosts": [
     {
@@ -517,6 +517,13 @@
       "body": "O avertizare de caniculă emisă pentru mai multe zile l-a țintuit complet pe Subiect — întins pe covorul din sufragerie, cu membrele în unghiuri ciudate, fără nicio abatere comisă pentru cea mai lungă perioadă de la începutul supravegherii. Acalmia s-a încheiat în clipa în care vremea s-a stricat: Subiectul s-a mutat pe o bucată de iarbă, a declarat un teanc de sticle aruncate drept propria sa scenă a crimei și și-a reluat întreaga activitate fără explicații. Raportul complet a fost depus separat sub titlul „ACALMIA DIN TIMPUL CANICULEI”.",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "PARCURI LOCALE COMPROMISE",
+      "body": "Subiectul a rămas la Bruxelles pe tot parcursul lunii august. Vremea frumoasă a permis operațiuni repetate în parcurile locale, urmate de obicei de procurarea și consumul ilicit de fragmente de croissant. Frecvența patrulelor a crescut. Securitatea produselor de patiserie rămâne insuficientă.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

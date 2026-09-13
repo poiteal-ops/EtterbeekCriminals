@@ -364,7 +364,7 @@ export const EN_CONTENT: SiteContent = {
   blog: {
     title: 'CASE LOG',
     subtitle:
-      '25 monthly entries — just over two years of continuous surveillance, case 001-CR remains open',
+      '26 monthly entries — just over two years of continuous surveillance, case 001-CR remains open',
   },
   blogPosts: [
     {
@@ -540,6 +540,13 @@ export const EN_CONTENT: SiteContent = {
       body: 'A multi-day heat advisory grounded Subject entirely — flat on the living room rug, limbs at odd angles, no offenses committed for the longest stretch since surveillance began. The lull ended the moment the weather broke: Subject relocated to a patch of grass, claimed a stash of discarded bottles as a crime scene of his own making, and resumed full operations without explanation. Full report filed separately under "The Heatwave Lull."',
       image: 'assets/images/heatwave-collapse.jpg',
       link: '/heatwave-survival',
+    },
+    {
+      date: 'AUG 2026',
+      case: 'CASE LOG 026',
+      title: 'LOCAL PARKS COMPROMISED',
+      body: 'Subject remained in Brussels throughout August. Fair weather enabled repeated operations in local parks, usually followed by the unlawful acquisition and consumption of croissant fragments. Patrol frequency increased. Pastry security remains inadequate.',
+      image: 'assets/images/blog-park-patrol.jpg',
     },
   ],
   shop: {
