@@ -1,0 +1,82 @@
+<figure class="cib-chart" [class.horizontal]="orientation() === 'horizontal'" [class.vertical]="orientation() === 'vertical'">
+  <figcaption>
+    <h3 class="chart-title">{{ title() }}</h3>
+    <p class="chart-description">{{ description() }}</p>
+  </figcaption>
+
+  <p class="chart-summary">{{ summaryText() }}</p>
+
+  @if (orientation() === 'vertical') {
+    <svg viewBox="0 0 100 120" preserveAspectRatio="none" aria-hidden="true" class="chart-svg">
+      <line x1="0" y1="100" x2="100" y2="100" class="baseline" />
+      @for (bar of bars(); track bar.key) {
+        <rect
+          class="bar"
+          [attr.x]="bar.position + bar.size * 0.15"
+          [attr.y]="bar.barTop"
+          [attr.width]="bar.size * 0.7"
+          [attr.height]="100 - bar.barTop"
+        ></rect>
+        <text
+          class="value-label"
+          text-anchor="middle"
+          [attr.x]="bar.position + bar.size / 2"
+          [attr.y]="bar.valueLabelY"
+        >{{ bar.count }}</text>
+        <text
+          class="tick-label"
+          text-anchor="middle"
+          [attr.x]="bar.position + bar.size / 2"
+          [attr.data-tick-mod]="bar.tickMod"
+          y="112"
+        >{{ bar.label }}</text>
+      }
+    </svg>
+  } @else {
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" class="chart-svg">
+      <line x1="30" y1="0" x2="30" y2="100" class="baseline" />
+      @for (bar of bars(); track bar.key) {
+        <rect
+          class="bar"
+          [attr.x]="32"
+          [attr.y]="bar.position + bar.size * 0.15"
+          [attr.width]="(bar.valuePct / 100) * 60"
+          [attr.height]="bar.size * 0.7"
+        ></rect>
+        <text
+          class="tick-label"
+          text-anchor="end"
+          [attr.x]="28"
+          [attr.y]="bar.position + bar.size / 2 + 2"
+        >{{ bar.label }}</text>
+        <text
+          class="value-label"
+          text-anchor="start"
+          [attr.x]="34 + (bar.valuePct / 100) * 60"
+          [attr.y]="bar.position + bar.size / 2 + 2"
+        >{{ bar.count }}</text>
+      }
+    </svg>
+  }
+
+  <details class="data-table">
+    <summary>View data table</summary>
+    <table>
+      <caption class="visually-hidden">{{ title() }} — full data</caption>
+      <thead>
+        <tr>
+          <th scope="col">Category</th>
+          <th scope="col">Incidents</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (bucket of buckets(); track bucket.key) {
+          <tr>
+            <th scope="row">{{ bucket.label }}</th>
+            <td>{{ bucket.count }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </details>
+</figure>

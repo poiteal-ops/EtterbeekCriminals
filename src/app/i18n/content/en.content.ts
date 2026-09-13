@@ -1,3 +1,4 @@
+import { CIB_INCIDENT_COPY_EN } from '../../pages/cib-bureau/cib.data';
 import { SiteContent } from './site-content.model';
 
 export const EN_CONTENT: SiteContent = {
@@ -619,6 +620,85 @@ export const EN_CONTENT: SiteContent = {
       ],
     },
   ],
+  cib: {
+    title: 'CRIMINAL INTELLIGENCE BUREAU',
+    subtitle: 'Coordinated incident archive — three known operators, one shared disregard for property law.',
+    archiveNote:
+      'Fictional incident data, compiled for internal training purposes only. Any resemblance to an actual crime wave is coincidental and, frankly, on brand.',
+    archiveWindowLabel: 'TRAINING DOSSIER / 01–28 AUG 2026',
+    seoDescription:
+      'Browse the Criminal Intelligence Bureau archive — 48 fictional incidents, three suspects, zero remorse.',
+
+    suspectFilterLabel: 'FILTER BY SUSPECT',
+    offenceFilterLabel: 'FILTER BY OFFENCE',
+    allSuspectsLabel: 'ALL SUSPECTS',
+    allOffencesLabel: 'ALL OFFENCES',
+    resetLabel: 'RESET FILTERS',
+    resultCountLabel: 'Showing {count} incident(s) on file.',
+
+    metricTotalLabel: 'INCIDENTS ON FILE',
+    metricOpenLabel: 'OPEN CASES',
+    metricClosureRateLabel: 'CLOSURE RATE',
+    metricPeakHourLabel: 'PEAK REPORTED HOUR',
+    unavailableLabel: 'UNAVAILABLE',
+
+    dailyChartTitle: 'DAILY ACTIVITY',
+    dailyChartDescription: 'Reported incidents per day across the archive window.',
+    offenceChartTitle: 'OFFENCE TOTALS',
+    offenceChartDescription: 'Incidents broken down by category.',
+    hourlyChartTitle: 'HOUR-OF-DAY DISTRIBUTION',
+    hourlyChartDescription: 'When, across 24 hours, incidents tend to occur.',
+
+    offenceLabels: {
+      'snack-theft': 'SNACK THEFT',
+      'property-damage': 'PROPERTY DAMAGE',
+      'public-disturbance': 'PUBLIC DISTURBANCE',
+      obstruction: 'OBSTRUCTION',
+    },
+    statusLabels: {
+      open: 'OPEN',
+      closed: 'CLOSED',
+    },
+    suspectLabels: {
+      'le-criminel': 'LE CRIMINEL',
+      pikette: 'PIKETTE',
+      sawito: 'SAWITO',
+    },
+    relationshipLabels: {
+      allied: 'ALLIED',
+      rivals: 'RIVALS',
+      truce: 'TRUCE',
+      'not-applicable': 'N/A',
+    },
+
+    dossierDescriptions: {
+      'le-criminel': 'PRIME SUSPECT. Boston Terrier, tactical collar, no known remorse. Present at the overwhelming majority of filed incidents.',
+      pikette: 'PRIMARY ACCOMPLICE. OCCASIONAL ARCH-ENEMY. Motives remain unclear; the alliance is situational at best.',
+      sawito: 'ENABLER, NOT A SUSPECT. Present for most incidents. Intervention rate: negligible.',
+    },
+    overlapNote:
+      "Counts reflect involvement in the incidents shown above, accomplices included — a single incident can involve more than one suspect, so these numbers may exceed the incident total.",
+
+    showMoreLabel: 'SHOW MORE',
+    viewDetailsLabel: 'VIEW EVIDENCE',
+    hideDetailsLabel: 'HIDE EVIDENCE',
+    viewCaseLabel: 'VIEW FULL CASE FILE',
+
+    emptyStateTitle: 'NO MATCHING INCIDENTS',
+    emptyStateBody:
+      'No incidents on file match this combination of filters. Try a different suspect or offence, or reset to see the full archive.',
+
+    methodologyTitle: 'METHODOLOGY',
+    methodologyBody:
+      'This archive covers 48 fictional incidents logged between 1–28 August 2026 for internal training purposes. Categories, hours, and outcomes are illustrative and do not reflect an actual investigation.',
+
+    incidents: CIB_INCIDENT_COPY_EN,
+
+    cibKicker: 'NOW OPEN FOR REVIEW',
+    cibTitle: 'THE CRIMINAL INTELLIGENCE BUREAU',
+    cibBody: 'Forty-eight incidents. Three suspects. One shared filing cabinet. Cross-reference the whole operation.',
+    cibCta: 'OPEN THE ARCHIVE',
+  },
   footer: '© THE THIEFFRY CRIMINALS — FILE REMAINS OPEN. ALL RIGHTS RESERVED (ALLEGEDLY).',
   footerDisclaimer: 'A HOBBY PROJECT, NOT A BUSINESS — NOTHING HERE IS REAL OR FOR SALE.',
 };
