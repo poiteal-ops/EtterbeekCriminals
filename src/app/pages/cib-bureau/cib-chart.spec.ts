@@ -42,4 +42,31 @@ describe('CIB chart label rendering', () => {
     expect(element.innerHTML).not.toContain('NaN');
     expect(render([]).querySelectorAll('.tick-label')).toHaveLength(0);
   });
+
+  // Regression for the last vertical tick collapsing to a near-zero-width,
+  // character-stacked box: `left: 100%` left the browser's shrink-to-fit
+  // width calculation with 0px of available space. The last tick must not
+  // carry an inline `left` at all (so CSS `.last:not(.first) { right: 0 }`
+  // can size it against the axis's full width instead), while the first and
+  // middle ticks keep their `left` positioning unchanged.
+  it('anchors the last vertical tick from the right instead of an inline left:100% that collapses its width', () => {
+    const element = render([
+      { key: '0', label: 'Aug 1', count: 1 },
+      { key: '1', label: 'Aug 2', count: 2 },
+      { key: '2', label: 'Aug 3', count: 3 },
+    ]);
+    const ticks = [...element.querySelectorAll<HTMLElement>('.tick-label')];
+    expect(ticks).toHaveLength(3);
+    const [first, middle, last] = ticks;
+
+    expect(first.classList.contains('first')).toBe(true);
+    expect(first.style.left).toBe('0%');
+
+    expect(middle.classList.contains('first')).toBe(false);
+    expect(middle.classList.contains('last')).toBe(false);
+    expect(middle.style.left).not.toBe('');
+
+    expect(last.classList.contains('last')).toBe(true);
+    expect(last.style.left).toBe('');
+  });
 });

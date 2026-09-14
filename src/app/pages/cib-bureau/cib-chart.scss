@@ -80,7 +80,7 @@
     transform: translateX(-50%);
   }
   .first { transform: none; text-align: left; }
-  .last:not(.first) { transform: translateX(-100%); text-align: right; }
+  .last:not(.first) { left: auto; right: 0; transform: none; text-align: right; }
 }
 
 .category-plot {

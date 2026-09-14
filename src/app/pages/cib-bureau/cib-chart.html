@@ -27,7 +27,7 @@
       <div class="time-axis">
         @for (tick of axisTicks(); track tick.key; let first = $first; let last = $last) {
           <span class="tick-label" [class.first]="first" [class.last]="last"
-            [style.left.%]="first ? 0 : last ? 100 : tick.position + tick.size / 2">{{ tick.label }}</span>
+            [style.left.%]="first ? 0 : last ? null : tick.position + tick.size / 2">{{ tick.label }}</span>
         }
       </div>
     </div>
