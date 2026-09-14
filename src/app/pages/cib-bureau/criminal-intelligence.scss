@@ -211,6 +211,19 @@
   .suspect-photo {
     width: 40px;
     height: 40px;
+
+    // Sawito's source photo (sawito-dog-selfie.jpg) is a two-subject selfie:
+    // the dog occupies the left ~half, Sawito (redacted) the right half. In
+    // a square thumbnail, object-fit: cover always shows the image's full
+    // width (portrait source is width-constrained), so object-position's X
+    // component alone can never crop the dog out — see criminal-intelligence
+    // fix-round-2 notes. Zoom in and shift the focal point toward Sawito's
+    // face on the right so only he is legible at thumbnail size, the way
+    // Le Criminel's and Pikette's single-subject photos already read.
+    img {
+      transform: scale(2.2);
+      transform-origin: 99.3% 50%;
+    }
   }
 
   .suspect-name {
