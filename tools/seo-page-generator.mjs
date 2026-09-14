@@ -5,6 +5,10 @@ export const SITE_ORIGIN = 'https://thieffrycriminals.be';
 export const DEFAULT_LOCALE = 'en';
 
 const DEFAULT_IMAGE = 'assets/images/social-preview.png';
+// A visually reviewed, already-redacted public dossier photo (single subject,
+// front-facing) — reads cleanly as an archive/dossier social-preview image at
+// thumbnail size. See task-5-context.md for the standing image ruling.
+const CIB_IMAGE = 'assets/images/dog-floor-portrait.jpg';
 const ROUTE_PATTERN = /^(?:[a-z0-9]+(?:-[a-z0-9]+)*)(?:\/[a-z0-9]+(?:-[a-z0-9]+)*)*$/;
 
 function escapeHtmlText(value) {
@@ -66,6 +70,18 @@ export function buildPages(content) {
       image: 'assets/images/beach-walk.jpg',
     },
   ];
+
+  // Fixed page, like home/about/story above — not an adventure and not part
+  // of any story-route list. Older/incomplete content fixtures (some tests)
+  // may omit content.cib entirely, so this is guarded rather than assumed.
+  if (content.cib) {
+    fixedPages.push({
+      route: 'criminal-intelligence',
+      title: content.cib.title,
+      description: content.cib.seoDescription,
+      image: CIB_IMAGE,
+    });
+  }
 
   const adventures = (content.adventures ?? []).map((adventure) => ({
     route: normalizeRoute(adventure.link),

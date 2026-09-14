@@ -2,12 +2,14 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
+import ts from 'typescript';
 
 import { generateSite } from './seo-page-generator.mjs';
 
 const ROOT = process.cwd();
 const DIST_DIR = path.join(ROOT, 'dist/etterbeek-criminals/browser');
 const I18N_DIR = path.join(ROOT, 'public/i18n');
+const TS_TRANSPILE_OPTIONS = { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 };
 
 export function resolveLangset() {
   const cliArg = process.argv.find((a) => a.startsWith('--langset='));
@@ -22,23 +24,48 @@ export function selectLocales(langset, availableLocales) {
   return availableLocales.filter((l) => l === 'en' || requested.includes(l));
 }
 
-export async function loadEnglishContent() {
-  const source = fs.readFileSync(
-    path.join(ROOT, 'src/app/i18n/content/en.content.ts'),
-    'utf8',
-  );
-  const moduleSource = source
-    .replace(/^import \{ SiteContent \} from '\.\/site-content\.model';\r?\n/m, '')
-    .replace(/export const EN_CONTENT: SiteContent = /, 'export default ');
+function transpileTypeScript(sourcePath) {
+  const source = fs.readFileSync(sourcePath, 'utf8');
+  return ts.transpileModule(source, { compilerOptions: TS_TRANSPILE_OPTIONS }).outputText;
+}
+
+function writeTemporaryModule(label, source) {
   const temporaryFile = path.join(
     os.tmpdir(),
-    `thieffry-en-content-${process.pid}-${Date.now()}.mjs`,
+    `thieffry-${label}-${process.pid}-${Date.now()}-${Math.random().toString(36).slice(2)}.mjs`,
   );
-  fs.writeFileSync(temporaryFile, moduleSource, { flag: 'wx' });
+  fs.writeFileSync(temporaryFile, source, { flag: 'wx' });
+  return temporaryFile;
+}
+
+export async function loadEnglishContent() {
+  // en.content.ts has exactly one real cross-file runtime dependency:
+  // CIB_INCIDENT_COPY_EN from cib.data.ts (cib.data.ts's own import from
+  // cib.model.ts is type-only, so ts.transpileModule elides it and that file
+  // needs no further resolution). Both files are transpiled to self-contained
+  // temp .mjs modules so a plain dynamic import() can load them without a
+  // TypeScript-aware Node loader; ts.transpileModule also elides the
+  // type-only `SiteContent` import/annotation in en.content.ts the same way.
+  const cibDataTemporaryFile = writeTemporaryModule(
+    'cib-data',
+    transpileTypeScript(path.join(ROOT, 'src/app/pages/cib-bureau/cib.data.ts')),
+  );
+
+  const enContentSource = transpileTypeScript(
+    path.join(ROOT, 'src/app/i18n/content/en.content.ts'),
+  )
+    .replace(
+      "from '../../pages/cib-bureau/cib.data'",
+      `from '${pathToFileURL(cibDataTemporaryFile).href}'`,
+    )
+    .replace(/export const EN_CONTENT = /, 'export default ');
+  const enContentTemporaryFile = writeTemporaryModule('en-content', enContentSource);
+
   try {
-    return (await import(pathToFileURL(temporaryFile).href)).default;
+    return (await import(pathToFileURL(enContentTemporaryFile).href)).default;
   } finally {
-    fs.rmSync(temporaryFile, { force: true });
+    fs.rmSync(enContentTemporaryFile, { force: true });
+    fs.rmSync(cibDataTemporaryFile, { force: true });
   }
 }
 
