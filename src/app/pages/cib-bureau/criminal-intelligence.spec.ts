@@ -1,16 +1,25 @@
 import { provideHttpClient } from '@angular/common/http';
+import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 import { provideRouter } from '@angular/router';
 
+import { EN_CONTENT } from '../../i18n/content/en.content';
+import { TranslationService } from '../../services/translation.service';
 import { CriminalIntelligence } from './criminal-intelligence';
-import { filterIncidents } from './cib-selectors';
-import { CIB_INCIDENTS } from './cib.data';
+import { dailyCounts, filterIncidents, hourlyCounts, offenceCounts } from './cib-selectors';
+import { CIB_ARCHIVE_DATES, CIB_INCIDENTS } from './cib.data';
 
 // Note: the fixed 48-incident archive deliberately covers every
 // suspect x offence combination at least once, so a zero-match filter state
 // can't be reached from this file's real dataset. That code path (rule 8) is
 // covered separately in criminal-intelligence-empty.spec.ts, which mocks the
 // data module with a single-incident archive to exercise it for real.
+
+// Local mirror of the component's private maxCount() helper, used only to
+// compute the expected full-archive ceiling independently in these tests.
+function maxOf(buckets: readonly { count: number }[]): number {
+  return buckets.reduce((max, bucket) => Math.max(max, bucket.count), 0);
+}
 
 function createComponent() {
   TestBed.configureTestingModule({
@@ -163,5 +172,94 @@ describe('CriminalIntelligence', () => {
       (el) => el.textContent?.includes(incidentWithoutImage!.id),
     );
     expect(card?.querySelector('.incident-details img')).toBeNull();
+  });
+
+  // Final whole-branch review, Finding 1: chart axis ceilings must come from
+  // the full archive, not the currently-filtered incidents, so a narrow
+  // filter doesn't make its own smaller counts fill the whole chart.
+  it('keeps chart maximums pinned to the full archive when a filter narrows the results', () => {
+    const fixture = createComponent();
+    const instance = fixture.componentInstance;
+
+    const fullArchiveDailyMax = maxOf(dailyCounts(CIB_INCIDENTS, CIB_ARCHIVE_DATES));
+    const fullArchiveOffenceMax = maxOf(offenceCounts(CIB_INCIDENTS));
+    const fullArchiveHourlyMax = maxOf(hourlyCounts(CIB_INCIDENTS));
+
+    // Baseline: at 'all'/'all' the filtered set *is* the full archive, so this
+    // alone wouldn't distinguish correct from buggy behaviour.
+    expect(instance['dailyMaximum']()).toBe(fullArchiveDailyMax);
+    expect(instance['offenceMaximum']()).toBe(fullArchiveOffenceMax);
+    expect(instance['hourlyMaximum']()).toBe(fullArchiveHourlyMax);
+
+    instance['setSuspectFilter']('sawito');
+    fixture.detectChanges();
+
+    // Sanity check: filtering to Sawito must actually shrink the real counts,
+    // otherwise the assertions below would pass trivially either way.
+    const filteredIncidents = instance['filteredIncidents']();
+    const filteredHourlyMax = maxOf(hourlyCounts(filteredIncidents));
+    expect(filteredHourlyMax).toBeLessThan(fullArchiveHourlyMax);
+
+    expect(instance['dailyMaximum']()).toBe(fullArchiveDailyMax);
+    expect(instance['offenceMaximum']()).toBe(fullArchiveOffenceMax);
+    expect(instance['hourlyMaximum']()).toBe(fullArchiveHourlyMax);
+
+    // Also confirm the fixed ceiling reaches the chart itself, not just the
+    // component's internal signal.
+    const dailyChart = fixture.nativeElement.querySelectorAll('app-cib-chart')[0];
+    expect(dailyChart).toBeDefined();
+  });
+
+  // Final whole-branch review, Finding 2: the feed must render the same
+  // localized date format as the daily chart, and zero-pad the hour the same
+  // way peakHourText already does.
+  it('zero-pads a single-digit incident hour the same way peakHourText already does', () => {
+    const fixture = createComponent();
+    const instance = fixture.componentInstance;
+
+    expect(instance['formatIncidentHour'](7)).toBe('07:00');
+    expect(instance['formatIncidentHour'](14)).toBe('14:00');
+  });
+
+  it('renders visible incident feed dates using the helper output, never the raw ISO string', () => {
+    const fixture = createComponent();
+    const instance = fixture.componentInstance;
+
+    const dateSpans = fixture.nativeElement.querySelectorAll('.incident-date') as NodeListOf<HTMLElement>;
+    const visible = instance['visibleIncidents']();
+    expect(dateSpans.length).toBe(visible.length);
+
+    dateSpans.forEach((span, i) => {
+      const incident = visible[i];
+      const expectedDate = instance['formatIncidentDate'](incident.date);
+      const expectedHour = instance['formatIncidentHour'](incident.hour);
+      expect(span.textContent).toBe(`${expectedDate} · ${expectedHour}`);
+      expect(span.textContent).not.toContain(incident.date);
+    });
+  });
+
+  it('formats an incident date the same way the daily chart does, matching the active locale', async () => {
+    TestBed.resetTestingModule();
+    TestBed.configureTestingModule({
+      providers: [provideHttpClient(), provideHttpClientTesting(), provideRouter([])],
+    });
+
+    const translation = TestBed.inject(TranslationService);
+    const activation = translation.activate('fr');
+    TestBed.inject(HttpTestingController).expectOne('i18n/fr.json').flush(EN_CONTENT);
+    await activation;
+
+    const fixture = TestBed.createComponent(CriminalIntelligence);
+    fixture.detectChanges();
+    const instance = fixture.componentInstance;
+
+    const expected = new Intl.DateTimeFormat('fr', {
+      day: 'numeric',
+      month: 'short',
+      timeZone: 'UTC',
+    }).format(new Date('2026-08-01T00:00:00Z'));
+
+    expect(instance['formatIncidentDate']('2026-08-01')).toBe(expected);
+    expect(instance['formatIncidentDate']('2026-08-01')).not.toBe('2026-08-01');
   });
 });

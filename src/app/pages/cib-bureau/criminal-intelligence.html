@@ -124,7 +124,7 @@
         <article class="incident-card">
           <div class="incident-header">
             <span class="incident-id">{{ incident.id }}</span>
-            <span class="incident-date">{{ incident.date }} · {{ incident.hour }}:00</span>
+            <span class="incident-date">{{ formatIncidentDate(incident.date) }} · {{ formatIncidentHour(incident.hour) }}</span>
             <span class="incident-status" [class.open]="incident.status === 'open'">{{
               t.cib.statusLabels[incident.status]
             }}</span>

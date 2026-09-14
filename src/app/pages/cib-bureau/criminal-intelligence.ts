@@ -26,6 +26,14 @@ const OFFENCE_OPTIONS: readonly OffenceId[] = [
 
 const SUSPECT_OPTIONS: readonly SuspectId[] = ['le-criminel', 'pikette', 'sawito'];
 
+// Fixed, full-archive chart ceilings (plan section 4): filtering changes bar
+// lengths without ever making a smaller, filtered count look as large as the
+// unfiltered maximum. CIB_INCIDENTS/CIB_ARCHIVE_DATES are static data, so
+// these are computed once as plain constants rather than reactive signals.
+const DAILY_MAXIMUM = maxCount(dailyCounts(CIB_INCIDENTS, CIB_ARCHIVE_DATES));
+const OFFENCE_MAXIMUM = maxCount(offenceCounts(CIB_INCIDENTS));
+const HOURLY_MAXIMUM = maxCount(hourlyCounts(CIB_INCIDENTS));
+
 // Corrected dossier image assignment (see task-3-context.md — overrides the
 // plan's section 5 table for these page-level dossier/duo images).
 const SUSPECT_DOSSIER_IMAGES: Record<SuspectId, string> = {
@@ -42,7 +50,9 @@ interface SuspectCardData {
   readonly count: number;
 }
 
-function maxCount(buckets: readonly CibChartBucket[]): number {
+// Reads only `.count`, so it accepts both the plain CibBucket[] returned by
+// the full-archive selectors and the labelled CibChartBucket[] used per-render.
+function maxCount(buckets: readonly { count: number }[]): number {
   return buckets.reduce((max, bucket) => Math.max(max, bucket.count), 0);
 }
 
@@ -98,7 +108,7 @@ export class CriminalIntelligence {
     const hour = this.metrics().peakHour;
     return hour === null
       ? this.translation.t().cib.unavailableLabel
-      : `${String(hour).padStart(2, '0')}:00`;
+      : this.formatIncidentHour(hour);
   });
 
   // Counts mean involvement in the filtered incidents, accomplices included,
@@ -119,14 +129,12 @@ export class CriminalIntelligence {
   protected readonly dailyBuckets = computed<readonly CibChartBucket[]>(() =>
     dailyCounts(this.filteredIncidents(), CIB_ARCHIVE_DATES).map((bucket) => ({
       key: bucket.key,
-      label: new Intl.DateTimeFormat(this.translation.locale(), {
-        day: 'numeric', month: 'short', timeZone: 'UTC',
-      }).format(new Date(`${bucket.key}T00:00:00Z`)),
+      label: this.formatIncidentDate(bucket.key),
       count: bucket.count,
     })),
   );
 
-  protected readonly dailyMaximum = computed(() => maxCount(this.dailyBuckets()));
+  protected readonly dailyMaximum = computed(() => DAILY_MAXIMUM);
 
   protected readonly offenceBuckets = computed<readonly CibChartBucket[]>(() => {
     const t = this.translation.t().cib;
@@ -137,7 +145,7 @@ export class CriminalIntelligence {
     }));
   });
 
-  protected readonly offenceMaximum = computed(() => maxCount(this.offenceBuckets()));
+  protected readonly offenceMaximum = computed(() => OFFENCE_MAXIMUM);
 
   protected readonly hourlyBuckets = computed<readonly CibChartBucket[]>(() =>
     hourlyCounts(this.filteredIncidents()).map((bucket) => ({
@@ -147,7 +155,7 @@ export class CriminalIntelligence {
     })),
   );
 
-  protected readonly hourlyMaximum = computed(() => maxCount(this.hourlyBuckets()));
+  protected readonly hourlyMaximum = computed(() => HOURLY_MAXIMUM);
 
   protected setSuspectFilter(suspect: SuspectId | 'all'): void {
     this.applyFilters({ ...this.filters(), suspect });
@@ -177,6 +185,20 @@ export class CriminalIntelligence {
 
   protected toggleExpanded(id: string): void {
     this.expandedIncidentId.update((current) => (current === id ? null : id));
+  }
+
+  // Shared by the daily chart's bucket labels and the incident feed, so the
+  // same underlying date always renders identically in both places.
+  protected formatIncidentDate(date: string): string {
+    return new Intl.DateTimeFormat(this.translation.locale(), {
+      day: 'numeric', month: 'short', timeZone: 'UTC',
+    }).format(new Date(`${date}T00:00:00Z`));
+  }
+
+  // Fictional hours are always displayed as zero-padded HH:00, no timezone
+  // conversion — matches the original peakHourText behaviour.
+  protected formatIncidentHour(hour: number): string {
+    return `${String(hour).padStart(2, '0')}:00`;
   }
 
   // Single write path for both the <select> controls and the suspect-card
