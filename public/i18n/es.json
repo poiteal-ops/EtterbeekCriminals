@@ -1,8 +1,322 @@
 {
+  "cib": {
+    "chart": {
+      "peakSummary": "Máximo: {label} — incidentes: {count}.",
+      "emptySummary": "No hay incidentes con estos filtros.",
+      "viewTable": "Ver tabla de datos",
+      "fullData": "Datos completos",
+      "category": "Categoría",
+      "incidents": "Incidentes"
+    },
+    "title": "OFICINA DE INTELIGENCIA CRIMINAL",
+    "subtitle": "Archivo coordinado de incidentes: tres operadores conocidos y un mismo desprecio por el derecho de propiedad.",
+    "archiveNote": "Datos de incidentes ficticios recopilados exclusivamente para formación interna. Cualquier parecido con una verdadera ola delictiva es casual y, francamente, muy propio de la casa.",
+    "archiveWindowLabel": "EXPEDIENTE DE FORMACIÓN / 01–28 AGO 2026",
+    "seoDescription": "Explore el archivo de la Oficina de Inteligencia Criminal: 48 incidentes ficticios, tres sospechosos y ningún remordimiento.",
+    "suspectFilterLabel": "FILTRAR POR SOSPECHOSO",
+    "offenceFilterLabel": "FILTRAR POR INFRACCIÓN",
+    "allSuspectsLabel": "TODOS LOS SOSPECHOSOS",
+    "allOffencesLabel": "TODAS LAS INFRACCIONES",
+    "resetLabel": "RESTABLECER FILTROS",
+    "resultCountLabel": "Se muestran {count} incidentes registrados.",
+    "metricTotalLabel": "INCIDENTES REGISTRADOS",
+    "metricOpenLabel": "CASOS ABIERTOS",
+    "metricClosureRateLabel": "TASA DE CIERRE",
+    "metricPeakHourLabel": "HORA CON MÁS INCIDENTES",
+    "unavailableLabel": "NO DISPONIBLE",
+    "dailyChartTitle": "ACTIVIDAD DIARIA",
+    "dailyChartDescription": "Incidentes notificados por día durante el período del archivo.",
+    "offenceChartTitle": "TOTALES POR INFRACCIÓN",
+    "offenceChartDescription": "Incidentes desglosados por categoría.",
+    "hourlyChartTitle": "DISTRIBUCIÓN HORARIA",
+    "hourlyChartDescription": "Cuándo suelen ocurrir los incidentes a lo largo de las 24 horas.",
+    "offenceLabels": {
+      "snack-theft": "ROBO DE COMIDA",
+      "property-damage": "DAÑOS MATERIALES",
+      "public-disturbance": "ALTERACIÓN DEL ORDEN",
+      "obstruction": "OBSTRUCCIÓN"
+    },
+    "statusLabels": {
+      "open": "ABIERTO",
+      "closed": "CERRADO"
+    },
+    "relationshipLabels": {
+      "allied": "ALIADOS",
+      "rivals": "RIVALES",
+      "truce": "TREGUA",
+      "not-applicable": "NO PROCEDE"
+    },
+    "dossierDescriptions": {
+      "le-criminel": "SOSPECHOSO PRINCIPAL. Boston Terrier, collar táctico, sin remordimiento conocido. Presente en la inmensa mayoría de los incidentes registrados.",
+      "pikette": "CÓMPLICE PRINCIPAL. ARCHIENEMIGA OCASIONAL. Motivos desconocidos; la alianza es, como mucho, circunstancial.",
+      "sawito": "FACILITADOR, NO SOSPECHOSO. Presente en la mayoría de los incidentes. Tasa de intervención: insignificante."
+    },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
+    "overlapNote": "Las cifras cuentan participaciones en los incidentes mostrados, incluidos los cómplices. Un incidente puede implicar a varios sospechosos, por lo que su suma puede superar el total de incidentes.",
+    "showMoreLabel": "MOSTRAR MÁS",
+    "viewDetailsLabel": "VER PRUEBAS",
+    "hideDetailsLabel": "OCULTAR PRUEBAS",
+    "viewCaseLabel": "VER EXPEDIENTE COMPLETO",
+    "emptyStateTitle": "NINGÚN INCIDENTE COINCIDENTE",
+    "emptyStateBody": "Ningún incidente coincide con estos filtros. Pruebe otro sospechoso o infracción, o restablézcalos para consultar todo el archivo.",
+    "methodologyTitle": "METODOLOGÍA",
+    "methodologyBody": "Este archivo reúne 48 incidentes ficticios registrados del 1 al 28 de agosto de 2026 para formación interna. Categorías, horas y resultados son ilustrativos y no reflejan ninguna investigación real.",
+    "cibKicker": "YA DISPONIBLE PARA CONSULTA",
+    "cibTitle": "LA OFICINA DE INTELIGENCIA CRIMINAL",
+    "cibBody": "Cuarenta y ocho incidentes. Tres sospechosos. Un solo archivador compartido. Cruce los datos de toda la operación.",
+    "cibCta": "ABRIR EL ARCHIVO",
+    "incidents": {
+      "CIB-001": {
+        "title": "Cruasán dividido en una operación conjunta",
+        "summary": "Le Criminel distrajo mientras Pikette retiraba el bollo en una maniobra coordinada de dos frentes. Cruasán recuperado en dos trozos, ninguno comestible.",
+        "imageAlt": ""
+      },
+      "CIB-002": {
+        "title": "Costuras del cojín probadas hasta el fallo estructural",
+        "summary": "La excavación conjunta del cojín del sillón bueno esparció relleno por el salón. Ambos negaron haber empezado; ambos estaban cubiertos del mismo relleno.",
+        "imageAlt": ""
+      },
+      "CIB-003": {
+        "title": "Alarma sincronizada por nada en la puerta",
+        "summary": "Le Criminel ladró y Pikette maulló en aparente solidaridad. No se hallaron intrusos, entregas ni explicación que quisieran ofrecer.",
+        "imageAlt": ""
+      },
+      "CIB-004": {
+        "title": "Pasillo intransitable por acuerdo mutuo",
+        "summary": "Ambos ocuparon a la vez el mismo pequeño espacio del pasillo y bloquearon la salida once minutos. Ninguno se movió primero.",
+        "imageAlt": ""
+      },
+      "CIB-005": {
+        "title": "Pan trasladado a custodia protectora",
+        "summary": "El acusado se negó a identificar al propietario original. Las migas contradecían su declaración.",
+        "imageAlt": "Medio pan en el suelo de la cocina, con un extremo claramente roído."
+      },
+      "CIB-006": {
+        "title": "Funda del móvil rota en una foto poco sensata",
+        "summary": "Sawito intentó hacerse un selfi con el perro saltando y dejó caer el móvil sobre el único suelo de baldosas. La foto, por cierto, salió bien.",
+        "imageAlt": "Sawito haciéndose un selfi con el perro saltando hacia la cámara."
+      },
+      "CIB-007": {
+        "title": "Reunión familiar interrumpida por una opinión no solicitada",
+        "summary": "El sujeto se metió en una conversación ajena y ladró al volumen preciso para terminarla. La terminó.",
+        "imageAlt": ""
+      },
+      "CIB-008": {
+        "title": "Paso bloqueado deliberadamente durante una entrega",
+        "summary": "Sawito se interpuso al mensajero mientras meditaba largamente si hacía falta firmar. No hacía falta. Siguió allí de todos modos.",
+        "imageAlt": ""
+      },
+      "CIB-009": {
+        "title": "Tostada interceptada por un relevo de sospechosos",
+        "summary": "Le Criminel tiró la tostada de la encimera; Pikette la atrapó antes de tocar el suelo. División del trabajo constatada; reparto de la tostada menos claro.",
+        "imageAlt": ""
+      },
+      "CIB-010": {
+        "title": "Cortina desmontada mediante colaboración no autorizada",
+        "summary": "La cortina del salón cayó durante una escalada que los testigos describen como coordinada. La barra no sobrevivió. Ninguno pareció notarlo.",
+        "imageAlt": ""
+      },
+      "CIB-011": {
+        "title": "Duelo nocturno resuelto por aburrimiento mutuo",
+        "summary": "Doce minutos de miradas por el mejor rayo de sol terminaron cuando ambos perdieron el interés a la vez. Caso cerrado por falta de desenlace.",
+        "imageAlt": ""
+      },
+      "CIB-012": {
+        "title": "Escalera disputada por dos partes y liberada por ninguna",
+        "summary": "Le Criminel ocupó el peldaño superior y Pikette el inferior. El tránsito quedó suspendido durante toda la disputa.",
+        "imageAlt": ""
+      },
+      "CIB-013": {
+        "title": "Dado de queso retirado de una tabla sin vigilancia",
+        "summary": "El sospechoso se acercó a la tabla de embutidos con confianza de reconocimiento previo. Un dado de queso desaparecido; sospechoso imperturbable.",
+        "imageAlt": ""
+      },
+      "CIB-014": {
+        "title": "Zapato izquierdo trasladado más allá de toda recuperación razonable",
+        "summary": "Visto por última vez bajo la cama, apareció después en el jardín. Le faltaban un cordón y casi toda su dignidad.",
+        "imageAlt": "Una zapatilla en la hierba, sin cordón."
+      },
+      "CIB-015": {
+        "title": "Cojín del sofá requisado durante una visita sin negociación",
+        "summary": "La sospechosa llegó, evaluó los asientos y se instaló justo donde ya había un invitado. El invitado se trasladó.",
+        "imageAlt": "Pikette en el cojín central del sofá durante una visita."
+      },
+      "CIB-016": {
+        "title": "Teclado ocupado antes de una llamada programada",
+        "summary": "El sujeto se tumbó sobre el teclado cuatro minutos antes de una videollamada. Hubo dos intentos de retirarlo. La llamada empezó tarde.",
+        "imageAlt": ""
+      },
+      "CIB-017": {
+        "title": "Delito compartido, mérito disputado por una salchicha caída",
+        "summary": "Ambos convergieron sobre la misma salchicha desde direcciones opuestas. Ninguno cedió. La salchicha no sobrevivió al contacto.",
+        "imageAlt": ""
+      },
+      "CIB-018": {
+        "title": "Reposabrazos perdido en una disputa territorial ajena",
+        "summary": "Una pelea por el alféizar terminó con arañazos en el reposabrazos y mordiscos cerca. Ninguno apuntaba al sofá. El sofá perdió igualmente.",
+        "imageAlt": "Primer plano de arañazos en el reposabrazos del sofá."
+      },
+      "CIB-019": {
+        "title": "Cumbre en el sofá convertida en gruñidos conjuntos a la ventana",
+        "summary": "Ambos vigilaron la calle desde el respaldo, gruñendo con una sincronía rítmica que los investigadores consideran notable.",
+        "imageAlt": "Pikette y Le Criminel juntos en el respaldo, mirando a la ventana."
+      },
+      "CIB-020": {
+        "title": "Acceso a la puerta bloqueado por una barricada de dos cuerpos",
+        "summary": "Se tumbaron hocico con cola ante la puerta, sabiendo perfectamente que se había mencionado un paseo. La barricada aguantó seis minutos.",
+        "imageAlt": ""
+      },
+      "CIB-021": {
+        "title": "Plato de beicon vaciado antes de llegar a la mesa",
+        "summary": "El sujeto interceptó el plato a la altura de la encimera en los dos segundos entre fogón y mesa. Se constata un esfuerzo vertical considerable.",
+        "imageAlt": ""
+      },
+      "CIB-022": {
+        "title": "Gafas de lectura aplastadas y estructuralmente comprometidas",
+        "summary": "Las gafas de Sawito, dejadas «solo un segundo» en el brazo del sillón, aparecieron debajo con un cristal suelto. Culpa al sillón.",
+        "imageAlt": ""
+      },
+      "CIB-023": {
+        "title": "Espacio aéreo del balcón defendido contra una sola paloma",
+        "summary": "El sujeto desafió formalmente y a gritos a una paloma que no lo había pedido. La paloma se fue. El sujeto proclamó una victoria decisiva.",
+        "imageAlt": ""
+      },
+      "CIB-024": {
+        "title": "Puerta del baño mantenida cerrada desde fuera a propósito",
+        "summary": "La sospechosa se apoyó contra la puerta cuando el acceso era claramente necesario. Las peticiones de apartarse fueron ignoradas, como siempre.",
+        "imageAlt": ""
+      },
+      "CIB-025": {
+        "title": "Bol de palomitas asaltado dos veces durante la película",
+        "summary": "Un mismo bol fue saqueado desde dos ángulos durante una película. Ambos afirmaron actuar independientemente. La sincronización sugiere otra cosa.",
+        "imageAlt": ""
+      },
+      "CIB-026": {
+        "title": "Planta trasplantada colectivamente al suelo de la cocina",
+        "summary": "El helecho no sobrevivió a una inspección coordinada con excavaciones, zarpazos y al menos una voltereta corporal. Radio de dispersión de tierra: impresionante.",
+        "imageAlt": ""
+      },
+      "CIB-027": {
+        "title": "Persecución en el pasillo termina en empate, muebles intactos por una vez",
+        "summary": "La persecución breve y enérgica terminó cuando ambos alcanzaron la misma esquina desde lados distintos y decidieron detenerse mutuamente.",
+        "imageAlt": ""
+      },
+      "CIB-028": {
+        "title": "Entrada de cocina bajo doble ocupación",
+        "summary": "Ninguno quiso ceder el paso al otro. El bloqueo de veinte minutos retrasó el almuerzo de todos, incluidos los humanos.",
+        "imageAlt": ""
+      },
+      "CIB-029": {
+        "title": "Tostada compartida, excepcionalmente compartida de verdad",
+        "summary": "Por razones desconocidas, ambos repartieron una tostada caída sin incidentes. Los investigadores lo consideran una anomalía, no una tendencia.",
+        "imageAlt": ""
+      },
+      "CIB-030": {
+        "title": "Visillo usado como estructura de escalada no autorizada",
+        "summary": "La sospechosa trepó hasta el alféizar antes de que se soltaran dos de los tres ganchos. Descenso descrito como «mayormente controlado».",
+        "imageAlt": ""
+      },
+      "CIB-031": {
+        "title": "Vigilia conjunta en la ventana ante una amenaza sin identificar",
+        "summary": "Ambos permanecieron hombro con hombro cuarenta minutos, atentos a una amenaza que nunca apareció ni recibió nombre.",
+        "imageAlt": ""
+      },
+      "CIB-032": {
+        "title": "Desembalaje de compras suspendido por supervisión innecesaria",
+        "summary": "Sawito ocupó el único pequeño espacio de cocina necesario para descargar las bolsas. Comentó toda la operación sin ayudar.",
+        "imageAlt": ""
+      },
+      "CIB-033": {
+        "title": "Mantequilla probada directamente, sin utensilios",
+        "summary": "Encontraron a la sospechosa con la cara en la mantequillera y sin explicación plausible. Cabe destacar que la tapa había estado cerrada.",
+        "imageAlt": ""
+      },
+      "CIB-034": {
+        "title": "Felpudo trasladado al centro de la calle",
+        "summary": "Visto por última vez en el umbral, apareció dos casas más allá: húmedo, mordido en una esquina y orientado al revés.",
+        "imageAlt": ""
+      },
+      "CIB-035": {
+        "title": "Visita familiar desviada por afecto selectivo",
+        "summary": "El sospechoso se vinculó de inmediato y en exclusiva con un familiar visitante e ignoró al resto toda la tarde. El familiar encantado; los demás tomaron nota.",
+        "imageAlt": ""
+      },
+      "CIB-036": {
+        "title": "Paso ocupado a todo lo largo, ambas direcciones bloqueadas",
+        "summary": "El sujeto eligió el centro exacto de la puerta para dormir cubriendo la máxima superficie. El tráfico se desvió dos horas.",
+        "imageAlt": "Le Criminel tendido a lo largo del suelo del pasillo."
+      },
+      "CIB-037": {
+        "title": "Segundo pan perdido en circunstancias casi idénticas",
+        "summary": "No es el primer incidente con pan del expediente ni, sospechan los investigadores, será el último. La técnica se ha perfeccionado claramente.",
+        "imageAlt": "Un segundo pan en el suelo, igualmente roído."
+      },
+      "CIB-038": {
+        "title": "Fuerte de mantas desmontado por sus propios arquitectos",
+        "summary": "La construcción conjunta se derrumbó bajo su propia ambición. Ambos sospechosos aparecieron entre los restos, aparentemente despreocupados.",
+        "imageAlt": ""
+      },
+      "CIB-039": {
+        "title": "Timbre de televisión confundido con un visitante real",
+        "summary": "El sujeto respondió al timbre de un anuncio con máximo volumen y plena convicción. Nunca apareció ningún visitante.",
+        "imageAlt": ""
+      },
+      "CIB-040": {
+        "title": "Aspiradora bloqueada mediante cooperación inesperada",
+        "summary": "Normalmente enfrentados por principio, ambos bloquearon simultáneamente la aspiradora desde ángulos distintos. La limpieza duró el doble.",
+        "imageAlt": ""
+      },
+      "CIB-041": {
+        "title": "Tapa de yogur al alcance, aprovechamiento previsible",
+        "summary": "La tapa quedó en la encimera para lamerla, acuerdo que ambos parecieron entender y ejecutar sin disputa.",
+        "imageAlt": ""
+      },
+      "CIB-042": {
+        "title": "Papel de regalo triturado conjuntamente antes de tiempo",
+        "summary": "Un regalo sin vigilancia durante seis minutos se convirtió en confeti antes del regreso de los testigos. Ambos parecían satisfechos.",
+        "imageAlt": ""
+      },
+      "CIB-043": {
+        "title": "Nueva alerta coordinada en la ranura del correo",
+        "summary": "El reparto diario provocó la respuesta habitual: ladridos de uno, maullidos de la otra. El cartero conoce ya la rutina.",
+        "imageAlt": ""
+      },
+      "CIB-044": {
+        "title": "Cama ocupada de esquina a esquina, sin espacio útil",
+        "summary": "Los sospechosos se colocaron en diagonal con aparente precisión, sin dejar sitio al ocupante previsto.",
+        "imageAlt": ""
+      },
+      "CIB-045": {
+        "title": "Última porción reclamada con dudoso pretexto de equilibrio",
+        "summary": "Sawito tomó la última porción explicando sin que nadie preguntara que solo «igualaba las cosas». Nadie se lo había pedido.",
+        "imageAlt": ""
+      },
+      "CIB-046": {
+        "title": "Manguera perforada en varios puntos",
+        "summary": "Hay cuatro fugas nuevas en un patrón que los investigadores califican de «minucioso». El sujeto apareció cerca, satisfecho.",
+        "imageAlt": ""
+      },
+      "CIB-047": {
+        "title": "Videollamada interrumpida por narración no solicitada",
+        "summary": "Sawito comentó en directo las actividades del perro a colegas que no lo habían pedido durante toda una reunión con un cliente.",
+        "imageAlt": ""
+      },
+      "CIB-048": {
+        "title": "Salida bloqueada a la espera de una decisión nunca tomada",
+        "summary": "El sujeto pasó once minutos en la puerta abierta decidiendo si salía, bloqueando ambas direcciones, antes de volver al sofá.",
+        "imageAlt": ""
+      }
+    }
+  },
   "common": {
     "fallbackBanner": "Lo sentimos, estamos trabajando en ello — por ahora solo disponible en inglés."
   },
   "nav": {
+    "cib": "INTELIGENCIA",
     "home": "INICIO",
     "about": "SOBRE NOSOTROS",
     "story": "LA HISTORIA DE UN CRIMINAL",

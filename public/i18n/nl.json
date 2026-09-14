@@ -1,8 +1,322 @@
 {
+  "cib": {
+    "chart": {
+      "peakSummary": "Piek: {label} — incidenten: {count}.",
+      "emptySummary": "Geen incidenten voor de huidige filters.",
+      "viewTable": "Gegevenstabel bekijken",
+      "fullData": "Volledige gegevens",
+      "category": "Categorie",
+      "incidents": "Incidenten"
+    },
+    "title": "BUREAU VOOR CRIMINELE INLICHTINGEN",
+    "subtitle": "Gezamenlijk incidentenarchief — drie bekende spelers, één gedeelde minachting voor eigendomsrecht.",
+    "archiveNote": "Fictieve incidentgegevens, uitsluitend samengesteld voor interne opleiding. Elke gelijkenis met een echte misdaadgolf is toevallig en, eerlijk gezegd, geheel in stijl.",
+    "archiveWindowLabel": "OPLEIDINGSDOSSIER / 01–28 AUG 2026",
+    "seoDescription": "Doorzoek het Bureau voor Criminele Inlichtingen — 48 fictieve incidenten, drie verdachten, geen berouw.",
+    "suspectFilterLabel": "FILTER OP VERDACHTE",
+    "offenceFilterLabel": "FILTER OP OVERTREDING",
+    "allSuspectsLabel": "ALLE VERDACHTEN",
+    "allOffencesLabel": "ALLE OVERTREDINGEN",
+    "resetLabel": "FILTERS WISSEN",
+    "resultCountLabel": "{count} geregistreerde incidenten weergegeven.",
+    "metricTotalLabel": "GEREGISTREERDE INCIDENTEN",
+    "metricOpenLabel": "OPEN ZAKEN",
+    "metricClosureRateLabel": "AFSLUITINGSPERCENTAGE",
+    "metricPeakHourLabel": "DRUKSTE GEMELDE UUR",
+    "unavailableLabel": "NIET BESCHIKBAAR",
+    "dailyChartTitle": "DAGELIJKSE ACTIVITEIT",
+    "dailyChartDescription": "Gemelde incidenten per dag binnen de archiefperiode.",
+    "offenceChartTitle": "TOTALEN PER OVERTREDING",
+    "offenceChartDescription": "Incidenten uitgesplitst naar categorie.",
+    "hourlyChartTitle": "VERDELING PER UUR",
+    "hourlyChartDescription": "Wanneer incidenten gedurende de 24 uur van een dag plaatsvinden.",
+    "offenceLabels": {
+      "snack-theft": "ETENSDIEFSTAL",
+      "property-damage": "VERNIELING",
+      "public-disturbance": "ORDEVERSTORING",
+      "obstruction": "BELEMMERING"
+    },
+    "statusLabels": {
+      "open": "OPEN",
+      "closed": "GESLOTEN"
+    },
+    "relationshipLabels": {
+      "allied": "BONDGENOTEN",
+      "rivals": "RIVALEN",
+      "truce": "WAPENSTILSTAND",
+      "not-applicable": "NIET VAN TOEPASSING"
+    },
+    "dossierDescriptions": {
+      "le-criminel": "HOOFDVERDACHTE. Boston Terrier, tactische halsband, geen bekend berouw. Aanwezig bij de overgrote meerderheid van de geregistreerde incidenten.",
+      "pikette": "VOORNAAMSTE MEDEPLICHTIGE. SOMS AARTSVIJAND. Motieven onduidelijk; het bondgenootschap is op zijn best situationeel.",
+      "sawito": "FACILITATOR, GEEN VERDACHTE. Aanwezig bij de meeste incidenten. Ingrijpen: verwaarloosbaar."
+    },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
+    "overlapNote": "De aantallen tellen betrokkenheid bij de getoonde incidenten, inclusief medeplichtigen. Eén incident kan meerdere verdachten betreffen; hun som kan dus hoger zijn dan het incidenttotaal.",
+    "showMoreLabel": "MEER TONEN",
+    "viewDetailsLabel": "BEWIJS BEKIJKEN",
+    "hideDetailsLabel": "BEWIJS VERBERGEN",
+    "viewCaseLabel": "VOLLEDIG DOSSIER BEKIJKEN",
+    "emptyStateTitle": "GEEN PASSENDE INCIDENTEN",
+    "emptyStateBody": "Geen incidenten passen bij deze filters. Kies een andere verdachte of overtreding, of wis de filters voor het volledige archief.",
+    "methodologyTitle": "WERKWIJZE",
+    "methodologyBody": "Dit archief bevat 48 fictieve incidenten van 1–28 augustus 2026 voor interne opleiding. Categorieën, uren en uitkomsten zijn illustratief en weerspiegelen geen werkelijk onderzoek.",
+    "cibKicker": "NU TER INZAGE",
+    "cibTitle": "HET BUREAU VOOR CRIMINELE INLICHTINGEN",
+    "cibBody": "Achtenveertig incidenten. Drie verdachten. Eén gedeelde archiefkast. Leg de verbanden binnen de hele operatie.",
+    "cibCta": "OPEN HET ARCHIEF",
+    "incidents": {
+      "CIB-001": {
+        "title": "Croissant verdeeld bij gezamenlijke operatie",
+        "summary": "Le Criminel leidde af, Pikette haalde het gebak weg. De gecoördineerde tweefrontenaanpak leverde twee stukken croissant op, geen van beide eetbaar.",
+        "imageAlt": ""
+      },
+      "CIB-002": {
+        "title": "Kussennaden getest tot ze bezweken",
+        "summary": "Samen groeven de verdachten het goede stoelkussen open. Overal lag vulling. Beiden ontkenden te zijn begonnen; beiden zaten onder dezelfde vulling.",
+        "imageAlt": ""
+      },
+      "CIB-003": {
+        "title": "Gelijktijdig loos alarm bij de deur",
+        "summary": "Le Criminel blafte, Pikette jankte uit kennelijke solidariteit. Geen indringer, bezorger of verklaring van de verdachten werd gevonden.",
+        "imageAlt": ""
+      },
+      "CIB-004": {
+        "title": "Gang in onderling overleg onbegaanbaar",
+        "summary": "Beide verdachten bezetten tegelijk hetzelfde stukje gang en blokkeerden elf minuten de uitgang. Geen van beiden bewoog als eerste.",
+        "imageAlt": ""
+      },
+      "CIB-005": {
+        "title": "Brood in beschermende bewaring genomen",
+        "summary": "De beschuldigde weigerde de oorspronkelijke eigenaar te noemen. Kruimels spraken de verklaring tegen.",
+        "imageAlt": "Een half brood op de keukenvloer, één kant zichtbaar aangevreten."
+      },
+      "CIB-006": {
+        "title": "Telefoonhoes gebarsten bij onbezonnen fotosessie",
+        "summary": "Sawito liet tijdens een selfie met de springende hond zijn telefoon op de enige tegelvloer vallen. De foto was overigens prima.",
+        "imageAlt": "Sawito neemt een selfie met de hond die naar de camera springt."
+      },
+      "CIB-007": {
+        "title": "Familiebijeenkomst verstoord door ongevraagde mening",
+        "summary": "Het subject mengde zich in andermans gesprek en blafte hard genoeg om het te beëindigen. Dat lukte.",
+        "imageAlt": ""
+      },
+      "CIB-008": {
+        "title": "Deuropening bewust geblokkeerd tijdens bezorging",
+        "summary": "Sawito stond de koerier in de weg terwijl hij langdurig nadacht over een handtekening. Die was niet nodig. Hij bleef toch staan.",
+        "imageAlt": ""
+      },
+      "CIB-009": {
+        "title": "Ontbijttoast onderschept door verdachtenestafette",
+        "summary": "Le Criminel tikte de toast van het aanrecht; Pikette ving hem voor de landing. Arbeidsdeling vastgesteld, verdeling van de toast minder duidelijk.",
+        "imageAlt": ""
+      },
+      "CIB-010": {
+        "title": "Gordijn neergehaald door onbevoegde samenwerking",
+        "summary": "Het gordijn viel tijdens een volgens getuigen gecoördineerde klimpoging. De roede overleefde het niet. Niemand leek dat op te merken.",
+        "imageAlt": ""
+      },
+      "CIB-011": {
+        "title": "Avondlijke confrontatie beëindigd door wederzijdse verveling",
+        "summary": "Twaalf minuten staren om de beste zonnevlek eindigde toen beiden tegelijk hun interesse verloren. Zaak gesloten wegens anticlimax.",
+        "imageAlt": ""
+      },
+      "CIB-012": {
+        "title": "Trap betwist door twee partijen, door geen vrijgegeven",
+        "summary": "Le Criminel bezette de bovenste trede, Pikette de onderste. Tijdens het geschil lag alle trapverkeer stil.",
+        "imageAlt": ""
+      },
+      "CIB-013": {
+        "title": "Kaasblokje van onbeheerde plank verwijderd",
+        "summary": "De verdachte benaderde de borrelplank met de zekerheid van iemand die vooraf had verkend. Eén kaasblokje vermist; verdachte onaangedaan.",
+        "imageAlt": ""
+      },
+      "CIB-014": {
+        "title": "Linkerschoen onredelijk ver weg verplaatst",
+        "summary": "Laatst gezien onder het bed, later gevonden in de tuin. Eén veter en het grootste deel van zijn waardigheid ontbraken.",
+        "imageAlt": "Eén sportschoen zonder veter in het gras."
+      },
+      "CIB-015": {
+        "title": "Bankkussen tijdens bezoek zonder overleg opgeëist",
+        "summary": "De verdachte beoordeelde de zitplaatsen en nam precies de plek van een aanwezige gast in. De gast verhuisde.",
+        "imageAlt": "Pikette op het middelste bankkussen tijdens bezoek."
+      },
+      "CIB-016": {
+        "title": "Laptoptoetsenbord bezet vlak voor geplande vergadering",
+        "summary": "Vier minuten voor een videogesprek ging het subject op het toetsenbord liggen. Twee verwijderingspogingen volgden. Het gesprek begon te laat.",
+        "imageAlt": ""
+      },
+      "CIB-017": {
+        "title": "Gedeelde misdaad, betwiste eer om gevallen worst",
+        "summary": "De verdachten naderden dezelfde worst vanuit tegenovergestelde richtingen. Niemand week. De worst overleefde het contact niet.",
+        "imageAlt": ""
+      },
+      "CIB-018": {
+        "title": "Armleuning verloren door ongerelateerd territoriumgeschil",
+        "summary": "Een ruzie om de vensterbank eindigde met klauw- en tandsporen op de bank. Niemand mikte op de bank. Die verloor toch.",
+        "imageAlt": "Klauwsporen op een armleuning van dichtbij."
+      },
+      "CIB-019": {
+        "title": "Bankoverleg mondt uit in samen grommen bij het raam",
+        "summary": "Beide verdachten bewaakten de straat vanaf de rugleuning. Volgens onderzoekers gromden ze opmerkelijk ritmisch in koor.",
+        "imageAlt": "Pikette en Le Criminel naast elkaar op de rugleuning, naar het raam gericht."
+      },
+      "CIB-020": {
+        "title": "Voordeur versperd door barricade van twee lichamen",
+        "summary": "De verdachten lagen neus aan staart voor de deur, wetend dat een wandeling was genoemd. De blokkade hield zes minuten.",
+        "imageAlt": ""
+      },
+      "CIB-021": {
+        "title": "Spekbord leeg voordat het de tafel bereikte",
+        "summary": "Het subject onderschepte het bord op aanrechthoogte in de twee seconden tussen fornuis en tafel. Aanzienlijke verticale inspanning vastgesteld.",
+        "imageAlt": ""
+      },
+      "CIB-022": {
+        "title": "Leesbril door erop zitten structureel beschadigd",
+        "summary": "Sawito's bril lag maar even op de armleuning en werd eronder teruggevonden, met één los glas. Hij beschuldigt de stoel.",
+        "imageAlt": ""
+      },
+      "CIB-023": {
+        "title": "Balkonluchtruim verdedigd tegen één duif",
+        "summary": "Het subject daagde luid een duif uit die daar niet om had gevraagd. De duif vertrok. Het subject claimde een beslissende overwinning.",
+        "imageAlt": ""
+      },
+      "CIB-024": {
+        "title": "Badkamerdeur bewust van buiten dichtgehouden",
+        "summary": "De verdachte leunde tegen de deur terwijl toegang duidelijk nodig was. Verzoeken te verplaatsen werden zoals gebruikelijk genegeerd.",
+        "imageAlt": ""
+      },
+      "CIB-025": {
+        "title": "Popcornschaal twee keer geplunderd tijdens filmavond",
+        "summary": "Eén schaal werd tijdens dezelfde film vanuit twee hoeken aangevallen. Beide verdachten claimden onafhankelijkheid. De timing suggereert anders.",
+        "imageAlt": ""
+      },
+      "CIB-026": {
+        "title": "Kamerplant gezamenlijk op keukenvloer verpot",
+        "summary": "De varen overleefde de inspectie met graven, slaan en minstens één volledige rol niet. Verspreidingsgebied van de aarde: indrukwekkend.",
+        "imageAlt": ""
+      },
+      "CIB-027": {
+        "title": "Achtervolging gelijkspel, meubels uitzonderlijk onbeschadigd",
+        "summary": "De korte, energieke achtervolging eindigde toen beiden vanuit verschillende richtingen dezelfde hoek bereikten en gezamenlijk stopten.",
+        "imageAlt": ""
+      },
+      "CIB-028": {
+        "title": "Keukeningang dubbel bezet",
+        "summary": "Geen verdachte gunde de ander de doorgang. De impasse van twintig minuten vertraagde de lunch voor iedereen, ook de mensen.",
+        "imageAlt": ""
+      },
+      "CIB-029": {
+        "title": "Gedeelde toast uitzonderlijk werkelijk gedeeld",
+        "summary": "Om onduidelijke redenen deelden beide verdachten een gevallen toast zonder incident. Onderzoekers zien een afwijking, geen patroon.",
+        "imageAlt": ""
+      },
+      "CIB-030": {
+        "title": "Vitrage gebruikt als onbevoegd klimrek",
+        "summary": "De verdachte klom tot vensterbankhoogte voordat twee van de drie haken loslieten. De afdaling was naar verluidt grotendeels gecontroleerd.",
+        "imageAlt": ""
+      },
+      "CIB-031": {
+        "title": "Gezamenlijke raamwacht voor onbenoemde dreiging",
+        "summary": "Veertig minuten zaten beide verdachten schouder aan schouder bij het raam. De dreiging verscheen nooit en werd nooit benoemd.",
+        "imageAlt": ""
+      },
+      "CIB-032": {
+        "title": "Boodschappen uitpakken vertraagd door overbodig toezicht",
+        "summary": "Sawito stond precies op het kleine keukenoppervlak dat nodig was om tassen uit te laden. Hij gaf voortdurend commentaar, maar geen hulp.",
+        "imageAlt": ""
+      },
+      "CIB-033": {
+        "title": "Rechtstreeks uit botervloot geproefd, zonder bestek",
+        "summary": "De verdachte zat met haar gezicht in de botervloot, zonder plausibele verklaring. Opmerkelijk genoeg was het deksel gesloten geweest.",
+        "imageAlt": ""
+      },
+      "CIB-034": {
+        "title": "Deurmat naar midden van de straat verplaatst",
+        "summary": "Laatst op de drempel gezien, twee huizen verder teruggevonden: nat, aan één hoek bekauwd en verkeerd om.",
+        "imageAlt": ""
+      },
+      "CIB-035": {
+        "title": "Familiebezoek ontspoord door selectieve genegenheid",
+        "summary": "De verdachte hechtte zich direct uitsluitend aan één bezoekend familielid en negeerde alle anderen de hele middag. Het familielid genoot. De rest merkte het op.",
+        "imageAlt": ""
+      },
+      "CIB-036": {
+        "title": "Deuropening languit in beide richtingen geblokkeerd",
+        "summary": "Het subject koos exact het midden voor een dutje met maximale oppervlaktebedekking. Verkeer werd twee uur omgeleid.",
+        "imageAlt": "Le Criminel languit op de gangvloer."
+      },
+      "CIB-037": {
+        "title": "Tweede brood onder vrijwel identieke omstandigheden verloren",
+        "summary": "Niet het eerste broodincident, vermoedelijk ook niet het laatste. De techniek is duidelijk verfijnd.",
+        "imageAlt": "Een tweede, eveneens aangevreten brood op de vloer."
+      },
+      "CIB-038": {
+        "title": "Dekenfort afgebroken door de eigen architecten",
+        "summary": "Een gezamenlijk gebouwd fort bezweek onder zijn eigen ambitie. De verdachten werden tussen de resten gevonden, schijnbaar onbezorgd.",
+        "imageAlt": ""
+      },
+      "CIB-039": {
+        "title": "Televisiedeurbel aangezien voor echte bezoeker",
+        "summary": "Het subject reageerde op een deurbel in reclame met volledig volume en volle overtuiging. Er werd nooit een bezoeker gevonden.",
+        "imageAlt": ""
+      },
+      "CIB-040": {
+        "title": "Stofzuiger geblokkeerd door onverwachte samenwerking",
+        "summary": "Doorgaans principiële tegenstanders blokkeerden beide verdachten tegelijk de stofzuiger vanuit verschillende hoeken. Schoonmaken duurde twee keer zo lang.",
+        "imageAlt": ""
+      },
+      "CIB-041": {
+        "title": "Bereikbaar yoghurtdeksel voorspelbaar benut",
+        "summary": "Het deksel lag op het aanrecht om af te likken. Beide verdachten begrepen de regeling en voerden haar zonder ruzie uit.",
+        "imageAlt": ""
+      },
+      "CIB-042": {
+        "title": "Cadeaupapier gezamenlijk voortijdig versnipperd",
+        "summary": "Een cadeau bleef zes minuten onbeheerd en was bij terugkeer confetti. Beide verdachten leken tevreden.",
+        "imageAlt": ""
+      },
+      "CIB-043": {
+        "title": "Opnieuw gezamenlijk alarm bij de brievenbus",
+        "summary": "De dagelijkse post veroorzaakte het vertrouwde duet van blaffen en janken. De postbode kent de routine inmiddels.",
+        "imageAlt": ""
+      },
+      "CIB-044": {
+        "title": "Bed van hoek tot hoek bezet zonder vrije plek",
+        "summary": "Beide verdachten gingen met schijnbare precisie diagonaal liggen. Voor de bedoelde gebruiker bleef geen ruimte.",
+        "imageAlt": ""
+      },
+      "CIB-045": {
+        "title": "Laatste snee geclaimd onder twijfelachtig portievoorwendsel",
+        "summary": "Sawito nam de laatste snee en legde ongevraagd uit dat hij alleen de verdeling rechtzette. Niemand had daarom gevraagd.",
+        "imageAlt": ""
+      },
+      "CIB-046": {
+        "title": "Tuinslang op meerdere punten doorboord",
+        "summary": "Vier nieuwe lekken vormen volgens onderzoekers een grondig patroon. Het subject werd tevreden in de buurt aangetroffen.",
+        "imageAlt": ""
+      },
+      "CIB-047": {
+        "title": "Videogesprek onderbroken door ongevraagd commentaar",
+        "summary": "Sawito deed een hele klantvergadering lang live verslag van de hond aan collega's die daar niet om hadden gevraagd.",
+        "imageAlt": ""
+      },
+      "CIB-048": {
+        "title": "Uitgang geblokkeerd tot een nooit genomen besluit",
+        "summary": "Het subject dacht elf minuten in de open deur na over naar buiten gaan, blokkeerde beide richtingen en keerde toen terug naar de bank.",
+        "imageAlt": ""
+      }
+    }
+  },
   "common": {
     "fallbackBanner": "Sorry, we werken eraan — voorlopig enkel beschikbaar in het Engels."
   },
   "nav": {
+    "cib": "INLICHTINGEN",
     "home": "HOME",
     "about": "OVER ONS",
     "story": "HET VERHAAL VAN EEN CRIMINEEL",

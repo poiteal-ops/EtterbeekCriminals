@@ -1,8 +1,322 @@
 {
+  "cib": {
+    "chart": {
+      "peakSummary": "Maximum: {label} — incidenty: {count}.",
+      "emptySummary": "Pro tyto filtry nejsou evidovány incidenty.",
+      "viewTable": "Zobrazit tabulku dat",
+      "fullData": "Úplná data",
+      "category": "Kategorie",
+      "incidents": "Incidenty"
+    },
+    "title": "ÚŘAD KRIMINÁLNÍHO ZPRAVODAJSTVÍ",
+    "subtitle": "Společný archiv incidentů — tři známí aktéři, stejné pohrdání vlastnickým právem.",
+    "archiveNote": "Smyšlené údaje o incidentech, sestavené výhradně pro interní školení. Jakákoli podobnost se skutečnou vlnou kriminality je náhodná a, upřímně, zcela příznačná.",
+    "archiveWindowLabel": "ŠKOLICÍ SPIS / 01.–28. SRPNA 2026",
+    "seoDescription": "Prohlédněte si archiv Úřadu kriminálního zpravodajství — 48 smyšlených incidentů, tři podezřelí, žádná lítost.",
+    "suspectFilterLabel": "FILTROVAT PODLE PODEZŘELÉHO",
+    "offenceFilterLabel": "FILTROVAT PODLE PŘESTUPKU",
+    "allSuspectsLabel": "VŠICHNI PODEZŘELÍ",
+    "allOffencesLabel": "VŠECHNY PŘESTUPKY",
+    "resetLabel": "ZRUŠIT FILTRY",
+    "resultCountLabel": "Zobrazeno {count} evidovaných incidentů.",
+    "metricTotalLabel": "EVIDOVANÉ INCIDENTY",
+    "metricOpenLabel": "OTEVŘENÉ PŘÍPADY",
+    "metricClosureRateLabel": "PODÍL UZAVŘENÝCH",
+    "metricPeakHourLabel": "HODINA NEJVÍCE HLÁŠENÍ",
+    "unavailableLabel": "NEDOSTUPNÉ",
+    "dailyChartTitle": "DENNÍ AKTIVITA",
+    "dailyChartDescription": "Nahlášené incidenty po dnech v období archivu.",
+    "offenceChartTitle": "SOUČTY PODLE PŘESTUPKU",
+    "offenceChartDescription": "Incidenty rozdělené podle kategorie.",
+    "hourlyChartTitle": "HODINOVÉ ROZLOŽENÍ",
+    "hourlyChartDescription": "Kdy během 24 hodin dne obvykle dochází k incidentům.",
+    "offenceLabels": {
+      "snack-theft": "KRÁDEŽ JÍDLA",
+      "property-damage": "POŠKOZENÍ MAJETKU",
+      "public-disturbance": "RUŠENÍ POŘÁDKU",
+      "obstruction": "BRÁNĚNÍ V PRŮCHODU"
+    },
+    "statusLabels": {
+      "open": "OTEVŘENÝ",
+      "closed": "UZAVŘENÝ"
+    },
+    "relationshipLabels": {
+      "allied": "SPOJENCI",
+      "rivals": "SOUPEŘI",
+      "truce": "PŘÍMĚŘÍ",
+      "not-applicable": "NEPOUŽIJE SE"
+    },
+    "dossierDescriptions": {
+      "le-criminel": "HLAVNÍ PODEZŘELÝ. Boston Terrier, taktický obojek, žádná známá lítost. Přítomen u drtivé většiny evidovaných incidentů.",
+      "pikette": "HLAVNÍ SPOLUPACHATELKA. OBČASNÁ ÚHLAVNÍ NEPŘÍTELKYNĚ. Motivy nejasné; spojenectví je nanejvýš situační.",
+      "sawito": "NAPOMÁHAČ, NIKOLI PODEZŘELÝ. Přítomen u většiny incidentů. Míra zásahů: zanedbatelná."
+    },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
+    "overlapNote": "Čísla vyjadřují účast na zobrazených incidentech včetně spolupachatelů. Jednoho incidentu se může účastnit více podezřelých, takže součet může převýšit počet incidentů.",
+    "showMoreLabel": "ZOBRAZIT DALŠÍ",
+    "viewDetailsLabel": "ZOBRAZIT DŮKAZY",
+    "hideDetailsLabel": "SKRÝT DŮKAZY",
+    "viewCaseLabel": "ZOBRAZIT CELÝ SPIS",
+    "emptyStateTitle": "ŽÁDNÉ ODPOVÍDAJÍCÍ INCIDENTY",
+    "emptyStateBody": "Žádný incident neodpovídá filtrům. Zvolte jiného podezřelého či přestupek, nebo filtry zrušte pro celý archiv.",
+    "methodologyTitle": "METODIKA",
+    "methodologyBody": "Archiv obsahuje 48 smyšlených incidentů z 1.–28. srpna 2026 pro interní školení. Kategorie, hodiny a výsledky jsou ilustrativní a neodrážejí skutečné vyšetřování.",
+    "cibKicker": "NYNÍ K NAHLÉDNUTÍ",
+    "cibTitle": "ÚŘAD KRIMINÁLNÍHO ZPRAVODAJSTVÍ",
+    "cibBody": "Čtyřicet osm incidentů. Tři podezřelí. Jedna společná kartotéka. Propojte celou operaci.",
+    "cibCta": "OTEVŘÍT ARCHIV",
+    "incidents": {
+      "CIB-001": {
+        "title": "Croissant rozdělen při společné operaci",
+        "summary": "Le Criminel odlákal pozornost a Pikette odnesla pečivo při koordinovaném útoku ze dvou stran. Nalezeny dva kusy, žádný jedlý.",
+        "imageAlt": ""
+      },
+      "CIB-002": {
+        "title": "Švy polštáře testovány až do selhání",
+        "summary": "Společné hrabání v polštáři dobrého křesla rozneslo výplň po obýváku. Oba popřeli zahájení; oba byli pokryti stejnou výplní.",
+        "imageAlt": ""
+      },
+      "CIB-003": {
+        "title": "Synchronizovaný planý poplach u dveří",
+        "summary": "Le Criminel štěkal a Pikette mňoukala ve zdánlivé solidaritě. Nenalezen vetřelec, zásilka ani ochotné vysvětlení.",
+        "imageAlt": ""
+      },
+      "CIB-004": {
+        "title": "Chodba neprůchodná po vzájemné dohodě",
+        "summary": "Oba současně obsadili stejný malý prostor a zablokovali východ na jedenáct minut. Nikdo se nepohnul první.",
+        "imageAlt": ""
+      },
+      "CIB-005": {
+        "title": "Chléb převeden do ochranné úschovy",
+        "summary": "Obviněný odmítl určit původního vlastníka. Drobky odporovaly výpovědi.",
+        "imageAlt": "Půl bochníku na kuchyňské podlaze, jeden konec viditelně okousaný."
+      },
+      "CIB-006": {
+        "title": "Kryt telefonu praskl při neuváženém focení",
+        "summary": "Sawito zkoušel selfie se skákajícím psem a upustil telefon na jedinou dlažbu v domě. Fotka se mimochodem povedla.",
+        "imageAlt": "Sawito pořizuje selfie se psem skákajícím k fotoaparátu."
+      },
+      "CIB-007": {
+        "title": "Rodinné setkání přerušeno nevyžádaným názorem",
+        "summary": "Subjekt vstoupil do cizího hovoru a štěkal dost hlasitě, aby jej ukončil. Ukončil ho.",
+        "imageAlt": ""
+      },
+      "CIB-008": {
+        "title": "Průchod úmyslně blokován během doručování",
+        "summary": "Sawito stál kurýrovi v cestě a dlouze zvažoval nutnost podpisu. Nebyl nutný. Přesto zůstal.",
+        "imageAlt": ""
+      },
+      "CIB-009": {
+        "title": "Snídaňový toast zachycen štafetou podezřelých",
+        "summary": "Le Criminel shodil toast z linky; Pikette jej chytila před podlahou. Dělba práce potvrzena, dělení toastu méně jasné.",
+        "imageAlt": ""
+      },
+      "CIB-010": {
+        "title": "Závěs stržen neoprávněnou spoluprací",
+        "summary": "Závěs spadl při podle svědků koordinovaném šplhání. Tyč nepřežila. Nikdo si toho zřejmě nevšiml.",
+        "imageAlt": ""
+      },
+      "CIB-011": {
+        "title": "Večerní souboj vyřešen společnou nudou",
+        "summary": "Dvanáct minut zírání o nejlepší sluneční skvrnu skončilo současnou ztrátou zájmu. Případ uzavřen pro chybějící vyvrcholení.",
+        "imageAlt": ""
+      },
+      "CIB-012": {
+        "title": "Schody nárokovaly dvě strany, neuvolnila žádná",
+        "summary": "Le Criminel zabral horní schod, Pikette spodní. Provoz byl zastaven po celou dobu sporu.",
+        "imageAlt": ""
+      },
+      "CIB-013": {
+        "title": "Kostka sýra odebrána z nehlídaného prkénka",
+        "summary": "Podezřelý přistoupil k uzeninám s jistotou předchozího průzkumu. Jedna kostka zmizela; podezřelý zůstal klidný.",
+        "imageAlt": ""
+      },
+      "CIB-014": {
+        "title": "Levá bota přemístěna mimo rozumný dosah obnovy",
+        "summary": "Naposledy pod postelí, později nalezena v zahradě bez tkaničky a většiny důstojnosti.",
+        "imageAlt": "Jedna teniska v trávě, bez tkaničky."
+      },
+      "CIB-015": {
+        "title": "Polštář pohovky zabrán při návštěvě bez vyjednávání",
+        "summary": "Podezřelá zhodnotila místa a usadila se přesně tam, kde už seděl host. Host se přesunul.",
+        "imageAlt": "Pikette na prostředním polštáři pohovky během návštěvy."
+      },
+      "CIB-016": {
+        "title": "Klávesnice obsazena před plánovaným hovorem",
+        "summary": "Subjekt ulehl na klávesnici čtyři minuty před videohovorem. Dva pokusy o odstranění. Hovor začal pozdě.",
+        "imageAlt": ""
+      },
+      "CIB-017": {
+        "title": "Společný zločin, sporné zásluhy kolem spadlého párku",
+        "summary": "Oba přistoupili ke stejnému párku z opačných směrů. Nikdo neustoupil. Párek kontakt nepřežil.",
+        "imageAlt": ""
+      },
+      "CIB-018": {
+        "title": "Opěrka padla za oběť nesouvisejícímu územnímu sporu",
+        "summary": "Hádka o parapet skončila škrábanci na opěrce a otisky zubů vedle. Nikdo nemířil na pohovku. Přesto prohrála.",
+        "imageAlt": "Detail škrábanců na opěrce pohovky."
+      },
+      "CIB-019": {
+        "title": "Pohovkový summit přešel ve společné vrčení na okno",
+        "summary": "Oba sledovali ulici z opěradla a vrčeli v rytmickém souzvuku, který vyšetřovatelé označili za pozoruhodný.",
+        "imageAlt": "Pikette a Le Criminel vedle sebe na opěradle, otočení k oknu."
+      },
+      "CIB-020": {
+        "title": "Vchod zablokován barikádou dvou těl",
+        "summary": "Leželi čenichem k ocasu před dveřmi, vědomi si slíbené procházky. Barikáda vydržela šest minut.",
+        "imageAlt": ""
+      },
+      "CIB-021": {
+        "title": "Talíř slaniny vyprázdněn před dosažením stolu",
+        "summary": "Subjekt zachytil talíř ve výšce linky během dvou sekund mezi sporákem a stolem. Zaznamenáno značné svislé úsilí.",
+        "imageAlt": ""
+      },
+      "CIB-022": {
+        "title": "Brýle na čtení rozsednuty",
+        "summary": "Sawitovy brýle, ponechané na opěrce jen na vteřinu, se našly pod křeslem s vypadlým sklem. Viní křeslo.",
+        "imageAlt": ""
+      },
+      "CIB-023": {
+        "title": "Vzdušný prostor balkonu bráněn proti jedinému holubovi",
+        "summary": "Subjekt hlasitě vyzval holuba, který o to nestál. Holub odletěl. Subjekt vyhlásil rozhodující vítězství.",
+        "imageAlt": ""
+      },
+      "CIB-024": {
+        "title": "Dveře koupelny úmyslně drženy zavřené zvenčí",
+        "summary": "Podezřelá se opřela o dveře, když byl přístup zjevně nutný. Žádosti o pohyb byly jako vždy ignorovány.",
+        "imageAlt": ""
+      },
+      "CIB-025": {
+        "title": "Miska popcornu vypleněna dvakrát během filmu",
+        "summary": "Stejná miska byla napadena ze dvou úhlů. Oba tvrdili nezávislé jednání. Načasování naznačuje opak.",
+        "imageAlt": ""
+      },
+      "CIB-026": {
+        "title": "Rostlina společně přesazena na kuchyňskou podlahu",
+        "summary": "Kapradina nepřežila kontrolu zahrnující hrabání, údery tlapou a alespoň jedno úplné převalení. Poloměr rozptýlené zeminy: působivý.",
+        "imageAlt": ""
+      },
+      "CIB-027": {
+        "title": "Hon v chodbě skončil remízou, nábytek výjimečně celý",
+        "summary": "Krátká energická honička skončila, když oba dosáhli stejného rohu z různých směrů a společně se rozhodli zastavit.",
+        "imageAlt": ""
+      },
+      "CIB-028": {
+        "title": "Vstup do kuchyně pod dvojí okupací",
+        "summary": "Nikdo nechtěl druhému uvolnit průchod. Dvacetiminutová patová situace zpozdila oběd všem, včetně lidí.",
+        "imageAlt": ""
+      },
+      "CIB-029": {
+        "title": "Společný toast výjimečně skutečně rozdělen",
+        "summary": "Z nejasných důvodů si rozdělili spadlý toast bez incidentu. Vyšetřovatelé to považují za anomálii, ne vzorec.",
+        "imageAlt": ""
+      },
+      "CIB-030": {
+        "title": "Záclona použita jako nepovolená lezecká konstrukce",
+        "summary": "Podezřelá vyšplhala k parapetu, než se uvolnily dva ze tří háčků. Sestup byl popsán jako převážně řízený.",
+        "imageAlt": ""
+      },
+      "CIB-031": {
+        "title": "Společná okenní hlídka proti neurčené hrozbě",
+        "summary": "Čtyřicet minut seděli bok po boku a čekali na hrozbu, která nepřišla ani nebyla pojmenována.",
+        "imageAlt": ""
+      },
+      "CIB-032": {
+        "title": "Vybalování nákupu pozastaveno kvůli zbytečnému dohledu",
+        "summary": "Sawito zabral jediný malý prostor nutný k vyložení tašek. Celou práci komentoval bez pomoci.",
+        "imageAlt": ""
+      },
+      "CIB-033": {
+        "title": "Máslo ochutnáno přímo bez náčiní",
+        "summary": "Podezřelá byla nalezena s obličejem v máslence bez věrohodného vysvětlení. Víčko přitom předtím bylo zavřené.",
+        "imageAlt": ""
+      },
+      "CIB-034": {
+        "title": "Rohožka přemístěna doprostřed ulice",
+        "summary": "Naposledy na prahu, nalezena o dva domy dál: vlhká, rozkousaná v rohu a obrácená.",
+        "imageAlt": ""
+      },
+      "CIB-035": {
+        "title": "Rodinná návštěva vykolejena výběrovou náklonností",
+        "summary": "Podezřelý se ihned upnul k jedinému příbuznému a ostatní celé odpoledne ignoroval. Příbuzný nadšen. Ostatní zaznamenali.",
+        "imageAlt": ""
+      },
+      "CIB-036": {
+        "title": "Průchod obsazen v plné délce oběma směry",
+        "summary": "Subjekt vybral přesný střed dveří pro zdřímnutí s maximálním pokrytím. Provoz byl odkloněn na dvě hodiny.",
+        "imageAlt": "Le Criminel natažený na podlaze chodby."
+      },
+      "CIB-037": {
+        "title": "Druhý bochník ztracen za téměř stejných okolností",
+        "summary": "Nejde o první chlebový incident a zřejmě ani poslední. Technika byla zjevně zdokonalena.",
+        "imageAlt": "Druhý bochník na podlaze, rovněž okousaný."
+      },
+      "CIB-038": {
+        "title": "Pevnost z dek zbořili vlastní architekti",
+        "summary": "Společná stavba se zhroutila pod vlastní ambicí. Oba byli nalezeni v troskách, zjevně lhostejní.",
+        "imageAlt": ""
+      },
+      "CIB-039": {
+        "title": "Televizní zvonek zaměněn za skutečnou návštěvu",
+        "summary": "Subjekt odpověděl na zvonek v reklamě plnou hlasitostí a přesvědčením. Žádný návštěvník nikdy nalezen nebyl.",
+        "imageAlt": ""
+      },
+      "CIB-040": {
+        "title": "Vysavač zablokován nečekanou spoluprací",
+        "summary": "Obvykle zásadoví odpůrci společně zablokovali vysavač z různých úhlů. Úklid trval dvakrát déle.",
+        "imageAlt": ""
+      },
+      "CIB-041": {
+        "title": "Dostupné víčko jogurtu předvídatelně využito",
+        "summary": "Víčko leželo na lince k olízání. Oba dohodu pochopili a uskutečnili bez sporu.",
+        "imageAlt": ""
+      },
+      "CIB-042": {
+        "title": "Dárkový papír společně roztrhán předčasně",
+        "summary": "Dárek bez dozoru šest minut se při návratu svědků proměnil v konfety. Oba působili spokojeně.",
+        "imageAlt": ""
+      },
+      "CIB-043": {
+        "title": "Další společný poplach u otvoru na poštu",
+        "summary": "Denní doručení spustilo obvyklé štěkání jednoho a mňoukání druhé. Doručovatel už rutinu zná.",
+        "imageAlt": ""
+      },
+      "CIB-044": {
+        "title": "Postel obsazena od rohu k rohu bez místa",
+        "summary": "Oba se uložili diagonálně se zdánlivou přesností, bez prostoru pro zamýšleného uživatele.",
+        "imageAlt": ""
+      },
+      "CIB-045": {
+        "title": "Poslední krajíc zabrán pod pochybnou záminkou rovnováhy",
+        "summary": "Sawito vzal poslední krajíc a nevyžádaně vysvětlil, že jen vyrovnává. Nikdo ho nežádal.",
+        "imageAlt": ""
+      },
+      "CIB-046": {
+        "title": "Zahradní hadice proděravěna na více místech",
+        "summary": "Čtyři nové netěsnosti tvoří vzorec označený vyšetřovateli za důkladný. Subjekt nalezen poblíž, spokojen.",
+        "imageAlt": ""
+      },
+      "CIB-047": {
+        "title": "Videohovor přerušen nevyžádaným komentářem",
+        "summary": "Sawito živě komentoval kolegům psí činnosti po celou schůzku s klientem. Nikdo o to nežádal.",
+        "imageAlt": ""
+      },
+      "CIB-048": {
+        "title": "Východ zablokován do rozhodnutí, které nepadlo",
+        "summary": "Subjekt stál jedenáct minut v otevřených dveřích a zvažoval odchod. Blokoval oba směry, pak se vrátil na pohovku.",
+        "imageAlt": ""
+      }
+    }
+  },
   "common": {
     "fallbackBanner": "Omlouváme se, pracujeme na tom — zatím dostupné pouze v angličtině."
   },
   "nav": {
+    "cib": "ZPRAVODAJSTVÍ",
     "home": "DOMŮ",
     "about": "O NÁS",
     "story": "PŘÍBĚH JEDNOHO ZLOČINCE",

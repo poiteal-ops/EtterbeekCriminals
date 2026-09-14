@@ -1,8 +1,322 @@
 {
+  "cib": {
+    "chart": {
+      "peakSummary": "Huippu: {label} — tapauksia: {count}.",
+      "emptySummary": "Nykyisillä suodattimilla ei ole tapauksia.",
+      "viewTable": "Näytä tietotaulukko",
+      "fullData": "Kaikki tiedot",
+      "category": "Luokka",
+      "incidents": "Tapaukset"
+    },
+    "title": "RIKOSTIEDUSTELUTOIMISTO",
+    "subtitle": "Yhteinen tapahtuma-arkisto — kolme tunnettua toimijaa, sama piittaamattomuus omistusoikeudesta.",
+    "archiveNote": "Kuvitteelliset tapahtumatiedot on koottu vain sisäiseen koulutukseen. Kaikki yhtäläisyydet todelliseen rikosaaltoon ovat sattumaa ja rehellisesti sanottuna hyvin heidän tyylisiään.",
+    "archiveWindowLabel": "KOULUTUSASIAKIRJA / 1.–28.8.2026",
+    "seoDescription": "Selaa Rikostiedustelutoimiston arkistoa — 48 kuvitteellista tapausta, kolme epäiltyä, ei katumusta.",
+    "suspectFilterLabel": "SUODATA EPÄILLYN MUKAAN",
+    "offenceFilterLabel": "SUODATA RIKKOMUKSEN MUKAAN",
+    "allSuspectsLabel": "KAIKKI EPÄILLYT",
+    "allOffencesLabel": "KAIKKI RIKKOMUKSET",
+    "resetLabel": "NOLLAA SUODATTIMET",
+    "resultCountLabel": "Näytetään {count} kirjattua tapausta.",
+    "metricTotalLabel": "KIRJATUT TAPAUKSET",
+    "metricOpenLabel": "AVOIMET TAPAUKSET",
+    "metricClosureRateLabel": "PÄÄTETTYJEN OSUUS",
+    "metricPeakHourLabel": "YLEISIN ILMOITETTU TUNTI",
+    "unavailableLabel": "EI SAATAVILLA",
+    "dailyChartTitle": "PÄIVITTÄINEN TOIMINTA",
+    "dailyChartDescription": "Ilmoitetut tapaukset päivittäin arkistojakson aikana.",
+    "offenceChartTitle": "RIKKOMUSTEN MÄÄRÄT",
+    "offenceChartDescription": "Tapaukset luokittain.",
+    "hourlyChartTitle": "VUOROKAUDENAIKAINEN JAKAUMA",
+    "hourlyChartDescription": "Milloin tapauksia yleensä esiintyy vuorokauden 24 tunnin aikana.",
+    "offenceLabels": {
+      "snack-theft": "RUOKAVARKAUS",
+      "property-damage": "OMAISUUSVAHINKO",
+      "public-disturbance": "JÄRJESTYSHÄIRIÖ",
+      "obstruction": "KULUN ESTÄMINEN"
+    },
+    "statusLabels": {
+      "open": "AVOIN",
+      "closed": "PÄÄTETTY"
+    },
+    "relationshipLabels": {
+      "allied": "LIITTOLAISET",
+      "rivals": "KILPAILIJAT",
+      "truce": "ASELEPO",
+      "not-applicable": "EI SOVELLU"
+    },
+    "dossierDescriptions": {
+      "le-criminel": "PÄÄEPÄILTY. Boston Terrier, taktinen kaulapanta, ei tunnettua katumusta. Mukana ylivoimaisessa enemmistössä kirjatuista tapauksista.",
+      "pikette": "TÄRKEIN RIKOSKUMPPANI. AJOITTAIN ARKKIVIHOLLINEN. Motiivit epäselvät; liitto on parhaimmillaan tilannekohtainen.",
+      "sawito": "MAHDOLLISTAJA, EI EPÄILTY. Läsnä useimmissa tapauksissa. Puuttumisaste: mitätön."
+    },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
+    "overlapNote": "Luvut laskevat osallistumiset näytettyihin tapauksiin, rikoskumppanit mukaan lukien. Yhdessä tapauksessa voi olla useita epäiltyjä, joten summa voi ylittää tapausten määrän.",
+    "showMoreLabel": "NÄYTÄ LISÄÄ",
+    "viewDetailsLabel": "NÄYTÄ TODISTEET",
+    "hideDetailsLabel": "PIILOTA TODISTEET",
+    "viewCaseLabel": "NÄYTÄ KOKO TAPAUSASIAKIRJA",
+    "emptyStateTitle": "EI VASTAAVIA TAPAUKSIA",
+    "emptyStateBody": "Yksikään tapaus ei vastaa suodattimia. Valitse toinen epäilty tai rikkomus, tai nollaa suodattimet nähdäksesi koko arkiston.",
+    "methodologyTitle": "MENETELMÄ",
+    "methodologyBody": "Arkisto sisältää 48 kuvitteellista tapausta ajalta 1.–28. elokuuta 2026 sisäiseen koulutukseen. Luokat, kellonajat ja lopputulokset ovat havainnollistavia eivätkä kuvaa todellista tutkintaa.",
+    "cibKicker": "NYT TARKASTELTAVISSA",
+    "cibTitle": "RIKOSTIEDUSTELUTOIMISTO",
+    "cibBody": "Neljäkymmentäkahdeksan tapausta. Kolme epäiltyä. Yksi yhteinen arkistokaappi. Yhdistä koko operaation tiedot.",
+    "cibCta": "AVAA ARKISTO",
+    "incidents": {
+      "CIB-001": {
+        "title": "Croissant jaettu yhteisoperaatiossa",
+        "summary": "Le Criminel harhautti ja Pikette vei leivonnaisen koordinoidussa kahden suunnan toimessa. Löydettiin kaksi palaa, kumpikaan ei syötävä.",
+        "imageAlt": ""
+      },
+      "CIB-002": {
+        "title": "Tyynyn saumat testattu rakenteelliseen pettämiseen",
+        "summary": "Hyvän nojatuolin tyynyn yhteiskaivuu levitti täytettä olohuoneeseen. Molemmat kielsivät aloittaneensa; molemmat olivat saman täytteen peitossa.",
+        "imageAlt": ""
+      },
+      "CIB-003": {
+        "title": "Samanaikainen turha hälytys ovella",
+        "summary": "Le Criminel haukkui ja Pikette naukui näennäisestä solidaarisuudesta. Ei tunkeilijaa, toimitusta eikä halukasta selitystä.",
+        "imageAlt": ""
+      },
+      "CIB-004": {
+        "title": "Käytävä yhteistuumin kulkukelvoton",
+        "summary": "Molemmat valtasivat saman pienen alueen yhtä aikaa ja estivät poistumisen yhdentoista minuutin ajan. Kumpikaan ei liikkunut ensin.",
+        "imageAlt": ""
+      },
+      "CIB-005": {
+        "title": "Leipä siirretty suojelusäilöön",
+        "summary": "Syytetty kieltäytyi nimeämästä alkuperäistä omistajaa. Murut olivat lausunnon kanssa ristiriidassa.",
+        "imageAlt": "Puolikas limppu keittiön lattialla, toinen pää näkyvästi jyrsitty."
+      },
+      "CIB-006": {
+        "title": "Puhelinkuori halkesi harkitsemattomassa kuvauksessa",
+        "summary": "Sawito yritti selfietä hyppäävän koiran kanssa ja pudotti puhelimen talon ainoalle laattalattialle. Kuva muuten onnistui.",
+        "imageAlt": "Sawito ottaa selfietä kameraa kohti hyppäävän koiran kanssa."
+      },
+      "CIB-007": {
+        "title": "Sukutapaaminen keskeytyi pyytämättömään mielipiteeseen",
+        "summary": "Kohde tunkeutui muiden keskusteluun ja haukkui riittävän kovaa lopettaakseen sen. Keskustelu loppui.",
+        "imageAlt": ""
+      },
+      "CIB-008": {
+        "title": "Oviaukko tarkoituksella tukittu toimituksen aikana",
+        "summary": "Sawito seisoi lähetin tiellä ja pohti pitkään allekirjoituksen tarvetta. Sitä ei tarvittu. Hän jäi silti seisomaan.",
+        "imageAlt": ""
+      },
+      "CIB-009": {
+        "title": "Aamiaispaahtoleipä kaapattu epäiltyjen viestissä",
+        "summary": "Le Criminel pudotti leivän tasolta; Pikette nappasi sen ennen lattiaa. Työnjako todettu, leivän jako epäselvempi.",
+        "imageAlt": ""
+      },
+      "CIB-010": {
+        "title": "Verho pudotettu luvattomalla yhteistyöllä",
+        "summary": "Verho putosi todistajien koordinoiduksi kuvaamassa kiipeilyssä. Tanko ei selvinnyt. Kumpikaan ei näyttänyt huomaavan.",
+        "imageAlt": ""
+      },
+      "CIB-011": {
+        "title": "Illan kaksintaistelu päättyi yhteiseen kyllästymiseen",
+        "summary": "Kahdentoista minuutin tuijotus parhaasta auringonlaikusta loppui molempien menettäessä kiinnostuksensa yhtä aikaa. Asia päätetty antikliimaksin vuoksi.",
+        "imageAlt": ""
+      },
+      "CIB-012": {
+        "title": "Portaita vaati kaksi osapuolta, vapautti ei kukaan",
+        "summary": "Le Criminel valtasi ylimmän askelman, Pikette alimman. Liikenne keskeytyi koko kiistan ajaksi.",
+        "imageAlt": ""
+      },
+      "CIB-013": {
+        "title": "Juustokuutio poistettu vartioimattomalta laudalta",
+        "summary": "Epäilty lähestyi leikkelelautaa aiemmin tiedustelleen varmuudella. Yksi kuutio katosi; epäilty pysyi tyynenä.",
+        "imageAlt": ""
+      },
+      "CIB-014": {
+        "title": "Vasen kenkä siirretty kohtuullisen pelastuksen ulottumattomiin",
+        "summary": "Viimeksi sängyn alla nähty kenkä löytyi puutarhasta ilman nauhaa ja suurinta osaa arvokkuudestaan.",
+        "imageAlt": "Yksinäinen lenkkitossu nurmikolla ilman nauhaa."
+      },
+      "CIB-015": {
+        "title": "Sohvatyyny vallattu vierailun aikana neuvottelematta",
+        "summary": "Epäilty arvioi istumajärjestyksen ja asettui juuri vieraan jo valtaamalle paikalle. Vieras siirtyi.",
+        "imageAlt": "Pikette sohvan keskityynyllä vierailun aikana."
+      },
+      "CIB-016": {
+        "title": "Näppäimistö vallattu ennen sovittua puhelua",
+        "summary": "Kohde makasi näppäimistöllä neljä minuuttia ennen videopuhelua. Kaksi poistoyritystä. Puhelu alkoi myöhässä.",
+        "imageAlt": ""
+      },
+      "CIB-017": {
+        "title": "Yhteinen rikos, kiistelty kunnia pudonneesta makkarasta",
+        "summary": "Molemmat lähestyivät samaa makkaraa vastakkaisista suunnista. Kumpikaan ei väistänyt. Makkara ei selvinnyt kohtaamisesta.",
+        "imageAlt": ""
+      },
+      "CIB-018": {
+        "title": "Käsinoja menetetty asiaan liittymättömässä reviirikiistassa",
+        "summary": "Ikkunalautariita päättyi kynnenjälkiin käsinojassa ja hampaanjälkiin vieressä. Kumpikaan ei tähdännyt sohvaan. Se hävisi silti.",
+        "imageAlt": "Lähikuva kynnenjäljistä sohvan käsinojassa."
+      },
+      "CIB-019": {
+        "title": "Sohvahuippukokous muuttui yhteiseksi murinaksi ikkunalla",
+        "summary": "Molemmat tarkkailivat katua selkänojalta muristen tutkijoiden merkittäväksi kutsumassa rytmisessä yhteisymmärryksessä.",
+        "imageAlt": "Pikette ja Le Criminel vierekkäin selkänojalla ikkunaa kohti."
+      },
+      "CIB-020": {
+        "title": "Ulko-ovi suljettu kahden kehon barrikadilla",
+        "summary": "He makasivat kuono häntää vasten oven edessä tietäen mainitusta kävelystä. Barrikadi piti kuusi minuuttia.",
+        "imageAlt": ""
+      },
+      "CIB-021": {
+        "title": "Pekonilautanen tyhjennetty ennen pöytää",
+        "summary": "Kohde nappasi lautasen tasokorkeudelta lieden ja pöydän välisissä kahdessa sekunnissa. Huomattava pystysuora ponnistus todettiin.",
+        "imageAlt": ""
+      },
+      "CIB-022": {
+        "title": "Lukulasit rikottu päälle istumalla",
+        "summary": "Sawiton vain hetkeksi käsinojalle jättämät lasit löytyivät tuolin alta toinen linssi irti. Hän syyttää tuolia.",
+        "imageAlt": ""
+      },
+      "CIB-023": {
+        "title": "Parvekkeen ilmatilaa puolustettu yhtä pulua vastaan",
+        "summary": "Kohde haastoi äänekkäästi pulun, joka ei pyytänyt sitä. Pulu lähti. Kohde julisti ratkaisevan voiton.",
+        "imageAlt": ""
+      },
+      "CIB-024": {
+        "title": "Kylpyhuoneen ovea pidetty tahallaan ulkoa kiinni",
+        "summary": "Epäilty nojasi oveen pääsyn ollessa selvästi tarpeen. Siirtymispyynnöt jätettiin tapaan sivuun.",
+        "imageAlt": ""
+      },
+      "CIB-025": {
+        "title": "Popcornkulho ryöstetty kahdesti elokuvan aikana",
+        "summary": "Samaa kulhoa lähestyttiin kahdesta kulmasta. Molemmat väittivät toimineensa itsenäisesti. Ajoitus viittaa muuhun.",
+        "imageAlt": ""
+      },
+      "CIB-026": {
+        "title": "Huonekasvi yhteisvoimin istutettu keittiön lattialle",
+        "summary": "Saniainen ei selvinnyt tarkastuksesta, johon kuului kaivamista, tassuniskuja ja ainakin yksi kokovartalokierähdys. Mullan leviämissäde: vaikuttava.",
+        "imageAlt": ""
+      },
+      "CIB-027": {
+        "title": "Käytäväjahti päättyi tasan, huonekalut poikkeuksellisesti ehjät",
+        "summary": "Lyhyt voimakas takaa-ajo päättyi molempien saavuttaessa saman kulman eri suunnista ja päättäessä yhdessä pysähtyä.",
+        "imageAlt": ""
+      },
+      "CIB-028": {
+        "title": "Keittiön sisäänkäynti kaksoismiehitetty",
+        "summary": "Kumpikaan ei antanut toiselle tietä. Kahdenkymmenen minuutin pattitilanne viivytti kaikkien lounasta, myös ihmisten.",
+        "imageAlt": ""
+      },
+      "CIB-029": {
+        "title": "Jaettu paahtoleipä poikkeuksellisesti todella jaettu",
+        "summary": "Epäselvistä syistä pudonnut leipä jaettiin ilman välikohtausta. Tutkijat pitävät tätä poikkeamana, eivät mallina.",
+        "imageAlt": ""
+      },
+      "CIB-030": {
+        "title": "Ohut verho käytössä luvattomana kiipeilytelineenä",
+        "summary": "Epäilty kiipesi ikkunalaudalle ennen kahden koukun irtoamista kolmesta. Laskeutuminen oli kuvauksen mukaan enimmäkseen hallittu.",
+        "imageAlt": ""
+      },
+      "CIB-031": {
+        "title": "Yhteinen ikkunavartio määrittelemätöntä uhkaa vastaan",
+        "summary": "Neljäkymmentä minuuttia istuttiin rinnakkain tarkkaillen uhkaa, joka ei ilmestynyt eikä saanut nimeä.",
+        "imageAlt": ""
+      },
+      "CIB-032": {
+        "title": "Ostosten purku pysäytetty tarpeettomalla valvonnalla",
+        "summary": "Sawito seisoi ainoalla pienellä alueella, jota kassien purku vaati. Hän kommentoi koko työn auttamatta.",
+        "imageAlt": ""
+      },
+      "CIB-033": {
+        "title": "Voita maistettu suoraan ilman välineitä",
+        "summary": "Epäilty löytyi kasvot voirasiassa ilman uskottavaa selitystä. Kansi oli huomionarvoisesti ollut kiinni.",
+        "imageAlt": ""
+      },
+      "CIB-034": {
+        "title": "Ovimatto siirretty keskelle katua",
+        "summary": "Viimeksi kynnyksellä, löytyi kahden talon päästä: kostea, nurkasta pureskeltu ja väärin päin.",
+        "imageAlt": ""
+      },
+      "CIB-035": {
+        "title": "Sukuvierailu suistui valikoivan kiintymyksen vuoksi",
+        "summary": "Epäilty kiintyi heti vain yhteen sukulaiseen ja sivuutti muut koko iltapäivän. Sukulainen ilahtui. Muut kirjasivat asian.",
+        "imageAlt": ""
+      },
+      "CIB-036": {
+        "title": "Oviaukko täyspitkänä tukossa molempiin suuntiin",
+        "summary": "Kohde valitsi oven tarkan keskikohdan maksimaalisen peittävään uneen. Liikenne ohjattiin kiertoon kahdeksi tunniksi.",
+        "imageAlt": "Le Criminel pitkällään käytävän lattialla."
+      },
+      "CIB-037": {
+        "title": "Toinen limppu kadonnut lähes samoissa oloissa",
+        "summary": "Ei arkiston ensimmäinen leipätapaus eikä luultavasti viimeinen. Tekniikkaa on selvästi hiottu.",
+        "imageAlt": "Toinen limppu lattialla, samoin jyrsitty."
+      },
+      "CIB-038": {
+        "title": "Peittolinnake purettu omien arkkitehtien toimesta",
+        "summary": "Yhteisrakennelma romahti oman kunnianhimonsa alle. Molemmat löytyivät raunioista näennäisen tyyninä.",
+        "imageAlt": ""
+      },
+      "CIB-039": {
+        "title": "Television ovikello luultu oikeaksi vieraaksi",
+        "summary": "Kohde reagoi mainoksen kelloon täydellä äänenvoimakkuudella ja vakaumuksella. Vierasta ei koskaan löytynyt.",
+        "imageAlt": ""
+      },
+      "CIB-040": {
+        "title": "Pölynimuri estetty yllättävällä yhteistyöllä",
+        "summary": "Yleensä periaatteelliset vastustajat tukkivat imurin yhtä aikaa eri kulmista. Siivous kesti kaksinkertaisesti.",
+        "imageAlt": ""
+      },
+      "CIB-041": {
+        "title": "Ulottuvilla oleva jogurttikansi ennustettavasti hyödynnetty",
+        "summary": "Kansi jätettiin tasolle nuoltavaksi. Molemmat ymmärsivät järjestelyn ja toteuttivat sen riidatta.",
+        "imageAlt": ""
+      },
+      "CIB-042": {
+        "title": "Lahjapaperi yhteisesti silputtu etuajassa",
+        "summary": "Kuusi minuuttia vartioimatta ollut lahja oli palattaessa konfettia. Molemmat vaikuttivat tyytyväisiltä.",
+        "imageAlt": ""
+      },
+      "CIB-043": {
+        "title": "Uusi yhteinen hälytys postiluukulla",
+        "summary": "Päivittäinen posti käynnisti tavallisen toisen haukunnan ja toisen naukumisen. Postinkantaja tuntee jo rutiinin.",
+        "imageAlt": ""
+      },
+      "CIB-044": {
+        "title": "Sänky vallattu nurkasta nurkkaan ilman vapaata tilaa",
+        "summary": "Molemmat asettuivat näennäisen tarkasti vinoon jättämättä paikkaa tarkoitetulle käyttäjälle.",
+        "imageAlt": ""
+      },
+      "CIB-045": {
+        "title": "Viimeinen viipale otettu kyseenalaisella tasapainotusperusteella",
+        "summary": "Sawito otti viimeisen viipaleen ja selitti pyytämättä vain tasoittavansa. Kukaan ei ollut pyytänyt.",
+        "imageAlt": ""
+      },
+      "CIB-046": {
+        "title": "Puutarhaletku puhkaistu useasta kohdasta",
+        "summary": "Neljä uutta vuotoa muodostaa tutkijoiden perusteelliseksi kutsuman kuvion. Kohde löytyi tyytyväisenä lähistöltä.",
+        "imageAlt": ""
+      },
+      "CIB-047": {
+        "title": "Videopuhelu keskeytyi pyytämättömään selostukseen",
+        "summary": "Sawito selosti koiran toimia työtovereille koko asiakastapaamisen ajan. Kukaan ei ollut pyytänyt sitä.",
+        "imageAlt": ""
+      },
+      "CIB-048": {
+        "title": "Ulospääsy estetty päätökseen, jota ei tullut",
+        "summary": "Kohde pohti avoimessa ovessa ulosmenoa yksitoista minuuttia. Molemmat suunnat tukittuina hän palasi lopulta sohvalle.",
+        "imageAlt": ""
+      }
+    }
+  },
   "common": {
     "fallbackBanner": "Pahoittelut, työstämme asiaa — toistaiseksi saatavilla vain englanniksi."
   },
   "nav": {
+    "cib": "TIEDUSTELU",
     "home": "KOTI",
     "about": "TIETOA",
     "story": "RIKOLLISEN TARINA",

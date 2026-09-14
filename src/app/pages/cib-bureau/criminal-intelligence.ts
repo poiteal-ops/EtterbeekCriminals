@@ -46,12 +46,6 @@ function maxCount(buckets: readonly CibChartBucket[]): number {
   return buckets.reduce((max, bucket) => Math.max(max, bucket.count), 0);
 }
 
-function formatDayLabel(isoDate: string): string {
-  // isoDate is 'YYYY-MM-DD' within the fixed August 2026 archive window.
-  const day = Number(isoDate.slice(8, 10));
-  return `AUG ${day}`;
-}
-
 @Component({
   selector: 'app-criminal-intelligence',
   imports: [RouterLink, CibChart],
@@ -125,7 +119,9 @@ export class CriminalIntelligence {
   protected readonly dailyBuckets = computed<readonly CibChartBucket[]>(() =>
     dailyCounts(this.filteredIncidents(), CIB_ARCHIVE_DATES).map((bucket) => ({
       key: bucket.key,
-      label: formatDayLabel(bucket.key),
+      label: new Intl.DateTimeFormat(this.translation.locale(), {
+        day: 'numeric', month: 'short', timeZone: 'UTC',
+      }).format(new Date(`${bucket.key}T00:00:00Z`)),
       count: bucket.count,
     })),
   );
@@ -146,7 +142,7 @@ export class CriminalIntelligence {
   protected readonly hourlyBuckets = computed<readonly CibChartBucket[]>(() =>
     hourlyCounts(this.filteredIncidents()).map((bucket) => ({
       key: bucket.key,
-      label: `${bucket.key}h`,
+      label: `${bucket.key}:00`,
       count: bucket.count,
     })),
   );

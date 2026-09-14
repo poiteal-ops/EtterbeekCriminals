@@ -1,15 +1,23 @@
 // Criminal Intelligence Bureau (CIB) — page content model.
 //
-// English-only content for now (translation to the other locale JSON files
-// is deferred to a later task — see .superpowers/sdd/CIB-planning). This
-// still defines the FULL shape the coordinated CIB page needs so the page
-// itself never has to guess at partial content later.
+// Every supported content locale supplies this complete shape, including
+// every incident ID; the translation service does not deep-merge dictionaries.
 
 import { CibIncidentCopy, OffenceId, SuspectId } from '../../pages/cib-bureau/cib.model';
 
 export type { CibIncidentCopy };
 
+export interface CibChartCopy {
+  peakSummary: string;
+  emptySummary: string;
+  viewTable: string;
+  fullData: string;
+  category: string;
+  incidents: string;
+}
+
 export interface CibContent {
+  chart: CibChartCopy;
   title: string;
   subtitle: string;
   /** The "Fictional incident data..." disclaimer line. */

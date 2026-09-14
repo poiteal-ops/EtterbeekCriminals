@@ -1,4 +1,5 @@
 import { Component, computed, input } from '@angular/core';
+import { CibChartCopy } from '../../i18n/content/cib-content.model';
 
 // Purely presentational bar chart. It renders whatever it is given — it must
 // never import cib-selectors.ts or own any filter/aggregation state. Bucket
@@ -16,9 +17,7 @@ interface RenderBar extends CibChartBucket {
   readonly position: number; // 0-100, along the category axis
   readonly size: number; // 0-100, this bar's share of the category axis
   readonly valuePct: number; // 0-100, this bar's share of `maximum`
-  readonly tickMod: number; // i % 4, used by CSS to thin ticks at narrow widths
   readonly barTop: number; // vertical orientation: rect y (SVG y grows downward)
-  readonly valueLabelY: number; // vertical orientation: value label y, clamped so it never floats off-chart
 }
 
 @Component({
@@ -27,6 +26,7 @@ interface RenderBar extends CibChartBucket {
   styleUrl: './cib-chart.scss',
 })
 export class CibChart {
+  readonly copy = input.required<CibChartCopy>();
   readonly buckets = input.required<readonly CibChartBucket[]>();
   readonly maximum = input.required<number>();
   readonly title = input.required<string>();
@@ -50,10 +50,19 @@ export class CibChart {
         position: (i * 100) / n,
         size: 100 / n,
         valuePct,
-        tickMod: i % 4,
         barTop,
-        valueLabelY: Math.max(barTop - 3, 8),
       };
+    });
+  });
+
+  // Four anchored ticks fit the narrowest panel without dropping any bars.
+  // Endpoints remain visible; full bucket labels/counts stay in the table.
+  protected readonly axisTicks = computed(() => {
+    const bars = this.bars();
+    const count = Math.min(bars.length, 4);
+    return Array.from({ length: count }, (_, i) => {
+      const index = count === 1 ? 0 : Math.round(i * (bars.length - 1) / (count - 1));
+      return bars[index];
     });
   });
 
@@ -66,9 +75,8 @@ export class CibChart {
   protected readonly summaryText = computed(() => {
     const peak = this.peakBucket();
     if (!peak || peak.count === 0) {
-      return 'No incidents recorded for the current filters.';
+      return this.copy().emptySummary;
     }
-    const unit = peak.count === 1 ? 'incident' : 'incidents';
-    return `Peak: ${peak.label} (${peak.count} ${unit}).`;
+    return this.copy().peakSummary.replace('{label}', peak.label).replace('{count}', String(peak.count));
   });
 }

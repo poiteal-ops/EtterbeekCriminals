@@ -1,8 +1,322 @@
 {
+  "cib": {
+    "chart": {
+      "peakSummary": "Vrh: {label} — incidenti: {count}.",
+      "emptySummary": "Nema incidenata za ove filtre.",
+      "viewTable": "Pogledaj tablicu podataka",
+      "fullData": "Potpuni podaci",
+      "category": "Kategorija",
+      "incidents": "Incidenti"
+    },
+    "title": "URED ZA KRIMINALISTIČKE OBAVJEŠTAJNE PODATKE",
+    "subtitle": "Usklađena arhiva incidenata — troje poznatih aktera, zajednički prezir prema pravu vlasništva.",
+    "archiveNote": "Izmišljeni podaci o incidentima, sastavljeni samo za internu obuku. Svaka sličnost sa stvarnim valom kriminala slučajna je i, iskreno, sasvim u njihovu stilu.",
+    "archiveWindowLabel": "DOSJE ZA OBUKU / 01.–28. KOL 2026",
+    "seoDescription": "Pregledajte arhivu Ureda za kriminalističke obavještajne podatke — 48 izmišljenih incidenata, troje osumnjičenih, nimalo kajanja.",
+    "suspectFilterLabel": "FILTRIRAJ PO OSUMNJIČENIKU",
+    "offenceFilterLabel": "FILTRIRAJ PO PREKRŠAJU",
+    "allSuspectsLabel": "SVI OSUMNJIČENICI",
+    "allOffencesLabel": "SVI PREKRŠAJI",
+    "resetLabel": "PONIŠTI FILTRE",
+    "resultCountLabel": "Prikazano je {count} zabilježenih incidenata.",
+    "metricTotalLabel": "ZABILJEŽENI INCIDENTI",
+    "metricOpenLabel": "OTVORENI SLUČAJEVI",
+    "metricClosureRateLabel": "STOPA ZATVARANJA",
+    "metricPeakHourLabel": "SAT S NAJVIŠE PRIJAVA",
+    "unavailableLabel": "NEDOSTUPNO",
+    "dailyChartTitle": "DNEVNA AKTIVNOST",
+    "dailyChartDescription": "Prijavljeni incidenti po danima tijekom arhivskog razdoblja.",
+    "offenceChartTitle": "UKUPNO PO PREKRŠAJU",
+    "offenceChartDescription": "Incidenti razvrstani po kategorijama.",
+    "hourlyChartTitle": "RASPORED PO SATIMA",
+    "hourlyChartDescription": "Kada se incidenti obično događaju tijekom 24 sata.",
+    "offenceLabels": {
+      "snack-theft": "KRAĐA HRANE",
+      "property-damage": "OŠTEĆENJE IMOVINE",
+      "public-disturbance": "REMEĆENJE REDA",
+      "obstruction": "OMETANJE"
+    },
+    "statusLabels": {
+      "open": "OTVOREN",
+      "closed": "ZATVOREN"
+    },
+    "relationshipLabels": {
+      "allied": "SAVEZNICI",
+      "rivals": "SUPARNICI",
+      "truce": "PRIMIRJE",
+      "not-applicable": "NIJE PRIMJENJIVO"
+    },
+    "dossierDescriptions": {
+      "le-criminel": "GLAVNI OSUMNJIČENIK. Boston Terrier, taktička ogrlica, bez poznatog kajanja. Prisutan u velikoj većini zabilježenih incidenata.",
+      "pikette": "GLAVNA SUUČESNICA. POVREMENO ZAKLETA NEPRIJATELJICA. Motivi su nejasni; savez je u najboljem slučaju prigodan.",
+      "sawito": "POMAGAČ, NE OSUMNJIČENIK. Prisutan pri većini incidenata. Stopa intervencije: zanemariva."
+    },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
+    "overlapNote": "Brojevi prikazuju sudjelovanja u prikazanim incidentima, uključujući suučesnike. Jedan incident može uključivati više osumnjičenika, pa zbroj može premašiti ukupan broj incidenata.",
+    "showMoreLabel": "PRIKAŽI VIŠE",
+    "viewDetailsLabel": "POGLEDAJ DOKAZE",
+    "hideDetailsLabel": "SAKRIJ DOKAZE",
+    "viewCaseLabel": "POGLEDAJ CIJELI DOSJE",
+    "emptyStateTitle": "NEMA ODGOVARAJUĆIH INCIDENATA",
+    "emptyStateBody": "Nijedan incident ne odgovara filtrima. Odaberite drugog osumnjičenika ili prekršaj ili poništite filtre za cijelu arhivu.",
+    "methodologyTitle": "METODOLOGIJA",
+    "methodologyBody": "Arhiva obuhvaća 48 izmišljenih incidenata od 1. do 28. kolovoza 2026. za internu obuku. Kategorije, sati i ishodi ilustrativni su i ne odražavaju stvarnu istragu.",
+    "cibKicker": "SADA DOSTUPNO ZA PREGLED",
+    "cibTitle": "URED ZA KRIMINALISTIČKE OBAVJEŠTAJNE PODATKE",
+    "cibBody": "Četrdeset osam incidenata. Troje osumnjičenih. Jedan zajednički ormar za spise. Povežite cijelu operaciju.",
+    "cibCta": "OTVORI ARHIVU",
+    "incidents": {
+      "CIB-001": {
+        "title": "Kroasan podijeljen u zajedničkoj operaciji",
+        "summary": "Le Criminel odvukao je pozornost, a Pikette odnijela pecivo u usklađenom napadu s dvije strane. Pronađena su dva komada, nijedan jestiv.",
+        "imageAlt": ""
+      },
+      "CIB-002": {
+        "title": "Šavovi jastuka testirani do popuštanja",
+        "summary": "Zajedničko kopanje po jastuku dobrog naslonjača rasulo je punjenje po dnevnoj sobi. Oboje poriču početak; oboje su bili prekriveni istim punjenjem.",
+        "imageAlt": ""
+      },
+      "CIB-003": {
+        "title": "Usklađena lažna uzbuna pred vratima",
+        "summary": "Le Criminel lajao je, a Pikette mijaukala u prividnoj solidarnosti. Nije pronađen uljez, dostava ni objašnjenje koje su htjeli dati.",
+        "imageAlt": ""
+      },
+      "CIB-004": {
+        "title": "Hodnik neprohodan po zajedničkom dogovoru",
+        "summary": "Oboje su istodobno zauzeli isti mali prostor i blokirali izlaz jedanaest minuta. Nitko se nije prvi pomaknuo.",
+        "imageAlt": ""
+      },
+      "CIB-005": {
+        "title": "Kruh prebačen u zaštitno čuvanje",
+        "summary": "Optuženi je odbio identificirati izvornog vlasnika. Mrvice su proturječile izjavi.",
+        "imageAlt": "Pola kruha na kuhinjskom podu, jedan kraj vidljivo izgrižen."
+      },
+      "CIB-006": {
+        "title": "Maska mobitela napukla pri nepromišljenoj fotografiji",
+        "summary": "Sawito je pokušao selfie sa psom u skoku i ispustio mobitel na jedini popločeni pod. Fotografija je, usput, uspjela.",
+        "imageAlt": "Sawito snima selfie sa psom koji skače prema kameri."
+      },
+      "CIB-007": {
+        "title": "Obiteljsko okupljanje prekinuto neželjenim mišljenjem",
+        "summary": "Subjekt se ubacio u tuđi razgovor i lajao dovoljno glasno da ga završi. Završio ga je.",
+        "imageAlt": ""
+      },
+      "CIB-008": {
+        "title": "Prolaz namjerno blokiran tijekom dostave",
+        "summary": "Sawito je stajao kuriru na putu dok je dugo razmatrao treba li potpis. Nije trebao. Ipak je ostao.",
+        "imageAlt": ""
+      },
+      "CIB-009": {
+        "title": "Tost presretnut štafetom osumnjičenika",
+        "summary": "Le Criminel srušio je tost s radne plohe; Pikette ga uhvatila prije poda. Podjela rada potvrđena, podjela tosta manje jasna.",
+        "imageAlt": ""
+      },
+      "CIB-010": {
+        "title": "Zavjesa srušena neovlaštenom suradnjom",
+        "summary": "Zavjesa je pala tijekom prema svjedocima usklađenog penjanja. Šipka nije preživjela. Nitko to nije primijetio.",
+        "imageAlt": ""
+      },
+      "CIB-011": {
+        "title": "Večernji dvoboj riješen uzajamnom dosadom",
+        "summary": "Dvanaest minuta gledanja za najbolju sunčanu mrlju završilo je istodobnim gubitkom interesa. Slučaj zatvoren zbog izostanka vrhunca.",
+        "imageAlt": ""
+      },
+      "CIB-012": {
+        "title": "Stubište osporavalo dvoje, oslobodio nitko",
+        "summary": "Le Criminel zauzeo je gornju stubu, Pikette donju. Promet je obustavljen tijekom cijelog spora.",
+        "imageAlt": ""
+      },
+      "CIB-013": {
+        "title": "Kockica sira uklonjena s nenadzirane daske",
+        "summary": "Osumnjičenik je prišao narescima sa sigurnošću prethodnog izviđanja. Jedna kockica nestala; osumnjičenik ravnodušan.",
+        "imageAlt": ""
+      },
+      "CIB-014": {
+        "title": "Lijeva cipela premještena izvan razumnog oporavka",
+        "summary": "Posljednji put viđena pod krevetom, kasnije pronađena u vrtu bez vezice i većeg dijela dostojanstva.",
+        "imageAlt": "Jedna tenisica u travi, bez vezice."
+      },
+      "CIB-015": {
+        "title": "Jastuk kauča zauzet tijekom posjeta bez pregovora",
+        "summary": "Osumnjičena je procijenila raspored sjedenja i sjela točno na već zauzeto mjesto. Gost se preselio.",
+        "imageAlt": "Pikette na srednjem jastuku kauča tijekom posjeta."
+      },
+      "CIB-016": {
+        "title": "Tipkovnica zauzeta prije zakazanog poziva",
+        "summary": "Subjekt je legao na tipkovnicu četiri minute prije videopoziva. Dva pokušaja uklanjanja. Poziv je počeo kasno.",
+        "imageAlt": ""
+      },
+      "CIB-017": {
+        "title": "Zajednički zločin, sporne zasluge za palu kobasicu",
+        "summary": "Oboje su prišli istoj kobasici iz suprotnih smjerova. Nitko nije ustupio. Kobasica nije preživjela dodir.",
+        "imageAlt": ""
+      },
+      "CIB-018": {
+        "title": "Naslon za ruku stradao u nepovezanom teritorijalnom sporu",
+        "summary": "Svađa oko prozorske klupice završila je ogrebotinama na naslonu i tragovima zuba pokraj. Nitko nije ciljao kauč. Svejedno je izgubio.",
+        "imageAlt": "Krupni plan ogrebotina na naslonu za ruku."
+      },
+      "CIB-019": {
+        "title": "Sastanak na kauču prerastao u zajedničko režanje prema prozoru",
+        "summary": "Oboje su nadzirali ulicu s naslona kauča, režeći u ritmičkom skladu koji istražitelji nazivaju izvanrednim.",
+        "imageAlt": "Pikette i Le Criminel jedno uz drugo na naslonu kauča, okrenuti prozoru."
+      },
+      "CIB-020": {
+        "title": "Ulaz blokiran barikadom dvaju tijela",
+        "summary": "Legli su njuškom uz rep pred vrata, znajući da je spomenuta šetnja. Barikada je izdržala šest minuta.",
+        "imageAlt": ""
+      },
+      "CIB-021": {
+        "title": "Tanjur slanine ispražnjen prije stola",
+        "summary": "Subjekt je presreo tanjur na visini plohe u dvije sekunde između štednjaka i stola. Zabilježen znatan okomiti napor.",
+        "imageAlt": ""
+      },
+      "CIB-022": {
+        "title": "Naočale za čitanje zgnječene sjedenjem",
+        "summary": "Sawitove naočale, ostavljene na naslonu samo sekundu, pronađene su pod foteljom s odvojenom lećom. Krivi fotelju.",
+        "imageAlt": ""
+      },
+      "CIB-023": {
+        "title": "Zračni prostor balkona branjen od jednog goluba",
+        "summary": "Subjekt je glasno izazvao goluba koji to nije tražio. Golub je otišao. Proglašena je odlučujuća pobjeda.",
+        "imageAlt": ""
+      },
+      "CIB-024": {
+        "title": "Vrata kupaonice namjerno držana zatvorenima izvana",
+        "summary": "Osumnjičena se naslonila na vrata kad je pristup očito bio potreban. Molbe za pomicanje uobičajeno su zanemarene.",
+        "imageAlt": ""
+      },
+      "CIB-025": {
+        "title": "Zdjela kokica opljačkana dvaput tijekom filma",
+        "summary": "Ista zdjela napadnuta je iz dva kuta. Oboje tvrde neovisno djelovanje. Usklađenost sugerira drukčije.",
+        "imageAlt": ""
+      },
+      "CIB-026": {
+        "title": "Biljka zajednički presađena na kuhinjski pod",
+        "summary": "Paprat nije preživjela pregled s kopanjem, udarcima šape i barem jednim punim kotrljanjem. Polumjer rasute zemlje: impresivan.",
+        "imageAlt": ""
+      },
+      "CIB-027": {
+        "title": "Potjera hodnikom završila neodlučeno, namještaj iznimno čitav",
+        "summary": "Kratka žustra potjera stala je kada su oboje došli do istog ugla iz različitih smjerova i zajednički odlučili stati.",
+        "imageAlt": ""
+      },
+      "CIB-028": {
+        "title": "Kuhinjski ulaz pod dvostrukom okupacijom",
+        "summary": "Nitko drugome nije ustupao prolaz. Dvadesetominutni zastoj odgodio je ručak svima, uključujući ljude.",
+        "imageAlt": ""
+      },
+      "CIB-029": {
+        "title": "Zajednički tost iznimno zaista podijeljen",
+        "summary": "Iz nejasnih razloga podijelili su pali tost bez incidenta. Istražitelji to smatraju anomalijom, ne obrascem.",
+        "imageAlt": ""
+      },
+      "CIB-030": {
+        "title": "Tanka zavjesa korištena kao neovlaštena penjalica",
+        "summary": "Osumnjičena se popela do klupice prije otpuštanja dviju od tri kukice. Spust je opisan kao uglavnom kontroliran.",
+        "imageAlt": ""
+      },
+      "CIB-031": {
+        "title": "Zajedničko bdjenje na prozoru zbog neodređene prijetnje",
+        "summary": "Četrdeset minuta sjedili su rame uz rame, pozorni na prijetnju koja nije došla niti dobila ime.",
+        "imageAlt": ""
+      },
+      "CIB-032": {
+        "title": "Raspremanje kupnje zaustavljeno suvišnim nadzorom",
+        "summary": "Sawito je zauzeo jedino malo mjesto potrebno za istovar vrećica. Cijelo je vrijeme komentirao, bez pomoći.",
+        "imageAlt": ""
+      },
+      "CIB-033": {
+        "title": "Maslac kušan izravno bez pribora",
+        "summary": "Osumnjičena je pronađena s licem u posudi za maslac, bez uvjerljivog objašnjenja. Poklopac je prije toga bio zatvoren.",
+        "imageAlt": ""
+      },
+      "CIB-034": {
+        "title": "Otirač premješten na sredinu ulice",
+        "summary": "Posljednji put na pragu, pronađen dvije kuće dalje: vlažan, izgrižen na uglu i okrenut naopako.",
+        "imageAlt": ""
+      },
+      "CIB-035": {
+        "title": "Obiteljski posjet poremećen selektivnom privrženošću",
+        "summary": "Osumnjičenik se odmah vezao samo uz jednog rođaka i ignorirao ostale cijelo poslijepodne. Rođak oduševljen. Ostali su zabilježili.",
+        "imageAlt": ""
+      },
+      "CIB-036": {
+        "title": "Prolaz zauzet punom dužinom u oba smjera",
+        "summary": "Subjekt je izabrao točno središte vrata za drijemanje s najvećom pokrivenošću. Promet je preusmjeren dva sata.",
+        "imageAlt": "Le Criminel ispružen na podu hodnika."
+      },
+      "CIB-037": {
+        "title": "Drugi kruh izgubljen pod gotovo istim okolnostima",
+        "summary": "Nije prvi incident s kruhom i vjerojatno neće biti posljednji. Tehnika je očito usavršena.",
+        "imageAlt": "Drugi kruh na podu, također izgrižen."
+      },
+      "CIB-038": {
+        "title": "Utvrdu od deka srušili vlastiti arhitekti",
+        "summary": "Zajednička građevina urušila se pod vlastitom ambicijom. Oboje su pronađeni u ostacima, naizgled ravnodušni.",
+        "imageAlt": ""
+      },
+      "CIB-039": {
+        "title": "Televizijsko zvono zamijenjeno stvarnim posjetiteljem",
+        "summary": "Subjekt je na zvono iz reklame odgovorio punom glasnoćom i uvjerenjem. Posjetitelj nikad nije pronađen.",
+        "imageAlt": ""
+      },
+      "CIB-040": {
+        "title": "Usisavač blokiran neočekivanom suradnjom",
+        "summary": "Obično protivnici iz načela, oboje su istodobno blokirali usisavač iz različitih kutova. Čišćenje je trajalo dvostruko.",
+        "imageAlt": ""
+      },
+      "CIB-041": {
+        "title": "Dostupan poklopac jogurta predvidljivo iskorišten",
+        "summary": "Poklopac je ostavljen na plohi za lizanje. Oboje su shvatili dogovor i proveli ga bez spora.",
+        "imageAlt": ""
+      },
+      "CIB-042": {
+        "title": "Ukrasni papir zajednički usitnjen prerano",
+        "summary": "Dar bez nadzora šest minuta postao je konfeti do povratka svjedoka. Oboje su izgledali zadovoljno.",
+        "imageAlt": ""
+      },
+      "CIB-043": {
+        "title": "Nova zajednička uzbuna na otvoru za poštu",
+        "summary": "Dnevna dostava izazvala je uobičajeni lavež jednoga i mijaukanje druge. Poštar već poznaje rutinu.",
+        "imageAlt": ""
+      },
+      "CIB-044": {
+        "title": "Krevet zauzet od ugla do ugla bez mjesta",
+        "summary": "Oboje su se dijagonalno smjestili prividno precizno, ne ostavljajući prostor predviđenom korisniku.",
+        "imageAlt": ""
+      },
+      "CIB-045": {
+        "title": "Posljednja kriška uzeta pod sumnjivom izlikom ravnoteže",
+        "summary": "Sawito je uzeo zadnju krišku i nepozvan objasnio da samo poravnava. Nitko ga nije tražio.",
+        "imageAlt": ""
+      },
+      "CIB-046": {
+        "title": "Vrtno crijevo probušeno na više mjesta",
+        "summary": "Četiri nova curenja tvore obrazac koji istražitelji nazivaju temeljitim. Subjekt je pronađen blizu, zadovoljan.",
+        "imageAlt": ""
+      },
+      "CIB-047": {
+        "title": "Videopoziv prekinut neželjenom naracijom",
+        "summary": "Sawito je kolegama uživo komentirao aktivnosti psa tijekom cijelog sastanka s klijentom. Nitko to nije tražio.",
+        "imageAlt": ""
+      },
+      "CIB-048": {
+        "title": "Izlaz blokiran do odluke koja nije donesena",
+        "summary": "Subjekt je jedanaest minuta stajao u otvorenim vratima odlučujući hoće li van. Blokirao je oba smjera, pa se vratio na kauč.",
+        "imageAlt": ""
+      }
+    }
+  },
   "common": {
     "fallbackBanner": "Ispričavamo se, radimo na tome — trenutno dostupno samo na engleskom."
   },
   "nav": {
+    "cib": "OBAVJEŠTAJNI PODACI",
     "home": "POČETNA",
     "about": "O NAMA",
     "story": "PRIČA O KRIMINALCU",

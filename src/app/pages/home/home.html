@@ -31,6 +31,13 @@
 
 <app-story-carousel></app-story-carousel>
 
+<section class="cib-teaser" aria-labelledby="cib-teaser-title">
+  <div class="kicker">{{ t.cib.cibKicker }}</div>
+  <h2 id="cib-teaser-title">{{ t.cib.cibTitle }}</h2>
+  <p>{{ t.cib.cibBody }}</p>
+  <a [routerLink]="translation.path('criminal-intelligence')">{{ t.cib.cibCta }}</a>
+</section>
+
 <div class="promo-wrap">
   <div class="promo">
     <a class="promo-main" [routerLink]="translation.path('shop')">

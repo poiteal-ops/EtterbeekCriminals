@@ -7,7 +7,12 @@
   <p class="chart-summary">{{ summaryText() }}</p>
 
   @if (orientation() === 'vertical') {
-    <svg viewBox="0 0 100 120" preserveAspectRatio="none" aria-hidden="true" class="chart-svg">
+    <div class="vertical-plot" aria-hidden="true">
+      <div class="value-axis">
+        <span class="value-label axis-maximum">{{ maximum() }}</span>
+        <span class="value-label axis-zero">0</span>
+      </div>
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="chart-svg">
       <line x1="0" y1="100" x2="100" y2="100" class="baseline" />
       @for (bar of bars(); track bar.key) {
         <rect
@@ -17,56 +22,39 @@
           [attr.width]="bar.size * 0.7"
           [attr.height]="100 - bar.barTop"
         ></rect>
-        <text
-          class="value-label"
-          text-anchor="middle"
-          [attr.x]="bar.position + bar.size / 2"
-          [attr.y]="bar.valueLabelY"
-        >{{ bar.count }}</text>
-        <text
-          class="tick-label"
-          text-anchor="middle"
-          [attr.x]="bar.position + bar.size / 2"
-          [attr.data-tick-mod]="bar.tickMod"
-          y="112"
-        >{{ bar.label }}</text>
       }
-    </svg>
+      </svg>
+      <div class="time-axis">
+        @for (tick of axisTicks(); track tick.key; let first = $first; let last = $last) {
+          <span class="tick-label" [class.first]="first" [class.last]="last"
+            [style.left.%]="first ? 0 : last ? 100 : tick.position + tick.size / 2">{{ tick.label }}</span>
+        }
+      </div>
+    </div>
   } @else {
-    <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" class="chart-svg">
-      <line x1="30" y1="0" x2="30" y2="100" class="baseline" />
+    <div class="category-plot" aria-hidden="true">
       @for (bar of bars(); track bar.key) {
-        <rect
-          class="bar"
-          [attr.x]="32"
-          [attr.y]="bar.position + bar.size * 0.15"
-          [attr.width]="(bar.valuePct / 100) * 60"
-          [attr.height]="bar.size * 0.7"
-        ></rect>
-        <text
-          class="tick-label"
-          text-anchor="end"
-          [attr.x]="28"
-          [attr.y]="bar.position + bar.size / 2 + 2"
-        >{{ bar.label }}</text>
-        <text
-          class="value-label"
-          text-anchor="start"
-          [attr.x]="34 + (bar.valuePct / 100) * 60"
-          [attr.y]="bar.position + bar.size / 2 + 2"
-        >{{ bar.count }}</text>
+        <div class="category-row">
+          <div class="category-heading">
+            <span class="tick-label">{{ bar.label }}</span>
+            <span class="value-label">{{ bar.count }}</span>
+          </div>
+          <svg viewBox="0 0 100 10" preserveAspectRatio="none" class="chart-svg">
+            <rect class="bar" x="0" y="0" [attr.width]="bar.valuePct" height="10"></rect>
+          </svg>
+        </div>
       }
-    </svg>
+    </div>
   }
 
   <details class="data-table">
-    <summary>View data table</summary>
+    <summary>{{ copy().viewTable }}</summary>
     <table>
-      <caption class="visually-hidden">{{ title() }} — full data</caption>
+      <caption class="visually-hidden">{{ title() }} — {{ copy().fullData }}</caption>
       <thead>
         <tr>
-          <th scope="col">Category</th>
-          <th scope="col">Incidents</th>
+          <th scope="col">{{ copy().category }}</th>
+          <th scope="col">{{ copy().incidents }}</th>
         </tr>
       </thead>
       <tbody>

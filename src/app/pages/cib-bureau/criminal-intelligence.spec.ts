@@ -23,6 +23,17 @@ function createComponent() {
 }
 
 describe('CriminalIntelligence', () => {
+  it('presents Sawito as the secondary dossier while keeping his filter usable', () => {
+    const fixture = createComponent();
+    const secondary = fixture.nativeElement.querySelector('.suspect-card--secondary') as HTMLButtonElement;
+    expect(secondary?.textContent).toContain('SAWITO');
+    expect(fixture.nativeElement.querySelectorAll('.suspect-card:not(.suspect-card--secondary)')).toHaveLength(2);
+    secondary.click();
+    fixture.detectChanges();
+    expect(secondary.getAttribute('aria-pressed')).toBe('true');
+    expect(fixture.componentInstance['metrics']().total).toBe(6);
+  });
+
   it('opens with all suspects/offences selected and six incidents visible', () => {
     const fixture = createComponent();
     const instance = fixture.componentInstance;

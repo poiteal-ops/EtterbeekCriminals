@@ -58,6 +58,7 @@
   <div class="main-grid">
     <div class="daily-chart">
       <app-cib-chart
+        [copy]="t.cib.chart"
         [buckets]="dailyBuckets()"
         [maximum]="dailyMaximum()"
         [title]="t.cib.dailyChartTitle"
@@ -71,6 +72,7 @@
         <button
           type="button"
           class="suspect-card"
+          [class.suspect-card--secondary]="card.id === 'sawito'"
           [class.active]="filters().suspect === card.id"
           [attr.aria-pressed]="filters().suspect === card.id"
           (click)="setSuspectFilter(card.id)"
@@ -91,6 +93,7 @@
 
   <div class="charts-row">
     <app-cib-chart
+      [copy]="t.cib.chart"
       [buckets]="offenceBuckets()"
       [maximum]="offenceMaximum()"
       [title]="t.cib.offenceChartTitle"
@@ -99,6 +102,7 @@
     ></app-cib-chart>
 
     <app-cib-chart
+      [copy]="t.cib.chart"
       [buckets]="hourlyBuckets()"
       [maximum]="hourlyMaximum()"
       [title]="t.cib.hourlyChartTitle"

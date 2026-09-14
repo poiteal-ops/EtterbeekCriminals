@@ -1,8 +1,322 @@
 {
+  "cib": {
+    "chart": {
+      "peakSummary": "Tipp: {label} — juhtumeid: {count}.",
+      "emptySummary": "Praegustele filtritele vastavaid juhtumeid pole.",
+      "viewTable": "Vaata andmetabelit",
+      "fullData": "Täielikud andmed",
+      "category": "Kategooria",
+      "incidents": "Juhtumid"
+    },
+    "title": "KRIMINAALLUURE BÜROO",
+    "subtitle": "Koordineeritud juhtumiarhiiv — kolm teadaolevat tegutsejat, ühine põlgus omandiõiguse vastu.",
+    "archiveNote": "Väljamõeldud juhtumiandmed, koostatud ainult sisekoolituseks. Igasugune sarnasus tõelise kuriteolainega on juhuslik ja ausalt öeldes neile väga omane.",
+    "archiveWindowLabel": "KOOLITUSTOIMIK / 01.–28. AUG 2026",
+    "seoDescription": "Sirvi Kriminaalluure Büroo arhiivi — 48 väljamõeldud juhtumit, kolm kahtlusalust, ei mingit kahetsust.",
+    "suspectFilterLabel": "FILTRI KAHTLUSALUSE JÄRGI",
+    "offenceFilterLabel": "FILTRI RIKKUMISE JÄRGI",
+    "allSuspectsLabel": "KÕIK KAHTLUSALUSED",
+    "allOffencesLabel": "KÕIK RIKKUMISED",
+    "resetLabel": "LÄHTESTA FILTRID",
+    "resultCountLabel": "Kuvatud on {count} registreeritud juhtumit.",
+    "metricTotalLabel": "REGISTREERITUD JUHTUMID",
+    "metricOpenLabel": "LAHTISED JUHTUMID",
+    "metricClosureRateLabel": "LÕPETAMISE MÄÄR",
+    "metricPeakHourLabel": "SAGEDASIM TEATATUD TUND",
+    "unavailableLabel": "POLE SAADAVAL",
+    "dailyChartTitle": "PÄEVANE TEGEVUS",
+    "dailyChartDescription": "Teatatud juhtumid päevade kaupa arhiiviperioodil.",
+    "offenceChartTitle": "RIKKUMISTE KOGUARVUD",
+    "offenceChartDescription": "Juhtumid kategooriate kaupa.",
+    "hourlyChartTitle": "JAOTUS KELLAAJA JÄRGI",
+    "hourlyChartDescription": "Millal juhtumid ööpäeva 24 tunni jooksul tavaliselt aset leiavad.",
+    "offenceLabels": {
+      "snack-theft": "TOIDUVARGUS",
+      "property-damage": "VARAKAHJUSTUS",
+      "public-disturbance": "AVALIKU KORRA RIKKUMINE",
+      "obstruction": "TAKISTAMINE"
+    },
+    "statusLabels": {
+      "open": "LAHTINE",
+      "closed": "LÕPETATUD"
+    },
+    "relationshipLabels": {
+      "allied": "LIITLASED",
+      "rivals": "RIVAALID",
+      "truce": "VAHERAHU",
+      "not-applicable": "EI KOHALDU"
+    },
+    "dossierDescriptions": {
+      "le-criminel": "PEAMINE KAHTLUSALUNE. Boston Terrier, taktikaline kaelarihm, teadaolev kahetsus puudub. Osaleb valdavas enamuses registreeritud juhtumitest.",
+      "pikette": "PEAMINE KAASOSALINE. AEGAJALT PÕLISVAENLANE. Motiivid ebaselged; liit on parimal juhul olukorrapõhine.",
+      "sawito": "VÕIMALDAJA, MITTE KAHTLUSALUNE. Enamiku juhtumite juures. Sekkumismäär: tühine."
+    },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
+    "overlapNote": "Arvud näitavad osalemisi kuvatud juhtumites, kaasosalised kaasa arvatud. Ühes juhtumis võib osaleda mitu kahtlusalust, mistõttu summa võib ületada juhtumite koguarvu.",
+    "showMoreLabel": "NÄITA ROHKEM",
+    "viewDetailsLabel": "VAATA TÕENDEID",
+    "hideDetailsLabel": "PEIDA TÕENDID",
+    "viewCaseLabel": "VAATA TÄIELIKKU TOIMIKUT",
+    "emptyStateTitle": "VASTAVAD JUHTUMID PUUDUVAD",
+    "emptyStateBody": "Ükski juhtum ei vasta filtritele. Vali teine kahtlusalune või rikkumine või lähtesta filtrid kogu arhiivi kuvamiseks.",
+    "methodologyTitle": "METOODIKA",
+    "methodologyBody": "Arhiiv hõlmab 48 väljamõeldud juhtumit 1.–28. augustist 2026 sisekoolituse tarbeks. Kategooriad, kellaajad ja tulemused on näitlikud ega kajasta tegelikku uurimist.",
+    "cibKicker": "NÜÜD TUTVUMISEKS AVATUD",
+    "cibTitle": "KRIMINAALLUURE BÜROO",
+    "cibBody": "Nelikümmend kaheksa juhtumit. Kolm kahtlusalust. Üks ühine toimikukapp. Võrdle kogu operatsiooni andmeid.",
+    "cibCta": "AVA ARHIIV",
+    "incidents": {
+      "CIB-001": {
+        "title": "Sarvesai jagatud ühisoperatsioonis",
+        "summary": "Le Criminel juhtis tähelepanu kõrvale, Pikette võttis saia koordineeritud kahepoolse lähenemise käigus. Leiti kaks tükki, kumbki polnud söödav.",
+        "imageAlt": ""
+      },
+      "CIB-002": {
+        "title": "Padjaõmblused katsetatud purunemiseni",
+        "summary": "Hea tugitooli padja ühiskaevamine levitas täidist üle elutoa. Mõlemad eitasid alustamist; mõlemad olid sama täidisega kaetud.",
+        "imageAlt": ""
+      },
+      "CIB-003": {
+        "title": "Sünkroonne valehäire ukse juures",
+        "summary": "Le Criminel haukus, Pikette näugus näilise solidaarsuse märgiks. Sissetungijat, saadetist ega vabatahtlikku selgitust ei leitud.",
+        "imageAlt": ""
+      },
+      "CIB-004": {
+        "title": "Koridor ühisel kokkuleppel läbimatu",
+        "summary": "Mõlemad hõivasid korraga sama väikese ala ja blokeerisid väljapääsu üheteistkümneks minutiks. Keegi ei liikunud esimesena.",
+        "imageAlt": ""
+      },
+      "CIB-005": {
+        "title": "Leib viidud kaitsvasse hoiule",
+        "summary": "Süüdistatav keeldus algset omanikku nimetamast. Puru rääkis ütlusele vastu.",
+        "imageAlt": "Pool pätsi köögipõrandal, üks ots nähtavalt näritud."
+      },
+      "CIB-006": {
+        "title": "Telefonikest mõranes läbimõtlemata pildistamisel",
+        "summary": "Sawito proovis hüppava koeraga selfit ja pillas telefoni maja ainsale plaatpõrandale. Foto tuli muide hästi välja.",
+        "imageAlt": "Sawito teeb selfit kaamera poole hüppava koeraga."
+      },
+      "CIB-007": {
+        "title": "Perekoosolek katkestatud küsimata arvamusega",
+        "summary": "Subjekt sekkus võõrasse vestlusse ja haukus piisavalt valjult selle lõpetamiseks. Vestlus lõppes.",
+        "imageAlt": ""
+      },
+      "CIB-008": {
+        "title": "Läbipääs tarne ajal tahtlikult blokeeritud",
+        "summary": "Sawito seisis kulleril ees, kaaludes pikalt allkirja vajalikkust. Seda polnud vaja. Ta jäi ikkagi seisma.",
+        "imageAlt": ""
+      },
+      "CIB-009": {
+        "title": "Hommikuröstsai tabatud kahtlusaluste teatejooksus",
+        "summary": "Le Criminel lükkas saia tööpinnalt maha; Pikette püüdis selle enne põrandat. Tööjaotus selge, saiajaotus vähem.",
+        "imageAlt": ""
+      },
+      "CIB-010": {
+        "title": "Kardin loata koostööga maha tõmmatud",
+        "summary": "Kardin langes tunnistajate sõnul koordineeritud ronimisel. Puu ei pidanud vastu. Kumbki ei paistnud märkavat.",
+        "imageAlt": ""
+      },
+      "CIB-011": {
+        "title": "Õhtune vastasseis lõppes vastastikuse igavusega",
+        "summary": "Kaksteist minutit jõllitamist parima päikeselaigu pärast lõppes samaaegse huvikaotusega. Juhtum lõpetatud haripunkti puudumise tõttu.",
+        "imageAlt": ""
+      },
+      "CIB-012": {
+        "title": "Treppi nõudis kaks osapoolt, vabastas mitte keegi",
+        "summary": "Le Criminel hõivas ülemise astme, Pikette alumise. Liiklus peatus kogu vaidluseks.",
+        "imageAlt": ""
+      },
+      "CIB-013": {
+        "title": "Juustukuubik eemaldatud valveta vaagnalt",
+        "summary": "Kahtlusalune lähenes suupistevaagnale eelneva luure kindlusega. Üks kuubik kadunud; kahtlusalune häirimatu.",
+        "imageAlt": ""
+      },
+      "CIB-014": {
+        "title": "Vasak king viidud mõistlikust taastamisulatusest välja",
+        "summary": "Viimati voodi all nähtud king leiti aiast ilma paela ja suurema osa väärikuseta.",
+        "imageAlt": "Üks paelata toss rohus."
+      },
+      "CIB-015": {
+        "title": "Diivanipadi külaskäigu ajal läbirääkimisteta hõivatud",
+        "summary": "Kahtlusalune hindas istekohti ja asus täpselt külalise juba hõivatud kohale. Külaline kolis.",
+        "imageAlt": "Pikette külaskäigu ajal diivani keskmisel padjal."
+      },
+      "CIB-016": {
+        "title": "Klaviatuur hõivatud enne plaanitud kõnet",
+        "summary": "Subjekt heitis klaviatuurile neli minutit enne videokõnet. Kaks eemaldamiskatset. Kõne algas hilja.",
+        "imageAlt": ""
+      },
+      "CIB-017": {
+        "title": "Ühine kuritegu, vaieldav au mahakukkunud vorsti eest",
+        "summary": "Mõlemad lähenesid samale vorstile vastassuundadest. Kumbki ei taganenud. Vorst kokkupuudet üle ei elanud.",
+        "imageAlt": ""
+      },
+      "CIB-018": {
+        "title": "Käetugi kaotatud kõrvalises territooriumitülis",
+        "summary": "Aknalaua tüli lõppes küünejälgedega käetoel ja hambajälgedega kõrval. Keegi ei sihtinud diivanit. See kaotas ikkagi.",
+        "imageAlt": "Lähivaade küünejälgedest diivani käetoel."
+      },
+      "CIB-019": {
+        "title": "Diivanikohtumine muutus ühiseks urinaks akna poole",
+        "summary": "Mõlemad valvasid tänavat seljatoelt, urisedes uurijate hinnangul tähelepanuväärses rütmilises üksmeeles.",
+        "imageAlt": "Pikette ja Le Criminel kõrvuti seljatoel akna poole vaatamas."
+      },
+      "CIB-020": {
+        "title": "Välisuks tõkestatud kahe kehaga",
+        "summary": "Nad lamasid nina vastu saba ukse ees, teades lubatud jalutuskäigust. Barrikaad pidas kuus minutit.",
+        "imageAlt": ""
+      },
+      "CIB-021": {
+        "title": "Peekonitaldrik tühjendatud enne lauda",
+        "summary": "Subjekt püüdis taldriku tööpinna kõrgusel pliidi ja laua vahelise kahe sekundi jooksul. Märgiti suurt vertikaalset pingutust.",
+        "imageAlt": ""
+      },
+      "CIB-022": {
+        "title": "Lugemisprillid istumisega purustatud",
+        "summary": "Sawito vaid hetkeks käetoele jäetud prillid leiti tooli alt ühe lahtise klaasiga. Ta süüdistab tooli.",
+        "imageAlt": ""
+      },
+      "CIB-023": {
+        "title": "Rõdu õhuruum kaitstud ühe tuvi vastu",
+        "summary": "Subjekt esitas lärmakalt väljakutse tuvi soovimata. Tuvi lahkus. Subjekt kuulutas otsustava võidu.",
+        "imageAlt": ""
+      },
+      "CIB-024": {
+        "title": "Vannitoa uks tahtlikult väljast suletuna hoitud",
+        "summary": "Kahtlusalune nõjatus uksele, kui ligipääsu oli ilmselgelt vaja. Liikumispalveid eirati nagu alati.",
+        "imageAlt": ""
+      },
+      "CIB-025": {
+        "title": "Popkornikaussi rüüstatud filmi ajal kaks korda",
+        "summary": "Sama kaussi rünnati kahest suunast. Mõlemad väitsid sõltumatut tegutsemist. Ajastus viitab muule.",
+        "imageAlt": ""
+      },
+      "CIB-026": {
+        "title": "Toataim ühiselt köögipõrandale ümber istutatud",
+        "summary": "Sõnajalg ei elanud üle kontrolli kaevamise, käpalöökide ja vähemalt ühe täispöördega. Mullaraadius: muljetavaldav.",
+        "imageAlt": ""
+      },
+      "CIB-027": {
+        "title": "Koridorijaht lõppes viigiga, mööbel erandlikult terve",
+        "summary": "Lühike hoogne tagaajamine lõppes, kui mõlemad jõudsid eri suundadest samasse nurka ja otsustasid koos peatuda.",
+        "imageAlt": ""
+      },
+      "CIB-028": {
+        "title": "Köögi sissepääs topeltokupatsiooni all",
+        "summary": "Kumbki ei andnud teisele teed. Kahekümneminutiline patiseis lükkas kõigi lõuna edasi, inimesed kaasa arvatud.",
+        "imageAlt": ""
+      },
+      "CIB-029": {
+        "title": "Jagatud röstsai erandlikult tõesti jagatud",
+        "summary": "Ebaselgel põhjusel jagati mahakukkunud sai vahejuhtumita. Uurijad peavad seda kõrvalekaldeks, mitte mustriks.",
+        "imageAlt": ""
+      },
+      "CIB-030": {
+        "title": "Õhuke kardin kasutatud loata ronimisrajatisena",
+        "summary": "Kahtlusalune ronis aknalauani enne kahe konksu lahtitulekut kolmest. Laskumist kirjeldati enamjaolt kontrollituna.",
+        "imageAlt": ""
+      },
+      "CIB-031": {
+        "title": "Ühine aknavalve määratlemata ohu tõttu",
+        "summary": "Nelikümmend minutit istuti õlg õla kõrval, valvel ohu eest, mis ei ilmunud ega saanud nime.",
+        "imageAlt": ""
+      },
+      "CIB-032": {
+        "title": "Ostude lahtipakkimine peatatud tarbetu järelevalvega",
+        "summary": "Sawito hõivas ainsa väikese ala, mida kottide tühjendamiseks vajati. Ta kommenteeris kogu tööd abistamata.",
+        "imageAlt": ""
+      },
+      "CIB-033": {
+        "title": "Võid maitstud otse, ilma söögiriistata",
+        "summary": "Kahtlusalune leiti näoga võitoosis ilma usutava selgituseta. Kaas oli tähelepanuväärselt varem suletud.",
+        "imageAlt": ""
+      },
+      "CIB-034": {
+        "title": "Uksematt viidud keset tänavat",
+        "summary": "Viimati lävel, leiti kaks maja edasi: niiske, ühest nurgast näritud ja valepidi.",
+        "imageAlt": ""
+      },
+      "CIB-035": {
+        "title": "Perevisiit rikutud valikulise kiindumusega",
+        "summary": "Kahtlusalune kiindus kohe ainult ühte sugulasse ja eiras teisi kogu pärastlõuna. Sugulane rõõmustas. Teised panid tähele.",
+        "imageAlt": ""
+      },
+      "CIB-036": {
+        "title": "Ukseava täispikkuses mõlemas suunas blokeeritud",
+        "summary": "Subjekt valis täpse keskpunkti maksimaalse katvusega uinakuks. Liiklus suunati ümber kaheks tunniks.",
+        "imageAlt": "Le Criminel pikali sirutatult koridoripõrandal."
+      },
+      "CIB-037": {
+        "title": "Teine päts kadunud peaaegu samadel asjaoludel",
+        "summary": "Mitte esimene leivajuhtum ega ilmselt viimane. Tehnikat on selgelt täiustatud.",
+        "imageAlt": "Teine samuti näritud päts põrandal."
+      },
+      "CIB-038": {
+        "title": "Tekilinnus lammutatud oma arhitektide poolt",
+        "summary": "Ühisrajatis varises oma ambitsiooni all. Mõlemad leiti jäänustest, näiliselt häirimatud.",
+        "imageAlt": ""
+      },
+      "CIB-039": {
+        "title": "Televisiooni uksekell peetud päris külaliseks",
+        "summary": "Subjekt vastas reklaami uksekellale täie helitugevuse ja veendumusega. Külalist ei leitud kunagi.",
+        "imageAlt": ""
+      },
+      "CIB-040": {
+        "title": "Tolmuimeja blokeeritud ootamatu koostööga",
+        "summary": "Tavaliselt põhimõttelised vastased blokeerisid masina korraga eri nurkadest. Koristamine kestis kaks korda kauem.",
+        "imageAlt": ""
+      },
+      "CIB-041": {
+        "title": "Kättesaadav jogurtikaas ettearvatult ära kasutatud",
+        "summary": "Kaas jäeti tööpinnale lakkumiseks. Mõlemad mõistsid kokkulepet ja täitsid selle vaidluseta.",
+        "imageAlt": ""
+      },
+      "CIB-042": {
+        "title": "Kingipaber ühiselt enneaegu ribastatud",
+        "summary": "Kuus minutit valveta kink oli naasmisel konfettideks muutunud. Mõlemad paistsid rahulolevad.",
+        "imageAlt": ""
+      },
+      "CIB-043": {
+        "title": "Uus koordineeritud häire postipilu juures",
+        "summary": "Päevane post vallandas tavalise haukumise ühelt ja näugumise teiselt. Postiljon tunneb rutiini.",
+        "imageAlt": ""
+      },
+      "CIB-044": {
+        "title": "Voodi nurgast nurgani hõivatud, vaba ruumita",
+        "summary": "Mõlemad sättisid end näilise täpsusega diagonaali, jätmata ettenähtud kasutajale kohta.",
+        "imageAlt": ""
+      },
+      "CIB-045": {
+        "title": "Viimane viil võetud küsitava tasakaalustamise ettekäändega",
+        "summary": "Sawito võttis viimase viilu ja selgitas küsimata, et vaid tasakaalustab. Keegi polnud palunud.",
+        "imageAlt": ""
+      },
+      "CIB-046": {
+        "title": "Aiavoolik mitmest kohast läbi torgatud",
+        "summary": "Neli uut leket moodustavad uurijate sõnul põhjaliku mustri. Subjekt leiti rahulolevana lähedusest.",
+        "imageAlt": ""
+      },
+      "CIB-047": {
+        "title": "Videokõne katkestatud küsimata otsekommentaariga",
+        "summary": "Sawito kommenteeris kolleegidele koera tegevusi kogu kliendikohtumise vältel. Keegi polnud seda palunud.",
+        "imageAlt": ""
+      },
+      "CIB-048": {
+        "title": "Väljapääs blokeeritud otsuseni, mida ei tulnud",
+        "summary": "Subjekt seisis avatud ukseavas üksteist minutit, kaaludes väljumist. Mõlemad suunad olid tõkestatud, enne kui ta diivanile naasis.",
+        "imageAlt": ""
+      }
+    }
+  },
   "common": {
     "fallbackBanner": "Vabandame, tegeleme sellega — praegu saadaval ainult inglise keeles."
   },
   "nav": {
+    "cib": "LUURE",
     "home": "AVALEHT",
     "about": "MEIST",
     "story": "KURJATEGIJA LUGU",

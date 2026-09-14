@@ -1,8 +1,322 @@
 {
+  "cib": {
+    "chart": {
+      "peakSummary": "Vârf: {label} — incidente: {count}.",
+      "emptySummary": "Nu există incidente pentru aceste filtre.",
+      "viewTable": "Vezi tabelul de date",
+      "fullData": "Date complete",
+      "category": "Categorie",
+      "incidents": "Incidente"
+    },
+    "title": "BIROUL DE INFORMAȚII CRIMINALE",
+    "subtitle": "Arhivă coordonată de incidente — trei operatori cunoscuți, același dispreț față de dreptul de proprietate.",
+    "archiveNote": "Date fictive despre incidente, compilate exclusiv pentru instruire internă. Orice asemănare cu un val real de infracțiuni este întâmplătoare și, sincer, foarte caracteristică.",
+    "archiveWindowLabel": "DOSAR DE INSTRUIRE / 01–28 AUG 2026",
+    "seoDescription": "Consultați arhiva Biroului de Informații Criminale — 48 de incidente fictive, trei suspecți, zero remușcări.",
+    "suspectFilterLabel": "FILTRARE DUPĂ SUSPECT",
+    "offenceFilterLabel": "FILTRARE DUPĂ ABATERE",
+    "allSuspectsLabel": "TOȚI SUSPECȚII",
+    "allOffencesLabel": "TOATE ABATERILE",
+    "resetLabel": "RESETEAZĂ FILTRELE",
+    "resultCountLabel": "Se afișează {count} incidente înregistrate.",
+    "metricTotalLabel": "INCIDENTE ÎNREGISTRATE",
+    "metricOpenLabel": "CAZURI DESCHISE",
+    "metricClosureRateLabel": "RATĂ DE ÎNCHIDERE",
+    "metricPeakHourLabel": "ORA CU CELE MAI MULTE RAPORTĂRI",
+    "unavailableLabel": "INDISPONIBIL",
+    "dailyChartTitle": "ACTIVITATE ZILNICĂ",
+    "dailyChartDescription": "Incidente raportate zilnic în perioada arhivei.",
+    "offenceChartTitle": "TOTALURI PE ABATERI",
+    "offenceChartDescription": "Incidente împărțite pe categorii.",
+    "hourlyChartTitle": "DISTRIBUȚIE ORARĂ",
+    "hourlyChartDescription": "Când tind să apară incidentele de-a lungul celor 24 de ore.",
+    "offenceLabels": {
+      "snack-theft": "FURT DE MÂNCARE",
+      "property-damage": "DISTRUGERI MATERIALE",
+      "public-disturbance": "TULBURAREA LINIȘTII",
+      "obstruction": "OBSTRUCȚIONARE"
+    },
+    "statusLabels": {
+      "open": "DESCHIS",
+      "closed": "ÎNCHIS"
+    },
+    "relationshipLabels": {
+      "allied": "ALIAȚI",
+      "rivals": "RIVALI",
+      "truce": "ARMISTIȚIU",
+      "not-applicable": "NU SE APLICĂ"
+    },
+    "dossierDescriptions": {
+      "le-criminel": "SUSPECT PRINCIPAL. Boston Terrier, zgardă tactică, fără remușcări cunoscute. Prezent la marea majoritate a incidentelor înregistrate.",
+      "pikette": "COMPLICE PRINCIPALĂ. UNEORI DUȘMAN DE MOARTE. Motive neclare; alianța este cel mult conjuncturală.",
+      "sawito": "FACILITATOR, NU SUSPECT. Prezent la majoritatea incidentelor. Rată de intervenție: neglijabilă."
+    },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
+    "overlapNote": "Cifrele numără participările la incidentele afișate, inclusiv complicii. Un incident poate implica mai mulți suspecți, deci suma poate depăși totalul incidentelor.",
+    "showMoreLabel": "ARATĂ MAI MULTE",
+    "viewDetailsLabel": "VEZI PROBELE",
+    "hideDetailsLabel": "ASCUNDE PROBELE",
+    "viewCaseLabel": "VEZI DOSARUL COMPLET",
+    "emptyStateTitle": "NICIUN INCIDENT CORESPUNZĂTOR",
+    "emptyStateBody": "Niciun incident nu corespunde filtrelor. Încercați alt suspect sau altă abatere ori resetați filtrele pentru întreaga arhivă.",
+    "methodologyTitle": "METODOLOGIE",
+    "methodologyBody": "Arhiva cuprinde 48 de incidente fictive înregistrate între 1 și 28 august 2026 pentru instruire internă. Categoriile, orele și rezultatele sunt ilustrative și nu reflectă o anchetă reală.",
+    "cibKicker": "ACUM DISPONIBIL PENTRU CONSULTARE",
+    "cibTitle": "BIROUL DE INFORMAȚII CRIMINALE",
+    "cibBody": "Patruzeci și opt de incidente. Trei suspecți. Un singur fișet comun. Corelați întreaga operațiune.",
+    "cibCta": "DESCHIDE ARHIVA",
+    "incidents": {
+      "CIB-001": {
+        "title": "Croasant împărțit într-o operațiune comună",
+        "summary": "Le Criminel a distras atenția, iar Pikette a extras produsul într-o abordare coordonată pe două fronturi. Recuperate două bucăți, niciuna comestibilă.",
+        "imageAlt": ""
+      },
+      "CIB-002": {
+        "title": "Cusăturile pernei testate până la cedare",
+        "summary": "Săpătura comună în perna fotoliului bun a împrăștiat umplutură prin sufragerie. Ambii neagă că au început; ambii erau acoperiți cu aceeași umplutură.",
+        "imageAlt": ""
+      },
+      "CIB-003": {
+        "title": "Alarmă sincronizată fără motiv la ușă",
+        "summary": "Le Criminel a lătrat; Pikette a mieunat în aparentă solidaritate. Nici intrus, nici livrare, nici explicație oferită de suspecți.",
+        "imageAlt": ""
+      },
+      "CIB-004": {
+        "title": "Coridor devenit impracticabil prin acord comun",
+        "summary": "Ambii au ocupat simultan același mic spațiu, blocând ieșirea unsprezece minute. Niciunul nu s-a mișcat primul.",
+        "imageAlt": ""
+      },
+      "CIB-005": {
+        "title": "Pâine transferată în custodie protectoare",
+        "summary": "Acuzatul a refuzat să identifice proprietarul inițial. Firimiturile contraziceau declarația.",
+        "imageAlt": "O jumătate de pâine pe podeaua bucătăriei, cu un capăt vizibil ros."
+      },
+      "CIB-006": {
+        "title": "Husă de telefon crăpată la o ședință foto neinspirată",
+        "summary": "Sawito încerca un selfie cu câinele în salt și a scăpat telefonul pe singura podea cu gresie. Fotografia, de altfel, a ieșit bine.",
+        "imageAlt": "Sawito făcând un selfie cu câinele sărind spre cameră."
+      },
+      "CIB-007": {
+        "title": "Reuniune de familie întreruptă de o opinie nesolicitată",
+        "summary": "Subiectul a intervenit într-o conversație străină, lătrând la volumul necesar pentru a o încheia. A încheiat-o.",
+        "imageAlt": ""
+      },
+      "CIB-008": {
+        "title": "Trecere blocată intenționat în timpul livrării",
+        "summary": "Sawito stătea în calea curierului, analizând îndelung dacă trebuia semnat. Nu trebuia. A rămas acolo oricum.",
+        "imageAlt": ""
+      },
+      "CIB-009": {
+        "title": "Pâine prăjită interceptată de o ștafetă de suspecți",
+        "summary": "Le Criminel a doborât felia de pe blat; Pikette a prins-o înainte de podea. Diviziunea muncii constatată, împărțirea prăzii mai puțin clară.",
+        "imageAlt": ""
+      },
+      "CIB-010": {
+        "title": "Perdea doborâtă prin efort comun neautorizat",
+        "summary": "Perdeaua a căzut în timpul unei cățărări descrise de martori ca fiind coordonată. Bara nu a supraviețuit. Nimeni nu părea să observe.",
+        "imageAlt": ""
+      },
+      "CIB-011": {
+        "title": "Confruntare de seară încheiată prin plictiseală reciprocă",
+        "summary": "Douăsprezece minute de priviri pentru cea mai bună rază de soare s-au terminat când ambii și-au pierdut simultan interesul. Caz închis din lipsă de deznodământ.",
+        "imageAlt": ""
+      },
+      "CIB-012": {
+        "title": "Scară disputată de două părți, eliberată de niciuna",
+        "summary": "Le Criminel ocupa treapta de sus, Pikette pe cea de jos. Circulația a fost suspendată pe durata disputei.",
+        "imageAlt": ""
+      },
+      "CIB-013": {
+        "title": "Cub de brânză luat de pe un platou nesupravegheat",
+        "summary": "Suspectul s-a apropiat cu siguranța unei recunoașteri anterioare. Un cub lipsea; suspectul rămânea nepăsător.",
+        "imageAlt": ""
+      },
+      "CIB-014": {
+        "title": "Pantof stâng mutat dincolo de recuperarea rezonabilă",
+        "summary": "Văzut ultima dată sub pat, găsit apoi în grădină fără un șiret și cea mai mare parte a demnității.",
+        "imageAlt": "Un pantof sport în iarbă, fără șiret."
+      },
+      "CIB-015": {
+        "title": "Pernă de canapea revendicată în timpul vizitei fără negociere",
+        "summary": "Suspecta a evaluat locurile și s-a așezat exact unde stătea deja un musafir. Musafirul s-a mutat.",
+        "imageAlt": "Pikette pe perna centrală a canapelei în timpul unei vizite."
+      },
+      "CIB-016": {
+        "title": "Tastatură ocupată înaintea unui apel programat",
+        "summary": "Subiectul s-a întins pe tastatură cu patru minute înaintea videoconferinței. Două tentative de îndepărtare. Apelul a început târziu.",
+        "imageAlt": ""
+      },
+      "CIB-017": {
+        "title": "Infracțiune comună, merit disputat pentru un cârnat căzut",
+        "summary": "Ambii s-au apropiat din sensuri opuse de același cârnat. Nimeni nu a cedat. Cârnatul nu a supraviețuit contactului.",
+        "imageAlt": ""
+      },
+      "CIB-018": {
+        "title": "Braț de canapea pierdut într-o dispută teritorială fără legătură",
+        "summary": "Cearta pentru pervaz a lăsat zgârieturi pe braț și urme de dinți alături. Nimeni nu viza canapeaua. Ea a pierdut oricum.",
+        "imageAlt": "Prim-plan cu zgârieturi pe brațul canapelei."
+      },
+      "CIB-019": {
+        "title": "Summit pe canapea transformat în mârâit comun la fereastră",
+        "summary": "Ambii supravegheau strada de pe spătar, mârâind într-un unison ritmic considerat remarcabil de anchetatori.",
+        "imageAlt": "Pikette și Le Criminel alături pe spătar, privind spre fereastră."
+      },
+      "CIB-020": {
+        "title": "Ușă de intrare baricadată cu două corpuri",
+        "summary": "S-au întins bot la coadă în fața ușii, deși știau că se pomenise o plimbare. Baricada a ținut șase minute.",
+        "imageAlt": ""
+      },
+      "CIB-021": {
+        "title": "Farfurie cu bacon golită înainte să ajungă la masă",
+        "summary": "Subiectul a interceptat farfuria la nivelul blatului în cele două secunde dintre aragaz și masă. Efort vertical considerabil constatat.",
+        "imageAlt": ""
+      },
+      "CIB-022": {
+        "title": "Ochelari de citit striviți și compromiși structural",
+        "summary": "Ochelarii lui Sawito, lăsați pe brațul fotoliului «doar o secundă», au fost găsiți dedesubt cu o lentilă desprinsă. Dă vina pe fotoliu.",
+        "imageAlt": ""
+      },
+      "CIB-023": {
+        "title": "Spațiul aerian al balconului apărat de un singur porumbel",
+        "summary": "Subiectul a provocat zgomotos un porumbel care nu ceruse nimic. Porumbelul a plecat. Subiectul a proclamat o victorie decisivă.",
+        "imageAlt": ""
+      },
+      "CIB-024": {
+        "title": "Ușa băii ținută deliberat închisă din exterior",
+        "summary": "Suspecta s-a sprijinit de ușă când accesul era clar necesar. Cererile de deplasare au fost ignorate, ca de obicei.",
+        "imageAlt": ""
+      },
+      "CIB-025": {
+        "title": "Bol de floricele atacat de două ori în timpul filmului",
+        "summary": "Același bol a fost prădat din două unghiuri. Ambii au pretins că au acționat independent. Sincronizarea sugerează altceva.",
+        "imageAlt": ""
+      },
+      "CIB-026": {
+        "title": "Plantă replantată colectiv pe podeaua bucătăriei",
+        "summary": "Feriga nu a rezistat inspecției cu săpături, lovituri de labă și cel puțin o rostogolire completă. Raza pământului împrăștiat: impresionantă.",
+        "imageAlt": ""
+      },
+      "CIB-027": {
+        "title": "Urmărire pe coridor încheiată la egalitate, mobila intactă de data aceasta",
+        "summary": "Cursa scurtă și energică s-a terminat când ambii au ajuns la același colț din direcții diferite și au decis împreună să se oprească.",
+        "imageAlt": ""
+      },
+      "CIB-028": {
+        "title": "Intrare în bucătărie sub dublă ocupație",
+        "summary": "Niciunul nu ceda trecerea celuilalt. Blocajul de douăzeci de minute a întârziat prânzul tuturor, inclusiv al oamenilor.",
+        "imageAlt": ""
+      },
+      "CIB-029": {
+        "title": "Pâine prăjită împărțită, neobișnuit, chiar împărțită",
+        "summary": "Din motive neclare, suspecții au împărțit felia căzută fără incident. Anchetatorii o consideră anomalie, nu tipar.",
+        "imageAlt": ""
+      },
+      "CIB-030": {
+        "title": "Perdea subțire folosită ca structură de cățărat neautorizată",
+        "summary": "Suspecta a urcat până la pervaz înainte să cedeze două din cele trei cârlige. Coborâre descrisă drept «în mare parte controlată».",
+        "imageAlt": ""
+      },
+      "CIB-031": {
+        "title": "Veghe comună la fereastră pentru o amenințare neprecizată",
+        "summary": "Patruzeci de minute au stat umăr la umăr, atenți la o amenințare care nu a apărut și nu a fost numită.",
+        "imageAlt": ""
+      },
+      "CIB-032": {
+        "title": "Despachetarea cumpărăturilor suspendată pentru supraveghere inutilă",
+        "summary": "Sawito ocupa exact micul spațiu necesar descărcării sacoșelor. A comentat întreaga operațiune fără să ajute.",
+        "imageAlt": ""
+      },
+      "CIB-033": {
+        "title": "Unt gustat direct, fără ustensile",
+        "summary": "Suspecta a fost găsită cu fața în untieră, fără explicație plauzibilă. De remarcat că înainte capacul fusese închis.",
+        "imageAlt": ""
+      },
+      "CIB-034": {
+        "title": "Preș mutat în mijlocul străzii",
+        "summary": "Văzut la prag, recuperat două case mai departe: umed, ros la un colț și întors greșit.",
+        "imageAlt": ""
+      },
+      "CIB-035": {
+        "title": "Vizită de familie deturnată prin afecțiune selectivă",
+        "summary": "Suspectul s-a atașat instantaneu de o singură rudă și i-a ignorat pe ceilalți toată după-amiaza. Ruda era încântată. Restul au luat notă.",
+        "imageAlt": ""
+      },
+      "CIB-036": {
+        "title": "Trecere ocupată complet, ambele sensuri blocate",
+        "summary": "Subiectul a ales centrul exact al ușii pentru un somn cu acoperire maximă. Circulația a fost deviată două ore.",
+        "imageAlt": "Le Criminel întins pe podeaua coridorului."
+      },
+      "CIB-037": {
+        "title": "A doua pâine pierdută în împrejurări aproape identice",
+        "summary": "Nu este primul incident cu pâine și probabil nu va fi ultimul. Tehnica a fost evident perfecționată.",
+        "imageAlt": "O a doua pâine pe podea, la fel de roasă."
+      },
+      "CIB-038": {
+        "title": "Fort din pături demolat de propriii arhitecți",
+        "summary": "Construcția comună s-a prăbușit sub propria ambiție. Ambii suspecți au fost găsiți printre resturi, aparent nepăsători.",
+        "imageAlt": ""
+      },
+      "CIB-039": {
+        "title": "Sonerie de televizor confundată cu un vizitator real",
+        "summary": "Subiectul a răspuns soneriei dintr-o reclamă la volum maxim și cu deplină convingere. Niciun vizitator nu a fost găsit.",
+        "imageAlt": ""
+      },
+      "CIB-040": {
+        "title": "Aspirator blocat prin cooperare neașteptată",
+        "summary": "De regulă adversari din principiu, ambii au blocat simultan aspiratorul din unghiuri diferite. Curățenia a durat dublu.",
+        "imageAlt": ""
+      },
+      "CIB-041": {
+        "title": "Capac de iaurt lăsat la îndemână, exploatat previzibil",
+        "summary": "Capacul era pe blat pentru a fi lins. Ambii au înțeles și executat aranjamentul fără ceartă.",
+        "imageAlt": ""
+      },
+      "CIB-042": {
+        "title": "Hârtie de cadou mărunțită împreună înainte de termen",
+        "summary": "Un cadou nesupravegheat șase minute devenise confetti la întoarcerea martorilor. Ambii păreau mulțumiți.",
+        "imageAlt": ""
+      },
+      "CIB-043": {
+        "title": "Nouă alertă coordonată la fanta poștală",
+        "summary": "Livrarea zilnică a declanșat obișnuitele lătrături ale unuia și mieunături ale celeilalte. Poștașul cunoaște deja rutina.",
+        "imageAlt": ""
+      },
+      "CIB-044": {
+        "title": "Pat ocupat din colț în colț fără spațiu utilizabil",
+        "summary": "Ambii s-au așezat diagonal cu precizie aparentă, fără a lăsa loc ocupantului prevăzut.",
+        "imageAlt": ""
+      },
+      "CIB-045": {
+        "title": "Ultima felie revendicată sub pretext îndoielnic de echilibrare",
+        "summary": "Sawito a luat ultima felie explicând nesolicitat că «doar echilibrează lucrurile». Nimeni nu îi ceruse.",
+        "imageAlt": ""
+      },
+      "CIB-046": {
+        "title": "Furtun de grădină perforat în mai multe puncte",
+        "summary": "Patru scurgeri noi formează un tipar descris drept «temeinic». Subiectul a fost găsit alături, mulțumit.",
+        "imageAlt": ""
+      },
+      "CIB-047": {
+        "title": "Videoconferință întreruptă de comentariu nesolicitat",
+        "summary": "Sawito a relatat în direct activitățile câinelui colegilor pe întreaga durată a unei întâlniri cu un client. Nimeni nu ceruse asta.",
+        "imageAlt": ""
+      },
+      "CIB-048": {
+        "title": "Ieșire blocată până la o decizie niciodată luată",
+        "summary": "Subiectul a stat unsprezece minute în ușa deschisă hotărând dacă iese, blocând ambele sensuri, apoi s-a întors pe canapea.",
+        "imageAlt": ""
+      }
+    }
+  },
   "common": {
     "fallbackBanner": "Ne pare rău, lucrăm la asta — deocamdată disponibil doar în engleză."
   },
   "nav": {
+    "cib": "INFORMAȚII",
     "home": "ACASĂ",
     "about": "DESPRE",
     "story": "POVESTEA UNUI INFRACTOR",

@@ -50,6 +50,7 @@ export interface SiteContent {
     aDayWithBestie: string;
     kandeNadege: string;
     blog: string;
+    cib: string;
     shop: string;
   };
   home: {

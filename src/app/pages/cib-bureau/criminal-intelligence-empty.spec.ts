@@ -82,8 +82,9 @@ describe('CriminalIntelligence — zero-match rendering (rule 8)', () => {
     // maximum must never be 0 in a way that would divide-by-zero into NaN.
     expect(instance['dailyMaximum']()).toBe(0);
 
-    const svgs = fixture.nativeElement.querySelectorAll('app-cib-chart svg');
-    expect(svgs.length).toBe(3);
+    const charts = fixture.nativeElement.querySelectorAll('app-cib-chart') as NodeListOf<HTMLElement>;
+    expect(charts.length).toBe(3);
+    for (const chart of charts) expect(chart.querySelector('svg rect.bar')).not.toBeNull();
     expect(fixture.nativeElement.querySelector('img[src=""]')).toBeNull();
     expect((fixture.nativeElement.textContent as string)).not.toMatch(/\bNaN\b/);
   });

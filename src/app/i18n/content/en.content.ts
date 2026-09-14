@@ -20,6 +20,7 @@ export const EN_CONTENT: SiteContent = {
     aDayWithBestie: 'A DAY WITH BESTIE',
     kandeNadege: 'KANDE NADÈGE',
     blog: 'BLOG',
+    cib: 'INTELLIGENCE',
     shop: 'SHOP',
   },
   home: {
@@ -621,6 +622,14 @@ export const EN_CONTENT: SiteContent = {
     },
   ],
   cib: {
+    chart: {
+      peakSummary: 'Peak: {label} — incidents: {count}.',
+      emptySummary: 'No incidents recorded for the current filters.',
+      viewTable: 'View data table',
+      fullData: 'Full data',
+      category: 'Category',
+      incidents: 'Incidents',
+    },
     title: 'CRIMINAL INTELLIGENCE BUREAU',
     subtitle: 'Coordinated incident archive — three known operators, one shared disregard for property law.',
     archiveNote:
