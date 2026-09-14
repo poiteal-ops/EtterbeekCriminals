@@ -61,6 +61,7 @@
     "viewDetailsLabel": "VOIR LES PREUVES",
     "hideDetailsLabel": "MASQUER LES PREUVES",
     "viewCaseLabel": "VOIR LE DOSSIER COMPLET",
+    "noEvidenceLabel": "AUCUNE PREUVE AU DOSSIER",
     "emptyStateTitle": "AUCUN INCIDENT CORRESPONDANT",
     "emptyStateBody": "Aucun incident ne correspond à cette combinaison de filtres. Essayez un autre suspect ou une autre infraction, ou réinitialisez pour consulter toutes les archives.",
     "methodologyTitle": "MÉTHODOLOGIE",
@@ -78,7 +79,7 @@
       "CIB-002": {
         "title": "Coutures d’un coussin testées jusqu’à rupture",
         "summary": "Une excavation conjointe du coussin du bon fauteuil a dispersé du rembourrage dans le salon. Les deux suspects nient avoir commencé ; tous deux en étaient couverts.",
-        "imageAlt": ""
+        "imageAlt": "Couture déchirée et rembourrage apparent sur un coussin de canapé."
       },
       "CIB-003": {
         "title": "Alerte synchronisée à la porte, sans motif",
@@ -88,7 +89,7 @@
       "CIB-004": {
         "title": "Couloir rendu impraticable d’un commun accord",
         "summary": "Les deux suspects ont choisi d’occuper simultanément le même petit espace du couloir, bloquant la sortie pendant onze minutes. Aucun n’a bougé le premier.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel en laisse, juste à l'entrée carrelée."
       },
       "CIB-005": {
         "title": "Pain placé sous protection judiciaire",
@@ -103,7 +104,7 @@
       "CIB-007": {
         "title": "Réunion familiale interrompue par un avis non sollicité",
         "summary": "Le sujet s’est immiscé dans une conversation qui ne le concernait pas, aboyant à un volume calculé pour y mettre fin. Mission accomplie.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel assis solennellement, en attente du verdict."
       },
       "CIB-008": {
         "title": "Passage délibérément bloqué pendant une livraison",
@@ -148,7 +149,7 @@
       "CIB-016": {
         "title": "Clavier d’ordinateur occupé avant un appel prévu",
         "summary": "Le sujet s’est allongé sur le clavier quatre minutes avant une visioconférence. Deux tentatives d’évacuation ont échoué. L’appel a commencé en retard.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel affalé sur le dos sur un tapis, totalement détendu."
       },
       "CIB-017": {
         "title": "Crime commun, mérite disputé, autour d’une saucisse tombée",
@@ -173,17 +174,17 @@
       "CIB-021": {
         "title": "Assiette de bacon vidée avant d’atteindre la table",
         "summary": "Le sujet a intercepté l’assiette à hauteur du plan de travail pendant les deux secondes entre la cuisinière et la table. Les enquêteurs relèvent un effort vertical considérable.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel observant intensément une assiette pleine, vu d'en bas."
       },
       "CIB-022": {
         "title": "Lunettes de lecture écrasées et structurellement compromises",
         "summary": "Les lunettes de Sawito, posées sur l’accoudoir « juste une seconde », ont été retrouvées sous le fauteuil, un verre détaché. Il accuse le fauteuil.",
-        "imageAlt": ""
+        "imageAlt": "Sawito, lunettes sur le nez, joue contre joue avec le chien."
       },
       "CIB-023": {
         "title": "Espace aérien du balcon défendu contre un seul pigeon",
         "summary": "Le sujet a lancé un défi officiel et sonore à un pigeon qui n’avait rien demandé. Le pigeon est parti. Le sujet a revendiqué une victoire décisive.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel sur le toit vitré, juste après la chute du balcon."
       },
       "CIB-024": {
         "title": "Porte de salle de bains délibérément maintenue fermée de l’extérieur",
@@ -218,7 +219,7 @@
       "CIB-030": {
         "title": "Voilage utilisé comme structure d’escalade non autorisée",
         "summary": "La suspecte a grimpé jusqu’au rebord de fenêtre avant que le voilage se détache de deux de ses trois crochets. Descente décrite comme « globalement contrôlée ».",
-        "imageAlt": ""
+        "imageAlt": "Pikette perchée sur un rebord de fenêtre à côté de ses gamelles."
       },
       "CIB-031": {
         "title": "Veille conjointe à la fenêtre contre une menace non précisée",
@@ -238,7 +239,7 @@
       "CIB-034": {
         "title": "Paillasson déplacé au milieu de la rue",
         "summary": "Vu pour la dernière fois sur le seuil, le paillasson a été récupéré deux maisons plus loin, humide, mâchonné dans un coin et orienté à l’envers.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel debout en laisse au milieu d'une rue pavée."
       },
       "CIB-035": {
         "title": "Visite familiale détournée par une affection sélective",
@@ -258,22 +259,22 @@
       "CIB-038": {
         "title": "Fort de couvertures détruit par ses propres architectes",
         "summary": "Un fort construit ensemble s’est effondré sous le poids de ses ambitions. Les deux suspects ont été retrouvés dans les décombres, apparemment indifférents.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel endormi, roulé en boule sous une épaisse couverture sur le canapé."
       },
       "CIB-039": {
         "title": "Sonnette télévisée confondue avec un véritable visiteur",
         "summary": "Le sujet a réagi à une sonnette dans une publicité avec tout son volume et toute sa conviction. Aucun visiteur n’a jamais été trouvé.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel relevant brusquement la tête depuis le tapis, oreilles dressées."
       },
       "CIB-040": {
         "title": "Aspirateur bloqué par une coopération inattendue",
         "summary": "Habituellement opposés par principe, les suspects ont accepté de bloquer simultanément l’aspirateur depuis deux côtés. Le ménage a pris deux fois plus de temps.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel bondissant sur son coussin à côté d'un aspirateur en marche."
       },
       "CIB-041": {
         "title": "Couvercle de yaourt laissé à portée, exploitation prévisible",
         "summary": "Le couvercle avait été laissé sur le plan de travail pour être léché, arrangement compris et exécuté sans litige par les deux suspects.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel fixant une gaufre laissée sur une table en terrasse."
       },
       "CIB-042": {
         "title": "Papier cadeau déchiqueté ensemble avant l’heure",
@@ -283,12 +284,12 @@
       "CIB-043": {
         "title": "Nouvelle alerte coordonnée à la boîte aux lettres",
         "summary": "La livraison quotidienne a déclenché la réponse habituelle : aboiements d’un suspect, miaulements de l’autre, selon un rituel désormais familier au facteur.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel assis en alerte, en laisse, près de la rue."
       },
       "CIB-044": {
         "title": "Lit occupé d’un coin à l’autre, aucune place disponible",
         "summary": "Les suspects se sont disposés en diagonale avec une précision apparente, ne laissant aucune place à l’occupant légitime.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel allongé sur le dos en travers d'un lit, occupant toute la largeur."
       },
       "CIB-045": {
         "title": "Dernière part saisie sous prétexte douteux d’équilibrer les portions",
@@ -298,17 +299,17 @@
       "CIB-046": {
         "title": "Tuyau d’arrosage percé en plusieurs endroits",
         "summary": "Le tuyau présente quatre nouvelles fuites selon une disposition jugée « méthodique » par les enquêteurs. Sujet retrouvé à proximité, l’air satisfait.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel inspectant quelque chose sur un rebord en pierre, dehors."
       },
       "CIB-047": {
         "title": "Visioconférence interrompue par une narration non sollicitée",
         "summary": "Sawito a commenté en direct les activités du chien à des collègues qui n’avaient rien demandé, pendant toute une réunion client.",
-        "imageAlt": ""
+        "imageAlt": "Sawito prenant un selfie, le chien appuyé contre son épaule."
       },
       "CIB-048": {
         "title": "Sortie bloquée dans l’attente d’une décision jamais prise",
         "summary": "Le sujet est resté onze minutes dans l’embrasure ouverte à décider s’il sortait, bloquant entrées et sorties, avant de regagner le canapé.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel assis en laisse juste devant la porte d'entrée."
       }
     }
   },

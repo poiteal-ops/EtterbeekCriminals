@@ -61,6 +61,7 @@
     "viewDetailsLabel": "NÄYTÄ TODISTEET",
     "hideDetailsLabel": "PIILOTA TODISTEET",
     "viewCaseLabel": "NÄYTÄ KOKO TAPAUSASIAKIRJA",
+    "noEvidenceLabel": "EI TODISTEITA ASIAKIRJOISSA",
     "emptyStateTitle": "EI VASTAAVIA TAPAUKSIA",
     "emptyStateBody": "Yksikään tapaus ei vastaa suodattimia. Valitse toinen epäilty tai rikkomus, tai nollaa suodattimet nähdäksesi koko arkiston.",
     "methodologyTitle": "MENETELMÄ",
@@ -78,7 +79,7 @@
       "CIB-002": {
         "title": "Tyynyn saumat testattu rakenteelliseen pettämiseen",
         "summary": "Hyvän nojatuolin tyynyn yhteiskaivuu levitti täytettä olohuoneeseen. Molemmat kielsivät aloittaneensa; molemmat olivat saman täytteen peitossa.",
-        "imageAlt": ""
+        "imageAlt": "Revennyt sauma ja näkyvä täyte sohvatyynyn saumassa."
       },
       "CIB-003": {
         "title": "Samanaikainen turha hälytys ovella",
@@ -88,7 +89,7 @@
       "CIB-004": {
         "title": "Käytävä yhteistuumin kulkukelvoton",
         "summary": "Molemmat valtasivat saman pienen alueen yhtä aikaa ja estivät poistumisen yhdentoista minuutin ajan. Kumpikaan ei liikkunut ensin.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel hihnassa aivan laatoitetun eteisen sisäpuolella."
       },
       "CIB-005": {
         "title": "Leipä siirretty suojelusäilöön",
@@ -103,7 +104,7 @@
       "CIB-007": {
         "title": "Sukutapaaminen keskeytyi pyytämättömään mielipiteeseen",
         "summary": "Kohde tunkeutui muiden keskusteluun ja haukkui riittävän kovaa lopettaakseen sen. Keskustelu loppui.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel istuu juhlallisesti odottamassa tuomiota."
       },
       "CIB-008": {
         "title": "Oviaukko tarkoituksella tukittu toimituksen aikana",
@@ -148,7 +149,7 @@
       "CIB-016": {
         "title": "Näppäimistö vallattu ennen sovittua puhelua",
         "summary": "Kohde makasi näppäimistöllä neljä minuuttia ennen videopuhelua. Kaksi poistoyritystä. Puhelu alkoi myöhässä.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel makaa selällään matolla täysin rentoutuneena."
       },
       "CIB-017": {
         "title": "Yhteinen rikos, kiistelty kunnia pudonneesta makkarasta",
@@ -173,17 +174,17 @@
       "CIB-021": {
         "title": "Pekonilautanen tyhjennetty ennen pöytää",
         "summary": "Kohde nappasi lautasen tasokorkeudelta lieden ja pöydän välisissä kahdessa sekunnissa. Huomattava pystysuora ponnistus todettiin.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel tarkkailee tarkasti täyttä lautasta alhaalta."
       },
       "CIB-022": {
         "title": "Lukulasit rikottu päälle istumalla",
         "summary": "Sawiton vain hetkeksi käsinojalle jättämät lasit löytyivät tuolin alta toinen linssi irti. Hän syyttää tuolia.",
-        "imageAlt": ""
+        "imageAlt": "Sawito, silmälasit päässä, poski poskea vasten koiran kanssa."
       },
       "CIB-023": {
         "title": "Parvekkeen ilmatilaa puolustettu yhtä pulua vastaan",
         "summary": "Kohde haastoi äänekkäästi pulun, joka ei pyytänyt sitä. Pulu lähti. Kohde julisti ratkaisevan voiton.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel lasikatolla hetki parvekkeelta putoamisen jälkeen."
       },
       "CIB-024": {
         "title": "Kylpyhuoneen ovea pidetty tahallaan ulkoa kiinni",
@@ -218,7 +219,7 @@
       "CIB-030": {
         "title": "Ohut verho käytössä luvattomana kiipeilytelineenä",
         "summary": "Epäilty kiipesi ikkunalaudalle ennen kahden koukun irtoamista kolmesta. Laskeutuminen oli kuvauksen mukaan enimmäkseen hallittu.",
-        "imageAlt": ""
+        "imageAlt": "Pikette istuu ikkunalaudalla ruokakuppiensa vieressä."
       },
       "CIB-031": {
         "title": "Yhteinen ikkunavartio määrittelemätöntä uhkaa vastaan",
@@ -238,7 +239,7 @@
       "CIB-034": {
         "title": "Ovimatto siirretty keskelle katua",
         "summary": "Viimeksi kynnyksellä, löytyi kahden talon päästä: kostea, nurkasta pureskeltu ja väärin päin.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel seisoo hihnassa keskellä kivettyä katua."
       },
       "CIB-035": {
         "title": "Sukuvierailu suistui valikoivan kiintymyksen vuoksi",
@@ -258,22 +259,22 @@
       "CIB-038": {
         "title": "Peittolinnake purettu omien arkkitehtien toimesta",
         "summary": "Yhteisrakennelma romahti oman kunnianhimonsa alle. Molemmat löytyivät raunioista näennäisen tyyninä.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel nukkuu kerälle käpertyneenä paksun peiton alla sohvalla."
       },
       "CIB-039": {
         "title": "Television ovikello luultu oikeaksi vieraaksi",
         "summary": "Kohde reagoi mainoksen kelloon täydellä äänenvoimakkuudella ja vakaumuksella. Vierasta ei koskaan löytynyt.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel nostaa äkkiä katseensa matolta korvat pystyssä."
       },
       "CIB-040": {
         "title": "Pölynimuri estetty yllättävällä yhteistyöllä",
         "summary": "Yleensä periaatteelliset vastustajat tukkivat imurin yhtä aikaa eri kulmista. Siivous kesti kaksinkertaisesti.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel hyppää koripetiinsä käynnissä olevan pölynimurin vieressä."
       },
       "CIB-041": {
         "title": "Ulottuvilla oleva jogurttikansi ennustettavasti hyödynnetty",
         "summary": "Kansi jätettiin tasolle nuoltavaksi. Molemmat ymmärsivät järjestelyn ja toteuttivat sen riidatta.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel tuijottaa itsepintaisesti ulkopöydälle jätettyä vohvelia."
       },
       "CIB-042": {
         "title": "Lahjapaperi yhteisesti silputtu etuajassa",
@@ -283,12 +284,12 @@
       "CIB-043": {
         "title": "Uusi yhteinen hälytys postiluukulla",
         "summary": "Päivittäinen posti käynnisti tavallisen toisen haukunnan ja toisen naukumisen. Postinkantaja tuntee jo rutiinin.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel istuu valppaana hihnassa lähellä katua."
       },
       "CIB-044": {
         "title": "Sänky vallattu nurkasta nurkkaan ilman vapaata tilaa",
         "summary": "Molemmat asettuivat näennäisen tarkasti vinoon jättämättä paikkaa tarkoitetulle käyttäjälle.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel makaa selällään poikittain sängyllä vieden koko leveyden."
       },
       "CIB-045": {
         "title": "Viimeinen viipale otettu kyseenalaisella tasapainotusperusteella",
@@ -298,17 +299,17 @@
       "CIB-046": {
         "title": "Puutarhaletku puhkaistu useasta kohdasta",
         "summary": "Neljä uutta vuotoa muodostaa tutkijoiden perusteelliseksi kutsuman kuvion. Kohde löytyi tyytyväisenä lähistöltä.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel tutkii jotain kivireunuksella ulkona."
       },
       "CIB-047": {
         "title": "Videopuhelu keskeytyi pyytämättömään selostukseen",
         "summary": "Sawito selosti koiran toimia työtovereille koko asiakastapaamisen ajan. Kukaan ei ollut pyytänyt sitä.",
-        "imageAlt": ""
+        "imageAlt": "Sawito ottaa selfietä koiran nojatessa hänen olkapäähänsä."
       },
       "CIB-048": {
         "title": "Ulospääsy estetty päätökseen, jota ei tullut",
         "summary": "Kohde pohti avoimessa ovessa ulosmenoa yksitoista minuuttia. Molemmat suunnat tukittuina hän palasi lopulta sohvalle.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel istuu hihnassa aivan ulko-oven edessä."
       }
     }
   },

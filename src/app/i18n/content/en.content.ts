@@ -692,6 +692,7 @@ export const EN_CONTENT: SiteContent = {
     viewDetailsLabel: 'VIEW EVIDENCE',
     hideDetailsLabel: 'HIDE EVIDENCE',
     viewCaseLabel: 'VIEW FULL CASE FILE',
+    noEvidenceLabel: 'NO EVIDENCE ON FILE',
 
     emptyStateTitle: 'NO MATCHING INCIDENTS',
     emptyStateBody:

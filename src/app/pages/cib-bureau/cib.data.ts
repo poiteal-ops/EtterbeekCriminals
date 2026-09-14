@@ -56,6 +56,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'allied',
     offenceId: 'property-damage',
     status: 'open',
+    image: 'assets/images/couch-armrest-detail.jpg',
   },
   {
     id: 'CIB-003',
@@ -74,6 +75,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'allied',
     offenceId: 'obstruction',
     status: 'open',
+    image: 'assets/images/blog-shop-entry.jpg',
   },
   {
     id: 'CIB-005',
@@ -104,6 +106,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'not-applicable',
     offenceId: 'public-disturbance',
     status: 'open',
+    image: 'assets/images/jury-verdict-awaited.jpg',
     storyRoute: '/jury-tampering',
   },
   {
@@ -189,6 +192,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'not-applicable',
     offenceId: 'obstruction',
     status: 'open',
+    image: 'assets/images/blog-belly-flop.jpg',
   },
   {
     id: 'CIB-017',
@@ -237,6 +241,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'not-applicable',
     offenceId: 'snack-theft',
     status: 'closed',
+    image: 'assets/images/blog-cafe-standoff.jpg',
   },
   {
     id: 'CIB-022',
@@ -246,6 +251,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'not-applicable',
     offenceId: 'property-damage',
     status: 'open',
+    image: 'assets/images/blog-cheek-to-cheek.jpg',
   },
   {
     id: 'CIB-023',
@@ -255,6 +261,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'not-applicable',
     offenceId: 'public-disturbance',
     status: 'closed',
+    image: 'assets/images/balcony-aftermath-roof.png',
     storyRoute: '/pigeon',
   },
   {
@@ -319,6 +326,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'not-applicable',
     offenceId: 'property-damage',
     status: 'closed',
+    image: 'assets/images/pikette-windowsill.jpg',
   },
   {
     id: 'CIB-031',
@@ -355,6 +363,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'not-applicable',
     offenceId: 'property-damage',
     status: 'open',
+    image: 'assets/images/blog-full-capacity.jpg',
   },
   {
     id: 'CIB-035',
@@ -393,6 +402,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'truce',
     offenceId: 'property-damage',
     status: 'open',
+    image: 'assets/images/blog-blanket-hoard.jpg',
   },
   {
     id: 'CIB-039',
@@ -402,6 +412,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'not-applicable',
     offenceId: 'public-disturbance',
     status: 'open',
+    image: 'assets/images/couch-dog-caught.jpg',
   },
   {
     id: 'CIB-040',
@@ -411,6 +422,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'truce',
     offenceId: 'obstruction',
     status: 'open',
+    image: 'assets/images/bestie-hoover-chaos.jpg',
   },
   {
     id: 'CIB-041',
@@ -420,6 +432,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'allied',
     offenceId: 'snack-theft',
     status: 'closed',
+    image: 'assets/images/blog-waffle-watch.jpg',
   },
   {
     id: 'CIB-042',
@@ -438,6 +451,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'allied',
     offenceId: 'public-disturbance',
     status: 'open',
+    image: 'assets/images/blog-mailman-standoff.jpg',
   },
   {
     id: 'CIB-044',
@@ -447,6 +461,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'allied',
     offenceId: 'obstruction',
     status: 'closed',
+    image: 'assets/images/blog-bed-nap.jpg',
   },
   {
     id: 'CIB-045',
@@ -465,6 +480,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'not-applicable',
     offenceId: 'property-damage',
     status: 'open',
+    image: 'assets/images/blog-garden-wall.jpg',
   },
   {
     id: 'CIB-047',
@@ -474,6 +490,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'not-applicable',
     offenceId: 'public-disturbance',
     status: 'closed',
+    image: 'assets/images/blog-shoulder-selfie.jpg',
   },
   {
     id: 'CIB-048',
@@ -483,6 +500,7 @@ export const CIB_INCIDENTS: readonly CibIncident[] = [
     duoRelationship: 'not-applicable',
     offenceId: 'obstruction',
     status: 'open',
+    image: 'assets/images/blog-front-door-recapture.jpg',
   },
 ];
 
@@ -499,7 +517,7 @@ export const CIB_INCIDENT_COPY_EN: Readonly<Record<string, CibIncidentCopy>> = {
     title: 'Cushion seams tested to structural failure',
     summary:
       'A joint excavation of the good armchair cushion produced stuffing across the living room. Both suspects deny initiating the dig; both were covered in the same stuffing.',
-    imageAlt: '',
+    imageAlt: 'Torn stitching and exposed stuffing on a couch cushion seam.',
   },
   'CIB-003': {
     title: 'Synchronized alarm raised over nothing at the door',
@@ -511,7 +529,7 @@ export const CIB_INCIDENT_COPY_EN: Readonly<Record<string, CibIncidentCopy>> = {
     title: 'Hallway rendered impassable by mutual agreement',
     summary:
       'Both suspects elected to occupy the same three square feet of hallway at the same time, blocking egress for eleven minutes. Neither moved first.',
-    imageAlt: '',
+    imageAlt: 'Le Criminel on a leash just inside a tiled entryway.',
   },
   'CIB-005': {
     title: 'Bread transferred into protective custody',
@@ -528,7 +546,7 @@ export const CIB_INCIDENT_COPY_EN: Readonly<Record<string, CibIncidentCopy>> = {
     title: 'Extended-family gathering disrupted by unsolicited opinion',
     summary:
       'Subject inserted himself into a conversation he was not party to, barking at a volume calibrated to end it. It ended it.',
-    imageAlt: '',
+    imageAlt: 'Le Criminel sitting solemnly, awaiting judgment.',
   },
   'CIB-008': {
     title: 'Doorway blocked mid-delivery, on purpose',
@@ -582,7 +600,7 @@ export const CIB_INCIDENT_COPY_EN: Readonly<Record<string, CibIncidentCopy>> = {
     title: 'Laptop keyboard occupied during a scheduled call',
     summary:
       'Subject lay down across the keyboard four minutes before a video call was due to start. Removal was attempted twice. The call started late.',
-    imageAlt: '',
+    imageAlt: 'Le Criminel sprawled belly-up on a rug, fully relaxed.',
   },
   'CIB-017': {
     title: 'Shared crime, no shared credit, over a dropped sausage',
@@ -612,19 +630,19 @@ export const CIB_INCIDENT_COPY_EN: Readonly<Record<string, CibIncidentCopy>> = {
     title: 'Bacon plate cleared before it reached the table',
     summary:
       'Subject intercepted the plate at counter height during the two-second window between stove and table. Investigators note this required considerable vertical effort.',
-    imageAlt: '',
+    imageAlt: 'Le Criminel watching a full dinner plate intently from below.',
   },
   'CIB-022': {
     title: 'Reading glasses sat on and structurally compromised',
     summary:
       "Sawito's glasses, left on the arm of the chair for 'just a second,' were located under the same chair, one lens detached. He blames the chair.",
-    imageAlt: '',
+    imageAlt: 'Sawito, wearing his glasses, cheek to cheek with the dog.',
   },
   'CIB-023': {
     title: 'Balcony airspace defended against a single pigeon',
     summary:
       'Subject issued a formal challenge, at volume, to a pigeon that had not asked for one. The pigeon left. Subject claimed the victory as decisive.',
-    imageAlt: '',
+    imageAlt: 'Le Criminel on the glass roof, moments after the balcony descent.',
   },
   'CIB-024': {
     title: 'Bathroom door held shut from the outside, deliberately',
@@ -666,7 +684,7 @@ export const CIB_INCIDENT_COPY_EN: Readonly<Record<string, CibIncidentCopy>> = {
     title: 'Curtain sheer used as an unauthorized climbing structure',
     summary:
       "Suspect scaled the sheer curtain to windowsill height before it detached from two of its three hooks. Descent was described as 'controlled, mostly.'",
-    imageAlt: '',
+    imageAlt: 'Pikette perched on a windowsill beside her food bowls.',
   },
   'CIB-031': {
     title: 'Joint vigil held at the window for an unspecified threat',
@@ -690,7 +708,7 @@ export const CIB_INCIDENT_COPY_EN: Readonly<Record<string, CibIncidentCopy>> = {
     title: 'Doormat relocated to the middle of the street',
     summary:
       'The doormat was last seen at the threshold. It was later recovered two houses down, damp, chewed at one corner, and facing the wrong way.',
-    imageAlt: '',
+    imageAlt: 'Le Criminel standing on a leash in the middle of a paved street.',
   },
   'CIB-035': {
     title: 'Extended family visit derailed by selective affection',
@@ -714,25 +732,25 @@ export const CIB_INCIDENT_COPY_EN: Readonly<Record<string, CibIncidentCopy>> = {
     title: 'Blanket fort dismantled by its own architects',
     summary:
       'A jointly constructed blanket fort collapsed under its own ambition. Both suspects were found inside the wreckage, apparently unbothered.',
-    imageAlt: '',
+    imageAlt: 'Le Criminel curled up asleep beneath a heavy blanket on the couch.',
   },
   'CIB-039': {
     title: 'Doorbell sound effect on television mistaken for an actual visitor',
     summary:
       'Subject responded to a doorbell chime from a television commercial with full volume and complete conviction. No visitor was ever found.',
-    imageAlt: '',
+    imageAlt: 'Le Criminel looking up sharply from the rug, ears alert.',
   },
   'CIB-040': {
     title: 'Vacuum cleaner path blocked in unexpected cooperation',
     summary:
       "Both suspects, usually opposed on principle, agreed to simultaneously block the vacuum's path from separate angles. The cleaning took twice as long.",
-    imageAlt: '',
+    imageAlt: 'Le Criminel leaping onto a dog bed beside a running vacuum cleaner.',
   },
   'CIB-041': {
     title: 'Yogurt lid abandoned within reach, predictably exploited',
     summary:
       'The lid was left on the counter for licking rights, an arrangement both suspects apparently understood and executed without dispute.',
-    imageAlt: '',
+    imageAlt: 'Le Criminel staring fixedly at a waffle left on an outdoor table.',
   },
   'CIB-042': {
     title: 'Wrapping paper shredded ahead of schedule, jointly',
@@ -744,13 +762,13 @@ export const CIB_INCIDENT_COPY_EN: Readonly<Record<string, CibIncidentCopy>> = {
     title: 'Coordinated alert raised over the mail slot, again',
     summary:
       "The mail slot's daily delivery triggered the usual joint response: barking from one suspect, yowling from the other, in a routine now familiar to the postal carrier.",
-    imageAlt: '',
+    imageAlt: 'Le Criminel sitting alert on a leash near the street.',
   },
   'CIB-044': {
     title: 'Bed occupied corner to corner, leaving no usable space',
     summary:
       "Both suspects arranged themselves diagonally across the bed with apparent precision, leaving no room for its intended occupant.",
-    imageAlt: '',
+    imageAlt: 'Le Criminel sprawled on his back across a bed, taking up the whole width.',
   },
   'CIB-045': {
     title: 'Last slice claimed under dubious pretense of portion control',
@@ -762,18 +780,18 @@ export const CIB_INCIDENT_COPY_EN: Readonly<Record<string, CibIncidentCopy>> = {
     title: 'Garden hose punctured at multiple points',
     summary:
       "The hose now has four new leaks in a pattern investigators describe as 'thorough.' Subject was found nearby, looking satisfied.",
-    imageAlt: '',
+    imageAlt: 'Le Criminel investigating something on a stone ledge outdoors.',
   },
   'CIB-047': {
     title: 'Video call interrupted by unsolicited narration',
     summary:
       'Sawito provided a live commentary on the dog’s activities to colleagues who had not asked for one, for the full length of a client meeting.',
-    imageAlt: '',
+    imageAlt: 'Sawito taking a selfie with the dog resting against his shoulder.',
   },
   'CIB-048': {
     title: 'Exit blocked pending a decision that was never reached',
     summary:
       'Subject stood in the open doorway deciding whether to go outside for eleven minutes, blocking entry and exit alike, before returning to the couch.',
-    imageAlt: '',
+    imageAlt: 'Le Criminel sitting on a leash just outside the front door.',
   },
 };

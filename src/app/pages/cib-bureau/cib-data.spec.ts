@@ -15,6 +15,12 @@ const ALLOWED_RELATIONSHIPS = ['allied', 'rivals', 'truce', 'not-applicable'];
 
 // Only these existing, eye-bar-verified images may be referenced — see
 // task-2-context.md. pikette-closeup.jpg is explicitly excluded.
+//
+// The block below reuses images already published elsewhere on the site
+// (other story pages, blog case log entries) for incidents that previously
+// had none. Each was opened and visually re-verified for this addition:
+// eyes are either bar-redacted or not visible/facing camera, and none is a
+// raw LocalPics path.
 const KNOWN_SAFE_IMAGES = [
   'assets/images/sawito-dog-selfie.jpg',
   'assets/images/dog-floor-portrait.jpg',
@@ -23,6 +29,24 @@ const KNOWN_SAFE_IMAGES = [
   'assets/images/couch-crime-scene.jpg',
   'assets/images/theft-bread.jpg',
   'assets/images/theft-shoe.jpg',
+  'assets/images/couch-armrest-detail.jpg',
+  'assets/images/blog-shop-entry.jpg',
+  'assets/images/jury-verdict-awaited.jpg',
+  'assets/images/blog-belly-flop.jpg',
+  'assets/images/blog-cafe-standoff.jpg',
+  'assets/images/blog-cheek-to-cheek.jpg',
+  'assets/images/balcony-aftermath-roof.png',
+  'assets/images/pikette-windowsill.jpg',
+  'assets/images/blog-full-capacity.jpg',
+  'assets/images/blog-blanket-hoard.jpg',
+  'assets/images/couch-dog-caught.jpg',
+  'assets/images/bestie-hoover-chaos.jpg',
+  'assets/images/blog-waffle-watch.jpg',
+  'assets/images/blog-mailman-standoff.jpg',
+  'assets/images/blog-bed-nap.jpg',
+  'assets/images/blog-garden-wall.jpg',
+  'assets/images/blog-shoulder-selfie.jpg',
+  'assets/images/blog-front-door-recapture.jpg',
 ];
 
 const existingRoutePaths = new Set(

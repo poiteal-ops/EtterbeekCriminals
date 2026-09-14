@@ -61,6 +61,7 @@
     "viewDetailsLabel": "VIS BEVISER",
     "hideDetailsLabel": "SKJUL BEVISER",
     "viewCaseLabel": "SE HELE SAGSMAPPEN",
+    "noEvidenceLabel": "INGEN BEVISER I SAGEN",
     "emptyStateTitle": "INGEN MATCHENDE HÆNDELSER",
     "emptyStateBody": "Ingen hændelser passer til filtrene. Vælg en anden mistænkt eller forseelse, eller nulstil for at se hele arkivet.",
     "methodologyTitle": "METODE",
@@ -78,7 +79,7 @@
       "CIB-002": {
         "title": "Pudesømme testet til strukturelt svigt",
         "summary": "Fælles udgravning af den gode lænestols pude spredte fyld i stuen. Begge nægtede at være begyndt; begge var dækket af samme fyld.",
-        "imageAlt": ""
+        "imageAlt": "Flænget søm og synlig fyld i en sofaputes søm."
       },
       "CIB-003": {
         "title": "Synkroniseret falsk alarm ved døren",
@@ -88,7 +89,7 @@
       "CIB-004": {
         "title": "Gang blokeret efter gensidig aftale",
         "summary": "Begge optog samtidig det samme lille område og spærrede udgangen i elleve minutter. Ingen flyttede sig først.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel i snor, lige inden for den flisebelagte entré."
       },
       "CIB-005": {
         "title": "Brød overført til beskyttende forvaring",
@@ -103,7 +104,7 @@
       "CIB-007": {
         "title": "Familiesammenkomst afbrudt af uopfordret mening",
         "summary": "Subjektet blandede sig i andres samtale og gøede højt nok til at afslutte den. Det lykkedes.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel sidder højtideligt og venter på dommen."
       },
       "CIB-008": {
         "title": "Døråbning bevidst spærret under levering",
@@ -148,7 +149,7 @@
       "CIB-016": {
         "title": "Tastatur besat før planlagt samtale",
         "summary": "Subjektet lagde sig over tastaturet fire minutter før videosamtalen. To fjernelsesforsøg fulgte. Samtalen begyndte sent.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel ligger udstrakt på ryggen på et tæppe, helt afslappet."
       },
       "CIB-017": {
         "title": "Fælles forbrydelse, omstridt ære om tabt pølse",
@@ -173,17 +174,17 @@
       "CIB-021": {
         "title": "Bacontallerken tømt før bordet blev nået",
         "summary": "Subjektet greb tallerkenen i bordhøjde i de to sekunder mellem komfur og bord. Betydelig lodret indsats blev noteret.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel iagttager opmærksomt en fuld tallerken nedefra."
       },
       "CIB-022": {
         "title": "Læsebriller siddet i stykker",
         "summary": "Sawitos briller, efterladt på armlænet bare et sekund, blev fundet under stolen med ét glas løsnet. Han giver stolen skylden.",
-        "imageAlt": ""
+        "imageAlt": "Sawito, med brillerne på, kind mod kind med hunden."
       },
       "CIB-023": {
         "title": "Altanens luftrum forsvaret mod én due",
         "summary": "Subjektet udfordrede højlydt en due, som ikke havde bedt om det. Duen forlod stedet. Subjektet erklærede afgørende sejr.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel på glastaget, kort efter faldet fra altanen."
       },
       "CIB-024": {
         "title": "Badeværelsesdør bevidst holdt lukket udefra",
@@ -218,7 +219,7 @@
       "CIB-030": {
         "title": "Tyndt gardin brugt som uautoriseret klatrestativ",
         "summary": "Den mistænkte klatrede til vindueskarmen, før to af tre kroge løsnede sig. Nedstigningen blev kaldt overvejende kontrolleret.",
-        "imageAlt": ""
+        "imageAlt": "Pikette sidder i en vindueskarm ved siden af sine madskåle."
       },
       "CIB-031": {
         "title": "Fælles vinduesvagt mod uspecificeret trussel",
@@ -238,7 +239,7 @@
       "CIB-034": {
         "title": "Dørmåtte flyttet til gadens midte",
         "summary": "Sidst set ved tærsklen, genfundet to huse længere væk: fugtig, tygget i ét hjørne og forkert vendt.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel står i snor midt på en brolagt gade."
       },
       "CIB-035": {
         "title": "Familiebesøg afsporet af selektiv hengivenhed",
@@ -258,22 +259,22 @@
       "CIB-038": {
         "title": "Tæppefort revet ned af egne arkitekter",
         "summary": "Fællesbyggeriet kollapsede under egen ambition. Begge blev fundet blandt resterne, tilsyneladende uberørte.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel ligger sammenkrøbet og sover under et tykt tæppe i sofaen."
       },
       "CIB-039": {
         "title": "Dørklokke på tv forvekslet med rigtig besøgende",
         "summary": "Subjektet reagerede på reklameklokken med fuld lydstyrke og total overbevisning. Ingen besøgende blev nogensinde fundet.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel kigger brat op fra tæppet med ørerne på højkant."
       },
       "CIB-040": {
         "title": "Støvsuger blokeret gennem uventet samarbejde",
         "summary": "Normalt modstandere af princip blokerede begge støvsugeren samtidig fra forskellige vinkler. Rengøringen tog dobbelt så lang tid.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel hopper op i sin hundeseng ved siden af en tændt støvsuger."
       },
       "CIB-041": {
         "title": "Tilgængeligt yoghurtlåg forudsigeligt udnyttet",
         "summary": "Låget lå på bordet til afslikning. Begge forstod ordningen og gennemførte den uden strid.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel stirrer ufravendt på en vaffel efterladt på et udendørs bord."
       },
       "CIB-042": {
         "title": "Gavepapir fælles makuleret før tid",
@@ -283,12 +284,12 @@
       "CIB-043": {
         "title": "Ny koordineret alarm ved brevsprækken",
         "summary": "Dagens post udløste sædvanlig gøen fra den ene og miaven fra den anden. Postbuddet kender rutinen.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel sidder årvågen i snor tæt på gaden."
       },
       "CIB-044": {
         "title": "Seng optaget fra hjørne til hjørne uden ledig plads",
         "summary": "Begge lagde sig diagonalt med tilsyneladende præcision og efterlod ingen plads til den tiltænkte bruger.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel ligger på ryggen på tværs af en seng og fylder hele bredden."
       },
       "CIB-045": {
         "title": "Sidste skive taget med tvivlsomt portionspåskud",
@@ -298,17 +299,17 @@
       "CIB-046": {
         "title": "Haveslange punkteret flere steder",
         "summary": "Fire nye lækager danner et mønster, efterforskerne kalder grundigt. Subjektet blev fundet tilfreds i nærheden.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel undersøger noget på en stenkant udenfor."
       },
       "CIB-047": {
         "title": "Videosamtale afbrudt af uopfordret reportage",
         "summary": "Sawito kommenterede hundens aktiviteter for kollegerne gennem hele kundemødet. Ingen havde bedt om det.",
-        "imageAlt": ""
+        "imageAlt": "Sawito tager en selfie, mens hunden læner sig mod hans skulder."
       },
       "CIB-048": {
         "title": "Udgang spærret i venten på beslutning der aldrig kom",
         "summary": "Subjektet stod elleve minutter i døren og overvejede at gå ud. Begge retninger blev spærret, før han vendte tilbage til sofaen.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel sidder i snor lige uden for hoveddøren."
       }
     }
   },

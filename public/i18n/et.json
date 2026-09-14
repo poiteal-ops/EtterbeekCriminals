@@ -61,6 +61,7 @@
     "viewDetailsLabel": "VAATA TÕENDEID",
     "hideDetailsLabel": "PEIDA TÕENDID",
     "viewCaseLabel": "VAATA TÄIELIKKU TOIMIKUT",
+    "noEvidenceLabel": "TOIMIKUS TÕENDID PUUDUVAD",
     "emptyStateTitle": "VASTAVAD JUHTUMID PUUDUVAD",
     "emptyStateBody": "Ükski juhtum ei vasta filtritele. Vali teine kahtlusalune või rikkumine või lähtesta filtrid kogu arhiivi kuvamiseks.",
     "methodologyTitle": "METOODIKA",
@@ -78,7 +79,7 @@
       "CIB-002": {
         "title": "Padjaõmblused katsetatud purunemiseni",
         "summary": "Hea tugitooli padja ühiskaevamine levitas täidist üle elutoa. Mõlemad eitasid alustamist; mõlemad olid sama täidisega kaetud.",
-        "imageAlt": ""
+        "imageAlt": "Rebenenud õmblus ja nähtav vahtplast diivanipadja õmblusel."
       },
       "CIB-003": {
         "title": "Sünkroonne valehäire ukse juures",
@@ -88,7 +89,7 @@
       "CIB-004": {
         "title": "Koridor ühisel kokkuleppel läbimatu",
         "summary": "Mõlemad hõivasid korraga sama väikese ala ja blokeerisid väljapääsu üheteistkümneks minutiks. Keegi ei liikunud esimesena.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel rihma otsas vahetult plaaditud sissepääsu sees."
       },
       "CIB-005": {
         "title": "Leib viidud kaitsvasse hoiule",
@@ -103,7 +104,7 @@
       "CIB-007": {
         "title": "Perekoosolek katkestatud küsimata arvamusega",
         "summary": "Subjekt sekkus võõrasse vestlusse ja haukus piisavalt valjult selle lõpetamiseks. Vestlus lõppes.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel istub tõsiselt, oodates otsust."
       },
       "CIB-008": {
         "title": "Läbipääs tarne ajal tahtlikult blokeeritud",
@@ -148,7 +149,7 @@
       "CIB-016": {
         "title": "Klaviatuur hõivatud enne plaanitud kõnet",
         "summary": "Subjekt heitis klaviatuurile neli minutit enne videokõnet. Kaks eemaldamiskatset. Kõne algas hilja.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel lebab selili vaibal, täiesti lõdvestunult."
       },
       "CIB-017": {
         "title": "Ühine kuritegu, vaieldav au mahakukkunud vorsti eest",
@@ -173,17 +174,17 @@
       "CIB-021": {
         "title": "Peekonitaldrik tühjendatud enne lauda",
         "summary": "Subjekt püüdis taldriku tööpinna kõrgusel pliidi ja laua vahelise kahe sekundi jooksul. Märgiti suurt vertikaalset pingutust.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel jälgib altpoolt tähelepanelikult täit taldrikut."
       },
       "CIB-022": {
         "title": "Lugemisprillid istumisega purustatud",
         "summary": "Sawito vaid hetkeks käetoele jäetud prillid leiti tooli alt ühe lahtise klaasiga. Ta süüdistab tooli.",
-        "imageAlt": ""
+        "imageAlt": "Sawito, prillid peas, põsk vastu põske koeraga."
       },
       "CIB-023": {
         "title": "Rõdu õhuruum kaitstud ühe tuvi vastu",
         "summary": "Subjekt esitas lärmakalt väljakutse tuvi soovimata. Tuvi lahkus. Subjekt kuulutas otsustava võidu.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel klaaskatusel, hetk pärast rõdult kukkumist."
       },
       "CIB-024": {
         "title": "Vannitoa uks tahtlikult väljast suletuna hoitud",
@@ -218,7 +219,7 @@
       "CIB-030": {
         "title": "Õhuke kardin kasutatud loata ronimisrajatisena",
         "summary": "Kahtlusalune ronis aknalauani enne kahe konksu lahtitulekut kolmest. Laskumist kirjeldati enamjaolt kontrollituna.",
-        "imageAlt": ""
+        "imageAlt": "Pikette istub aknalaual oma toidukausside kõrval."
       },
       "CIB-031": {
         "title": "Ühine aknavalve määratlemata ohu tõttu",
@@ -238,7 +239,7 @@
       "CIB-034": {
         "title": "Uksematt viidud keset tänavat",
         "summary": "Viimati lävel, leiti kaks maja edasi: niiske, ühest nurgast näritud ja valepidi.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel seisab rihma otsas munakivitänava keskel."
       },
       "CIB-035": {
         "title": "Perevisiit rikutud valikulise kiindumusega",
@@ -258,22 +259,22 @@
       "CIB-038": {
         "title": "Tekilinnus lammutatud oma arhitektide poolt",
         "summary": "Ühisrajatis varises oma ambitsiooni all. Mõlemad leiti jäänustest, näiliselt häirimatud.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel magab kerra tõmbunult paksu teki all diivanil."
       },
       "CIB-039": {
         "title": "Televisiooni uksekell peetud päris külaliseks",
         "summary": "Subjekt vastas reklaami uksekellale täie helitugevuse ja veendumusega. Külalist ei leitud kunagi.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel tõstab vaibalt järsult pilgu, kõrvad püsti."
       },
       "CIB-040": {
         "title": "Tolmuimeja blokeeritud ootamatu koostööga",
         "summary": "Tavaliselt põhimõttelised vastased blokeerisid masina korraga eri nurkadest. Koristamine kestis kaks korda kauem.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel hüppab oma pesasse töötava tolmuimeja kõrval."
       },
       "CIB-041": {
         "title": "Kättesaadav jogurtikaas ettearvatult ära kasutatud",
         "summary": "Kaas jäeti tööpinnale lakkumiseks. Mõlemad mõistsid kokkulepet ja täitsid selle vaidluseta.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel vahib pingsalt vahvlit, mis on jäetud õuelauale."
       },
       "CIB-042": {
         "title": "Kingipaber ühiselt enneaegu ribastatud",
@@ -283,12 +284,12 @@
       "CIB-043": {
         "title": "Uus koordineeritud häire postipilu juures",
         "summary": "Päevane post vallandas tavalise haukumise ühelt ja näugumise teiselt. Postiljon tunneb rutiini.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel istub valvsalt rihma otsas tänava lähedal."
       },
       "CIB-044": {
         "title": "Voodi nurgast nurgani hõivatud, vaba ruumita",
         "summary": "Mõlemad sättisid end näilise täpsusega diagonaali, jätmata ettenähtud kasutajale kohta.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel lamab selili risti voodil, hõivates kogu laiuse."
       },
       "CIB-045": {
         "title": "Viimane viil võetud küsitava tasakaalustamise ettekäändega",
@@ -298,17 +299,17 @@
       "CIB-046": {
         "title": "Aiavoolik mitmest kohast läbi torgatud",
         "summary": "Neli uut leket moodustavad uurijate sõnul põhjaliku mustri. Subjekt leiti rahulolevana lähedusest.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel uurib õues midagi kivipiirdel."
       },
       "CIB-047": {
         "title": "Videokõne katkestatud küsimata otsekommentaariga",
         "summary": "Sawito kommenteeris kolleegidele koera tegevusi kogu kliendikohtumise vältel. Keegi polnud seda palunud.",
-        "imageAlt": ""
+        "imageAlt": "Sawito teeb selfit, koer tema õlale toetumas."
       },
       "CIB-048": {
         "title": "Väljapääs blokeeritud otsuseni, mida ei tulnud",
         "summary": "Subjekt seisis avatud ukseavas üksteist minutit, kaaludes väljumist. Mõlemad suunad olid tõkestatud, enne kui ta diivanile naasis.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel istub rihma otsas vahetult välisukse ees."
       }
     }
   },

@@ -61,6 +61,7 @@
     "viewDetailsLabel": "BEWIJS BEKIJKEN",
     "hideDetailsLabel": "BEWIJS VERBERGEN",
     "viewCaseLabel": "VOLLEDIG DOSSIER BEKIJKEN",
+    "noEvidenceLabel": "GEEN BEWIJS BESCHIKBAAR",
     "emptyStateTitle": "GEEN PASSENDE INCIDENTEN",
     "emptyStateBody": "Geen incidenten passen bij deze filters. Kies een andere verdachte of overtreding, of wis de filters voor het volledige archief.",
     "methodologyTitle": "WERKWIJZE",
@@ -78,7 +79,7 @@
       "CIB-002": {
         "title": "Kussennaden getest tot ze bezweken",
         "summary": "Samen groeven de verdachten het goede stoelkussen open. Overal lag vulling. Beiden ontkenden te zijn begonnen; beiden zaten onder dezelfde vulling.",
-        "imageAlt": ""
+        "imageAlt": "Gescheurde stiknaad en zichtbare vulling op een kussennaad van de bank."
       },
       "CIB-003": {
         "title": "Gelijktijdig loos alarm bij de deur",
@@ -88,7 +89,7 @@
       "CIB-004": {
         "title": "Gang in onderling overleg onbegaanbaar",
         "summary": "Beide verdachten bezetten tegelijk hetzelfde stukje gang en blokkeerden elf minuten de uitgang. Geen van beiden bewoog als eerste.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel aan de lijn, net binnen de betegelde entree."
       },
       "CIB-005": {
         "title": "Brood in beschermende bewaring genomen",
@@ -103,7 +104,7 @@
       "CIB-007": {
         "title": "Familiebijeenkomst verstoord door ongevraagde mening",
         "summary": "Het subject mengde zich in andermans gesprek en blafte hard genoeg om het te beëindigen. Dat lukte.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel zit plechtig te wachten op het vonnis."
       },
       "CIB-008": {
         "title": "Deuropening bewust geblokkeerd tijdens bezorging",
@@ -148,7 +149,7 @@
       "CIB-016": {
         "title": "Laptoptoetsenbord bezet vlak voor geplande vergadering",
         "summary": "Vier minuten voor een videogesprek ging het subject op het toetsenbord liggen. Twee verwijderingspogingen volgden. Het gesprek begon te laat.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel ligt volledig ontspannen op zijn rug op een kleed."
       },
       "CIB-017": {
         "title": "Gedeelde misdaad, betwiste eer om gevallen worst",
@@ -173,17 +174,17 @@
       "CIB-021": {
         "title": "Spekbord leeg voordat het de tafel bereikte",
         "summary": "Het subject onderschepte het bord op aanrechthoogte in de twee seconden tussen fornuis en tafel. Aanzienlijke verticale inspanning vastgesteld.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel kijkt van onderaf gespannen naar een vol bord."
       },
       "CIB-022": {
         "title": "Leesbril door erop zitten structureel beschadigd",
         "summary": "Sawito's bril lag maar even op de armleuning en werd eronder teruggevonden, met één los glas. Hij beschuldigt de stoel.",
-        "imageAlt": ""
+        "imageAlt": "Sawito, met bril op, wang aan wang met de hond."
       },
       "CIB-023": {
         "title": "Balkonluchtruim verdedigd tegen één duif",
         "summary": "Het subject daagde luid een duif uit die daar niet om had gevraagd. De duif vertrok. Het subject claimde een beslissende overwinning.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel op het glazen dak, vlak na de val van het balkon."
       },
       "CIB-024": {
         "title": "Badkamerdeur bewust van buiten dichtgehouden",
@@ -218,7 +219,7 @@
       "CIB-030": {
         "title": "Vitrage gebruikt als onbevoegd klimrek",
         "summary": "De verdachte klom tot vensterbankhoogte voordat twee van de drie haken loslieten. De afdaling was naar verluidt grotendeels gecontroleerd.",
-        "imageAlt": ""
+        "imageAlt": "Pikette zit op een vensterbank naast haar voerbakjes."
       },
       "CIB-031": {
         "title": "Gezamenlijke raamwacht voor onbenoemde dreiging",
@@ -238,7 +239,7 @@
       "CIB-034": {
         "title": "Deurmat naar midden van de straat verplaatst",
         "summary": "Laatst op de drempel gezien, twee huizen verder teruggevonden: nat, aan één hoek bekauwd en verkeerd om.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel staat aan de lijn midden op een geplaveide straat."
       },
       "CIB-035": {
         "title": "Familiebezoek ontspoord door selectieve genegenheid",
@@ -258,22 +259,22 @@
       "CIB-038": {
         "title": "Dekenfort afgebroken door de eigen architecten",
         "summary": "Een gezamenlijk gebouwd fort bezweek onder zijn eigen ambitie. De verdachten werden tussen de resten gevonden, schijnbaar onbezorgd.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel ligt opgekruld te slapen onder een dikke deken op de bank."
       },
       "CIB-039": {
         "title": "Televisiedeurbel aangezien voor echte bezoeker",
         "summary": "Het subject reageerde op een deurbel in reclame met volledig volume en volle overtuiging. Er werd nooit een bezoeker gevonden.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel kijkt scherp op vanaf het kleed, oren gespitst."
       },
       "CIB-040": {
         "title": "Stofzuiger geblokkeerd door onverwachte samenwerking",
         "summary": "Doorgaans principiële tegenstanders blokkeerden beide verdachten tegelijk de stofzuiger vanuit verschillende hoeken. Schoonmaken duurde twee keer zo lang.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel springt op zijn hondenmand naast een draaiende stofzuiger."
       },
       "CIB-041": {
         "title": "Bereikbaar yoghurtdeksel voorspelbaar benut",
         "summary": "Het deksel lag op het aanrecht om af te likken. Beide verdachten begrepen de regeling en voerden haar zonder ruzie uit.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel staart onafgebroken naar een wafel op een tafel buiten."
       },
       "CIB-042": {
         "title": "Cadeaupapier gezamenlijk voortijdig versnipperd",
@@ -283,12 +284,12 @@
       "CIB-043": {
         "title": "Opnieuw gezamenlijk alarm bij de brievenbus",
         "summary": "De dagelijkse post veroorzaakte het vertrouwde duet van blaffen en janken. De postbode kent de routine inmiddels.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel zit alert aan de lijn dicht bij de straat."
       },
       "CIB-044": {
         "title": "Bed van hoek tot hoek bezet zonder vrije plek",
         "summary": "Beide verdachten gingen met schijnbare precisie diagonaal liggen. Voor de bedoelde gebruiker bleef geen ruimte.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel ligt op zijn rug dwars over een bed, de hele breedte innemend."
       },
       "CIB-045": {
         "title": "Laatste snee geclaimd onder twijfelachtig portievoorwendsel",
@@ -298,17 +299,17 @@
       "CIB-046": {
         "title": "Tuinslang op meerdere punten doorboord",
         "summary": "Vier nieuwe lekken vormen volgens onderzoekers een grondig patroon. Het subject werd tevreden in de buurt aangetroffen.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel onderzoekt buiten iets op een stenen rand."
       },
       "CIB-047": {
         "title": "Videogesprek onderbroken door ongevraagd commentaar",
         "summary": "Sawito deed een hele klantvergadering lang live verslag van de hond aan collega's die daar niet om hadden gevraagd.",
-        "imageAlt": ""
+        "imageAlt": "Sawito neemt een selfie, de hond rustend tegen zijn schouder."
       },
       "CIB-048": {
         "title": "Uitgang geblokkeerd tot een nooit genomen besluit",
         "summary": "Het subject dacht elf minuten in de open deur na over naar buiten gaan, blokkeerde beide richtingen en keerde toen terug naar de bank.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel zit aan de lijn net buiten de voordeur."
       }
     }
   },

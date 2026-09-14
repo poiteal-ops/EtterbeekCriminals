@@ -63,6 +63,8 @@ export interface CibContent {
   viewDetailsLabel: string;
   hideDetailsLabel: string;
   viewCaseLabel: string;
+  /** Shown in the expanded incident details in place of an image, when the incident has none. */
+  noEvidenceLabel: string;
 
   emptyStateTitle: string;
   emptyStateBody: string;

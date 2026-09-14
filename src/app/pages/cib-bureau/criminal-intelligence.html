@@ -151,6 +151,8 @@
             <div class="incident-details">
               @if (incident.image) {
                 <img [src]="incident.image" [alt]="copy.imageAlt" />
+              } @else {
+                <p class="no-evidence">{{ t.cib.noEvidenceLabel }}</p>
               }
               <div class="suspects-involved">
                 @for (id of incident.suspectIds; track id) {

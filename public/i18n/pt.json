@@ -61,6 +61,7 @@
     "viewDetailsLabel": "VER PROVAS",
     "hideDetailsLabel": "OCULTAR PROVAS",
     "viewCaseLabel": "VER O PROCESSO COMPLETO",
+    "noEvidenceLabel": "SEM PROVAS NO PROCESSO",
     "emptyStateTitle": "SEM INCIDENTES CORRESPONDENTES",
     "emptyStateBody": "Nenhum incidente corresponde a estes filtros. Experimente outro suspeito ou infração, ou reponha os filtros para ver todo o arquivo.",
     "methodologyTitle": "METODOLOGIA",
@@ -78,7 +79,7 @@
       "CIB-002": {
         "title": "Costuras da almofada testadas até à falha estrutural",
         "summary": "A escavação conjunta da almofada da boa poltrona espalhou enchimento pela sala. Ambos negam ter começado; ambos estavam cobertos do mesmo material.",
-        "imageAlt": ""
+        "imageAlt": "Costura rasgada e enchimento à mostra numa almofada do sofá."
       },
       "CIB-003": {
         "title": "Alarme sincronizado por nada à porta",
@@ -88,7 +89,7 @@
       "CIB-004": {
         "title": "Corredor tornado intransitável por acordo mútuo",
         "summary": "Ambos ocuparam simultaneamente o mesmo pequeno espaço do corredor, bloqueando a saída onze minutos. Nenhum se moveu primeiro.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel preso pela trela, logo à entrada com piso de azulejo."
       },
       "CIB-005": {
         "title": "Pão transferido para custódia protetora",
@@ -103,7 +104,7 @@
       "CIB-007": {
         "title": "Reunião familiar interrompida por opinião não solicitada",
         "summary": "O sujeito intrometeu-se numa conversa alheia, ladrando no volume necessário para a terminar. Terminou-a.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel sentado solenemente, à espera do veredito."
       },
       "CIB-008": {
         "title": "Passagem bloqueada de propósito durante entrega",
@@ -148,7 +149,7 @@
       "CIB-016": {
         "title": "Teclado ocupado antes de chamada marcada",
         "summary": "O sujeito deitou-se no teclado quatro minutos antes da videochamada. Houve duas tentativas de remoção. A chamada começou atrasada.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel deitado de costas num tapete, totalmente relaxado."
       },
       "CIB-017": {
         "title": "Crime partilhado, mérito disputado por salsicha caída",
@@ -173,17 +174,17 @@
       "CIB-021": {
         "title": "Prato de bacon esvaziado antes de chegar à mesa",
         "summary": "O sujeito intercetou o prato à altura da bancada nos dois segundos entre fogão e mesa. Registou-se esforço vertical considerável.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel observando atentamente um prato cheio, visto de baixo."
       },
       "CIB-022": {
         "title": "Óculos de leitura esmagados e estruturalmente comprometidos",
         "summary": "Os óculos de Sawito, deixados «só um segundo» no braço da poltrona, apareceram debaixo dela com uma lente solta. Culpa a poltrona.",
-        "imageAlt": ""
+        "imageAlt": "Sawito, de óculos, bochecha a bochecha com o cão."
       },
       "CIB-023": {
         "title": "Espaço aéreo da varanda defendido contra um único pombo",
         "summary": "O sujeito desafiou formalmente e em voz alta um pombo que não o pedira. O pombo saiu. O sujeito reclamou vitória decisiva.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel no telhado de vidro, momentos depois da queda da varanda."
       },
       "CIB-024": {
         "title": "Porta da casa de banho mantida fechada por fora deliberadamente",
@@ -218,7 +219,7 @@
       "CIB-030": {
         "title": "Cortinado usado como estrutura de escalada não autorizada",
         "summary": "A suspeita subiu até ao peitoril antes de se soltarem dois dos três ganchos. Descida descrita como «quase toda controlada».",
-        "imageAlt": ""
+        "imageAlt": "Pikette empoleirada num parapeito de janela junto às suas tigelas de comida."
       },
       "CIB-031": {
         "title": "Vigília conjunta à janela perante ameaça indefinida",
@@ -238,7 +239,7 @@
       "CIB-034": {
         "title": "Tapete da entrada deslocado para o meio da rua",
         "summary": "Visto na soleira, recuperado duas casas adiante: húmido, roído num canto e virado ao contrário.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel de pé, preso pela trela, no meio de uma rua calcetada."
       },
       "CIB-035": {
         "title": "Visita familiar desviada por afeto seletivo",
@@ -258,22 +259,22 @@
       "CIB-038": {
         "title": "Forte de mantas destruído pelos próprios arquitetos",
         "summary": "O forte conjunto ruiu sob a própria ambição. Ambos os suspeitos foram encontrados nos destroços, aparentemente despreocupados.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel enrolado a dormir debaixo de um cobertor pesado no sofá."
       },
       "CIB-039": {
         "title": "Campainha televisiva confundida com visitante real",
         "summary": "O sujeito respondeu à campainha de um anúncio com volume máximo e plena convicção. Nunca se encontrou visitante.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel a erguer o olhar de repente do tapete, orelhas em alerta."
       },
       "CIB-040": {
         "title": "Aspirador bloqueado por cooperação inesperada",
         "summary": "Habitualmente opostos por princípio, os suspeitos bloquearam juntos o aspirador de ângulos diferentes. A limpeza demorou o dobro.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel a saltar para a sua caminha ao lado de um aspirador ligado."
       },
       "CIB-041": {
         "title": "Tampa de iogurte ao alcance aproveitada previsivelmente",
         "summary": "A tampa ficou na bancada para ser lambida. Ambos compreenderam e executaram o acordo sem discussão.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel a olhar fixamente para um waffle deixado numa mesa ao ar livre."
       },
       "CIB-042": {
         "title": "Papel de embrulho triturado em conjunto antes da hora",
@@ -283,12 +284,12 @@
       "CIB-043": {
         "title": "Novo alerta coordenado na caixa do correio",
         "summary": "A entrega diária desencadeou os habituais latidos de um e miados da outra. O carteiro já conhece a rotina.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel sentado e atento, preso pela trela, perto da rua."
       },
       "CIB-044": {
         "title": "Cama ocupada de canto a canto sem espaço utilizável",
         "summary": "Ambos se dispuseram na diagonal com aparente precisão, sem deixar lugar ao ocupante previsto.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel deitado de costas atravessado numa cama, ocupando toda a largura."
       },
       "CIB-045": {
         "title": "Última fatia reclamada com duvidoso pretexto de equilíbrio",
@@ -298,17 +299,17 @@
       "CIB-046": {
         "title": "Mangueira perfurada em vários pontos",
         "summary": "Há quatro fugas novas num padrão descrito pelos investigadores como «minucioso». O sujeito apareceu perto, satisfeito.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel a investigar algo sobre um rebordo de pedra ao ar livre."
       },
       "CIB-047": {
         "title": "Videochamada interrompida por narração não solicitada",
         "summary": "Sawito comentou em direto as atividades do cão aos colegas durante toda uma reunião com um cliente. Ninguém o tinha pedido.",
-        "imageAlt": ""
+        "imageAlt": "Sawito a tirar uma selfie, com o cão encostado ao seu ombro."
       },
       "CIB-048": {
         "title": "Saída bloqueada à espera de decisão nunca tomada",
         "summary": "O sujeito passou onze minutos à porta aberta a decidir se saía, bloqueando os dois sentidos, antes de voltar ao sofá.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel sentado, preso pela trela, mesmo à porta de entrada."
       }
     }
   },

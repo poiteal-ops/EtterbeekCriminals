@@ -61,6 +61,7 @@
     "viewDetailsLabel": "VEZI PROBELE",
     "hideDetailsLabel": "ASCUNDE PROBELE",
     "viewCaseLabel": "VEZI DOSARUL COMPLET",
+    "noEvidenceLabel": "NICIO DOVADĂ LA DOSAR",
     "emptyStateTitle": "NICIUN INCIDENT CORESPUNZĂTOR",
     "emptyStateBody": "Niciun incident nu corespunde filtrelor. Încercați alt suspect sau altă abatere ori resetați filtrele pentru întreaga arhivă.",
     "methodologyTitle": "METODOLOGIE",
@@ -78,7 +79,7 @@
       "CIB-002": {
         "title": "Cusăturile pernei testate până la cedare",
         "summary": "Săpătura comună în perna fotoliului bun a împrăștiat umplutură prin sufragerie. Ambii neagă că au început; ambii erau acoperiți cu aceeași umplutură.",
-        "imageAlt": ""
+        "imageAlt": "Cusătură ruptă și căptușeală vizibilă pe o cusătură a unei perne de canapea."
       },
       "CIB-003": {
         "title": "Alarmă sincronizată fără motiv la ușă",
@@ -88,7 +89,7 @@
       "CIB-004": {
         "title": "Coridor devenit impracticabil prin acord comun",
         "summary": "Ambii au ocupat simultan același mic spațiu, blocând ieșirea unsprezece minute. Niciunul nu s-a mișcat primul.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel în lesă, chiar la intrarea cu gresie."
       },
       "CIB-005": {
         "title": "Pâine transferată în custodie protectoare",
@@ -103,7 +104,7 @@
       "CIB-007": {
         "title": "Reuniune de familie întreruptă de o opinie nesolicitată",
         "summary": "Subiectul a intervenit într-o conversație străină, lătrând la volumul necesar pentru a o încheia. A încheiat-o.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel stând solemn, așteptând verdictul."
       },
       "CIB-008": {
         "title": "Trecere blocată intenționat în timpul livrării",
@@ -148,7 +149,7 @@
       "CIB-016": {
         "title": "Tastatură ocupată înaintea unui apel programat",
         "summary": "Subiectul s-a întins pe tastatură cu patru minute înaintea videoconferinței. Două tentative de îndepărtare. Apelul a început târziu.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel întins pe spate pe un covor, complet relaxat."
       },
       "CIB-017": {
         "title": "Infracțiune comună, merit disputat pentru un cârnat căzut",
@@ -173,17 +174,17 @@
       "CIB-021": {
         "title": "Farfurie cu bacon golită înainte să ajungă la masă",
         "summary": "Subiectul a interceptat farfuria la nivelul blatului în cele două secunde dintre aragaz și masă. Efort vertical considerabil constatat.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel urmărind atent o farfurie plină, văzută de jos."
       },
       "CIB-022": {
         "title": "Ochelari de citit striviți și compromiși structural",
         "summary": "Ochelarii lui Sawito, lăsați pe brațul fotoliului «doar o secundă», au fost găsiți dedesubt cu o lentilă desprinsă. Dă vina pe fotoliu.",
-        "imageAlt": ""
+        "imageAlt": "Sawito, cu ochelarii pe nas, obraz lângă obraz cu câinele."
       },
       "CIB-023": {
         "title": "Spațiul aerian al balconului apărat de un singur porumbel",
         "summary": "Subiectul a provocat zgomotos un porumbel care nu ceruse nimic. Porumbelul a plecat. Subiectul a proclamat o victorie decisivă.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel pe acoperișul de sticlă, imediat după căderea de pe balcon."
       },
       "CIB-024": {
         "title": "Ușa băii ținută deliberat închisă din exterior",
@@ -218,7 +219,7 @@
       "CIB-030": {
         "title": "Perdea subțire folosită ca structură de cățărat neautorizată",
         "summary": "Suspecta a urcat până la pervaz înainte să cedeze două din cele trei cârlige. Coborâre descrisă drept «în mare parte controlată».",
-        "imageAlt": ""
+        "imageAlt": "Pikette cocoțată pe pervazul ferestrei, lângă castroanele ei de mâncare."
       },
       "CIB-031": {
         "title": "Veghe comună la fereastră pentru o amenințare neprecizată",
@@ -238,7 +239,7 @@
       "CIB-034": {
         "title": "Preș mutat în mijlocul străzii",
         "summary": "Văzut la prag, recuperat două case mai departe: umed, ros la un colț și întors greșit.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel stând în lesă în mijlocul unei străzi pavate."
       },
       "CIB-035": {
         "title": "Vizită de familie deturnată prin afecțiune selectivă",
@@ -258,22 +259,22 @@
       "CIB-038": {
         "title": "Fort din pături demolat de propriii arhitecți",
         "summary": "Construcția comună s-a prăbușit sub propria ambiție. Ambii suspecți au fost găsiți printre resturi, aparent nepăsători.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel ghemuit, adormit sub o pătură groasă pe canapea."
       },
       "CIB-039": {
         "title": "Sonerie de televizor confundată cu un vizitator real",
         "summary": "Subiectul a răspuns soneriei dintr-o reclamă la volum maxim și cu deplină convingere. Niciun vizitator nu a fost găsit.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel ridicând brusc privirea de pe covor, cu urechile ciulite."
       },
       "CIB-040": {
         "title": "Aspirator blocat prin cooperare neașteptată",
         "summary": "De regulă adversari din principiu, ambii au blocat simultan aspiratorul din unghiuri diferite. Curățenia a durat dublu.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel sărind pe cușeta lui, lângă un aspirator pornit."
       },
       "CIB-041": {
         "title": "Capac de iaurt lăsat la îndemână, exploatat previzibil",
         "summary": "Capacul era pe blat pentru a fi lins. Ambii au înțeles și executat aranjamentul fără ceartă.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel privind fix un vafe lăsat pe o masă de afară."
       },
       "CIB-042": {
         "title": "Hârtie de cadou mărunțită împreună înainte de termen",
@@ -283,12 +284,12 @@
       "CIB-043": {
         "title": "Nouă alertă coordonată la fanta poștală",
         "summary": "Livrarea zilnică a declanșat obișnuitele lătrături ale unuia și mieunături ale celeilalte. Poștașul cunoaște deja rutina.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel stând vigilent în lesă lângă stradă."
       },
       "CIB-044": {
         "title": "Pat ocupat din colț în colț fără spațiu utilizabil",
         "summary": "Ambii s-au așezat diagonal cu precizie aparentă, fără a lăsa loc ocupantului prevăzut.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel întins pe spate de-a latul unui pat, ocupând toată lățimea."
       },
       "CIB-045": {
         "title": "Ultima felie revendicată sub pretext îndoielnic de echilibrare",
@@ -298,17 +299,17 @@
       "CIB-046": {
         "title": "Furtun de grădină perforat în mai multe puncte",
         "summary": "Patru scurgeri noi formează un tipar descris drept «temeinic». Subiectul a fost găsit alături, mulțumit.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel cercetând ceva pe o muchie de piatră afară."
       },
       "CIB-047": {
         "title": "Videoconferință întreruptă de comentariu nesolicitat",
         "summary": "Sawito a relatat în direct activitățile câinelui colegilor pe întreaga durată a unei întâlniri cu un client. Nimeni nu ceruse asta.",
-        "imageAlt": ""
+        "imageAlt": "Sawito făcând un selfie, cu câinele sprijinit de umărul lui."
       },
       "CIB-048": {
         "title": "Ieșire blocată până la o decizie niciodată luată",
         "summary": "Subiectul a stat unsprezece minute în ușa deschisă hotărând dacă iese, blocând ambele sensuri, apoi s-a întors pe canapea.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel stând în lesă chiar în fața ușii de la intrare."
       }
     }
   },

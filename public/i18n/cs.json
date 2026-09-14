@@ -61,6 +61,7 @@
     "viewDetailsLabel": "ZOBRAZIT DŮKAZY",
     "hideDetailsLabel": "SKRÝT DŮKAZY",
     "viewCaseLabel": "ZOBRAZIT CELÝ SPIS",
+    "noEvidenceLabel": "VE SPISU NENÍ ŽÁDNÝ DŮKAZ",
     "emptyStateTitle": "ŽÁDNÉ ODPOVÍDAJÍCÍ INCIDENTY",
     "emptyStateBody": "Žádný incident neodpovídá filtrům. Zvolte jiného podezřelého či přestupek, nebo filtry zrušte pro celý archiv.",
     "methodologyTitle": "METODIKA",
@@ -78,7 +79,7 @@
       "CIB-002": {
         "title": "Švy polštáře testovány až do selhání",
         "summary": "Společné hrabání v polštáři dobrého křesla rozneslo výplň po obýváku. Oba popřeli zahájení; oba byli pokryti stejnou výplní.",
-        "imageAlt": ""
+        "imageAlt": "Roztržený šev a viditelná výplň na švu polštáře pohovky."
       },
       "CIB-003": {
         "title": "Synchronizovaný planý poplach u dveří",
@@ -88,7 +89,7 @@
       "CIB-004": {
         "title": "Chodba neprůchodná po vzájemné dohodě",
         "summary": "Oba současně obsadili stejný malý prostor a zablokovali východ na jedenáct minut. Nikdo se nepohnul první.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel na vodítku, těsně za obloženým vstupem."
       },
       "CIB-005": {
         "title": "Chléb převeden do ochranné úschovy",
@@ -103,7 +104,7 @@
       "CIB-007": {
         "title": "Rodinné setkání přerušeno nevyžádaným názorem",
         "summary": "Subjekt vstoupil do cizího hovoru a štěkal dost hlasitě, aby jej ukončil. Ukončil ho.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel sedí slavnostně a čeká na rozsudek."
       },
       "CIB-008": {
         "title": "Průchod úmyslně blokován během doručování",
@@ -148,7 +149,7 @@
       "CIB-016": {
         "title": "Klávesnice obsazena před plánovaným hovorem",
         "summary": "Subjekt ulehl na klávesnici čtyři minuty před videohovorem. Dva pokusy o odstranění. Hovor začal pozdě.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel leží na zádech na koberci, zcela uvolněný."
       },
       "CIB-017": {
         "title": "Společný zločin, sporné zásluhy kolem spadlého párku",
@@ -173,17 +174,17 @@
       "CIB-021": {
         "title": "Talíř slaniny vyprázdněn před dosažením stolu",
         "summary": "Subjekt zachytil talíř ve výšce linky během dvou sekund mezi sporákem a stolem. Zaznamenáno značné svislé úsilí.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel pozorně sleduje plný talíř zdola."
       },
       "CIB-022": {
         "title": "Brýle na čtení rozsednuty",
         "summary": "Sawitovy brýle, ponechané na opěrce jen na vteřinu, se našly pod křeslem s vypadlým sklem. Viní křeslo.",
-        "imageAlt": ""
+        "imageAlt": "Sawito, v brýlích, tvář na tváři se psem."
       },
       "CIB-023": {
         "title": "Vzdušný prostor balkonu bráněn proti jedinému holubovi",
         "summary": "Subjekt hlasitě vyzval holuba, který o to nestál. Holub odletěl. Subjekt vyhlásil rozhodující vítězství.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel na skleněné střeše, chvíli po pádu z balkonu."
       },
       "CIB-024": {
         "title": "Dveře koupelny úmyslně drženy zavřené zvenčí",
@@ -218,7 +219,7 @@
       "CIB-030": {
         "title": "Záclona použita jako nepovolená lezecká konstrukce",
         "summary": "Podezřelá vyšplhala k parapetu, než se uvolnily dva ze tří háčků. Sestup byl popsán jako převážně řízený.",
-        "imageAlt": ""
+        "imageAlt": "Pikette sedí na parapetu vedle svých misek na jídlo."
       },
       "CIB-031": {
         "title": "Společná okenní hlídka proti neurčené hrozbě",
@@ -238,7 +239,7 @@
       "CIB-034": {
         "title": "Rohožka přemístěna doprostřed ulice",
         "summary": "Naposledy na prahu, nalezena o dva domy dál: vlhká, rozkousaná v rohu a obrácená.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel stojí na vodítku uprostřed dlážděné ulice."
       },
       "CIB-035": {
         "title": "Rodinná návštěva vykolejena výběrovou náklonností",
@@ -258,22 +259,22 @@
       "CIB-038": {
         "title": "Pevnost z dek zbořili vlastní architekti",
         "summary": "Společná stavba se zhroutila pod vlastní ambicí. Oba byli nalezeni v troskách, zjevně lhostejní.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel spí stočený pod silnou dekou na pohovce."
       },
       "CIB-039": {
         "title": "Televizní zvonek zaměněn za skutečnou návštěvu",
         "summary": "Subjekt odpověděl na zvonek v reklamě plnou hlasitostí a přesvědčením. Žádný návštěvník nikdy nalezen nebyl.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel prudce zvedá hlavu z koberce, s nastraženýma ušima."
       },
       "CIB-040": {
         "title": "Vysavač zablokován nečekanou spoluprací",
         "summary": "Obvykle zásadoví odpůrci společně zablokovali vysavač z různých úhlů. Úklid trval dvakrát déle.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel skáče na svůj pelíšek vedle zapnutého vysavače."
       },
       "CIB-041": {
         "title": "Dostupné víčko jogurtu předvídatelně využito",
         "summary": "Víčko leželo na lince k olízání. Oba dohodu pochopili a uskutečnili bez sporu.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel upřeně zírá na vafli nechanou na venkovním stole."
       },
       "CIB-042": {
         "title": "Dárkový papír společně roztrhán předčasně",
@@ -283,12 +284,12 @@
       "CIB-043": {
         "title": "Další společný poplach u otvoru na poštu",
         "summary": "Denní doručení spustilo obvyklé štěkání jednoho a mňoukání druhé. Doručovatel už rutinu zná.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel sedí ostražitě na vodítku poblíž ulice."
       },
       "CIB-044": {
         "title": "Postel obsazena od rohu k rohu bez místa",
         "summary": "Oba se uložili diagonálně se zdánlivou přesností, bez prostoru pro zamýšleného uživatele.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel leží na zádech napříč postelí a zabírá celou její šířku."
       },
       "CIB-045": {
         "title": "Poslední krajíc zabrán pod pochybnou záminkou rovnováhy",
@@ -298,17 +299,17 @@
       "CIB-046": {
         "title": "Zahradní hadice proděravěna na více místech",
         "summary": "Čtyři nové netěsnosti tvoří vzorec označený vyšetřovateli za důkladný. Subjekt nalezen poblíž, spokojen.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel venku zkoumá něco na kamenném výstupku."
       },
       "CIB-047": {
         "title": "Videohovor přerušen nevyžádaným komentářem",
         "summary": "Sawito živě komentoval kolegům psí činnosti po celou schůzku s klientem. Nikdo o to nežádal.",
-        "imageAlt": ""
+        "imageAlt": "Sawito si dělá selfie, pes opřený o jeho rameno."
       },
       "CIB-048": {
         "title": "Východ zablokován do rozhodnutí, které nepadlo",
         "summary": "Subjekt stál jedenáct minut v otevřených dveřích a zvažoval odchod. Blokoval oba směry, pak se vrátil na pohovku.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel sedí na vodítku těsně před vchodovými dveřmi."
       }
     }
   },

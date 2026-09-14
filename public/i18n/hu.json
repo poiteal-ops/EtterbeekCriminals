@@ -61,6 +61,7 @@
     "viewDetailsLabel": "BIZONYÍTÉKOK MEGTEKINTÉSE",
     "hideDetailsLabel": "BIZONYÍTÉKOK ELREJTÉSE",
     "viewCaseLabel": "TELJES ÜGYIRAT MEGTEKINTÉSE",
+    "noEvidenceLabel": "NINCS BIZONYÍTÉK AZ AKTÁBAN",
     "emptyStateTitle": "NINCS EGYEZŐ ESET",
     "emptyStateBody": "Egyetlen eset sem felel meg a szűrőknek. Válasszon másik gyanúsítottat vagy vétséget, vagy törölje a szűrőket a teljes archívumhoz.",
     "methodologyTitle": "MÓDSZERTAN",
@@ -78,7 +79,7 @@
       "CIB-002": {
         "title": "Párnavarratok tesztelve szerkezeti meghibásodásig",
         "summary": "A jó fotel párnájának közös kiásása töltetet szórt a nappaliba. Mindketten tagadták a kezdést; mindkettőjüket ugyanaz a töltet borította.",
-        "imageAlt": ""
+        "imageAlt": "Elszakadt varrás és kilátszó bélés egy kanapépárna varrásánál."
       },
       "CIB-003": {
         "title": "Összehangolt vakriasztás az ajtónál",
@@ -88,7 +89,7 @@
       "CIB-004": {
         "title": "Folyosó közös megegyezéssel járhatatlan",
         "summary": "Mindketten egyszerre foglalták el ugyanazt a kis helyet, tizenegy percre elzárva a kijáratot. Egyikük sem mozdult először.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel pórázon, közvetlenül a csempézett bejáraton belül."
       },
       "CIB-005": {
         "title": "Kenyér védőőrizetbe véve",
@@ -103,7 +104,7 @@
       "CIB-007": {
         "title": "Családi összejövetel kéretlen véleménnyel félbeszakítva",
         "summary": "Az alany idegen beszélgetésbe avatkozott, és elég hangosan ugatott annak lezárásához. Lezárta.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel ünnepélyesen ül, az ítéletre várva."
       },
       "CIB-008": {
         "title": "Átjáró szándékosan elzárva kézbesítés közben",
@@ -148,7 +149,7 @@
       "CIB-016": {
         "title": "Billentyűzet elfoglalva tervezett hívás előtt",
         "summary": "Az alany négy perccel a videóhívás előtt ráfeküdt a billentyűzetre. Két eltávolítási kísérlet. A hívás késve kezdődött.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel hanyatt fekve, teljesen ellazulva egy szőnyegen."
       },
       "CIB-017": {
         "title": "Közös bűn, vitatott érdem a leesett kolbászért",
@@ -173,17 +174,17 @@
       "CIB-021": {
         "title": "Szalonnás tányér kiürítve az asztal előtt",
         "summary": "Az alany pultmagasságban fogta el a tányért a tűzhely és asztal közti két másodpercben. Jelentős függőleges erőfeszítést rögzítettek.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel figyelmesen figyel egy teli tányért alulról."
       },
       "CIB-022": {
         "title": "Olvasószemüveg ráüléssel összetörve",
         "summary": "Sawito csak egy másodpercre a karfára tett szemüvegét a fotel alatt találták meg kiesett lencsével. A fotelt hibáztatja.",
-        "imageAlt": ""
+        "imageAlt": "Sawito, szemüvegben, arcát a kutyáéhoz simítva."
       },
       "CIB-023": {
         "title": "Erkély légtere megvédve egyetlen galambtól",
         "summary": "Az alany hangosan kihívott egy galambot, amely ezt nem kérte. A galamb távozott. Az alany döntő győzelmet hirdetett.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel az üvegtetőn, közvetlenül az erkélyről való leesés után."
       },
       "CIB-024": {
         "title": "Fürdőszobaajtó szándékosan kívülről zárva tartva",
@@ -218,7 +219,7 @@
       "CIB-030": {
         "title": "Vékony függöny engedély nélküli mászókaként használva",
         "summary": "A gyanúsított a párkányig mászott, mielőtt három kampóból kettő kiakadt. Az ereszkedést nagyrészt ellenőrzöttnek írták le.",
-        "imageAlt": ""
+        "imageAlt": "Pikette az ablakpárkányon ül a tálai mellett."
       },
       "CIB-031": {
         "title": "Közös ablakőrség meg nem nevezett fenyegetés miatt",
@@ -238,7 +239,7 @@
       "CIB-034": {
         "title": "Lábtörlő az utca közepére helyezve",
         "summary": "Utoljára a küszöbnél látták, két házzal odébb került elő: nedvesen, egyik sarkán rágva és fordítva.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel pórázon áll egy macskaköves utca közepén."
       },
       "CIB-035": {
         "title": "Családi látogatás szelektív szeretettel kisiklatva",
@@ -258,22 +259,22 @@
       "CIB-038": {
         "title": "Takaróerődöt saját építészei bontották le",
         "summary": "A közös építmény saját ambíciója alatt omlott össze. Mindkettőjüket a romokban találták, látszólag zavartalanul.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel összegömbölyödve alszik egy vastag takaró alatt a kanapén."
       },
       "CIB-039": {
         "title": "Tévés ajtócsengő összetévesztve valódi látogatóval",
         "summary": "Az alany teljes hangerővel és meggyőződéssel reagált a reklám csengőjére. Látogatót soha nem találtak.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel hirtelen felkapja a fejét a szőnyegről, fülei hegyezve."
       },
       "CIB-040": {
         "title": "Porszívó váratlan együttműködéssel blokkolva",
         "summary": "A rendszerint elvi ellenfelek egyszerre zárták el a porszívót különböző irányokból. A takarítás kétszer annyi ideig tartott.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel felugrik a fekhelyére egy bekapcsolt porszívó mellett."
       },
       "CIB-041": {
         "title": "Elérhető joghurtfedél kiszámíthatóan kihasználva",
         "summary": "A fedél nyalogatásra maradt a pulton. Mindketten megértették a megállapodást, és vita nélkül végrehajtották.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel mereven bámul egy kültéri asztalon hagyott gofrit."
       },
       "CIB-042": {
         "title": "Ajándékpapír közösen idő előtt felaprítva",
@@ -283,12 +284,12 @@
       "CIB-043": {
         "title": "Új összehangolt riadó a levélbedobónál",
         "summary": "A napi kézbesítés kiváltotta az egyik szokásos ugatását és a másik nyávogását. A postás már ismeri a rutint.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel éberen ül pórázon az utca közelében."
       },
       "CIB-044": {
         "title": "Ágy saroktól sarokig elfoglalva szabad hely nélkül",
         "summary": "Mindketten látszólagos pontossággal átlósan helyezkedtek el, nem hagyva teret az eredeti használónak.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel hanyatt fekve keresztben az ágyon, elfoglalva a teljes szélességét."
       },
       "CIB-045": {
         "title": "Utolsó szelet kétes egyenlősítési ürüggyel elvéve",
@@ -298,17 +299,17 @@
       "CIB-046": {
         "title": "Kerti tömlő több ponton kilyukasztva",
         "summary": "Négy új szivárgás alkot a nyomozók szerint alapos mintát. Az alanyt elégedetten találták a közelben.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel kint vizsgál valamit egy kőpárkányon."
       },
       "CIB-047": {
         "title": "Videóhívás kéretlen élő közvetítéssel megszakítva",
         "summary": "Sawito a teljes ügyféltalálkozó alatt a kutya tevékenységeit kommentálta a kollégáknak. Senki nem kérte.",
-        "imageAlt": ""
+        "imageAlt": "Sawito szelfit készít, a kutya a vállának dőlve."
       },
       "CIB-048": {
         "title": "Kijárat lezárva egy soha meg nem hozott döntésig",
         "summary": "Az alany tizenegy percig állt a nyitott ajtóban, a kimenetelt fontolva. Mindkét irányt blokkolta, majd visszatért a kanapéra.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel pórázon ül közvetlenül a bejárati ajtó előtt."
       }
     }
   },

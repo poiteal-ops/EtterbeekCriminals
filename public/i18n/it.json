@@ -61,6 +61,7 @@
     "viewDetailsLabel": "MOSTRA LE PROVE",
     "hideDetailsLabel": "NASCONDI LE PROVE",
     "viewCaseLabel": "VEDI IL FASCICOLO COMPLETO",
+    "noEvidenceLabel": "NESSUNA PROVA AGLI ATTI",
     "emptyStateTitle": "NESSUN INCIDENTE CORRISPONDENTE",
     "emptyStateBody": "Nessun incidente corrisponde ai filtri scelti. Prova un altro sospetto o un’altra infrazione, oppure azzera i filtri per vedere l’intero archivio.",
     "methodologyTitle": "METODOLOGIA",
@@ -78,7 +79,7 @@
       "CIB-002": {
         "title": "Cuciture del cuscino testate fino al cedimento",
         "summary": "Lo scavo congiunto nel cuscino della poltrona buona ha sparso imbottitura nel salotto. Entrambi negano di aver iniziato; entrambi ne erano ricoperti.",
-        "imageAlt": ""
+        "imageAlt": "Cucitura strappata e imbottitura visibile su un cuscino del divano."
       },
       "CIB-003": {
         "title": "Allarme sincronizzato per nulla alla porta",
@@ -88,7 +89,7 @@
       "CIB-004": {
         "title": "Corridoio reso impraticabile di comune accordo",
         "summary": "I sospetti hanno occupato contemporaneamente lo stesso piccolo spazio, bloccando l’uscita per undici minuti. Nessuno si è mosso per primo.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel al guinzaglio, appena dentro l'ingresso piastrellato."
       },
       "CIB-005": {
         "title": "Pane trasferito in custodia protettiva",
@@ -103,7 +104,7 @@
       "CIB-007": {
         "title": "Riunione familiare interrotta da un’opinione non richiesta",
         "summary": "Il soggetto si è inserito in una conversazione altrui, abbaiando al volume necessario per terminarla. Obiettivo raggiunto.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel seduto solenne, in attesa del verdetto."
       },
       "CIB-008": {
         "title": "Passaggio bloccato intenzionalmente durante una consegna",
@@ -148,7 +149,7 @@
       "CIB-016": {
         "title": "Tastiera occupata prima di una chiamata programmata",
         "summary": "Il soggetto si è sdraiato sulla tastiera quattro minuti prima di una videochiamata. Due tentativi di rimozione. La chiamata è iniziata tardi.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel disteso sulla schiena su un tappeto, completamente rilassato."
       },
       "CIB-017": {
         "title": "Reato condiviso, merito conteso per una salsiccia caduta",
@@ -173,17 +174,17 @@
       "CIB-021": {
         "title": "Piatto di pancetta svuotato prima di raggiungere il tavolo",
         "summary": "Il soggetto ha intercettato il piatto all’altezza del piano nei due secondi tra fornello e tavolo. Rilevato notevole sforzo verticale.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel che osserva intensamente un piatto pieno da sotto."
       },
       "CIB-022": {
         "title": "Occhiali da lettura schiacciati e compromessi",
         "summary": "Gli occhiali di Sawito, lasciati sul bracciolo «solo un secondo», sono stati trovati sotto la poltrona con una lente staccata. Accusa la poltrona.",
-        "imageAlt": ""
+        "imageAlt": "Sawito, con gli occhiali, guancia a guancia con il cane."
       },
       "CIB-023": {
         "title": "Spazio aereo del balcone difeso da un solo piccione",
         "summary": "Il soggetto ha sfidato rumorosamente un piccione che non ne aveva fatto richiesta. Il piccione è partito. Il soggetto ha dichiarato una vittoria decisiva.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel sul tetto di vetro, subito dopo la caduta dal balcone."
       },
       "CIB-024": {
         "title": "Porta del bagno deliberatamente tenuta chiusa dall’esterno",
@@ -218,7 +219,7 @@
       "CIB-030": {
         "title": "Tenda leggera usata come struttura d’arrampicata abusiva",
         "summary": "La sospetta è salita fino al davanzale prima che cedessero due dei tre ganci. Discesa descritta come «perlopiù controllata».",
-        "imageAlt": ""
+        "imageAlt": "Pikette appollaiata su un davanzale accanto alle sue ciotole."
       },
       "CIB-031": {
         "title": "Veglia congiunta alla finestra per una minaccia imprecisata",
@@ -238,7 +239,7 @@
       "CIB-034": {
         "title": "Zerbino trasferito in mezzo alla strada",
         "summary": "Visto sulla soglia, recuperato due case più in là: umido, rosicchiato a un angolo e girato male.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel in piedi al guinzaglio in mezzo a una strada lastricata."
       },
       "CIB-035": {
         "title": "Visita familiare deviata da affetto selettivo",
@@ -258,22 +259,22 @@
       "CIB-038": {
         "title": "Forte di coperte demolito dai suoi stessi architetti",
         "summary": "Il forte costruito insieme è crollato sotto la propria ambizione. I sospetti sono stati ritrovati tra i resti, apparentemente indifferenti.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel addormentato, rannicchiato sotto una coperta pesante sul divano."
       },
       "CIB-039": {
         "title": "Campanello televisivo scambiato per un vero visitatore",
         "summary": "Il soggetto ha reagito al campanello di uno spot a pieno volume e con assoluta convinzione. Nessun visitatore è mai stato trovato.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel che alza di scatto lo sguardo dal tappeto, orecchie dritte."
       },
       "CIB-040": {
         "title": "Aspirapolvere bloccato con cooperazione inattesa",
         "summary": "Solitamente contrari per principio, i sospetti hanno bloccato insieme l’aspirapolvere da lati diversi. Le pulizie sono durate il doppio.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel che salta sulla sua cuccia accanto a un aspirapolvere acceso."
       },
       "CIB-041": {
         "title": "Coperchio di yogurt a portata, sfruttamento prevedibile",
         "summary": "Il coperchio era sul piano per essere leccato. Entrambi hanno compreso l’accordo e lo hanno eseguito senza dispute.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel che fissa un waffle lasciato su un tavolo all'aperto."
       },
       "CIB-042": {
         "title": "Carta regalo triturata insieme in anticipo",
@@ -283,12 +284,12 @@
       "CIB-043": {
         "title": "Nuovo allarme coordinato alla buca delle lettere",
         "summary": "La consegna giornaliera ha provocato il consueto abbaiare dell’uno e miagolare dell’altra. Il postino conosce ormai la routine.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel seduto e all'erta al guinzaglio vicino alla strada."
       },
       "CIB-044": {
         "title": "Letto occupato da angolo ad angolo senza spazio libero",
         "summary": "I sospetti si sono disposti diagonalmente con apparente precisione, non lasciando posto all’occupante previsto.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel disteso sulla schiena di traverso su un letto, occupando tutta la larghezza."
       },
       "CIB-045": {
         "title": "Ultima fetta presa con dubbio pretesto di equilibrio",
@@ -298,17 +299,17 @@
       "CIB-046": {
         "title": "Tubo da giardino perforato in più punti",
         "summary": "Quattro nuove perdite formano uno schema definito «accurato» dagli investigatori. Il soggetto è stato trovato vicino, soddisfatto.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel che ispeziona qualcosa su una sporgenza di pietra all'aperto."
       },
       "CIB-047": {
         "title": "Videochiamata interrotta da cronaca non richiesta",
         "summary": "Sawito ha commentato in diretta le attività del cane ai colleghi per tutta una riunione con un cliente. Nessuno l’aveva richiesto.",
-        "imageAlt": ""
+        "imageAlt": "Sawito che si fa un selfie, con il cane appoggiato alla sua spalla."
       },
       "CIB-048": {
         "title": "Uscita bloccata in attesa di una decisione mai presa",
         "summary": "Per undici minuti il soggetto ha esitato sulla porta aperta, bloccando entrambi i sensi, prima di tornare sul divano.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel seduto al guinzaglio appena fuori dalla porta d'ingresso."
       }
     }
   },

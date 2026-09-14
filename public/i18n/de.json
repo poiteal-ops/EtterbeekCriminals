@@ -61,6 +61,7 @@
     "viewDetailsLabel": "BEWEISE ANZEIGEN",
     "hideDetailsLabel": "BEWEISE AUSBLENDEN",
     "viewCaseLabel": "VOLLSTÄNDIGE FALLAKTE ANZEIGEN",
+    "noEvidenceLabel": "KEINE BEWEISE AKTENKUNDIG",
     "emptyStateTitle": "KEINE PASSENDEN VORFÄLLE",
     "emptyStateBody": "Keine erfassten Vorfälle passen zu dieser Filterkombination. Wählen Sie einen anderen Verdächtigen oder ein anderes Delikt, oder setzen Sie die Filter zurück.",
     "methodologyTitle": "METHODIK",
@@ -78,7 +79,7 @@
       "CIB-002": {
         "title": "Kissennähte bis zum Materialversagen geprüft",
         "summary": "Eine gemeinsame Grabung im guten Sesselkissen verteilte Füllmaterial im Wohnzimmer. Beide bestreiten, angefangen zu haben; beide waren mit derselben Füllung bedeckt.",
-        "imageAlt": ""
+        "imageAlt": "Aufgerissene Naht und freiliegende Füllung an einer Sofakissen-Naht."
       },
       "CIB-003": {
         "title": "Synchroner Alarm wegen nichts an der Tür",
@@ -88,7 +89,7 @@
       "CIB-004": {
         "title": "Flur einvernehmlich unpassierbar gemacht",
         "summary": "Beide Verdächtigen besetzten gleichzeitig denselben kleinen Bereich im Flur und blockierten elf Minuten den Ausgang. Keiner bewegte sich zuerst.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel an der Leine, direkt im gefliesten Eingangsbereich."
       },
       "CIB-005": {
         "title": "Brot in Schutzgewahrsam überführt",
@@ -103,7 +104,7 @@
       "CIB-007": {
         "title": "Familientreffen durch ungefragte Meinung gestört",
         "summary": "Das Subjekt mischte sich in ein fremdes Gespräch ein und bellte laut genug, um es zu beenden. Genau das geschah.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel sitzt feierlich da und erwartet das Urteil."
       },
       "CIB-008": {
         "title": "Durchgang während Lieferung absichtlich blockiert",
@@ -148,7 +149,7 @@
       "CIB-016": {
         "title": "Laptoptastatur vor geplantem Gespräch besetzt",
         "summary": "Vier Minuten vor einer Videokonferenz legte sich das Subjekt auf die Tastatur. Zwei Räumungsversuche folgten. Das Gespräch begann verspätet.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel liegt entspannt auf dem Rücken auf einem Teppich."
       },
       "CIB-017": {
         "title": "Gemeinsame Tat, umstrittener Ruhm um gefallene Wurst",
@@ -173,17 +174,17 @@
       "CIB-021": {
         "title": "Speckteller vor Erreichen des Tisches geleert",
         "summary": "Das Subjekt fing den Teller auf Arbeitsplattenhöhe in den zwei Sekunden zwischen Herd und Tisch ab. Ermittler vermerkten beträchtlichen vertikalen Einsatz.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel beobachtet von unten aufmerksam einen vollen Teller."
       },
       "CIB-022": {
         "title": "Lesebrille durch Draufsetzen strukturell beeinträchtigt",
         "summary": "Sawitos Brille, nur kurz auf der Sessellehne abgelegt, wurde darunter mit einem herausgelösten Glas gefunden. Er beschuldigt den Sessel.",
-        "imageAlt": ""
+        "imageAlt": "Sawito, mit Brille, Wange an Wange mit dem Hund."
       },
       "CIB-023": {
         "title": "Balkonluftraum gegen einzelne Taube verteidigt",
         "summary": "Das Subjekt forderte lautstark eine Taube heraus, die darum nicht gebeten hatte. Die Taube flog weg. Das Subjekt erklärte den Sieg für entscheidend.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel auf dem Glasdach, kurz nach dem Sturz vom Balkon."
       },
       "CIB-024": {
         "title": "Badezimmertür absichtlich von außen zugehalten",
@@ -218,7 +219,7 @@
       "CIB-030": {
         "title": "Gardine als unerlaubtes Klettergerüst genutzt",
         "summary": "Die Verdächtige erklomm die Gardine bis zur Fensterbank, bevor zwei von drei Haken nachgaben. Der Abstieg galt als „überwiegend kontrolliert“.",
-        "imageAlt": ""
+        "imageAlt": "Pikette sitzt auf einer Fensterbank neben ihren Futternäpfen."
       },
       "CIB-031": {
         "title": "Gemeinsame Fensterwache wegen unbenannter Bedrohung",
@@ -238,7 +239,7 @@
       "CIB-034": {
         "title": "Fußmatte mitten auf die Straße verlegt",
         "summary": "Zuletzt an der Schwelle gesehen, wurde die Matte zwei Häuser weiter geborgen: feucht, an einer Ecke angekaut und falsch herum.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel steht an der Leine mitten auf einer gepflasterten Straße."
       },
       "CIB-035": {
         "title": "Familienbesuch durch selektive Zuneigung entgleist",
@@ -258,22 +259,22 @@
       "CIB-038": {
         "title": "Deckenburg von ihren eigenen Architekten zerlegt",
         "summary": "Eine gemeinsam gebaute Deckenburg brach unter ihren eigenen Ambitionen zusammen. Beide Verdächtigen wurden ungerührt in den Trümmern gefunden.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel zusammengerollt und eingeschlafen unter einer dicken Decke auf dem Sofa."
       },
       "CIB-039": {
         "title": "Fernsehklingel mit echtem Besucher verwechselt",
         "summary": "Das Subjekt reagierte auf die Türklingel einer Werbung mit voller Lautstärke und Überzeugung. Ein Besucher wurde nie gefunden.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel blickt vom Teppich aus scharf auf, Ohren aufgestellt."
       },
       "CIB-040": {
         "title": "Staubsauger durch unerwartete Zusammenarbeit blockiert",
         "summary": "Die gewöhnlich aus Prinzip zerstrittenen Verdächtigen blockierten den Staubsauger gleichzeitig aus verschiedenen Richtungen. Das Putzen dauerte doppelt so lange.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel springt auf sein Hundebett neben einem laufenden Staubsauger."
       },
       "CIB-041": {
         "title": "Joghurtdeckel in Reichweite liegen gelassen und erwartbar genutzt",
         "summary": "Der Deckel lag zum Ablecken auf der Arbeitsplatte. Beide Verdächtigen verstanden die Vereinbarung offenbar und setzten sie ohne Streit um.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel starrt unverwandt auf eine Waffel auf einem Tisch im Freien."
       },
       "CIB-042": {
         "title": "Geschenkpapier gemeinsam vorzeitig geschreddert",
@@ -283,12 +284,12 @@
       "CIB-043": {
         "title": "Erneut koordinierter Alarm am Briefschlitz",
         "summary": "Die tägliche Post löste die gewohnte Reaktion aus: Bellen des einen, Jaulen der anderen. Dem Zusteller ist der Ablauf inzwischen vertraut.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel sitzt wachsam an der Leine in der Nähe der Straße."
       },
       "CIB-044": {
         "title": "Bett von Ecke zu Ecke ohne Restfläche belegt",
         "summary": "Beide Verdächtigen ordneten sich scheinbar präzise diagonal auf dem Bett an und ließen dem vorgesehenen Bewohner keinen Platz.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel liegt quer über einem Bett auf dem Rücken und nimmt die ganze Breite ein."
       },
       "CIB-045": {
         "title": "Letzte Scheibe unter fragwürdigem Portionsvorwand beansprucht",
@@ -298,17 +299,17 @@
       "CIB-046": {
         "title": "Gartenschlauch an mehreren Stellen durchlöchert",
         "summary": "Der Schlauch weist vier neue Lecks in einem von Ermittlern als „gründlich“ bezeichneten Muster auf. Das Subjekt wurde zufrieden in der Nähe gefunden.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel untersucht draußen etwas auf einem Steinvorsprung."
       },
       "CIB-047": {
         "title": "Videokonferenz durch ungefragten Livekommentar unterbrochen",
         "summary": "Sawito kommentierte die Aktivitäten des Hundes während einer gesamten Kundenbesprechung für Kollegen, die nicht darum gebeten hatten.",
-        "imageAlt": ""
+        "imageAlt": "Sawito macht ein Selfie, der Hund lehnt an seiner Schulter."
       },
       "CIB-048": {
         "title": "Ausgang bis zu nie getroffener Entscheidung blockiert",
         "summary": "Das Subjekt stand elf Minuten in der offenen Tür und überlegte hinauszugehen. Es blockierte beide Richtungen, bevor es aufs Sofa zurückkehrte.",
-        "imageAlt": ""
+        "imageAlt": "Le Criminel sitzt an der Leine direkt vor der Haustür."
       }
     }
   },
