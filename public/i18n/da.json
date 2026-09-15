@@ -11,8 +11,8 @@
     "title": "KRIMINALEFTERRETNINGSBUREAUET",
     "subtitle": "Samordnet hændelsesarkiv — tre kendte aktører, samme foragt for ejendomsretten.",
     "archiveNote": "Fiktive hændelsesdata, samlet udelukkende til intern uddannelse. Enhver lighed med en virkelig kriminalitetsbølge er tilfældig og, ærligt talt, ganske karakteristisk.",
-    "archiveWindowLabel": "UDDANNELSESMAPPE / 01.–28. AUG. 2026",
-    "seoDescription": "Udforsk Kriminalefterretningsbureauets arkiv — 48 fiktive hændelser, tre mistænkte, ingen anger.",
+    "archiveWindowLabel": "SAGSARKIV / JUL 2024–AUG 2026",
+    "seoDescription": "Gennemse Criminal Intelligence Bureau-arkivet - 52 fiktive hændelser registreret fra juli 2024 til august 2026.",
     "suspectFilterLabel": "FILTRER EFTER MISTÆNKT",
     "offenceFilterLabel": "FILTRER EFTER FORSEELSE",
     "allSuspectsLabel": "ALLE MISTÆNKTE",
@@ -24,8 +24,8 @@
     "metricClosureRateLabel": "AFSLUTNINGSPROCENT",
     "metricPeakHourLabel": "HYPPIGSTE RAPPORTEREDE TIME",
     "unavailableLabel": "IKKE TILGÆNGELIG",
-    "dailyChartTitle": "DAGLIG AKTIVITET",
-    "dailyChartDescription": "Rapporterede hændelser pr. dag i arkivperioden.",
+    "dailyChartTitle": "MÅNEDLIG AKTIVITET",
+    "dailyChartDescription": "Rapporterede hændelser om måneden i hele arkivvinduet.",
     "offenceChartTitle": "TOTALER PR. FORSEELSE",
     "offenceChartDescription": "Hændelser fordelt efter kategori.",
     "hourlyChartTitle": "FORDELING OVER DØGNET",
@@ -40,6 +40,11 @@
       "open": "ÅBEN",
       "closed": "AFSLUTTET"
     },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
     "relationshipLabels": {
       "allied": "ALLIEREDE",
       "rivals": "RIVALER",
@@ -48,15 +53,11 @@
     },
     "dossierDescriptions": {
       "le-criminel": "HOVEDMISTÆNKT. Boston Terrier, taktisk halsbånd, ingen kendt anger. Til stede ved langt de fleste registrerede hændelser.",
-      "pikette": "VIGTIGSTE MEDSKYLDIGE. LEJLIGHEDSVIS ÆRKEFJENDE. Motiverne er uklare; alliancen er i bedste fald situationsbestemt.",
+      "pikette": "SÆSONENS ÆRKEFJANDE. Historiske besøg på fil. Næste besøg forventes i december.",
       "sawito": "MULIGGØRER, IKKE MISTÆNKT. Til stede ved de fleste hændelser. Indgribensrate: ubetydelig."
     },
-    "suspectLabels": {
-      "le-criminel": "LE CRIMINEL",
-      "pikette": "PIKETTE",
-      "sawito": "SAWITO"
-    },
     "overlapNote": "Tallene tæller deltagelse i de viste hændelser, inklusive medskyldige. Flere mistænkte kan deltage i samme hændelse, så summen kan overstige antallet af hændelser.",
+    "nextVisitLabel": "NÆSTE BESØG: DECEMBER",
     "showMoreLabel": "VIS FLERE",
     "viewDetailsLabel": "VIS BEVISER",
     "hideDetailsLabel": "SKJUL BEVISER",
@@ -65,30 +66,26 @@
     "emptyStateTitle": "INGEN MATCHENDE HÆNDELSER",
     "emptyStateBody": "Ingen hændelser passer til filtrene. Vælg en anden mistænkt eller forseelse, eller nulstil for at se hele arkivet.",
     "methodologyTitle": "METODE",
-    "methodologyBody": "Arkivet omfatter 48 fiktive hændelser fra 1.–28. august 2026 til intern uddannelse. Kategorier, timer og udfald er illustrative og afspejler ingen virkelig efterforskning.",
-    "cibKicker": "NU ÅBENT FOR GENNEMSYN",
-    "cibTitle": "KRIMINALEFTERRETNINGSBUREAUET",
-    "cibBody": "Otteogfyrre hændelser. Tre mistænkte. Ét fælles arkivskab. Sammenhold oplysningerne fra hele operationen.",
-    "cibCta": "ÅBN ARKIVET",
+    "methodologyBody": "Dette arkiv dækker 52 fiktive hændelser, der er logget fra juli 2024 til august 2026 til interne træningsformål. Kategorier, timer og resultater er illustrative og afspejler ikke en egentlig undersøgelse.",
     "incidents": {
       "CIB-001": {
-        "title": "Croissant delt under fælles operation",
-        "summary": "Le Criminel distraherede, mens Pikette tog bagværket i en koordineret manøvre fra to sider. To stykker blev fundet, ingen spiselige.",
+        "title": "Restaurantpersonale kompromitteret af kalkuleret charme",
+        "summary": "Le Criminel arbejdede terrassen bord for bord, indtil restaurantpersonalet overgav ekstra croissant.",
         "imageAlt": ""
       },
       "CIB-002": {
-        "title": "Pudesømme testet til strukturelt svigt",
-        "summary": "Fælles udgravning af den gode lænestols pude spredte fyld i stuen. Begge nægtede at være begyndt; begge var dækket af samme fyld.",
+        "title": "Sofasøm udsat for vedvarende undersøgelse",
+        "summary": "Le Criminel vendte gentagne gange tilbage til en løs søm, indtil fyldet blev tilgængeligt. Supervision stoppede inspektionen, inden hele puden blev åbnet.",
         "imageAlt": "Flænget søm og synlig fyld i en sofaputes søm."
       },
       "CIB-003": {
-        "title": "Synkroniseret falsk alarm ved døren",
-        "summary": "Le Criminel gøede og Pikette miavede i tilsyneladende solidaritet. Ingen ubuden gæst, levering eller villig forklaring blev fundet.",
+        "title": "Venlig nabo identificeret som permanent fjende",
+        "summary": "Den ældre nabo tog venligt imod Le Criminel i fællessalen. Le Criminel svarede med den samme personlige fjendtlighed, som han forbeholder sig til ethvert møde med denne helt uskyldige mand.",
         "imageAlt": ""
       },
       "CIB-004": {
-        "title": "Gang blokeret efter gensidig aftale",
-        "summary": "Begge optog samtidig det samme lille område og spærrede udgangen i elleve minutter. Ingen flyttede sig først.",
+        "title": "Lejlighedens gang besat under afrejse",
+        "summary": "Le Criminel plantede sig mellem lejlighedsdøren og elevatoren, mens han besluttede, om udflugten var acceptabel. Alle andre ventede på afgørelsen.",
         "imageAlt": "Le Criminel i snor, lige inden for den flisebelagte entré."
       },
       "CIB-005": {
@@ -112,69 +109,69 @@
         "imageAlt": ""
       },
       "CIB-009": {
-        "title": "Morgenmadstoast fanget af mistænktstafet",
-        "summary": "Le Criminel slog toasten ned fra bordet; Pikette fangede den før gulvet. Arbejdsdeling noteret, toastfordeling uklar.",
+        "title": "Morgenmad toast fjernet under en kort distraktion",
+        "summary": "En tilbagevenden skabte en åbning på mindre end tre sekunder. Le Criminel brugte den til at fjerne toast fra kanten af ​​bordet og trække sig tilbage under stolen.",
         "imageAlt": ""
       },
       "CIB-010": {
-        "title": "Gardin revet ned gennem uautoriseret samarbejde",
-        "summary": "Gardinet faldt under en ifølge vidner koordineret klatring. Stangen overlevede ikke. Ingen syntes at bemærke det.",
+        "title": "Anden sko gik i aktivt spil",
+        "summary": "Le Criminel valgte en nyligt fjernet sko, bar den til stuen og arbejdede med snørebåndene, indtil indgreb blev uundgåeligt.",
         "imageAlt": ""
       },
       "CIB-011": {
-        "title": "Aftenduel løst ved gensidig kedsomhed",
-        "summary": "Tolv minutters stirren om bedste solplet sluttede, da begge mistede interessen samtidig. Sag afsluttet på grund af antiklimaks.",
+        "title": "Nabo opdaget gennem en lukket lejlighedsdør",
+        "summary": "Fodtrin i den fælles korridor blev korrekt identificeret som den søde ældre nabo. Le Criminel begyndte den sædvanlige protest, før manden havde nået landingen.",
         "imageAlt": ""
       },
       "CIB-012": {
-        "title": "Trappe bestridt af to parter, frigivet af ingen",
-        "summary": "Le Criminel tog øverste trin, Pikette nederste. Trappetrafikken standsede under hele striden.",
+        "title": "Ferieforberedelser forsinket på grund af førerens ubeslutsomhed",
+        "summary": "Sawito genovervejede en dekoration lang nok til at blokere lejlighedens gang for alle andre.",
         "imageAlt": ""
       },
       "CIB-013": {
-        "title": "Osteterning fjernet fra ubevogtet fad",
-        "summary": "Den mistænkte nærmede sig pålægsfadet med en tidligere spejders sikkerhed. En osteterning væk; mistænkte uberørt.",
+        "title": "Parmesanblok fjernet i sin helhed",
+        "summary": "Mens ejeren var i bad, stjal Le Criminel en hel blok parmesan og spiste den på sengen. Krummer og oliemærker etablerede placeringen uden tvivl.",
         "imageAlt": ""
       },
       "CIB-014": {
-        "title": "Venstresko flyttet uden for rimelig bjærgning",
-        "summary": "Sidst set under sengen, senere fundet i haven uden et snørebånd og det meste af værdigheden.",
-        "imageAlt": "En enkelt kondisko i græsset uden snørebånd."
+        "title": "Slidt sko underkastet endnu en inspektion",
+        "summary": "Le Criminel bar skoen væk og strikkede snørebåndene, indtil indgreb blev uundgåeligt.",
+        "imageAlt": "En enkelt sneaker liggende i græsset med synlige skader."
       },
       "CIB-015": {
-        "title": "Sofapude beslaglagt under besøg uden forhandling",
-        "summary": "Den mistænkte vurderede pladserne og satte sig præcis, hvor en gæst allerede sad. Gæsten flyttede.",
-        "imageAlt": "Pikette på sofaens midterpude under et besøg."
+        "title": "Første Pikette observation inkluderer øjeblikkelig fødevareinspektion",
+        "summary": "Pikette ankom til sit første registrerede besøg, tjekkede madskålene og behandlede alt inden for rækkevidde som fælles ejendom.",
+        "imageAlt": "Pikette sidder i lejlighedens vindueskarm ved siden af ​​madskålene."
       },
       "CIB-016": {
-        "title": "Tastatur besat før planlagt samtale",
-        "summary": "Subjektet lagde sig over tastaturet fire minutter før videosamtalen. To fjernelsesforsøg fulgte. Samtalen begyndte sent.",
-        "imageAlt": "Le Criminel ligger udstrakt på ryggen på et tæppe, helt afslappet."
+        "title": "Første møde etablerer øjeblikkelig gensidig fjendtlighed",
+        "summary": "Le Criminel og Pikette udvekslede advarsler og brugte resten af besøget på at overvåge hinanden fra hver sin ende af sofaen.",
+        "imageAlt": "Pikette og Le Criminel deler sofaen, mens de ser på hinanden."
       },
       "CIB-017": {
-        "title": "Fælles forbrydelse, omstridt ære om tabt pølse",
-        "summary": "Begge nærmede sig samme pølse fra modsatte retninger. Ingen veg. Pølsen overlevede ikke kontakten.",
+        "title": "Tabt pølse opsnappet før bedring",
+        "summary": "En pølse nåede gulvet og Le Criminel nåede den først. Beviserne blev slugt, før nogen meningsfuld genopretningsindsats kunne begynde.",
         "imageAlt": ""
       },
       "CIB-018": {
-        "title": "Armlæn tabt i uvedkommende territoriekonflikt",
-        "summary": "Strid om vindueskarmen endte med klomærker på armlænet og tandmærker ved siden af. Ingen sigtede på sofaen. Den tabte alligevel.",
+        "title": "Skooperation smitter af på sofaen",
+        "summary": "Le Criminel bar en fanget sko op på sofaen og brugte armlænet til at løfte. Skoen, polstringen og husstandens tålmodighed tog alle skader.",
         "imageAlt": "Nærbillede af klomærker på sofaens armlæn."
       },
       "CIB-019": {
-        "title": "Sofatopmøde bliver til fælles knurren mod vinduet",
-        "summary": "Begge overvågede gaden fra sofaryggen og knurrede i hvad efterforskere kaldte bemærkelsesværdig rytmisk enighed.",
-        "imageAlt": "Pikette og Le Criminel ved siden af hinanden på sofaryggen, vendt mod vinduet."
+        "title": "Naboovergangen overvåges fra sofaen",
+        "summary": "Le Criminel opdagede den ældre nabo fra lejlighedens vindue og fulgte hans fremskridt hen over gården med vedvarende misbilligelse.",
+        "imageAlt": ""
       },
       "CIB-020": {
-        "title": "Hoveddør spærret af to kroppe",
-        "summary": "De lå snude mod hale foran døren, velvidende at en gåtur var nævnt. Barrikaden holdt seks minutter.",
+        "title": "Køkkenadgang krævet under madlavning",
+        "summary": "Le Criminel besatte den smalle køkkenindgang og overvågede hver bevægelse mellem bordet og bordet. Gentagne fjernelsesforsøg gav øjeblikkeligt afkast.",
         "imageAlt": ""
       },
       "CIB-021": {
-        "title": "Bacontallerken tømt før bordet blev nået",
-        "summary": "Subjektet greb tallerkenen i bordhøjde i de to sekunder mellem komfur og bord. Betydelig lodret indsats blev noteret.",
-        "imageAlt": "Le Criminel iagttager opmærksomt en fuld tallerken nedefra."
+        "title": "Frokost sat under løbende overvågning",
+        "summary": "Le Criminel sporede pladen fra ankomsten til den sidste bid. Hver gaffelbevægelse frembragte en ny anmodning om overførsel.",
+        "imageAlt": "Le Criminel ser maden tæt fra ved siden af ​​et udendørs cafebord."
       },
       "CIB-022": {
         "title": "Læsebriller siddet i stykker",
@@ -182,68 +179,68 @@
         "imageAlt": "Sawito, med brillerne på, kind mod kind med hunden."
       },
       "CIB-023": {
-        "title": "Altanens luftrum forsvaret mod én due",
-        "summary": "Subjektet udfordrede højlydt en due, som ikke havde bedt om det. Duen forlod stedet. Subjektet erklærede afgørende sejr.",
-        "imageAlt": "Le Criminel på glastaget, kort efter faldet fra altanen."
+        "title": "Pikette vender tilbage og fjendtlighederne genoptages med det samme",
+        "summary": "Det andet registrerede besøg begyndte, hvor det første sluttede: begge dyr gjorde krav på det samme sofaområde og afviste den anden beboer.",
+        "imageAlt": "Pikette og Le Criminel indtager sofaen under et besøg."
       },
       "CIB-024": {
-        "title": "Badeværelsesdør bevidst holdt lukket udefra",
-        "summary": "Den mistænkte lænede sig mod døren, da adgang åbenlyst var nødvendig. Anmodninger om at flytte sig blev som sædvanlig ignoreret.",
+        "title": "Sofapassagen lukket under en standoff med to dyr",
+        "summary": "Pikette holdt den ene ende af sofaen, mens Le Criminel holdt den anden, indtil mad i køkkenet afsluttede tvisten.",
         "imageAlt": ""
       },
       "CIB-025": {
-        "title": "Popcornskål plyndret to gange under filmen",
-        "summary": "Samme skål blev angrebet fra to vinkler. Begge hævdede uafhængig handling. Tidspunkterne antyder noget andet.",
+        "title": "Croissant-krummer erhvervet fra et kompromitteret vidne",
+        "summary": "Restaurantpersonalet tolkede igen langvarig stirren som sult og leverede croissantfragmenter. Le Criminel accepterede overførslen uden at rette op på misforståelsen.",
         "imageAlt": ""
       },
       "CIB-026": {
-        "title": "Potteplante fælles ompottet på køkkengulvet",
-        "summary": "Bregnen overlevede ikke inspektion med gravning, poteslag og mindst én helkropsrulning. Jordens spredningsradius: imponerende.",
+        "title": "Madpose søgt umiddelbart efter levering",
+        "summary": "Le Criminel stak sit hoved i indkøbsposen, før det var pakket helt ud. Grøntsager blev godkendt; alt andet indhold forblev mål.",
         "imageAlt": ""
       },
       "CIB-027": {
-        "title": "Gangjagt ender uafgjort, møbler usædvanligt uskadt",
-        "summary": "Den korte energiske jagt sluttede, da begge nåede samme hjørne fra forskellige retninger og sammen besluttede at stoppe.",
+        "title": "Gasbegivenhed efter middag rydder stuen",
+        "summary": "Et måltid serveret uden tilstrækkelige grøntsager blev efterfulgt af en atmosfærisk hændelse, der var alvorlig nok til at tømme det umiddelbare siddeområde. Klassifikation opgraderet til terrorvåben.",
         "imageAlt": ""
       },
       "CIB-028": {
-        "title": "Køkkenindgang under dobbelt besættelse",
-        "summary": "Ingen ville give den anden passage. Tyve minutters stilstand forsinkede alles frokost, også menneskenes.",
+        "title": "Afgang forsinket på grund af manglende nøglesæt",
+        "summary": "Sawito gennemsøgte alle synlige overflader, før han fandt nøglerne i den lomme, han allerede havde tjekket.",
         "imageAlt": ""
       },
       "CIB-029": {
-        "title": "Delt toast for en gangs skyld virkelig delt",
-        "summary": "Af uklare grunde delte de en tabt toast uden hændelser. Efterforskerne ser en afvigelse, ikke et mønster.",
+        "title": "Grøntsagstildeling forhindrer optrapning",
+        "summary": "Aftensmad inkluderede en acceptabel vegetabilsk komponent. Le Criminel spiste uden protest, og husstanden registrerede ingen efterfølgende gasnød.",
         "imageAlt": ""
       },
       "CIB-030": {
-        "title": "Tyndt gardin brugt som uautoriseret klatrestativ",
-        "summary": "Den mistænkte klatrede til vindueskarmen, før to af tre kroge løsnede sig. Nedstigningen blev kaldt overvejende kontrolleret.",
-        "imageAlt": "Pikette sidder i en vindueskarm ved siden af sine madskåle."
+        "title": "Snørebånd forkortet under adgang uden opsyn",
+        "summary": "Le Criminel blev efterladt alene med en sko, der er lang nok til at trække snørebåndet ud og tygge gennem den ene ende. Skoen forbliver bærbar i en streng teknisk forstand.",
+        "imageAlt": ""
       },
       "CIB-031": {
-        "title": "Fælles vinduesvagt mod uspecificeret trussel",
-        "summary": "I fyrre minutter sad begge skulder ved skulder, opmærksomme på en trussel som hverken kom eller blev navngivet.",
+        "title": "Tredje Pikette besøg genoptager den etablerede fejde",
+        "summary": "Pikette vendte tilbage og Le Criminel behandlede ankomsten som en fornyelse af uafsluttede forretninger.",
         "imageAlt": ""
       },
       "CIB-032": {
-        "title": "Udpakning af varer standset af unødigt opsyn",
-        "summary": "Sawito stod på det eneste lille køkkenareal, der var nødvendigt for poserne. Han kommenterede alt uden at hjælpe.",
-        "imageAlt": ""
+        "title": "Foretrukne sofapude krævet til besøget",
+        "summary": "Pikette valgte midterpuden og forblev der på trods af forsøg på at genoprette det normale siddearrangement.",
+        "imageAlt": "Pikette indtager den midterste sofapude under et besøg."
       },
       "CIB-033": {
-        "title": "Smør smagt direkte uden redskab",
-        "summary": "Den mistænkte blev fundet med ansigtet i smørskålen uden rimelig forklaring. Låget havde bemærkelsesværdigt nok været lukket.",
+        "title": "Parmesan-emballage udløser gentagelsesreaktion",
+        "summary": "Åbning af en ny blok parmesan bragte Le Criminel ind i køkkenet med fart. Osten forblev sikret og blev aldrig efterladt inden for rækkevidde af brusebad.",
         "imageAlt": ""
       },
       "CIB-034": {
-        "title": "Dørmåtte flyttet til gadens midte",
-        "summary": "Sidst set ved tærsklen, genfundet to huse længere væk: fugtig, tygget i ét hjørne og forkert vendt.",
-        "imageAlt": "Le Criminel står i snor midt på en brolagt gade."
+        "title": "Skobeklædning fjernet inde i lejligheden",
+        "summary": "Le Criminel bar en sko fra indgangen til stuen og trak nok foring ud til at gøre skaden tydelig.",
+        "imageAlt": "Le Criminel stående i snor under en udendørs gåtur."
       },
       "CIB-035": {
-        "title": "Familiebesøg afsporet af selektiv hengivenhed",
-        "summary": "Den mistænkte knyttede sig straks til én slægtning og ignorerede resten hele eftermiddagen. Slægtningen var begejstret. Alle andre noterede det.",
+        "title": "Cafepersonalet henvendte sig for uautoriseret wienerbrød",
+        "summary": "Le Criminel ignorerede sin egen handler og koncentrerede sig om et medlem af restaurantpersonalet, der bar bagværk. Charmoffensiven producerede et ekstra croissantstykke.",
         "imageAlt": ""
       },
       "CIB-036": {
@@ -257,38 +254,38 @@
         "imageAlt": "Et andet, ligeledes gnavet brød på gulvet."
       },
       "CIB-038": {
-        "title": "Tæppefort revet ned af egne arkitekter",
-        "summary": "Fællesbyggeriet kollapsede under egen ambition. Begge blev fundet blandt resterne, tilsyneladende uberørte.",
+        "title": "Parmesanrester opdaget i sengetøj",
+        "summary": "En opfølgende inspektion af sengen fandt ostekrummer arbejdede ind i tæppet. Beviserne stemmer overens med det tidligere parmesan-tyveri af hele blokken.",
         "imageAlt": "Le Criminel ligger sammenkrøbet og sover under et tykt tæppe i sofaen."
       },
       "CIB-039": {
-        "title": "Dørklokke på tv forvekslet med rigtig besøgende",
-        "summary": "Subjektet reagerede på reklameklokken med fuld lydstyrke og total overbevisning. Ingen besøgende blev nogensinde fundet.",
-        "imageAlt": "Le Criminel kigger brat op fra tæppet med ørerne på højkant."
+        "title": "Pikette nærbillede udløser fornyet protest",
+        "summary": "Pikette forblev stille til et overvågningsbillede, mens Le Criminel gjorde indsigelse fra den anden side af rummet.",
+        "imageAlt": "Le Criminel kigger skarpt op fra tæppet under besøget."
       },
       "CIB-040": {
-        "title": "Støvsuger blokeret gennem uventet samarbejde",
-        "summary": "Normalt modstandere af princip blokerede begge støvsugeren samtidig fra forskellige vinkler. Rengøringen tog dobbelt så lang tid.",
-        "imageAlt": "Le Criminel hopper op i sin hundeseng ved siden af en tændt støvsuger."
+        "title": "Midlertidig vinduesalliance observeret under februarbesøget",
+        "summary": "Begge dyr standsede fjendtlighederne for at se bevægelse udenfor fra sofaen. Samarbejdet ophørte, da vinduet blev stille.",
+        "imageAlt": "Pikette og Le Criminel deler sofaen under en midlertidig alliance."
       },
       "CIB-041": {
-        "title": "Tilgængeligt yoghurtlåg forudsigeligt udnyttet",
-        "summary": "Låget lå på bordet til afslikning. Begge forstod ordningen og gennemførte den uden strid.",
+        "title": "Morgenmad udsat for nærliggende erhvervelsesforsøg",
+        "summary": "Le Criminel beholdt position ved siden af morgenbordet og sporede hver bevægelse af wienerbrødet. Croissanten forblev kun intakt gennem kontinuerlig overvågning.",
         "imageAlt": "Le Criminel stirrer ufravendt på en vaffel efterladt på et udendørs bord."
       },
       "CIB-042": {
-        "title": "Gavepapir fælles makuleret før tid",
-        "summary": "En gave uden opsyn i seks minutter var konfetti ved tilbagekomsten. Begge virkede tilfredse.",
+        "title": "Skoopbevaring brudt efter slukket lys",
+        "summary": "En sko, der blev fjernet før sengetid, blev hentet fra stuen med våde snørebånd og friske tandmærker. Le Criminel sov ved siden af, da han blev spurgt.",
         "imageAlt": ""
       },
       "CIB-043": {
-        "title": "Ny koordineret alarm ved brevsprækken",
-        "summary": "Dagens post udløste sædvanlig gøen fra den ene og miaven fra den anden. Postbuddet kender rutinen.",
+        "title": "Nabo modtager endnu en fjendtlig modtagelse",
+        "summary": "Den ældre nabo bød på en rolig hilsen i fællesindgangen. Le Criminel svarede, som om en langvarig personlig fejde lige var blevet fornyet.",
         "imageAlt": "Le Criminel sidder årvågen i snor tæt på gaden."
       },
       "CIB-044": {
-        "title": "Seng optaget fra hjørne til hjørne uden ledig plads",
-        "summary": "Begge lagde sig diagonalt med tilsyneladende præcision og efterlod ingen plads til den tiltænkte bruger.",
+        "title": "Aftensmaden båret ind på sengen til uautoriseret inspektion",
+        "summary": "Le Criminel fulgte efter mad ind i soveværelset og forsøgte at inspicere tallerkenen i madrashøjde. Adgang blev nægtet, før parmesan-præcedensen kunne gentages.",
         "imageAlt": "Le Criminel ligger på ryggen på tværs af en seng og fylder hele bredden."
       },
       "CIB-045": {
@@ -297,21 +294,45 @@
         "imageAlt": ""
       },
       "CIB-046": {
-        "title": "Haveslange punkteret flere steder",
-        "summary": "Fire nye lækager danner et mønster, efterforskerne kalder grundigt. Subjektet blev fundet tilfreds i nærheden.",
-        "imageAlt": "Le Criminel undersøger noget på en stenkant udenfor."
+        "title": "Endnu en sko fjernet fra lejlighedens indgang",
+        "summary": "Le Criminel flyttede en sko til stuen og begyndte at arbejde på hælen i et usædvanligt roligt interval.",
+        "imageAlt": "Le Criminel undersøger en stenafsats under en udendørs gåtur."
       },
       "CIB-047": {
-        "title": "Videosamtale afbrudt af uopfordret reportage",
-        "summary": "Sawito kommenterede hundens aktiviteter for kollegerne gennem hele kundemødet. Ingen havde bedt om det.",
-        "imageAlt": "Sawito tager en selfie, mens hunden læner sig mod hans skulder."
+        "title": "Sjælden stille sofavåbenhvile optaget under Pikette besøg",
+        "summary": "Le Criminel og Pikette delte sofaen uden et skænderi længe nok til, at husstanden kunne dokumentere anomalien.",
+        "imageAlt": ""
       },
       "CIB-048": {
-        "title": "Udgang spærret i venten på beslutning der aldrig kom",
-        "summary": "Subjektet stod elleve minutter i døren og overvejede at gå ud. Begge retninger blev spærret, før han vendte tilbage til sofaen.",
-        "imageAlt": "Le Criminel sidder i snor lige uden for hoveddøren."
+        "title": "Fælles sofabesættelse efterlader ingen brugbar plads",
+        "summary": "Pikette og Le Criminel arrangerede sig på tværs af de tilgængelige puder og forblev allierede mod enhver, der forsøgte at sætte sig ned.",
+        "imageAlt": ""
+      },
+      "CIB-049": {
+        "title": "Frokost sat under løbende overvågning",
+        "summary": "Le Criminel opretholdt visuel kontakt med pladen fra ankomsten til den sidste bid. Hver gaffelbevægelse frembragte en ny anmodning om overførsel.",
+        "imageAlt": "Le Criminel ser en tallerken pasta fra under et udendørs bord."
+      },
+      "CIB-050": {
+        "title": "Skoinspektionen genoptages, mens beviser stadig bæres",
+        "summary": "Le Criminel pressede sit ansigt mod skoen, testede snørebåndene og forsøgte at begynde den sædvanlige demonteringsproces, før han blev afbrudt.",
+        "imageAlt": "Le Criminel presser sit censurerede ansigt mod en slidt sko ved et udendørs bord."
+      },
+      "CIB-051": {
+        "title": "Balkonrist forhindrer endnu en dueforfølgelse",
+        "summary": "Le Criminel låste sig til bevægelse ud over balkonen, mens den store sikkerhedsrist gjorde præcis, hvad den var installeret for at gøre: holde jagten inden for lejlighedsgrænsen.",
+        "imageAlt": "Le Criminel kigger hen over en pizzaæske ved siden af ​​balkonens sikkerhedsrister i fuld højde."
+      },
+      "CIB-052": {
+        "title": "Restaurantpersonale kompromitteret af kalkuleret charme",
+        "summary": "Le Criminel arbejdede terrassen bord for bord, indtil restaurantpersonalet overgav ekstra croissant. Operationen beroede udelukkende på øjenkontakt og tilsyneladende af sult.",
+        "imageAlt": "Le Criminel ser en croissant ved siden af ​​et udendørs cafebord."
       }
-    }
+    },
+    "cibKicker": "NU ÅBENT FOR GENNEMSYN",
+    "cibTitle": "KRIMINALEFTERRETNINGSBUREAUET",
+    "cibBody": "52 hændelser. Tre mistænkte. Et fælles arkivskab. Krydsreference hele operationen.",
+    "cibCta": "ÅBN ARKIVET"
   },
   "common": {
     "fallbackBanner": "Beklager, vi arbejder på det — indtil videre kun tilgængeligt på engelsk."

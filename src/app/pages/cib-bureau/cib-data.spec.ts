@@ -1,6 +1,7 @@
 import { routes } from '../../app.routes';
-import { dailyCounts, hourlyCounts, offenceCounts, suspectCounts } from './cib-selectors';
-import { CIB_ARCHIVE_DATES, CIB_INCIDENTS, CIB_INCIDENT_COPY_EN } from './cib.data';
+import { EN_CONTENT } from '../../i18n/content/en.content';
+import { hourlyCounts, monthlyCounts, offenceCounts, suspectCounts } from './cib-selectors';
+import { CIB_ARCHIVE_MONTHS, CIB_INCIDENTS, CIB_INCIDENT_COPY_EN } from './cib.data';
 import { CibIncident, OffenceId, SuspectId } from './cib.model';
 
 const ALLOWED_SUSPECTS: readonly SuspectId[] = ['le-criminel', 'pikette', 'sawito'];
@@ -47,6 +48,10 @@ const KNOWN_SAFE_IMAGES = [
   'assets/images/blog-garden-wall.jpg',
   'assets/images/blog-shoulder-selfie.jpg',
   'assets/images/blog-front-door-recapture.jpg',
+  'assets/images/cib-aug-croissant-watch.jpg',
+  'assets/images/cib-aug-shoe-inspection.jpg',
+  'assets/images/cib-aug-balcony-grate.jpg',
+  'assets/images/cib-aug-food-surveillance.jpg',
 ];
 
 const existingRoutePaths = new Set(
@@ -57,34 +62,51 @@ function hasDuoParticipants(incident: CibIncident): boolean {
   return incident.suspectIds.includes('le-criminel') && incident.suspectIds.includes('pikette');
 }
 
-describe('CIB_ARCHIVE_DATES', () => {
-  it('contains exactly the 28 fixed archive dates, ascending', () => {
-    expect(CIB_ARCHIVE_DATES).toHaveLength(28);
-    expect(CIB_ARCHIVE_DATES[0]).toBe('2026-08-01');
-    expect(CIB_ARCHIVE_DATES[27]).toBe('2026-08-28');
-    expect([...CIB_ARCHIVE_DATES].sort()).toEqual(CIB_ARCHIVE_DATES);
+describe('CIB_ARCHIVE_MONTHS', () => {
+  it('contains the 26 fixed archive months from July 2024 through August 2026', () => {
+    expect(CIB_ARCHIVE_MONTHS).toHaveLength(26);
+    expect(CIB_ARCHIVE_MONTHS[0]).toBe('2024-07');
+    expect(CIB_ARCHIVE_MONTHS[25]).toBe('2026-08');
+    expect([...CIB_ARCHIVE_MONTHS].sort()).toEqual(CIB_ARCHIVE_MONTHS);
+  });
+});
+
+describe('English CIB archive copy', () => {
+  it('describes the 52-case monthly archive from July 2024 through August 2026', () => {
+    expect(EN_CONTENT.cib.archiveWindowLabel).toContain('JUL 2024');
+    expect(EN_CONTENT.cib.archiveWindowLabel).toContain('AUG 2026');
+    expect(EN_CONTENT.cib.seoDescription).toContain('52 fictional incidents');
+    expect(EN_CONTENT.cib.dailyChartTitle).toBe('MONTHLY ACTIVITY');
+    expect(EN_CONTENT.cib.dailyChartDescription).toContain('per month');
+    expect(EN_CONTENT.cib.methodologyBody).toContain('July 2024 through August 2026');
+    expect(EN_CONTENT.cib.cibBody).toContain('Fifty-two incidents');
+    expect(EN_CONTENT.cib.dossierDescriptions.pikette).toContain('Historical visits on file');
   });
 });
 
 describe('CIB_INCIDENTS — per-row validation', () => {
-  it('has exactly 48 incidents', () => {
-    expect(CIB_INCIDENTS).toHaveLength(48);
+  it('uses the approved organic 1-to-4 incident rhythm across the archive', () => {
+    expect(CIB_INCIDENTS).toHaveLength(52);
+    expect(monthlyCounts(CIB_INCIDENTS, CIB_ARCHIVE_MONTHS).map((bucket) => bucket.count)).toEqual([
+      1, 3, 1, 2, 1, 3, 2, 4, 1, 2, 1, 3, 2,
+      1, 3, 3, 1, 2, 1, 4, 1, 2, 1, 3, 1, 3,
+    ]);
   });
 
-  it('has unique IDs formatted CIB-001 through CIB-048', () => {
+  it('has unique IDs formatted CIB-001 through CIB-052', () => {
     const ids = CIB_INCIDENTS.map((i) => i.id);
     expect(new Set(ids).size).toBe(ids.length);
 
     const expectedIds = Array.from(
-      { length: 48 },
+      { length: 52 },
       (_, i) => `CIB-${String(i + 1).padStart(3, '0')}`
     );
     expect([...ids].sort()).toEqual(expectedIds);
   });
 
-  it('uses only dates within the fixed 28-day archive', () => {
+  it('uses only dates within the fixed 26-month archive', () => {
     for (const incident of CIB_INCIDENTS) {
-      expect(CIB_ARCHIVE_DATES).toContain(incident.date);
+      expect(CIB_ARCHIVE_MONTHS).toContain(incident.date.slice(0, 7));
     }
   });
 
@@ -124,12 +146,26 @@ describe('CIB_INCIDENTS — per-row validation', () => {
     }
   });
 
+  it('restricts Pikette incidents to her five blog-supported visit months', () => {
+    const visitMonths = new Set(['2025-02', '2025-06', '2025-10', '2026-02', '2026-06']);
+    const piketteRows = CIB_INCIDENTS.filter((incident) => incident.suspectIds.includes('pikette'));
+    expect(piketteRows).toHaveLength(10);
+    expect(piketteRows.every((incident) => visitMonths.has(incident.date.slice(0, 7)))).toBe(true);
+  });
+
   it('only references images from the known-safe, eye-bar-verified list', () => {
     for (const incident of CIB_INCIDENTS) {
       if (incident.image !== undefined) {
         expect(incident.image).not.toContain('LocalPics');
         expect(KNOWN_SAFE_IMAGES).toContain(incident.image);
       }
+    }
+  });
+
+  it('uses every new August evidence image in the archive', () => {
+    const usedImages = new Set(CIB_INCIDENTS.map((incident) => incident.image).filter(Boolean));
+    for (const image of KNOWN_SAFE_IMAGES.filter((path) => path.includes('cib-aug-'))) {
+      expect(usedImages.has(image)).toBe(true);
     }
   });
 
@@ -180,45 +216,46 @@ describe('CIB_INCIDENT_COPY_EN — coverage', () => {
 });
 
 describe('CIB_INCIDENTS — full-archive aggregate distribution', () => {
-  it('sums offence category totals to 48, 12 per category', () => {
+  it('uses a snack-led organic offence distribution that sums to 52', () => {
     const buckets = offenceCounts(CIB_INCIDENTS);
-    expect(buckets.reduce((sum, b) => sum + b.count, 0)).toBe(48);
-    for (const bucket of buckets) {
-      expect(bucket.count).toBe(12);
-    }
+    expect(buckets).toEqual([
+      { key: 'snack-theft', count: 18 },
+      { key: 'property-damage', count: 14 },
+      { key: 'public-disturbance', count: 11 },
+      { key: 'obstruction', count: 9 },
+    ]);
   });
 
-  it('sums daily totals across all 28 archive dates to 48, with at least one zero day', () => {
-    const buckets = dailyCounts(CIB_INCIDENTS, CIB_ARCHIVE_DATES);
-    expect(buckets).toHaveLength(28);
-    expect(buckets.reduce((sum, b) => sum + b.count, 0)).toBe(48);
-    expect(buckets.some((b) => b.count === 0)).toBe(true);
+  it('sums monthly totals across all 26 archive months to 52', () => {
+    const buckets = monthlyCounts(CIB_INCIDENTS, CIB_ARCHIVE_MONTHS);
+    expect(buckets).toHaveLength(26);
+    expect(buckets.reduce((sum, b) => sum + b.count, 0)).toBe(52);
   });
 
-  it('sums hourly totals across all 24 hours to 48', () => {
+  it('sums hourly totals across all 24 hours to 52', () => {
     const buckets = hourlyCounts(CIB_INCIDENTS);
     expect(buckets).toHaveLength(24);
-    expect(buckets.reduce((sum, b) => sum + b.count, 0)).toBe(48);
+    expect(buckets.reduce((sum, b) => sum + b.count, 0)).toBe(52);
   });
 
-  it('has 18 closed and 30 open incidents, summing to 48', () => {
+  it('has 20 closed and 32 open incidents, summing to 52', () => {
     const closed = CIB_INCIDENTS.filter((i) => i.status === 'closed').length;
     const open = CIB_INCIDENTS.filter((i) => i.status === 'open').length;
-    expect(closed).toBe(18);
-    expect(open).toBe(30);
-    expect(closed + open).toBe(48);
+    expect(closed).toBe(20);
+    expect(open).toBe(32);
+    expect(closed + open).toBe(52);
   });
 
-  it('has involvement counts of 36 (le-criminel), 30 (pikette), 6 (sawito)', () => {
+  it('has involvement counts of 44 (le-criminel), 10 (pikette), 6 (sawito)', () => {
     const buckets = suspectCounts(CIB_INCIDENTS);
     expect(buckets).toEqual([
-      { key: 'le-criminel', count: 36 },
-      { key: 'pikette', count: 30 },
+      { key: 'le-criminel', count: 44 },
+      { key: 'pikette', count: 10 },
       { key: 'sawito', count: 6 },
     ]);
   });
 
-  it('has the exact participant-type split: 24 duo, 12 solo-dog, 6 solo-cat, 6 solo-sawito', () => {
+  it('has the exact participant-type split: 8 duo, 36 solo-dog, 2 solo-cat, 6 solo-sawito', () => {
     const duo = CIB_INCIDENTS.filter((i) => hasDuoParticipants(i));
     const soloDog = CIB_INCIDENTS.filter(
       (i) => i.suspectIds.length === 1 && i.suspectIds[0] === 'le-criminel'
@@ -230,35 +267,32 @@ describe('CIB_INCIDENTS — full-archive aggregate distribution', () => {
       (i) => i.suspectIds.length === 1 && i.suspectIds[0] === 'sawito'
     );
 
-    expect(duo).toHaveLength(24);
-    expect(soloDog).toHaveLength(12);
-    expect(soloCat).toHaveLength(6);
+    expect(duo).toHaveLength(8);
+    expect(soloDog).toHaveLength(36);
+    expect(soloCat).toHaveLength(2);
     expect(soloSawito).toHaveLength(6);
-    expect(duo.length + soloDog.length + soloCat.length + soloSawito.length).toBe(48);
+    expect(duo.length + soloDog.length + soloCat.length + soloSawito.length).toBe(52);
   });
 
-  it('has duo relationship counts of 14 allied, 6 rivals, 4 truce', () => {
+  it('has duo relationship counts of 4 allied, 3 rivals, and 1 truce', () => {
     const duo = CIB_INCIDENTS.filter((i) => hasDuoParticipants(i));
     const allied = duo.filter((i) => i.duoRelationship === 'allied').length;
     const rivals = duo.filter((i) => i.duoRelationship === 'rivals').length;
     const truce = duo.filter((i) => i.duoRelationship === 'truce').length;
 
-    expect(allied).toBe(14);
-    expect(rivals).toBe(6);
-    expect(truce).toBe(4);
-    expect(allied + rivals + truce).toBe(24);
+    expect(allied).toBe(4);
+    expect(rivals).toBe(3);
+    expect(truce).toBe(1);
+    expect(allied + rivals + truce).toBe(8);
   });
 
-  it('reconciles filtered event totals separately from overlapping involvement counts', () => {
-    // The incident total (unique rows) must not equal the naive sum of
-    // per-suspect involvement counts, because duo rows are counted once
-    // per suspect there but only once in the archive.
+  it('reconciles overlapping involvement counts with unique incident rows', () => {
     const involvementSum = suspectCounts(CIB_INCIDENTS).reduce((sum, b) => sum + b.count, 0);
-    expect(involvementSum).toBe(72); // 36 + 30 + 6, overlapping by design
-    expect(CIB_INCIDENTS.length).toBe(48); // unique rows, never expanded
+    expect(involvementSum).toBe(60); // eight duo rows contribute two suspect involvements each
+    expect(CIB_INCIDENTS.length).toBe(52); // unique rows, never expanded
   });
 
-  it('has both le-criminel and pikette appearing somewhere in every offence category', () => {
+  it('has both animal suspects appearing in every offence category across the full archive', () => {
     for (const offenceId of ALLOWED_OFFENCES) {
       const rowsInCategory = CIB_INCIDENTS.filter((i) => i.offenceId === offenceId);
       expect(rowsInCategory.some((i) => i.suspectIds.includes('le-criminel'))).toBe(true);

@@ -59,8 +59,8 @@
     <div class="daily-chart">
       <app-cib-chart
         [copy]="t.cib.chart"
-        [buckets]="dailyBuckets()"
-        [maximum]="dailyMaximum()"
+        [buckets]="monthlyBuckets()"
+        [maximum]="monthlyMaximum()"
         [title]="t.cib.dailyChartTitle"
         [description]="t.cib.dailyChartDescription"
         orientation="vertical"
@@ -73,6 +73,7 @@
           type="button"
           class="suspect-card"
           [class.suspect-card--secondary]="card.id === 'sawito'"
+          [class.suspect-card--next-visit]="card.nextVisit"
           [class.active]="filters().suspect === card.id"
           [attr.aria-pressed]="filters().suspect === card.id"
           (click)="setSuspectFilter(card.id)"
@@ -84,6 +85,9 @@
             <div class="suspect-name">{{ card.label }}</div>
             <div class="suspect-dossier">{{ card.dossier }}</div>
             <div class="suspect-count">{{ card.count }}</div>
+            @if (card.nextVisit) {
+              <div class="suspect-next-visit">{{ t.cib.nextVisitLabel }}</div>
+            }
           </div>
         </button>
       }
@@ -138,33 +142,33 @@
             }
           </div>
 
-          <button
-            type="button"
-            class="details-toggle"
-            [attr.aria-expanded]="expandedIncidentId() === incident.id"
-            (click)="toggleExpanded(incident.id)"
-          >
-            {{ expandedIncidentId() === incident.id ? t.cib.hideDetailsLabel : t.cib.viewDetailsLabel }}
-          </button>
+          @if (incident.image) {
+            <button
+              type="button"
+              class="details-toggle"
+              [attr.aria-expanded]="expandedIncidentId() === incident.id"
+              (click)="toggleExpanded(incident.id)"
+            >
+              {{ expandedIncidentId() === incident.id ? t.cib.hideDetailsLabel : t.cib.viewDetailsLabel }}
+            </button>
 
-          @if (expandedIncidentId() === incident.id) {
-            <div class="incident-details">
-              @if (incident.image) {
+            @if (expandedIncidentId() === incident.id) {
+              <div class="incident-details">
                 <img [src]="incident.image" [alt]="copy.imageAlt" />
-              } @else {
-                <p class="no-evidence">{{ t.cib.noEvidenceLabel }}</p>
-              }
-              <div class="suspects-involved">
-                @for (id of incident.suspectIds; track id) {
-                  <span class="tag">{{ t.cib.suspectLabels[id] }}</span>
+                <div class="suspects-involved">
+                  @for (id of incident.suspectIds; track id) {
+                    <span class="tag">{{ t.cib.suspectLabels[id] }}</span>
+                  }
+                </div>
+                @if (incident.storyRoute) {
+                  <a class="case-link" [routerLink]="translation.path(incident.storyRoute)">{{
+                    t.cib.viewCaseLabel
+                  }}</a>
                 }
               </div>
-              @if (incident.storyRoute) {
-                <a class="case-link" [routerLink]="translation.path(incident.storyRoute)">{{
-                  t.cib.viewCaseLabel
-                }}</a>
-              }
-            </div>
+            }
+          } @else {
+            <p class="no-evidence">{{ t.cib.noEvidenceLabel }}</p>
           }
         </article>
       }

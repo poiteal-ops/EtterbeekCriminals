@@ -19,6 +19,7 @@
   font-size: clamp(32px, 9vw, 52px);
   letter-spacing: 2px;
   margin-bottom: 10px;
+  overflow-wrap: anywhere;
 }
 
 .subtitle {
@@ -203,36 +204,16 @@
 }
 
 .suspect-card--secondary {
-  margin-top: 8px;
-  padding: 10px;
   background: transparent;
   border-style: dashed;
-
-  .suspect-photo {
-    width: 40px;
-    height: 40px;
-
-    // Sawito's source photo (sawito-dog-selfie.jpg) is a two-subject selfie:
-    // the dog occupies the left ~half, Sawito (redacted) the right half. In
-    // a square thumbnail, object-fit: cover always shows the image's full
-    // width (portrait source is width-constrained), so object-position's X
-    // component alone can never crop the dog out — see criminal-intelligence
-    // fix-round-2 notes. Zoom in and shift the focal point toward Sawito's
-    // face on the right so only he is legible at thumbnail size, the way
-    // Le Criminel's and Pikette's single-subject photos already read.
-    img {
-      transform: scale(2.2);
-      transform-origin: 99.3% 50%;
-    }
-  }
-
-  .suspect-name {
-    font-size: 14px;
-  }
 }
 
 .suspect-info {
   min-width: 0;
+}
+
+.suspect-card--next-visit {
+  border-style: dashed;
 }
 
 .suspect-name {
@@ -251,6 +232,14 @@
 .suspect-count {
   font-size: 13px;
   color: #cfcfcc;
+}
+
+.suspect-next-visit {
+  margin-top: 5px;
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  color: #cfcfcc;
+  text-transform: uppercase;
 }
 
 .overlap-note {
@@ -349,6 +338,14 @@
   padding: 0;
 }
 
+.no-evidence {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #8a8a86;
+  text-transform: uppercase;
+}
+
 .incident-details {
   margin-top: 14px;
   padding-top: 14px;
@@ -367,12 +364,6 @@
     margin-bottom: 12px;
   }
 
-  .no-evidence {
-    margin: 0 0 12px;
-    font-size: 11px;
-    letter-spacing: 1px;
-    color: #8a8a86;
-  }
 }
 
 .suspects-involved {

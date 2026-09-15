@@ -1,8 +1,8 @@
 import {
-  dailyCounts,
   deriveMetrics,
   filterIncidents,
   hourlyCounts,
+  monthlyCounts,
   offenceCounts,
   sortIncidents,
   suspectCounts,
@@ -127,14 +127,18 @@ describe('filterIncidents', () => {
   });
 });
 
-describe('dailyCounts', () => {
-  it('zero-fills every requested date, including dates with no incidents', () => {
-    const result = dailyCounts(fixture, ['2026-08-01', '2026-08-02', '2026-08-03']);
+describe('monthlyCounts', () => {
+  it('groups full ISO incident dates into ordered month buckets and zero-fills missing months', () => {
+    const rows: readonly CibIncident[] = [
+      { ...fixture[2], id: 'MONTH-001', date: '2024-07-01' },
+      { ...fixture[2], id: 'MONTH-002', date: '2024-07-31' },
+      { ...fixture[2], id: 'MONTH-003', date: '2024-08-15' },
+    ];
 
-    expect(result).toEqual([
-      { key: '2026-08-01', count: 2 },
-      { key: '2026-08-02', count: 1 },
-      { key: '2026-08-03', count: 0 },
+    expect(monthlyCounts(rows, ['2024-07', '2024-08', '2024-09'])).toEqual([
+      { key: '2024-07', count: 2 },
+      { key: '2024-08', count: 1 },
+      { key: '2024-09', count: 0 },
     ]);
   });
 });
@@ -177,7 +181,7 @@ describe('no mutation of inputs', () => {
     expect(() => sortIncidents(frozen)).not.toThrow();
     expect(() => filterIncidents(frozen, { suspect: 'all', offence: 'all' })).not.toThrow();
     expect(() => deriveMetrics(frozen)).not.toThrow();
-    expect(() => dailyCounts(frozen, ['2026-08-01', '2026-08-02'])).not.toThrow();
+    expect(() => monthlyCounts(frozen, ['2026-08'])).not.toThrow();
     expect(() => offenceCounts(frozen)).not.toThrow();
     expect(() => hourlyCounts(frozen)).not.toThrow();
     expect(() => suspectCounts(frozen)).not.toThrow();

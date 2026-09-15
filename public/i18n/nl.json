@@ -11,8 +11,8 @@
     "title": "BUREAU VOOR CRIMINELE INLICHTINGEN",
     "subtitle": "Gezamenlijk incidentenarchief — drie bekende spelers, één gedeelde minachting voor eigendomsrecht.",
     "archiveNote": "Fictieve incidentgegevens, uitsluitend samengesteld voor interne opleiding. Elke gelijkenis met een echte misdaadgolf is toevallig en, eerlijk gezegd, geheel in stijl.",
-    "archiveWindowLabel": "OPLEIDINGSDOSSIER / 01–28 AUG 2026",
-    "seoDescription": "Doorzoek het Bureau voor Criminele Inlichtingen — 48 fictieve incidenten, drie verdachten, geen berouw.",
+    "archiveWindowLabel": "CASUSARCHIEF / JULI 2024–AUG 2026",
+    "seoDescription": "Blader door het archief van het Criminal Intelligence Bureau: 52 fictieve incidenten geregistreerd tussen juli 2024 en augustus 2026.",
     "suspectFilterLabel": "FILTER OP VERDACHTE",
     "offenceFilterLabel": "FILTER OP OVERTREDING",
     "allSuspectsLabel": "ALLE VERDACHTEN",
@@ -24,8 +24,8 @@
     "metricClosureRateLabel": "AFSLUITINGSPERCENTAGE",
     "metricPeakHourLabel": "DRUKSTE GEMELDE UUR",
     "unavailableLabel": "NIET BESCHIKBAAR",
-    "dailyChartTitle": "DAGELIJKSE ACTIVITEIT",
-    "dailyChartDescription": "Gemelde incidenten per dag binnen de archiefperiode.",
+    "dailyChartTitle": "MAANDELIJKSE ACTIVITEIT",
+    "dailyChartDescription": "Gerapporteerde incidenten per maand in het hele archiefvenster.",
     "offenceChartTitle": "TOTALEN PER OVERTREDING",
     "offenceChartDescription": "Incidenten uitgesplitst naar categorie.",
     "hourlyChartTitle": "VERDELING PER UUR",
@@ -40,6 +40,11 @@
       "open": "OPEN",
       "closed": "GESLOTEN"
     },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
     "relationshipLabels": {
       "allied": "BONDGENOTEN",
       "rivals": "RIVALEN",
@@ -48,15 +53,11 @@
     },
     "dossierDescriptions": {
       "le-criminel": "HOOFDVERDACHTE. Boston Terrier, tactische halsband, geen bekend berouw. Aanwezig bij de overgrote meerderheid van de geregistreerde incidenten.",
-      "pikette": "VOORNAAMSTE MEDEPLICHTIGE. SOMS AARTSVIJAND. Motieven onduidelijk; het bondgenootschap is op zijn best situationeel.",
+      "pikette": "SEIZOENSAartsvijand. Historische bezoeken geregistreerd. Volgende bezoek verwacht in december.",
       "sawito": "FACILITATOR, GEEN VERDACHTE. Aanwezig bij de meeste incidenten. Ingrijpen: verwaarloosbaar."
     },
-    "suspectLabels": {
-      "le-criminel": "LE CRIMINEL",
-      "pikette": "PIKETTE",
-      "sawito": "SAWITO"
-    },
     "overlapNote": "De aantallen tellen betrokkenheid bij de getoonde incidenten, inclusief medeplichtigen. Eén incident kan meerdere verdachten betreffen; hun som kan dus hoger zijn dan het incidenttotaal.",
+    "nextVisitLabel": "VOLGENDE BEZOEK: DECEMBER",
     "showMoreLabel": "MEER TONEN",
     "viewDetailsLabel": "BEWIJS BEKIJKEN",
     "hideDetailsLabel": "BEWIJS VERBERGEN",
@@ -65,30 +66,26 @@
     "emptyStateTitle": "GEEN PASSENDE INCIDENTEN",
     "emptyStateBody": "Geen incidenten passen bij deze filters. Kies een andere verdachte of overtreding, of wis de filters voor het volledige archief.",
     "methodologyTitle": "WERKWIJZE",
-    "methodologyBody": "Dit archief bevat 48 fictieve incidenten van 1–28 augustus 2026 voor interne opleiding. Categorieën, uren en uitkomsten zijn illustratief en weerspiegelen geen werkelijk onderzoek.",
-    "cibKicker": "NU TER INZAGE",
-    "cibTitle": "HET BUREAU VOOR CRIMINELE INLICHTINGEN",
-    "cibBody": "Achtenveertig incidenten. Drie verdachten. Eén gedeelde archiefkast. Leg de verbanden binnen de hele operatie.",
-    "cibCta": "OPEN HET ARCHIEF",
+    "methodologyBody": "Dit archief omvat 52 fictieve incidenten die tussen juli 2024 en augustus 2026 zijn geregistreerd voor interne trainingsdoeleinden. Categorieën, uren en uitkomsten zijn ter illustratie en weerspiegelen niet een feitelijk onderzoek.",
     "incidents": {
       "CIB-001": {
-        "title": "Croissant verdeeld bij gezamenlijke operatie",
-        "summary": "Le Criminel leidde af, Pikette haalde het gebak weg. De gecoördineerde tweefrontenaanpak leverde twee stukken croissant op, geen van beide eetbaar.",
+        "title": "Restaurantpersoneel gecompromitteerd door berekende charme",
+        "summary": "Le Criminel werkte tafel voor tafel op het terras totdat het restaurantpersoneel extra croissants inleverde.",
         "imageAlt": ""
       },
       "CIB-002": {
-        "title": "Kussennaden getest tot ze bezweken",
-        "summary": "Samen groeven de verdachten het goede stoelkussen open. Overal lag vulling. Beiden ontkenden te zijn begonnen; beiden zaten onder dezelfde vulling.",
+        "title": "Banknaad onderworpen aan langdurig onderzoek",
+        "summary": "Le Criminel keerde herhaaldelijk terug naar één losse naad totdat de vulling toegankelijk werd. Toezicht stopte de inspectie voordat het hele kussen geopend was.",
         "imageAlt": "Gescheurde stiknaad en zichtbare vulling op een kussennaad van de bank."
       },
       "CIB-003": {
-        "title": "Gelijktijdig loos alarm bij de deur",
-        "summary": "Le Criminel blafte, Pikette jankte uit kennelijke solidariteit. Geen indringer, bezorger of verklaring van de verdachten werd gevonden.",
+        "title": "Vriendelijke buurman geïdentificeerd als permanente vijand",
+        "summary": "De oudere buurman begroette Le Criminel vriendelijk in de gemeenschappelijke hal. Le Criminel antwoordde met dezelfde persoonlijke vijandigheid die hij reserveert voor elke ontmoeting met deze volkomen onschuldige man.",
         "imageAlt": ""
       },
       "CIB-004": {
-        "title": "Gang in onderling overleg onbegaanbaar",
-        "summary": "Beide verdachten bezetten tegelijk hetzelfde stukje gang en blokkeerden elf minuten de uitgang. Geen van beiden bewoog als eerste.",
+        "title": "Hal van het appartement bezet tijdens vertrek",
+        "summary": "Le Criminel plantte zichzelf tussen de deur van het appartement en de lift terwijl hij besloot of het uitje acceptabel was. Alle anderen wachtten op de uitspraak.",
         "imageAlt": "Le Criminel aan de lijn, net binnen de betegelde entree."
       },
       "CIB-005": {
@@ -112,69 +109,69 @@
         "imageAlt": ""
       },
       "CIB-009": {
-        "title": "Ontbijttoast onderschept door verdachtenestafette",
-        "summary": "Le Criminel tikte de toast van het aanrecht; Pikette ving hem voor de landing. Arbeidsdeling vastgesteld, verdeling van de toast minder duidelijk.",
+        "title": "Ontbijttoast verwijderd tijdens een korte afleiding",
+        "summary": "Een omgedraaide rug zorgde voor een opening van nog geen drie seconden. Le Criminel gebruikte het om toast van de rand van de tafel te halen en zich onder de stoel terug te trekken.",
         "imageAlt": ""
       },
       "CIB-010": {
-        "title": "Gordijn neergehaald door onbevoegde samenwerking",
-        "summary": "Het gordijn viel tijdens een volgens getuigen gecoördineerde klimpoging. De roede overleefde het niet. Niemand leek dat op te merken.",
+        "title": "De tweede schoen kwam in actief spel",
+        "summary": "Le Criminel selecteerde een onlangs uitgetrokken schoen, droeg deze naar de woonkamer en werkte aan de veters totdat ingrijpen onvermijdelijk werd.",
         "imageAlt": ""
       },
       "CIB-011": {
-        "title": "Avondlijke confrontatie beëindigd door wederzijdse verveling",
-        "summary": "Twaalf minuten staren om de beste zonnevlek eindigde toen beiden tegelijk hun interesse verloren. Zaak gesloten wegens anticlimax.",
+        "title": "Buurman gedetecteerd via een gesloten deur van het appartement",
+        "summary": "Voetstappen in de gedeelde gang werden correct geïdentificeerd als de aardige oudere buurvrouw. Le Criminel begon het gebruikelijke protest voordat de man de overloop had bereikt.",
         "imageAlt": ""
       },
       "CIB-012": {
-        "title": "Trap betwist door twee partijen, door geen vrijgegeven",
-        "summary": "Le Criminel bezette de bovenste trede, Pikette de onderste. Tijdens het geschil lag alle trapverkeer stil.",
+        "title": "Vakantievoorbereidingen vertraagd door besluiteloosheid van de begeleider",
+        "summary": "Sawito heeft één decoratie lang genoeg heroverwogen om de gang van het appartement voor alle anderen te blokkeren.",
         "imageAlt": ""
       },
       "CIB-013": {
-        "title": "Kaasblokje van onbeheerde plank verwijderd",
-        "summary": "De verdachte benaderde de borrelplank met de zekerheid van iemand die vooraf had verkend. Eén kaasblokje vermist; verdachte onaangedaan.",
+        "title": "Parmezaanse kaasblokje in zijn geheel verwijderd",
+        "summary": "Terwijl de eigenaar onder de douche stond, stal Le Criminel een heel blok parmezaan en at het op bed op. Kruimels en olievlekken bepaalden de locatie buiten kijf.",
         "imageAlt": ""
       },
       "CIB-014": {
-        "title": "Linkerschoen onredelijk ver weg verplaatst",
-        "summary": "Laatst gezien onder het bed, later gevonden in de tuin. Eén veter en het grootste deel van zijn waardigheid ontbraken.",
-        "imageAlt": "Eén sportschoen zonder veter in het gras."
+        "title": "Versleten schoen opnieuw aan een inspectie onderworpen",
+        "summary": "Le Criminel droeg de schoen weg en werkte aan de veters totdat ingrijpen onvermijdelijk werd.",
+        "imageAlt": "Een enkele sneaker die met zichtbare schade in het gras ligt."
       },
       "CIB-015": {
-        "title": "Bankkussen tijdens bezoek zonder overleg opgeëist",
-        "summary": "De verdachte beoordeelde de zitplaatsen en nam precies de plek van een aanwezige gast in. De gast verhuisde.",
-        "imageAlt": "Pikette op het middelste bankkussen tijdens bezoek."
+        "title": "De eerste Pikette waarneming omvat onmiddellijke voedselinspectie",
+        "summary": "Pikette arriveerde voor haar eerste geregistreerde bezoek, controleerde de voerbakken en behandelde alles binnen handbereik als gedeeld bezit.",
+        "imageAlt": "Pikette zittend op de vensterbank van het appartement naast de voerbakken."
       },
       "CIB-016": {
-        "title": "Laptoptoetsenbord bezet vlak voor geplande vergadering",
-        "summary": "Vier minuten voor een videogesprek ging het subject op het toetsenbord liggen. Twee verwijderingspogingen volgden. Het gesprek begon te laat.",
-        "imageAlt": "Le Criminel ligt volledig ontspannen op zijn rug op een kleed."
+        "title": "De eerste ontmoeting leidt tot onmiddellijke wederzijdse vijandigheid",
+        "summary": "Le Criminel en Pikette wisselden waarschuwingen uit en hielden elkaar de rest van het bezoek vanaf de andere kant van de bank in de gaten.",
+        "imageAlt": "Pikette en Le Criminel delen de bank terwijl ze naar elkaar kijken."
       },
       "CIB-017": {
-        "title": "Gedeelde misdaad, betwiste eer om gevallen worst",
-        "summary": "De verdachten naderden dezelfde worst vanuit tegenovergestelde richtingen. Niemand week. De worst overleefde het contact niet.",
+        "title": "Gevallen worst onderschept vóór herstel",
+        "summary": "Een worst bereikte de vloer en Le Criminel bereikte deze als eerste. Het bewijsmateriaal werd ingeslikt voordat er enige zinvolle herstelpoging kon beginnen.",
         "imageAlt": ""
       },
       "CIB-018": {
-        "title": "Armleuning verloren door ongerelateerd territoriumgeschil",
-        "summary": "Een ruzie om de vensterbank eindigde met klauw- en tandsporen op de bank. Niemand mikte op de bank. Die verloor toch.",
+        "title": "De schoenbediening verspreidt zich naar de bank",
+        "summary": "Le Criminel droeg een gevangen schoen op de bank en gebruikte de armleuning als hefboom. De schoen, de bekleding en het huishoudelijke geduld liepen allemaal schade op.",
         "imageAlt": "Klauwsporen op een armleuning van dichtbij."
       },
       "CIB-019": {
-        "title": "Bankoverleg mondt uit in samen grommen bij het raam",
-        "summary": "Beide verdachten bewaakten de straat vanaf de rugleuning. Volgens onderzoekers gromden ze opmerkelijk ritmisch in koor.",
-        "imageAlt": "Pikette en Le Criminel naast elkaar op de rugleuning, naar het raam gericht."
+        "title": "Burenovergang bewaakt vanaf de bank",
+        "summary": "Le Criminel zag de oudere buurman vanuit het raam van het appartement en volgde zijn voortgang over de binnenplaats met aanhoudende afkeuring.",
+        "imageAlt": ""
       },
       "CIB-020": {
-        "title": "Voordeur versperd door barricade van twee lichamen",
-        "summary": "De verdachten lagen neus aan staart voor de deur, wetend dat een wandeling was genoemd. De blokkade hield zes minuten.",
+        "title": "Toegang tot de keuken vereist tijdens de voedselbereiding",
+        "summary": "Le Criminel bezette de smalle keukeningang en hield elke beweging tussen het aanrecht en de tafel in de gaten. Herhaalde verwijderingspogingen leverden onmiddellijk rendement op.",
         "imageAlt": ""
       },
       "CIB-021": {
-        "title": "Spekbord leeg voordat het de tafel bereikte",
-        "summary": "Het subject onderschepte het bord op aanrechthoogte in de twee seconden tussen fornuis en tafel. Aanzienlijke verticale inspanning vastgesteld.",
-        "imageAlt": "Le Criminel kijkt van onderaf gespannen naar een vol bord."
+        "title": "Lunch onder voortdurend toezicht",
+        "summary": "Le Criminel volgde het bord vanaf de aankomst tot de laatste hap. Elke vorkbeweging leverde een nieuw verzoek tot overboeking op.",
+        "imageAlt": "Le Criminel houdt het eten nauwlettend in de gaten vanaf een terrastafel."
       },
       "CIB-022": {
         "title": "Leesbril door erop zitten structureel beschadigd",
@@ -182,68 +179,68 @@
         "imageAlt": "Sawito, met bril op, wang aan wang met de hond."
       },
       "CIB-023": {
-        "title": "Balkonluchtruim verdedigd tegen één duif",
-        "summary": "Het subject daagde luid een duif uit die daar niet om had gevraagd. De duif vertrok. Het subject claimde een beslissende overwinning.",
-        "imageAlt": "Le Criminel op het glazen dak, vlak na de val van het balkon."
+        "title": "Pikette keert terug en de vijandelijkheden worden onmiddellijk hervat",
+        "summary": "Het tweede geregistreerde bezoek begon waar het eerste eindigde: beide dieren claimden hetzelfde territorium in de bank en wezen de andere bewoner af.",
+        "imageAlt": "Pikette en Le Criminel bezetten de bank tijdens een bezoek."
       },
       "CIB-024": {
-        "title": "Badkamerdeur bewust van buiten dichtgehouden",
-        "summary": "De verdachte leunde tegen de deur terwijl toegang duidelijk nodig was. Verzoeken te verplaatsen werden zoals gebruikelijk genegeerd.",
+        "title": "De doorgang van de bank werd gesloten tijdens een impasse met twee dieren",
+        "summary": "Pikette hield het ene uiteinde van de bank vast, terwijl Le Criminel het andere uiteinde vasthield totdat het eten in de keuken een einde maakte aan het geschil.",
         "imageAlt": ""
       },
       "CIB-025": {
-        "title": "Popcornschaal twee keer geplunderd tijdens filmavond",
-        "summary": "Eén schaal werd tijdens dezelfde film vanuit twee hoeken aangevallen. Beide verdachten claimden onafhankelijkheid. De timing suggereert anders.",
+        "title": "Croissantkruimels verkregen van een gecompromitteerde getuige",
+        "summary": "Het restaurantpersoneel interpreteerde langdurig staren opnieuw als honger en leverde croissantfragmenten. Le Criminel accepteerde de overdracht zonder het misverstand recht te zetten.",
         "imageAlt": ""
       },
       "CIB-026": {
-        "title": "Kamerplant gezamenlijk op keukenvloer verpot",
-        "summary": "De varen overleefde de inspectie met graven, slaan en minstens één volledige rol niet. Verspreidingsgebied van de aarde: indrukwekkend.",
+        "title": "Voedselzak direct na bezorging doorzocht",
+        "summary": "Le Criminel stak zijn hoofd in de boodschappentas voordat deze volledig was uitgepakt. Groenten werden goedgekeurd; alle andere inhoud bleef doelwit.",
         "imageAlt": ""
       },
       "CIB-027": {
-        "title": "Achtervolging gelijkspel, meubels uitzonderlijk onbeschadigd",
-        "summary": "De korte, energieke achtervolging eindigde toen beiden vanuit verschillende richtingen dezelfde hoek bereikten en gezamenlijk stopten.",
+        "title": "Gasevenement na het diner maakt de woonkamer leeg",
+        "summary": "Een maaltijd die zonder voldoende groenten werd geserveerd, werd gevolgd door een atmosferisch incident dat ernstig genoeg was om de directe zitruimte leeg te maken. Classificatie geüpgraded naar terreurwapen.",
         "imageAlt": ""
       },
       "CIB-028": {
-        "title": "Keukeningang dubbel bezet",
-        "summary": "Geen verdachte gunde de ander de doorgang. De impasse van twintig minuten vertraagde de lunch voor iedereen, ook de mensen.",
+        "title": "Vertrek vertraagd door een ontbrekende set sleutels",
+        "summary": "Sawito doorzocht elk zichtbaar oppervlak voordat hij de sleutels vond in de zak die hij al had gecontroleerd.",
         "imageAlt": ""
       },
       "CIB-029": {
-        "title": "Gedeelde toast uitzonderlijk werkelijk gedeeld",
-        "summary": "Om onduidelijke redenen deelden beide verdachten een gevallen toast zonder incident. Onderzoekers zien een afwijking, geen patroon.",
+        "title": "Groentenallocatie voorkomt escalatie",
+        "summary": "Het diner bevatte een acceptabele plantaardige component. Le Criminel at zonder protest en het huishouden registreerde geen daaropvolgende gasnoodtoestand.",
         "imageAlt": ""
       },
       "CIB-030": {
-        "title": "Vitrage gebruikt als onbevoegd klimrek",
-        "summary": "De verdachte klom tot vensterbankhoogte voordat twee van de drie haken loslieten. De afdaling was naar verluidt grotendeels gecontroleerd.",
-        "imageAlt": "Pikette zit op een vensterbank naast haar voerbakjes."
+        "title": "Schoenveter ingekort tijdens toegang zonder toezicht",
+        "summary": "Le Criminel werd alleen gelaten met een schoen die lang genoeg was om de veter uit te trekken en door één uiteinde te kauwen. De schoen blijft in strikt technische zin draagbaar.",
+        "imageAlt": ""
       },
       "CIB-031": {
-        "title": "Gezamenlijke raamwacht voor onbenoemde dreiging",
-        "summary": "Veertig minuten zaten beide verdachten schouder aan schouder bij het raam. De dreiging verscheen nooit en werd nooit benoemd.",
+        "title": "Bij het derde bezoek van Pikette wordt de gevestigde vete hervat",
+        "summary": "Pikette keerde terug en Le Criminel beschouwde de aankomst als een hernieuwing van onafgemaakte zaken.",
         "imageAlt": ""
       },
       "CIB-032": {
-        "title": "Boodschappen uitpakken vertraagd door overbodig toezicht",
-        "summary": "Sawito stond precies op het kleine keukenoppervlak dat nodig was om tassen uit te laden. Hij gaf voortdurend commentaar, maar geen hulp.",
-        "imageAlt": ""
+        "title": "Voorkeursbankkussen geclaimd voor het bezoek",
+        "summary": "Pikette selecteerde het middenkussen en bleef daar ondanks pogingen om de normale zitopstelling te herstellen.",
+        "imageAlt": "Pikette bezet tijdens een bezoek het kussen van de middelste bank."
       },
       "CIB-033": {
-        "title": "Rechtstreeks uit botervloot geproefd, zonder bestek",
-        "summary": "De verdachte zat met haar gezicht in de botervloot, zonder plausibele verklaring. Opmerkelijk genoeg was het deksel gesloten geweest.",
+        "title": "De verpakking van Parmezaanse kaas lokt reacties van recidivisten uit",
+        "summary": "Door een nieuw blok Parmezaanse kaas te openen, kwam Le Criminel snel de keuken binnen. De kaas bleef veilig en werd nooit binnen handbereik achtergelaten.",
         "imageAlt": ""
       },
       "CIB-034": {
-        "title": "Deurmat naar midden van de straat verplaatst",
-        "summary": "Laatst op de drempel gezien, twee huizen verder teruggevonden: nat, aan één hoek bekauwd en verkeerd om.",
-        "imageAlt": "Le Criminel staat aan de lijn midden op een geplaveide straat."
+        "title": "Schoenvoering verwijderd in het appartement",
+        "summary": "Le Criminel droeg een schoen van de ingang naar de woonkamer en trok voldoende voering eruit om de schade duidelijk te maken.",
+        "imageAlt": "Le Criminel aan de lijn staan ​​tijdens een buitenwandeling."
       },
       "CIB-035": {
-        "title": "Familiebezoek ontspoord door selectieve genegenheid",
-        "summary": "De verdachte hechtte zich direct uitsluitend aan één bezoekend familielid en negeerde alle anderen de hele middag. Het familielid genoot. De rest merkte het op.",
+        "title": "Cafépersoneel benaderd voor ongeoorloofd gebak",
+        "summary": "Le Criminel negeerde zijn eigen begeleider en concentreerde zich op een lid van het restaurantpersoneel dat gebak droeg. Het charmeoffensief leverde een extra croissantje op.",
         "imageAlt": ""
       },
       "CIB-036": {
@@ -257,38 +254,38 @@
         "imageAlt": "Een tweede, eveneens aangevreten brood op de vloer."
       },
       "CIB-038": {
-        "title": "Dekenfort afgebroken door de eigen architecten",
-        "summary": "Een gezamenlijk gebouwd fort bezweek onder zijn eigen ambitie. De verdachten werden tussen de resten gevonden, schijnbaar onbezorgd.",
+        "title": "Parmezaanresidu ontdekt in beddengoed",
+        "summary": "Bij een vervolginspectie van het bed bleek dat er kaaskruimels in de deken waren verwerkt. Het bewijs komt overeen met de eerdere diefstal van Parmezaanse kaas.",
         "imageAlt": "Le Criminel ligt opgekruld te slapen onder een dikke deken op de bank."
       },
       "CIB-039": {
-        "title": "Televisiedeurbel aangezien voor echte bezoeker",
-        "summary": "Het subject reageerde op een deurbel in reclame met volledig volume en volle overtuiging. Er werd nooit een bezoeker gevonden.",
-        "imageAlt": "Le Criminel kijkt scherp op vanaf het kleed, oren gespitst."
+        "title": "Een Pikette-foto van dichtbij leidt tot hernieuwd protest",
+        "summary": "Pikette bleef stil voor een bewakingsfoto terwijl Le Criminel vanaf de andere kant van de kamer bezwaar maakte.",
+        "imageAlt": "Le Criminel keek tijdens het bezoek scherp op van het tapijt."
       },
       "CIB-040": {
-        "title": "Stofzuiger geblokkeerd door onverwachte samenwerking",
-        "summary": "Doorgaans principiële tegenstanders blokkeerden beide verdachten tegelijk de stofzuiger vanuit verschillende hoeken. Schoonmaken duurde twee keer zo lang.",
-        "imageAlt": "Le Criminel springt op zijn hondenmand naast een draaiende stofzuiger."
+        "title": "Tijdelijke raamalliantie waargenomen tijdens bezoek in februari",
+        "summary": "Beide dieren onderbraken de vijandelijkheden om vanaf de bank naar buiten te kijken. De samenwerking eindigde toen het raam stil werd.",
+        "imageAlt": "Pikette en Le Criminel delen de bank tijdens een tijdelijke alliantie."
       },
       "CIB-041": {
-        "title": "Bereikbaar yoghurtdeksel voorspelbaar benut",
-        "summary": "Het deksel lag op het aanrecht om af te likken. Beide verdachten begrepen de regeling en voerden haar zonder ruzie uit.",
+        "title": "Ontbijt onderworpen aan acquisitiepoging van dichtbij",
+        "summary": "Le Criminel bleef naast de ontbijttafel staan en volgde elke beweging van het gebakje. Alleen door voortdurend toezicht bleef de croissant intact.",
         "imageAlt": "Le Criminel staart onafgebroken naar een wafel op een tafel buiten."
       },
       "CIB-042": {
-        "title": "Cadeaupapier gezamenlijk voortijdig versnipperd",
-        "summary": "Een cadeau bleef zes minuten onbeheerd en was bij terugkeer confetti. Beide verdachten leken tevreden.",
+        "title": "Schoenenopslag gehackt nadat de lichten uit waren",
+        "summary": "Een schoen die was uitgetrokken voordat hij naar bed ging, werd met natte veters en verse tandafdrukken uit de woonkamer teruggevonden. Le Criminel lag ernaast te slapen toen hij werd ondervraagd.",
         "imageAlt": ""
       },
       "CIB-043": {
-        "title": "Opnieuw gezamenlijk alarm bij de brievenbus",
-        "summary": "De dagelijkse post veroorzaakte het vertrouwde duet van blaffen en janken. De postbode kent de routine inmiddels.",
+        "title": "Buurman krijgt opnieuw een vijandige ontvangst",
+        "summary": "De oudere buurvrouw groette rustig in de gemeenschappelijke entree. Le Criminel reageerde alsof een langdurige persoonlijke vete zojuist was hernieuwd.",
         "imageAlt": "Le Criminel zit alert aan de lijn dicht bij de straat."
       },
       "CIB-044": {
-        "title": "Bed van hoek tot hoek bezet zonder vrije plek",
-        "summary": "Beide verdachten gingen met schijnbare precisie diagonaal liggen. Voor de bedoelde gebruiker bleef geen ruimte.",
+        "title": "Het diner werd naar het bed gedragen voor ongeoorloofde inspectie",
+        "summary": "Le Criminel volgde het eten de slaapkamer in en probeerde het bord op matrashoogte te inspecteren. De toegang werd geweigerd voordat het Parmezaanse precedent zich kon herhalen.",
         "imageAlt": "Le Criminel ligt op zijn rug dwars over een bed, de hele breedte innemend."
       },
       "CIB-045": {
@@ -297,21 +294,45 @@
         "imageAlt": ""
       },
       "CIB-046": {
-        "title": "Tuinslang op meerdere punten doorboord",
-        "summary": "Vier nieuwe lekken vormen volgens onderzoekers een grondig patroon. Het subject werd tevreden in de buurt aangetroffen.",
-        "imageAlt": "Le Criminel onderzoekt buiten iets op een stenen rand."
+        "title": "Nog een schoen verwijderd uit de ingang van het appartement",
+        "summary": "Le Criminel verplaatste een schoen naar de woonkamer en begon tijdens een ongewoon rustige pauze aan de hiel te werken.",
+        "imageAlt": "Le Criminel onderzoekt een stenen richel tijdens een buitenwandeling."
       },
       "CIB-047": {
-        "title": "Videogesprek onderbroken door ongevraagd commentaar",
-        "summary": "Sawito deed een hele klantvergadering lang live verslag van de hond aan collega's die daar niet om hadden gevraagd.",
-        "imageAlt": "Sawito neemt een selfie, de hond rustend tegen zijn schouder."
+        "title": "Zeldzame stille wapenstilstand opgenomen tijdens Pikette bezoek",
+        "summary": "Le Criminel en Pikette deelden lang genoeg op de bank zonder ruzie zodat het huishouden de anomalie kon documenteren.",
+        "imageAlt": ""
       },
       "CIB-048": {
-        "title": "Uitgang geblokkeerd tot een nooit genomen besluit",
-        "summary": "Het subject dacht elf minuten in de open deur na over naar buiten gaan, blokkeerde beide richtingen en keerde toen terug naar de bank.",
-        "imageAlt": "Le Criminel zit aan de lijn net buiten de voordeur."
+        "title": "Gezamenlijke bankbezetting laat geen bruikbare zitplaats over",
+        "summary": "Pikette en Le Criminel plaatsten zich op de beschikbare kussens en bleven bondgenoot tegen iedereen die probeerde te gaan zitten.",
+        "imageAlt": ""
+      },
+      "CIB-049": {
+        "title": "Lunch onder voortdurend toezicht",
+        "summary": "Le Criminel onderhield visueel contact met de plaat vanaf de aankomst tot de laatste hap. Elke vorkbeweging leverde een nieuw verzoek tot overboeking op.",
+        "imageAlt": "Le Criminel kijkt naar een bord pasta van onder een buitentafel."
+      },
+      "CIB-050": {
+        "title": "De schoeninspectie wordt hervat terwijl het bewijsmateriaal nog wordt gedragen",
+        "summary": "Le Criminel drukte zijn gezicht tegen de schoen, testte de veters en probeerde het gebruikelijke demontageproces te starten voordat hij werd onderbroken.",
+        "imageAlt": "Le Criminel drukte zijn gecensureerde gezicht tegen een versleten schoen aan een buitentafel."
+      },
+      "CIB-051": {
+        "title": "Balkonrooster voorkomt een nieuwe duivenachtervolging",
+        "summary": "Le Criminel kon niet verder dan het balkon bewegen, terwijl het grote veiligheidsrooster precies deed waarvoor het was geïnstalleerd: de achtervolging binnen de grenzen van het appartement houden.",
+        "imageAlt": "Le Criminel tuurt over een pizzadoos naast het balkonveiligheidsrooster op volledige hoogte."
+      },
+      "CIB-052": {
+        "title": "Restaurantpersoneel gecompromitteerd door berekende charme",
+        "summary": "Le Criminel werkte tafel voor tafel op het terras totdat het restaurantpersoneel extra croissants inleverde. De operatie was volledig afhankelijk van oogcontact en de schijn van hongersnood.",
+        "imageAlt": "Le Criminel kijkt naar een croissant vanaf een terrastafel."
       }
-    }
+    },
+    "cibKicker": "NU TER INZAGE",
+    "cibTitle": "HET BUREAU VOOR CRIMINELE INLICHTINGEN",
+    "cibBody": "Tweeënvijftig incidenten. Drie verdachten. Eén gedeelde archiefkast. Verwijs naar de hele operatie.",
+    "cibCta": "OPEN HET ARCHIEF"
   },
   "common": {
     "fallbackBanner": "Sorry, we werken eraan — voorlopig enkel beschikbaar in het Engels."

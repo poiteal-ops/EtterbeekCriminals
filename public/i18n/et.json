@@ -11,8 +11,8 @@
     "title": "KRIMINAALLUURE BÜROO",
     "subtitle": "Koordineeritud juhtumiarhiiv — kolm teadaolevat tegutsejat, ühine põlgus omandiõiguse vastu.",
     "archiveNote": "Väljamõeldud juhtumiandmed, koostatud ainult sisekoolituseks. Igasugune sarnasus tõelise kuriteolainega on juhuslik ja ausalt öeldes neile väga omane.",
-    "archiveWindowLabel": "KOOLITUSTOIMIK / 01.–28. AUG 2026",
-    "seoDescription": "Sirvi Kriminaalluure Büroo arhiivi — 48 väljamõeldud juhtumit, kolm kahtlusalust, ei mingit kahetsust.",
+    "archiveWindowLabel": "JUHTUMI ARHIIV / JUULI 2024–AUG 2026",
+    "seoDescription": "Sirvige Kriminaalluurebüroo arhiivi – 52 väljamõeldud juhtumit, mis on salvestatud 2024. aasta juulist 2026. aasta augustini.",
     "suspectFilterLabel": "FILTRI KAHTLUSALUSE JÄRGI",
     "offenceFilterLabel": "FILTRI RIKKUMISE JÄRGI",
     "allSuspectsLabel": "KÕIK KAHTLUSALUSED",
@@ -24,8 +24,8 @@
     "metricClosureRateLabel": "LÕPETAMISE MÄÄR",
     "metricPeakHourLabel": "SAGEDASIM TEATATUD TUND",
     "unavailableLabel": "POLE SAADAVAL",
-    "dailyChartTitle": "PÄEVANE TEGEVUS",
-    "dailyChartDescription": "Teatatud juhtumid päevade kaupa arhiiviperioodil.",
+    "dailyChartTitle": "KUU TEGEVUS",
+    "dailyChartDescription": "Teatatud juhtumid kuus kogu arhiiviaknas.",
     "offenceChartTitle": "RIKKUMISTE KOGUARVUD",
     "offenceChartDescription": "Juhtumid kategooriate kaupa.",
     "hourlyChartTitle": "JAOTUS KELLAAJA JÄRGI",
@@ -40,6 +40,11 @@
       "open": "LAHTINE",
       "closed": "LÕPETATUD"
     },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
     "relationshipLabels": {
       "allied": "LIITLASED",
       "rivals": "RIVAALID",
@@ -48,15 +53,11 @@
     },
     "dossierDescriptions": {
       "le-criminel": "PEAMINE KAHTLUSALUNE. Boston Terrier, taktikaline kaelarihm, teadaolev kahetsus puudub. Osaleb valdavas enamuses registreeritud juhtumitest.",
-      "pikette": "PEAMINE KAASOSALINE. AEGAJALT PÕLISVAENLANE. Motiivid ebaselged; liit on parimal juhul olukorrapõhine.",
+      "pikette": "HOOAJALINE VÕIVENENE. Ajaloolised külastused toimikus. Järgmine külastus on oodata detsembris.",
       "sawito": "VÕIMALDAJA, MITTE KAHTLUSALUNE. Enamiku juhtumite juures. Sekkumismäär: tühine."
     },
-    "suspectLabels": {
-      "le-criminel": "LE CRIMINEL",
-      "pikette": "PIKETTE",
-      "sawito": "SAWITO"
-    },
     "overlapNote": "Arvud näitavad osalemisi kuvatud juhtumites, kaasosalised kaasa arvatud. Ühes juhtumis võib osaleda mitu kahtlusalust, mistõttu summa võib ületada juhtumite koguarvu.",
+    "nextVisitLabel": "JÄRGMINE KÜLASTUS: DETSEMBER",
     "showMoreLabel": "NÄITA ROHKEM",
     "viewDetailsLabel": "VAATA TÕENDEID",
     "hideDetailsLabel": "PEIDA TÕENDID",
@@ -65,30 +66,26 @@
     "emptyStateTitle": "VASTAVAD JUHTUMID PUUDUVAD",
     "emptyStateBody": "Ükski juhtum ei vasta filtritele. Vali teine kahtlusalune või rikkumine või lähtesta filtrid kogu arhiivi kuvamiseks.",
     "methodologyTitle": "METOODIKA",
-    "methodologyBody": "Arhiiv hõlmab 48 väljamõeldud juhtumit 1.–28. augustist 2026 sisekoolituse tarbeks. Kategooriad, kellaajad ja tulemused on näitlikud ega kajasta tegelikku uurimist.",
-    "cibKicker": "NÜÜD TUTVUMISEKS AVATUD",
-    "cibTitle": "KRIMINAALLUURE BÜROO",
-    "cibBody": "Nelikümmend kaheksa juhtumit. Kolm kahtlusalust. Üks ühine toimikukapp. Võrdle kogu operatsiooni andmeid.",
-    "cibCta": "AVA ARHIIV",
+    "methodologyBody": "See arhiiv hõlmab 52 väljamõeldud juhtumit, mis on registreeritud 2024. aasta juulist kuni 2026. aasta augustini sisekoolituse eesmärgil. Kategooriad, tunnid ja tulemused on illustratiivsed ega kajasta tegelikku uurimist.",
     "incidents": {
       "CIB-001": {
-        "title": "Sarvesai jagatud ühisoperatsioonis",
-        "summary": "Le Criminel juhtis tähelepanu kõrvale, Pikette võttis saia koordineeritud kahepoolse lähenemise käigus. Leiti kaks tükki, kumbki polnud söödav.",
+        "title": "Restorani töötajaid teeb kalkuleeritud võlu",
+        "summary": "Le Criminel töötas terrassi laua haaval, kuni restorani töötajad loovutasid täiendava sarvesaia.",
         "imageAlt": ""
       },
       "CIB-002": {
-        "title": "Padjaõmblused katsetatud purunemiseni",
-        "summary": "Hea tugitooli padja ühiskaevamine levitas täidist üle elutoa. Mõlemad eitasid alustamist; mõlemad olid sama täidisega kaetud.",
+        "title": "Diivani õmblust on pidevalt uuritud",
+        "summary": "Le Criminel pöördus korduvalt tagasi ühe lahtise õmbluse juurde, kuni täidis sai ligipääsetavaks. Järelevalve peatas kontrolli enne, kui kogu padi avati.",
         "imageAlt": "Rebenenud õmblus ja nähtav vahtplast diivanipadja õmblusel."
       },
       "CIB-003": {
-        "title": "Sünkroonne valehäire ukse juures",
-        "summary": "Le Criminel haukus, Pikette näugus näilise solidaarsuse märgiks. Sissetungijat, saadetist ega vabatahtlikku selgitust ei leitud.",
+        "title": "Sõbralik naaber, kes on määratletud kui alaline vaenlane",
+        "summary": "Eakas naaber tervitas Le Criminel lahkelt ühissaalis. Le Criminel vastas samasuguse isikliku vaenulikkusega, mida ta jätab endale igaks kohtumiseks selle täiesti süütu mehega.",
         "imageAlt": ""
       },
       "CIB-004": {
-        "title": "Koridor ühisel kokkuleppel läbimatu",
-        "summary": "Mõlemad hõivasid korraga sama väikese ala ja blokeerisid väljapääsu üheteistkümneks minutiks. Keegi ei liikunud esimesena.",
+        "title": "Korteri esik oli lahkumise ajal hõivatud",
+        "summary": "Le Criminel istutas end korteriukse ja lifti vahele, otsustades, kas väljasõit on vastuvõetav. Kõik teised ootasid otsust.",
         "imageAlt": "Le Criminel rihma otsas vahetult plaaditud sissepääsu sees."
       },
       "CIB-005": {
@@ -112,69 +109,69 @@
         "imageAlt": ""
       },
       "CIB-009": {
-        "title": "Hommikuröstsai tabatud kahtlusaluste teatejooksus",
-        "summary": "Le Criminel lükkas saia tööpinnalt maha; Pikette püüdis selle enne põrandat. Tööjaotus selge, saiajaotus vähem.",
+        "title": "Hommikusöögi röstsai eemaldati lühikese segamise ajal",
+        "summary": "Tagasipööramine tekitas vähem kui kolme sekundi pikkuse avause. Le Criminel kasutas seda röstsaia eemaldamiseks laua servalt ja taganemiseks tooli alla.",
         "imageAlt": ""
       },
       "CIB-010": {
-        "title": "Kardin loata koostööga maha tõmmatud",
-        "summary": "Kardin langes tunnistajate sõnul koordineeritud ronimisel. Puu ei pidanud vastu. Kumbki ei paistnud märkavat.",
+        "title": "Teine jalats sisenes aktiivsesse mängu",
+        "summary": "Le Criminel valis hiljuti eemaldatud kinga, kandis selle elutuppa ja töötas paeltega, kuni sekkumine muutus vältimatuks.",
         "imageAlt": ""
       },
       "CIB-011": {
-        "title": "Õhtune vastasseis lõppes vastastikuse igavusega",
-        "summary": "Kaksteist minutit jõllitamist parima päikeselaigu pärast lõppes samaaegse huvikaotusega. Juhtum lõpetatud haripunkti puudumise tõttu.",
+        "title": "Naaber tuvastati suletud korteriukse kaudu",
+        "summary": "Ühiskoridoris olevad sammud tuvastati õigesti kui kena eakas naaber. Le Criminel alustas tavapärast protesti enne, kui mees oli jõudnud maandumisele.",
         "imageAlt": ""
       },
       "CIB-012": {
-        "title": "Treppi nõudis kaks osapoolt, vabastas mitte keegi",
-        "summary": "Le Criminel hõivas ülemise astme, Pikette alumise. Liiklus peatus kogu vaidluseks.",
+        "title": "Puhkuse ettevalmistused viibisid koerajuhi otsustamatuse tõttu",
+        "summary": "Sawito kaalus ümber ühe piisavalt pika kaunistuse, et blokeerida korteri esik kõigi teiste eest.",
         "imageAlt": ""
       },
       "CIB-013": {
-        "title": "Juustukuubik eemaldatud valveta vaagnalt",
-        "summary": "Kahtlusalune lähenes suupistevaagnale eelneva luure kindlusega. Üks kuubik kadunud; kahtlusalune häirimatu.",
+        "title": "Parmesani plokk eemaldatud tervikuna",
+        "summary": "Kui omanik oli duši all, varastas Le Criminel terve ploki parmesani ja sõi selle voodil ära. Puru ja õlijäljed tegid asukoha kindlaks vaieldamatult.",
         "imageAlt": ""
       },
       "CIB-014": {
-        "title": "Vasak king viidud mõistlikust taastamisulatusest välja",
-        "summary": "Viimati voodi all nähtud king leiti aiast ilma paela ja suurema osa väärikuseta.",
-        "imageAlt": "Üks paelata toss rohus."
+        "title": "Kantud jalanõud läbinud uue kontrolli",
+        "summary": "Le Criminel kandis kinga minema ja lõi paeltega, kuni sekkumine muutus vältimatuks.",
+        "imageAlt": "Üksik kets lebab muru sees, nähtavate vigastustega."
       },
       "CIB-015": {
-        "title": "Diivanipadi külaskäigu ajal läbirääkimisteta hõivatud",
-        "summary": "Kahtlusalune hindas istekohti ja asus täpselt külalise juba hõivatud kohale. Külaline kolis.",
-        "imageAlt": "Pikette külaskäigu ajal diivani keskmisel padjal."
+        "title": "Esimene Pikette vaatlus hõlmab kohest toidukontrolli",
+        "summary": "Pikette saabus oma esimesele registreeritud visiidile, kontrollis toidukausse ja käsitles kõike, mis oli käeulatuses, ühisvarana.",
+        "imageAlt": "Pikette istub korteri aknalaual toidukausside kõrval."
       },
       "CIB-016": {
-        "title": "Klaviatuur hõivatud enne plaanitud kõnet",
-        "summary": "Subjekt heitis klaviatuurile neli minutit enne videokõnet. Kaks eemaldamiskatset. Kõne algas hilja.",
-        "imageAlt": "Le Criminel lebab selili vaibal, täiesti lõdvestunult."
+        "title": "Esimene kohtumine tekitab vahetu vastastikuse vaenu",
+        "summary": "Le Criminel ja Pikette vahetasid hoiatusi ja veetsid ülejäänud külastuse teineteist diivani vastastikku jälgides.",
+        "imageAlt": "Pikette ja Le Criminel jagavad diivanit ja jälgivad teineteist."
       },
       "CIB-017": {
-        "title": "Ühine kuritegu, vaieldav au mahakukkunud vorsti eest",
-        "summary": "Mõlemad lähenesid samale vorstile vastassuundadest. Kumbki ei taganenud. Vorst kokkupuudet üle ei elanud.",
+        "title": "Mahakukkunud vorst kinni peetud enne taastumist",
+        "summary": "Vorst jõudis põrandale ja Le Criminel jõudis selleni esimesena. Tõendid neelati alla enne, kui võis alata sisuline taastamispüüdlus.",
         "imageAlt": ""
       },
       "CIB-018": {
-        "title": "Käetugi kaotatud kõrvalises territooriumitülis",
-        "summary": "Aknalaua tüli lõppes küünejälgedega käetoel ja hambajälgedega kõrval. Keegi ei sihtinud diivanit. See kaotas ikkagi.",
+        "title": "Kingaoperatsioon levib diivanile",
+        "summary": "Le Criminel kandis jäädvustatud kinga diivanile ja kasutas käetuge. Jalats, polster ja majapidamise kannatlikkus said kõik kahju.",
         "imageAlt": "Lähivaade küünejälgedest diivani käetoel."
       },
       "CIB-019": {
-        "title": "Diivanikohtumine muutus ühiseks urinaks akna poole",
-        "summary": "Mõlemad valvasid tänavat seljatoelt, urisedes uurijate hinnangul tähelepanuväärses rütmilises üksmeeles.",
-        "imageAlt": "Pikette ja Le Criminel kõrvuti seljatoel akna poole vaatamas."
+        "title": "Diivanilt jälgitav naabrite ülekäik",
+        "summary": "Le Criminel märkas eakat naabrit korteriaknast ja jälgis tema edenemist üle sisehoovi püsiva halvakspanuga.",
+        "imageAlt": ""
       },
       "CIB-020": {
-        "title": "Välisuks tõkestatud kahe kehaga",
-        "summary": "Nad lamasid nina vastu saba ukse ees, teades lubatud jalutuskäigust. Barrikaad pidas kuus minutit.",
+        "title": "Toidu valmistamise ajal nõutav juurdepääs köögile",
+        "summary": "Le Criminel hõivas köögi kitsa sissepääsu ja jälgis iga liikumist leti ja laua vahel. Korduvad eemaldamiskatsed tõid kohe tagasi.",
         "imageAlt": ""
       },
       "CIB-021": {
-        "title": "Peekonitaldrik tühjendatud enne lauda",
-        "summary": "Subjekt püüdis taldriku tööpinna kõrgusel pliidi ja laua vahelise kahe sekundi jooksul. Märgiti suurt vertikaalset pingutust.",
-        "imageAlt": "Le Criminel jälgib altpoolt tähelepanelikult täit taldrikut."
+        "title": "Lõunasöök on pideva järelevalve all",
+        "summary": "Le Criminel jälgis taldrikut saabumisest kuni viimase hammustamiseni. Iga kahvliliigutus tekitas uue üleminekutaotluse.",
+        "imageAlt": "Le Criminel vaadates toitu lähedalt välikohviku laua kõrvalt."
       },
       "CIB-022": {
         "title": "Lugemisprillid istumisega purustatud",
@@ -182,68 +179,68 @@
         "imageAlt": "Sawito, prillid peas, põsk vastu põske koeraga."
       },
       "CIB-023": {
-        "title": "Rõdu õhuruum kaitstud ühe tuvi vastu",
-        "summary": "Subjekt esitas lärmakalt väljakutse tuvi soovimata. Tuvi lahkus. Subjekt kuulutas otsustava võidu.",
-        "imageAlt": "Le Criminel klaaskatusel, hetk pärast rõdult kukkumist."
+        "title": "Pikette naaseb ja vaenutegevus jätkub kohe",
+        "summary": "Teine registreeritud külastus algas sealt, kus esimene lõppes: mõlemad loomad nõudsid sama diivaniterritooriumi ja lükkasid tagasi teise elaniku.",
+        "imageAlt": "Pikette ja Le Criminel istuvad külastuse ajal diivanil."
       },
       "CIB-024": {
-        "title": "Vannitoa uks tahtlikult väljast suletuna hoitud",
-        "summary": "Kahtlusalune nõjatus uksele, kui ligipääsu oli ilmselgelt vaja. Liikumispalveid eirati nagu alati.",
+        "title": "Kahe looma vaheseisu ajal suleti diivanikäik",
+        "summary": "Pikette hoidis diivani ühest otsast kinni, samas kui Le Criminel hoidis teist kinni, kuni toit köögis tüli lõpetas.",
         "imageAlt": ""
       },
       "CIB-025": {
-        "title": "Popkornikaussi rüüstatud filmi ajal kaks korda",
-        "summary": "Sama kaussi rünnati kahest suunast. Mõlemad väitsid sõltumatut tegutsemist. Ajastus viitab muule.",
+        "title": "Kompromiteeritud tunnistaja käest omandatud sarvesaiapuru",
+        "summary": "Restorani töötajad tõlgendasid pikemat vahtimist taas näljana ja varustasid sarvesaia tükke. Le Criminel võttis ülekande vastu ilma arusaamatusi parandamata.",
         "imageAlt": ""
       },
       "CIB-026": {
-        "title": "Toataim ühiselt köögipõrandale ümber istutatud",
-        "summary": "Sõnajalg ei elanud üle kontrolli kaevamise, käpalöökide ja vähemalt ühe täispöördega. Mullaraadius: muljetavaldav.",
+        "title": "Toidukott otsiti kohe peale tarnimist",
+        "summary": "Le Criminel pistis oma pea ostukotti enne, kui see oli täielikult lahti pakkinud. Köögiviljad kiideti heaks; kogu muu sisu jäi sihtmärkideks.",
         "imageAlt": ""
       },
       "CIB-027": {
-        "title": "Koridorijaht lõppes viigiga, mööbel erandlikult terve",
-        "summary": "Lühike hoogne tagaajamine lõppes, kui mõlemad jõudsid eri suundadest samasse nurka ja otsustasid koos peatuda.",
+        "title": "Õhtusöögijärgne gaasiüritus puhastab elutoa",
+        "summary": "Ilma piisava hulga köögiviljadeta serveeritavale söögile järgnes piisavalt tõsine atmosfäärijuhtum, et vahetu istumisala tühjendada. Klassifikatsioon on uuendatud terrorirelvaks.",
         "imageAlt": ""
       },
       "CIB-028": {
-        "title": "Köögi sissepääs topeltokupatsiooni all",
-        "summary": "Kumbki ei andnud teisele teed. Kahekümneminutiline patiseis lükkas kõigi lõuna edasi, inimesed kaasa arvatud.",
+        "title": "Väljumine viibis võtmekomplekti puudumise tõttu",
+        "summary": "Sawito otsis kõiki nähtavaid pindu, enne kui leidis võtmed taskust, mida ta oli juba kontrollinud.",
         "imageAlt": ""
       },
       "CIB-029": {
-        "title": "Jagatud röstsai erandlikult tõesti jagatud",
-        "summary": "Ebaselgel põhjusel jagati mahakukkunud sai vahejuhtumita. Uurijad peavad seda kõrvalekaldeks, mitte mustriks.",
+        "title": "Köögiviljade eraldamine hoiab ära eskaleerumise",
+        "summary": "Õhtusöök sisaldas vastuvõetavat köögiviljakomponenti. Le Criminel sõi ilma protestita ja leibkond ei registreerinud ühtegi järgnevat gaasihäda.",
         "imageAlt": ""
       },
       "CIB-030": {
-        "title": "Õhuke kardin kasutatud loata ronimisrajatisena",
-        "summary": "Kahtlusalune ronis aknalauani enne kahe konksu lahtitulekut kolmest. Laskumist kirjeldati enamjaolt kontrollituna.",
-        "imageAlt": "Pikette istub aknalaual oma toidukausside kõrval."
+        "title": "Kingapael on järelvalveta juurdepääsu ajal lühenenud",
+        "summary": "Le Criminel jäeti üksi piisavalt pika kingaga, et pits välja tõmmata ja ühest otsast läbi närida. Jalats jääb rangelt tehnilises mõttes kantavaks.",
+        "imageAlt": ""
       },
       "CIB-031": {
-        "title": "Ühine aknavalve määratlemata ohu tõttu",
-        "summary": "Nelikümmend minutit istuti õlg õla kõrval, valvel ohu eest, mis ei ilmunud ega saanud nime.",
+        "title": "Kolmas Pikette külastus jätkab väljakujunenud tüli",
+        "summary": "Pikette tagastas ja Le Criminel käsitles saabumist kui lõpetamata töö uuendamist.",
         "imageAlt": ""
       },
       "CIB-032": {
-        "title": "Ostude lahtipakkimine peatatud tarbetu järelevalvega",
-        "summary": "Sawito hõivas ainsa väikese ala, mida kottide tühjendamiseks vajati. Ta kommenteeris kogu tööd abistamata.",
-        "imageAlt": ""
+        "title": "Visiidi jaoks nõuti eelistatud diivanipadi",
+        "summary": "Pikette valis keskmise istmepadja ja jäi sinna vaatamata katsetele taastada normaalne istme paigutus.",
+        "imageAlt": "Pikette istub külastuse ajal keskmisel diivanipadjal."
       },
       "CIB-033": {
-        "title": "Võid maitstud otse, ilma söögiriistata",
-        "summary": "Kahtlusalune leiti näoga võitoosis ilma usutava selgituseta. Kaas oli tähelepanuväärselt varem suletud.",
+        "title": "Parmesani pakend käivitab korduva kurjategija vastuse",
+        "summary": "Uue parmesaniploki avamine tõi Le Criminel kiiresti kööki. Juust jäi kinni ja seda ei jäetud kunagi duši alla.",
         "imageAlt": ""
       },
       "CIB-034": {
-        "title": "Uksematt viidud keset tänavat",
-        "summary": "Viimati lävel, leiti kaks maja edasi: niiske, ühest nurgast näritud ja valepidi.",
-        "imageAlt": "Le Criminel seisab rihma otsas munakivitänava keskel."
+        "title": "Korteris sees kinga vooder eemaldatud",
+        "summary": "Le Criminel kandis kinga sissepääsu juurest elutuppa ja tõmbas välja piisavalt voodri, et kahjustused oleksid ilmsed.",
+        "imageAlt": "Le Criminel õueskäigu ajal rihma otsas seistes."
       },
       "CIB-035": {
-        "title": "Perevisiit rikutud valikulise kiindumusega",
-        "summary": "Kahtlusalune kiindus kohe ainult ühte sugulasse ja eiras teisi kogu pärastlõuna. Sugulane rõõmustas. Teised panid tähele.",
+        "title": "Kohviku töötajad pöördusid loata saiakeste pärast",
+        "summary": "Le Criminel eiras oma käitlejat ja keskendus restorani töötajale, kes kandis saiakesi. Võlu rünnak tekitas täiendava sarvesaia tüki.",
         "imageAlt": ""
       },
       "CIB-036": {
@@ -257,38 +254,38 @@
         "imageAlt": "Teine samuti näritud päts põrandal."
       },
       "CIB-038": {
-        "title": "Tekilinnus lammutatud oma arhitektide poolt",
-        "summary": "Ühisrajatis varises oma ambitsiooni all. Mõlemad leiti jäänustest, näiliselt häirimatud.",
+        "title": "Allapanust avastati parmesani jääk",
+        "summary": "Voodi järelkontrollil leiti, et teki sisse on töödeldud juustupuru. Tõendid on kooskõlas varasema terve ploki parmesani vargusega.",
         "imageAlt": "Le Criminel magab kerra tõmbunult paksu teki all diivanil."
       },
       "CIB-039": {
-        "title": "Televisiooni uksekell peetud päris külaliseks",
-        "summary": "Subjekt vastas reklaami uksekellale täie helitugevuse ja veendumusega. Külalist ei leitud kunagi.",
-        "imageAlt": "Le Criminel tõstab vaibalt järsult pilgu, kõrvad püsti."
+        "title": "Lähipiirkonna Pikette foto käivitab uue protesti",
+        "summary": "Pikette jäi valvefoto tegemiseks paigale, samal ajal kui Le Criminel oli ruumi teisest otsast vastu.",
+        "imageAlt": "Le Criminel vaatab külastuse ajal vaibalt teravalt üles."
       },
       "CIB-040": {
-        "title": "Tolmuimeja blokeeritud ootamatu koostööga",
-        "summary": "Tavaliselt põhimõttelised vastased blokeerisid masina korraga eri nurkadest. Koristamine kestis kaks korda kauem.",
-        "imageAlt": "Le Criminel hüppab oma pesasse töötava tolmuimeja kõrval."
+        "title": "Veebruari visiidi ajal täheldatud ajutist akende liitu",
+        "summary": "Mõlemad loomad peatasid vaenutegevuse, et vaadata diivanilt väljas liikumist. Koostöö lõppes siis, kui aken vaikseks jäi.",
+        "imageAlt": "Pikette ja Le Criminel jagavad ajutise liidu ajal diivanit."
       },
       "CIB-041": {
-        "title": "Kättesaadav jogurtikaas ettearvatult ära kasutatud",
-        "summary": "Kaas jäeti tööpinnale lakkumiseks. Mõlemad mõistsid kokkulepet ja täitsid selle vaidluseta.",
+        "title": "Hommikusööki katsetati lähiajal",
+        "summary": "Le Criminel hoidis positsiooni hommikusöögilaua kõrval ja jälgis saia iga liigutust. Croissant jäi terveks vaid pideva järelevalve käigus.",
         "imageAlt": "Le Criminel vahib pingsalt vahvlit, mis on jäetud õuelauale."
       },
       "CIB-042": {
-        "title": "Kingipaber ühiselt enneaegu ribastatud",
-        "summary": "Kuus minutit valveta kink oli naasmisel konfettideks muutunud. Mõlemad paistsid rahulolevad.",
+        "title": "Kingahoidla purunes pärast tulede kustutamist",
+        "summary": "Enne magamaminekut eemaldatud jalanõu leiti elutoast märgade paelte ja värskete hambajälgedega. Le Criminel magas selle kõrval, kui teda küsitleti.",
         "imageAlt": ""
       },
       "CIB-043": {
-        "title": "Uus koordineeritud häire postipilu juures",
-        "summary": "Päevane post vallandas tavalise haukumise ühelt ja näugumise teiselt. Postiljon tunneb rutiini.",
+        "title": "Naaber saab järjekordse vaenuliku vastuvõtu",
+        "summary": "Eakas naaber tervitas ühississekäigus rahulikult. Le Criminel vastas, nagu oleks pikaajaline isiklik vaen just äsja puhkenud.",
         "imageAlt": "Le Criminel istub valvsalt rihma otsas tänava lähedal."
       },
       "CIB-044": {
-        "title": "Voodi nurgast nurgani hõivatud, vaba ruumita",
-        "summary": "Mõlemad sättisid end näilise täpsusega diagonaali, jätmata ettenähtud kasutajale kohta.",
+        "title": "Õhtusöök kanti volitamata kontrollimiseks voodisse",
+        "summary": "Le Criminel järgnes toidule magamistuppa ja proovis taldrikut madratsi kõrgusel kontrollida. Juurdepääs keelati enne, kui parmesani pretsedent sai korduda.",
         "imageAlt": "Le Criminel lamab selili risti voodil, hõivates kogu laiuse."
       },
       "CIB-045": {
@@ -297,21 +294,45 @@
         "imageAlt": ""
       },
       "CIB-046": {
-        "title": "Aiavoolik mitmest kohast läbi torgatud",
-        "summary": "Neli uut leket moodustavad uurijate sõnul põhjaliku mustri. Subjekt leiti rahulolevana lähedusest.",
-        "imageAlt": "Le Criminel uurib õues midagi kivipiirdel."
+        "title": "Korteri sissepääsu juurest eemaldatud veel üks king",
+        "summary": "Le Criminel paigutas kinga elutuppa ja hakkas ebaharilikult vaikse aja jooksul kontsaga tegelema.",
+        "imageAlt": "Le Criminel uurib õueskäigu ajal kiviaeda."
       },
       "CIB-047": {
-        "title": "Videokõne katkestatud küsimata otsekommentaariga",
-        "summary": "Sawito kommenteeris kolleegidele koera tegevusi kogu kliendikohtumise vältel. Keegi polnud seda palunud.",
-        "imageAlt": "Sawito teeb selfit, koer tema õlale toetumas."
+        "title": "Pikette külastuse ajal salvestatud haruldane vaikne diivanirahu",
+        "summary": "Le Criminel ja Pikette jagasid diivanit ilma vaidlemiseta piisavalt kaua, et leibkond saaks anomaalia dokumenteerida.",
+        "imageAlt": ""
       },
       "CIB-048": {
-        "title": "Väljapääs blokeeritud otsuseni, mida ei tulnud",
-        "summary": "Subjekt seisis avatud ukseavas üksteist minutit, kaaludes väljumist. Mõlemad suunad olid tõkestatud, enne kui ta diivanile naasis.",
-        "imageAlt": "Le Criminel istub rihma otsas vahetult välisukse ees."
+        "title": "Diivani ühine kasutamine ei jäta kasulikku istet",
+        "summary": "Pikette ja Le Criminel seadsid end olemasolevate patjade vahele ja jäid liiduks igaühe vastu, kes üritab maha istuda.",
+        "imageAlt": ""
+      },
+      "CIB-049": {
+        "title": "Lõunasöök on pideva järelevalve all",
+        "summary": "Le Criminel säilitas visuaalse kontakti taldrikuga saabumisest kuni viimase hammustamiseni. Iga kahvliliigutus tekitas uue üleminekutaotluse.",
+        "imageAlt": "Le Criminel vaatab õuelaua alt pastataldrikut."
+      },
+      "CIB-050": {
+        "title": "Kingade ülevaatus jätkub seni, kuni asitõendeid veel kantakse",
+        "summary": "Le Criminel surus näo vastu kinga, katsetas paelu ja proovis alustada tavalist lahtivõtmisprotsessi, enne kui see katkestati.",
+        "imageAlt": "Le Criminel surub välilauas oma tsenseeritud näo vastu kulunud kinga."
+      },
+      "CIB-051": {
+        "title": "Rõdurest takistab järjekordset tuvi jälitamist",
+        "summary": "Le Criminel lukustatud rõdust kaugemale liikumiseks, samal ajal kui suur turvarest tegi täpselt seda, milleks see oli paigaldatud: hoidis tagaajamist korteripiiri sees.",
+        "imageAlt": "Le Criminel piilub üle pitsakarbi täiskõrgusega rõdu turvaresti kõrval."
+      },
+      "CIB-052": {
+        "title": "Restorani töötajaid teeb kalkuleeritud võlu",
+        "summary": "Le Criminel töötas terrassi laua haaval, kuni restorani töötajad loovutasid täiendava sarvesaia. Operatsioon põhines täielikult silmside ja nälgimise ilmnemisel.",
+        "imageAlt": "Le Criminel vaatab välikohviku laua kõrvalt sarvesaiu."
       }
-    }
+    },
+    "cibKicker": "NÜÜD TUTVUMISEKS AVATUD",
+    "cibTitle": "KRIMINAALLUURE BÜROO",
+    "cibBody": "Viiskümmend kaks juhtumit. Kolm kahtlusalust. Üks ühine kapp. Ristviide kogu toimingule.",
+    "cibCta": "AVA ARHIIV"
   },
   "common": {
     "fallbackBanner": "Vabandame, tegeleme sellega — praegu saadaval ainult inglise keeles."

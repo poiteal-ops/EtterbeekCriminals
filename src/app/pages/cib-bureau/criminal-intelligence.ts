@@ -3,13 +3,13 @@ import { RouterLink } from '@angular/router';
 
 import { TranslationService } from '../../services/translation.service';
 import { CibChart, CibChartBucket } from './cib-chart';
-import { CIB_ARCHIVE_DATES, CIB_INCIDENTS } from './cib.data';
+import { CIB_ARCHIVE_MONTHS, CIB_INCIDENTS } from './cib.data';
 import { CibFilters, CibIncident, OffenceId, SuspectId } from './cib.model';
 import {
-  dailyCounts,
   deriveMetrics,
   filterIncidents,
   hourlyCounts,
+  monthlyCounts,
   offenceCounts,
   sortIncidents,
   suspectCounts,
@@ -28,9 +28,9 @@ const SUSPECT_OPTIONS: readonly SuspectId[] = ['le-criminel', 'pikette', 'sawito
 
 // Fixed, full-archive chart ceilings (plan section 4): filtering changes bar
 // lengths without ever making a smaller, filtered count look as large as the
-// unfiltered maximum. CIB_INCIDENTS/CIB_ARCHIVE_DATES are static data, so
+// unfiltered maximum. CIB_INCIDENTS/CIB_ARCHIVE_MONTHS are static data, so
 // these are computed once as plain constants rather than reactive signals.
-const DAILY_MAXIMUM = maxCount(dailyCounts(CIB_INCIDENTS, CIB_ARCHIVE_DATES));
+const MONTHLY_MAXIMUM = maxCount(monthlyCounts(CIB_INCIDENTS, CIB_ARCHIVE_MONTHS));
 const OFFENCE_MAXIMUM = maxCount(offenceCounts(CIB_INCIDENTS));
 const HOURLY_MAXIMUM = maxCount(hourlyCounts(CIB_INCIDENTS));
 
@@ -39,7 +39,7 @@ const HOURLY_MAXIMUM = maxCount(hourlyCounts(CIB_INCIDENTS));
 const SUSPECT_DOSSIER_IMAGES: Record<SuspectId, string> = {
   'le-criminel': 'assets/images/dog-floor-portrait.jpg',
   pikette: 'assets/images/pikette-couch-visit.jpg',
-  sawito: 'assets/images/sawito-dog-selfie.jpg',
+  sawito: 'assets/images/sawito-dossier.jpg',
 };
 
 interface SuspectCardData {
@@ -48,6 +48,7 @@ interface SuspectCardData {
   readonly dossier: string;
   readonly image: string;
   readonly count: number;
+  readonly nextVisit: boolean;
 }
 
 // Reads only `.count`, so it accepts both the plain CibBucket[] returned by
@@ -123,18 +124,19 @@ export class CriminalIntelligence {
       dossier: t.dossierDescriptions[id],
       image: SUSPECT_DOSSIER_IMAGES[id],
       count: countById.get(id) ?? 0,
+      nextVisit: id === 'pikette',
     }));
   });
 
-  protected readonly dailyBuckets = computed<readonly CibChartBucket[]>(() =>
-    dailyCounts(this.filteredIncidents(), CIB_ARCHIVE_DATES).map((bucket) => ({
+  protected readonly monthlyBuckets = computed<readonly CibChartBucket[]>(() =>
+    monthlyCounts(this.filteredIncidents(), CIB_ARCHIVE_MONTHS).map((bucket) => ({
       key: bucket.key,
-      label: this.formatIncidentDate(bucket.key),
+      label: this.formatArchiveMonth(bucket.key),
       count: bucket.count,
     })),
   );
 
-  protected readonly dailyMaximum = computed(() => DAILY_MAXIMUM);
+  protected readonly monthlyMaximum = computed(() => MONTHLY_MAXIMUM);
 
   protected readonly offenceBuckets = computed<readonly CibChartBucket[]>(() => {
     const t = this.translation.t().cib;
@@ -193,6 +195,12 @@ export class CriminalIntelligence {
     return new Intl.DateTimeFormat(this.translation.locale(), {
       day: 'numeric', month: 'short', timeZone: 'UTC',
     }).format(new Date(`${date}T00:00:00Z`));
+  }
+
+  protected formatArchiveMonth(month: string): string {
+    return new Intl.DateTimeFormat(this.translation.locale(), {
+      month: 'short', year: '2-digit', timeZone: 'UTC',
+    }).format(new Date(`${month}-01T00:00:00Z`));
   }
 
   // Fictional hours are always displayed as zero-padded HH:00, no timezone

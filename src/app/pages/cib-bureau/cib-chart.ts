@@ -55,11 +55,11 @@ export class CibChart {
     });
   });
 
-  // Four anchored ticks fit the narrowest panel without dropping any bars.
-  // Endpoints remain visible; full bucket labels/counts stay in the table.
+  // Three anchored ticks leave room for locale-added month/year suffixes at
+  // 360px. Endpoints remain visible; full labels/counts stay in the table.
   protected readonly axisTicks = computed(() => {
     const bars = this.bars();
-    const count = Math.min(bars.length, 4);
+    const count = Math.min(bars.length, 3);
     return Array.from({ length: count }, (_, i) => {
       const index = count === 1 ? 0 : Math.round(i * (bars.length - 1) / (count - 1));
       return bars[index];

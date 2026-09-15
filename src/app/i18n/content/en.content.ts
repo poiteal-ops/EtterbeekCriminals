@@ -634,9 +634,9 @@ export const EN_CONTENT: SiteContent = {
     subtitle: 'Coordinated incident archive — three known operators, one shared disregard for property law.',
     archiveNote:
       'Fictional incident data, compiled for internal training purposes only. Any resemblance to an actual crime wave is coincidental and, frankly, on brand.',
-    archiveWindowLabel: 'TRAINING DOSSIER / 01–28 AUG 2026',
+    archiveWindowLabel: 'CASE ARCHIVE / JUL 2024–AUG 2026',
     seoDescription:
-      'Browse the Criminal Intelligence Bureau archive — 48 fictional incidents, three suspects, zero remorse.',
+      'Browse the Criminal Intelligence Bureau archive — 52 fictional incidents recorded from July 2024 through August 2026.',
 
     suspectFilterLabel: 'FILTER BY SUSPECT',
     offenceFilterLabel: 'FILTER BY OFFENCE',
@@ -651,8 +651,8 @@ export const EN_CONTENT: SiteContent = {
     metricPeakHourLabel: 'PEAK REPORTED HOUR',
     unavailableLabel: 'UNAVAILABLE',
 
-    dailyChartTitle: 'DAILY ACTIVITY',
-    dailyChartDescription: 'Reported incidents per day across the archive window.',
+    dailyChartTitle: 'MONTHLY ACTIVITY',
+    dailyChartDescription: 'Reported incidents per month across the archive window.',
     offenceChartTitle: 'OFFENCE TOTALS',
     offenceChartDescription: 'Incidents broken down by category.',
     hourlyChartTitle: 'HOUR-OF-DAY DISTRIBUTION',
@@ -682,12 +682,13 @@ export const EN_CONTENT: SiteContent = {
 
     dossierDescriptions: {
       'le-criminel': 'PRIME SUSPECT. Boston Terrier, tactical collar, no known remorse. Present at the overwhelming majority of filed incidents.',
-      pikette: 'PRIMARY ACCOMPLICE. OCCASIONAL ARCH-ENEMY. Motives remain unclear; the alliance is situational at best.',
+      pikette: 'SEASONAL ARCH-ENEMY. Historical visits on file. Next visitation expected in December.',
       sawito: 'ENABLER, NOT A SUSPECT. Present for most incidents. Intervention rate: negligible.',
     },
     overlapNote:
       "Counts reflect involvement in the incidents shown above, accomplices included — a single incident can involve more than one suspect, so these numbers may exceed the incident total.",
 
+    nextVisitLabel: 'NEXT VISIT: DECEMBER',
     showMoreLabel: 'SHOW MORE',
     viewDetailsLabel: 'VIEW EVIDENCE',
     hideDetailsLabel: 'HIDE EVIDENCE',
@@ -700,13 +701,13 @@ export const EN_CONTENT: SiteContent = {
 
     methodologyTitle: 'METHODOLOGY',
     methodologyBody:
-      'This archive covers 48 fictional incidents logged between 1–28 August 2026 for internal training purposes. Categories, hours, and outcomes are illustrative and do not reflect an actual investigation.',
+      'This archive covers 52 fictional incidents logged from July 2024 through August 2026 for internal training purposes. Categories, hours, and outcomes are illustrative and do not reflect an actual investigation.',
 
     incidents: CIB_INCIDENT_COPY_EN,
 
     cibKicker: 'NOW OPEN FOR REVIEW',
     cibTitle: 'THE CRIMINAL INTELLIGENCE BUREAU',
-    cibBody: 'Forty-eight incidents. Three suspects. One shared filing cabinet. Cross-reference the whole operation.',
+    cibBody: 'Fifty-two incidents. Three suspects. One shared filing cabinet. Cross-reference the whole operation.',
     cibCta: 'OPEN THE ARCHIVE',
   },
   footer: '© THE THIEFFRY CRIMINALS — FILE REMAINS OPEN. ALL RIGHTS RESERVED (ALLEGEDLY).',

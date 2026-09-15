@@ -6,14 +6,13 @@ import { provideRouter } from '@angular/router';
 import { EN_CONTENT } from '../../i18n/content/en.content';
 import { TranslationService } from '../../services/translation.service';
 import { CriminalIntelligence } from './criminal-intelligence';
-import { dailyCounts, filterIncidents, hourlyCounts, offenceCounts } from './cib-selectors';
-import { CIB_ARCHIVE_DATES, CIB_INCIDENTS } from './cib.data';
+import { filterIncidents, hourlyCounts, monthlyCounts, offenceCounts } from './cib-selectors';
+import { CIB_ARCHIVE_MONTHS, CIB_INCIDENTS } from './cib.data';
 
-// Note: the fixed 48-incident archive deliberately covers every
-// suspect x offence combination at least once, so a zero-match filter state
-// can't be reached from this file's real dataset. That code path (rule 8) is
-// covered separately in criminal-intelligence-empty.spec.ts, which mocks the
-// data module with a single-incident archive to exercise it for real.
+// The zero-match feed state is covered separately in
+// criminal-intelligence-empty.spec.ts. Pikette has no August incidents, but
+// her pending-visitation controls are deliberately disabled rather than used
+// as an empty-state shortcut.
 
 // Local mirror of the component's private maxCount() helper, used only to
 // compute the expected full-archive ceiling independently in these tests.
@@ -36,11 +35,34 @@ describe('CriminalIntelligence', () => {
     const fixture = createComponent();
     const secondary = fixture.nativeElement.querySelector('.suspect-card--secondary') as HTMLButtonElement;
     expect(secondary?.textContent).toContain('SAWITO');
+    expect(secondary.querySelector('img')?.getAttribute('src')).toBe('assets/images/sawito-dossier.jpg');
     expect(fixture.nativeElement.querySelectorAll('.suspect-card:not(.suspect-card--secondary)')).toHaveLength(2);
     secondary.click();
     fixture.detectChanges();
     expect(secondary.getAttribute('aria-pressed')).toBe('true');
     expect(fixture.componentInstance['metrics']().total).toBe(6);
+  });
+
+  it('keeps Pikette historically filterable and shows her next visit', () => {
+    const fixture = createComponent();
+    const instance = fixture.componentInstance;
+    const cards = Array.from(
+      fixture.nativeElement.querySelectorAll('.suspect-card') as NodeListOf<HTMLButtonElement>,
+    );
+    const piketteCard = cards.find((card) => card.textContent?.includes('PIKETTE'));
+    const piketteOption = fixture.nativeElement.querySelector(
+      '#cib-suspect-filter option[value="pikette"]',
+    ) as HTMLOptionElement;
+
+    expect(piketteCard).toBeDefined();
+    expect(piketteCard?.disabled).toBe(false);
+    expect(piketteCard?.classList.contains('suspect-card--pending')).toBe(false);
+    expect(piketteCard?.textContent).toContain('NEXT VISIT: DECEMBER');
+    expect(piketteOption.disabled).toBe(false);
+
+    instance['setSuspectFilter']('pikette');
+    expect(instance['filters']()).toEqual({ suspect: 'pikette', offence: 'all' });
+    expect(instance['metrics']().total).toBe(10);
   });
 
   it('opens with all suspects/offences selected and six incidents visible', () => {
@@ -57,11 +79,11 @@ describe('CriminalIntelligence', () => {
     const fixture = createComponent();
     const instance = fixture.componentInstance;
 
-    instance['setSuspectFilter']('pikette');
+    instance['setSuspectFilter']('le-criminel');
     instance['setOffenceFilter']('snack-theft');
 
-    const expected = filterIncidents(CIB_INCIDENTS, { suspect: 'pikette', offence: 'snack-theft' });
-    expect(instance['filters']()).toEqual({ suspect: 'pikette', offence: 'snack-theft' });
+    const expected = filterIncidents(CIB_INCIDENTS, { suspect: 'le-criminel', offence: 'snack-theft' });
+    expect(instance['filters']()).toEqual({ suspect: 'le-criminel', offence: 'snack-theft' });
     expect(instance['filteredIncidents']().length).toBe(expected.length);
     expect(instance['metrics']().total).toBe(expected.length);
     expect(instance['sortedIncidents']().length).toBe(expected.length);
@@ -102,7 +124,7 @@ describe('CriminalIntelligence', () => {
     const fixture = createComponent();
     const instance = fixture.componentInstance;
 
-    instance['setSuspectFilter']('pikette');
+    instance['setSuspectFilter']('le-criminel');
     instance['showMore']();
     const firstVisibleId = instance['visibleIncidents']()[0]?.id;
     if (firstVisibleId) instance['toggleExpanded'](firstVisibleId);
@@ -148,7 +170,7 @@ describe('CriminalIntelligence', () => {
     expect(instance['hasMore']()).toBe(false);
   });
 
-  it('never renders a broken image for incidents without one', () => {
+  it('shows no-evidence text directly and no evidence toggle when an incident has no image', () => {
     const fixture = createComponent();
     const instance = fixture.componentInstance;
 
@@ -165,13 +187,14 @@ describe('CriminalIntelligence', () => {
     }
     expect(target).toBeDefined();
 
-    instance['toggleExpanded'](incidentWithoutImage!.id);
     fixture.detectChanges();
 
     const card = Array.from(fixture.nativeElement.querySelectorAll('.incident-card') as NodeListOf<HTMLElement>).find(
       (el) => el.textContent?.includes(incidentWithoutImage!.id),
     );
-    expect(card?.querySelector('.incident-details img')).toBeNull();
+    expect(card?.querySelector('.details-toggle')).toBeNull();
+    expect(card?.querySelector('.incident-details')).toBeNull();
+    expect(card?.querySelector('.no-evidence')?.textContent?.trim()).toBe('NO EVIDENCE ON FILE');
   });
 
   // Final whole-branch review, Finding 1: chart axis ceilings must come from
@@ -181,13 +204,13 @@ describe('CriminalIntelligence', () => {
     const fixture = createComponent();
     const instance = fixture.componentInstance;
 
-    const fullArchiveDailyMax = maxOf(dailyCounts(CIB_INCIDENTS, CIB_ARCHIVE_DATES));
+    const fullArchiveMonthlyMax = maxOf(monthlyCounts(CIB_INCIDENTS, CIB_ARCHIVE_MONTHS));
     const fullArchiveOffenceMax = maxOf(offenceCounts(CIB_INCIDENTS));
     const fullArchiveHourlyMax = maxOf(hourlyCounts(CIB_INCIDENTS));
 
     // Baseline: at 'all'/'all' the filtered set *is* the full archive, so this
     // alone wouldn't distinguish correct from buggy behaviour.
-    expect(instance['dailyMaximum']()).toBe(fullArchiveDailyMax);
+    expect(instance['monthlyMaximum']()).toBe(fullArchiveMonthlyMax);
     expect(instance['offenceMaximum']()).toBe(fullArchiveOffenceMax);
     expect(instance['hourlyMaximum']()).toBe(fullArchiveHourlyMax);
 
@@ -200,7 +223,7 @@ describe('CriminalIntelligence', () => {
     const filteredHourlyMax = maxOf(hourlyCounts(filteredIncidents));
     expect(filteredHourlyMax).toBeLessThan(fullArchiveHourlyMax);
 
-    expect(instance['dailyMaximum']()).toBe(fullArchiveDailyMax);
+    expect(instance['monthlyMaximum']()).toBe(fullArchiveMonthlyMax);
     expect(instance['offenceMaximum']()).toBe(fullArchiveOffenceMax);
     expect(instance['hourlyMaximum']()).toBe(fullArchiveHourlyMax);
 
@@ -261,5 +284,15 @@ describe('CriminalIntelligence', () => {
 
     expect(instance['formatIncidentDate']('2026-08-01')).toBe(expected);
     expect(instance['formatIncidentDate']('2026-08-01')).not.toBe('2026-08-01');
+  });
+
+  it('formats archive month labels with month and two-digit year in the active locale', () => {
+    const fixture = createComponent();
+    const instance = fixture.componentInstance;
+    const expected = new Intl.DateTimeFormat('en', {
+      month: 'short', year: '2-digit', timeZone: 'UTC',
+    }).format(new Date('2024-07-01T00:00:00Z'));
+
+    expect(instance['formatArchiveMonth']('2024-07')).toBe(expected);
   });
 });

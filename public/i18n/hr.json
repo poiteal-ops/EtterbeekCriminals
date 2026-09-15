@@ -11,8 +11,8 @@
     "title": "URED ZA KRIMINALISTIČKE OBAVJEŠTAJNE PODATKE",
     "subtitle": "Usklađena arhiva incidenata — troje poznatih aktera, zajednički prezir prema pravu vlasništva.",
     "archiveNote": "Izmišljeni podaci o incidentima, sastavljeni samo za internu obuku. Svaka sličnost sa stvarnim valom kriminala slučajna je i, iskreno, sasvim u njihovu stilu.",
-    "archiveWindowLabel": "DOSJE ZA OBUKU / 01.–28. KOL 2026",
-    "seoDescription": "Pregledajte arhivu Ureda za kriminalističke obavještajne podatke — 48 izmišljenih incidenata, troje osumnjičenih, nimalo kajanja.",
+    "archiveWindowLabel": "ARHIVA SLUČAJA / SRPANJ 2024. – KOLOVOZ 2026",
+    "seoDescription": "Pregledajte arhivu Criminal Intelligence Bureau — 52 izmišljena incidenta snimljena od srpnja 2024. do kolovoza 2026.",
     "suspectFilterLabel": "FILTRIRAJ PO OSUMNJIČENIKU",
     "offenceFilterLabel": "FILTRIRAJ PO PREKRŠAJU",
     "allSuspectsLabel": "SVI OSUMNJIČENICI",
@@ -24,8 +24,8 @@
     "metricClosureRateLabel": "STOPA ZATVARANJA",
     "metricPeakHourLabel": "SAT S NAJVIŠE PRIJAVA",
     "unavailableLabel": "NEDOSTUPNO",
-    "dailyChartTitle": "DNEVNA AKTIVNOST",
-    "dailyChartDescription": "Prijavljeni incidenti po danima tijekom arhivskog razdoblja.",
+    "dailyChartTitle": "MJESEČNA AKTIVNOST",
+    "dailyChartDescription": "Prijavljeni incidenti mjesečno u prozoru arhive.",
     "offenceChartTitle": "UKUPNO PO PREKRŠAJU",
     "offenceChartDescription": "Incidenti razvrstani po kategorijama.",
     "hourlyChartTitle": "RASPORED PO SATIMA",
@@ -40,6 +40,11 @@
       "open": "OTVOREN",
       "closed": "ZATVOREN"
     },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
     "relationshipLabels": {
       "allied": "SAVEZNICI",
       "rivals": "SUPARNICI",
@@ -48,15 +53,11 @@
     },
     "dossierDescriptions": {
       "le-criminel": "GLAVNI OSUMNJIČENIK. Boston Terrier, taktička ogrlica, bez poznatog kajanja. Prisutan u velikoj većini zabilježenih incidenata.",
-      "pikette": "GLAVNA SUUČESNICA. POVREMENO ZAKLETA NEPRIJATELJICA. Motivi su nejasni; savez je u najboljem slučaju prigodan.",
+      "pikette": "SEZONSKI VEĆI NEPRIJATELJ. Povijesni posjeti u evidenciji. Sljedeći posjet očekuje se u prosincu.",
       "sawito": "POMAGAČ, NE OSUMNJIČENIK. Prisutan pri većini incidenata. Stopa intervencije: zanemariva."
     },
-    "suspectLabels": {
-      "le-criminel": "LE CRIMINEL",
-      "pikette": "PIKETTE",
-      "sawito": "SAWITO"
-    },
     "overlapNote": "Brojevi prikazuju sudjelovanja u prikazanim incidentima, uključujući suučesnike. Jedan incident može uključivati više osumnjičenika, pa zbroj može premašiti ukupan broj incidenata.",
+    "nextVisitLabel": "SLJEDEĆA POSJETA: PROSINAC",
     "showMoreLabel": "PRIKAŽI VIŠE",
     "viewDetailsLabel": "POGLEDAJ DOKAZE",
     "hideDetailsLabel": "SAKRIJ DOKAZE",
@@ -65,30 +66,26 @@
     "emptyStateTitle": "NEMA ODGOVARAJUĆIH INCIDENATA",
     "emptyStateBody": "Nijedan incident ne odgovara filtrima. Odaberite drugog osumnjičenika ili prekršaj ili poništite filtre za cijelu arhivu.",
     "methodologyTitle": "METODOLOGIJA",
-    "methodologyBody": "Arhiva obuhvaća 48 izmišljenih incidenata od 1. do 28. kolovoza 2026. za internu obuku. Kategorije, sati i ishodi ilustrativni su i ne odražavaju stvarnu istragu.",
-    "cibKicker": "SADA DOSTUPNO ZA PREGLED",
-    "cibTitle": "URED ZA KRIMINALISTIČKE OBAVJEŠTAJNE PODATKE",
-    "cibBody": "Četrdeset osam incidenata. Troje osumnjičenih. Jedan zajednički ormar za spise. Povežite cijelu operaciju.",
-    "cibCta": "OTVORI ARHIVU",
+    "methodologyBody": "Ova arhiva pokriva 52 izmišljena incidenta zabilježena od srpnja 2024. do kolovoza 2026. za potrebe interne obuke. Kategorije, sati i ishodi su ilustrativni i ne odražavaju stvarnu istragu.",
     "incidents": {
       "CIB-001": {
-        "title": "Kroasan podijeljen u zajedničkoj operaciji",
-        "summary": "Le Criminel odvukao je pozornost, a Pikette odnijela pecivo u usklađenom napadu s dvije strane. Pronađena su dva komada, nijedan jestiv.",
+        "title": "Osoblje restorana kompromitirano proračunatim šarmom",
+        "summary": "Le Criminel radio je na terasi stol po stol sve dok osoblje restorana nije predalo dodatni kroasan.",
         "imageAlt": ""
       },
       "CIB-002": {
-        "title": "Šavovi jastuka testirani do popuštanja",
-        "summary": "Zajedničko kopanje po jastuku dobrog naslonjača rasulo je punjenje po dnevnoj sobi. Oboje poriču početak; oboje su bili prekriveni istim punjenjem.",
+        "title": "Šav kauča podvrgnut kontinuiranom ispitivanju",
+        "summary": "Le Criminel više puta vraćao na jedan labavi šav dok nadjev nije postao dostupan. Nadzor je zaustavio pregled prije nego što je cijeli jastuk otvoren.",
         "imageAlt": "Poderan šav i vidljiva ispuna na šavu jastuka na kauču."
       },
       "CIB-003": {
-        "title": "Usklađena lažna uzbuna pred vratima",
-        "summary": "Le Criminel lajao je, a Pikette mijaukala u prividnoj solidarnosti. Nije pronađen uljez, dostava ni objašnjenje koje su htjeli dati.",
+        "title": "Prijateljski susjed identificiran kao stalni neprijatelj",
+        "summary": "Starija susjeda ljubazno je dočekala Le Criminel u komunalnoj dvorani. Le Criminel odgovorio je istim osobnim neprijateljstvom koje čuva za svaki susret s ovim potpuno nevinim čovjekom.",
         "imageAlt": ""
       },
       "CIB-004": {
-        "title": "Hodnik neprohodan po zajedničkom dogovoru",
-        "summary": "Oboje su istodobno zauzeli isti mali prostor i blokirali izlaz jedanaest minuta. Nitko se nije prvi pomaknuo.",
+        "title": "Hodnik apartmana zauzet prilikom odlaska",
+        "summary": "Le Criminel smjestio se između vrata stana i dizala dok je odlučivao je li izlazak prihvatljiv. Svi ostali čekali su presudu.",
         "imageAlt": "Le Criminel na povodcu, odmah unutar popločanog ulaza."
       },
       "CIB-005": {
@@ -112,69 +109,69 @@
         "imageAlt": ""
       },
       "CIB-009": {
-        "title": "Tost presretnut štafetom osumnjičenika",
-        "summary": "Le Criminel srušio je tost s radne plohe; Pikette ga uhvatila prije poda. Podjela rada potvrđena, podjela tosta manje jasna.",
+        "title": "Tost za doručak uklonjen tijekom kratke smetnje",
+        "summary": "Okrenuti unatrag stvorio je otvor za manje od tri sekunde. Le Criminel njime je maknuo tost s ruba stola i povukao se ispod stolice.",
         "imageAlt": ""
       },
       "CIB-010": {
-        "title": "Zavjesa srušena neovlaštenom suradnjom",
-        "summary": "Zavjesa je pala tijekom prema svjedocima usklađenog penjanja. Šipka nije preživjela. Nitko to nije primijetio.",
+        "title": "Druga cipela je ušla u aktivnu igru",
+        "summary": "Le Criminel odabrao je nedavno skinutu cipelu, odnio je u dnevnu sobu i vezivao vezice dok intervencija nije postala neizbježna.",
         "imageAlt": ""
       },
       "CIB-011": {
-        "title": "Večernji dvoboj riješen uzajamnom dosadom",
-        "summary": "Dvanaest minuta gledanja za najbolju sunčanu mrlju završilo je istodobnim gubitkom interesa. Slučaj zatvoren zbog izostanka vrhunca.",
+        "title": "Susjed otkriven kroz zatvorena vrata stana",
+        "summary": "Koraci u zajedničkom hodniku ispravno su identificirani kao lijepi stariji susjed. Le Criminel započeo je uobičajeni protest prije nego što je čovjek stigao do odmorišta.",
         "imageAlt": ""
       },
       "CIB-012": {
-        "title": "Stubište osporavalo dvoje, oslobodio nitko",
-        "summary": "Le Criminel zauzeo je gornju stubu, Pikette donju. Promet je obustavljen tijekom cijelog spora.",
+        "title": "Pripreme za odmor odgođene zbog neodlučnosti vodiča",
+        "summary": "Sawito preispitivao je jedan ukras dovoljno dugo da blokira hodnik stana za sve ostale.",
         "imageAlt": ""
       },
       "CIB-013": {
-        "title": "Kockica sira uklonjena s nenadzirane daske",
-        "summary": "Osumnjičenik je prišao narescima sa sigurnošću prethodnog izviđanja. Jedna kockica nestala; osumnjičenik ravnodušan.",
+        "title": "Blok parmezana uklonjen u cijelosti",
+        "summary": "Dok je vlasnik bio pod tušem, Le Criminel ukrao je cijeli blok parmezana i pojeo ga na krevetu. Mrvice i tragovi ulja utvrdili su lokaciju bez sumnje.",
         "imageAlt": ""
       },
       "CIB-014": {
-        "title": "Lijeva cipela premještena izvan razumnog oporavka",
-        "summary": "Posljednji put viđena pod krevetom, kasnije pronađena u vrtu bez vezice i većeg dijela dostojanstva.",
-        "imageAlt": "Jedna tenisica u travi, bez vezice."
+        "title": "Nošena cipela podvrgnuta još jednom pregledu",
+        "summary": "Le Criminel odnio je cipelu i obrađivao vezice dok intervencija nije postala neizbježna.",
+        "imageAlt": "Jedna tenisica leži u travi s vidljivim oštećenjima."
       },
       "CIB-015": {
-        "title": "Jastuk kauča zauzet tijekom posjeta bez pregovora",
-        "summary": "Osumnjičena je procijenila raspored sjedenja i sjela točno na već zauzeto mjesto. Gost se preselio.",
-        "imageAlt": "Pikette na srednjem jastuku kauča tijekom posjeta."
+        "title": "Prvo Pikette uočavanje uključuje neposrednu inspekciju hrane",
+        "summary": "Pikette stigla je u svoj prvi zabilježeni posjet, provjerila zdjelice s hranom i tretirala sve što joj je nadohvat ruke kao zajedničko vlasništvo.",
+        "imageAlt": "Pikette sjedi na prozorskoj dasci stana pored zdjelica s hranom."
       },
       "CIB-016": {
-        "title": "Tipkovnica zauzeta prije zakazanog poziva",
-        "summary": "Subjekt je legao na tipkovnicu četiri minute prije videopoziva. Dva pokušaja uklanjanja. Poziv je počeo kasno.",
-        "imageAlt": "Le Criminel opružen na leđima na tepihu, potpuno opušten."
+        "title": "Prvi susret odmah uspostavlja međusobno neprijateljstvo",
+        "summary": "Le Criminel i Pikette razmijenili su upozorenja i proveli ostatak posjeta promatrajući jedno drugo sa suprotnih krajeva kauča.",
+        "imageAlt": "Pikette i Le Criminel dijele kauč dok gledaju jedno drugo."
       },
       "CIB-017": {
-        "title": "Zajednički zločin, sporne zasluge za palu kobasicu",
-        "summary": "Oboje su prišli istoj kobasici iz suprotnih smjerova. Nitko nije ustupio. Kobasica nije preživjela dodir.",
+        "title": "Ispuštena kobasica presretnuta prije oporavka",
+        "summary": "Kobasica je stigla do poda, a Le Criminel prvi je stigao do nje. Dokazi su progutani prije nego što je mogao započeti bilo kakav značajan pokušaj oporavka.",
         "imageAlt": ""
       },
       "CIB-018": {
-        "title": "Naslon za ruku stradao u nepovezanom teritorijalnom sporu",
-        "summary": "Svađa oko prozorske klupice završila je ogrebotinama na naslonu i tragovima zuba pokraj. Nitko nije ciljao kauč. Svejedno je izgubio.",
+        "title": "Operacija cipela širi se na kauč",
+        "summary": "Le Criminel odnio je snimljenu cipelu na kauč i upotrijebio naslon za ruku kao polugu. Oštećeni su cipela, presvlake i kućna strpljivost.",
         "imageAlt": "Krupni plan ogrebotina na naslonu za ruku."
       },
       "CIB-019": {
-        "title": "Sastanak na kauču prerastao u zajedničko režanje prema prozoru",
-        "summary": "Oboje su nadzirali ulicu s naslona kauča, režeći u ritmičkom skladu koji istražitelji nazivaju izvanrednim.",
-        "imageAlt": "Pikette i Le Criminel jedno uz drugo na naslonu kauča, okrenuti prozoru."
+        "title": "Prijelaz susjeda nadgledan s kauča",
+        "summary": "Le Criminel primijetio je starijeg susjeda s prozora stana i s neprestanim negodovanjem pratio njegovo napredovanje preko dvorišta.",
+        "imageAlt": ""
       },
       "CIB-020": {
-        "title": "Ulaz blokiran barikadom dvaju tijela",
-        "summary": "Legli su njuškom uz rep pred vrata, znajući da je spomenuta šetnja. Barikada je izdržala šest minuta.",
+        "title": "Potreban pristup kuhinji tijekom pripreme hrane",
+        "summary": "Le Criminel okupirao je uski kuhinjski ulaz i pratio svaki pokret između pulta i stola. Ponovljeni pokušaji uklanjanja rezultirali su trenutačnim povratima.",
         "imageAlt": ""
       },
       "CIB-021": {
-        "title": "Tanjur slanine ispražnjen prije stola",
-        "summary": "Subjekt je presreo tanjur na visini plohe u dvije sekunde između štednjaka i stola. Zabilježen znatan okomiti napor.",
-        "imageAlt": "Le Criminel pomno promatra pun tanjur odozdo."
+        "title": "Ručak pod stalnim nadzorom",
+        "summary": "Le Criminel pratio je tanjur od dolaska do posljednjeg zalogaja. Svaki pokret vilice proizveo je novi zahtjev za prijenos.",
+        "imageAlt": "Le Criminel pomno promatra hranu pokraj stola u kafiću na otvorenom."
       },
       "CIB-022": {
         "title": "Naočale za čitanje zgnječene sjedenjem",
@@ -182,68 +179,68 @@
         "imageAlt": "Sawito, s naočalama, obraz uz obraz sa psom."
       },
       "CIB-023": {
-        "title": "Zračni prostor balkona branjen od jednog goluba",
-        "summary": "Subjekt je glasno izazvao goluba koji to nije tražio. Golub je otišao. Proglašena je odlučujuća pobjeda.",
-        "imageAlt": "Le Criminel na staklenom krovu, tren nakon pada s balkona."
+        "title": "Pikette se vraća i neprijateljstva se odmah nastavljaju",
+        "summary": "Drugi zabilježeni posjet započeo je tamo gdje je prvi završio: obje su životinje tražile isti teritorij na kauču i odbacile drugog stanara.",
+        "imageAlt": "Pikette i Le Criminel sjede na kauču tijekom posjeta."
       },
       "CIB-024": {
-        "title": "Vrata kupaonice namjerno držana zatvorenima izvana",
-        "summary": "Osumnjičena se naslonila na vrata kad je pristup očito bio potreban. Molbe za pomicanje uobičajeno su zanemarene.",
+        "title": "Prolaz kauča zatvoren tijekom sukoba s dvije životinje",
+        "summary": "Pikette je držao jedan kraj kauča dok je Le Criminel držao drugi dok hrana u kuhinji nije okončala spor.",
         "imageAlt": ""
       },
       "CIB-025": {
-        "title": "Zdjela kokica opljačkana dvaput tijekom filma",
-        "summary": "Ista zdjela napadnuta je iz dva kuta. Oboje tvrde neovisno djelovanje. Usklađenost sugerira drukčije.",
+        "title": "Mrvice kroasana dobivene od kompromitiranog svjedoka",
+        "summary": "Osoblje restorana ponovno je dugotrajno buljenje protumačilo kao glad i opskrbilo se komadićima kroasana. Le Criminel prihvatio je prijenos bez ispravljanja nesporazuma.",
         "imageAlt": ""
       },
       "CIB-026": {
-        "title": "Biljka zajednički presađena na kuhinjski pod",
-        "summary": "Paprat nije preživjela pregled s kopanjem, udarcima šape i barem jednim punim kotrljanjem. Polumjer rasute zemlje: impresivan.",
+        "title": "Vrećica s hranom pretražena odmah nakon dostave",
+        "summary": "Le Criminel gurnuo je glavu u vrećicu prije nego što je potpuno raspakirana. Odobreno je povrće; svi ostali sadržaji ostali su mete.",
         "imageAlt": ""
       },
       "CIB-027": {
-        "title": "Potjera hodnikom završila neodlučeno, namještaj iznimno čitav",
-        "summary": "Kratka žustra potjera stala je kada su oboje došli do istog ugla iz različitih smjerova i zajednički odlučili stati.",
+        "title": "Plinski događaj nakon večere čisti dnevnu sobu",
+        "summary": "Nakon obroka posluženog bez dovoljno povrća uslijedio je atmosferski incident dovoljno jak da isprazni prostor za sjedenje. Klasifikacija nadograđena na terorističko oružje.",
         "imageAlt": ""
       },
       "CIB-028": {
-        "title": "Kuhinjski ulaz pod dvostrukom okupacijom",
-        "summary": "Nitko drugome nije ustupao prolaz. Dvadesetominutni zastoj odgodio je ručak svima, uključujući ljude.",
+        "title": "Odlazak kasni zbog nedostatka ključeva",
+        "summary": "Sawito je pretražio svaku vidljivu površinu prije nego što je pronašao ključeve u džepu koji je već provjerio.",
         "imageAlt": ""
       },
       "CIB-029": {
-        "title": "Zajednički tost iznimno zaista podijeljen",
-        "summary": "Iz nejasnih razloga podijelili su pali tost bez incidenta. Istražitelji to smatraju anomalijom, ne obrascem.",
+        "title": "Raspodjela povrća sprječava eskalaciju",
+        "summary": "Večera je uključivala prihvatljivu povrtnu komponentu. Le Criminel jeo je bez protesta i kućanstvo nije zabilježilo naknadni hitni slučaj plina.",
         "imageAlt": ""
       },
       "CIB-030": {
-        "title": "Tanka zavjesa korištena kao neovlaštena penjalica",
-        "summary": "Osumnjičena se popela do klupice prije otpuštanja dviju od tri kukice. Spust je opisan kao uglavnom kontroliran.",
-        "imageAlt": "Pikette sjedi na prozorskoj dasci pored svojih zdjelica za hranu."
+        "title": "Čipke na cipelama skraćene tijekom pristupa bez nadzora",
+        "summary": "Le Criminel je ostao sam s cipelom dovoljno dugom da izvuče vezicu i prožvače jedan kraj. Cipela ostaje nosiva u strogo tehničkom smislu.",
+        "imageAlt": ""
       },
       "CIB-031": {
-        "title": "Zajedničko bdjenje na prozoru zbog neodređene prijetnje",
-        "summary": "Četrdeset minuta sjedili su rame uz rame, pozorni na prijetnju koja nije došla niti dobila ime.",
+        "title": "Treći Pikette posjet nastavlja uspostavljenu svađu",
+        "summary": "Pikette se vratio, a Le Criminel je tretirao dolazak kao obnavljanje nedovršenog posla.",
         "imageAlt": ""
       },
       "CIB-032": {
-        "title": "Raspremanje kupnje zaustavljeno suvišnim nadzorom",
-        "summary": "Sawito je zauzeo jedino malo mjesto potrebno za istovar vrećica. Cijelo je vrijeme komentirao, bez pomoći.",
-        "imageAlt": ""
+        "title": "Preferirani jastuk za kauč zatražen za posjet",
+        "summary": "Pikette odabrao je središnji jastuk i ostao ondje unatoč pokušajima da se vrati normalan raspored sjedenja.",
+        "imageAlt": "Pikette zauzima središnji jastuk kauča tijekom posjeta."
       },
       "CIB-033": {
-        "title": "Maslac kušan izravno bez pribora",
-        "summary": "Osumnjičena je pronađena s licem u posudi za maslac, bez uvjerljivog objašnjenja. Poklopac je prije toga bio zatvoren.",
+        "title": "Pakiranje parmezana izaziva reakciju ponovljenih prijestupnika",
+        "summary": "Otvaranje novog bloka parmezana donijelo je Le Criminel brzo u kuhinju. Sir je ostao na sigurnom i nikada nije ostavljen na dohvat ruke u vrijeme tuširanja.",
         "imageAlt": ""
       },
       "CIB-034": {
-        "title": "Otirač premješten na sredinu ulice",
-        "summary": "Posljednji put na pragu, pronađen dvije kuće dalje: vlažan, izgrižen na uglu i okrenut naopako.",
-        "imageAlt": "Le Criminel stoji na povodcu nasred popločane ulice."
+        "title": "Skinute podstave unutar stana",
+        "summary": "Le Criminel iznio je cipelu s ulaza u dnevnu sobu i izvukao dovoljno podstave da je oštećenje postalo vidljivo.",
+        "imageAlt": "Le Criminel stoji na uzici tijekom šetnje na otvorenom."
       },
       "CIB-035": {
-        "title": "Obiteljski posjet poremećen selektivnom privrženošću",
-        "summary": "Osumnjičenik se odmah vezao samo uz jednog rođaka i ignorirao ostale cijelo poslijepodne. Rođak oduševljen. Ostali su zabilježili.",
+        "title": "Osoblje kafića obratilo se zbog neovlaštenog peciva",
+        "summary": "Le Criminel ignorirao je vlastitog voditelja i usredotočio se na člana osoblja restorana koji je nosio kolače. Ofenziva šarma proizvela je dodatni komad kroasana.",
         "imageAlt": ""
       },
       "CIB-036": {
@@ -257,38 +254,38 @@
         "imageAlt": "Drugi kruh na podu, također izgrižen."
       },
       "CIB-038": {
-        "title": "Utvrdu od deka srušili vlastiti arhitekti",
-        "summary": "Zajednička građevina urušila se pod vlastitom ambicijom. Oboje su pronađeni u ostacima, naizgled ravnodušni.",
+        "title": "Ostaci parmezana otkriveni u posteljini",
+        "summary": "Naknadnom inspekcijom kreveta pronađene su mrvice sira urađene u deku. Dokazi su u skladu s ranijom krađom cijelog bloka parmezana.",
         "imageAlt": "Le Criminel spava sklupčan pod debelim pokrivačem na kauču."
       },
       "CIB-039": {
-        "title": "Televizijsko zvono zamijenjeno stvarnim posjetiteljem",
-        "summary": "Subjekt je na zvono iz reklame odgovorio punom glasnoćom i uvjerenjem. Posjetitelj nikad nije pronađen.",
-        "imageAlt": "Le Criminel naglo diže pogled s tepiha, uspravnih ušiju."
+        "title": "Fotografija iz blizine Pikette pokreće ponovni protest",
+        "summary": "Pikette ostao je miran za fotografiju nadzorne kamere, dok je Le Criminel prigovarao s druge strane sobe.",
+        "imageAlt": "Le Criminel oštro podigavši ​​pogled sa saga tijekom posjeta."
       },
       "CIB-040": {
-        "title": "Usisavač blokiran neočekivanom suradnjom",
-        "summary": "Obično protivnici iz načela, oboje su istodobno blokirali usisavač iz različitih kutova. Čišćenje je trajalo dvostruko.",
-        "imageAlt": "Le Criminel skače na svoj ležaj pored uključenog usisavača."
+        "title": "Tijekom posjeta u veljači zabilježeno je privremeno savezništvo prozora",
+        "summary": "Obje su životinje zaustavile neprijateljstva kako bi s kauča promatrale kretanje vani. Suradnja je prekinuta kada se prozor utišao.",
+        "imageAlt": "Pikette i Le Criminel dijele kauč tijekom privremenog saveza."
       },
       "CIB-041": {
-        "title": "Dostupan poklopac jogurta predvidljivo iskorišten",
-        "summary": "Poklopac je ostavljen na plohi za lizanje. Oboje su shvatili dogovor i proveli ga bez spora.",
+        "title": "Doručak podvrgnut pokušaju akvizicije iz neposredne blizine",
+        "summary": "Le Criminel zadržao je položaj pokraj stola za doručak i pratio svako kretanje peciva. Kroasan je ostao netaknut samo stalnim nadzorom.",
         "imageAlt": "Le Criminel netremice zuri u vafl ostavljen na vanjskom stolu."
       },
       "CIB-042": {
-        "title": "Ukrasni papir zajednički usitnjen prerano",
-        "summary": "Dar bez nadzora šest minuta postao je konfeti do povratka svjedoka. Oboje su izgledali zadovoljno.",
+        "title": "Skladište cipela provaljeno nakon gašenja svjetla",
+        "summary": "Cipela skinuta prije spavanja pronađena je u dnevnoj sobi s mokrim vezicama i svježim tragovima zuba. Le Criminel je spavao pored njega kada su ga ispitivali.",
         "imageAlt": ""
       },
       "CIB-043": {
-        "title": "Nova zajednička uzbuna na otvoru za poštu",
-        "summary": "Dnevna dostava izazvala je uobičajeni lavež jednoga i mijaukanje druge. Poštar već poznaje rutinu.",
+        "title": "Susjed dobiva još jedan neprijateljski prijem",
+        "summary": "Starija susjeda mirno je pozdravila u zajedničkom ulazu. Le Criminel je odgovorio kao da je dugotrajna osobna svađa upravo obnovljena.",
         "imageAlt": "Le Criminel sjedi pozorno na povodcu blizu ulice."
       },
       "CIB-044": {
-        "title": "Krevet zauzet od ugla do ugla bez mjesta",
-        "summary": "Oboje su se dijagonalno smjestili prividno precizno, ne ostavljajući prostor predviđenom korisniku.",
+        "title": "Večera odnesena na krevet radi neovlaštenog pregleda",
+        "summary": "Le Criminel pratio je hranu u spavaću sobu i pokušao pregledati tanjur u visini madraca. Pristup je odbijen prije nego što se presedan s parmezanom mogao ponoviti.",
         "imageAlt": "Le Criminel leži na leđima poprijeko preko kreveta, zauzimajući cijelu širinu."
       },
       "CIB-045": {
@@ -297,21 +294,45 @@
         "imageAlt": ""
       },
       "CIB-046": {
-        "title": "Vrtno crijevo probušeno na više mjesta",
-        "summary": "Četiri nova curenja tvore obrazac koji istražitelji nazivaju temeljitim. Subjekt je pronađen blizu, zadovoljan.",
-        "imageAlt": "Le Criminel istražuje nešto na kamenom izbočenju vani."
+        "title": "Još jedna cipela skinuta s ulaza u stan",
+        "summary": "Le Criminel premjestio je cipelu u dnevnu sobu i počeo raditi na peti tijekom neuobičajeno tihog intervala.",
+        "imageAlt": "Le Criminel istraživanje kamene izbočine tijekom šetnje na otvorenom."
       },
       "CIB-047": {
-        "title": "Videopoziv prekinut neželjenom naracijom",
-        "summary": "Sawito je kolegama uživo komentirao aktivnosti psa tijekom cijelog sastanka s klijentom. Nitko to nije tražio.",
-        "imageAlt": "Sawito se slika selfie dok se pas naslanja na njegovo rame."
+        "title": "Rijetko tiho primirje na kauču zabilježeno tijekom posjeta Pikette",
+        "summary": "Le Criminel i Pikette dijelili su kauč bez svađe dovoljno dugo da kućanstvo dokumentira anomaliju.",
+        "imageAlt": ""
       },
       "CIB-048": {
-        "title": "Izlaz blokiran do odluke koja nije donesena",
-        "summary": "Subjekt je jedanaest minuta stajao u otvorenim vratima odlučujući hoće li van. Blokirao je oba smjera, pa se vratio na kauč.",
-        "imageAlt": "Le Criminel sjedi na povodcu odmah ispred ulaznih vrata."
+        "title": "Zajednička okupacija kauča ne ostavlja korisno sjedalo",
+        "summary": "Pikette i Le Criminel rasporedili su se po dostupnim jastucima i ostali u savezu protiv bilo koga tko bi pokušao sjesti.",
+        "imageAlt": ""
+      },
+      "CIB-049": {
+        "title": "Ručak pod stalnim nadzorom",
+        "summary": "Le Criminel održava vizualni kontakt s tanjurom od dolaska do posljednjeg zalogaja. Svaki pokret vilice proizveo je novi zahtjev za prijenos.",
+        "imageAlt": "Le Criminel gleda tanjur s tjesteninom ispod vanjskog stola."
+      },
+      "CIB-050": {
+        "title": "Pregled cipela se nastavlja dok se dokazi još uvijek nose",
+        "summary": "Le Criminel pritisnuo je lice na cipelu, testirao vezice i pokušao započeti uobičajeni proces rastavljanja prije nego što je prekinut.",
+        "imageAlt": "Le Criminel pritišćući svoje cenzurirano lice na iznošenu cipelu za stolom na otvorenom."
+      },
+      "CIB-051": {
+        "title": "Balkonska rešetka sprječava još jednu potjeru golubova",
+        "summary": "Le Criminel zaključan na kretanje izvan balkona, dok je velika sigurnosna rešetka radila upravo ono za što je postavljena: držala je jurnjavu unutar granice stana.",
+        "imageAlt": "Le Criminel viri preko kutije za pizzu pokraj sigurnosne rešetke balkona pune visine."
+      },
+      "CIB-052": {
+        "title": "Osoblje restorana kompromitirano proračunatim šarmom",
+        "summary": "Le Criminel radio je na terasi stol po stol sve dok osoblje restorana nije predalo dodatni kroasan. Operacija se u potpunosti oslanjala na kontakt očima i izgled gladovanja.",
+        "imageAlt": "Le Criminel gledanje kroasana pokraj stola u kafiću na otvorenom."
       }
-    }
+    },
+    "cibKicker": "SADA DOSTUPNO ZA PREGLED",
+    "cibTitle": "URED ZA KRIMINALISTIČKE OBAVJEŠTAJNE PODATKE",
+    "cibBody": "Pedeset i dva incidenta. Tri osumnjičenika. Jedan zajednički ormar za dokumente. Usporedite cijelu operaciju.",
+    "cibCta": "OTVORI ARHIVU"
   },
   "common": {
     "fallbackBanner": "Ispričavamo se, radimo na tome — trenutno dostupno samo na engleskom."

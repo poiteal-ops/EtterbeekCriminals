@@ -22,7 +22,7 @@ export interface CibContent {
   subtitle: string;
   /** The "Fictional incident data..." disclaimer line. */
   archiveNote: string;
-  /** e.g. "TRAINING DOSSIER / 01–28 AUG 2026". */
+  /** e.g. "CASE ARCHIVE / JUL 2024–AUG 2026". */
   archiveWindowLabel: string;
   /** Plain SEO description string; wiring it into the SEO generator is a later task. */
   seoDescription: string;
@@ -58,6 +58,8 @@ export interface CibContent {
   dossierDescriptions: Record<SuspectId, string>;
   /** Explains near the suspect cards that counts can exceed the incident total. */
   overlapNote: string;
+  /** Status shown when a dossier remains visible before its next archive visit. */
+  nextVisitLabel: string;
 
   showMoreLabel: string;
   viewDetailsLabel: string;

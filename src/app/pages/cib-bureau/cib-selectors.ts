@@ -60,13 +60,13 @@ function findPeakHour(rows: readonly CibIncident[]): number | null {
   return peakHour;
 }
 
-export function dailyCounts(
+export function monthlyCounts(
   rows: readonly CibIncident[],
-  dates: readonly string[]
+  months: readonly string[]
 ): CibBucket[] {
-  return dates.map((date) => ({
-    key: date,
-    count: rows.filter((row) => row.date === date).length,
+  return months.map((month) => ({
+    key: month,
+    count: rows.filter((row) => row.date.slice(0, 7) === month).length,
   }));
 }
 

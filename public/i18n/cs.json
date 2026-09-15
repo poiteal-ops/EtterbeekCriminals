@@ -11,8 +11,8 @@
     "title": "ÚŘAD KRIMINÁLNÍHO ZPRAVODAJSTVÍ",
     "subtitle": "Společný archiv incidentů — tři známí aktéři, stejné pohrdání vlastnickým právem.",
     "archiveNote": "Smyšlené údaje o incidentech, sestavené výhradně pro interní školení. Jakákoli podobnost se skutečnou vlnou kriminality je náhodná a, upřímně, zcela příznačná.",
-    "archiveWindowLabel": "ŠKOLICÍ SPIS / 01.–28. SRPNA 2026",
-    "seoDescription": "Prohlédněte si archiv Úřadu kriminálního zpravodajství — 48 smyšlených incidentů, tři podezřelí, žádná lítost.",
+    "archiveWindowLabel": "ARCHIV PŘÍPADŮ / ČERVENEC 2024–SRPEN 2026",
+    "seoDescription": "Prohlédněte si archiv Criminal Intelligence Bureau — 52 fiktivních incidentů zaznamenaných od července 2024 do srpna 2026.",
     "suspectFilterLabel": "FILTROVAT PODLE PODEZŘELÉHO",
     "offenceFilterLabel": "FILTROVAT PODLE PŘESTUPKU",
     "allSuspectsLabel": "VŠICHNI PODEZŘELÍ",
@@ -24,8 +24,8 @@
     "metricClosureRateLabel": "PODÍL UZAVŘENÝCH",
     "metricPeakHourLabel": "HODINA NEJVÍCE HLÁŠENÍ",
     "unavailableLabel": "NEDOSTUPNÉ",
-    "dailyChartTitle": "DENNÍ AKTIVITA",
-    "dailyChartDescription": "Nahlášené incidenty po dnech v období archivu.",
+    "dailyChartTitle": "MĚSÍČNÍ AKTIVITA",
+    "dailyChartDescription": "Hlášené incidenty za měsíc v okně archivu.",
     "offenceChartTitle": "SOUČTY PODLE PŘESTUPKU",
     "offenceChartDescription": "Incidenty rozdělené podle kategorie.",
     "hourlyChartTitle": "HODINOVÉ ROZLOŽENÍ",
@@ -40,6 +40,11 @@
       "open": "OTEVŘENÝ",
       "closed": "UZAVŘENÝ"
     },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
     "relationshipLabels": {
       "allied": "SPOJENCI",
       "rivals": "SOUPEŘI",
@@ -48,15 +53,11 @@
     },
     "dossierDescriptions": {
       "le-criminel": "HLAVNÍ PODEZŘELÝ. Boston Terrier, taktický obojek, žádná známá lítost. Přítomen u drtivé většiny evidovaných incidentů.",
-      "pikette": "HLAVNÍ SPOLUPACHATELKA. OBČASNÁ ÚHLAVNÍ NEPŘÍTELKYNĚ. Motivy nejasné; spojenectví je nanejvýš situační.",
+      "pikette": "SEZÓNNÍ ARCH-NEPŘÍTEL. Historické návštěvy v evidenci. Další návštěva se očekává v prosinci.",
       "sawito": "NAPOMÁHAČ, NIKOLI PODEZŘELÝ. Přítomen u většiny incidentů. Míra zásahů: zanedbatelná."
     },
-    "suspectLabels": {
-      "le-criminel": "LE CRIMINEL",
-      "pikette": "PIKETTE",
-      "sawito": "SAWITO"
-    },
     "overlapNote": "Čísla vyjadřují účast na zobrazených incidentech včetně spolupachatelů. Jednoho incidentu se může účastnit více podezřelých, takže součet může převýšit počet incidentů.",
+    "nextVisitLabel": "PŘÍŠTÍ NÁVŠTĚVA: PROSINEC",
     "showMoreLabel": "ZOBRAZIT DALŠÍ",
     "viewDetailsLabel": "ZOBRAZIT DŮKAZY",
     "hideDetailsLabel": "SKRÝT DŮKAZY",
@@ -65,30 +66,26 @@
     "emptyStateTitle": "ŽÁDNÉ ODPOVÍDAJÍCÍ INCIDENTY",
     "emptyStateBody": "Žádný incident neodpovídá filtrům. Zvolte jiného podezřelého či přestupek, nebo filtry zrušte pro celý archiv.",
     "methodologyTitle": "METODIKA",
-    "methodologyBody": "Archiv obsahuje 48 smyšlených incidentů z 1.–28. srpna 2026 pro interní školení. Kategorie, hodiny a výsledky jsou ilustrativní a neodrážejí skutečné vyšetřování.",
-    "cibKicker": "NYNÍ K NAHLÉDNUTÍ",
-    "cibTitle": "ÚŘAD KRIMINÁLNÍHO ZPRAVODAJSTVÍ",
-    "cibBody": "Čtyřicet osm incidentů. Tři podezřelí. Jedna společná kartotéka. Propojte celou operaci.",
-    "cibCta": "OTEVŘÍT ARCHIV",
+    "methodologyBody": "Tento archiv pokrývá 52 fiktivních incidentů zaznamenaných od července 2024 do srpna 2026 pro účely interního školení. Kategorie, hodiny a výsledky jsou ilustrativní a neodrážejí skutečné vyšetřování.",
     "incidents": {
       "CIB-001": {
-        "title": "Croissant rozdělen při společné operaci",
-        "summary": "Le Criminel odlákal pozornost a Pikette odnesla pečivo při koordinovaném útoku ze dvou stran. Nalezeny dva kusy, žádný jedlý.",
+        "title": "Personál restaurace kompromitován vypočítavým šarmem",
+        "summary": "Le Criminel pracoval na terase stůl po stole, dokud personál restaurace nevzdal croissant navíc.",
         "imageAlt": ""
       },
       "CIB-002": {
-        "title": "Švy polštáře testovány až do selhání",
-        "summary": "Společné hrabání v polštáři dobrého křesla rozneslo výplň po obýváku. Oba popřeli zahájení; oba byli pokryti stejnou výplní.",
+        "title": "Gaučový šev podroben trvalému zkoumání",
+        "summary": "Le Criminel se opakovaně vracel k jednomu uvolněnému švu, dokud se výplň nezpřístupnila. Dozor zastavil kontrolu před otevřením celého polštáře.",
         "imageAlt": "Roztržený šev a viditelná výplň na švu polštáře pohovky."
       },
       "CIB-003": {
-        "title": "Synchronizovaný planý poplach u dveří",
-        "summary": "Le Criminel štěkal a Pikette mňoukala ve zdánlivé solidaritě. Nenalezen vetřelec, zásilka ani ochotné vysvětlení.",
+        "title": "Přátelský soused identifikovaný jako trvalý nepřítel",
+        "summary": "Starší soused Le Criminel laskavě pozdravil ve společenské místnosti. Le Criminel odpověděl se stejným osobním nepřátelstvím, jaké si vyhrazuje na každé setkání s tímto zcela nevinným mužem.",
         "imageAlt": ""
       },
       "CIB-004": {
-        "title": "Chodba neprůchodná po vzájemné dohodě",
-        "summary": "Oba současně obsadili stejný malý prostor a zablokovali východ na jedenáct minut. Nikdo se nepohnul první.",
+        "title": "Předsíň bytu obsazená při odjezdu",
+        "summary": "Le Criminel se postavil mezi dveře bytu a výtah a rozhodoval se, zda je výlet přijatelný. Všichni ostatní čekali na rozsudek.",
         "imageAlt": "Le Criminel na vodítku, těsně za obloženým vstupem."
       },
       "CIB-005": {
@@ -112,69 +109,69 @@
         "imageAlt": ""
       },
       "CIB-009": {
-        "title": "Snídaňový toast zachycen štafetou podezřelých",
-        "summary": "Le Criminel shodil toast z linky; Pikette jej chytila před podlahou. Dělba práce potvrzena, dělení toastu méně jasné.",
+        "title": "Snídaňový toast odstraněn během krátkého rozptýlení",
+        "summary": "Otočení dozadu vytvořilo otvor kratší než tři sekundy. Le Criminel ho použil k odstranění toastu z okraje stolu a ustoupil pod židli.",
         "imageAlt": ""
       },
       "CIB-010": {
-        "title": "Závěs stržen neoprávněnou spoluprací",
-        "summary": "Závěs spadl při podle svědků koordinovaném šplhání. Tyč nepřežila. Nikdo si toho zřejmě nevšiml.",
+        "title": "Druhá bota vstoupila do aktivní hry",
+        "summary": "Le Criminel vybral nedávno sundanou botu, odnesl ji do obývacího pokoje a zašněroval tkaničky, dokud nebyl zásah nevyhnutelný.",
         "imageAlt": ""
       },
       "CIB-011": {
-        "title": "Večerní souboj vyřešen společnou nudou",
-        "summary": "Dvanáct minut zírání o nejlepší sluneční skvrnu skončilo současnou ztrátou zájmu. Případ uzavřen pro chybějící vyvrcholení.",
+        "title": "Soused detekován přes zavřené dveře bytu",
+        "summary": "Kroky ve společné chodbě byly správně identifikovány jako milý starší soused. Le Criminel začal obvyklý protest, než muž dorazil na odpočívadlo.",
         "imageAlt": ""
       },
       "CIB-012": {
-        "title": "Schody nárokovaly dvě strany, neuvolnila žádná",
-        "summary": "Le Criminel zabral horní schod, Pikette spodní. Provoz byl zastaven po celou dobu sporu.",
+        "title": "Přípravy na dovolenou zdržuje nerozhodnost psovoda",
+        "summary": "Sawito přehodnotila jednu dekoraci tak dlouho, aby zablokovala chodbu bytu pro všechny ostatní.",
         "imageAlt": ""
       },
       "CIB-013": {
-        "title": "Kostka sýra odebrána z nehlídaného prkénka",
-        "summary": "Podezřelý přistoupil k uzeninám s jistotou předchozího průzkumu. Jedna kostka zmizela; podezřelý zůstal klidný.",
+        "title": "Blok parmazánu odstraněn celý",
+        "summary": "Zatímco byl majitel ve sprše, Le Criminel ukradl celý blok parmazánu a snědl ho na posteli. Drobky a ropné značky určily místo bez sporu.",
         "imageAlt": ""
       },
       "CIB-014": {
-        "title": "Levá bota přemístěna mimo rozumný dosah obnovy",
-        "summary": "Naposledy pod postelí, později nalezena v zahradě bez tkaničky a většiny důstojnosti.",
-        "imageAlt": "Jedna teniska v trávě, bez tkaničky."
+        "title": "Opotřebená bota podrobena další kontrole",
+        "summary": "Le Criminel odnesl botu a zašněroval tkaničky, dokud nebyl zásah nevyhnutelný.",
+        "imageAlt": "Jediná teniska ležící v trávě s viditelným poškozením."
       },
       "CIB-015": {
-        "title": "Polštář pohovky zabrán při návštěvě bez vyjednávání",
-        "summary": "Podezřelá zhodnotila místa a usadila se přesně tam, kde už seděl host. Host se přesunul.",
-        "imageAlt": "Pikette na prostředním polštáři pohovky během návštěvy."
+        "title": "První Pikette pozorování zahrnuje okamžitou kontrolu potravin",
+        "summary": "Pikette přijela na svou první zaznamenanou návštěvu, zkontrolovala misky s jídlem a se vším v dosahu zacházela jako se společným majetkem.",
+        "imageAlt": "Pikette sedí na okenním parapetu bytu vedle misek s jídlem."
       },
       "CIB-016": {
-        "title": "Klávesnice obsazena před plánovaným hovorem",
-        "summary": "Subjekt ulehl na klávesnici čtyři minuty před videohovorem. Dva pokusy o odstranění. Hovor začal pozdě.",
-        "imageAlt": "Le Criminel leží na zádech na koberci, zcela uvolněný."
+        "title": "První setkání nastolí okamžité vzájemné nepřátelství",
+        "summary": "Le Criminel a Pikette si vyměnili varování a zbytek návštěvy strávili vzájemným sledováním z opačných konců pohovky.",
+        "imageAlt": "Pikette a Le Criminel sdílejí pohovku a sledují se."
       },
       "CIB-017": {
-        "title": "Společný zločin, sporné zásluhy kolem spadlého párku",
-        "summary": "Oba přistoupili ke stejnému párku z opačných směrů. Nikdo neustoupil. Párek kontakt nepřežil.",
+        "title": "Upuštěná klobása zachycená před zotavením",
+        "summary": "Klobása dosáhla podlahy a Le Criminel na ni dosáhla jako první. Důkazy byly spolknuty dříve, než mohlo začít jakékoli smysluplné úsilí o obnovu.",
         "imageAlt": ""
       },
       "CIB-018": {
-        "title": "Opěrka padla za oběť nesouvisejícímu územnímu sporu",
-        "summary": "Hádka o parapet skončila škrábanci na opěrce a otisky zubů vedle. Nikdo nemířil na pohovku. Přesto prohrála.",
+        "title": "Obuv provoz se šíří na gauč",
+        "summary": "Le Criminel přenesl ukořistěnou botu na pohovku a použil loketní opěrku pro páku. Boty, čalounění a trpělivost domácnosti utrpěly škody.",
         "imageAlt": "Detail škrábanců na opěrce pohovky."
       },
       "CIB-019": {
-        "title": "Pohovkový summit přešel ve společné vrčení na okno",
-        "summary": "Oba sledovali ulici z opěradla a vrčeli v rytmickém souzvuku, který vyšetřovatelé označili za pozoruhodný.",
-        "imageAlt": "Pikette a Le Criminel vedle sebe na opěradle, otočení k oknu."
+        "title": "Přechod sousedů monitorován z gauče",
+        "summary": "Le Criminel zahlédl z okna bytu staršího souseda a s vytrvalým nesouhlasem sledoval jeho postup přes dvůr.",
+        "imageAlt": ""
       },
       "CIB-020": {
-        "title": "Vchod zablokován barikádou dvou těl",
-        "summary": "Leželi čenichem k ocasu před dveřmi, vědomi si slíbené procházky. Barikáda vydržela šest minut.",
+        "title": "Během přípravy jídla je vyžadován přístup do kuchyně",
+        "summary": "Le Criminel obsadil úzký vchod do kuchyně a sledoval každý pohyb mezi pultem a stolem. Opakované pokusy o odstranění přinesly okamžité návraty.",
         "imageAlt": ""
       },
       "CIB-021": {
-        "title": "Talíř slaniny vyprázdněn před dosažením stolu",
-        "summary": "Subjekt zachytil talíř ve výšce linky během dvou sekund mezi sporákem a stolem. Zaznamenáno značné svislé úsilí.",
-        "imageAlt": "Le Criminel pozorně sleduje plný talíř zdola."
+        "title": "Oběd pod neustálým dohledem",
+        "summary": "Le Criminel sledoval talíř od příchodu do posledního kousnutí. Každý pohyb vidlice vyvolal nový požadavek na přesun.",
+        "imageAlt": "Le Criminel bedlivě sleduje jídlo vedle venkovního stolku v kavárně."
       },
       "CIB-022": {
         "title": "Brýle na čtení rozsednuty",
@@ -182,68 +179,68 @@
         "imageAlt": "Sawito, v brýlích, tvář na tváři se psem."
       },
       "CIB-023": {
-        "title": "Vzdušný prostor balkonu bráněn proti jedinému holubovi",
-        "summary": "Subjekt hlasitě vyzval holuba, který o to nestál. Holub odletěl. Subjekt vyhlásil rozhodující vítězství.",
-        "imageAlt": "Le Criminel na skleněné střeše, chvíli po pádu z balkonu."
+        "title": "Pikette se vrací a nepřátelství se okamžitě obnoví",
+        "summary": "Druhá zaznamenaná návštěva začala tam, kde první skončila: obě zvířata si nárokovala stejné území gauče a odmítla druhého obyvatele.",
+        "imageAlt": "Pikette a Le Criminel sedí na gauči během návštěvy."
       },
       "CIB-024": {
-        "title": "Dveře koupelny úmyslně drženy zavřené zvenčí",
-        "summary": "Podezřelá se opřela o dveře, když byl přístup zjevně nutný. Žádosti o pohyb byly jako vždy ignorovány.",
+        "title": "Průchod pohovky byl uzavřen během odstávky dvou zvířat",
+        "summary": "Pikette držel jeden konec pohovky, zatímco Le Criminel držel druhý, dokud jídlo v kuchyni neukončilo spor.",
         "imageAlt": ""
       },
       "CIB-025": {
-        "title": "Miska popcornu vypleněna dvakrát během filmu",
-        "summary": "Stejná miska byla napadena ze dvou úhlů. Oba tvrdili nezávislé jednání. Načasování naznačuje opak.",
+        "title": "Croissantové drobky získané od kompromitovaného svědka",
+        "summary": "Zaměstnanci restaurace si zase vyložili dlouhé zírání jako hlad a dodali kousky croissantu. Le Criminel přijal převod, aniž by napravil nedorozumění.",
         "imageAlt": ""
       },
       "CIB-026": {
-        "title": "Rostlina společně přesazena na kuchyňskou podlahu",
-        "summary": "Kapradina nepřežila kontrolu zahrnující hrabání, údery tlapou a alespoň jedno úplné převalení. Poloměr rozptýlené zeminy: působivý.",
+        "title": "Sáček na jídlo prohledán ihned po doručení",
+        "summary": "Le Criminel vložil hlavu do nákupní tašky, než byla úplně vybalena. Zelenina byla schválena; veškerý ostatní obsah zůstal cílem.",
         "imageAlt": ""
       },
       "CIB-027": {
-        "title": "Hon v chodbě skončil remízou, nábytek výjimečně celý",
-        "summary": "Krátká energická honička skončila, když oba dosáhli stejného rohu z různých směrů a společně se rozhodli zastavit.",
+        "title": "Plynová událost po večeři vyčistí obývací pokoj",
+        "summary": "Po jídle servírovaném bez dostatečného množství zeleniny následoval atmosférický incident natolik silný, že vyprázdnil bezprostřední místo k sezení. Klasifikace upgradována na teroristickou zbraň.",
         "imageAlt": ""
       },
       "CIB-028": {
-        "title": "Vstup do kuchyně pod dvojí okupací",
-        "summary": "Nikdo nechtěl druhému uvolnit průchod. Dvacetiminutová patová situace zpozdila oběd všem, včetně lidí.",
+        "title": "Odjezd zpožděn kvůli chybějící sadě klíčů",
+        "summary": "Sawito prohledal každý viditelný povrch, než našel klíče v kapse, kterou už zkontroloval.",
         "imageAlt": ""
       },
       "CIB-029": {
-        "title": "Společný toast výjimečně skutečně rozdělen",
-        "summary": "Z nejasných důvodů si rozdělili spadlý toast bez incidentu. Vyšetřovatelé to považují za anomálii, ne vzorec.",
+        "title": "Přidělování zeleniny zabraňuje eskalaci",
+        "summary": "Večeře obsahovala přijatelnou zeleninovou složku. Le Criminel jedl bez protestu a domácnost nezaznamenala žádnou následnou plynovou nouzi.",
         "imageAlt": ""
       },
       "CIB-030": {
-        "title": "Záclona použita jako nepovolená lezecká konstrukce",
-        "summary": "Podezřelá vyšplhala k parapetu, než se uvolnily dva ze tří háčků. Sestup byl popsán jako převážně řízený.",
-        "imageAlt": "Pikette sedí na parapetu vedle svých misek na jídlo."
+        "title": "Tkanička boty zkrácena při přístupu bez dozoru",
+        "summary": "Le Criminel zůstal sám s botou dostatečně dlouhou na to, aby vytáhl tkaničku a prokousal jeden konec. Bota zůstává nositelná v přísně technickém smyslu.",
+        "imageAlt": ""
       },
       "CIB-031": {
-        "title": "Společná okenní hlídka proti neurčené hrozbě",
-        "summary": "Čtyřicet minut seděli bok po boku a čekali na hrozbu, která nepřišla ani nebyla pojmenována.",
+        "title": "Třetí Pikette návštěva obnoví nastolený spor",
+        "summary": "Pikette se vrátil a Le Criminel považoval příchod za obnovení nedokončené záležitosti.",
         "imageAlt": ""
       },
       "CIB-032": {
-        "title": "Vybalování nákupu pozastaveno kvůli zbytečnému dohledu",
-        "summary": "Sawito zabral jediný malý prostor nutný k vyložení tašek. Celou práci komentoval bez pomoci.",
-        "imageAlt": ""
+        "title": "Preferovaný gaučový polštář nárokovaný pro návštěvu",
+        "summary": "Pikette vybral středový polštář a zůstal tam navzdory pokusům obnovit normální uspořádání sedadel.",
+        "imageAlt": "Pikette během návštěvy sedí na středovém polštáři pohovky."
       },
       "CIB-033": {
-        "title": "Máslo ochutnáno přímo bez náčiní",
-        "summary": "Podezřelá byla nalezena s obličejem v máslence bez věrohodného vysvětlení. Víčko přitom předtím bylo zavřené.",
+        "title": "Balení parmazánu spouští reakci recidivisty",
+        "summary": "Otevřením nového bloku parmazánu se do kuchyně rychle dostalo Le Criminel. Sýr zůstal zajištěný a nikdy nebyl ponechán v dosahu sprchy.",
         "imageAlt": ""
       },
       "CIB-034": {
-        "title": "Rohožka přemístěna doprostřed ulice",
-        "summary": "Naposledy na prahu, nalezena o dva domy dál: vlhká, rozkousaná v rohu a obrácená.",
-        "imageAlt": "Le Criminel stojí na vodítku uprostřed dlážděné ulice."
+        "title": "V bytě odstraněna podšívka bot",
+        "summary": "Le Criminel odnesl botu od vchodu do obývacího pokoje a vytáhl dostatek podšívky, aby bylo poškození zřejmé.",
+        "imageAlt": "Le Criminel stojící na vodítku při venkovní procházce."
       },
       "CIB-035": {
-        "title": "Rodinná návštěva vykolejena výběrovou náklonností",
-        "summary": "Podezřelý se ihned upnul k jedinému příbuznému a ostatní celé odpoledne ignoroval. Příbuzný nadšen. Ostatní zaznamenali.",
+        "title": "Personál kavárny oslovil nepovolené pečivo",
+        "summary": "Le Criminel ignoroval svého majitele a soustředil se na člena personálu restaurace, který nese pečivo. Ofenzíva kouzla přinesla další kousek croissantu.",
         "imageAlt": ""
       },
       "CIB-036": {
@@ -257,38 +254,38 @@
         "imageAlt": "Druhý bochník na podlaze, rovněž okousaný."
       },
       "CIB-038": {
-        "title": "Pevnost z dek zbořili vlastní architekti",
-        "summary": "Společná stavba se zhroutila pod vlastní ambicí. Oba byli nalezeni v troskách, zjevně lhostejní.",
+        "title": "Zbytky parmezánu objevené v podestýlce",
+        "summary": "Následná kontrola postele zjistila, že do přikrývky se zapracovaly strouhanky sýra. Důkazy jsou v souladu s dřívější celoblokovou krádeží parmazánu.",
         "imageAlt": "Le Criminel spí stočený pod silnou dekou na pohovce."
       },
       "CIB-039": {
-        "title": "Televizní zvonek zaměněn za skutečnou návštěvu",
-        "summary": "Subjekt odpověděl na zvonek v reklamě plnou hlasitostí a přesvědčením. Žádný návštěvník nikdy nalezen nebyl.",
-        "imageAlt": "Le Criminel prudce zvedá hlavu z koberce, s nastraženýma ušima."
+        "title": "Blízká Pikette fotografie spouští obnovený protest",
+        "summary": "Pikette zůstal nehybný kvůli bezpečnostní fotografii, zatímco Le Criminel namítal z druhé strany místnosti.",
+        "imageAlt": "Le Criminel během návštěvy prudce vzhlédl od koberce."
       },
       "CIB-040": {
-        "title": "Vysavač zablokován nečekanou spoluprací",
-        "summary": "Obvykle zásadoví odpůrci společně zablokovali vysavač z různých úhlů. Úklid trval dvakrát déle.",
-        "imageAlt": "Le Criminel skáče na svůj pelíšek vedle zapnutého vysavače."
+        "title": "Během únorové návštěvy byla pozorována dočasná okenní aliance",
+        "summary": "Obě zvířata zastavila nepřátelství, aby sledovala pohyb venku z pohovky. Spolupráce skončila, když okno ztichlo.",
+        "imageAlt": "Pikette a Le Criminel sdílejí gauč během dočasného spojenectví."
       },
       "CIB-041": {
-        "title": "Dostupné víčko jogurtu předvídatelně využito",
-        "summary": "Víčko leželo na lince k olízání. Oba dohodu pochopili a uskutečnili bez sporu.",
+        "title": "Snídaně podrobena pokusu o akvizici na blízko",
+        "summary": "Le Criminel udržoval pozici vedle snídaňového stolu a sledoval každý pohyb pečiva. Rohlík zůstal neporušený pouze díky nepřetržitému dohledu.",
         "imageAlt": "Le Criminel upřeně zírá na vafli nechanou na venkovním stole."
       },
       "CIB-042": {
-        "title": "Dárkový papír společně roztrhán předčasně",
-        "summary": "Dárek bez dozoru šest minut se při návratu svědků proměnil v konfety. Oba působili spokojeně.",
+        "title": "Úložný prostor pro boty byl po zhasnutí světel narušen",
+        "summary": "Botu sundanou před spaním dostali z obývacího pokoje s mokrými tkaničkami a čerstvými otisky zubů. Le Criminel spal vedle něj, když byl vyslýchán.",
         "imageAlt": ""
       },
       "CIB-043": {
-        "title": "Další společný poplach u otvoru na poštu",
-        "summary": "Denní doručení spustilo obvyklé štěkání jednoho a mňoukání druhé. Doručovatel už rutinu zná.",
+        "title": "Soused obdrží další nepřátelské přijetí",
+        "summary": "Starší soused nabídl klidný pozdrav ve společném vchodu. Le Criminel odpověděl, jako by byl právě obnoven dlouhodobý osobní spor.",
         "imageAlt": "Le Criminel sedí ostražitě na vodítku poblíž ulice."
       },
       "CIB-044": {
-        "title": "Postel obsazena od rohu k rohu bez místa",
-        "summary": "Oba se uložili diagonálně se zdánlivou přesností, bez prostoru pro zamýšleného uživatele.",
+        "title": "Večeře byla přenesena na postel pro neoprávněnou kontrolu",
+        "summary": "Le Criminel následoval jídlo do ložnice a pokusil se zkontrolovat talíř ve výšce matrace. Přístup byl odepřen dříve, než se mohl opakovat precedent s parmazánem.",
         "imageAlt": "Le Criminel leží na zádech napříč postelí a zabírá celou její šířku."
       },
       "CIB-045": {
@@ -297,21 +294,45 @@
         "imageAlt": ""
       },
       "CIB-046": {
-        "title": "Zahradní hadice proděravěna na více místech",
-        "summary": "Čtyři nové netěsnosti tvoří vzorec označený vyšetřovateli za důkladný. Subjekt nalezen poblíž, spokojen.",
-        "imageAlt": "Le Criminel venku zkoumá něco na kamenném výstupku."
+        "title": "U vchodu do bytu sundaná další bota",
+        "summary": "Le Criminel přemístil botu do obývacího pokoje a začal pracovat na patě během nezvykle tichého intervalu.",
+        "imageAlt": "Le Criminel zkoumání kamenné římsy během venkovní procházky."
       },
       "CIB-047": {
-        "title": "Videohovor přerušen nevyžádaným komentářem",
-        "summary": "Sawito živě komentoval kolegům psí činnosti po celou schůzku s klientem. Nikdo o to nežádal.",
-        "imageAlt": "Sawito si dělá selfie, pes opřený o jeho rameno."
+        "title": "Během návštěvy Pikette bylo zaznamenáno vzácné tiché příměří na gauči",
+        "summary": "Le Criminel a Pikette sdíleli gauč bez hádky dostatečně dlouho na to, aby domácnost zdokumentovala anomálii.",
+        "imageAlt": ""
       },
       "CIB-048": {
-        "title": "Východ zablokován do rozhodnutí, které nepadlo",
-        "summary": "Subjekt stál jedenáct minut v otevřených dveřích a zvažoval odchod. Blokoval oba směry, pak se vrátil na pohovku.",
-        "imageAlt": "Le Criminel sedí na vodítku těsně před vchodovými dveřmi."
+        "title": "Společné obsazení gauče nezanechává žádné užitečné místo",
+        "summary": "Pikette a Le Criminel se rozmístili přes dostupné polštáře a zůstali spojenci proti každému, kdo by se pokusil posadit.",
+        "imageAlt": ""
+      },
+      "CIB-049": {
+        "title": "Oběd pod neustálým dohledem",
+        "summary": "Le Criminel udržoval vizuální kontakt s dlahou od příjezdu do posledního kousnutí. Každý pohyb vidlice vyvolal nový požadavek na přesun.",
+        "imageAlt": "Le Criminel sleduje talíř s těstovinami zpod venkovního stolu."
+      },
+      "CIB-050": {
+        "title": "Kontrola obuvi pokračuje, zatímco důkazy se stále nosí",
+        "summary": "Le Criminel přitiskl obličej k botě, vyzkoušel tkaničky a pokusil se zahájit obvyklý proces rozebírání, než byl přerušen.",
+        "imageAlt": "Le Criminel tiskl svůj zcenzurovaný obličej na opotřebovanou botu u venkovního stolu."
+      },
+      "CIB-051": {
+        "title": "Balkonový rošt brání dalšímu pronásledování holubů",
+        "summary": "Le Criminel zablokoval pohyb za balkonem, zatímco velká bezpečnostní mříž dělala přesně to, k čemu byla nainstalována: držela hon na hranici bytu.",
+        "imageAlt": "Le Criminel nahlíží přes krabici od pizzy vedle bezpečnostního roštu na balkon v plné výšce."
+      },
+      "CIB-052": {
+        "title": "Personál restaurace kompromitován vypočítavým šarmem",
+        "summary": "Le Criminel pracoval na terase stůl po stole, dokud personál restaurace nevzdal croissant navíc. Operace zcela spoléhala na oční kontakt a výskyt hladovění.",
+        "imageAlt": "Le Criminel sleduje croissant vedle venkovního stolku v kavárně."
       }
-    }
+    },
+    "cibKicker": "NYNÍ K NAHLÉDNUTÍ",
+    "cibTitle": "ÚŘAD KRIMINÁLNÍHO ZPRAVODAJSTVÍ",
+    "cibBody": "Padesát dva incidentů. Tři podezřelí. Jedna sdílená kartotéka. Porovnejte celou operaci.",
+    "cibCta": "OTEVŘÍT ARCHIV"
   },
   "common": {
     "fallbackBanner": "Omlouváme se, pracujeme na tom — zatím dostupné pouze v angličtině."

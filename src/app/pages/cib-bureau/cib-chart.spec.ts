@@ -36,6 +36,20 @@ describe('CIB chart label rendering', () => {
     expect(element.querySelectorAll('tbody tr')).toHaveLength(28);
   });
 
+  it('limits dense localized axes to three ticks so long month suffixes retain clearance', () => {
+    const element = render(Array.from({ length: 26 }, (_, i) => ({
+      key: String(i),
+      label: `${String(i + 1).padStart(2, '0')}.24 \u0433.`,
+      count: i % 5,
+    })));
+    const ticks = [...element.querySelectorAll('.tick-label')];
+    expect(ticks).toHaveLength(3);
+    expect(ticks[0].textContent).toBe('01.24 \u0433.');
+    expect(ticks.at(-1)?.textContent).toBe('26.24 \u0433.');
+    expect(element.querySelectorAll('rect.bar')).toHaveLength(26);
+    expect(element.querySelectorAll('tbody tr')).toHaveLength(26);
+  });
+
   it('renders short and empty time axes without duplicate ticks or invalid geometry', () => {
     const element = render([{ key: '0', label: '00:00', count: 0 }, { key: '1', label: '01:00', count: 0 }]);
     expect([...element.querySelectorAll('.tick-label')].map((tick) => tick.textContent)).toEqual(['00:00', '01:00']);

@@ -5,8 +5,8 @@ import { RouterLink, provideRouter } from '@angular/router';
 
 import { CibChart } from './cib-chart';
 import { CriminalIntelligence } from './criminal-intelligence';
-import { dailyCounts } from './cib-selectors';
-import { CIB_ARCHIVE_DATES, CIB_INCIDENTS } from './cib.data';
+import { monthlyCounts } from './cib-selectors';
+import { CIB_ARCHIVE_MONTHS, CIB_INCIDENTS } from './cib.data';
 import { CibIncident } from './cib.model';
 
 // The real 48-incident fixed archive deliberately covers every
@@ -77,8 +77,8 @@ describe('CriminalIntelligence — zero-match rendering (rule 8)', () => {
     const fixture = createComponent();
     const instance = fixture.componentInstance;
 
-    expect(instance['dailyBuckets']().length).toBe(28);
-    expect(instance['dailyBuckets']().every((b) => b.count === 0)).toBe(true);
+    expect(instance['monthlyBuckets']().length).toBe(26);
+    expect(instance['monthlyBuckets']().every((b) => b.count === 0)).toBe(true);
     expect(instance['offenceBuckets']().length).toBe(4);
     expect(instance['hourlyBuckets']().length).toBe(24);
     // Final whole-branch review, Finding 1: the chart ceiling is a fixed
@@ -86,11 +86,11 @@ describe('CriminalIntelligence — zero-match rendering (rule 8)', () => {
     // maximum here too — never collapse to 0 just because this harness's
     // filtered set is empty (that would also make the old NaN-guard
     // assertion this replaced trivially true for the wrong reason).
-    const fullArchiveDailyMax = Math.max(
-      ...dailyCounts(CIB_INCIDENTS, CIB_ARCHIVE_DATES).map((bucket) => bucket.count),
+    const fullArchiveMonthlyMax = Math.max(
+      ...monthlyCounts(CIB_INCIDENTS, CIB_ARCHIVE_MONTHS).map((bucket) => bucket.count),
     );
-    expect(fullArchiveDailyMax).toBeGreaterThan(0);
-    expect(instance['dailyMaximum']()).toBe(fullArchiveDailyMax);
+    expect(fullArchiveMonthlyMax).toBeGreaterThan(0);
+    expect(instance['monthlyMaximum']()).toBe(fullArchiveMonthlyMax);
 
     const charts = fixture.nativeElement.querySelectorAll('app-cib-chart') as NodeListOf<HTMLElement>;
     expect(charts.length).toBe(3);

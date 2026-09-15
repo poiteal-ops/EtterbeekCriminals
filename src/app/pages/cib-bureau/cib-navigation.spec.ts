@@ -38,7 +38,7 @@ describe('CIB entry points', () => {
     expect(element.querySelector('.data-table summary')?.textContent).toBe('Voir le tableau');
     expect(element.querySelector('.data-table caption')?.textContent).toContain('Données complètes');
     expect(element.querySelector('.data-table th')?.textContent).toBe('Catégorie');
-    expect(element.querySelector('.data-table tbody th')?.textContent).toBe('1 août');
+    expect(element.querySelector('.data-table tbody th')?.textContent).toBe('juil. 24');
   });
 
   it('registers the same dedicated lazy page for default and localized URLs', async () => {
