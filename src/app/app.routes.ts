@@ -32,6 +32,11 @@ const pageRoutes: Routes = [
   { path: 'a-day-with-bestie', component: ADayWithBestie },
   { path: 'kande-nadege', component: KandeNadege },
   { path: 'blog', component: Blog },
+  {
+    path: 'criminal-intelligence',
+    loadComponent: () => import('./pages/cib-bureau/criminal-intelligence')
+      .then((module) => module.CriminalIntelligence),
+  },
   { path: 'shop', component: Shop },
   { path: 'shop/:slug', component: ShopItemPage },
 ];

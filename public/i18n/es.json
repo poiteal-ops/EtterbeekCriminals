@@ -1,8 +1,344 @@
 {
+  "cib": {
+    "chart": {
+      "peakSummary": "Máximo: {label} — incidentes: {count}.",
+      "emptySummary": "No hay incidentes con estos filtros.",
+      "viewTable": "Ver tabla de datos",
+      "fullData": "Datos completos",
+      "category": "Categoría",
+      "incidents": "Incidentes"
+    },
+    "title": "OFICINA DE INTELIGENCIA CRIMINAL",
+    "subtitle": "Archivo coordinado de incidentes: tres operadores conocidos y un mismo desprecio por el derecho de propiedad.",
+    "archiveNote": "Datos de incidentes ficticios recopilados exclusivamente para formación interna. Cualquier parecido con una verdadera ola delictiva es casual y, francamente, muy propio de la casa.",
+    "archiveWindowLabel": "ARCHIVO DE CASO / JULIO 2024–AGOSTO 2026",
+    "seoDescription": "Explore el archivo de la Oficina de Inteligencia Criminal: 52 incidentes ficticios registrados desde julio de 2024 hasta agosto de 2026.",
+    "suspectFilterLabel": "FILTRAR POR SOSPECHOSO",
+    "offenceFilterLabel": "FILTRAR POR INFRACCIÓN",
+    "allSuspectsLabel": "TODOS LOS SOSPECHOSOS",
+    "allOffencesLabel": "TODAS LAS INFRACCIONES",
+    "resetLabel": "RESTABLECER FILTROS",
+    "resultCountLabel": "Se muestran {count} incidentes registrados.",
+    "metricTotalLabel": "INCIDENTES REGISTRADOS",
+    "metricOpenLabel": "CASOS ABIERTOS",
+    "metricClosureRateLabel": "TASA DE CIERRE",
+    "metricPeakHourLabel": "HORA CON MÁS INCIDENTES",
+    "unavailableLabel": "NO DISPONIBLE",
+    "dailyChartTitle": "ACTIVIDAD MENSUAL",
+    "dailyChartDescription": "Incidentes reportados por mes en la ventana de archivo.",
+    "offenceChartTitle": "TOTALES POR INFRACCIÓN",
+    "offenceChartDescription": "Incidentes desglosados por categoría.",
+    "hourlyChartTitle": "DISTRIBUCIÓN HORARIA",
+    "hourlyChartDescription": "Cuándo suelen ocurrir los incidentes a lo largo de las 24 horas.",
+    "offenceLabels": {
+      "snack-theft": "ROBO DE COMIDA",
+      "property-damage": "DAÑOS MATERIALES",
+      "public-disturbance": "ALTERACIÓN DEL ORDEN",
+      "obstruction": "OBSTRUCCIÓN"
+    },
+    "statusLabels": {
+      "open": "ABIERTO",
+      "closed": "CERRADO"
+    },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
+    "relationshipLabels": {
+      "allied": "ALIADOS",
+      "rivals": "RIVALES",
+      "truce": "TREGUA",
+      "not-applicable": "NO PROCEDE"
+    },
+    "dossierDescriptions": {
+      "le-criminel": "SOSPECHOSO PRINCIPAL. Boston Terrier, collar táctico, sin remordimiento conocido. Presente en la inmensa mayoría de los incidentes registrados.",
+      "pikette": "ARCHIENEMIGO DE TEMPORADA. Visitas históricas archivadas. La próxima visita se espera para diciembre.",
+      "sawito": "FACILITADOR, NO SOSPECHOSO. Presente en la mayoría de los incidentes. Tasa de intervención: insignificante."
+    },
+    "overlapNote": "Las cifras cuentan participaciones en los incidentes mostrados, incluidos los cómplices. Un incidente puede implicar a varios sospechosos, por lo que su suma puede superar el total de incidentes.",
+    "nextVisitLabel": "PRÓXIMA VISITA: DICIEMBRE",
+    "showMoreLabel": "MOSTRAR MÁS",
+    "viewDetailsLabel": "VER PRUEBAS",
+    "hideDetailsLabel": "OCULTAR PRUEBAS",
+    "viewCaseLabel": "VER EXPEDIENTE COMPLETO",
+    "noEvidenceLabel": "SIN PRUEBAS EN EL EXPEDIENTE",
+    "emptyStateTitle": "NINGÚN INCIDENTE COINCIDENTE",
+    "emptyStateBody": "Ningún incidente coincide con estos filtros. Pruebe otro sospechoso o infracción, o restablézcalos para consultar todo el archivo.",
+    "methodologyTitle": "METODOLOGÍA",
+    "methodologyBody": "Este archivo cubre 52 incidentes ficticios registrados desde julio de 2024 hasta agosto de 2026 con fines de capacitación interna. Las categorías, horarios y resultados son ilustrativos y no reflejan una investigación real.",
+    "incidents": {
+      "CIB-001": {
+        "title": "El personal del restaurante comprometido por un encanto calculado",
+        "summary": "Le Criminel trabajó en la terraza mesa por mesa hasta que el personal del restaurante entregó croissant extra.",
+        "imageAlt": ""
+      },
+      "CIB-002": {
+        "title": "La costura del sofá sometida a una investigación sostenida",
+        "summary": "Le Criminel regresó repetidamente a una costura suelta hasta que el relleno estuvo accesible. La supervisión detuvo la inspección antes de que se abriera todo el cojín.",
+        "imageAlt": "Costura rasgada y relleno a la vista en la costura de un cojín del sofá."
+      },
+      "CIB-003": {
+        "title": "Vecino amigo identificado como enemigo permanente",
+        "summary": "El vecino anciano saludó amablemente a Le Criminel en el salón comunal. Le Criminel respondió con la misma hostilidad personal que reserva para cada encuentro con este hombre completamente inocente.",
+        "imageAlt": ""
+      },
+      "CIB-004": {
+        "title": "Pasillo del apartamento ocupado durante la salida",
+        "summary": "Le Criminel se plantó entre la puerta del apartamento y el ascensor mientras decidía si la salida era aceptable. Todos los demás esperaron el fallo.",
+        "imageAlt": "Le Criminel con correa, justo dentro de la entrada de baldosas."
+      },
+      "CIB-005": {
+        "title": "Pan trasladado a custodia protectora",
+        "summary": "El acusado se negó a identificar al propietario original. Las migas contradecían su declaración.",
+        "imageAlt": "Medio pan en el suelo de la cocina, con un extremo claramente roído."
+      },
+      "CIB-006": {
+        "title": "Funda del móvil rota en una foto poco sensata",
+        "summary": "Sawito intentó hacerse un selfi con el perro saltando y dejó caer el móvil sobre el único suelo de baldosas. La foto, por cierto, salió bien.",
+        "imageAlt": "Sawito haciéndose un selfi con el perro saltando hacia la cámara."
+      },
+      "CIB-007": {
+        "title": "Reunión familiar interrumpida por una opinión no solicitada",
+        "summary": "El sujeto se metió en una conversación ajena y ladró al volumen preciso para terminarla. La terminó.",
+        "imageAlt": "Le Criminel sentado solemnemente, a la espera del veredicto."
+      },
+      "CIB-008": {
+        "title": "Paso bloqueado deliberadamente durante una entrega",
+        "summary": "Sawito se interpuso al mensajero mientras meditaba largamente si hacía falta firmar. No hacía falta. Siguió allí de todos modos.",
+        "imageAlt": ""
+      },
+      "CIB-009": {
+        "title": "Tostada del desayuno retirada durante una breve distracción.",
+        "summary": "Una espalda vuelta creó una apertura de menos de tres segundos. Le Criminel lo usó para quitar las tostadas del borde de la mesa y esconderse debajo de la silla.",
+        "imageAlt": ""
+      },
+      "CIB-010": {
+        "title": "El segundo zapato entró en juego activo.",
+        "summary": "Le Criminel seleccionó un zapato recién quitado, lo llevó a la sala de estar y trabajó los cordones hasta que la intervención se hizo inevitable.",
+        "imageAlt": ""
+      },
+      "CIB-011": {
+        "title": "Vecino detectado a través de la puerta cerrada de un apartamento",
+        "summary": "Los pasos en el pasillo compartido fueron identificados correctamente como los del agradable vecino anciano. Le Criminel comenzó la protesta habitual antes de que el hombre llegara al rellano.",
+        "imageAlt": ""
+      },
+      "CIB-012": {
+        "title": "Los preparativos para las vacaciones se retrasan por la indecisión del manejador",
+        "summary": "Sawito reconsideró una decoración lo suficientemente larga como para bloquear el pasillo del apartamento para todos los demás.",
+        "imageAlt": ""
+      },
+      "CIB-013": {
+        "title": "bloque de parmesano eliminado en su totalidad",
+        "summary": "Mientras el dueño estaba en la ducha, Le Criminel robó un bloque entero de parmesano y se lo comió en la cama. Las migajas y las marcas de aceite establecieron la ubicación más allá de toda duda.",
+        "imageAlt": ""
+      },
+      "CIB-014": {
+        "title": "Zapato desgastado sometido a otra inspección.",
+        "summary": "Le Criminel se llevó el zapato y trabajó los cordones hasta que la intervención se hizo inevitable.",
+        "imageAlt": "Una sola zapatilla tirada en el césped con daños visibles."
+      },
+      "CIB-015": {
+        "title": "El primer avistamiento Pikette incluye inspección inmediata de alimentos",
+        "summary": "Pikette llegó para su primera visita registrada, revisó los platos de comida y trató todo lo que estaba a su alcance como propiedad compartida.",
+        "imageAlt": "Pikette sentado en el alféizar de la ventana del apartamento, junto a los platos de comida."
+      },
+      "CIB-016": {
+        "title": "La primera reunión establece una hostilidad mutua inmediata",
+        "summary": "Le Criminel y Pikette intercambiaron advertencias y pasaron el resto de la visita monitoreándose mutuamente desde extremos opuestos del sofá.",
+        "imageAlt": "Pikette y Le Criminel compartiendo el sofá mientras se miran."
+      },
+      "CIB-017": {
+        "title": "Salchicha caída interceptada antes de la recuperación",
+        "summary": "Una salchicha llegó al suelo y Le Criminel la alcanzó primero. La evidencia fue absorbida antes de que pudiera comenzar cualquier esfuerzo de recuperación significativo.",
+        "imageAlt": ""
+      },
+      "CIB-018": {
+        "title": "La operación de calzado se extiende al sofá.",
+        "summary": "Le Criminel llevó un zapato capturado al sofá y usó el reposabrazos como palanca. El zapato, la tapicería y la paciencia del hogar sufrieron daños.",
+        "imageAlt": "Primer plano de arañazos en el reposabrazos del sofá."
+      },
+      "CIB-019": {
+        "title": "Cruce de vecinos vigilado desde el sofá",
+        "summary": "Le Criminel vio al vecino anciano desde la ventana del apartamento y siguió su avance a través del patio con sostenida desaprobación.",
+        "imageAlt": ""
+      },
+      "CIB-020": {
+        "title": "Se exige acceso a la cocina durante la preparación de alimentos",
+        "summary": "Le Criminel ocupaba la estrecha entrada de la cocina y monitoreaba cada movimiento entre el mostrador y la mesa. Los repetidos intentos de eliminación produjeron retornos inmediatos.",
+        "imageAlt": ""
+      },
+      "CIB-021": {
+        "title": "Almuerzo bajo vigilancia continua",
+        "summary": "Le Criminel siguió el plato desde su llegada hasta el bocado final. Cada movimiento de la bifurcación generaba una nueva solicitud de transferencia.",
+        "imageAlt": "Le Criminel observa de cerca la comida desde un lado de la mesa de un café al aire libre."
+      },
+      "CIB-022": {
+        "title": "Gafas de lectura aplastadas y estructuralmente comprometidas",
+        "summary": "Las gafas de Sawito, dejadas «solo un segundo» en el brazo del sillón, aparecieron debajo con un cristal suelto. Culpa al sillón.",
+        "imageAlt": "Sawito, con las gafas puestas, mejilla con mejilla con el perro."
+      },
+      "CIB-023": {
+        "title": "Pikette retornos y hostilidades se reanudan inmediatamente",
+        "summary": "La segunda visita registrada comenzó donde terminó la primera: ambos animales reclamaron el mismo territorio del sofá y rechazaron al otro ocupante.",
+        "imageAlt": "Pikette y Le Criminel ocupando el sofá durante una visita."
+      },
+      "CIB-024": {
+        "title": "Pasaje del sofá cerrado durante un enfrentamiento entre dos animales",
+        "summary": "Pikette sostuvo un extremo del sofá mientras Le Criminel sostuvo el otro hasta que la comida en la cocina puso fin a la disputa.",
+        "imageAlt": ""
+      },
+      "CIB-025": {
+        "title": "Migas de croissant adquiridas de un testigo comprometido",
+        "summary": "El personal del restaurante volvió a interpretar la mirada fija como hambre y le suministraron trozos de croissant. Le Criminel aceptó la transferencia sin corregir el malentendido.",
+        "imageAlt": ""
+      },
+      "CIB-026": {
+        "title": "Bolsa de comida registrada inmediatamente después de la entrega",
+        "summary": "Le Criminel insertó su cabeza en la bolsa de compras antes de que estuviera completamente desembalada. Se aprobaron las verduras; todos los demás contenidos siguieron siendo objetivos.",
+        "imageAlt": ""
+      },
+      "CIB-027": {
+        "title": "El evento de gas después de la cena despeja la sala de estar",
+        "summary": "A una comida servida sin suficientes verduras le siguió un incidente atmosférico lo suficientemente grave como para vaciar la zona de asientos inmediata. Clasificación mejorada a arma terrorista.",
+        "imageAlt": ""
+      },
+      "CIB-028": {
+        "title": "Salida retrasada por falta de un juego de llaves",
+        "summary": "Sawito buscó en todas las superficies visibles antes de encontrar las llaves en el bolsillo que ya había revisado.",
+        "imageAlt": ""
+      },
+      "CIB-029": {
+        "title": "La asignación de hortalizas evita la escalada",
+        "summary": "La cena incluyó un componente vegetal aceptable. Le Criminel comió sin protestar y el hogar no registró ninguna emergencia de gas posterior.",
+        "imageAlt": ""
+      },
+      "CIB-030": {
+        "title": "Cordón de zapato acortado durante el acceso sin supervisión",
+        "summary": "Le Criminel se quedó solo con un zapato lo suficientemente largo como para sacar el cordón y morder un extremo. El zapato sigue siendo ponible en un sentido estrictamente técnico.",
+        "imageAlt": ""
+      },
+      "CIB-031": {
+        "title": "La tercera visita Pikette reanuda la disputa establecida",
+        "summary": "Pikette regresó y Le Criminel trató la llegada como una renovación de asuntos pendientes.",
+        "imageAlt": ""
+      },
+      "CIB-032": {
+        "title": "Cojín de sofá preferido reclamado para la visita",
+        "summary": "Pikette seleccionó el cojín central y permaneció allí a pesar de los intentos de restaurar la disposición normal de los asientos.",
+        "imageAlt": "Pikette ocupando el cojín central del sofá durante una visita."
+      },
+      "CIB-033": {
+        "title": "El envasado de parmesano provoca una respuesta de reincidencia",
+        "summary": "Al abrir un nuevo bloque de parmesano, Le Criminel entró rápidamente en la cocina. El queso permaneció asegurado y nunca estuvo al alcance de la mano durante la ducha.",
+        "imageAlt": ""
+      },
+      "CIB-034": {
+        "title": "Se quitó el forro del zapato dentro del apartamento.",
+        "summary": "Le Criminel llevó un zapato desde la entrada a la sala de estar y sacó suficiente forro para que el daño fuera evidente.",
+        "imageAlt": "Le Criminel parado con una correa durante una caminata al aire libre."
+      },
+      "CIB-035": {
+        "title": "El personal de la cafetería fue abordado por pastelería no autorizada",
+        "summary": "Le Criminel ignoró a su propio manejador y se concentró en un miembro del personal del restaurante que llevaba pasteles. La ofensiva de encanto produjo una pieza de croissant adicional.",
+        "imageAlt": ""
+      },
+      "CIB-036": {
+        "title": "Paso ocupado a todo lo largo, ambas direcciones bloqueadas",
+        "summary": "El sujeto eligió el centro exacto de la puerta para dormir cubriendo la máxima superficie. El tráfico se desvió dos horas.",
+        "imageAlt": "Le Criminel tendido a lo largo del suelo del pasillo."
+      },
+      "CIB-037": {
+        "title": "Segundo pan perdido en circunstancias casi idénticas",
+        "summary": "No es el primer incidente con pan del expediente ni, sospechan los investigadores, será el último. La técnica se ha perfeccionado claramente.",
+        "imageAlt": "Un segundo pan en el suelo, igualmente roído."
+      },
+      "CIB-038": {
+        "title": "Residuos de parmesano descubiertos en la ropa de cama",
+        "summary": "Una inspección de seguimiento de la cama encontró migas de queso en la manta. La evidencia es consistente con el robo anterior de parmesano en toda la cuadra.",
+        "imageAlt": "Le Criminel dormido, hecho un ovillo bajo una manta gruesa en el sofá."
+      },
+      "CIB-039": {
+        "title": "La fotografía Pikette a corta distancia desencadena una nueva protesta",
+        "summary": "Pikette permaneció quieto para una fotografía de vigilancia mientras Le Criminel objetaba desde el otro lado de la habitación.",
+        "imageAlt": "Le Criminel levantando bruscamente la vista de la alfombra durante la visita."
+      },
+      "CIB-040": {
+        "title": "Alianza de ventana temporal observada durante visita de febrero",
+        "summary": "Ambos animales detuvieron las hostilidades para observar el movimiento afuera desde el sofá. La cooperación terminó cuando la ventana quedó en silencio.",
+        "imageAlt": "Pikette y Le Criminel compartiendo el sofá durante una alianza temporal."
+      },
+      "CIB-041": {
+        "title": "Desayuno sujeto a intento de adquisición a corta distancia",
+        "summary": "Le Criminel mantuvo su posición junto a la mesa del desayuno y siguió cada movimiento de la masa. El croissant permaneció intacto sólo gracias a una supervisión continua.",
+        "imageAlt": "Le Criminel mirando fijamente un gofre dejado en una mesa exterior."
+      },
+      "CIB-042": {
+        "title": "Almacenamiento de zapatos violado después de que se apagaran las luces",
+        "summary": "Un zapato que se quitó antes de acostarse fue recuperado de la sala de estar con cordones mojados y marcas de dientes recientes. Le Criminel estaba dormido a su lado cuando lo interrogaron.",
+        "imageAlt": ""
+      },
+      "CIB-043": {
+        "title": "Vecino recibe otro recibimiento hostil",
+        "summary": "El vecino anciano saludó tranquilamente en la entrada comunitaria. Le Criminel respondió como si acabara de renovarse una larga disputa personal.",
+        "imageAlt": "Le Criminel sentado alerta con correa cerca de la calle."
+      },
+      "CIB-044": {
+        "title": "Cena llevada a la cama para inspección no autorizada.",
+        "summary": "Le Criminel siguió la comida hasta el dormitorio e intentó inspeccionar el plato a la altura del colchón. Se negó el acceso antes de que se repitiera el precedente del parmesano.",
+        "imageAlt": "Le Criminel tumbado boca arriba atravesado en una cama, ocupando todo el ancho."
+      },
+      "CIB-045": {
+        "title": "Última porción reclamada con dudoso pretexto de equilibrio",
+        "summary": "Sawito tomó la última porción explicando sin que nadie preguntara que solo «igualaba las cosas». Nadie se lo había pedido.",
+        "imageAlt": ""
+      },
+      "CIB-046": {
+        "title": "Otro zapato retirado de la entrada del apartamento.",
+        "summary": "Le Criminel trasladó un zapato a la sala de estar y comenzó a trabajar en el talón durante un intervalo inusualmente tranquilo.",
+        "imageAlt": "Le Criminel investigando un saliente de piedra durante una caminata al aire libre."
+      },
+      "CIB-047": {
+        "title": "Rara y tranquila tregua en el sofá registrada durante la visita Pikette",
+        "summary": "Le Criminel y Pikette compartieron el sofá sin discutir el tiempo suficiente para que la familia documentara la anomalía.",
+        "imageAlt": ""
+      },
+      "CIB-048": {
+        "title": "La ocupación conjunta del sofá no deja ningún asiento útil",
+        "summary": "Pikette y Le Criminel se acomodaron sobre los cojines disponibles y permanecieron aliados contra cualquiera que intentara sentarse.",
+        "imageAlt": ""
+      },
+      "CIB-049": {
+        "title": "Almuerzo bajo vigilancia continua",
+        "summary": "Le Criminel mantuvo contacto visual con el plato desde la llegada hasta el bocado final. Cada movimiento de la bifurcación generaba una nueva solicitud de transferencia.",
+        "imageAlt": "Le Criminel mirando un plato de pasta desde debajo de una mesa al aire libre."
+      },
+      "CIB-050": {
+        "title": "La inspección del calzado se reanuda mientras todavía se llevan pruebas",
+        "summary": "Le Criminel presionó su cara contra el zapato, probó los cordones e intentó comenzar el proceso habitual de desmantelamiento antes de ser interrumpido.",
+        "imageAlt": "Le Criminel presionando su rostro censurado contra un zapato gastado en una mesa al aire libre."
+      },
+      "CIB-051": {
+        "title": "La reja del balcón impide otra persecución de palomas",
+        "summary": "Le Criminel bloqueó el movimiento más allá del balcón mientras la gran rejilla de seguridad hacía exactamente lo que fue instalada: mantener la persecución dentro de los límites del apartamento.",
+        "imageAlt": "Le Criminel mirando por encima de una caja de pizza junto a la rejilla de seguridad de altura completa del balcón."
+      },
+      "CIB-052": {
+        "title": "El personal del restaurante comprometido por un encanto calculado",
+        "summary": "Le Criminel trabajó en la terraza mesa por mesa hasta que el personal del restaurante entregó croissant extra. La operación se basó enteramente en el contacto visual y en la apariencia de inanición.",
+        "imageAlt": "Le Criminel mirando un croissant al lado de una mesa de café al aire libre."
+      }
+    },
+    "cibKicker": "YA DISPONIBLE PARA CONSULTA",
+    "cibTitle": "LA OFICINA DE INTELIGENCIA CRIMINAL",
+    "cibBody": "Cincuenta y dos incidentes. Tres sospechosos. Un archivador compartido. Cruza toda la operación.",
+    "cibCta": "ABRIR EL ARCHIVO"
+  },
   "common": {
     "fallbackBanner": "Lo sentimos, estamos trabajando en ello — por ahora solo disponible en inglés."
   },
   "nav": {
+    "cib": "INTELIGENCIA",
     "home": "INICIO",
     "about": "SOBRE NOSOTROS",
     "story": "LA HISTORIA DE UN CRIMINAL",
@@ -341,7 +677,7 @@
   },
   "blog": {
     "title": "REGISTRO DE CASOS",
-    "subtitle": "25 entradas mensuales — dos años de vigilancia continua, el expediente 001-CR sigue abierto"
+    "subtitle": "26 entradas mensuales — dos años de vigilancia continua, el expediente 001-CR sigue abierto"
   },
   "blogPosts": [
     {
@@ -517,6 +853,13 @@
       "body": "Una alerta de calor de varios días dejó al Sujeto completamente fuera de combate — tumbado sobre la alfombra del salón, con las extremidades en ángulos extraños y sin cometer ninguna infracción durante el periodo más largo desde que comenzó la vigilancia. La tregua terminó en cuanto cambió el tiempo: el Sujeto se trasladó a una parcela de césped, reclamó un alijo de botellas desechadas como escena del crimen de su propia invención y reanudó todas sus operaciones sin explicación alguna. Informe completo archivado por separado bajo «La tregua de la ola de calor.»",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "PARQUES LOCALES COMPROMETIDOS",
+      "body": "El Sujeto permaneció en Bruselas durante todo agosto. El buen tiempo permitió efectuar operaciones repetidas en los parques locales, generalmente seguidas de la adquisición y el consumo ilícitos de fragmentos de cruasán. Aumentó la frecuencia de las patrullas. La seguridad de la bollería sigue siendo insuficiente.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

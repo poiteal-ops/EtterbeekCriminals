@@ -1,0 +1,186 @@
+@let t = translation.t();
+
+<div class="page">
+  <header class="page-header">
+    <h1 class="title">{{ t.cib.title }}</h1>
+    <p class="subtitle">{{ t.cib.subtitle }}</p>
+    <div class="archive-meta">
+      <span class="archive-window">{{ t.cib.archiveWindowLabel }}</span>
+      <span class="archive-note">{{ t.cib.archiveNote }}</span>
+    </div>
+  </header>
+
+  <div class="filters">
+    <div class="filter-field">
+      <label for="cib-suspect-filter">{{ t.cib.suspectFilterLabel }}</label>
+      <select id="cib-suspect-filter" [value]="filters().suspect" (change)="onSuspectSelectChange($event)">
+        <option value="all">{{ t.cib.allSuspectsLabel }}</option>
+        @for (id of suspectOptions; track id) {
+          <option [value]="id">{{ t.cib.suspectLabels[id] }}</option>
+        }
+      </select>
+    </div>
+
+    <div class="filter-field">
+      <label for="cib-offence-filter">{{ t.cib.offenceFilterLabel }}</label>
+      <select id="cib-offence-filter" [value]="filters().offence" (change)="onOffenceSelectChange($event)">
+        <option value="all">{{ t.cib.allOffencesLabel }}</option>
+        @for (id of offenceOptions; track id) {
+          <option [value]="id">{{ t.cib.offenceLabels[id] }}</option>
+        }
+      </select>
+    </div>
+
+    <button type="button" class="reset-button" (click)="resetFilters()">{{ t.cib.resetLabel }}</button>
+
+    <div class="result-count" aria-live="polite">{{ resultCountText() }}</div>
+  </div>
+
+  <div class="metrics">
+    <div class="metric-card">
+      <div class="metric-label">{{ t.cib.metricTotalLabel }}</div>
+      <div class="metric-value">{{ metrics().total }}</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">{{ t.cib.metricOpenLabel }}</div>
+      <div class="metric-value">{{ metrics().open }}</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">{{ t.cib.metricClosureRateLabel }}</div>
+      <div class="metric-value">{{ closureRateText() }}</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">{{ t.cib.metricPeakHourLabel }}</div>
+      <div class="metric-value">{{ peakHourText() }}</div>
+    </div>
+  </div>
+
+  <div class="main-grid">
+    <div class="daily-chart">
+      <app-cib-chart
+        [copy]="t.cib.chart"
+        [buckets]="monthlyBuckets()"
+        [maximum]="monthlyMaximum()"
+        [title]="t.cib.dailyChartTitle"
+        [description]="t.cib.dailyChartDescription"
+        orientation="vertical"
+      ></app-cib-chart>
+    </div>
+
+    <div class="dossiers">
+      @for (card of suspectCards(); track card.id) {
+        <button
+          type="button"
+          class="suspect-card"
+          [class.suspect-card--secondary]="card.id === 'sawito'"
+          [class.suspect-card--next-visit]="card.nextVisit"
+          [class.active]="filters().suspect === card.id"
+          [attr.aria-pressed]="filters().suspect === card.id"
+          (click)="setSuspectFilter(card.id)"
+        >
+          <div class="suspect-photo">
+            <img [src]="card.image" [alt]="card.label" />
+          </div>
+          <div class="suspect-info">
+            <div class="suspect-name">{{ card.label }}</div>
+            <div class="suspect-dossier">{{ card.dossier }}</div>
+            <div class="suspect-count">{{ card.count }}</div>
+            @if (card.nextVisit) {
+              <div class="suspect-next-visit">{{ t.cib.nextVisitLabel }}</div>
+            }
+          </div>
+        </button>
+      }
+      <p class="overlap-note">{{ t.cib.overlapNote }}</p>
+    </div>
+  </div>
+
+  <div class="charts-row">
+    <app-cib-chart
+      [copy]="t.cib.chart"
+      [buckets]="offenceBuckets()"
+      [maximum]="offenceMaximum()"
+      [title]="t.cib.offenceChartTitle"
+      [description]="t.cib.offenceChartDescription"
+      orientation="horizontal"
+    ></app-cib-chart>
+
+    <app-cib-chart
+      [copy]="t.cib.chart"
+      [buckets]="hourlyBuckets()"
+      [maximum]="hourlyMaximum()"
+      [title]="t.cib.hourlyChartTitle"
+      [description]="t.cib.hourlyChartDescription"
+      orientation="vertical"
+    ></app-cib-chart>
+  </div>
+
+  <div class="feed">
+    @if (filteredIncidents().length === 0) {
+      <div class="empty-state">
+        <div class="empty-title">{{ t.cib.emptyStateTitle }}</div>
+        <p class="empty-body">{{ t.cib.emptyStateBody }}</p>
+        <button type="button" class="reset-button" (click)="resetFilters()">{{ t.cib.resetLabel }}</button>
+      </div>
+    } @else {
+      @for (incident of visibleIncidents(); track incident.id) {
+        @let copy = t.cib.incidents[incident.id];
+        <article class="incident-card">
+          <div class="incident-header">
+            <span class="incident-id">{{ incident.id }}</span>
+            <span class="incident-date">{{ formatIncidentDate(incident.date) }} · {{ formatIncidentHour(incident.hour) }}</span>
+            <span class="incident-status" [class.open]="incident.status === 'open'">{{
+              t.cib.statusLabels[incident.status]
+            }}</span>
+          </div>
+          <h3 class="incident-title">{{ copy.title }}</h3>
+          <p class="incident-summary">{{ copy.summary }}</p>
+          <div class="incident-tags">
+            <span class="tag">{{ t.cib.offenceLabels[incident.offenceId] }}</span>
+            @if (incident.duoRelationship !== 'not-applicable') {
+              <span class="tag relationship">{{ t.cib.relationshipLabels[incident.duoRelationship] }}</span>
+            }
+          </div>
+
+          @if (incident.image) {
+            <button
+              type="button"
+              class="details-toggle"
+              [attr.aria-expanded]="expandedIncidentId() === incident.id"
+              (click)="toggleExpanded(incident.id)"
+            >
+              {{ expandedIncidentId() === incident.id ? t.cib.hideDetailsLabel : t.cib.viewDetailsLabel }}
+            </button>
+
+            @if (expandedIncidentId() === incident.id) {
+              <div class="incident-details">
+                <img [src]="incident.image" [alt]="copy.imageAlt" />
+                <div class="suspects-involved">
+                  @for (id of incident.suspectIds; track id) {
+                    <span class="tag">{{ t.cib.suspectLabels[id] }}</span>
+                  }
+                </div>
+                @if (incident.storyRoute) {
+                  <a class="case-link" [routerLink]="translation.path(incident.storyRoute)">{{
+                    t.cib.viewCaseLabel
+                  }}</a>
+                }
+              </div>
+            }
+          } @else {
+            <p class="no-evidence">{{ t.cib.noEvidenceLabel }}</p>
+          }
+        </article>
+      }
+
+      @if (hasMore()) {
+        <button type="button" class="show-more" (click)="showMore()">{{ t.cib.showMoreLabel }}</button>
+      }
+    }
+  </div>
+
+  <div class="methodology">
+    <h2>{{ t.cib.methodologyTitle }}</h2>
+    <p>{{ t.cib.methodologyBody }}</p>
+  </div>
+</div>

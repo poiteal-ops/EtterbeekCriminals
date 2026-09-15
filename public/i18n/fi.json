@@ -1,8 +1,344 @@
 {
+  "cib": {
+    "chart": {
+      "peakSummary": "Huippu: {label} — tapauksia: {count}.",
+      "emptySummary": "Nykyisillä suodattimilla ei ole tapauksia.",
+      "viewTable": "Näytä tietotaulukko",
+      "fullData": "Kaikki tiedot",
+      "category": "Luokka",
+      "incidents": "Tapaukset"
+    },
+    "title": "RIKOSTIEDUSTELUTOIMISTO",
+    "subtitle": "Yhteinen tapahtuma-arkisto — kolme tunnettua toimijaa, sama piittaamattomuus omistusoikeudesta.",
+    "archiveNote": "Kuvitteelliset tapahtumatiedot on koottu vain sisäiseen koulutukseen. Kaikki yhtäläisyydet todelliseen rikosaaltoon ovat sattumaa ja rehellisesti sanottuna hyvin heidän tyylisiään.",
+    "archiveWindowLabel": "TAPAUSARKISTO / HEINÄKUU 2024–ELOKUU 2026",
+    "seoDescription": "Selaa Criminal Intelligence Bureaun arkistoa – 52 kuvitteellista tapausta, jotka on tallennettu heinäkuusta 2024 elokuuhun 2026.",
+    "suspectFilterLabel": "SUODATA EPÄILLYN MUKAAN",
+    "offenceFilterLabel": "SUODATA RIKKOMUKSEN MUKAAN",
+    "allSuspectsLabel": "KAIKKI EPÄILLYT",
+    "allOffencesLabel": "KAIKKI RIKKOMUKSET",
+    "resetLabel": "NOLLAA SUODATTIMET",
+    "resultCountLabel": "Näytetään {count} kirjattua tapausta.",
+    "metricTotalLabel": "KIRJATUT TAPAUKSET",
+    "metricOpenLabel": "AVOIMET TAPAUKSET",
+    "metricClosureRateLabel": "PÄÄTETTYJEN OSUUS",
+    "metricPeakHourLabel": "YLEISIN ILMOITETTU TUNTI",
+    "unavailableLabel": "EI SAATAVILLA",
+    "dailyChartTitle": "KUUKAUSITTINEN TOIMINTA",
+    "dailyChartDescription": "Raportoidut tapaukset kuukaudessa arkistoikkunassa.",
+    "offenceChartTitle": "RIKKOMUSTEN MÄÄRÄT",
+    "offenceChartDescription": "Tapaukset luokittain.",
+    "hourlyChartTitle": "VUOROKAUDENAIKAINEN JAKAUMA",
+    "hourlyChartDescription": "Milloin tapauksia yleensä esiintyy vuorokauden 24 tunnin aikana.",
+    "offenceLabels": {
+      "snack-theft": "RUOKAVARKAUS",
+      "property-damage": "OMAISUUSVAHINKO",
+      "public-disturbance": "JÄRJESTYSHÄIRIÖ",
+      "obstruction": "KULUN ESTÄMINEN"
+    },
+    "statusLabels": {
+      "open": "AVOIN",
+      "closed": "PÄÄTETTY"
+    },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
+    "relationshipLabels": {
+      "allied": "LIITTOLAISET",
+      "rivals": "KILPAILIJAT",
+      "truce": "ASELEPO",
+      "not-applicable": "EI SOVELLU"
+    },
+    "dossierDescriptions": {
+      "le-criminel": "PÄÄEPÄILTY. Boston Terrier, taktinen kaulapanta, ei tunnettua katumusta. Mukana ylivoimaisessa enemmistössä kirjatuista tapauksista.",
+      "pikette": "KAUSIVIHALLINEN. Historialliset vierailut tiedostossa. Seuraava käynti on odotettavissa joulukuussa.",
+      "sawito": "MAHDOLLISTAJA, EI EPÄILTY. Läsnä useimmissa tapauksissa. Puuttumisaste: mitätön."
+    },
+    "overlapNote": "Luvut laskevat osallistumiset näytettyihin tapauksiin, rikoskumppanit mukaan lukien. Yhdessä tapauksessa voi olla useita epäiltyjä, joten summa voi ylittää tapausten määrän.",
+    "nextVisitLabel": "SEURAAVA KÄYNTI: JOULUKUU",
+    "showMoreLabel": "NÄYTÄ LISÄÄ",
+    "viewDetailsLabel": "NÄYTÄ TODISTEET",
+    "hideDetailsLabel": "PIILOTA TODISTEET",
+    "viewCaseLabel": "NÄYTÄ KOKO TAPAUSASIAKIRJA",
+    "noEvidenceLabel": "EI TODISTEITA ASIAKIRJOISSA",
+    "emptyStateTitle": "EI VASTAAVIA TAPAUKSIA",
+    "emptyStateBody": "Yksikään tapaus ei vastaa suodattimia. Valitse toinen epäilty tai rikkomus, tai nollaa suodattimet nähdäksesi koko arkiston.",
+    "methodologyTitle": "MENETELMÄ",
+    "methodologyBody": "Tämä arkisto kattaa 52 kuvitteellista tapahtumaa, jotka on kirjattu heinäkuusta 2024 elokuuhun 2026 sisäistä koulutusta varten. Luokat, tunnit ja tulokset ovat havainnollistavia eivätkä kuvasta todellista tutkimusta.",
+    "incidents": {
+      "CIB-001": {
+        "title": "Ravintolan henkilökunta vaarantuu lasketun viehätyksen vuoksi",
+        "summary": "Le Criminel työskenteli terassilla pöytä pöydältä, kunnes ravintolan henkilökunta luovutti ylimääräistä croissanttia.",
+        "imageAlt": ""
+      },
+      "CIB-002": {
+        "title": "Sohvan sauma on tutkittu pitkään",
+        "summary": "Le Criminel palautui toistuvasti yhteen löysään saumaan, kunnes täyte tuli käsiksi. Valvonta keskeytti tarkastuksen ennen kuin koko tyyny avattiin.",
+        "imageAlt": "Revennyt sauma ja näkyvä täyte sohvatyynyn saumassa."
+      },
+      "CIB-003": {
+        "title": "Ystävällinen naapuri tunnistettu pysyväksi viholliseksi",
+        "summary": "Iäkäs naapuri tervehti Le Criminel ystävällisesti yhteishallissa. Le Criminel vastasi samalla henkilökohtaisella vihamielisyydellä, jonka hän varaa jokaiseen kohtaamiseen tämän täysin viattoman miehen kanssa.",
+        "imageAlt": ""
+      },
+      "CIB-004": {
+        "title": "Huoneiston käytävä varattu lähdön aikana",
+        "summary": "Le Criminel istuutui asunnon oven ja hissin väliin päättäessään, oliko retki hyväksyttävä. Kaikki muut odottivat päätöstä.",
+        "imageAlt": "Le Criminel hihnassa aivan laatoitetun eteisen sisäpuolella."
+      },
+      "CIB-005": {
+        "title": "Leipä siirretty suojelusäilöön",
+        "summary": "Syytetty kieltäytyi nimeämästä alkuperäistä omistajaa. Murut olivat lausunnon kanssa ristiriidassa.",
+        "imageAlt": "Puolikas limppu keittiön lattialla, toinen pää näkyvästi jyrsitty."
+      },
+      "CIB-006": {
+        "title": "Puhelinkuori halkesi harkitsemattomassa kuvauksessa",
+        "summary": "Sawito yritti selfietä hyppäävän koiran kanssa ja pudotti puhelimen talon ainoalle laattalattialle. Kuva muuten onnistui.",
+        "imageAlt": "Sawito ottaa selfietä kameraa kohti hyppäävän koiran kanssa."
+      },
+      "CIB-007": {
+        "title": "Sukutapaaminen keskeytyi pyytämättömään mielipiteeseen",
+        "summary": "Kohde tunkeutui muiden keskusteluun ja haukkui riittävän kovaa lopettaakseen sen. Keskustelu loppui.",
+        "imageAlt": "Le Criminel istuu juhlallisesti odottamassa tuomiota."
+      },
+      "CIB-008": {
+        "title": "Oviaukko tarkoituksella tukittu toimituksen aikana",
+        "summary": "Sawito seisoi lähetin tiellä ja pohti pitkään allekirjoituksen tarvetta. Sitä ei tarvittu. Hän jäi silti seisomaan.",
+        "imageAlt": ""
+      },
+      "CIB-009": {
+        "title": "Aamiaispaahtoleipä poistettiin lyhyen häiriötekijän aikana",
+        "summary": "Käännetty taaksepäin loi alle kolmen sekunnin aukon. Le Criminel käytti sitä poistaakseen paahtoleivän pöydän reunalta ja vetäytyäkseen tuolin alle.",
+        "imageAlt": ""
+      },
+      "CIB-010": {
+        "title": "Toinen kenkä aloitti aktiivisen pelin",
+        "summary": "Le Criminel valitsi äskettäin poistetun kengän, kantoi sen olohuoneeseen ja työsti nauhoja, kunnes puuttuminen tuli väistämättä.",
+        "imageAlt": ""
+      },
+      "CIB-011": {
+        "title": "Naapuri löydettiin suljetun asunnon oven kautta",
+        "summary": "Jalanjäljet ​​yhteiskäytävällä tunnistettiin oikein mukavaksi iäkkääksi naapuriksi. Le Criminel aloitti tavanomaisen protestin ennen kuin mies oli päässyt tasanteelle.",
+        "imageAlt": ""
+      },
+      "CIB-012": {
+        "title": "Lomavalmistelut viivästyivät ohjaajan päättämättömyyden vuoksi",
+        "summary": "Sawito harkitsi uudelleen yhtä koristetta, joka oli tarpeeksi pitkä estääkseen asunnon käytävän kaikilta muilta.",
+        "imageAlt": ""
+      },
+      "CIB-013": {
+        "title": "Parmesaanipala poistettu kokonaan",
+        "summary": "Omistajan ollessa suihkussa Le Criminel varasti kokonaisen lohkon parmesaania ja söi sen sängyllä. Murut ja öljyjäljet ​​vahvistivat sijainnin kiistattomasti.",
+        "imageAlt": ""
+      },
+      "CIB-014": {
+        "title": "Kuluneet kengät tarkistettiin toisessa tarkastuksessa",
+        "summary": "Le Criminel kantoi kengän pois ja työsti nauhoja, kunnes puuttuminen tuli väistämättä.",
+        "imageAlt": "Yksi lenkkari makaa nurmikolla näkyvissä vaurioissa."
+      },
+      "CIB-015": {
+        "title": "Ensimmäinen Pikette havainto sisältää välittömän ruoan tarkastuksen",
+        "summary": "Pikette saapui ensimmäiselle tallennetulle vierailulleen, tarkasti ruokakulhot ja käsitteli kaikkea, joka oli käsillä, yhteisenä omaisuutena.",
+        "imageAlt": "Pikette istuu asunnon ikkunalaudalla ruokakulhojen vieressä."
+      },
+      "CIB-016": {
+        "title": "Ensimmäinen tapaaminen synnyttää välittömän keskinäisen vihamielisyyden",
+        "summary": "Le Criminel ja Pikette vaihtoivat varoituksia ja viettivät vierailun loppuosan tarkkaillen toisiaan sohvan vastakkaisista päistä.",
+        "imageAlt": "Pikette ja Le Criminel jakavat sohvan ja katsovat toisiaan."
+      },
+      "CIB-017": {
+        "title": "Pudonnut makkara pysäytetty ennen toipumista",
+        "summary": "Makkara saavutti lattian ja Le Criminel saavutti sen ensimmäisenä. Todisteet nieltiin ennen kuin mitään merkittävää toipumispyrkimystä voitiin aloittaa.",
+        "imageAlt": ""
+      },
+      "CIB-018": {
+        "title": "Kenkäleikkaus leviää sohvalle",
+        "summary": "Le Criminel kantoi vangitun kengän sohvalle ja käytti käsinojaa vipuvaikutuksena. Kenkä, verhoilu ja kotitalouden kärsivällisyys kärsivät kaikki vaurioita.",
+        "imageAlt": "Lähikuva kynnenjäljistä sohvan käsinojassa."
+      },
+      "CIB-019": {
+        "title": "Naapurin ylitystä valvottiin sohvalta",
+        "summary": "Le Criminel huomasi vanhuksen naapurin asunnon ikkunasta ja seurasi hänen etenemistä pihan halki jatkuvalla paheksunnalla.",
+        "imageAlt": ""
+      },
+      "CIB-020": {
+        "title": "Keittiöön pääsy vaaditaan ruoanvalmistuksen aikana",
+        "summary": "Le Criminel miehitti kapean keittiön sisäänkäynnin ja tarkkaili jokaista liikettä tiskin ja pöydän välillä. Toistuvat poistoyritykset tuottivat välittömiä palautuksia.",
+        "imageAlt": ""
+      },
+      "CIB-021": {
+        "title": "Lounas asetettu jatkuvan valvonnan alaisena",
+        "summary": "Le Criminel seurasi lautasta saapumisesta viimeiseen puremiseen. Jokainen haarukan liike tuotti uuden siirtopyynnön.",
+        "imageAlt": "Le Criminel katselemassa ruokaa läheltä ulkokahvilan pöydän vierestä."
+      },
+      "CIB-022": {
+        "title": "Lukulasit rikottu päälle istumalla",
+        "summary": "Sawiton vain hetkeksi käsinojalle jättämät lasit löytyivät tuolin alta toinen linssi irti. Hän syyttää tuolia.",
+        "imageAlt": "Sawito, silmälasit päässä, poski poskea vasten koiran kanssa."
+      },
+      "CIB-023": {
+        "title": "Pikette palaa ja vihollisuudet jatkuvat välittömästi",
+        "summary": "Toinen tallennettu käynti alkoi siitä, mihin ensimmäinen päättyi: molemmat eläimet vaativat samaa sohvaaluetta ja hylkäsivät toisen asukkaan.",
+        "imageAlt": "Pikette ja Le Criminel istuivat sohvalla vierailun aikana."
+      },
+      "CIB-024": {
+        "title": "Sohvakäytävä suljettiin kahden eläimen välikohtauksen aikana",
+        "summary": "Pikette piti sohvan toisesta päästä, kun taas Le Criminel piti toista, kunnes keittiön ruoka päätti riidan.",
+        "imageAlt": ""
+      },
+      "CIB-025": {
+        "title": "Croissantin murusia, jotka on hankittu vaarantuneelta todistajalta",
+        "summary": "Ravintolan henkilökunta tulkitsi jälleen pitkittyneen tuijotuksen nälkäksi ja toimitti croissantinpalasia. Le Criminel hyväksyi siirron korjaamatta väärinkäsitystä.",
+        "imageAlt": ""
+      },
+      "CIB-026": {
+        "title": "Ruokapussi etsittiin heti toimituksen jälkeen",
+        "summary": "Le Criminel työnsi päänsä ostoskassiin ennen kuin se oli purettu kokonaan. Vihannekset hyväksyttiin; kaikki muu sisältö pysyi kohteina.",
+        "imageAlt": ""
+      },
+      "CIB-027": {
+        "title": "Illallisen jälkeinen kaasutapahtuma tyhjentää olohuoneen",
+        "summary": "Ilman riittävästi kasviksia tarjoiltua ateriaa seurasi ilmakehä, joka oli tarpeeksi vakava tyhjentämään välittömän istuinalueen. Luokitus päivitetty terrori-aseeksi.",
+        "imageAlt": ""
+      },
+      "CIB-028": {
+        "title": "Lähtö viivästyi puuttuvien avainten vuoksi",
+        "summary": "Sawito tutki jokaista näkyvää pintaa ennen kuin löysi avaimet taskusta, jonka hän oli jo tarkistanut.",
+        "imageAlt": ""
+      },
+      "CIB-029": {
+        "title": "Vihannesten jakaminen estää eskaloitumisen",
+        "summary": "Illallinen sisälsi hyväksyttävän kasviskomponentin. Le Criminel söi ilman protestia, eikä kotitalous kirjannut mitään myöhempää kaasuhätätilannetta.",
+        "imageAlt": ""
+      },
+      "CIB-030": {
+        "title": "Kengännauha lyhennetty valvomattoman käytön aikana",
+        "summary": "Le Criminel jätettiin yksin kengän kanssa, joka oli tarpeeksi pitkä vetääkseen nauhan ulos ja pureskellakseen toisesta päästään läpi. Kenkä säilyy teknisesti puettavana.",
+        "imageAlt": ""
+      },
+      "CIB-031": {
+        "title": "Kolmas Pikette-käynti jatkaa vakiintunutta riitaa",
+        "summary": "Pikette palautti ja Le Criminel käsitteli saapumista keskeneräisen työn uusimisena.",
+        "imageAlt": ""
+      },
+      "CIB-032": {
+        "title": "Ensisijainen sohvatyyny vaadittiin vierailulle",
+        "summary": "Pikette valitsi keskityynyn ja pysyi siellä huolimatta yrityksistä palauttaa normaali istuinjärjestely.",
+        "imageAlt": "Pikette istuu keskisohvan tyynyllä vierailun aikana."
+      },
+      "CIB-033": {
+        "title": "Parmesaanipakkaus laukaisee toistuvan rikoksentekijän vastauksen",
+        "summary": "Uuden parmesaanipalan avaaminen toi Le Criminel keittiöön nopeasti. Juusto pysyi kiinni eikä sitä koskaan jätetty suihkun ulottuville.",
+        "imageAlt": ""
+      },
+      "CIB-034": {
+        "title": "Kenkien vuori poistettu asunnon sisältä",
+        "summary": "Le Criminel kantoi kengän sisäänkäynnistä olohuoneeseen ja veti ulos tarpeeksi vuorausta tehdäkseen vaurion selväksi.",
+        "imageAlt": "Le Criminel seisomassa hihnassa ulkona kävelyn aikana."
+      },
+      "CIB-035": {
+        "title": "Kahvilan henkilökunta lähestyi luvattomia leivonnaisia",
+        "summary": "Le Criminel ei huomioinut omaa ohjaajaansa ja keskittyi leivonnaisia kantavaan ravintolahenkilökuntaan. Viehätyshyökkäys tuotti ylimääräisen croissantinpalan.",
+        "imageAlt": ""
+      },
+      "CIB-036": {
+        "title": "Oviaukko täyspitkänä tukossa molempiin suuntiin",
+        "summary": "Kohde valitsi oven tarkan keskikohdan maksimaalisen peittävään uneen. Liikenne ohjattiin kiertoon kahdeksi tunniksi.",
+        "imageAlt": "Le Criminel pitkällään käytävän lattialla."
+      },
+      "CIB-037": {
+        "title": "Toinen limppu kadonnut lähes samoissa oloissa",
+        "summary": "Ei arkiston ensimmäinen leipätapaus eikä luultavasti viimeinen. Tekniikkaa on selvästi hiottu.",
+        "imageAlt": "Toinen limppu lattialla, samoin jyrsitty."
+      },
+      "CIB-038": {
+        "title": "Parmesaanijäämiä löydetty vuodevaatteista",
+        "summary": "Sängyn jälkitarkastuksessa huopaan löydettiin juustomuruja. Todisteet ovat yhdenmukaisia ​​aikaisemman kokonaisen parmesaanivarkauden kanssa.",
+        "imageAlt": "Le Criminel nukkuu kerälle käpertyneenä paksun peiton alla sohvalla."
+      },
+      "CIB-039": {
+        "title": "Lähikuva Pikette laukaisee uuden protestin",
+        "summary": "Pikette pysyi paikallaan valvontavalokuvaa varten, kun taas Le Criminel vastusti huoneen toiselta puolelta.",
+        "imageAlt": "Le Criminel katsoi jyrkästi ylös matolta vierailun aikana."
+      },
+      "CIB-040": {
+        "title": "Väliaikainen ikkunaliitto havaittiin helmikuun vierailun aikana",
+        "summary": "Molemmat eläimet keskeyttivät vihollisuudet katsellakseen liikettä sohvalta. Yhteistyö loppui, kun ikkuna hiljeni.",
+        "imageAlt": "Pikette ja Le Criminel jakavat sohvan väliaikaisen liiton aikana."
+      },
+      "CIB-041": {
+        "title": "Aamiainen yritettiin saada lähietäisyydeltä",
+        "summary": "Le Criminel säilytti asennon aamiaispöydän vieressä ja seurasi jokaista leivonnaisen liikettä. Croissant säilyi ehjänä vain jatkuvan valvonnan ansiosta.",
+        "imageAlt": "Le Criminel tuijottaa itsepintaisesti ulkopöydälle jätettyä vohvelia."
+      },
+      "CIB-042": {
+        "title": "Kenkien säilytys rikki valojen sammuttua",
+        "summary": "Olohuoneesta löydettiin ennen nukkumaanmenoa poistettu kenkä märillä nauhoilla ja tuoreilla hampaan jälkillä. Le Criminel nukkui sen vieressä, kun häntä kysyttiin.",
+        "imageAlt": ""
+      },
+      "CIB-043": {
+        "title": "Naapuri saa toisen vihamielisen vastaanoton",
+        "summary": "Iäkäs naapuri tervehti rauhallisesti yhteisovella. Le Criminel vastasi ikään kuin pitkään jatkunut henkilökohtainen riita olisi juuri uusittu.",
+        "imageAlt": "Le Criminel istuu valppaana hihnassa lähellä katua."
+      },
+      "CIB-044": {
+        "title": "Illallinen vietiin sängylle luvatonta tarkastusta varten",
+        "summary": "Le Criminel seurasi ruokaa makuuhuoneeseen ja yritti tarkastaa lautasen patjan korkeudella. Pääsy evättiin ennen kuin parmesaaniennakkotapaus ehti toistua.",
+        "imageAlt": "Le Criminel makaa selällään poikittain sängyllä vieden koko leveyden."
+      },
+      "CIB-045": {
+        "title": "Viimeinen viipale otettu kyseenalaisella tasapainotusperusteella",
+        "summary": "Sawito otti viimeisen viipaleen ja selitti pyytämättä vain tasoittavansa. Kukaan ei ollut pyytänyt.",
+        "imageAlt": ""
+      },
+      "CIB-046": {
+        "title": "Toinen kenkä poistettu asunnon sisäänkäynnistä",
+        "summary": "Le Criminel siirsi kengän olohuoneeseen ja aloitti kantapään käsittelyn epätavallisen hiljaisena aikana.",
+        "imageAlt": "Le Criminel tutkii kivireunusta ulkona kävelyn aikana."
+      },
+      "CIB-047": {
+        "title": "Harvinainen hiljainen sohvatauko tallennettu Pikette vierailun aikana",
+        "summary": "Le Criminel ja Pikette jakoivat sohvan ilman riitaa tarpeeksi kauan, jotta kotitalous pystyi dokumentoimaan poikkeaman.",
+        "imageAlt": ""
+      },
+      "CIB-048": {
+        "title": "Yhteinen sohvan käyttö ei jätä hyödyllistä istuinta",
+        "summary": "Pikette ja Le Criminel asettuivat käytettävissä olevien tyynyjen päälle ja pysyivät liittolaisina kaikkia yrittäjiä vastaan.",
+        "imageAlt": ""
+      },
+      "CIB-049": {
+        "title": "Lounas asetettu jatkuvan valvonnan alaisena",
+        "summary": "Le Criminel säilytti visuaalisen kosketuksen lautasen kanssa saapumisesta viimeiseen puremiseen. Jokainen haarukan liike tuotti uuden siirtopyynnön.",
+        "imageAlt": "Le Criminel katsomassa pastalautasta ulkopöydän alta."
+      },
+      "CIB-050": {
+        "title": "Kenkien tarkastusta jatketaan, kun todisteita on vielä käytetty",
+        "summary": "Le Criminel painoi kasvonsa kenkää vasten, testasi nauhoja ja yritti aloittaa tavanomaisen purkuprosessin ennen kuin se keskeytettiin.",
+        "imageAlt": "Le Criminel painaa sensuroituja kasvojaan kulunutta kenkää vasten ulkopöydän ääressä."
+      },
+      "CIB-051": {
+        "title": "Parvekeritilä estää toisen kyyhkysen takaa-ajoa",
+        "summary": "Le Criminel lukittui liikkumaan parvekkeen ulkopuolella, kun taas suuri turvaritilä teki juuri sen, mitä se oli asennettu: piti takaa-ajon asunnon rajan sisällä.",
+        "imageAlt": "Le Criminel tuijottaa pizzalaatikon yli täyskorkean parvekkeen turvaritilän vieressä."
+      },
+      "CIB-052": {
+        "title": "Ravintolan henkilökunta vaarantuu lasketun viehätyksen vuoksi",
+        "summary": "Le Criminel työskenteli terassilla pöytä pöydältä, kunnes ravintolan henkilökunta luovutti ylimääräistä croissanttia. Leikkaus perustui täysin katsekontaktiin ja nälänhätään.",
+        "imageAlt": "Le Criminel katsomassa croissanttia ulkokahvilan pöydän vierestä."
+      }
+    },
+    "cibKicker": "NYT TARKASTELTAVISSA",
+    "cibTitle": "RIKOSTIEDUSTELUTOIMISTO",
+    "cibBody": "Viisikymmentäkaksi tapausta. Kolme epäiltyä. Yksi yhteinen arkistokaappi. Viittaa koko toimintaan.",
+    "cibCta": "AVAA ARKISTO"
+  },
   "common": {
     "fallbackBanner": "Pahoittelut, työstämme asiaa — toistaiseksi saatavilla vain englanniksi."
   },
   "nav": {
+    "cib": "TIEDUSTELU",
     "home": "KOTI",
     "about": "TIETOA",
     "story": "RIKOLLISEN TARINA",
@@ -341,7 +677,7 @@
   },
   "blog": {
     "title": "TAPAUSPÄIVÄKIRJA",
-    "subtitle": "25 kuukausittaista merkintää — kaksi vuotta jatkuvaa valvontaa, tapaus 001-CR pysyy avoimena"
+    "subtitle": "26 kuukausittaista merkintää — kaksi vuotta jatkuvaa valvontaa, tapaus 001-CR pysyy avoimena"
   },
   "blogPosts": [
     {
@@ -517,6 +853,13 @@
       "body": "Useita päiviä kestänyt hellevaroitus pysäytti Kohteen täysin — Kohde makasi olohuoneen matolla raajat oudoissa kulmissa, eikä syyllistynyt yhteenkään rikkomukseen pisimmän yhtäjaksoisen ajanjakson aikana valvonnan alkamisen jälkeen. Hiljaisuus päättyi heti sään muuttuessa: Kohde siirtyi ruohikolle, julisti hylättyjen pullojen kätkön itse luomakseen rikospaikaksi ja jatkoi täysimittaista toimintaansa ilman selitystä. Täydellinen raportti on arkistoitu erikseen nimellä ”Helleaallon tyyni hetki.”",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "PAIKALLISET PUISTOT VAARANTUNEET",
+      "body": "Kohde pysyi Brysselissä koko elokuun. Suotuisa sää mahdollisti toistuvat operaatiot paikallisissa puistoissa, joita seurasi yleensä croissantinpalojen luvaton haltuunotto ja nauttiminen. Partiointitiheys kasvoi. Leivonnaisten suojaus on edelleen riittämätön.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

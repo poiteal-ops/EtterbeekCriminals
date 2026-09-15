@@ -131,6 +131,43 @@
   color: #cfcfcc;
 }
 
+.cib-teaser {
+  max-width: 860px;
+  margin: 0 auto 64px;
+  padding: 32px;
+  border-block: 1px solid #2c2c2c;
+  text-align: center;
+  overflow-wrap: anywhere;
+
+  h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(26px, 5vw, 38px);
+    color: #eeeeec;
+  }
+
+  p {
+    margin: 16px 0 24px;
+    line-height: 1.7;
+    color: #cfcfcc;
+  }
+
+  a {
+    display: inline-block;
+    padding: 12px 18px;
+    border: 1px solid #cfcfcc;
+    color: #eeeeec;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      background: #eeeeec;
+      color: #0c0c0c;
+    }
+  }
+}
+
 .promo-wrap {
   max-width: 700px;
   margin: 0 auto;

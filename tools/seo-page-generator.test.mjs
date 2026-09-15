@@ -3,7 +3,6 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
-import ts from 'typescript';
 
 import { loadEnglishContent } from './generate-seo-pages.mjs';
 import {
@@ -61,6 +60,10 @@ function content(prefix = 'EN') {
         slug: 'wanted-tee',
       },
     ],
+    cib: {
+      title: `${prefix} CIB Title`,
+      seoDescription: `${prefix} cib description`,
+    },
   };
 }
 
@@ -93,8 +96,26 @@ function protectedTermsByPath(value, currentPath = '', result = {}) {
 test('buildPages covers every route type and excludes shop entries without slugs', () => {
   assert.deepEqual(
     buildPages(content()).map((page) => page.route),
-    ['', 'about', 'story', 'pigeon', 'blog', 'shop', 'shop/wanted-tee'],
+    ['', 'about', 'story', 'criminal-intelligence', 'pigeon', 'blog', 'shop', 'shop/wanted-tee'],
   );
+});
+
+test('buildPages adds a fixed criminal-intelligence page sourced from content.cib title/seoDescription', () => {
+  const pages = buildPages(content('EN'));
+  const cibPages = pages.filter((page) => page.route === 'criminal-intelligence');
+  assert.equal(cibPages.length, 1, 'expected exactly one criminal-intelligence route');
+  const [cibPage] = cibPages;
+  assert.equal(cibPage.title, 'EN CIB Title');
+  assert.equal(cibPage.description, 'EN cib description');
+});
+
+test('buildPages omits criminal-intelligence when content.cib is absent (older/incomplete fixtures)', () => {
+  const withoutCib = content();
+  delete withoutCib.cib;
+  const routes = buildPages(withoutCib).map((page) => page.route);
+  assert.ok(!routes.includes('criminal-intelligence'));
+  // Every other fixed/derived page type must still build normally without content.cib.
+  assert.deepEqual(routes, ['', 'about', 'story', 'pigeon', 'blog', 'shop', 'shop/wanted-tee']);
 });
 
 test('pageUrl uses unprefixed English and trailing-slash localized URLs', () => {
@@ -170,15 +191,25 @@ test('generateSite writes all locale roots and routes but no unsupported locale'
       distDir,
     });
 
-    assert.equal(result.pageCount, 14);
+    assert.equal(result.pageCount, 16);
     assert.ok(fs.existsSync(path.join(distDir, 'index.html')));
     assert.ok(fs.existsSync(path.join(distDir, 'about', 'index.html')));
     assert.ok(fs.existsSync(path.join(distDir, 'fr', 'index.html')));
     assert.ok(fs.existsSync(path.join(distDir, 'fr', 'about', 'index.html')));
+    assert.ok(fs.existsSync(path.join(distDir, 'criminal-intelligence', 'index.html')));
+    assert.ok(fs.existsSync(path.join(distDir, 'fr', 'criminal-intelligence', 'index.html')));
     assert.ok(!fs.existsSync(path.join(distDir, 'ga')));
     assert.match(
       fs.readFileSync(path.join(distDir, 'sitemap.xml'), 'utf8'),
       /<loc>https:\/\/thieffrycriminals\.be\/fr\/about\/<\/loc>/,
+    );
+    assert.match(
+      fs.readFileSync(path.join(distDir, 'sitemap.xml'), 'utf8'),
+      /<loc>https:\/\/thieffrycriminals\.be\/criminal-intelligence\/<\/loc>/,
+    );
+    assert.match(
+      fs.readFileSync(path.join(distDir, 'sitemap.xml'), 'utf8'),
+      /<loc>https:\/\/thieffrycriminals\.be\/fr\/criminal-intelligence\/<\/loc>/,
     );
     assert.equal(
       fs.readFileSync(path.join(distDir, 'robots.txt'), 'utf8'),
@@ -187,6 +218,89 @@ test('generateSite writes all locale roots and routes but no unsupported locale'
   } finally {
     fs.rmSync(distDir, { recursive: true, force: true });
   }
+});
+
+test('generateSite renders localized CIB title/description, canonical URL, hreflang alternates, and sitemap entries', () => {
+  const distDir = fs.mkdtempSync(path.join(os.tmpdir(), 'thieffry-seo-'));
+  try {
+    generateSite({
+      template,
+      contentByLocale: { en: content('EN'), fr: content('FR') },
+      distDir,
+    });
+
+    const enHtml = fs.readFileSync(
+      path.join(distDir, 'criminal-intelligence', 'index.html'),
+      'utf8',
+    );
+    assert.match(enHtml, /<title>EN CIB Title - The Thieffry Criminals<\/title>/);
+    assert.match(enHtml, /content="EN cib description"/);
+    assert.match(
+      enHtml,
+      /<link rel="canonical" href="https:\/\/thieffrycriminals\.be\/criminal-intelligence\/">/,
+    );
+    assert.match(
+      enHtml,
+      /<link rel="alternate" hreflang="fr" href="https:\/\/thieffrycriminals\.be\/fr\/criminal-intelligence\/">/,
+    );
+    assert.match(
+      enHtml,
+      /<link rel="alternate" hreflang="x-default" href="https:\/\/thieffrycriminals\.be\/criminal-intelligence\/">/,
+    );
+
+    const frHtml = fs.readFileSync(
+      path.join(distDir, 'fr', 'criminal-intelligence', 'index.html'),
+      'utf8',
+    );
+    assert.match(frHtml, /<title>FR CIB Title - The Thieffry Criminals<\/title>/);
+    assert.match(frHtml, /content="FR cib description"/);
+    assert.match(
+      frHtml,
+      /<link rel="canonical" href="https:\/\/thieffrycriminals\.be\/fr\/criminal-intelligence\/">/,
+    );
+    assert.match(
+      frHtml,
+      /<link rel="alternate" hreflang="en" href="https:\/\/thieffrycriminals\.be\/criminal-intelligence\/">/,
+    );
+
+    const sitemap = fs.readFileSync(path.join(distDir, 'sitemap.xml'), 'utf8');
+    assert.match(sitemap, /<loc>https:\/\/thieffrycriminals\.be\/criminal-intelligence\/<\/loc>/);
+    assert.match(
+      sitemap,
+      /<loc>https:\/\/thieffrycriminals\.be\/fr\/criminal-intelligence\/<\/loc>/,
+    );
+  } finally {
+    fs.rmSync(distDir, { recursive: true, force: true });
+  }
+});
+
+test('renderPage escapes CIB-style titles/descriptions containing &, <, and " so raw HTML never leaks through', () => {
+  const page = {
+    route: 'criminal-intelligence',
+    title: 'Archive & Dossier <Redacted> "Files"',
+    description: 'Track suspects & incidents <redacted> "details"',
+    image: 'assets/images/dog-floor-portrait.jpg',
+  };
+  const html = renderPage(template, {
+    locale: 'en',
+    page,
+    canonicalUrl: pageUrl('en', page.route),
+    alternates: [{ locale: 'en', url: pageUrl('en', page.route) }],
+  });
+
+  assert.doesNotMatch(html, /<Redacted>/);
+  assert.match(
+    html,
+    /<title>Archive &amp; Dossier &lt;Redacted&gt; "Files" - The Thieffry Criminals<\/title>/,
+  );
+  assert.match(
+    html,
+    /<meta name="description" content="Track suspects &amp; incidents &lt;redacted&gt; &quot;details&quot;">/,
+  );
+  assert.match(
+    html,
+    /<meta property="og:title" content="Archive &amp; Dossier &lt;Redacted&gt; &quot;Files&quot; - The Thieffry Criminals">/,
+  );
 });
 
 test('real localized content only ever produces routes that also exist in English, and never more of them', async () => {

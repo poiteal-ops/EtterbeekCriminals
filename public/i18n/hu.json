@@ -1,8 +1,344 @@
 {
+  "cib": {
+    "chart": {
+      "peakSummary": "Csúcs: {label} — esetek: {count}.",
+      "emptySummary": "Nincsenek esetek a jelenlegi szűrőkhöz.",
+      "viewTable": "Adattábla megtekintése",
+      "fullData": "Teljes adatok",
+      "category": "Kategória",
+      "incidents": "Esetek"
+    },
+    "title": "BŰNÜGYI HÍRSZERZŐ IRODA",
+    "subtitle": "Összehangolt eseményarchívum — három ismert szereplő, közös megvetés a tulajdonjog iránt.",
+    "archiveNote": "Kizárólag belső képzéshez összeállított, kitalált eseményadatok. Bármilyen hasonlóság valódi bűnözési hullámmal véletlen, és őszintén szólva nagyon is rájuk vall.",
+    "archiveWindowLabel": "ÜGYARCHÍVUM / 2024. JÚLIUS–2026. AUG",
+    "seoDescription": "Böngésszen a Criminal Intelligence Bureau archívumában – 52 kitalált incidens, amelyeket 2024 júliusa és 2026 augusztusa között rögzítettek.",
+    "suspectFilterLabel": "SZŰRÉS GYANÚSÍTOTTRA",
+    "offenceFilterLabel": "SZŰRÉS VÉTSÉGRE",
+    "allSuspectsLabel": "MINDEN GYANÚSÍTOTT",
+    "allOffencesLabel": "MINDEN VÉTSÉG",
+    "resetLabel": "SZŰRŐK TÖRLÉSE",
+    "resultCountLabel": "{count} rögzített eset látható.",
+    "metricTotalLabel": "RÖGZÍTETT ESETEK",
+    "metricOpenLabel": "NYITOTT ÜGYEK",
+    "metricClosureRateLabel": "LEZÁRÁSI ARÁNY",
+    "metricPeakHourLabel": "LEGGYAKORIBB JELENTETT ÓRA",
+    "unavailableLabel": "NEM ELÉRHETŐ",
+    "dailyChartTitle": "HAVI TEVÉKENYSÉG",
+    "dailyChartDescription": "Havonta jelentett incidensek az archívum ablakában.",
+    "offenceChartTitle": "VÉTSÉGEK ÖSSZESÍTÉSE",
+    "offenceChartDescription": "Esetek kategória szerint.",
+    "hourlyChartTitle": "NAPSZAK SZERINTI ELOSZLÁS",
+    "hourlyChartDescription": "Mikor fordulnak elő jellemzően esetek a nap 24 órájában.",
+    "offenceLabels": {
+      "snack-theft": "ÉTELLOPÁS",
+      "property-damage": "RONGÁLÁS",
+      "public-disturbance": "CSENDHÁBORÍTÁS",
+      "obstruction": "AKADÁLYOZÁS"
+    },
+    "statusLabels": {
+      "open": "NYITOTT",
+      "closed": "LEZÁRT"
+    },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
+    "relationshipLabels": {
+      "allied": "SZÖVETSÉGESEK",
+      "rivals": "VETÉLYTÁRSAK",
+      "truce": "FEGYVERSZÜNET",
+      "not-applicable": "NEM ALKALMAZHATÓ"
+    },
+    "dossierDescriptions": {
+      "le-criminel": "FŐ GYANÚSÍTOTT. Boston Terrier, taktikai nyakörv, ismert megbánás nélkül. A rögzített esetek túlnyomó többségében jelen van.",
+      "pikette": "SZEZONÁLIS ŐSELLENSÉG. Történelmi látogatások az aktában. A következő látogatás decemberben várható.",
+      "sawito": "ELŐSEGÍTŐ, NEM GYANÚSÍTOTT. A legtöbb esetnél jelen van. Beavatkozási arány: elhanyagolható."
+    },
+    "overlapNote": "A számok a megjelenített esetekben való részvételeket jelzik, a bűntársakat is beleértve. Egy esetben több gyanúsított szerepelhet, ezért az összeg meghaladhatja az esetek számát.",
+    "nextVisitLabel": "KÖVETKEZŐ LÁTOGATÁS: DECEMBER",
+    "showMoreLabel": "TOVÁBBIAK",
+    "viewDetailsLabel": "BIZONYÍTÉKOK MEGTEKINTÉSE",
+    "hideDetailsLabel": "BIZONYÍTÉKOK ELREJTÉSE",
+    "viewCaseLabel": "TELJES ÜGYIRAT MEGTEKINTÉSE",
+    "noEvidenceLabel": "NINCS BIZONYÍTÉK AZ AKTÁBAN",
+    "emptyStateTitle": "NINCS EGYEZŐ ESET",
+    "emptyStateBody": "Egyetlen eset sem felel meg a szűrőknek. Válasszon másik gyanúsítottat vagy vétséget, vagy törölje a szűrőket a teljes archívumhoz.",
+    "methodologyTitle": "MÓDSZERTAN",
+    "methodologyBody": "Ez az archívum 52 kitalált eseményt tartalmaz, amelyeket 2024 júliusa és 2026 augusztusa között naplóztak belső képzési célokra. A kategóriák, órák és eredmények illusztrációk, és nem tükrözik a tényleges vizsgálatot.",
+    "incidents": {
+      "CIB-001": {
+        "title": "Az étterem személyzetét veszélyeztette a kiszámított báj",
+        "summary": "Le Criminel a teraszon asztalról asztalra dolgozott, amíg az étterem személyzete fel nem adta az extra croissant-t.",
+        "imageAlt": ""
+      },
+      "CIB-002": {
+        "title": "A heverő varrás hosszan tartó vizsgálaton esett át",
+        "summary": "Le Criminel ismételten visszatért egy laza varráshoz, amíg a töltelék hozzáférhetővé nem vált. A felügyelet leállította az ellenőrzést, mielőtt a teljes párnát kinyitották volna.",
+        "imageAlt": "Elszakadt varrás és kilátszó bélés egy kanapépárna varrásánál."
+      },
+      "CIB-003": {
+        "title": "Barátságos szomszéd állandó ellenségként azonosították",
+        "summary": "Az idős szomszéd kedvesen üdvözölte Le Criminel a közösségi teremben. Le Criminel ugyanazzal a személyes ellenségeskedéssel válaszolt, mint amilyet minden találkozáskor fenntart ezzel a teljesen ártatlan emberrel.",
+        "imageAlt": ""
+      },
+      "CIB-004": {
+        "title": "Az apartman folyosója az induláskor foglalt",
+        "summary": "Le Criminel beült a lakásajtó és a lift közé, miközben eldöntötte, hogy elfogadható-e a kirándulás. Mindenki más az ítéletre várt.",
+        "imageAlt": "Le Criminel pórázon, közvetlenül a csempézett bejáraton belül."
+      },
+      "CIB-005": {
+        "title": "Kenyér védőőrizetbe véve",
+        "summary": "A vádlott megtagadta az eredeti tulajdonos azonosítását. A morzsák ellentmondtak a vallomásnak.",
+        "imageAlt": "Fél kenyér a konyhapadlón, egyik vége láthatóan megrágva."
+      },
+      "CIB-006": {
+        "title": "Telefontok megrepedt meggondolatlan fényképezéskor",
+        "summary": "Sawito a felugró kutyával próbált szelfizni, és a ház egyetlen járólapos padlójára ejtette a telefont. A kép egyébként jól sikerült.",
+        "imageAlt": "Sawito szelfizik a kamera felé ugró kutyával."
+      },
+      "CIB-007": {
+        "title": "Családi összejövetel kéretlen véleménnyel félbeszakítva",
+        "summary": "Az alany idegen beszélgetésbe avatkozott, és elég hangosan ugatott annak lezárásához. Lezárta.",
+        "imageAlt": "Le Criminel ünnepélyesen ül, az ítéletre várva."
+      },
+      "CIB-008": {
+        "title": "Átjáró szándékosan elzárva kézbesítés közben",
+        "summary": "Sawito a futár útjában állt, hosszan mérlegelve az aláírás szükségességét. Nem kellett. Ő mégis maradt.",
+        "imageAlt": ""
+      },
+      "CIB-009": {
+        "title": "A reggeli pirítóst egy rövid figyelemelterelés során eltávolították",
+        "summary": "A visszafordulás három másodpercnél rövidebb nyílást hozott létre. Le Criminel arra használta, hogy levegye a pirítóst az asztal széléről, és behúzódjon a szék alá.",
+        "imageAlt": ""
+      },
+      "CIB-010": {
+        "title": "A második cipő aktív játékba lépett",
+        "summary": "Le Criminel kiválasztott egy nemrég levett cipőt, bevitte a nappaliba, és addig dolgoztatta a fűzőt, amíg a beavatkozás elkerülhetetlenné vált.",
+        "imageAlt": ""
+      },
+      "CIB-011": {
+        "title": "A szomszédot egy zárt lakásajtón keresztül észlelték",
+        "summary": "A közös folyosón a lépések helyesen azonosították a kedves idős szomszédot. Le Criminel megkezdte a szokásos tiltakozást, mielőtt a férfi elérte volna a leszállást.",
+        "imageAlt": ""
+      },
+      "CIB-012": {
+        "title": "Az ünnepi előkészületeket késleltette a felvezető határozatlansága",
+        "summary": "Sawito átgondolt egy elég hosszú dekorációt ahhoz, hogy elzárja a lakás folyosóját a többiek előtt.",
+        "imageAlt": ""
+      },
+      "CIB-013": {
+        "title": "A parmezántömb teljes egészében eltávolítva",
+        "summary": "Amíg a tulajdonos zuhanyozott, Le Criminel ellopott egy egész blokk parmezánt, és megette az ágyon. A morzsák és az olajnyomok vitathatatlanul meghatározták a helyet.",
+        "imageAlt": ""
+      },
+      "CIB-014": {
+        "title": "A kopott cipő újabb ellenőrzésen esett át",
+        "summary": "Le Criminel elvitte a cipőt, és addig fűzte a fűzőket, amíg a beavatkozás elkerülhetetlenné vált.",
+        "imageAlt": "Egyetlen tornacipő hever a fűben, látható sérülésekkel."
+      },
+      "CIB-015": {
+        "title": "Az első Pikette észlelés azonnali élelmiszer-ellenőrzést tartalmaz",
+        "summary": "Pikette megérkezett első rögzített látogatására, ellenőrizte az edényeket, és mindent, ami elérhető volt, közös tulajdonként kezelt.",
+        "imageAlt": "Pikette a lakás ablakpárkányán ülve, az ételes tálak mellett."
+      },
+      "CIB-016": {
+        "title": "Az első találkozás azonnali kölcsönös ellenségeskedést vált ki",
+        "summary": "Le Criminel és Pikette figyelmeztetést váltottak, és a látogatás hátralevő részében egymást figyelték a kanapé két végéről.",
+        "imageAlt": "Pikette és Le Criminel megosztják a kanapét, miközben egymásra figyelnek."
+      },
+      "CIB-017": {
+        "title": "Leejtett kolbász elfogták a gyógyulás előtt",
+        "summary": "Egy kolbász érte el a padlót, és Le Criminel érte el először. A bizonyítékokat lenyelték, mielőtt bármilyen jelentős helyreállítási erőfeszítés megkezdődhetett volna.",
+        "imageAlt": ""
+      },
+      "CIB-018": {
+        "title": "A cipőművelet átterjed a kanapéra",
+        "summary": "Le Criminel felvitt egy elkapott cipőt a kanapéra, és a kartámaszt használta a karfára. A cipő, a kárpit és a háztartás türelme mind megsérült.",
+        "imageAlt": "Közeli kép karmolásokról a kanapé karfáján."
+      },
+      "CIB-019": {
+        "title": "A szomszéd átkelőt a kanapéról figyelték",
+        "summary": "Le Criminel észrevette az idős szomszédot a lakás ablakából, és hosszan tartó rosszallással követte haladását az udvaron.",
+        "imageAlt": ""
+      },
+      "CIB-020": {
+        "title": "Az ételkészítés során konyhabelépő szükséges",
+        "summary": "Le Criminel elfoglalta a szűk konyhabejáratot, és figyelt minden mozgást a pult és az asztal között. Az ismételt eltávolítási kísérletek azonnali eredményt hoztak.",
+        "imageAlt": ""
+      },
+      "CIB-021": {
+        "title": "Az ebéd folyamatos felügyelet alatt áll",
+        "summary": "Le Criminel követte a tányért az érkezéstől az utolsó harapásig. Minden villamozgás új áthelyezési kérelmet generált.",
+        "imageAlt": "Le Criminel közelről nézi az ételeket egy szabadtéri kávézóasztal mellett."
+      },
+      "CIB-022": {
+        "title": "Olvasószemüveg ráüléssel összetörve",
+        "summary": "Sawito csak egy másodpercre a karfára tett szemüvegét a fotel alatt találták meg kiesett lencsével. A fotelt hibáztatja.",
+        "imageAlt": "Sawito, szemüvegben, arcát a kutyáéhoz simítva."
+      },
+      "CIB-023": {
+        "title": "Pikette visszatér, és az ellenségeskedés azonnal folytatódik",
+        "summary": "A második feljegyzett látogatás ott kezdődött, ahol az első véget ért: mindkét állat ugyanazt a kanapéterületet követelte, és elutasította a másik lakót.",
+        "imageAlt": "Pikette és Le Criminel a kanapén ülnek látogatás közben."
+      },
+      "CIB-024": {
+        "title": "A kanapé átjárója bezárult egy két állat ütközése közben",
+        "summary": "Pikette tartotta a kanapé egyik végét, míg Le Criminel a másikat, amíg a konyhában elfogyasztott étel véget nem vet a vitának.",
+        "imageAlt": ""
+      },
+      "CIB-025": {
+        "title": "Egy kompromittált tanútól szerzett croissant-morzsa",
+        "summary": "Az étterem személyzete ismét éhségként értelmezte a hosszan tartó bámészkodást, és croissant-darabokat szállított. Le Criminel a félreértés kijavítása nélkül elfogadta az átvitelt.",
+        "imageAlt": ""
+      },
+      "CIB-026": {
+        "title": "Az élelmiszertáskát a szállítás után azonnal átkutatták",
+        "summary": "Le Criminel bedugta a fejét a bevásárlótáskába, mielőtt azt teljesen kicsomagolta volna. A zöldségféléket jóváhagyták; minden más tartalom célpont maradt.",
+        "imageAlt": ""
+      },
+      "CIB-027": {
+        "title": "A vacsora utáni gázüzlet megtisztítja a nappalit",
+        "summary": "A kellő mennyiségű zöldség nélkül felszolgált étkezést egy olyan súlyos légköri esemény követte, amely kiürítette a közvetlen ülőhelyet. A besorolás terrorfegyverré frissítve.",
+        "imageAlt": ""
+      },
+      "CIB-028": {
+        "title": "Az indulás hiányzó kulcskészlet miatt késik",
+        "summary": "Sawito minden látható felületet átkutatott, mielőtt megtalálta a kulcsokat a már ellenőrzött zsebben.",
+        "imageAlt": ""
+      },
+      "CIB-029": {
+        "title": "A zöldségkiosztás megakadályozza az eszkalációt",
+        "summary": "A vacsora elfogadható növényi összetevőt tartalmazott. Le Criminel tiltakozás nélkül evett, és a háztartás nem rögzített további gázvészhelyzetet.",
+        "imageAlt": ""
+      },
+      "CIB-030": {
+        "title": "A cipőfűző felügyelet nélküli hozzáférés során lerövidült",
+        "summary": "Le Criminel egyedül maradt egy elég hosszú cipővel ahhoz, hogy kihúzza a csipkét, és átrágja az egyik végét. A cipő szigorúan technikai értelemben hordható marad.",
+        "imageAlt": ""
+      },
+      "CIB-031": {
+        "title": "A harmadik Pikette látogatás folytatja a kialakult viszályt",
+        "summary": "Pikette visszaküldte, és Le Criminel az érkezést egy befejezetlen ügy megújításaként kezelte.",
+        "imageAlt": ""
+      },
+      "CIB-032": {
+        "title": "Előnyben részesített kanapépárna igényelve a látogatáshoz",
+        "summary": "Pikette a középső párnát választotta, és ott maradt annak ellenére, hogy megpróbálta visszaállítani a normál üléselrendezést.",
+        "imageAlt": "Pikette a középső kanapépárnát foglalja el látogatása során."
+      },
+      "CIB-033": {
+        "title": "A parmezán csomagolás a visszaeső elkövetők reakcióját váltja ki",
+        "summary": "Egy új parmezántömb kinyitásakor Le Criminel gyorsan bekerült a konyhába. A sajt rögzítve maradt, és soha nem hagyták a zuhany előtt elérhető helyen.",
+        "imageAlt": ""
+      },
+      "CIB-034": {
+        "title": "A cipőbélés a lakásban eltávolítva",
+        "summary": "Le Criminel egy cipőt vitt a bejárattól a nappaliba, és annyi bélést húzott ki belőle, hogy nyilvánvalóvá tegye a sérülést.",
+        "imageAlt": "Le Criminel pórázon állva szabadtéri séta közben."
+      },
+      "CIB-035": {
+        "title": "A kávézó személyzete jogosulatlan péksütemény miatt keresett fel",
+        "summary": "Le Criminel figyelmen kívül hagyta saját felvezetőjét, és az étterem személyzetének egy tagjára koncentrált, aki péksüteményeket szállított. A báj-offenzíva egy további croissant-darabot hozott létre.",
+        "imageAlt": ""
+      },
+      "CIB-036": {
+        "title": "Átjáró teljes hosszban mindkét irányban elfoglalva",
+        "summary": "Az alany az ajtó pontos közepét választotta maximális lefedettségű szundításhoz. A forgalmat két órára elterelték.",
+        "imageAlt": "Le Criminel elnyúlva a folyosó padlóján."
+      },
+      "CIB-037": {
+        "title": "Második kenyér elveszett szinte azonos körülmények között",
+        "summary": "Nem az első kenyérügy, valószínűleg nem is az utolsó. A technikát nyilvánvalóan tökéletesítették.",
+        "imageAlt": "Második kenyér a padlón, szintén megrágva."
+      },
+      "CIB-038": {
+        "title": "Parmezánmaradványt fedeztek fel az ágyneműben",
+        "summary": "Az ágy utólagos vizsgálata során sajtmorzsát találtak a takaróban. A bizonyítékok összhangban vannak a korábbi, egész blokkot érintő parmezánlopással.",
+        "imageAlt": "Le Criminel összegömbölyödve alszik egy vastag takaró alatt a kanapén."
+      },
+      "CIB-039": {
+        "title": "A közeli Pikette fénykép ismételt tiltakozást vált ki",
+        "summary": "Pikette mozdulatlan maradt a megfigyelési fénykép elkészítéséhez, miközben Le Criminel tiltakozott a szoba másik oldaláról.",
+        "imageAlt": "Le Criminel élesen felnéz a szőnyegről a látogatás során."
+      },
+      "CIB-040": {
+        "title": "Ideiglenes ablakszövetség megfigyelhető a februári látogatás során",
+        "summary": "Mindkét állat leállította az ellenségeskedést, hogy a kanapéról figyelje a mozgást. Az együttműködés akkor ért véget, amikor az ablak elcsendesedett.",
+        "imageAlt": "Pikette és Le Criminel megosztják a kanapét egy ideiglenes szövetség alatt."
+      },
+      "CIB-041": {
+        "title": "A reggelit közeli felvételi kísérletnek vetették alá",
+        "summary": "Le Criminel megtartotta pozícióját a reggelizőasztal mellett, és követte a péksütemény minden mozgását. A croissant csak folyamatos felügyelet mellett maradt ép.",
+        "imageAlt": "Le Criminel mereven bámul egy kültéri asztalon hagyott gofrit."
+      },
+      "CIB-042": {
+        "title": "A cipőtároló megszakadt a lámpa kioltása után",
+        "summary": "A nappaliból egy lefekvés előtt eltávolított cipőt vizes fűzőkkel és friss fognyomokkal találtak meg. Le Criminel aludt mellette, amikor megkérdezték.",
+        "imageAlt": ""
+      },
+      "CIB-043": {
+        "title": "A szomszéd újabb ellenséges fogadtatásban részesül",
+        "summary": "Az idős szomszéd nyugodt köszöntőt mondott a közösségi bejáratban. Le Criminel úgy válaszolt, mintha egy régóta húzódó személyes viszály újult volna meg.",
+        "imageAlt": "Le Criminel éberen ül pórázon az utca közelében."
+      },
+      "CIB-044": {
+        "title": "A vacsorát az ágyra vitték jogosulatlan ellenőrzés céljából",
+        "summary": "Le Criminel követte az ételt a hálószobába, és megpróbálta megvizsgálni a tányért a matrac magasságában. A hozzáférést megtagadták, mielőtt a parmezán precedens megismétlődhetett volna.",
+        "imageAlt": "Le Criminel hanyatt fekve keresztben az ágyon, elfoglalva a teljes szélességét."
+      },
+      "CIB-045": {
+        "title": "Utolsó szelet kétes egyenlősítési ürüggyel elvéve",
+        "summary": "Sawito elvette az utolsó szeletet, és kéretlenül közölte, hogy csak kiegyenlít. Senki nem kérte rá.",
+        "imageAlt": ""
+      },
+      "CIB-046": {
+        "title": "Egy másik cipőt levettek a lakás bejáratától",
+        "summary": "Le Criminel áthelyezett egy cipőt a nappaliba, és szokatlanul csendes időközönként elkezdett a sarkán dolgozni.",
+        "imageAlt": "Le Criminel egy kőpárkányt vizsgál egy szabadtéri séta során."
+      },
+      "CIB-047": {
+        "title": "Ritka, csendes pihenőszünet a Pikette látogatás során",
+        "summary": "Le Criminel és Pikette megosztotta a kanapét anélkül, hogy elég hosszú ideig vitatkoztak volna ahhoz, hogy a háztartás dokumentálja az anomáliát.",
+        "imageAlt": ""
+      },
+      "CIB-048": {
+        "title": "A kanapé közös használata nem hagy hasznos helyet",
+        "summary": "Pikette és Le Criminel elrendezték magukat a rendelkezésre álló párnák között, és szövetségesek maradtak mindenki ellen, aki megpróbált leülni.",
+        "imageAlt": ""
+      },
+      "CIB-049": {
+        "title": "Az ebéd folyamatos felügyelet alatt áll",
+        "summary": "Le Criminel vizuális kapcsolatot tartott a lemezzel az érkezéstől az utolsó harapásig. Minden villamozgás új áthelyezési kérelmet generált.",
+        "imageAlt": "Le Criminel egy tányér tésztát nézeget egy szabadtéri asztal alól."
+      },
+      "CIB-050": {
+        "title": "A cipőellenőrzés folytatódik, amíg a bizonyítékokat még mindig viselik",
+        "summary": "Le Criminel a cipőhöz nyomta az arcát, kipróbálta a fűzőket, és megpróbálta elkezdeni a szokásos szétszerelési folyamatot, mielőtt megszakították volna.",
+        "imageAlt": "Le Criminel cenzúrázott arcát egy kopott cipőhöz nyomja egy szabadtéri asztalnál."
+      },
+      "CIB-051": {
+        "title": "Az erkélyrács megakadályozza az újabb galambüldözést",
+        "summary": "Le Criminel rögzítve volt az erkélyen túli mozgáshoz, miközben a nagy biztonsági rács pontosan azt tette, amit felszereltek: az üldözést a lakás határán belül tartotta.",
+        "imageAlt": "Le Criminel a teljes magasságú erkélyes biztonsági rács melletti pizzázódoboz fölött néz."
+      },
+      "CIB-052": {
+        "title": "Az étterem személyzetét veszélyeztette a kiszámított báj",
+        "summary": "Le Criminel a teraszon asztalról asztalra dolgozott, amíg az étterem személyzete fel nem adta az extra croissant-t. A műtét teljes mértékben a szemkontaktuson és az éhezés megjelenésén alapult.",
+        "imageAlt": "Le Criminel croissant-t néz egy szabadtéri kávézóasztal mellett."
+      }
+    },
+    "cibKicker": "MOST MEGTEKINTHETŐ",
+    "cibTitle": "A BŰNÜGYI HÍRSZERZŐ IRODA",
+    "cibBody": "Ötvenkét esemény. Három gyanúsított. Egy közös iratszekrény. A teljes művelet kereszthivatkozása.",
+    "cibCta": "ARCHÍVUM MEGNYITÁSA"
+  },
   "common": {
     "fallbackBanner": "Elnézést, dolgozunk rajta — egyelőre csak angolul érhető el."
   },
   "nav": {
+    "cib": "HÍRSZERZÉS",
     "home": "KEZDŐLAP",
     "about": "GYANÚSÍTOTTAK",
     "story": "EGY BŰNÖZŐ TÖRTÉNETE",
@@ -341,7 +677,7 @@
   },
   "blog": {
     "title": "ÜGYNAPLÓ",
-    "subtitle": "25 havi bejegyzés — két év folyamatos megfigyelés, a 001-CR ügy továbbra is nyitva"
+    "subtitle": "26 havi bejegyzés — két év folyamatos megfigyelés, a 001-CR ügy továbbra is nyitva"
   },
   "blogPosts": [
     {
@@ -517,6 +853,13 @@
       "body": "A több napon át tartó hőségriadó teljesen a földre kényszerítette az Alanyt — hanyatt fekve hevert a nappali szőnyegén, végtagjai furcsa szögekben álltak, és a megfigyelés kezdete óta a leghosszabb időszak telt el kihágás nélkül. A csendnek abban a pillanatban vége szakadt, hogy megváltozott az időjárás: az Alany átköltözött egy füves foltra, a kidobott palackok halmát saját készítésű bűnügyi helyszínként kisajátította, majd minden magyarázat nélkül teljes üzemmódban folytatta a műveleteket. A teljes jelentést külön, „A hőhullám csendje” címen iktattuk.",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "A HELYI PARKOK BIZTONSÁGA MEGRENDÜLT",
+      "body": "Az Alany egész augusztusban Brüsszelben maradt. A kellemes időjárás ismételt műveleteket tett lehetővé a helyi parkokban, amelyeket rendszerint croissant-darabok jogellenes megszerzése és elfogyasztása követett. A járőrözések gyakorisága nőtt. A péksütemények védelme továbbra sem kielégítő.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

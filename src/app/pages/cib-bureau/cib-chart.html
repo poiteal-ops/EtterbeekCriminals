@@ -1,0 +1,70 @@
+<figure class="cib-chart" [class.horizontal]="orientation() === 'horizontal'" [class.vertical]="orientation() === 'vertical'">
+  <figcaption>
+    <h3 class="chart-title">{{ title() }}</h3>
+    <p class="chart-description">{{ description() }}</p>
+  </figcaption>
+
+  <p class="chart-summary">{{ summaryText() }}</p>
+
+  @if (orientation() === 'vertical') {
+    <div class="vertical-plot" aria-hidden="true">
+      <div class="value-axis">
+        <span class="value-label axis-maximum">{{ maximum() }}</span>
+        <span class="value-label axis-zero">0</span>
+      </div>
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="chart-svg">
+      <line x1="0" y1="100" x2="100" y2="100" class="baseline" />
+      @for (bar of bars(); track bar.key) {
+        <rect
+          class="bar"
+          [attr.x]="bar.position + bar.size * 0.15"
+          [attr.y]="bar.barTop"
+          [attr.width]="bar.size * 0.7"
+          [attr.height]="100 - bar.barTop"
+        ></rect>
+      }
+      </svg>
+      <div class="time-axis">
+        @for (tick of axisTicks(); track tick.key; let first = $first; let last = $last) {
+          <span class="tick-label" [class.first]="first" [class.last]="last"
+            [style.left.%]="first ? 0 : last ? null : tick.position + tick.size / 2">{{ tick.label }}</span>
+        }
+      </div>
+    </div>
+  } @else {
+    <div class="category-plot" aria-hidden="true">
+      @for (bar of bars(); track bar.key) {
+        <div class="category-row">
+          <div class="category-heading">
+            <span class="tick-label">{{ bar.label }}</span>
+            <span class="value-label">{{ bar.count }}</span>
+          </div>
+          <svg viewBox="0 0 100 10" preserveAspectRatio="none" class="chart-svg">
+            <rect class="bar" x="0" y="0" [attr.width]="bar.valuePct" height="10"></rect>
+          </svg>
+        </div>
+      }
+    </div>
+  }
+
+  <details class="data-table">
+    <summary>{{ copy().viewTable }}</summary>
+    <table>
+      <caption class="visually-hidden">{{ title() }} — {{ copy().fullData }}</caption>
+      <thead>
+        <tr>
+          <th scope="col">{{ copy().category }}</th>
+          <th scope="col">{{ copy().incidents }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (bucket of buckets(); track bucket.key) {
+          <tr>
+            <th scope="row">{{ bucket.label }}</th>
+            <td>{{ bucket.count }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </details>
+</figure>

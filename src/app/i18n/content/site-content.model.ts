@@ -29,6 +29,8 @@ export interface AdventureEntry {
   image: string;
 }
 
+import { CibContent } from './cib-content.model';
+
 export interface SiteContent {
   common: {
     fallbackBanner: string;
@@ -48,6 +50,7 @@ export interface SiteContent {
     aDayWithBestie: string;
     kandeNadege: string;
     blog: string;
+    cib: string;
     shop: string;
   };
   home: {
@@ -312,6 +315,7 @@ export interface SiteContent {
     backToShop: string;
   };
   shopItems: ShopItem[];
+  cib: CibContent;
   footer: string;
   footerDisclaimer: string;
 }

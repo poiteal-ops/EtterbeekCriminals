@@ -1,8 +1,344 @@
 {
+  "cib": {
+    "chart": {
+      "peakSummary": "Vârf: {label} — incidente: {count}.",
+      "emptySummary": "Nu există incidente pentru aceste filtre.",
+      "viewTable": "Vezi tabelul de date",
+      "fullData": "Date complete",
+      "category": "Categorie",
+      "incidents": "Incidente"
+    },
+    "title": "BIROUL DE INFORMAȚII CRIMINALE",
+    "subtitle": "Arhivă coordonată de incidente — trei operatori cunoscuți, același dispreț față de dreptul de proprietate.",
+    "archiveNote": "Date fictive despre incidente, compilate exclusiv pentru instruire internă. Orice asemănare cu un val real de infracțiuni este întâmplătoare și, sincer, foarte caracteristică.",
+    "archiveWindowLabel": "ARHIVA CAZ / IUL 2024–AUG 2026",
+    "seoDescription": "Răsfoiți arhiva Biroului de Informații Criminale – 52 de incidente fictive înregistrate din iulie 2024 până în august 2026.",
+    "suspectFilterLabel": "FILTRARE DUPĂ SUSPECT",
+    "offenceFilterLabel": "FILTRARE DUPĂ ABATERE",
+    "allSuspectsLabel": "TOȚI SUSPECȚII",
+    "allOffencesLabel": "TOATE ABATERILE",
+    "resetLabel": "RESETEAZĂ FILTRELE",
+    "resultCountLabel": "Se afișează {count} incidente înregistrate.",
+    "metricTotalLabel": "INCIDENTE ÎNREGISTRATE",
+    "metricOpenLabel": "CAZURI DESCHISE",
+    "metricClosureRateLabel": "RATĂ DE ÎNCHIDERE",
+    "metricPeakHourLabel": "ORA CU CELE MAI MULTE RAPORTĂRI",
+    "unavailableLabel": "INDISPONIBIL",
+    "dailyChartTitle": "ACTIVITATE LUNARĂ",
+    "dailyChartDescription": "Incidente raportate pe lună în fereastra de arhivă.",
+    "offenceChartTitle": "TOTALURI PE ABATERI",
+    "offenceChartDescription": "Incidente împărțite pe categorii.",
+    "hourlyChartTitle": "DISTRIBUȚIE ORARĂ",
+    "hourlyChartDescription": "Când tind să apară incidentele de-a lungul celor 24 de ore.",
+    "offenceLabels": {
+      "snack-theft": "FURT DE MÂNCARE",
+      "property-damage": "DISTRUGERI MATERIALE",
+      "public-disturbance": "TULBURAREA LINIȘTII",
+      "obstruction": "OBSTRUCȚIONARE"
+    },
+    "statusLabels": {
+      "open": "DESCHIS",
+      "closed": "ÎNCHIS"
+    },
+    "suspectLabels": {
+      "le-criminel": "LE CRIMINEL",
+      "pikette": "PIKETTE",
+      "sawito": "SAWITO"
+    },
+    "relationshipLabels": {
+      "allied": "ALIAȚI",
+      "rivals": "RIVALI",
+      "truce": "ARMISTIȚIU",
+      "not-applicable": "NU SE APLICĂ"
+    },
+    "dossierDescriptions": {
+      "le-criminel": "SUSPECT PRINCIPAL. Boston Terrier, zgardă tactică, fără remușcări cunoscute. Prezent la marea majoritate a incidentelor înregistrate.",
+      "pikette": "ARH-INSAMIC DE SEZON. Vizite istorice în dosar. Următoarea vizită este așteptată în decembrie.",
+      "sawito": "FACILITATOR, NU SUSPECT. Prezent la majoritatea incidentelor. Rată de intervenție: neglijabilă."
+    },
+    "overlapNote": "Cifrele numără participările la incidentele afișate, inclusiv complicii. Un incident poate implica mai mulți suspecți, deci suma poate depăși totalul incidentelor.",
+    "nextVisitLabel": "Următoarea vizită: DECEMBRIE",
+    "showMoreLabel": "ARATĂ MAI MULTE",
+    "viewDetailsLabel": "VEZI PROBELE",
+    "hideDetailsLabel": "ASCUNDE PROBELE",
+    "viewCaseLabel": "VEZI DOSARUL COMPLET",
+    "noEvidenceLabel": "NICIO DOVADĂ LA DOSAR",
+    "emptyStateTitle": "NICIUN INCIDENT CORESPUNZĂTOR",
+    "emptyStateBody": "Niciun incident nu corespunde filtrelor. Încercați alt suspect sau altă abatere ori resetați filtrele pentru întreaga arhivă.",
+    "methodologyTitle": "METODOLOGIE",
+    "methodologyBody": "Această arhivă acoperă 52 de incidente fictive înregistrate din iulie 2024 până în august 2026 în scopuri de instruire internă. Categoriile, orele și rezultatele sunt ilustrative și nu reflectă o investigație reală.",
+    "incidents": {
+      "CIB-001": {
+        "title": "Personalul restaurantului compromis de farmecul calculat",
+        "summary": "Le Criminel a lucrat masa cu masă pe terasă până când personalul restaurantului a predat un croissant suplimentar.",
+        "imageAlt": ""
+      },
+      "CIB-002": {
+        "title": "Cusătura canapea supusă unei investigații susținute",
+        "summary": "Le Criminel a revenit în mod repetat la o cusătură liberă până când umplutura a devenit accesibilă. Supravegherea a oprit inspecția înainte ca întreaga pernă să fie deschisă.",
+        "imageAlt": "Cusătură ruptă și căptușeală vizibilă pe o cusătură a unei perne de canapea."
+      },
+      "CIB-003": {
+        "title": "Vecinul prietenos identificat ca inamic permanent",
+        "summary": "Vecinul în vârstă l-a salutat cu amabilitate pe Le Criminel în sala comunală. Le Criminel a răspuns cu aceeași ostilitate personală pe care o rezervă pentru fiecare întâlnire cu acest om cu totul nevinovat.",
+        "imageAlt": ""
+      },
+      "CIB-004": {
+        "title": "Holul apartamentului ocupat la plecare",
+        "summary": "Le Criminel s-a plantat între ușa apartamentului și lift în timp ce a hotărât dacă ieșirea era acceptabilă. Toți ceilalți au așteptat decizia.",
+        "imageAlt": "Le Criminel în lesă, chiar la intrarea cu gresie."
+      },
+      "CIB-005": {
+        "title": "Pâine transferată în custodie protectoare",
+        "summary": "Acuzatul a refuzat să identifice proprietarul inițial. Firimiturile contraziceau declarația.",
+        "imageAlt": "O jumătate de pâine pe podeaua bucătăriei, cu un capăt vizibil ros."
+      },
+      "CIB-006": {
+        "title": "Husă de telefon crăpată la o ședință foto neinspirată",
+        "summary": "Sawito încerca un selfie cu câinele în salt și a scăpat telefonul pe singura podea cu gresie. Fotografia, de altfel, a ieșit bine.",
+        "imageAlt": "Sawito făcând un selfie cu câinele sărind spre cameră."
+      },
+      "CIB-007": {
+        "title": "Reuniune de familie întreruptă de o opinie nesolicitată",
+        "summary": "Subiectul a intervenit într-o conversație străină, lătrând la volumul necesar pentru a o încheia. A încheiat-o.",
+        "imageAlt": "Le Criminel stând solemn, așteptând verdictul."
+      },
+      "CIB-008": {
+        "title": "Trecere blocată intenționat în timpul livrării",
+        "summary": "Sawito stătea în calea curierului, analizând îndelung dacă trebuia semnat. Nu trebuia. A rămas acolo oricum.",
+        "imageAlt": ""
+      },
+      "CIB-009": {
+        "title": "Pâine prăjită pentru micul dejun îndepărtată în timpul unei scurte distrageri",
+        "summary": "Un întors înapoi a creat o deschidere de mai puțin de trei secunde. Le Criminel l-a folosit pentru a scoate pâinea prăjită de pe marginea mesei și a se retrage sub scaun.",
+        "imageAlt": ""
+      },
+      "CIB-010": {
+        "title": "Al doilea pantof a intrat în joc activ",
+        "summary": "Le Criminel a selectat un pantof scos recent, l-a dus în sufragerie și a lucrat șireturile până când intervenția a devenit inevitabilă.",
+        "imageAlt": ""
+      },
+      "CIB-011": {
+        "title": "Vecinul a fost detectat printr-o ușă închisă a apartamentului",
+        "summary": "Pașii pe coridorul comun au fost identificați corect drept vecinul în vârstă drăguț. Le Criminel a început protestul obișnuit înainte ca bărbatul să ajungă la palier.",
+        "imageAlt": ""
+      },
+      "CIB-012": {
+        "title": "Pregătirile de vacanță întârziate de nehotărârea manipulatorului",
+        "summary": "Sawito a reconsiderat o decorare suficient de lungă pentru a bloca holul apartamentului pentru toți ceilalți.",
+        "imageAlt": ""
+      },
+      "CIB-013": {
+        "title": "Bloc de parmezan scos în întregime",
+        "summary": "În timp ce proprietarul era la duș, Le Criminel a furat un bloc întreg de parmezan și l-a mâncat pe pat. Firimiturile și urmele de ulei au stabilit locația incontestabilă.",
+        "imageAlt": ""
+      },
+      "CIB-014": {
+        "title": "Pantof uzat supus unei alte verificări",
+        "summary": "Le Criminel a dus pantoful și a lucrat șireturile până când intervenția a devenit inevitabilă.",
+        "imageAlt": "Un singur adidași întins în iarbă cu daune vizibile."
+      },
+      "CIB-015": {
+        "title": "Prima observare Pikette include inspecția imediată a alimentelor",
+        "summary": "Pikette a sosit pentru prima ei vizită înregistrată, a verificat bolurile cu mâncare și a tratat totul la îndemână ca pe o proprietate comună.",
+        "imageAlt": "Pikette stând pe pervazul apartamentului lângă bolurile cu mâncare."
+      },
+      "CIB-016": {
+        "title": "Prima întâlnire stabilește ostilitatea reciprocă imediată",
+        "summary": "Le Criminel și Pikette au făcut schimb de avertismente și și-au petrecut restul vizitei monitorizându-se reciproc de la capetele opuse ale canapelei.",
+        "imageAlt": "Pikette și Le Criminel împart canapeaua în timp ce se urmăresc unul pe celălalt."
+      },
+      "CIB-017": {
+        "title": "Cârnați scăpați interceptați înainte de recuperare",
+        "summary": "Un cârnați a ajuns pe podea și Le Criminel a ajuns primul. Dovezile au fost înghițite înainte ca orice efort semnificativ de recuperare să poată începe.",
+        "imageAlt": ""
+      },
+      "CIB-018": {
+        "title": "Operația cu pantofii se răspândește pe canapea",
+        "summary": "Le Criminel a cărat un pantof capturat pe canapea și a folosit cotiera ca efect de pârghie. Pantoful, tapițeria și răbdarea gospodăriei au suferit daune.",
+        "imageAlt": "Prim-plan cu zgârieturi pe brațul canapelei."
+      },
+      "CIB-019": {
+        "title": "Trecerea vecinilor monitorizată de pe canapea",
+        "summary": "Le Criminel l-a văzut pe vecinul în vârstă de la fereastra apartamentului și și-a urmărit progresul prin curte cu dezaprobare susținută.",
+        "imageAlt": ""
+      },
+      "CIB-020": {
+        "title": "Accesul la bucătărie este cerut în timpul pregătirii alimentelor",
+        "summary": "Le Criminel ocupa intrarea îngustă din bucătărie și monitoriza fiecare mișcare dintre blat și masă. Încercările repetate de eliminare au produs returnări imediate.",
+        "imageAlt": ""
+      },
+      "CIB-021": {
+        "title": "Pranz pus sub supraveghere continua",
+        "summary": "Le Criminel a urmărit farfuria de la sosire până la ultima mușcătură. Fiecare mișcare a furcii a produs o nouă cerere de transfer.",
+        "imageAlt": "Le Criminel urmărește cu atenție mâncarea de lângă o masă de cafenea în aer liber."
+      },
+      "CIB-022": {
+        "title": "Ochelari de citit striviți și compromiși structural",
+        "summary": "Ochelarii lui Sawito, lăsați pe brațul fotoliului «doar o secundă», au fost găsiți dedesubt cu o lentilă desprinsă. Dă vina pe fotoliu.",
+        "imageAlt": "Sawito, cu ochelarii pe nas, obraz lângă obraz cu câinele."
+      },
+      "CIB-023": {
+        "title": "Pikette revine și ostilitățile se reiau imediat",
+        "summary": "A doua vizită înregistrată a început acolo unde s-a încheiat prima: ambele animale au revendicat același teritoriu de canapea și l-au respins pe celălalt ocupant.",
+        "imageAlt": "Pikette și Le Criminel ocupând canapeaua în timpul unei vizite."
+      },
+      "CIB-024": {
+        "title": "Pasajul canapei s-a închis în timpul unei confruntări între două animale",
+        "summary": "Pikette a ținut un capăt al canapelei în timp ce Le Criminel a ținut celălalt până când mâncarea din bucătărie a pus capăt disputei.",
+        "imageAlt": ""
+      },
+      "CIB-025": {
+        "title": "Mijloace de croissant dobândite de la un martor compromis",
+        "summary": "Personalul restaurantului a interpretat din nou privirea prelungită drept foame și a furnizat fragmente de croissant. Le Criminel a acceptat transferul fără a corecta neînțelegerea.",
+        "imageAlt": ""
+      },
+      "CIB-026": {
+        "title": "Punga de mâncare căutată imediat după livrare",
+        "summary": "Le Criminel și-a introdus capul în punga de cumpărături înainte ca aceasta să fi fost despachetat complet. Legumele au fost aprobate; toate celelalte conținuturi au rămas ținte.",
+        "imageAlt": ""
+      },
+      "CIB-027": {
+        "title": "Evenimentul de gaz după cină eliberează camera de zi",
+        "summary": "O masă servită fără suficiente legume a fost urmată de un incident atmosferic suficient de grav pentru a goli zona de relaxare imediată. Clasificare a fost îmbunătățită la armă teroristă.",
+        "imageAlt": ""
+      },
+      "CIB-028": {
+        "title": "Plecarea întârziată de un set de chei lipsă",
+        "summary": "Sawito a căutat fiecare suprafață vizibilă înainte de a găsi cheile în buzunarul pe care îl verificase deja.",
+        "imageAlt": ""
+      },
+      "CIB-029": {
+        "title": "Alocarea legumelor previne escaladarea",
+        "summary": "Cina a inclus o componentă vegetală acceptabilă. Le Criminel a mâncat fără proteste, iar gospodăria nu a înregistrat nicio urgență ulterioară cu gaze.",
+        "imageAlt": ""
+      },
+      "CIB-030": {
+        "title": "Șiretul pantofilor scurtat în timpul accesului nesupravegheat",
+        "summary": "Le Criminel a rămas singur cu un pantof suficient de lung pentru a scoate șiretul și a mesteca un capăt. Pantoful rămâne purtăbil în sens strict tehnic.",
+        "imageAlt": ""
+      },
+      "CIB-031": {
+        "title": "A treia vizită Pikette reia cearta stabilită",
+        "summary": "Pikette a revenit și Le Criminel a tratat sosirea ca pe o reînnoire a afacerii neterminate.",
+        "imageAlt": ""
+      },
+      "CIB-032": {
+        "title": "Perna de canapea preferată revendicată pentru vizită",
+        "summary": "Pikette a selectat perna centrală și a rămas acolo, în ciuda încercărilor de a restabili aranjamentul normal al scaunelor.",
+        "imageAlt": "Pikette ocupând perna centrală a canapelei în timpul unei vizite."
+      },
+      "CIB-033": {
+        "title": "Ambalajul cu parmezan declanșează răspunsul recidivului",
+        "summary": "Deschiderea unui nou bloc de parmezan a adus Le Criminel în bucătărie cu viteză. Brânza a rămas în siguranță și nu a fost niciodată lăsată la îndemâna timpului dușului.",
+        "imageAlt": ""
+      },
+      "CIB-034": {
+        "title": "Căptușeală de pantofi îndepărtată în interiorul apartamentului",
+        "summary": "Le Criminel a cărat un pantof de la intrare în sufragerie și a scos suficientă căptușeală pentru a face daunele evidente.",
+        "imageAlt": "Le Criminel stând în lesă în timpul unei plimbări în aer liber."
+      },
+      "CIB-035": {
+        "title": "Personalul cafenelei s-a apropiat pentru produse de patiserie neautorizate",
+        "summary": "Le Criminel și-a ignorat propriul responsabil și s-a concentrat asupra unui membru al personalului restaurantului care transporta produse de patiserie. Ofensiva farmecului a produs o piesă suplimentară de croissant.",
+        "imageAlt": ""
+      },
+      "CIB-036": {
+        "title": "Trecere ocupată complet, ambele sensuri blocate",
+        "summary": "Subiectul a ales centrul exact al ușii pentru un somn cu acoperire maximă. Circulația a fost deviată două ore.",
+        "imageAlt": "Le Criminel întins pe podeaua coridorului."
+      },
+      "CIB-037": {
+        "title": "A doua pâine pierdută în împrejurări aproape identice",
+        "summary": "Nu este primul incident cu pâine și probabil nu va fi ultimul. Tehnica a fost evident perfecționată.",
+        "imageAlt": "O a doua pâine pe podea, la fel de roasă."
+      },
+      "CIB-038": {
+        "title": "Rezidu de parmezan descoperit în așternut",
+        "summary": "O inspecție ulterioară a patului a găsit firimituri de brânză lucrate în pătură. Dovezile sunt în concordanță cu furtul anterioar de parmezan integral.",
+        "imageAlt": "Le Criminel ghemuit, adormit sub o pătură groasă pe canapea."
+      },
+      "CIB-039": {
+        "title": "Fotografia de aproape Pikette declanșează un protest reînnoit",
+        "summary": "Pikette a rămas nemișcat pentru o fotografie de supraveghere în timp ce Le Criminel a obiectat din cealaltă parte a camerei.",
+        "imageAlt": "Le Criminel ridică privirea ascuțită de pe covor în timpul vizitei."
+      },
+      "CIB-040": {
+        "title": "Alianță temporară observată în timpul vizitei din februarie",
+        "summary": "Ambele animale au întrerupt ostilitățile pentru a urmări mișcarea afară de pe canapea. Cooperarea s-a încheiat când fereastra a devenit tăcută.",
+        "imageAlt": "Pikette și Le Criminel împart canapeaua în timpul unei alianțe temporare."
+      },
+      "CIB-041": {
+        "title": "Micul dejun supus unei încercări de achiziție la distanță scurtă",
+        "summary": "Le Criminel a menținut poziția lângă masa de mic dejun și a urmărit fiecare mișcare a patiseriei. Croissantul a rămas intact doar printr-o supraveghere continuă.",
+        "imageAlt": "Le Criminel privind fix un vafe lăsat pe o masă de afară."
+      },
+      "CIB-042": {
+        "title": "Depozitarea încălțămintei a fost spartă după stingerea luminilor",
+        "summary": "Un pantof scos înainte de culcare a fost recuperat din sufragerie cu șireturi ude și urme de dinți proaspete. Le Criminel dormea ​​lângă el când a fost interogat.",
+        "imageAlt": ""
+      },
+      "CIB-043": {
+        "title": "Vecinul primește o altă primire ostilă",
+        "summary": "Vecinul în vârstă a oferit un salut calm la intrarea comunală. Le Criminel a răspuns ca și cum o ceartă personală de lungă durată tocmai ar fi fost reînnoită.",
+        "imageAlt": "Le Criminel stând vigilent în lesă lângă stradă."
+      },
+      "CIB-044": {
+        "title": "Cina purtată pe pat pentru inspecție neautorizată",
+        "summary": "Le Criminel a urmărit mâncarea în dormitor și a încercat să inspecteze farfuria la înălțimea saltelei. Accesul a fost interzis înainte ca precedentul de parmezan să se poată repeta.",
+        "imageAlt": "Le Criminel întins pe spate de-a latul unui pat, ocupând toată lățimea."
+      },
+      "CIB-045": {
+        "title": "Ultima felie revendicată sub pretext îndoielnic de echilibrare",
+        "summary": "Sawito a luat ultima felie explicând nesolicitat că «doar echilibrează lucrurile». Nimeni nu îi ceruse.",
+        "imageAlt": ""
+      },
+      "CIB-046": {
+        "title": "Un alt pantof scos de la intrarea în apartament",
+        "summary": "Le Criminel a mutat un pantof în sufragerie și a început să lucreze la călcâi într-un interval neobișnuit de liniștit.",
+        "imageAlt": "Le Criminel investighează o margine de piatră în timpul unei plimbări în aer liber."
+      },
+      "CIB-047": {
+        "title": "Rar armistițiu liniștit pe canapea înregistrat în timpul vizitei Pikette",
+        "summary": "Le Criminel și Pikette au împărțit canapeaua fără o ceartă suficient de lungă pentru ca gospodăria să documenteze anomalia.",
+        "imageAlt": ""
+      },
+      "CIB-048": {
+        "title": "Ocuparea comună a canapelei nu lasă un loc util",
+        "summary": "Pikette și Le Criminel s-au aranjat peste pernele disponibile și au rămas aliați împotriva oricui încerca să se așeze.",
+        "imageAlt": ""
+      },
+      "CIB-049": {
+        "title": "Pranz pus sub supraveghere continua",
+        "summary": "Le Criminel a menținut contactul vizual cu placa de la sosire până la mușcătura finală. Fiecare mișcare a furcii a produs o nouă cerere de transfer.",
+        "imageAlt": "Le Criminel privesc o farfurie cu paste de sub o masă în aer liber."
+      },
+      "CIB-050": {
+        "title": "Inspecția încălțămintei se reia în timp ce dovezile sunt încă purtate",
+        "summary": "Le Criminel și-a apăsat fața de pantof, a testat șireturile și a încercat să înceapă procesul obișnuit de demontare înainte de a fi întrerupt.",
+        "imageAlt": "Le Criminel apăsându-și fața cenzurată de un pantof uzat la o masă în aer liber."
+      },
+      "CIB-051": {
+        "title": "Grătarul de balcon previne o altă urmărire a porumbeilor",
+        "summary": "Le Criminel sa blocat pe mișcare dincolo de balcon, în timp ce grătarul mare de siguranță a făcut exact ceea ce a fost instalat: să mențină urmărirea în interiorul graniței apartamentului.",
+        "imageAlt": "Le Criminel uitându-se peste o cutie de pizza de lângă grătarul de siguranță al balconului pe toată înălțimea."
+      },
+      "CIB-052": {
+        "title": "Personalul restaurantului compromis de farmecul calculat",
+        "summary": "Le Criminel a lucrat masa cu masă pe terasă până când personalul restaurantului a predat un croissant suplimentar. Operația s-a bazat în întregime pe contactul vizual și pe apariția înfometării.",
+        "imageAlt": "Le Criminel privesc un croissant de lângă o masă de cafenea în aer liber."
+      }
+    },
+    "cibKicker": "ACUM DISPONIBIL PENTRU CONSULTARE",
+    "cibTitle": "BIROUL DE INFORMAȚII CRIMINALE",
+    "cibBody": "Cincizeci și două de incidente. Trei suspecți. Un dulap de dosare comun. Faceți referințe încrucișate întregii operațiuni.",
+    "cibCta": "DESCHIDE ARHIVA"
+  },
   "common": {
     "fallbackBanner": "Ne pare rău, lucrăm la asta — deocamdată disponibil doar în engleză."
   },
   "nav": {
+    "cib": "INFORMAȚII",
     "home": "ACASĂ",
     "about": "DESPRE",
     "story": "POVESTEA UNUI INFRACTOR",
@@ -341,7 +677,7 @@
   },
   "blog": {
     "title": "REGISTRUL CAZURILOR",
-    "subtitle": "25 de intrări lunare — doi ani de supraveghere continuă, cazul 001-CR rămâne deschis"
+    "subtitle": "26 de intrări lunare — doi ani de supraveghere continuă, cazul 001-CR rămâne deschis"
   },
   "blogPosts": [
     {
@@ -517,6 +853,13 @@
       "body": "O avertizare de caniculă emisă pentru mai multe zile l-a țintuit complet pe Subiect — întins pe covorul din sufragerie, cu membrele în unghiuri ciudate, fără nicio abatere comisă pentru cea mai lungă perioadă de la începutul supravegherii. Acalmia s-a încheiat în clipa în care vremea s-a stricat: Subiectul s-a mutat pe o bucată de iarbă, a declarat un teanc de sticle aruncate drept propria sa scenă a crimei și și-a reluat întreaga activitate fără explicații. Raportul complet a fost depus separat sub titlul „ACALMIA DIN TIMPUL CANICULEI”.",
       "image": "assets/images/heatwave-collapse.jpg",
       "link": "/heatwave-survival"
+    },
+    {
+      "date": "AUG 2026",
+      "case": "CASE LOG 026",
+      "title": "PARCURI LOCALE COMPROMISE",
+      "body": "Subiectul a rămas la Bruxelles pe tot parcursul lunii august. Vremea frumoasă a permis operațiuni repetate în parcurile locale, urmate de obicei de procurarea și consumul ilicit de fragmente de croissant. Frecvența patrulelor a crescut. Securitatea produselor de patiserie rămâne insuficientă.",
+      "image": "assets/images/blog-park-patrol.jpg"
     }
   ],
   "shop": {

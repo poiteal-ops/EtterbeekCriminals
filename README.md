@@ -1,37 +1,14 @@
-# EtterbeekCriminals
+# The Thieffry Criminals
 
-Just a fun mockup website I put together as a test — not a real project.
-Built with Angular.
+<img src="public/assets/images/hero-sawito-le-criminel.png"
+     alt="Sawito and Le Criminel"
+     width="100%">
 
-## Viewing the site
+A deadpan satire about a household dog, a cat, and their allegedly complicit
+human handler. Minor domestic incidents are investigated with the full gravity
+of case files, intelligence briefings, and wanted posters.
 
-This repo is published with GitHub Pages, live at:
+Every suspect, offence, report, and criminal archive on this site is fictional.
+The missing snacks are not.
 
-https://thieffrycriminals.be/
-
-A GitHub Actions workflow (`.github/workflows/deploy.yml`) builds and deploys
-the site automatically on every push to `main`.
-
-### Deployment note
-
-The site is served from the custom domain root, not a `github.io/<repo>`
-subpath, so the production build must always use `--base-href /`. Do not
-reintroduce `--base-href /EtterbeekCriminals/` — that was only correct back
-when the site lived at `poiteal-ops.github.io/EtterbeekCriminals/`.
-
-## Search visibility
-
-The production build generates route-specific HTML, `sitemap.xml`, and
-`robots.txt`. Domain verification, sitemap submission, and indexing checks are
-owner-managed steps (see the local, untracked Search Console setup notes).
-
-Search Console does not require analytics or tracking code on this site.
-
-## Local development
-
-```
-npm install
-npm start
-```
-
-Then open http://localhost:4200/.
+[Open the case files →](https://thieffrycriminals.be/)

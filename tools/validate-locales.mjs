@@ -50,6 +50,9 @@ function deepCompare(refObj, candObj, prefix = '', problems = []) {
     } else if (typeof rv !== typeof cv) {
       problems.push(`TYPE ${prefix}${k} ref=${typeof rv} got=${typeof cv}`);
     } else if (typeof cv === 'string' && cv.trim() === '') {
+      // CIB records without an image deliberately have no alternative text.
+      // The reference must also be empty; required image descriptions still fail.
+      if (k === 'imageAlt' && /^cib\.incidents\.CIB-\d{3}\.$/.test(prefix) && rv === '' && cv === '') continue;
       problems.push(`EMPTY ${prefix}${k}`);
     }
   }
