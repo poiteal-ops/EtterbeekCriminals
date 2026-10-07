@@ -352,7 +352,9 @@
     "juryTampering": "陪審干渉",
     "aDayWithBestie": "Bestieとの一日",
     "kandeNadege": "KANDE NADÈGE",
+    "lazyAutumn": "怠惰な秋",
     "blog": "ブログ",
+    "conspiracyBoard": "陰謀",
     "shop": "ショップ"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "潜入担当者、破綻した作戦、そして驚くほど絶好調の容疑者一名。",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "怠惰な秋",
+      "teaser": "パンケーキの季節が始まった。その後、容疑者は長期休養に入った。",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "季節活動報告",
+    "title": "怠惰な秋",
+    "locationLabel": "場所",
+    "locationVal": "エテルベーク、パンケーキ店の店外（開店前）、その後ソファ",
+    "suspectLabel": "容疑者",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "証人",
+    "witnessVal": "SAWITO（終始その場におり、リードを持ち、リンゴを提供）",
+    "motiveLabel": "動機",
+    "motiveVal": "パンケーキの季節、その後の持続的かつ当然の休息",
+    "p1": "九月最初の涼しい日とともに、恒例のパンケーキの季節が始まった。対象者はそれを見逃していなかった。監視記録は、開店のずっと前からパンケーキ店の外、テラス家具のそばで「ただ待っている」者の姿勢を取る彼を示す。パンケーキは入手されなかった。対象者は善意のしるしとして証人からリンゴの一切れを受け取り、これを前払いとして扱った。",
+    "p2": "張り込み後、犯罪活動は急減した。対象者の巡回は遅く、労力を要さず、主に落ち葉と栗の匂いを嗅ぐことに限られた。彼はそれらを監査しているようだった。九月末には様式が定着した。ソファ、あくび、ソファ。捜査員が発見したのは新たな違反行為なし、多数のクッション、そして非常に大きなあくび一つだった。",
+    "exhibitBCaption": "証拠B — 対象者がゆったりしたペースで栗を監査",
+    "exhibitCCaption": "証拠C — ソファであくびをする対象者、公式に非番",
+    "exhibitDCaption": "証拠D — 対象者が至近距離からカメラへ接近。画質不良。対象者は撮影者に協力しなかった",
+    "stamp": "事件保留 — 対象者休息中"
+  },
+  "conspiracyBoard": {
+    "nav": "陰謀",
+    "kicker": "非公式調査 / 証拠室",
+    "title": "陰謀ボード",
+    "subtitle": "一つのソファ。複数の容疑者。捜査員が無視できないパターン。",
+    "fictionalNotice": "公開済みの事件資料から組み立てた架空の再構成です。実際の監視、告発、証拠は一切含まれません。",
+    "boardStamp": "関連：極めて疑わしい",
+    "buildCase": "事件を組み立てる",
+    "pause": "シーケンスを一時停止",
+    "continue": "シーケンスを続行",
+    "skip": "完成したボードへ",
+    "replay": "シーケンスを再生",
+    "reset": "選択をクリア",
+    "selectedLabel": "選択した証拠",
+    "detailsTitle": "関連メモ",
+    "evidenceListTitle": "証拠索引",
+    "connectionsTitle": "作成された関連",
+    "caseLinkLabel": "事件ファイルを開く",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "主要容疑者。ソファ、バルコニー、放置された食べ物が争点になる際、繰り返し現場にいる。"
+      },
+      "couch": {
+        "title": "ソファ",
+        "summary": "監視地点、係争地、そして家庭内証拠が繰り返し現れる現場。"
+      },
+      "balcony": {
+        "title": "バルコニー",
+        "summary": "一件のハト追跡と長期にわたる安全対策の場所。"
+      },
+      "shoe": {
+        "title": "緑の靴",
+        "summary": "無許可の移動作戦後、損なわれた靴ひもとともに回収された。"
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "季節的な訪問者であり、動機が完全に架空のままである記録済みのライバル。"
+      },
+      "pikette-visits": {
+        "title": "訪問記録",
+        "summary": "公開された事件記録には、訪問、ソファをめぐる争い、そして疑わしいほど静かな休戦が記されている。"
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "公開済み事件資料では、Le Criminel は繰り返しソファと関連づけられている。ボードはこれを結論ではなく編集上の再構成として扱う。",
+      "le-criminel-balcony": "バルコニー事件記録には、Le Criminel が関与したハト追跡と、ハトの取得に成功しなかったことが残されている。",
+      "le-criminel-shoe": "靴のファイルには、緑の靴、損傷した靴ひも、そしてもっともらしい別説明のない容疑者が記録されている。",
+      "le-criminel-pikette": "公開された訪問記録は Le Criminel と Pikette の間に繰り返される敵意を示す。より広い理論は意図的に架空のものである。",
+      "pikette-couch": "記録された訪問中、両容疑者はソファを占有した。この関連は争いのある再構成として提示される。",
+      "pikette-visits": "事件記録は実際の捜査パターンを主張せず、Pikette の訪問を記録している。"
+    }
+  },
   "blog": {
     "title": "事件記録",
-    "subtitle": "月次エントリー26件――2年間にわたる継続的な監視、事件001-CRは今も未解決"
+    "subtitle": "月次記録27件 — 二年以上にわたる継続監視の後も、事件001-CRは未解決"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "市内の公園、侵入を許す",
       "body": "対象は8月中ずっとブリュッセルに滞在した。好天により市内の公園で作戦を繰り返し実行でき、その後にはたいていクロワッサンのかけらを不法に入手し、消費する行為が続いた。巡回頻度は増加。ペストリーの警備体制は依然として不十分である。",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "パンケーキの季節、その後は昼寝の季節",
+      "body": "九月にパンケーキの季節が始まり、対象者は店の扉より先に現場にいた。テラス家具の近くでたむろし、前払いとしてリンゴを受け取っていた。パンケーキは入手されなかった。その後活動は急減した。落ち葉の中をゆっくり巡回し、のんびり栗を検査し、ソファで多くの時間を過ごした。完全な報告書は「怠惰な秋」として別途保管されている。",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {

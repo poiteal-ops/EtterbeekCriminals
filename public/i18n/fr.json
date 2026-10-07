@@ -352,7 +352,9 @@
     "juryTampering": "MANIPULATION DU JURY",
     "aDayWithBestie": "UNE JOURNÉE AVEC BESTIE",
     "kandeNadege": "KANDE NADÈGE",
+    "lazyAutumn": "L'AUTOMNE PARESSEUX",
     "blog": "BLOG",
+    "conspiracyBoard": "COMPLOT",
     "shop": "BOUTIQUE"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "Une agente traitante sous couverture, une opération compromise et un suspect dans un état de forme alarmant.",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "L'AUTOMNE PARESSEUX",
+      "teaser": "La saison des crêpes a ouvert. Le suspect a ensuite pris un repos prolongé.",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "Rapport d'activité saisonnière",
+    "title": "L'AUTOMNE PARESSEUX",
+    "locationLabel": "LIEU",
+    "locationVal": "Etterbeek, devant des établissements de crêpes (avant l'ouverture), puis le canapé",
+    "suspectLabel": "SUSPECT",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TÉMOIN",
+    "witnessVal": "SAWITO (présent tout du long, tenait la laisse, a fourni la pomme)",
+    "motiveLabel": "MOBILE",
+    "motiveVal": "La saison des crêpes, suivie d'un repos soutenu et mérité",
+    "p1": "Avec les premiers jours frais de septembre, la saison annuelle des crêpes a commencé, et le Sujet n'en ignorait rien. La surveillance le situe devant des établissements de crêpes bien avant l'ouverture, près du mobilier de terrasse, avec l'attitude de quelqu'un qui « attend seulement ». Aucune crêpe n'a été obtenue. Le Sujet a accepté un morceau de pomme du Témoin comme geste de bonne volonté et l'a considéré comme un acompte.",
+    "p2": "Après la planque, l'activité criminelle a nettement diminué. Les patrouilles du Sujet sont devenues lentes, peu exigeantes et surtout limitées au reniflage des feuilles tombées et des châtaignes, qu'il semblait contrôler. Fin septembre, le schéma était fixé : canapé, bâillement, canapé. Les enquêteurs n'ont trouvé aucune nouvelle infraction, beaucoup de coussins et un très grand bâillement.",
+    "exhibitBCaption": "PIÈCE B — SUJET CONTRÔLANT LES CHÂTAIGNES À UN RYTHME TRANQUILLE",
+    "exhibitCCaption": "PIÈCE C — SUJET BÂILLANT SUR LE CANAPÉ, OFFICIELLEMENT HORS SERVICE",
+    "exhibitDCaption": "PIÈCE D — SUJET S'APPROCHANT DE L'APPAREIL À TRÈS COURTE DISTANCE. QUALITÉ D'IMAGE MÉDIOCRE ; LE SUJET NE COOPÉRAIT PAS AVEC LE PHOTOGRAPHE",
+    "stamp": "DOSSIER EN SUSPENS — SUJET AU REPOS"
+  },
+  "conspiracyBoard": {
+    "nav": "COMPLOT",
+    "kicker": "ENQUÊTE OFFICIEUSE / SALLE DES PIÈCES",
+    "title": "LE TABLEAU DU COMPLOT",
+    "subtitle": "Un canapé. Plusieurs suspects. Un schéma que les enquêteurs ne peuvent ignorer.",
+    "fictionalNotice": "Reconstitution fictive assemblée à partir de dossiers publiés. Aucune surveillance, allégation ou preuve réelle n'est en cause.",
+    "boardStamp": "LIENS : FORTEMENT SUSPECTS",
+    "buildCase": "ÉTABLIR LE DOSSIER",
+    "pause": "METTRE LA SÉQUENCE EN PAUSE",
+    "continue": "POURSUIVRE LA SÉQUENCE",
+    "skip": "AFFICHER LE TABLEAU COMPLET",
+    "replay": "REJOUER LA SÉQUENCE",
+    "reset": "EFFACER LA SÉLECTION",
+    "selectedLabel": "PIÈCE SÉLECTIONNÉE",
+    "detailsTitle": "NOTES DE LIAISON",
+    "evidenceListTitle": "INDEX DES PIÈCES",
+    "connectionsTitle": "LIENS ÉTABLIS",
+    "caseLinkLabel": "OUVRIR LE DOSSIER",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "Suspect principal. Régulièrement présent lorsque canapés, balcons et nourriture sans surveillance deviennent litigieux."
+      },
+      "couch": {
+        "title": "LE CANAPÉ",
+        "summary": "Poste de surveillance, territoire disputé et scène récurrente de preuves domestiques."
+      },
+      "balcony": {
+        "title": "LE BALCON",
+        "summary": "Lieu d'une poursuite de pigeon et d'une intervention de sécurité durable."
+      },
+      "shoe": {
+        "title": "LA CHAUSSURE VERTE",
+        "summary": "Retrouvée avec des lacets compromis après une opération de déplacement non autorisée."
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "Visiteuse saisonnière et rivale documentée dont les mobiles restent entièrement fictifs."
+      },
+      "pikette-visits": {
+        "title": "REGISTRE DES VISITES",
+        "summary": "Les entrées publiées consignent visites, litiges de canapé et une trêve étrangement silencieuse."
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "Le Criminel est régulièrement lié au canapé dans les dossiers publiés. Le tableau traite cela comme une reconstitution éditoriale, non comme une conclusion.",
+      "le-criminel-balcony": "Le dossier du balcon consigne une poursuite de pigeon impliquant Le Criminel, sans acquisition réussie de pigeon.",
+      "le-criminel-shoe": "Le dossier de la chaussure mentionne une chaussure verte, des lacets endommagés et un suspect sans explication alternative crédible.",
+      "le-criminel-pikette": "Les visites publiées établissent des hostilités récurrentes entre Le Criminel et Pikette. Toute théorie plus large est délibérément fictive.",
+      "pikette-couch": "Les deux suspects ont occupé le canapé lors de visites consignées ; le lien est présenté comme une reconstitution contestée.",
+      "pikette-visits": "Le journal de cas consigne les visites de Pikette sans prétendre à un schéma d'enquête réel."
+    }
+  },
   "blog": {
     "title": "JOURNAL DE BORD",
-    "subtitle": "Dossier 001-CR — 26 entrées mensuelles, deux ans de surveillance continue, le dossier reste ouvert"
+    "subtitle": "27 entrées mensuelles — après plus de deux ans de surveillance continue, le dossier 001-CR reste ouvert"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "PARCS LOCAUX COMPROMIS",
       "body": "Le Sujet est resté à Bruxelles pendant tout le mois d’août. Le beau temps a permis des opérations répétées dans les parcs locaux, généralement suivies de l’acquisition et de la consommation illicites de morceaux de croissant. La fréquence des patrouilles a augmenté. La sécurité des viennoiseries reste insuffisante.",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "SAISON DES CRÊPES, PUIS SAISON DES SIESTES",
+      "body": "La saison des crêpes a commencé en septembre et le Sujet était sur place avant l'ouverture, rôdant près du mobilier de terrasse et acceptant une pomme comme acompte. Aucune crêpe n'a été obtenue. L'activité a ensuite chuté : patrouilles lentes parmi les feuilles tombées, inspection de châtaignes à un rythme tranquille et beaucoup de temps sur le canapé. Rapport complet classé séparément sous « L'Automne paresseux » .",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {

@@ -352,7 +352,9 @@
     "juryTampering": "MANIPULACE POROTY",
     "aDayWithBestie": "DEN S BESTIE",
     "kandeNadege": "KANDE NADÈGE",
+    "lazyAutumn": "LÍNÝ PODZIM",
     "blog": "BLOG",
+    "conspiracyBoard": "KONSPIRACE",
     "shop": "OBCHOD"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "Tajná psovodka, kompromitovaná operace a jeden podezřelý v alarmujícím výborném stavu.",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "LÍNÝ PODZIM",
+      "teaser": "Palačinková sezóna skončila, pohovka převzala službu.",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "Sezónní hlášení o činnosti",
+    "title": "LÍNÝ PODZIM",
+    "locationLabel": "MÍSTO",
+    "locationVal": "Etterbeek, před palačinkárnami (před otevřením), pak pohovka",
+    "suspectLabel": "PODEZŘELÝ",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "SVĚDEK",
+    "witnessVal": "SAWITO (přítomen po celou dobu, držel vodítko, poskytl jablko)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Palačinková sezóna, po ní vytrvalý a zasloužený odpočinek",
+    "p1": "S prvními chladnými zářijovými dny začala každoroční palačinková sezóna a Subjekt o tom věděl. Sledování jej zachytilo před palačinkárnami dlouho před otevřením, u nábytku na terase v postoji někoho, kdo „jen čeká“. Žádné palačinky nezískal. Od Svědka přijal kousek jablka jako gesto dobré vůle a považoval ho za zálohu.",
+    "p2": "Po hlídce trestná činnost prudce poklesla. Subjektovy pochůzky byly pomalé, nenáročné a většinou omezené na očichávání spadaného listí a kaštanů, které zřejmě kontroloval. Koncem září se vzorec ustálil: pohovka, zívnutí, pohovka. Vyšetřovatelé nenašli žádné nové přestupky, velmi mnoho polštářů a jedno velmi velké zívnutí.",
+    "exhibitBCaption": "DŮKAZ B — SUBJEKT POMALÝM TEMPEM KONTROLUJE KAŠTANY",
+    "exhibitCCaption": "DŮKAZ C — SUBJEKT ZÍVÁ NA POHOVCE, OFICIÁLNĚ MIMO SLUŽBU",
+    "exhibitDCaption": "DŮKAZ D — SUBJEKT SE ZBLÍZKA PŘIBLIŽUJE K FOTOAPARÁTU. KVALITA SNÍMKU NÍZKÁ; SUBJEKT S FOTOGRAFEM NESPOLUPRACOVAL",
+    "stamp": "PŘÍPAD POZASTAVEN — SUBJEKT ODPOČÍVÁ"
+  },
+  "conspiracyBoard": {
+    "nav": "KONSPIRACE",
+    "kicker": "NEOFICIÁLNÍ VYŠETŘOVÁNÍ / MÍSTNOST S DŮKAZY",
+    "title": "KONSPIRAČNÍ NÁSTĚNKA",
+    "subtitle": "Jedna pohovka. Několik podezřelých. Vzorec, který vyšetřovatelé nemohou ignorovat.",
+    "fictionalNotice": "Fiktivní rekonstrukce sestavená z publikovaných materiálů spisů. Nejde o skutečné sledování, obvinění ani důkazy.",
+    "boardStamp": "SPOJENÍ: VELMI PODEZŘELÁ",
+    "buildCase": "SESTAVIT PŘÍPAD",
+    "pause": "POZASTAVIT SEKVENCI",
+    "continue": "POKRAČOVAT V SEKVENCI",
+    "skip": "PŘEJÍT NA ÚPLNOU NÁSTĚNKU",
+    "replay": "PŘEHRÁT SEKVENCI ZNOVU",
+    "reset": "VYMAZAT VÝBĚR",
+    "selectedLabel": "VYBRANÝ DŮKAZ",
+    "detailsTitle": "POZNÁMKY KE SPOJENÍM",
+    "evidenceListTitle": "REJSTŘÍK DŮKAZŮ",
+    "connectionsTitle": "VYTVOŘENÁ SPOJENÍ",
+    "caseLinkLabel": "OTEVŘÍT SPIS",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "Hlavní podezřelý. Opakovaně přítomen, když se spornými stávají pohovky, balkony a nehlídané jídlo."
+      },
+      "couch": {
+        "title": "POHOVKA",
+        "summary": "Pozorovací stanoviště, sporné území a opakované místo domácích důkazů."
+      },
+      "balcony": {
+        "title": "BALKON",
+        "summary": "Místo jednoho pronásledování holuba a dlouhodobého bezpečnostního zásahu."
+      },
+      "shoe": {
+        "title": "ZELENÁ BOTA",
+        "summary": "Nalezena s poškozenými tkaničkami po nepovolené relokační operaci."
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "Sezónní návštěvnice a zdokumentovaná soupeřka, jejíž motivy zůstávají zcela fiktivní."
+      },
+      "pikette-visits": {
+        "title": "ZÁZNAM NÁVŠTĚV",
+        "summary": "Publikované záznamy případů uvádějí návštěvy, spory o pohovku a jedno podezřele tiché příměří."
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "LE CRIMINEL je v publikovaných materiálech opakovaně spojován s pohovkou. Nástěnka to považuje za redakční rekonstrukci, nikoli zjištění.",
+      "le-criminel-balcony": "Balkonový spis zaznamenává pronásledování holuba, kterého se účastnil LE CRIMINEL, a žádné úspěšné získání holuba.",
+      "le-criminel-shoe": "Spis o botě dokumentuje zelenou botu, poškozené tkaničky a podezřelého bez věrohodného alternativního vysvětlení.",
+      "le-criminel-pikette": "Publikované návštěvy potvrzují opakované nepřátelství mezi LE CRIMINEL a Pikette. Jakákoli širší teorie je záměrně fiktivní.",
+      "pikette-couch": "Oba podezřelí obsadili pohovku během zaznamenaných návštěv; spojení je předloženo jako sporná rekonstrukce.",
+      "pikette-visits": "Záznam případů uvádí návštěvy Pikette, aniž by tvrdil skutečný vyšetřovací vzorec."
+    }
+  },
   "blog": {
     "title": "DENÍK PŘÍPADŮ",
-    "subtitle": "26 měsíčních záznamů — dva roky nepřetržitého sledování, případ 001-CR zůstává otevřený"
+    "subtitle": "27 měsíčních záznamů — po více než dvou letech nepřetržitého sledování zůstává případ 001-CR otevřen"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "MÍSTNÍ PARKY INFILTROVÁNY",
       "body": "Subjekt zůstal po celý srpen v Bruselu. Příznivé počasí umožnilo opakované operace v místních parcích, po nichž obvykle následovalo nezákonné získání a konzumace kousků croissantu. Frekvence hlídek vzrostla. Zabezpečení pečiva zůstává nedostatečné.",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "PALAČINKOVÁ SEZÓNA, PAK SEZÓNA SPÁNKU",
+      "body": "Palačinková sezóna začala v září a Subjekt byl na místě dřív než dveře, postával u nábytku na terase a přijímal jablko jako zálohu. Žádné palačinky nezískal. Aktivita pak prudce poklesla: pomalé pochůzky spadaným listím, poklidné kontroly kaštanů a mnoho času na pohovce. Úplná zpráva je vedena samostatně pod názvem „Líný podzim“.",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {

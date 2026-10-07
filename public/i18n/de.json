@@ -352,7 +352,9 @@
     "juryTampering": "MANIPULATION DER JURY",
     "aDayWithBestie": "EIN TAG MIT BESTIE",
     "kandeNadege": "KANDE NADÈGE",
+    "lazyAutumn": "DER FÄULE HERBST",
     "blog": "BLOG",
+    "conspiracyBoard": "VERSCHWÖRUNG",
     "shop": "SHOP"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "Eine verdeckte Betreuungsperson, eine kompromittierte Operation und ein Verdächtiger in beunruhigend hervorragendem Zustand.",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "DER FÄULE HERBST",
+      "teaser": "Die Pfannkuchensaison begann. Danach ruhte sich der Verdächtige ausgiebig aus.",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "Saisonaler Tätigkeitsbericht",
+    "title": "DER FÄULE HERBST",
+    "locationLabel": "ORT",
+    "locationVal": "Etterbeek, vor Pfannkuchenlokalen (vor Öffnung), dann das Sofa",
+    "suspectLabel": "VERDÄCHTIGER",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "ZEUGE",
+    "witnessVal": "SAWITO (durchgehend anwesend, hielt die Leine, stellte den Apfel bereit)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Pfannkuchensaison, gefolgt von anhaltender und wohlverdienter Ruhe",
+    "p1": "Mit den ersten kühlen Septembertagen begann die jährliche Pfannkuchensaison, und dem Subjekt war dies nicht entgangen. Die Überwachung verortet ihn lange vor Öffnungszeit vor Pfannkuchenlokalen, nahe den Terrassenmöbeln, in der Haltung von jemandem, der „nur wartet“. Pfannkuchen wurden nicht erlangt. Das Subjekt nahm ein Stück Apfel vom Zeugen als Geste guten Willens an und behandelte es als Anzahlung.",
+    "p2": "Nach der Observierung ging die kriminelle Aktivität deutlich zurück. Die Patrouillen des Subjekts wurden langsam, kraftsparend und beschränkten sich meist auf das Beschnüffeln gefallener Blätter und Kastanien, die er offenbar prüfte. Ende September stand das Muster fest: Sofa, Gähnen, Sofa. Die Ermittler fanden keine neuen Delikte, sehr viele Kissen und ein sehr großes Gähnen.",
+    "exhibitBCaption": "BEWEISSTÜCK B — SUBJEKT PRÜFT DIE KASTANIEN IN GEMÄCHLICHEM TEMPO",
+    "exhibitCCaption": "BEWEISSTÜCK C — SUBJEKT GÄHNT AUF DEM SOFA, OFFIZIELL AUSSER DIENST",
+    "exhibitDCaption": "BEWEISSTÜCK D — SUBJEKT NÄHERT SICH DER KAMERA AUS NÄCHSTER NÄHE. BILDQUALITÄT SCHLECHT; SUBJEKT KOOPERIERTE NICHT MIT DEM FOTOGRAFEN",
+    "stamp": "AKTE RUHT — SUBJEKT RUHT"
+  },
+  "conspiracyBoard": {
+    "nav": "VERSCHWÖRUNG",
+    "kicker": "INOFFIZIELLE ERMITTLUNG / BEWEISRAUM",
+    "title": "DAS VERSCHWÖRUNGSBRETT",
+    "subtitle": "Ein Sofa. Mehrere Verdächtige. Ein Muster, das Ermittler nicht ignorieren können.",
+    "fictionalNotice": "Eine fiktive Rekonstruktion aus veröffentlichtem Aktenmaterial. Keine echte Überwachung, Anschuldigung oder Beweisführung ist beteiligt.",
+    "boardStamp": "VERBINDUNGEN: ÄUSSERST VERDÄCHTIG",
+    "buildCase": "AKTE AUFBAUEN",
+    "pause": "ABLAUF PAUSIEREN",
+    "continue": "ABLAUF FORTSETZEN",
+    "skip": "ZUM VOLLSTÄNDIGEN BRETT",
+    "replay": "ABLAUF WIEDERHOLEN",
+    "reset": "AUSWAHL LÖSCHEN",
+    "selectedLabel": "AUSGEWÄHLTES BEWEISSTÜCK",
+    "detailsTitle": "VERBINDUNGSNOTIZEN",
+    "evidenceListTitle": "BEWEISINDEX",
+    "connectionsTitle": "VERFASSTE VERBINDUNGEN",
+    "caseLinkLabel": "AKTE ÖFFNEN",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "Hauptverdächtiger. Wiederholt anwesend, wenn Sofas, Balkone und unbeaufsichtigtes Essen strittig werden."
+      },
+      "couch": {
+        "title": "DAS SOFA",
+        "summary": "Überwachungsposten, umstrittenes Gebiet und wiederkehrender Ort häuslicher Beweise."
+      },
+      "balcony": {
+        "title": "DER BALKON",
+        "summary": "Ort einer Taubenverfolgung und einer lang anhaltenden Sicherheitsmaßnahme."
+      },
+      "shoe": {
+        "title": "DER GRÜNE SCHUH",
+        "summary": "Mit beeinträchtigten Schnürsenkeln nach einer unerlaubten Verlegungsaktion geborgen."
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "Saisonale Besucherin und dokumentierte Rivalin, deren Motive vollständig fiktiv bleiben."
+      },
+      "pikette-visits": {
+        "title": "BESUCHSPROTOKOLL",
+        "summary": "Veröffentlichte Fallnotizen erfassen Besuche, Sofastreitigkeiten und einen verdächtig stillen Waffenstillstand."
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "Le Criminel wird in veröffentlichtem Fallmaterial wiederholt mit dem Sofa verbunden. Das Brett behandelt dies als redaktionelle Rekonstruktion, nicht als Feststellung.",
+      "le-criminel-balcony": "Die Balkonakte hält eine Taubenverfolgung mit Le Criminel und keinen erfolgreichen Taubenerwerb fest.",
+      "le-criminel-shoe": "Die Schuhakte dokumentiert einen grünen Schuh, beschädigte Schnürsenkel und einen Verdächtigen ohne glaubwürdige Alternativerklärung.",
+      "le-criminel-pikette": "Veröffentlichte Besuche belegen wiederkehrende Feindseligkeiten zwischen Le Criminel und Pikette. Jede weitergehende Theorie ist absichtlich fiktiv.",
+      "pikette-couch": "Beide Verdächtige haben bei protokollierten Besuchen das Sofa besetzt; die Verbindung wird als umstrittene Rekonstruktion dargestellt.",
+      "pikette-visits": "Das Fallprotokoll erfasst Pikettes Besuche, ohne ein echtes Ermittlungsmuster zu behaupten."
+    }
+  },
   "blog": {
     "title": "FALLREGISTER",
-    "subtitle": "26 monatliche Einträge — zwei Jahre lückenlose Überwachung, Fall 001-CR bleibt offen"
+    "subtitle": "27 monatliche Einträge — nach über zwei Jahren fortlaufender Überwachung bleibt Akte 001-CR offen"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "ÖRTLICHE PARKS KOMPROMITTIERT",
       "body": "Das Subjekt hielt sich den gesamten August über in Brüssel auf. Das freundliche Wetter ermöglichte wiederholte Einsätze in örtlichen Parks, meist gefolgt von der unrechtmäßigen Beschaffung und dem Verzehr von Croissantstücken. Die Patrouillenfrequenz nahm zu. Die Gebäckabsicherung bleibt unzureichend.",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "PFANNKUCHENSAISON, DANN NICKSAISON",
+      "body": "Die Pfannkuchensaison begann im September, und das Subjekt war vor den Türen vor Ort, lungerte bei den Terrassenmöbeln und nahm Apfel als Anzahlung entgegen. Pfannkuchen wurden nicht erlangt. Danach sank die Aktivität stark: langsame Patrouillen durch gefallenes Laub, Kastanieninspektionen im gemächlichen Tempo und viel Zeit auf dem Sofa. Vollständiger Bericht separat unter „Der faule Herbst“ abgelegt.",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {

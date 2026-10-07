@@ -352,7 +352,9 @@
     "juryTampering": "MANIPULAÇÃO DO JÚRI",
     "aDayWithBestie": "UM DIA COM Bestie",
     "kandeNadege": "KANDE NADÈGE",
+    "lazyAutumn": "O OUTONO PREGUIÇOSO",
     "blog": "BLOG",
+    "conspiracyBoard": "CONSPIRAÇÃO",
     "shop": "LOJA"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "Uma condutora infiltrada, uma operação comprometida e um suspeito em condição física alarmantemente excelente.",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "O OUTONO PREGUIÇOSO",
+      "teaser": "A época das panquecas abriu. Depois, o suspeito descansou longamente.",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "Relatório de atividade sazonal",
+    "title": "O OUTONO PREGUIÇOSO",
+    "locationLabel": "LOCAL",
+    "locationVal": "Etterbeek, fora de estabelecimentos de panquecas (antes da abertura), depois o sofá",
+    "suspectLabel": "SUSPEITO",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TESTEMUNHA",
+    "witnessVal": "SAWITO (presente durante todo o tempo, segurava a trela, forneceu a maçã)",
+    "motiveLabel": "MOTIVO",
+    "motiveVal": "Época das panquecas, seguida de descanso prolongado e bem merecido",
+    "p1": "Com os primeiros dias frescos de setembro, abriu a anual época das panquecas, e o Sujeito não a ignorava. A vigilância coloca-o fora de estabelecimentos de panquecas muito antes da abertura, junto ao mobiliário da esplanada, com a postura de quem «está apenas à espera». Não foram obtidas panquecas. O Sujeito aceitou um pedaço de maçã da Testemunha como gesto de boa vontade e tratou-o como pagamento adiantado.",
+    "p2": "Após a vigilância, a atividade criminal caiu acentuadamente. As patrulhas do Sujeito tornaram-se lentas, de pouco esforço e maioritariamente limitadas a cheirar folhas caídas e castanhas, que ele parecia estar a auditar. No fim de setembro, o padrão estava definido: sofá, bocejo, sofá. Os investigadores não encontraram novas infrações, muitas almofadas e um bocejo muito grande.",
+    "exhibitBCaption": "PROVA B — SUJEITO AUDITA AS CASTANHAS A PASSO TRANQUILO",
+    "exhibitCCaption": "PROVA C — SUJEITO BOCEJA NO SOFÁ, OFICIALMENTE FORA DE SERVIÇO",
+    "exhibitDCaption": "PROVA D — SUJEITO APROXIMA-SE DA CÂMARA A CURTA DISTÂNCIA. QUALIDADE DE IMAGEM FRACA; O SUJEITO NÃO COOPERAVA COM O FOTÓGRAFO",
+    "stamp": "CASO EM SUSPENSO — SUJEITO A DESCANSAR"
+  },
+  "conspiracyBoard": {
+    "nav": "CONSPIRAÇÃO",
+    "kicker": "INVESTIGAÇÃO OFICIOSA / SALA DE PROVAS",
+    "title": "O QUADRO DA CONSPIRAÇÃO",
+    "subtitle": "Um sofá. Vários suspeitos. Um padrão que os investigadores não conseguem ignorar.",
+    "fictionalNotice": "Reconstrução fictícia reunida a partir de material de processos publicados. Não envolve vigilância, alegação ou prova reais.",
+    "boardStamp": "LIGAÇÕES: ALTAMENTE SUSPEITAS",
+    "buildCase": "CONSTRUIR O CASO",
+    "pause": "PAUSAR SEQUÊNCIA",
+    "continue": "CONTINUAR SEQUÊNCIA",
+    "skip": "IR PARA O QUADRO COMPLETO",
+    "replay": "REPETIR SEQUÊNCIA",
+    "reset": "LIMPAR SELEÇÃO",
+    "selectedLabel": "PROVA SELECIONADA",
+    "detailsTitle": "NOTAS DE LIGAÇÃO",
+    "evidenceListTitle": "ÍNDICE DE PROVAS",
+    "connectionsTitle": "LIGAÇÕES REDIGIDAS",
+    "caseLinkLabel": "ABRIR PROCESSO",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "Principal suspeito. Repetidamente presente quando sofás, varandas e comida sem vigilância se tornam contenciosos."
+      },
+      "couch": {
+        "title": "O SOFÁ",
+        "summary": "Posto de vigilância, território disputado e cenário recorrente de provas domésticas."
+      },
+      "balcony": {
+        "title": "A VARANDA",
+        "summary": "Local de uma perseguição a um pombo e de uma intervenção de segurança duradoura."
+      },
+      "shoe": {
+        "title": "O SAPATO VERDE",
+        "summary": "Recuperado com atacadores comprometidos após uma operação de relocalização não autorizada."
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "Visitante sazonal e rival documentada, cujos motivos permanecem inteiramente fictícios."
+      },
+      "pikette-visits": {
+        "title": "REGISTO DE VISITAS",
+        "summary": "Entradas publicadas registam visitas, disputas pelo sofá e uma trégua suspeitamente silenciosa."
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "Le Criminel é repetidamente ligado ao sofá em material de casos publicado. O quadro trata isto como reconstrução editorial, não como conclusão.",
+      "le-criminel-balcony": "O processo da varanda regista uma perseguição a pombo envolvendo Le Criminel e nenhuma aquisição bem-sucedida de pombo.",
+      "le-criminel-shoe": "O processo do sapato documenta um sapato verde, atacadores danificados e um suspeito sem explicação alternativa credível.",
+      "le-criminel-pikette": "Visitas publicadas estabelecem hostilidades recorrentes entre Le Criminel e Pikette. Qualquer teoria mais ampla é deliberadamente fictícia.",
+      "pikette-couch": "Ambos os suspeitos ocuparam o sofá durante visitas registadas; a ligação é apresentada como reconstrução contestada.",
+      "pikette-visits": "O registo de casos anota visitas de Pikette sem alegar um padrão investigativo real."
+    }
+  },
   "blog": {
     "title": "REGISTO DO CASO",
-    "subtitle": "26 entradas mensais — dois anos de vigilância contínua, o processo 001-CR permanece em aberto"
+    "subtitle": "27 entradas mensais — após mais de dois anos de vigilância contínua, o caso 001-CR continua aberto"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "PARQUES LOCAIS COMPROMETIDOS",
       "body": "O Sujeito permaneceu em Bruxelas durante todo o mês de agosto. O bom tempo permitiu operações repetidas nos parques locais, geralmente seguidas da aquisição e do consumo ilícitos de pedaços de croissant. A frequência das patrulhas aumentou. A segurança dos produtos de pastelaria continua inadequada.",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "ÉPOCA DAS PANQUECAS, DEPOIS ÉPOCA DAS SONECAS",
+      "body": "A época das panquecas abriu em setembro e o Sujeito estava no local antes das portas, vadiando junto ao mobiliário da esplanada e aceitando maçã como adiantamento. Não foram obtidas panquecas. A atividade caiu depois acentuadamente: patrulhas lentas pelas folhas caídas, inspeções de castanhas a passo tranquilo e muito tempo no sofá. Relatório completo arquivado em separado como «O Outono Preguiçoso».",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {

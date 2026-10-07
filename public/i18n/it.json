@@ -352,7 +352,9 @@
     "juryTampering": "MANIPOLAZIONE DELLA GIURIA",
     "aDayWithBestie": "UNA GIORNATA CON BESTIE",
     "kandeNadege": "KANDE NADÈGE",
+    "lazyAutumn": "L'AUTUNNO PIGRO",
     "blog": "BLOG",
+    "conspiracyBoard": "COMPLOTTO",
     "shop": "NEGOZIO"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "Un’operatrice sotto copertura, un’operazione compromessa e un sospettato in condizioni fisiche allarmantemente eccellenti.",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "L'AUTUNNO PIGRO",
+      "teaser": "È iniziata la stagione dei pancake. Il sospettato ha poi riposato a lungo.",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "Rapporto di attività stagionale",
+    "title": "L'AUTUNNO PIGRO",
+    "locationLabel": "LUOGO",
+    "locationVal": "Etterbeek, fuori da locali di pancake (prima dell'apertura), poi il divano",
+    "suspectLabel": "SOSPETTATO",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TESTIMONE",
+    "witnessVal": "SAWITO (presente per tutto il tempo, teneva il guinzaglio, ha fornito la mela)",
+    "motiveLabel": "MOVENTE",
+    "motiveVal": "Stagione dei pancake, seguita da un riposo prolungato e ben meritato",
+    "p1": "Con i primi giorni freschi di settembre, è iniziata l'annuale stagione dei pancake, e il Soggetto non ne era ignaro. La sorveglianza lo colloca fuori dai locali di pancake molto prima dell'apertura, vicino all'arredo della terrazza, con l'atteggiamento di chi «sta solo aspettando». Non sono stati ottenuti pancake. Il Soggetto ha accettato un pezzo di mela dal Testimone come gesto di buona volontà e l'ha trattato come acconto.",
+    "p2": "Dopo l'appostamento, l'attività criminale è calata nettamente. Le pattuglie del Soggetto sono diventate lente, poco impegnative e per lo più limitate ad annusare foglie cadute e castagne, che sembrava stesse revisionando. A fine settembre lo schema era stabilito: divano, sbadiglio, divano. Gli investigatori non hanno trovato nuovi reati, moltissimi cuscini e uno sbadiglio molto grande.",
+    "exhibitBCaption": "REPERTO B — SOGGETTO REVISIONA LE CASTAGNE A PASSO TRANQUILLO",
+    "exhibitCCaption": "REPERTO C — SOGGETTO SBADIGLIA SUL DIVANO, UFFICIALMENTE FUORI SERVIZIO",
+    "exhibitDCaption": "REPERTO D — SOGGETTO SI AVVICINA ALLA FOTOCAMERA A DISTANZA RAVVICINATA. QUALITÀ DELL'IMMAGINE SCARSA; IL SOGGETTO NON COLLABORAVA CON IL FOTOGRAFO",
+    "stamp": "CASO IN SOSPESO — SOGGETTO A RIPOSO"
+  },
+  "conspiracyBoard": {
+    "nav": "COMPLOTTO",
+    "kicker": "INDAGINE UFFICIOSA / SALA REPERTI",
+    "title": "IL TABELLONE DEL COMPLOTTO",
+    "subtitle": "Un divano. Diversi sospettati. Uno schema che gli investigatori non possono ignorare.",
+    "fictionalNotice": "Ricostruzione fittizia assemblata da materiale di fascicoli pubblicati. Non sono coinvolte sorveglianza, accuse o prove reali.",
+    "boardStamp": "CONNESSIONI: ALTAMENTE SOSPETTE",
+    "buildCase": "COSTRUISCI IL CASO",
+    "pause": "METTI IN PAUSA LA SEQUENZA",
+    "continue": "CONTINUA LA SEQUENZA",
+    "skip": "VAI AL TABELLONE COMPLETO",
+    "replay": "RIPETI LA SEQUENZA",
+    "reset": "CANCELLA SELEZIONE",
+    "selectedLabel": "REPERTO SELEZIONATO",
+    "detailsTitle": "NOTE DI COLLEGAMENTO",
+    "evidenceListTitle": "INDICE DEI REPERTI",
+    "connectionsTitle": "CONNESSIONI REDATTE",
+    "caseLinkLabel": "APRI FASCICOLO",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "Sospettato principale. Ripetutamente presente quando divani, balconi e cibo incustodito diventano contesi."
+      },
+      "couch": {
+        "title": "IL DIVANO",
+        "summary": "Postazione di sorveglianza, territorio conteso e ricorrente scena di prove domestiche."
+      },
+      "balcony": {
+        "title": "IL BALCONE",
+        "summary": "Luogo di un inseguimento di piccione e di un intervento di sicurezza duraturo."
+      },
+      "shoe": {
+        "title": "LA SCARPA VERDE",
+        "summary": "Recuperata con lacci compromessi dopo un'operazione di ricollocamento non autorizzata."
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "Visitatrice stagionale e rivale documentata, i cui moventi restano interamente fittizi."
+      },
+      "pikette-visits": {
+        "title": "REGISTRO VISITE",
+        "summary": "Le voci pubblicate registrano visite, dispute sul divano e una tregua sospettosamente silenziosa."
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "Le Criminel è ripetutamente collegato al divano nel materiale pubblicato. Il tabellone lo tratta come ricostruzione editoriale, non come accertamento.",
+      "le-criminel-balcony": "Il fascicolo del balcone registra un inseguimento di piccione con Le Criminel e nessuna acquisizione riuscita di piccioni.",
+      "le-criminel-shoe": "Il fascicolo della scarpa documenta una scarpa verde, lacci danneggiati e un sospettato senza una spiegazione alternativa credibile.",
+      "le-criminel-pikette": "Le visite pubblicate attestano ostilità ricorrenti tra Le Criminel e Pikette. Ogni teoria più ampia è deliberatamente fittizia.",
+      "pikette-couch": "Entrambi i sospettati hanno occupato il divano durante visite registrate; il collegamento è presentato come ricostruzione contestata.",
+      "pikette-visits": "Il registro dei casi annota visite di Pikette senza rivendicare un vero schema investigativo."
+    }
+  },
   "blog": {
     "title": "REGISTRO CASI",
-    "subtitle": "26 voci mensili — due anni di sorveglianza continua, il caso 001-CR resta aperto"
+    "subtitle": "27 voci mensili — dopo oltre due anni di sorveglianza continua, il caso 001-CR resta aperto"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "PARCHI LOCALI COMPROMESSI",
       "body": "Il Soggetto è rimasto a Bruxelles per tutto agosto. Il bel tempo ha consentito ripetute operazioni nei parchi locali, solitamente seguite dall’acquisizione e dal consumo illeciti di frammenti di croissant. La frequenza dei pattugliamenti è aumentata. La sicurezza dei prodotti da forno resta inadeguata.",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "STAGIONE DEI PANCAKE, POI STAGIONE DEI PISOLINI",
+      "body": "La stagione dei pancake è iniziata a settembre e il Soggetto era sul posto prima delle porte, bighellonando presso l'arredo della terrazza e accettando mela come acconto. Non sono stati ottenuti pancake. L'attività è poi calata bruscamente: pattuglie lente tra le foglie cadute, ispezioni di castagne a passo tranquillo e molto tempo sul divano. Rapporto completo archiviato separatamente come «L'autunno pigro».",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {

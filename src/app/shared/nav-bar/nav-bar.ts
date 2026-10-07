@@ -19,6 +19,7 @@ const STORY_ROUTES = [
   '/escape-to-the-country',
   '/theft-and-destruction',
   '/heatwave-survival',
+  '/lazy-autumn',
   '/jury-tampering',
   '/a-day-with-bestie',
   '/kande-nadege',

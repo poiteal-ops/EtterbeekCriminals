@@ -352,7 +352,9 @@
     "juryTampering": "JURYPÅVERKAN",
     "aDayWithBestie": "EN DAG MED BESTIE",
     "kandeNadege": "KANDE NADÈGE",
+    "lazyAutumn": "DEN LATA HÖSTEN",
     "blog": "BLOGG",
+    "conspiracyBoard": "KONSPIRATION",
     "shop": "BUTIK"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "En hemlig hundförare, en komprometterad operation och en misstänkt i alarmerande utmärkt form.",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "DEN LATA HÖSTEN",
+      "teaser": "Pannkakssäsong, en tålmodig spaning och en misstänkt som sedan gick av tjänst på soffan.",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "Säsongsrapport över verksamheten",
+    "title": "DEN LATA HÖSTEN",
+    "locationLabel": "PLATS",
+    "locationVal": "Etterbeek, utanför pannkaksställen (före öppning), sedan soffan",
+    "suspectLabel": "MISSTÄNKT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "VITTNE",
+    "witnessVal": "Sawito (närvarande hela tiden, höll i kopplet, tillhandahöll äpplet)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Pannkakssäsong, följd av en långvarig och välförtjänt vila",
+    "p1": "Med septembers första svala dagar öppnade den årliga pannkakssäsongen, och Subjektet var inte omedvetet om detta. Övervakningen placerar honom utanför pannkaksställen långt före öppningsdags, vid terrassmöblerna, med hållningen hos någon som «bara väntar». Inga pannkakor erhölls. Subjektet tog emot en bit äpple från Vittnet som en välviljegest och behandlade den som handpenning.",
+    "p2": "Efter spaningen sjönk den kriminella verksamheten kraftigt. Subjektets patruller blev långsamma, ansträngningsfria och mest begränsade till att nosa på fallna löv och kastanjer, som han tycktes revidera. I slutet av september var mönstret etablerat: soffa, gäspning, soffa. Utredarna fann inga nya brott, ett stort antal kuddar och en mycket stor gäspning.",
+    "exhibitBCaption": "BILAGA B — SUBJEKTET GRANSKAR KASTANJER I LUGN TAKT",
+    "exhibitCCaption": "BILAGA C — SUBJEKTET GÄSPAR I SOFFAN, OFFICIELLT UR TJÄNST",
+    "exhibitDCaption": "BILAGA D — SUBJEKTET NÄRMAR SIG KAMERAN PÅ NÄRA HÅLL. BILDKVALITETEN ÄR DÅLIG; SUBJEKTET SAMARBETADE INTE MED FOTOGRAFEN",
+    "stamp": "FALLET VILANDE — SUBJEKTET VILAR"
+  },
+  "conspiracyBoard": {
+    "nav": "KONSPIRATION",
+    "kicker": "INOFFICIELL UTREDNING / BEVISRUM",
+    "title": "KONSPIRATIONSBRÄDET",
+    "subtitle": "En soffa. Flera misstänkta. Ett mönster som utredarna inte kan ignorera.",
+    "fictionalNotice": "En fiktiv rekonstruktion sammanställd av publicerat fallmaterial. Ingen verklig övervakning, anklagelse eller bevisning är inblandad.",
+    "boardStamp": "KOPPLINGAR: HÖGST MISSTÄNKTA",
+    "buildCase": "BYGG FALLET",
+    "pause": "PAUSA SEKVENSEN",
+    "continue": "FORTSÄTT SEKVENSEN",
+    "skip": "HOPPA TILL HELA BRÄDET",
+    "replay": "SPELA OM SEKVENSEN",
+    "reset": "RENSA VAL",
+    "selectedLabel": "VALDA BEVIS",
+    "detailsTitle": "KOPPLINGSANTECKNINGAR",
+    "evidenceListTitle": "BEVISINDEX",
+    "connectionsTitle": "UTARBETANDE KOPPLINGAR",
+    "caseLinkLabel": "ÖPPNA FALLAKT",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "Huvudmisstänkt. Återkommande närvarande när soffor, balkonger och obevakad mat blir omstridda."
+      },
+      "couch": {
+        "title": "SOFFAN",
+        "summary": "En övervakningspost, omtvistat territorium och återkommande plats för inhemska bevis."
+      },
+      "balcony": {
+        "title": "BALKONGEN",
+        "summary": "Platsen för en duvjakt och en långvarig säkerhetsåtgärd."
+      },
+      "shoe": {
+        "title": "DEN GRÖNA SKON",
+        "summary": "Återfunnen med komprometterade skosnören efter en otillåten flyttoperation."
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "Säsongsbesökare och dokumenterad rival vars motiv förblir helt fiktiva."
+      },
+      "pikette-visits": {
+        "title": "BESÖKSLOGG",
+        "summary": "Publicerade fallogsnoteringar registrerar besök, sofftvister och en misstänkt tyst vapenvila."
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "Le Criminel kopplas återkommande till soffan i publicerat fallmaterial. Brädet behandlar detta som en redaktionell rekonstruktion, inte ett konstaterande.",
+      "le-criminel-balcony": "Balkongfallet registrerar en duvjakt med Le Criminel och ingen lyckad duvförvärvning.",
+      "le-criminel-shoe": "Skoakten dokumenterar en grön sko, skadade skosnören och en misstänkt utan trovärdig alternativ förklaring.",
+      "le-criminel-pikette": "Publicerade besök visar återkommande fientlighet mellan Le Criminel och Pikette. Varje bredare teori är avsiktligt fiktiv.",
+      "pikette-couch": "Båda misstänkta har intagit soffan under registrerade besök; kopplingen presenteras som en omtvistad rekonstruktion.",
+      "pikette-visits": "Falloggen registrerar Pikettes besök utan att påstå ett verkligt utredningsmönster."
+    }
+  },
   "blog": {
     "title": "FALLLOGG",
-    "subtitle": "26 månatliga poster — två års kontinuerlig övervakning, fall 001-CR förblir öppet"
+    "subtitle": "27 månatliga poster — över två år av kontinuerlig övervakning, fall 001-CR förblir öppet"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "LOKALA PARKER KOMPROMETTERADE",
       "body": "Subjektet stannade i Bryssel under hela augusti. Det fina vädret möjliggjorde upprepade operationer i lokala parker, vanligtvis följda av olovligt införskaffande och konsumtion av croissantbitar. Patrullfrekvensen ökade. Säkerheten kring bakverk är fortfarande otillräcklig.",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "PANNKAKSSÄSONG, SEDAN SOVSÄSONG",
+      "body": "Pannkakssäsongen öppnade i september och Subjektet var på plats före dörrarna, dröjde vid terrassmöblerna och tog emot äpple som handpenning. Inga pannkakor erhölls. Verksamheten föll sedan kraftigt: långsamma patruller genom de fallna löven, lugna kastanjeinspektioner och mycket tid i soffan. Full rapport har arkiverats separat under «Den lata hösten».",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {

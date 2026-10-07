@@ -8,6 +8,7 @@ import { Blog } from './pages/blog/blog';
 import { Couch } from './pages/couch/couch';
 import { EscapeToTheCountry } from './pages/escape-to-the-country/escape-to-the-country';
 import { HeatwaveSurvival } from './pages/heatwave-survival/heatwave-survival';
+import { LazyAutumn } from './pages/lazy-autumn/lazy-autumn';
 import { Home } from './pages/home/home';
 import { JuryTampering } from './pages/jury-tampering/jury-tampering';
 import { KandeNadege } from './pages/kande-nadege/kande-nadege';
@@ -28,6 +29,7 @@ const pageRoutes: Routes = [
   { path: 'escape-to-the-country', component: EscapeToTheCountry },
   { path: 'theft-and-destruction', component: TheftAndDestruction },
   { path: 'heatwave-survival', component: HeatwaveSurvival },
+  { path: 'lazy-autumn', component: LazyAutumn },
   { path: 'jury-tampering', component: JuryTampering },
   { path: 'a-day-with-bestie', component: ADayWithBestie },
   { path: 'kande-nadege', component: KandeNadege },
@@ -36,6 +38,11 @@ const pageRoutes: Routes = [
     path: 'criminal-intelligence',
     loadComponent: () => import('./pages/cib-bureau/criminal-intelligence')
       .then((module) => module.CriminalIntelligence),
+  },
+  {
+    path: 'conspiracy-board',
+    loadComponent: () => import('./pages/conspiracy-board/conspiracy-board')
+      .then((module) => module.ConspiracyBoard),
   },
   { path: 'shop', component: Shop },
   { path: 'shop/:slug', component: ShopItemPage },

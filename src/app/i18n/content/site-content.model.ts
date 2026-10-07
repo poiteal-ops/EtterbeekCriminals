@@ -46,11 +46,13 @@ export interface SiteContent {
     escapeCountry: string;
     theftAndDestruction: string;
     heatwaveSurvival: string;
+    lazyAutumn: string;
     juryTampering: string;
     aDayWithBestie: string;
     kandeNadege: string;
     blog: string;
     cib: string;
+    conspiracyBoard: string;
     shop: string;
   };
   home: {
@@ -195,6 +197,24 @@ export interface SiteContent {
     exhibitCCaption: string;
     stamp: string;
   };
+  lazyAutumn: {
+    kicker: string;
+    title: string;
+    locationLabel: string;
+    locationVal: string;
+    suspectLabel: string;
+    suspectVal: string;
+    witnessLabel: string;
+    witnessVal: string;
+    motiveLabel: string;
+    motiveVal: string;
+    p1: string;
+    p2: string;
+    exhibitBCaption: string;
+    exhibitCCaption: string;
+    exhibitDCaption: string;
+    stamp: string;
+  };
   heatwaveSurvival: {
     kicker: string;
     title: string;
@@ -315,6 +335,26 @@ export interface SiteContent {
     backToShop: string;
   };
   shopItems: ShopItem[];
+  conspiracyBoard: {
+    kicker: string;
+    title: string;
+    subtitle: string;
+    fictionalNotice: string;
+    boardStamp: string;
+    buildCase: string;
+    pause: string;
+    continue: string;
+    skip: string;
+    replay: string;
+    reset: string;
+    selectedLabel: string;
+    detailsTitle: string;
+    evidenceListTitle: string;
+    connectionsTitle: string;
+    caseLinkLabel: string;
+    nodes: Record<string, { title: string; summary: string }>;
+    connections: Record<string, string>;
+  };
   cib: CibContent;
   footer: string;
   footerDisclaimer: string;

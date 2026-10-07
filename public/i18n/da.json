@@ -352,7 +352,9 @@
     "juryTampering": "JURYMANIPULATION",
     "aDayWithBestie": "EN DAG MED BESTIE",
     "kandeNadege": "Kande Nadège",
+    "lazyAutumn": "DET DOVNE EFTERÅR",
     "blog": "BLOG",
+    "conspiracyBoard": "KONSPIRATION",
     "shop": "BUTIK"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "En undercover-handler, en kompromitteret operation og én mistænkt i alarmerende god form.",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "DET DOVNE EFTERÅR",
+      "teaser": "Pandekagesæsonen sluttede, og sofaen overtog vagten.",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "Sæsonrapport",
+    "title": "DET DOVNE EFTERÅR",
+    "locationLabel": "STED",
+    "locationVal": "Etterbeek, uden for pandekagesteder (før åbning), derefter sofaen",
+    "suspectLabel": "MISTÆNKT",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "VIDNE",
+    "witnessVal": "SAWITO (til stede hele tiden, holdt snoren, leverede æblet)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Pandekagesæson efterfulgt af vedvarende og velfortjent hvile",
+    "p1": "Med septembers første kølige dage åbnede den årlige pandekagesæson, og Subjektet var ikke uvidende. Overvågning placerer ham uden for pandekagesteder længe før åbningstid, ved terrassemøblerne med holdningen hos én, der „bare venter“. Ingen pandekager blev opnået. Subjektet tog imod et stykke æble fra Vidnet som en goodwill-gestus og behandlede det som en udbetaling.",
+    "p2": "Efter overvågningen faldt den kriminelle aktivitet brat. Subjektets patruljer blev langsomme, ubesværede og mest begrænset til at snuse til faldne blade og kastanjer, som han tilsyneladende reviderede. Sidst i september var mønstret fast: sofa, gab, sofa. Efterforskerne fandt ingen nye forseelser, meget mange puder og ét meget stort gab.",
+    "exhibitBCaption": "BILAG B — SUBJEKTET REVIDERER KASTANJER I ROLIGT TEMPO",
+    "exhibitCCaption": "BILAG C — SUBJEKTET GABER PÅ SOFAEN, OFFICIELT UDE AF TJENESTE",
+    "exhibitDCaption": "BILAG D — SUBJEKTET NÆRMER SIG KAMERAET PÅ KORT AFSTAND. BILLEDKVALITETEN ER DÅRLIG; SUBJEKTET SAMARBEJDEDE IKKE MED FOTOGRAFEN",
+    "stamp": "SAG SAT I BERO — SUBJEKTET HVILER"
+  },
+  "conspiracyBoard": {
+    "nav": "KONSPIRATION",
+    "kicker": "UOFFICIEL EFTERFORSKNING / BEVISRUM",
+    "title": "KONSPIRATIONSTAVLEN",
+    "subtitle": "Én sofa. Flere mistænkte. Et mønster efterforskerne ikke kan ignorere.",
+    "fictionalNotice": "En fiktiv rekonstruktion samlet af offentliggjort sagsmateriale. Ingen reel overvågning, anklage eller bevisførelse er involveret.",
+    "boardStamp": "FORBINDELSER: YDERST MISTÆNKELIGE",
+    "buildCase": "OPBYG SAGEN",
+    "pause": "SÆT SEKVENSPÅ PAUSE",
+    "continue": "FORTSÆT SEKVENSPÅ",
+    "skip": "GÅ TIL KOMPLET TAVLE",
+    "replay": "AFSPIL SEKVENSPÅ IGEN",
+    "reset": "RYD VALG",
+    "selectedLabel": "VALGT BEVIS",
+    "detailsTitle": "FORBINDELSESNOTER",
+    "evidenceListTitle": "BEVISINDEKS",
+    "connectionsTitle": "FORFATTEDE FORBINDELSER",
+    "caseLinkLabel": "ÅBN SAGSAKT",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "Hovedmistænkt. Gentagne gange til stede, når sofaer, altaner og ubevogtet mad bliver omstridt."
+      },
+      "couch": {
+        "title": "SOFAEN",
+        "summary": "En overvågningspost, omstridt territorium og tilbagevendende scene for hjemlige beviser."
+      },
+      "balcony": {
+        "title": "ALTANEN",
+        "summary": "Stedet for én duejagt og en langvarig sikkerhedsindsats."
+      },
+      "shoe": {
+        "title": "DEN GRØNNE SKO",
+        "summary": "Fundet med kompromitterede snørebånd efter en uautoriseret flytteoperation."
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "Sæsonbesøgende og dokumenteret rival, hvis motiver forbliver helt fiktive."
+      },
+      "pikette-visits": {
+        "title": "BESØGSLOG",
+        "summary": "Offentliggjorte sagslogge registrerer besøg, sofakonflikter og én mistænkeligt stille våbenhvile."
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "LE CRIMINEL forbindes gentagne gange med sofaen i offentliggjort sagsmateriale. Tavlen behandler det som en redaktionel rekonstruktion, ikke en konstatering.",
+      "le-criminel-balcony": "Altansagen registrerer en duejagt med LE CRIMINEL og ingen vellykket dueanskaffelse.",
+      "le-criminel-shoe": "Skosagen dokumenterer en grøn sko, beskadigede snørebånd og en mistænkt uden troværdig alternativ forklaring.",
+      "le-criminel-pikette": "Offentliggjorte besøg fastslår tilbagevendende fjendtlighed mellem LE CRIMINEL og Pikette. Enhver bredere teori er bevidst fiktiv.",
+      "pikette-couch": "Begge mistænkte har indtaget sofaen under registrerede besøg; forbindelsen præsenteres som en omstridt rekonstruktion.",
+      "pikette-visits": "Sagsloggen registrerer Pikette-besøg uden at hævde et virkeligt efterforskningsmønster."
+    }
+  },
   "blog": {
     "title": "SAGSLOG",
-    "subtitle": "26 månedlige indlæg — to års kontinuerlig overvågning, sag 001-CR forbliver åben"
+    "subtitle": "27 månedlige poster — efter over to års kontinuerlig overvågning er sag 001-CR stadig åben"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "LOKALE PARKER KOMPROMITTERET",
       "body": "Subjektet opholdt sig i Bruxelles hele august. Det gode vejr muliggjorde gentagne operationer i lokale parker, som regel efterfulgt af ulovlig tilegnelse og indtagelse af croissantstykker. Patruljefrekvensen steg. Sikkerheden omkring bagværk er fortsat utilstrækkelig.",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "PANDEKAGESÆSON, SÅ SOVESÆSON",
+      "body": "Pandekagesæsonen åbnede i september, og Subjektet var på stedet før dørene, hang ved terrassemøblerne og tog imod æble som udbetaling. Ingen pandekager blev opnået. Aktiviteten faldt derefter brat: langsomme patruljer gennem de faldne blade, kastanjeinspektioner i roligt tempo og meget tid på sofaen. Fuld rapport er arkiveret separat under „Det dovne efterår“.",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {

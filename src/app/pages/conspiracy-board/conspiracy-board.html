@@ -1,0 +1,97 @@
+@let t = translation.t().conspiracyBoard;
+
+<main class="page conspiracy-page">
+  <header class="page-header">
+    <p class="kicker">{{ t.kicker }}</p>
+    <h1 class="title">{{ t.title }}</h1>
+    <p class="subtitle">{{ t.subtitle }}</p>
+    <p class="fictional-notice">{{ t.fictionalNotice }}</p>
+  </header>
+
+  <section class="board-controls" aria-label="Board controls">
+    @if (playing()) {
+      <button type="button" (click)="pauseSequence()">{{ t.pause }}</button>
+    } @else if (sequence().revealedNodeIds.length === 0) {
+      <button type="button" (click)="startSequence()">{{ t.buildCase }}</button>
+    } @else if (!sequence().complete) {
+      <button type="button" (click)="resumeSequence()">{{ t.continue }}</button>
+    }
+    @if (!sequence().complete) {
+      <button type="button" (click)="skipSequence()">{{ t.skip }}</button>
+    }
+    <button type="button" (click)="replaySequence()">{{ t.replay }}</button>
+    @if (selectedNodeId() !== null) {
+      <button type="button" (click)="clearSelection()">{{ t.reset }}</button>
+    }
+  </section>
+
+  <section #board class="board" [class.board--complete]="sequence().complete" [attr.aria-label]="t.title">
+    <p class="board-stamp">{{ t.boardStamp }}</p>
+    <svg
+      class="connection-overlay"
+      aria-hidden="true"
+      [attr.viewBox]="'0 0 ' + boardSize().width + ' ' + boardSize().height"
+    >
+      @for (entry of connectionLines(); track entry.id) {
+        <g
+          class="connection"
+          [class.is-active]="isConnectionActive(entry.connection)"
+          [class.is-revealed]="isConnectionRevealed(entry.connection)"
+          [class.connection--disputed]="entry.connection.kind === 'disputed'"
+        >
+          <line class="connection-line" [attr.x1]="entry.line.x1" [attr.y1]="entry.line.y1" [attr.x2]="entry.line.x2" [attr.y2]="entry.line.y2" />
+          <circle class="connection-pin" r="6" [attr.cx]="entry.line.x1" [attr.cy]="entry.line.y1" />
+          <circle class="connection-pin" r="6" [attr.cx]="entry.line.x2" [attr.cy]="entry.line.y2" />
+        </g>
+      }
+    </svg>
+    <div class="evidence-grid">
+      @for (node of nodes; track node.id) {
+        @let copy = nodeCopy(node);
+        <article class="evidence-item" [attr.data-node]="node.id" [class.is-revealed]="sequence().revealedNodeIds.includes(node.id)">
+          <button
+            type="button"
+            class="evidence-card"
+            [class.is-selected]="selectedNodeId() === node.id"
+            [attr.aria-pressed]="selectedNodeId() === node.id"
+            (click)="selectNode(node.id)"
+          >
+            <span class="evidence-kind">{{ node.type }}</span>
+            <strong>{{ copy.title }}</strong>
+            <span>{{ copy.summary }}</span>
+          </button>
+          @if (node.route) {
+            <a class="case-link" [routerLink]="translation.path(node.route)">{{ t.caseLinkLabel }}</a>
+          }
+        </article>
+      }
+    </div>
+  </section>
+
+  <section class="detail-panel" aria-live="polite">
+    <h2>{{ t.detailsTitle }}</h2>
+    @if (selectedNodeId() === null) {
+      <p>{{ t.selectedLabel }}</p>
+    } @else {
+      @for (connection of selectedConnections(); track connection.id) {
+        <p class="connection-note" [class]="'connection-note--' + connection.kind">{{ connectionCopy(connection) }}</p>
+      }
+    }
+  </section>
+
+  <section class="evidence-index">
+    <h2>{{ t.evidenceListTitle }}</h2>
+    <ul>
+      @for (node of nodes; track node.id) {
+        @let copy = nodeCopy(node);
+        <li><strong>{{ copy.title }}:</strong> {{ copy.summary }}</li>
+      }
+    </ul>
+    <h2>{{ t.connectionsTitle }}</h2>
+    <ul>
+      @for (connection of connections; track connection.id) {
+        <li>{{ connectionCopy(connection) }}</li>
+      }
+    </ul>
+  </section>
+</main>

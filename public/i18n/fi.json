@@ -352,7 +352,9 @@
     "juryTampering": "JURYN MANIPULOINTI",
     "aDayWithBestie": "PÄIVÄ BESTIEN KANSSA",
     "kandeNadege": "Kande Nadège",
+    "lazyAutumn": "LAISKA SYKSY",
     "blog": "BLOGI",
+    "conspiracyBoard": "SALALIITTO",
     "shop": "KAUPPA"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "Peitetoiminen ohjaaja, kompromettoitunut operaatio ja yksi hälyttävän erinomaisessa kunnossa oleva epäilty.",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "LAISKA SYKSY",
+      "teaser": "Pannukakkukausi alkoi. Epäilty siirtyi sitten pitkälle levolle.",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "Kausitoiminnan raportti",
+    "title": "LAISKA SYKSY",
+    "locationLabel": "PAIKKA",
+    "locationVal": "Etterbeek, pannukakkupaikkojen ulkopuolella (ennen avaamista), sitten sohva",
+    "suspectLabel": "EPÄILTY",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TODISTAJA",
+    "witnessVal": "SAWITO (paikalla koko ajan, piti hihnaa, antoi omenan)",
+    "motiveLabel": "MOTIIVI",
+    "motiveVal": "Pannukakkukausi, jota seurasi pitkä ja ansaittu lepo",
+    "p1": "Syyskuun ensimmäisten viileiden päivien myötä vuotuinen pannukakkukausi alkoi, eikä Kohde ollut siitä tietämätön. Valvonta sijoitti hänet pannukakkupaikkojen ulkopuolelle hyvissä ajoin ennen avaamista, terassikalusteiden lähelle, asennossa kuin joku joka „vain odottaa“. Pannukakkuja ei saatu. Kohde hyväksyi Todistajalta omenapalan hyvän tahdon eleenä ja piti sitä ennakkomaksuna.",
+    "p2": "Väijytyksen jälkeen rikollinen toiminta väheni jyrkästi. Kohteen partioinnit hidastuivat, vaativat vähän vaivaa ja rajoittuivat enimmäkseen pudonneiden lehtien ja kastanjoiden haisteluun, joita hän näytti tarkastavan. Syyskuun lopulla kaava oli vakiintunut: sohva, haukotus, sohva. Tutkijat eivät löytäneet uusia rikoksia, mutta paljon tyynyjä ja yhden erittäin suuren haukotuksen.",
+    "exhibitBCaption": "TODISTE B — KOHDE TARKASTAA KASTANJOITA RAUHALLISEEN TAHTIIN",
+    "exhibitCCaption": "TODISTE C — KOHDE HAUKOTTELEE SOHVALLA, VIRALLISESTI VAPAALLA",
+    "exhibitDCaption": "TODISTE D — KOHDE LÄHESTYY KAMERAA LÄHETÄISYYDELTÄ. KUVANLAATU HEIKKO; KOHDE EI YHTEISTYÖSSÄ VALOKUVAAJAN KANSSA",
+    "stamp": "TAPAUS PIDOSSA — KOHDE LEPÄÄ"
+  },
+  "conspiracyBoard": {
+    "nav": "SALALIITTO",
+    "kicker": "EPÄVIRALLINEN TUTKINTA / TODISTEHUONE",
+    "title": "SALALIITTOTAULU",
+    "subtitle": "Yksi sohva. Useita epäiltyjä. Kuvio, jota tutkijat eivät voi sivuuttaa.",
+    "fictionalNotice": "Julkaistusta tapausaineistosta koottu kuvitteellinen rekonstruktio. Kyse ei ole todellisesta valvonnasta, väitteestä tai todisteesta.",
+    "boardStamp": "YHTEYDET: ERITTÄIN EPÄILYTTÄVÄT",
+    "buildCase": "RAKENNA TAPAUS",
+    "pause": "KESKEYTÄ JAKSO",
+    "continue": "JATKA JAKSOA",
+    "skip": "SIIRRY VALMIISEEN TAULUUN",
+    "replay": "TOISTA JAKSO",
+    "reset": "TYHJENNÄ VALINTA",
+    "selectedLabel": "VALITTU TODISTE",
+    "detailsTitle": "YHTEYSMUISTIINPANOT",
+    "evidenceListTitle": "TODISTEHAKEMISTO",
+    "connectionsTitle": "LAADITUT YHTEYDET",
+    "caseLinkLabel": "AVAA TAPAUSKANSIO",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "Pääepäilty. Läsnä toistuvasti, kun sohvat, parvekkeet ja vartioimaton ruoka muuttuvat kiistanalaisiksi."
+      },
+      "couch": {
+        "title": "SOHVA",
+        "summary": "Valvontapaikka, kiistanalainen alue ja toistuva kotimaisten todisteiden tapahtumapaikka."
+      },
+      "balcony": {
+        "title": "PARVEKE",
+        "summary": "Yhden kyyhkysjahdin ja pitkäkestoisen turvatoimenpiteen paikka."
+      },
+      "shoe": {
+        "title": "VIHREÄ KENKÄ",
+        "summary": "Löydetty vahingoittuneine nauhoineen luvattoman siirto-operaation jälkeen."
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "Kausittainen vierailija ja dokumentoitu kilpailija, jonka motiivit ovat täysin kuvitteellisia."
+      },
+      "pikette-visits": {
+        "title": "VIERAILULOKI",
+        "summary": "Julkaistut tapausmerkinnät kirjaavat vierailuja, sohvakiistoja ja yhden epäilyttävän hiljaisen aselevon."
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "LE CRIMINEL yhdistetään julkaistussa tapausaineistossa toistuvasti sohvaan. Taulu käsittelee tätä toimituksellisena rekonstruktiona, ei päätelmänä.",
+      "le-criminel-balcony": "Parveketapaus kirjaa LE CRIMINELIIN liittyvän kyyhkysjahdin eikä yhtään onnistunutta kyyhkysen hankintaa.",
+      "le-criminel-shoe": "Kenkäkansio dokumentoi vihreän kengän, vaurioituneet nauhat ja epäillyn ilman uskottavaa vaihtoehtoista selitystä.",
+      "le-criminel-pikette": "Julkaistut vierailut osoittavat LE CRIMINELIN ja Pikette toistuvan vihamielisyyden. Laajempi teoria on tarkoituksella kuvitteellinen.",
+      "pikette-couch": "Molemmat epäillyt ovat käyttäneet sohvaa kirjattujen vierailujen aikana; yhteys esitetään kiistanalaisena rekonstruktiona.",
+      "pikette-visits": "Tapausloki kirjaa Pikette-vierailut väittämättä todellista tutkintakuviota."
+    }
+  },
   "blog": {
     "title": "TAPAUSPÄIVÄKIRJA",
-    "subtitle": "26 kuukausittaista merkintää — kaksi vuotta jatkuvaa valvontaa, tapaus 001-CR pysyy avoimena"
+    "subtitle": "27 kuukausittaista merkintää — yli kaksi vuotta jatkuvaa valvontaa, tapaus 001-CR pysyy avoimena"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "PAIKALLISET PUISTOT VAARANTUNEET",
       "body": "Kohde pysyi Brysselissä koko elokuun. Suotuisa sää mahdollisti toistuvat operaatiot paikallisissa puistoissa, joita seurasi yleensä croissantinpalojen luvaton haltuunotto ja nauttiminen. Partiointitiheys kasvoi. Leivonnaisten suojaus on edelleen riittämätön.",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "PANNUKAKKUKAUSI, SITTEN TORKKUKAUSI",
+      "body": "Pannukakkukausi alkoi syyskuussa ja Kohde oli paikalla jo ennen avaamista, oleskellen terassikalusteiden lähellä ja hyväksyen omenan ennakkomaksuna. Pannukakkuja ei saatu. Sitten toiminta väheni: hitaita partioita pudonneissa lehdissä, kastanjoiden tarkastusta rauhalliseen tahtiin ja runsaasti aikaa sohvalla. Täysi raportti on kirjattu erikseen nimellä „Laiska syksy“.",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {
