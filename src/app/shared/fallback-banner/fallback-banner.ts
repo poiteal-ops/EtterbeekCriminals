@@ -9,5 +9,6 @@ import { SiteContent, TranslationService } from '../../services/translation.serv
 })
 export class FallbackBanner {
   readonly section = input.required<keyof SiteContent>();
+  readonly englishOnly = input(false);
   protected readonly translation = inject(TranslationService);
 }

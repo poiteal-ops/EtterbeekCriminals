@@ -1,11 +1,15 @@
 @let t = translation.t();
 
-@if (translation.isSectionFallback(section())) {
+@if (englishOnly() ? translation.locale() !== 'en' : translation.isSectionFallback(section())) {
   <div class="fallback-banner" role="status">
     <img class="fallback-banner__gif" src="assets/images/under-construction.gif" alt="" aria-hidden="true" />
     <span class="fallback-banner__lines">
-      <span class="fallback-banner__line">{{ t.common.fallbackBanner }}</span>
-      <span class="fallback-banner__line">Sorry, we are working on it — only available in English for now.</span>
+      @if (englishOnly()) {
+        <span class="fallback-banner__line">This game is available in English only.</span>
+      } @else {
+        <span class="fallback-banner__line">{{ t.common.fallbackBanner }}</span>
+        <span class="fallback-banner__line">Sorry, we are working on it — only available in English for now.</span>
+      }
     </span>
     <img class="fallback-banner__gif" src="assets/images/under-construction.gif" alt="" aria-hidden="true" />
   </div>

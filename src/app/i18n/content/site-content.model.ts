@@ -53,6 +53,7 @@ export interface SiteContent {
     blog: string;
     cib: string;
     conspiracyBoard: string;
+    game: string;
     shop: string;
   };
   home: {
@@ -356,6 +357,17 @@ export interface SiteContent {
     connections: Record<string, string>;
   };
   cib: CibContent;
+  game: {
+    kicker: string; title: string; intro: string; instructions: string; controls: string;
+    start: string; loading: string; pause: string; resume: string; playAgain: string;
+    score: string; time: string; prevented: string; damaged: string;
+    mute: string; unmute: string; volume: string;
+    caseClosed: string; limitReached: string;
+    targetMessage: string; caughtMessage: string; damageMessage: string;
+    rankInsurance: string; rankOverwhelmed: string; rankNegotiator: string;
+    rankWatch: string; rankAdult: string;
+    objects: Record<string, string>;
+  };
   footer: string;
   footerDisclaimer: string;
 }

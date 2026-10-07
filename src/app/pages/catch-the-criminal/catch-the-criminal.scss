@@ -1,0 +1,46 @@
+:host { display: block; }
+.game-page { max-width: 1000px; margin: 0 auto; padding: 112px 24px 80px; }
+.game-header { max-width: 760px; margin: 0 auto 28px; text-align: center; }
+.kicker { color: #e0645b; font-size: 11px; letter-spacing: 2px; }
+h1, h2 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 2px; }
+h1 { font-size: clamp(42px, 9vw, 76px); line-height: 1; }
+h2 { font-size: clamp(28px, 6vw, 42px); margin: 8px 0; }
+.intro { color: #cfcfcc; line-height: 1.6; font-size: 14px; }
+.game-panel { max-width: 720px; margin: 0 auto; }
+app-fallback-banner { display: block; max-width: 720px; margin: 24px auto 0; }
+.hud { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
+.hud > div { border: 1px solid #555; padding: 10px; background: #191919; display: grid; gap: 6px; }
+.hud span { color: #bcbcb8; font-size: 10px; letter-spacing: 1px; overflow-wrap: anywhere; }
+.hud strong { font-family: 'Bebas Neue', sans-serif; font-size: 25px; font-weight: 400; }
+.game-stage { position: relative; width: 100%; aspect-ratio: 1; border: 2px solid #777773; background: #171717; outline: none; }
+.game-stage:focus-visible { outline: 3px solid #f5d879; outline-offset: 3px; }
+.game-canvas, .game-canvas canvas { display: block; width: 100%; height: 100%; }
+.stage-overlay { position: absolute; inset: 0; z-index: 2; display: grid; place-items: center; padding: 16px; background: rgba(7,7,7,.88); }
+.briefing { max-width: 470px; text-align: center; }
+.briefing p { line-height: 1.6; font-size: 14px; }
+.briefing-stamp { color: #e0645b; letter-spacing: 2px; font-size: 12px !important; }
+.control-hint { color: #cfcfcc; font-size: 12px !important; }
+button { background: #181818; border: 1px solid #eeeeec; padding: 11px 17px; color: #eeeeec; font: inherit; cursor: pointer; min-height: 44px; }
+button:hover { background: #eeeeec; color: #111; }
+button:focus-visible, input:focus-visible { outline: 3px solid #f5d879; outline-offset: 3px; }
+button:disabled { opacity: .6; cursor: wait; }
+.start-button { margin-top: 14px; font-family: 'Bebas Neue', sans-serif; font-size: 23px; letter-spacing: 2px; }
+.event-report { min-height: 2.8em; margin: 12px 0; padding: 8px 12px; border-left: 3px solid #e0645b; color: #eeeeec; line-height: 1.5; font-size: 12px; }
+.game-tools { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; }
+.game-tools button, .game-tools label { font-size: 12px; }
+.game-tools label { display: inline-flex; align-items: center; gap: 8px; }
+.game-tools input { accent-color: #e0645b; }
+.d-pad { display: none; width: 172px; margin: 20px auto 0; gap: 5px; grid-template: repeat(2, 54px) / repeat(3, 54px); touch-action: none; }
+.d-pad button { padding: 0; font-size: 27px; user-select: none; touch-action: none; }
+.d-pad .up { grid-area: 1 / 2; } .d-pad .left { grid-area: 2 / 1; }
+.d-pad .down { grid-area: 2 / 2; } .d-pad .right { grid-area: 2 / 3; }
+@media (max-width: 700px), (pointer: coarse) { .d-pad { display: grid; } }
+@media (max-width: 480px) {
+  .game-page { padding: 94px 12px 55px; }
+  .hud { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hud > div { padding: 7px 9px; }
+  .hud strong { font-size: 21px; }
+  .stage-overlay { padding: 12px; }
+  .briefing p { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }

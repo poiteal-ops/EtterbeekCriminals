@@ -16,4 +16,11 @@ describe('application routes', () => {
     expect(pageRoutes).toContainEqual({ path: 'kande-nadege', component: KandeNadege });
     expect(routes[1].children).toBe(pageRoutes);
   });
+
+  it('registers the game as a lazy page for both English and localized routes', () => {
+    const pageRoutes = routes[0].children ?? [];
+    const game = pageRoutes.find((route) => route.path === 'game');
+    expect(typeof game?.loadComponent).toBe('function');
+    expect(routes[1].children).toBe(pageRoutes);
+  });
 });

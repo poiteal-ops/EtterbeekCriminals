@@ -83,6 +83,15 @@ export function buildPages(content) {
     });
   }
 
+  if (content.game) {
+    fixedPages.push({
+      route: 'game',
+      title: content.game.title,
+      description: content.game.intro,
+      image: 'assets/images/dog-floor-portrait.jpg',
+    });
+  }
+
   const adventures = (content.adventures ?? []).map((adventure) => ({
     route: normalizeRoute(adventure.link),
     title: adventure.title,
@@ -156,6 +165,7 @@ export function renderPage(template, { locale, page, canonicalUrl, alternates })
   if (!english) throw new Error(`Missing English alternate for route: ${page.route || '/'}`);
 
   const headLinks = [
+    ...(page.noIndex ? ['  <meta name="robots" content="noindex">'] : []),
     `  <link rel="canonical" href="${escapeHtmlAttribute(canonicalUrl)}">`,
     alternateLinks,
     `  <link rel="alternate" hreflang="x-default" href="${escapeHtmlAttribute(english.url)}">`,
@@ -186,8 +196,15 @@ export function outputDirectory(distDir, locale, route) {
 }
 
 export function generateSite({ template, contentByLocale, distDir }) {
+  const englishGame = contentByLocale[DEFAULT_LOCALE]?.game;
   const pagesByLocale = new Map(
-    Object.entries(contentByLocale).map(([locale, content]) => [locale, buildPages(content)]),
+    Object.entries(contentByLocale).map(([locale, content]) => {
+      const gameFallback = locale !== DEFAULT_LOCALE && englishGame && !content.game;
+      const pages = buildPages(gameFallback ? { ...content, game: englishGame } : content);
+      return [locale, gameFallback
+        ? pages.map((page) => page.route === 'game' ? { ...page, noIndex: true } : page)
+        : pages];
+    }),
   );
   if (!pagesByLocale.has(DEFAULT_LOCALE)) throw new Error('English content is required');
 
@@ -197,17 +214,17 @@ export function generateSite({ template, contentByLocale, distDir }) {
   for (const [locale, pages] of pagesByLocale) {
     for (const page of pages) {
       const alternates = [...pagesByLocale.entries()]
-        .filter(([, alternatePages]) => alternatePages.some((candidate) => candidate.route === page.route))
+        .filter(([, alternatePages]) => alternatePages.some((candidate) => candidate.route === page.route && !candidate.noIndex))
         .map(([alternateLocale]) => ({
           locale: alternateLocale,
           url: pageUrl(alternateLocale, page.route),
         }));
-      const canonicalUrl = pageUrl(locale, page.route);
+      const canonicalUrl = pageUrl(page.noIndex ? DEFAULT_LOCALE : locale, page.route);
       const html = renderPage(template, { locale, page, canonicalUrl, alternates });
       const destination = outputDirectory(distDir, locale, page.route);
       fs.mkdirSync(destination, { recursive: true });
       fs.writeFileSync(path.join(destination, 'index.html'), html);
-      generatedUrls.push(canonicalUrl);
+      if (!page.noIndex) generatedUrls.push(canonicalUrl);
       pageCount += 1;
     }
   }
