@@ -32,4 +32,11 @@ describe('NavBar', () => {
 
     expect(fixture.componentInstance['storiesActive']()).toBe(true);
   });
+
+  it('exposes the Conspiracy Board route through the locale-aware navigation', () => {
+    const fixture = TestBed.createComponent(NavBar);
+    fixture.detectChanges();
+
+    expect(fixture.nativeElement.querySelector('a[href="/conspiracy-board"]')?.textContent).toContain('CONSPIRACY');
+  });
 });

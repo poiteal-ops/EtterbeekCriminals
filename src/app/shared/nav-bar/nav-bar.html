@@ -62,10 +62,14 @@
         <a [routerLink]="translation.path('kande-nadege')" routerLinkActive="active">{{
           t.nav.kandeNadege
         }}</a>
+        <a [routerLink]="translation.path('lazy-autumn')" routerLinkActive="active">{{
+          t.nav.lazyAutumn
+        }}</a>
       </div>
     </div>
     <a [routerLink]="translation.path('blog')" routerLinkActive="active">{{ t.nav.blog }}</a>
     <a [routerLink]="translation.path('criminal-intelligence')" routerLinkActive="active">{{ t.nav.cib }}</a>
+    <a [routerLink]="translation.path('conspiracy-board')" routerLinkActive="active">{{ t.nav.conspiracyBoard }}</a>
     <a [routerLink]="translation.path('shop')" routerLinkActive="active">{{ t.nav.shop }}</a>
     <div class="dropdown lang-dropdown" [class.active]="true">
       <button

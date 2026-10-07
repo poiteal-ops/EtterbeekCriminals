@@ -352,7 +352,9 @@
     "juryTampering": "AZ ESKÜDTSZÉK BEFOLYÁSOLÁSA",
     "aDayWithBestie": "EGY NAP BESTIE-VEL",
     "kandeNadege": "Kande Nadège",
+    "lazyAutumn": "A LUSTA ŐSZ",
     "blog": "BLOG",
+    "conspiracyBoard": "ÖSSZEESKÜVÉS",
     "shop": "BOLT"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "Egy fedett kezelő, egy kompromittált művelet és egy riasztóan kiváló állapotban lévő gyanúsított.",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "A LUSTA ŐSZ",
+      "teaser": "Megkezdődött a palacsintaszezon. A gyanúsított ezt követően hosszas pihenőre tért.",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "Szezonális tevékenységi jelentés",
+    "title": "A LUSTA ŐSZ",
+    "locationLabel": "HELYSZÍN",
+    "locationVal": "Etterbeek, palacsintázók előtt (nyitás előtt), majd a kanapé",
+    "suspectLabel": "GYANÚSÍTOTT",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TANÚ",
+    "witnessVal": "SAWITO (végig jelen volt, fogta a pórázt, adta az almát)",
+    "motiveLabel": "INDÍTÉK",
+    "motiveVal": "Palacsintaszezon, majd tartós és kiérdemelt pihenés",
+    "p1": "Szeptember első hűvös napjaival megnyílt az éves palacsintaszezon, és az Alany erről nem maradt tájékozatlan. A megfigyelés jóval nyitás előtt palacsintázók előtt, a teraszbútorok közelében helyezte el, valaki olyan tartásával, aki „csak vár“. Palacsinta nem került elő. Az Alany a Tanútól jóindulati gesztusként elfogadott egy darab almát, és azt előlegként kezelte.",
+    "p2": "A les után a bűnözői tevékenység meredeken visszaesett. Az Alany járőrei lassúvá, kevés erőfeszítést igénylővé váltak, és főként lehullott levelek és gesztenyék szaglászására korlátozódtak, amelyeket mintha ellenőrzött volna. Szeptember végére a minta rögzült: kanapé, ásítás, kanapé. A nyomozók nem találtak új szabálysértést, de sok párnát és egy igen nagy ásítást igen.",
+    "exhibitBCaption": "B BIZONYÍTÉK — AZ ALANY NYUGODT TEMPÓBAN ELLENŐRZI A GESZTENYÉKET",
+    "exhibitCCaption": "C BIZONYÍTÉK — AZ ALANY A KANAPÉN ÁSÍT, HIVATALOSAN SZOLGÁLATON KÍVÜL",
+    "exhibitDCaption": "D BIZONYÍTÉK — AZ ALANY KÖZELRŐL KÖZELÍT A KAMERÁHOZ. KÉPMINŐSÉG GYENGE; AZ ALANY NEM MŰKÖDÖTT EGYÜTT A FOTÓSSAL",
+    "stamp": "ÜGY FELFÜGGESZTVE — ALANY PIHEN"
+  },
+  "conspiracyBoard": {
+    "nav": "ÖSSZEESKÜVÉS",
+    "kicker": "NEM HIVATALOS VIZSGÁLAT / BIZONYÍTÉKSZOBA",
+    "title": "AZ ÖSSZEESKÜVÉS TÁBLÁJA",
+    "subtitle": "Egy kanapé. Több gyanúsított. Egy minta, amelyet a nyomozók nem hagyhatnak figyelmen kívül.",
+    "fictionalNotice": "Kitalált rekonstrukció, közzétett ügyiratanyagból összeállítva. Sem valódi megfigyelés, sem vád, sem bizonyíték nem érintett.",
+    "boardStamp": "KAPCSOLATOK: KIFEJEZETTEN GYANÚSAK",
+    "buildCase": "ÜGY ÖSSZEÁLLÍTÁSA",
+    "pause": "SOROZAT SZÜNETELTETÉSE",
+    "continue": "SOROZAT FOLYTATÁSA",
+    "skip": "UGRÁS A TELJES TÁBLÁRA",
+    "replay": "SOROZAT ÚJRAJÁTSZÁSA",
+    "reset": "KIJELÖLÉS TÖRLÉSE",
+    "selectedLabel": "KIJELÖLT BIZONYÍTÉK",
+    "detailsTitle": "KAPCSOLATI JEGYZETEK",
+    "evidenceListTitle": "BIZONYÍTÉKJEGYZÉK",
+    "connectionsTitle": "SZERKESZTETT KAPCSOLATOK",
+    "caseLinkLabel": "ÜGYIRAT MEGNYITÁSA",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "Elsődleges gyanúsított. Ismételten jelen van, amikor kanapék, erkélyek és őrizetlen étel válnak vitássá."
+      },
+      "couch": {
+        "title": "A KANAPÉ",
+        "summary": "Megfigyelőhely, vitatott terület és a házi bizonyítékok visszatérő helyszíne."
+      },
+      "balcony": {
+        "title": "AZ ERKÉLY",
+        "summary": "Egy galambüldözés és egy hosszan tartó biztonsági beavatkozás helyszíne."
+      },
+      "shoe": {
+        "title": "A ZÖLD CIPŐ",
+        "summary": "Sérült fűzőkkel került elő egy jogosulatlan áthelyezési művelet után."
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "Szezonális látogató és dokumentált rivális, akinek indítékai teljesen kitaláltak."
+      },
+      "pikette-visits": {
+        "title": "LÁTOGATÁSI NAPLÓ",
+        "summary": "A közzétett ügybejegyzések látogatásokat, kanapévitákat és egy gyanúsan csendes fegyverszünetet rögzítenek."
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "LE CRIMINEL a közzétett ügyanyagban ismételten a kanapéhoz kapcsolódik. A tábla ezt szerkesztői rekonstrukcióként, nem megállapításként kezeli.",
+      "le-criminel-balcony": "Az erkélyügy LE CRIMINEL galambüldözését és nulla sikeres galambszerzést rögzít.",
+      "le-criminel-shoe": "A cipőirat zöld cipőt, sérült fűzőket és hiteles alternatív magyarázat nélküli gyanúsítottat dokumentál.",
+      "le-criminel-pikette": "A közzétett látogatások LE CRIMINEL és Pikette visszatérő ellenségeskedését állapítják meg. Minden tágabb elmélet szándékosan kitalált.",
+      "pikette-couch": "Mindkét gyanúsított elfoglalta a kanapét a rögzített látogatások alatt; a kapcsolat vitatott rekonstrukcióként szerepel.",
+      "pikette-visits": "Az ügy naplója Pikette látogatásait rögzíti anélkül, hogy valódi nyomozati mintát állítana."
+    }
+  },
   "blog": {
     "title": "ÜGYNAPLÓ",
-    "subtitle": "26 havi bejegyzés — két év folyamatos megfigyelés, a 001-CR ügy továbbra is nyitva"
+    "subtitle": "27 havi bejegyzés — több mint két év folyamatos megfigyelés, a 001-CR ügy továbbra is nyitva"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "A HELYI PARKOK BIZTONSÁGA MEGRENDÜLT",
       "body": "Az Alany egész augusztusban Brüsszelben maradt. A kellemes időjárás ismételt műveleteket tett lehetővé a helyi parkokban, amelyeket rendszerint croissant-darabok jogellenes megszerzése és elfogyasztása követett. A járőrözések gyakorisága nőtt. A péksütemények védelme továbbra sem kielégítő.",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "PALACSINTASZEZON, MAJD SZUNDI SZEZON",
+      "body": "A palacsintaszezon szeptemberben megnyílt, az Alany pedig nyitás előtt a helyszínen volt, a teraszbútorok körül ólálkodott és előlegként elfogadott egy almát. Palacsinta nem került elő. Ezután a tevékenység alábbhagyott: lassú járőrözés a lehullott levelek között, gesztenyevizsgálat nyugodt tempóban és sok idő a kanapén. A teljes jelentés külön „A lusta ősz“ címen szerepel.",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {

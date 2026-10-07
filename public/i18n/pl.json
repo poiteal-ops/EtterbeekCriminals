@@ -352,7 +352,9 @@
     "juryTampering": "MANIPULOWANIE ŁAWĄ PRZYSIĘGŁYCH",
     "aDayWithBestie": "DZIEŃ Z Bestie",
     "kandeNadege": "KANDE NADÈGE",
+    "lazyAutumn": "LENIWA JESIEŃ",
     "blog": "BLOG",
+    "conspiracyBoard": "SPISKI",
     "shop": "SKLEP"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "Prowadząca pod przykryciem, skompromitowana operacja i jeden podejrzany w alarmująco doskonałej formie.",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "LENIWA JESIEŃ",
+      "teaser": "Sezon naleśnikowy, cierpliwa obserwacja i podejrzany, który potem zszedł ze służby na kanapę.",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "Sezonowy raport aktywności",
+    "title": "LENIWA JESIEŃ",
+    "locationLabel": "LOKALIZACJA",
+    "locationVal": "Etterbeek, przed lokalami z naleśnikami (przed otwarciem), potem kanapa",
+    "suspectLabel": "PODEJRZANY",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "ŚWIADEK",
+    "witnessVal": "Sawito (obecny przez cały czas, trzymał smycz, dostarczył jabłko)",
+    "motiveLabel": "MOTYW",
+    "motiveVal": "Sezon naleśnikowy, po którym nastąpił długi i zasłużony odpoczynek",
+    "p1": "Wraz z pierwszymi chłodnymi dniami września rozpoczął się coroczny sezon naleśnikowy, a Obiekt nie był tego nieświadomy. Monitoring umieszcza go przed lokalami z naleśnikami na długo przed otwarciem, przy meblach tarasowych, w pozie kogoś, kto «tylko czeka». Nie pozyskano żadnych naleśników. Obiekt przyjął od Świadka kawałek jabłka jako gest dobrej woli i potraktował go jako zaliczkę.",
+    "p2": "Po obserwacji aktywność przestępcza gwałtownie spadła. Patrole Obiektu stały się powolne, mało wymagające i ograniczały się głównie do obwąchiwania opadłych liści i kasztanów, które najwyraźniej audytował. Pod koniec września wzór był ustalony: kanapa, ziewnięcie, kanapa. Śledczy nie znaleźli nowych wykroczeń, za to bardzo wiele poduszek i jedno bardzo duże ziewnięcie.",
+    "exhibitBCaption": "EKSPONAT B — OBIEKT AUDYTUJE KASZTANY W NIESPIESZNYM TEMPIE",
+    "exhibitCCaption": "EKSPONAT C — OBIEKT ZIEWA NA KANAPIE, OFICJALNIE POZA SŁUŻBĄ",
+    "exhibitDCaption": "EKSPONAT D — OBIEKT ZBLIŻA SIĘ DO APARATU Z MAŁEJ ODLEGŁOŚCI. JAKOŚĆ OBRAZU SŁABA; OBIEKT NIE WSPÓŁPRACOWAŁ Z FOTOGRAFEM",
+    "stamp": "SPRAWA WSTRZYMANA — OBIEKT ODPOCZYWA"
+  },
+  "conspiracyBoard": {
+    "nav": "SPISKI",
+    "kicker": "NIEOFICJALNE DOCHODZENIE / POKÓJ DOWODOWY",
+    "title": "TABLICA SPISKOWA",
+    "subtitle": "Jedna kanapa. Kilku podejrzanych. Wzór, którego śledczy nie mogą zignorować.",
+    "fictionalNotice": "Fikcyjna rekonstrukcja sporządzona z opublikowanych materiałów sprawy. Nie obejmuje prawdziwego nadzoru, zarzutów ani dowodów.",
+    "boardStamp": "POWIĄZANIA: WYJĄTKOWO PODEJRZANE",
+    "buildCase": "ZBUDUJ SPRAWĘ",
+    "pause": "WSTRZYMAJ SEKWENCJĘ",
+    "continue": "WZNÓW SEKWENCJĘ",
+    "skip": "PRZEJDŹ DO PEŁNEJ TABLICY",
+    "replay": "ODTWÓRZ SEKWENCJĘ",
+    "reset": "WYCZYŚĆ WYBÓR",
+    "selectedLabel": "WYBRANE DOWODY",
+    "detailsTitle": "NOTATKI O POWIĄZANIACH",
+    "evidenceListTitle": "INDEKS DOWODÓW",
+    "connectionsTitle": "OPRACOWANE POWIĄZANIA",
+    "caseLinkLabel": "OTWÓRZ AKTA SPRAWY",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "Główny podejrzany. Wielokrotnie obecny, gdy kanapy, balkony i pozostawione bez opieki jedzenie stają się przedmiotem sporu."
+      },
+      "couch": {
+        "title": "KANAPA",
+        "summary": "Punkt obserwacyjny, sporne terytorium i powracająca scena domowych dowodów."
+      },
+      "balcony": {
+        "title": "BALKON",
+        "summary": "Miejsce jednego pościgu za gołębiem i długotrwałej interwencji bezpieczeństwa."
+      },
+      "shoe": {
+        "title": "ZIELONY BUT",
+        "summary": "Odzyskany z uszkodzonymi sznurowadłami po nieuprawnionej operacji relokacji."
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "Sezonowa gościni i udokumentowana rywalka, której motywy pozostają całkowicie fikcyjne."
+      },
+      "pikette-visits": {
+        "title": "DZIENNIK WIZYT",
+        "summary": "Opublikowane wpisy rejestru spraw odnotowują wizyty, spory o kanapę i jeden podejrzanie cichy rozejm."
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "Le Criminel jest wielokrotnie łączony z kanapą w opublikowanych materiałach sprawy. Tablica traktuje to jako rekonstrukcję redakcyjną, nie ustalenie.",
+      "le-criminel-balcony": "Akta balkonu odnotowują pościg za gołębiem z udziałem Le Criminel i bez udanego zdobycia gołębia.",
+      "le-criminel-shoe": "Akta buta dokumentują zielony but, uszkodzone sznurowadła i podejrzanego bez wiarygodnego alternatywnego wyjaśnienia.",
+      "le-criminel-pikette": "Opublikowane wizyty ustanawiają powtarzającą się wrogość między Le Criminel a Pikette. Każda szersza teoria jest celowo fikcyjna.",
+      "pikette-couch": "Obaj podejrzani zajmowali kanapę podczas odnotowanych wizyt; powiązanie przedstawiono jako sporną rekonstrukcję.",
+      "pikette-visits": "Rejestr spraw odnotowuje wizyty Pikette, nie twierdząc, że istnieje rzeczywisty wzór dochodzeniowy."
+    }
+  },
   "blog": {
     "title": "REJESTR SPRAW",
-    "subtitle": "26 comiesięcznych wpisów — dwa lata nieprzerwanej obserwacji, sprawa 001-CR pozostaje otwarta"
+    "subtitle": "27 miesięcznych wpisów — ponad dwa lata nieprzerwanej obserwacji, sprawa 001-CR pozostaje otwarta"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "LOKALNE PARKI ZINFILTROWANE",
       "body": "Obiekt pozostawał w Brukseli przez cały sierpień. Ładna pogoda umożliwiła wielokrotne operacje w lokalnych parkach, po których zwykle następowało bezprawne pozyskanie i spożycie fragmentów croissanta. Częstotliwość patroli wzrosła. Ochrona wypieków pozostaje niewystarczająca.",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "SEZON NALEŚNIKOWY, POTEM SEZON DRZEMEK",
+      "body": "Sezon naleśnikowy rozpoczął się we wrześniu, a Obiekt był na miejscu przed otwarciem drzwi, kręcił się przy meblach tarasowych i przyjmował jabłko jako zaliczkę. Nie pozyskano żadnych naleśników. Aktywność potem gwałtownie spadła: powolne patrole wśród opadłych liści, niespieszne kontrole kasztanów i mnóstwo czasu na kanapie. Pełny raport złożono osobno pod tytułem «Leniwa jesień».",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {

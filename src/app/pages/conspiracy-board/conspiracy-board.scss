@@ -1,0 +1,47 @@
+.page { padding: 120px 32px 96px; max-width: 1100px; margin: 0 auto; }
+.page-header { margin-bottom: 28px; }
+.kicker { font-size: 11px; letter-spacing: 2px; color: #e0645b; margin-bottom: 10px; overflow-wrap: anywhere; }
+.title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(32px, 9vw, 52px); letter-spacing: 2px; margin-bottom: 10px; overflow-wrap: anywhere; }
+.subtitle { font-size: 14px; color: #cfcfcc; margin-bottom: 10px; }
+.fictional-notice { max-width: 55rem; font-size: .9rem; }
+.board-controls { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0; }
+.board-controls button, .case-link { border: 1px solid currentColor; background: transparent; color: inherit; padding: .65rem .8rem; font: inherit; text-decoration: none; cursor: pointer; }
+.board { position: relative; padding: 1.25rem; background: #8b5a36; border: .65rem solid #30251b; }
+.board-stamp { color: #5f1b18; font-weight: 700; text-align: right; }
+.connection-overlay { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.connection { opacity: .2; transition: opacity .2s ease; }
+.connection.is-revealed, .connection.is-active { opacity: 1; }
+.connection-line { stroke: #631f1b; stroke-linecap: round; stroke-width: 4; }
+.connection--disputed .connection-line { stroke-dasharray: 10 8; }
+.connection-pin { fill: #f5d879; stroke: #30251b; stroke-width: 2; }
+.connection.is-active .connection-line { stroke: #a9221c; stroke-width: 5; }
+.evidence-grid { position: relative; display: grid; gap: 3rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.evidence-item { display: grid; gap: .5rem; transition: opacity .2s ease; }
+.board:not(.board--complete) .evidence-item:not(.is-revealed) { opacity: .45; }
+.evidence-card { display: grid; gap: .6rem; min-height: 11rem; padding: 1rem; border: 0; text-align: left; background: #f4efdf; color: #1b1a17; font: inherit; cursor: pointer; }
+.evidence-card.is-selected { outline: 4px solid #a9221c; outline-offset: 3px; }
+.evidence-kind { color: #8e211b; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; }
+.detail-panel, .evidence-index { margin-top: 1.5rem; }
+.connection-note { border-left: .25rem solid #a9221c; padding-left: .8rem; }
+.connection-note--disputed { border-left-style: dashed; }
+.evidence-card:focus-visible, .board-controls button:focus-visible, .case-link:focus-visible { outline: 3px solid #f5d879; outline-offset: 3px; }
+
+/* Connected cards sit in adjacent cells so every string runs through a gutter, not across card text. */
+@media (min-width: 701px) {
+  .evidence-item[data-node='balcony'] { grid-area: 1 / 1; }
+  .evidence-item[data-node='le-criminel'] { grid-area: 1 / 2; }
+  .evidence-item[data-node='couch'] { grid-area: 1 / 3; }
+  .evidence-item[data-node='shoe'] { grid-area: 2 / 1; }
+  .evidence-item[data-node='pikette'] { grid-area: 2 / 2; }
+  .evidence-item[data-node='pikette-visits'] { grid-area: 2 / 3; }
+}
+
+@media (max-width: 700px) {
+  .evidence-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .board { background: transparent; border: 0; padding: 0; }
+  .board-stamp, .connection-overlay { display: none; }
+  .board:not(.board--complete) .evidence-item:not(.is-revealed) { opacity: 1; }
+}
+
+@media (max-width: 480px) { .page { padding: 96px 20px 64px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }

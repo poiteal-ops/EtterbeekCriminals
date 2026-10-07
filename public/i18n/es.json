@@ -352,7 +352,9 @@
     "juryTampering": "MANIPULACIÓN DEL JURADO",
     "aDayWithBestie": "UN DÍA CON BESTIE",
     "kandeNadege": "KANDE NADÈGE",
+    "lazyAutumn": "EL OTOÑO PEREZOSO",
     "blog": "BLOG",
+    "conspiracyBoard": "CONSPIRACIÓN",
     "shop": "TIENDA"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "Una encargada encubierta, una operación comprometida y un sospechoso en un estado de forma alarmantemente excelente.",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "EL OTOÑO PEREZOSO",
+      "teaser": "Abrió la temporada de tortitas. Después, el sospechoso descansó extensamente.",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "Informe de actividad estacional",
+    "title": "EL OTOÑO PEREZOSO",
+    "locationLabel": "LUGAR",
+    "locationVal": "Etterbeek, fuera de establecimientos de tortitas (antes de abrir), después el sofá",
+    "suspectLabel": "SOSPECHOSO",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TESTIGO",
+    "witnessVal": "SAWITO (presente en todo momento, sujetaba la correa, proporcionó la manzana)",
+    "motiveLabel": "MOTIVO",
+    "motiveVal": "Temporada de tortitas, seguida de un descanso sostenido y bien merecido",
+    "p1": "Con los primeros días frescos de septiembre se abrió la temporada anual de tortitas, y el Sujeto no la ignoraba. La vigilancia lo sitúa fuera de establecimientos de tortitas mucho antes de abrir, junto al mobiliario de terraza, con la postura de alguien que «solo está esperando». No se obtuvieron tortitas. El Sujeto aceptó un trozo de manzana del Testigo como gesto de buena voluntad y lo trató como pago anticipado.",
+    "p2": "Tras la vigilancia, la actividad criminal disminuyó notablemente. Las patrullas del Sujeto se hicieron lentas, poco esforzadas y se limitaron sobre todo a olfatear hojas caídas y castañas, que parecía estar auditando. A finales de septiembre el patrón quedó fijado: sofá, bostezo, sofá. Los investigadores no hallaron nuevas infracciones, muchos cojines y un bostezo muy grande.",
+    "exhibitBCaption": "PRUEBA B — SUJETO AUDITA LAS CASTAÑAS A PASO TRANQUILO",
+    "exhibitCCaption": "PRUEBA C — SUJETO BOSTEZA EN EL SOFÁ, OFICIALMENTE FUERA DE SERVICIO",
+    "exhibitDCaption": "PRUEBA D — SUJETO SE APROXIMA A LA CÁMARA DESDE MUY CERCA. CALIDAD DE IMAGEN DEFICIENTE; EL SUJETO NO COLABORABA CON EL FOTÓGRAFO",
+    "stamp": "CASO EN PAUSA — SUJETO DESCANSANDO"
+  },
+  "conspiracyBoard": {
+    "nav": "CONSPIRACIÓN",
+    "kicker": "INVESTIGACIÓN EXTRAOFICIAL / SALA DE PRUEBAS",
+    "title": "EL TABLERO DE LA CONSPIRACIÓN",
+    "subtitle": "Un sofá. Varios sospechosos. Un patrón que los investigadores no pueden ignorar.",
+    "fictionalNotice": "Reconstrucción ficticia elaborada a partir de material de casos publicado. No intervienen vigilancia, acusación ni pruebas reales.",
+    "boardStamp": "CONEXIONES: ALTAMENTE SOSPECHOSAS",
+    "buildCase": "CONSTRUIR EL CASO",
+    "pause": "PAUSAR SECUENCIA",
+    "continue": "CONTINUAR SECUENCIA",
+    "skip": "IR AL TABLERO COMPLETO",
+    "replay": "REPETIR SECUENCIA",
+    "reset": "BORRAR SELECCIÓN",
+    "selectedLabel": "PRUEBA SELECCIONADA",
+    "detailsTitle": "NOTAS DE CONEXIÓN",
+    "evidenceListTitle": "ÍNDICE DE PRUEBAS",
+    "connectionsTitle": "CONEXIONES REDACTADAS",
+    "caseLinkLabel": "ABRIR EXPEDIENTE",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "Sospechoso principal. Presente repetidamente cuando sofás, balcones y comida sin vigilancia se vuelven conflictivos."
+      },
+      "couch": {
+        "title": "EL SOFÁ",
+        "summary": "Puesto de vigilancia, territorio disputado y escena recurrente de pruebas domésticas."
+      },
+      "balcony": {
+        "title": "EL BALCÓN",
+        "summary": "Lugar de una persecución de paloma y de una intervención de seguridad duradera."
+      },
+      "shoe": {
+        "title": "EL ZAPATO VERDE",
+        "summary": "Recuperado con cordones comprometidos tras una operación de reubicación no autorizada."
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "Visitante estacional y rival documentada cuyos motivos siguen siendo enteramente ficticios."
+      },
+      "pikette-visits": {
+        "title": "REGISTRO DE VISITAS",
+        "summary": "Entradas publicadas registran visitas, disputas por el sofá y una tregua sospechosamente silenciosa."
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "Le Criminel está vinculado repetidamente al sofá en el material publicado. El tablero lo trata como reconstrucción editorial, no como conclusión.",
+      "le-criminel-balcony": "El expediente del balcón registra una persecución de paloma con Le Criminel y ninguna adquisición exitosa de paloma.",
+      "le-criminel-shoe": "El expediente del zapato documenta un zapato verde, cordones dañados y un sospechoso sin explicación alternativa creíble.",
+      "le-criminel-pikette": "Las visitas publicadas establecen hostilidades recurrentes entre Le Criminel y Pikette. Cualquier teoría más amplia es deliberadamente ficticia.",
+      "pikette-couch": "Ambos sospechosos han ocupado el sofá durante visitas registradas; la conexión se presenta como una reconstrucción disputada.",
+      "pikette-visits": "El registro de casos documenta visitas de Pikette sin afirmar un patrón investigador real."
+    }
+  },
   "blog": {
     "title": "REGISTRO DE CASOS",
-    "subtitle": "26 entradas mensuales — dos años de vigilancia continua, el expediente 001-CR sigue abierto"
+    "subtitle": "27 entradas mensuales — tras más de dos años de vigilancia continua, el caso 001-CR sigue abierto"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "PARQUES LOCALES COMPROMETIDOS",
       "body": "El Sujeto permaneció en Bruselas durante todo agosto. El buen tiempo permitió efectuar operaciones repetidas en los parques locales, generalmente seguidas de la adquisición y el consumo ilícitos de fragmentos de cruasán. Aumentó la frecuencia de las patrullas. La seguridad de la bollería sigue siendo insuficiente.",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "TEMPORADA DE TORTITAS, LUEGO TEMPORADA DE SIESTAS",
+      "body": "La temporada de tortitas abrió en septiembre y el Sujeto estaba en el lugar antes que las puertas, merodeando junto al mobiliario de terraza y aceptando manzana como anticipo. No se obtuvieron tortitas. La actividad cayó en picado: patrullas lentas entre hojas caídas, inspecciones de castañas a paso tranquilo y mucho tiempo en el sofá. Informe completo archivado aparte bajo «El otoño perezoso».",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {

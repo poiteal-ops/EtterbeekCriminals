@@ -352,7 +352,9 @@
     "juryTampering": "ŽÜRII MÕJUTAMINE",
     "aDayWithBestie": "PÄEV BESTIEGA",
     "kandeNadege": "Kande Nadège",
+    "lazyAutumn": "LAISK SÜGIS",
     "blog": "BLOGI",
+    "conspiracyBoard": "VANDENÕU",
     "shop": "POOD"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "Varjatud juhendaja, kompromiteeritud operatsioon ja üks häirivalt suurepärases vormis kahtlusalune.",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "LAISK SÜGIS",
+      "teaser": "Pannkoogihooaeg algas. Seejärel võttis kahtlusalune pika puhkuse.",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "Hooajalise tegevuse aruanne",
+    "title": "LAISK SÜGIS",
+    "locationLabel": "ASUKOHT",
+    "locationVal": "Etterbeek, pannkoogikohtade ees (enne avamist), seejärel diivan",
+    "suspectLabel": "KAHTLUSALUNE",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "TUNNISTAJA",
+    "witnessVal": "SAWITO (kohal kogu aja, hoidis rihma, andis õuna)",
+    "motiveLabel": "MOTIIV",
+    "motiveVal": "Pannkoogihooaeg, millele järgnes püsiv ja igati väljateenitud puhkus",
+    "p1": "Septembri esimeste jahedate päevadega algas iga-aastane pannkoogihooaeg ning Subjekt oli sellest teadlik. Jälgimine paigutas ta pannkoogikohtade ette ammu enne avamist, terrassimööbli juurde, inimesena, kes „lihtsalt ootab“. Pannkooke ei saadud. Subjekt võttis Tunnistajalt hea tahte märgina õunatüki ja käsitles seda ettemaksena.",
+    "p2": "Pärast varitsust langes kuritegelik aktiivsus järsult. Subjekti patrullid muutusid aeglaseks, vähese pingutusega ja piirdusid peamiselt langenud lehtede ning kastanite nuusutamisega, mida ta näis auditeerivat. Septembri lõpuks oli muster paigas: diivan, haigutus, diivan. Uurijad ei leidnud uusi rikkumisi, küll aga palju patju ja ühe väga suure haigutuse.",
+    "exhibitBCaption": "EKS PONAAT B — SUBJEKT AUDITEERIB KASTANEID RAHULIKUS TEMPOS",
+    "exhibitCCaption": "EKS PONAAT C — SUBJEKT HAIGUTAB DIIVANIL, AMETLIKULT TÖÖLT VABA",
+    "exhibitDCaption": "EKS PONAAT D — SUBJEKT LÄHENEB KAAMERALE LÄHIDISTANTSILT. PILDI KVALITEET KEHV; SUBJEKT EI TEE FOTOGRAA FIGA KOOSTÖÖD",
+    "stamp": "TOIMIK PEATATUD — SUBJEKT PUHKAB"
+  },
+  "conspiracyBoard": {
+    "nav": "VANDENÕU",
+    "kicker": "MITTEAMETLIK JUURDLUS / TÕENDIRUUM",
+    "title": "VANDENÕUTAHVEL",
+    "subtitle": "Üks diivan. Mitu kahtlusalust. Muster, mida uurijad ei saa eirata.",
+    "fictionalNotice": "Väljamõeldud rekonstruktsioon, koostatud avaldatud toimikumaterjalist. Tegelikku jälgimist, süüdistust ega tõendit ei ole.",
+    "boardStamp": "SE OSED: VÄGA KAHTLASED",
+    "buildCase": "KOOSTA TOIMIK",
+    "pause": "PEATA JADA",
+    "continue": "JÄTKA JADA",
+    "skip": "MINE TÄISTAHVLI JUURDE",
+    "replay": "ESITA JADA UU ESTI",
+    "reset": "TÜHJENDA VALIK",
+    "selectedLabel": "VALITUD TÕEND",
+    "detailsTitle": "SEOSTE MÄRKMED",
+    "evidenceListTitle": "TÕENDITE REGISTER",
+    "connectionsTitle": "KOOSTATUD SEOSED",
+    "caseLinkLabel": "AVA TOIMIK",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "Peamine kahtlusalune. Kohal, kui diivanid, rõdud ja järelvalveta toit muutuvad vaidlusaluseks."
+      },
+      "couch": {
+        "title": "DIIVAN",
+        "summary": "Jälgimispunkt, vaidlusalune territoorium ja korduv koduste tõendite sündmuskoht."
+      },
+      "balcony": {
+        "title": "RÕDU",
+        "summary": "Ühe tuvide tagaajamise ja pikaajalise turvasekkumise asukoht."
+      },
+      "shoe": {
+        "title": "ROHELINE KING",
+        "summary": "Leitud kahjustatud paeltega pärast loata ümberpaigutusoperatsiooni."
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "Hooajaline külaline ja dokumenteeritud rivaal, kelle motiivid on täielikult väljamõeldud."
+      },
+      "pikette-visits": {
+        "title": "KÜLASTUSLOGI",
+        "summary": "Avaldatud juhtumilogid kajastavad külastusi, diivanivaidlusi ja üht kahtlaselt vaikset vaherahu."
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "LE CRIMINEL on avaldatud materjalis korduvalt diivaniga seotud. Tahvel käsitleb seda toimetusliku rekonstruktsioonina, mitte järeldusena.",
+      "le-criminel-balcony": "Rõdutoimik kajastab LE CRIMINELI tuvide tagaajamist ja ühtki edukat tuvi omandamist.",
+      "le-criminel-shoe": "Kingatoimik dokumenteerib rohelise kinga, kahjustatud paelad ja kahtlusaluse, kellel puudub usutav alternatiivne seletus.",
+      "le-criminel-pikette": "Avaldatud külastused kinnitavad LE CRIMINELI ja Pikette korduvat vaenulikkust. Iga laiem teooria on teadlikult väljamõeldud.",
+      "pikette-couch": "Mõlemad kahtlusalused on registreeritud külastuste ajal diivanil viibinud; seost esitatakse vaidlusaluse rekonstruktsioonina.",
+      "pikette-visits": "Juhtumilogi kajastab Pikette külastusi, väitmata tegelikku uurimismustrit."
+    }
+  },
   "blog": {
     "title": "JUHTUMIPÄEVIK",
-    "subtitle": "26 igakuist kannet — kaks aastat pidevat jälgimist, toimik 001-CR jääb avatuks"
+    "subtitle": "27 igakuist kannet — üle kahe aasta pidevat jälgimist, toimik 001-CR jääb avatuks"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "KOHALIKUD PARGID OHUSTATUD",
       "body": "Subjekt viibis kogu augusti Brüsselis. Ilus ilm võimaldas kohalikes parkides korduvaid operatsioone, millele järgnes tavaliselt sarvesaiatükkide ebaseaduslik omandamine ja tarbimine. Patrullide sagedus suurenes. Küpsetiste turvalisus on endiselt puudulik.",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "PANNKOOGIHOOAEG, SIIS UINAKUHOOAEG",
+      "body": "Pannkoogihooaeg algas septembris ning Subjekt oli kohal enne avamist, luusides terrassimööbli juures ja võttes õuna ettemaksena vastu. Pannkooke ei saadud. Seejärel aktiivsus rauges: aeglased patrullid langenud lehtede vahel, kastanite kontroll rahulikus tempos ja palju aega diivanil. Täielik aruanne on eraldi toimikus „Laisk sügis“.",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {

@@ -352,7 +352,9 @@
     "juryTampering": "JURYMANIPULATIE",
     "aDayWithBestie": "EEN DAG MET BESTIE",
     "kandeNadege": "KANDE NADÈGE",
+    "lazyAutumn": "DE LUIE HERFST",
     "blog": "BLOG",
+    "conspiracyBoard": "SAMENZWERING",
     "shop": "SHOP"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "Een undercoverbegeleider, een gecompromitteerde operatie en één verdachte in alarmerend uitstekende conditie.",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "DE LUIE HERFST",
+      "teaser": "Het pannenkoekenseizoen begon. Daarna nam de verdachte langdurig rust.",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "Seizoensgebonden activiteitenrapport",
+    "title": "DE LUIE HERFST",
+    "locationLabel": "LOCATIE",
+    "locationVal": "Etterbeek, buiten pannenkoekenzaken (voor opening), daarna de bank",
+    "suspectLabel": "VERDACHTE",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "GETUIGE",
+    "witnessVal": "SAWITO (de hele tijd aanwezig, hield de lijn vast, leverde de appel)",
+    "motiveLabel": "MOTIEF",
+    "motiveVal": "Pannenkoekenseizoen, gevolgd door aanhoudende en verdiende rust",
+    "p1": "Met de eerste koele dagen van september begon het jaarlijkse pannenkoekenseizoen, en het Subject was zich daarvan terdege bewust. Toezicht plaatst hem ruim voor openingstijd buiten pannenkoekenzaken, bij het terrasmeubilair, met de houding van iemand die „gewoon wacht”. Er werden geen pannenkoeken verkregen. Het Subject accepteerde een stuk appel van de Getuige als gebaar van goede wil en beschouwde het als een voorschot.",
+    "p2": "Na de observatie nam de criminele activiteit sterk af. De patrouilles van het Subject werden traag, energiezuinig en beperkten zich vooral tot het besnuffelen van gevallen bladeren en kastanjes, die hij kennelijk controleerde. Tegen eind september was het patroon duidelijk: bank, geeuw, bank. Onderzoekers vonden geen nieuwe overtredingen, zeer veel kussens en één zeer grote geeuw.",
+    "exhibitBCaption": "BEWIJSSTUK B — SUBJECT CONTROLEERT DE KASTANJES IN RUSTIG TEMPO",
+    "exhibitCCaption": "BEWIJSSTUK C — SUBJECT GEEUWT OP DE BANK, OFFICIEEL BUITEN DIENST",
+    "exhibitDCaption": "BEWIJSSTUK D — SUBJECT NADERT DE CAMERA VAN ZEER DICHTBIJ. BEELDKWALITEIT SLECHT; SUBJECT WERKTE NIET MEE MET DE FOTOGRAAF",
+    "stamp": "ZAAK AANGEHOUDEN — SUBJECT RUST"
+  },
+  "conspiracyBoard": {
+    "nav": "SAMENZWERING",
+    "kicker": "ONOFFICIEEL ONDERZOEK / BEWIJSRUIMTE",
+    "title": "HET SAMENZWERINGSBORD",
+    "subtitle": "Eén bank. Meerdere verdachten. Een patroon dat onderzoekers niet kunnen negeren.",
+    "fictionalNotice": "Een fictieve reconstructie samengesteld uit gepubliceerd dossiermateriaal. Er is geen echte surveillance, beschuldiging of bewijs betrokken.",
+    "boardStamp": "VERBINDINGEN: ZEER VERDACHT",
+    "buildCase": "ZAAK OPBOUWEN",
+    "pause": "SEQUENTIE PAUZEREN",
+    "continue": "SEQUENTIE VOORTZETTEN",
+    "skip": "NAAR VOLLEDIG BORD",
+    "replay": "SEQUENTIE HERHALEN",
+    "reset": "SELECTIE WISSEN",
+    "selectedLabel": "GESELECTEERD BEWIJS",
+    "detailsTitle": "VERBINDINGSNOTITIES",
+    "evidenceListTitle": "BEWIJSINDEX",
+    "connectionsTitle": "VASTGELEGDE VERBINDINGEN",
+    "caseLinkLabel": "DOSSIER OPENEN",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "Hoofdverdachte. Herhaaldelijk aanwezig wanneer banken, balkons en onbeheerd voedsel omstreden worden."
+      },
+      "couch": {
+        "title": "DE BANK",
+        "summary": "Observatiepost, betwist terrein en terugkerende plaats van huishoudelijk bewijs."
+      },
+      "balcony": {
+        "title": "HET BALKON",
+        "summary": "Locatie van één duivenachtervolging en een langdurige veiligheidsingreep."
+      },
+      "shoe": {
+        "title": "DE GROENE SCHOEN",
+        "summary": "Aangetroffen met aangetaste veters na een ongeautoriseerde verplaatsingsoperatie."
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "Seizoensbezoeker en gedocumenteerde rivaal wier motieven geheel fictief blijven."
+      },
+      "pikette-visits": {
+        "title": "BEZOEKREGISTER",
+        "summary": "Gepubliceerde zaaknotities registreren bezoeken, bankgeschillen en één verdacht stille wapenstilstand."
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "Le Criminel wordt in gepubliceerd zaakmateriaal herhaaldelijk met de bank verbonden. Het bord behandelt dit als een redactionele reconstructie, niet als een vaststelling.",
+      "le-criminel-balcony": "Het balkondossier registreert een duivenachtervolging met Le Criminel en geen succesvolle duivenverwerving.",
+      "le-criminel-shoe": "Het schoenendossier documenteert een groene schoen, beschadigde veters en een verdachte zonder geloofwaardige alternatieve verklaring.",
+      "le-criminel-pikette": "Gepubliceerde bezoeken tonen terugkerende vijandigheden tussen Le Criminel en Pikette. Elke bredere theorie is opzettelijk fictief.",
+      "pikette-couch": "Beide verdachten hebben tijdens geregistreerde bezoeken de bank bezet; de verbinding wordt als een betwiste reconstructie gepresenteerd.",
+      "pikette-visits": "Het zaaklogboek registreert bezoeken van Pikette zonder een werkelijk onderzoekspatroon te claimen."
+    }
+  },
   "blog": {
     "title": "LOGBOEK",
-    "subtitle": "26 maandelijkse notities — twee jaar ononderbroken observatie, dossier 001-CR blijft open"
+    "subtitle": "27 maandelijkse vermeldingen — na meer dan twee jaar onafgebroken toezicht blijft dossier 001-CR open"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "LOKALE PARKEN GECOMPROMITTEERD",
       "body": "Het Subject bleef de hele maand augustus in Brussel. Het mooie weer maakte herhaalde operaties in lokale parken mogelijk, meestal gevolgd door de wederrechtelijke verwerving en consumptie van stukjes croissant. De patrouillefrequentie nam toe. De beveiliging van gebak blijft ontoereikend.",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "PANNENKOEKENSEIZOEN, DAARNA DUTJESSEIZOEN",
+      "body": "Het pannenkoekenseizoen begon in september en het Subject was aanwezig voordat de deuren open gingen, rondhangend bij het terrasmeubilair en appel aannemend als voorschot. Er werden geen pannenkoeken verkregen. Daarna daalde de activiteit sterk: trage patrouilles door gevallen bladeren, kastanjecontroles in rustig tempo en veel tijd op de bank. Volledig rapport afzonderlijk gearchiveerd onder „De luie herfst”.",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {

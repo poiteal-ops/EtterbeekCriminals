@@ -352,7 +352,9 @@
     "juryTampering": "UTJECANJE NA POROTU",
     "aDayWithBestie": "DAN S BESTIE",
     "kandeNadege": "KANDE NADÈGE",
+    "lazyAutumn": "LIJENA JESEN",
     "blog": "BLOG",
+    "conspiracyBoard": "UROTA",
     "shop": "TRGOVINA"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "Tajna voditeljica, kompromitirana operacija i jedan osumnjičenik u alarmantno izvrsnoj formi.",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "LIJENA JESEN",
+      "teaser": "Sezona palačinki završila je, a kauč je preuzeo dužnost.",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "Sezonsko izvješće o aktivnosti",
+    "title": "LIJENA JESEN",
+    "locationLabel": "MJESTO",
+    "locationVal": "Etterbeek, ispred lokala s palačinkama (prije otvaranja), zatim kauč",
+    "suspectLabel": "OSUMNJIČENIK",
+    "suspectVal": "LE CRIMINEL",
+    "witnessLabel": "SVJEDOK",
+    "witnessVal": "SAWITO (prisutan cijelo vrijeme, držao povodac, donio jabuku)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Sezona palačinki, nakon koje slijedi ustrajan i zaslužen odmor",
+    "p1": "S prvim svježim rujanskim danima otvorila se godišnja sezona palačinki, a Subjekt toga nije bio nesvjestan. Nadzor ga smješta ispred lokala s palačinkama mnogo prije radnog vremena, kraj namještaja na terasi, s držanjem nekoga tko «samo čeka». Palačinke nisu pribavljene. Subjekt je prihvatio komad jabuke od Svjedoka kao gestu dobre volje i smatrao ga predujmom.",
+    "p2": "Nakon zasjede kriminalna je aktivnost naglo opala. Subjektove ophodnje postale su spore, nezahtjevne i uglavnom ograničene na njuškanje otpalog lišća i kestena, koje je naizgled revidirao. Do kraja rujna obrazac je bio ustaljen: kauč, zijevanje, kauč. Istražitelji nisu pronašli nove prekršaje, vrlo mnogo jastuka i jedno vrlo veliko zijevanje.",
+    "exhibitBCaption": "DOKAZ B — SUBJEKT LEŽERNO REVIDIRA KESTENE",
+    "exhibitCCaption": "DOKAZ C — SUBJEKT ZIJEVA NA KAUČU, SLUŽBENO IZVAN DUŽNOSTI",
+    "exhibitDCaption": "DOKAZ D — SUBJEKT PRILAZI KAMERI IZBLIZA. KVALITETA SLIKE LOŠA; SUBJEKT NIJE SURAĐIVAO S FOTOGRAFOM",
+    "stamp": "SLUČAJ NA ČEKANJU — SUBJEKT ODMARA"
+  },
+  "conspiracyBoard": {
+    "nav": "UROTA",
+    "kicker": "NESLUŽBENA ISTRAGA / PROSTORIJA S DOKAZIMA",
+    "title": "PLOČA UROTE",
+    "subtitle": "Jedan kauč. Nekoliko osumnjičenika. Obrazac koji istražitelji ne mogu ignorirati.",
+    "fictionalNotice": "Izmišljena rekonstrukcija sastavljena od objavljenog materijala iz spisa. Nije riječ o stvarnom nadzoru, optužbi ni dokazima.",
+    "boardStamp": "POVEZNICE: KRAJNJE SUMNJIVE",
+    "buildCase": "SASTAVI SLUČAJ",
+    "pause": "PAUZIRAJ SLIJED",
+    "continue": "NASTAVI SLIJED",
+    "skip": "PRIJEĐI NA CIJELU PLOČU",
+    "replay": "PONOVI SLIJED",
+    "reset": "PONIŠTI ODABIR",
+    "selectedLabel": "ODABRANI DOKAZ",
+    "detailsTitle": "BILJEŠKE O POVEZNICAMA",
+    "evidenceListTitle": "KAZALO DOKAZA",
+    "connectionsTitle": "AUTORSKE POVEZNICE",
+    "caseLinkLabel": "OTVORI SPIS",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "Glavni osumnjičenik. Više puta prisutan kada kauči, balkoni i nečuvana hrana postanu sporni."
+      },
+      "couch": {
+        "title": "KAUČ",
+        "summary": "Nadzorna točka, sporno područje i učestalo mjesto domaćih dokaza."
+      },
+      "balcony": {
+        "title": "BALKON",
+        "summary": "Mjesto jedne potjere za golubom i dugotrajne sigurnosne intervencije."
+      },
+      "shoe": {
+        "title": "ZELENA CIPELA",
+        "summary": "Pronađena s ugroženim vezicama nakon neovlaštene operacije premještanja."
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "Sezonska posjetiteljica i dokumentirana suparnica čiji motivi ostaju potpuno izmišljeni."
+      },
+      "pikette-visits": {
+        "title": "DNEVNIK POSJETA",
+        "summary": "Objavljeni zapisi predmeta bilježe posjete, sporove oko kauča i jedno sumnjivo tiho primirje."
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "LE CRIMINEL se u objavljenom materijalu predmeta opetovano povezuje s kaučem. Ploča to tretira kao uredničku rekonstrukciju, a ne kao utvrđenu činjenicu.",
+      "le-criminel-balcony": "Balkonski spis bilježi potjeru za golubom u kojoj sudjeluje LE CRIMINEL i nijedno uspješno pribavljanje goluba.",
+      "le-criminel-shoe": "Spis o cipeli dokumentira zelenu cipelu, oštećene vezice i osumnjičenika bez vjerodostojnog alternativnog objašnjenja.",
+      "le-criminel-pikette": "Objavljene posjete potvrđuju ponavljano neprijateljstvo između LE CRIMINEL i Pikette. Svaka šira teorija namjerno je izmišljena.",
+      "pikette-couch": "Oba su osumnjičenika zauzimala kauč tijekom zabilježenih posjeta; poveznica se prikazuje kao sporna rekonstrukcija.",
+      "pikette-visits": "Dnevnik predmeta bilježi Piketteine posjete bez tvrdnje o stvarnom istražnom obrascu."
+    }
+  },
   "blog": {
     "title": "DNEVNIK PREDMETA",
-    "subtitle": "26 mjesečnih zapisa — dvije godine neprekidnog nadzora, predmet 001-CR ostaje otvoren"
+    "subtitle": "27 mjesečnih zapisa — nakon više od dvije godine neprekidnog nadzora, predmet 001-CR ostaje otvoren"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "LOKALNI PARKOVI KOMPROMITIRANI",
       "body": "Subjekt je cijeli kolovoz ostao u Bruxellesu. Lijepo vrijeme omogućilo je ponovljene operacije u lokalnim parkovima, nakon kojih je obično slijedilo nezakonito pribavljanje i konzumiranje komadića kroasana. Učestalost ophodnji se povećala. Sigurnost peciva i dalje je nedostatna.",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "SEZONA PALAČINKI, PA SEZONA DRIJEMANJA",
+      "body": "Sezona palačinki otvorila se u rujnu, a Subjekt je bio na mjestu prije samih vrata, zadržavao se uz namještaj na terasi i prihvaćao jabuku kao predujam. Palačinke nisu pribavljene. Aktivnost je zatim naglo pala: spore ophodnje kroz otpalo lišće, ležerni pregledi kestena i mnogo vremena na kauču. Cjelovito izvješće zasebno je arhivirano pod naslovom «Lijena jesen».",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {

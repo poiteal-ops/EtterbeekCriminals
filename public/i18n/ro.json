@@ -352,7 +352,9 @@
     "juryTampering": "MANIPULAREA JURIULUI",
     "aDayWithBestie": "O ZI CU Bestie",
     "kandeNadege": "KANDE NADÈGE",
+    "lazyAutumn": "TOAMNA LENEȘĂ",
     "blog": "BLOG",
+    "conspiracyBoard": "CONSPIRAȚIE",
     "shop": "MAGAZIN"
   },
   "home": {
@@ -481,6 +483,12 @@
       "teaser": "O operatoare sub acoperire, o operațiune compromisă și un suspect într-o formă fizică alarmant de excelentă.",
       "link": "/kande-nadege",
       "image": "assets/images/otto-forest-sprint.jpg"
+    },
+    {
+      "title": "TOAMNA LENEȘĂ",
+      "teaser": "Sezonul clătitelor, o pândă răbdătoare și un suspect care apoi a ieșit din serviciu pe canapea.",
+      "link": "/lazy-autumn",
+      "image": "assets/images/autumn-pancake.jpg"
     }
   ],
   "escapeToCountry": {
@@ -675,9 +683,80 @@
     "websiteLabel": "Kande Nadège — NAdK Coach Canin",
     "instagramLabel": "Instagram — @caninfelin.coach_nadk"
   },
+  "lazyAutumn": {
+    "kicker": "Raport de activitate sezonieră",
+    "title": "TOAMNA LENEȘĂ",
+    "locationLabel": "LOCAȚIE",
+    "locationVal": "Etterbeek, în fața localurilor cu clătite (înainte de deschidere), apoi canapeaua",
+    "suspectLabel": "SUSPECT",
+    "suspectVal": "Le Criminel",
+    "witnessLabel": "MARTOR",
+    "witnessVal": "Sawito (prezent permanent, a ținut lesa, a oferit mărul)",
+    "motiveLabel": "MOTIV",
+    "motiveVal": "Sezonul clătitelor, urmat de o odihnă susținută și bine meritată",
+    "p1": "Odată cu primele zile răcoroase din septembrie s-a deschis sezonul anual al clătitelor, iar Subiectul nu ignora acest fapt. Supravegherea îl plasează în fața localurilor cu clătite cu mult înainte de deschidere, lângă mobilierul de terasă, cu postura cuiva care «doar așteaptă». Nu s-au obținut clătite. Subiectul a acceptat de la Martor o bucată de măr ca gest de bunăvoință și a tratat-o drept avans.",
+    "p2": "După pândă, activitatea infracțională a scăzut brusc. Patrulele Subiectului au devenit lente, lipsite de efort și limitate mai ales la adulmecarea frunzelor căzute și a castanelor, pe care părea să le auditeze. Până la sfârșitul lui septembrie tiparul era stabilit: canapea, căscat, canapea. Anchetatorii nu au găsit noi infracțiuni, foarte multe perne și un căscat foarte mare.",
+    "exhibitBCaption": "EXPOZITUL B — SUBIECTUL AUDITEAZĂ CASTANELE ÎN RITM LEJER",
+    "exhibitCCaption": "EXPOZITUL C — SUBIECTUL CAȘCĂ PE CANAPEA, OFICIAL ÎN AFARA SERVICIULUI",
+    "exhibitDCaption": "EXPOZITUL D — SUBIECTUL SE APROPIE DE CAMERĂ DE LA MICĂ DISTANȚĂ. CALITATEA IMAGINII ESTE SLABĂ; SUBIECTUL NU COOPERA CU FOTOGRAFUL",
+    "stamp": "CAZ ÎN AȘTEPTARE — SUBIECTUL SE ODIHNEȘTE"
+  },
+  "conspiracyBoard": {
+    "nav": "CONSPIRAȚIE",
+    "kicker": "ANCHETĂ NEOFICIALĂ / CAMERA DOVEZILOR",
+    "title": "PANoul CONSPIRAȚIEI",
+    "subtitle": "O canapea. Mai mulți suspecți. Un tipar pe care anchetatorii nu îl pot ignora.",
+    "fictionalNotice": "O reconstrucție fictivă alcătuită din materiale publicate în dosare. Nu sunt implicate supraveghere, acuzații sau dovezi reale.",
+    "boardStamp": "CONEXIUNI: FOARTE SUSPECTE",
+    "buildCase": "CONSTRUIEȘTE CAZUL",
+    "pause": "ÎNTRERUPE SECVENȚA",
+    "continue": "CONTINUĂ SECVENȚA",
+    "skip": "SARI LA PANOU COMPLET",
+    "replay": "REIA SECVENȚA",
+    "reset": "ȘTERGE SELECȚIA",
+    "selectedLabel": "DOVEZI SELECTATE",
+    "detailsTitle": "NOTE PRIVIND CONEXIUNILE",
+    "evidenceListTitle": "INDEXUL DOVEZILOR",
+    "connectionsTitle": "CONEXIUNI ÎNTOCMITE",
+    "caseLinkLabel": "DESCHIDE DOSARUL",
+    "nodes": {
+      "le-criminel": {
+        "title": "LE CRIMINEL",
+        "summary": "Suspect principal. Prezent în mod repetat când canapele, balcoane și mâncare nesupravegheată devin litigioase."
+      },
+      "couch": {
+        "title": "CANAPEAUA",
+        "summary": "Post de supraveghere, teritoriu disputat și scenă recurentă de dovezi domestice."
+      },
+      "balcony": {
+        "title": "BALCONUL",
+        "summary": "Locul unei urmăriri de porumbel și al unei intervenții de siguranță de durată."
+      },
+      "shoe": {
+        "title": "PANTOFUL VERDE",
+        "summary": "Recuperat cu șireturi compromise după o operațiune de relocare neautorizată."
+      },
+      "pikette": {
+        "title": "PIKETTE",
+        "summary": "Vizitatoare sezonieră și rivală documentată, ale cărei motive rămân în întregime fictive."
+      },
+      "pikette-visits": {
+        "title": "JURNAL DE VIZITE",
+        "summary": "Înregistrările publicate consemnează vizite, dispute pe canapea și un armistițiu suspect de liniștit."
+      }
+    },
+    "connections": {
+      "le-criminel-couch": "Le Criminel este legat în mod repetat de canapea în materialele publicate. Panoul tratează aceasta drept reconstrucție editorială, nu concluzie.",
+      "le-criminel-balcony": "Dosarul balconului consemnează o urmărire de porumbel care îl implică pe Le Criminel și nicio capturare reușită.",
+      "le-criminel-shoe": "Dosarul pantofului documentează un pantof verde, șireturi deteriorate și un suspect fără explicație alternativă credibilă.",
+      "le-criminel-pikette": "Vizitele publicate stabilesc ostilități recurente între Le Criminel și Pikette. Orice teorie mai amplă este deliberat fictivă.",
+      "pikette-couch": "Ambii suspecți au ocupat canapeaua în timpul vizitelor consemnate; conexiunea este prezentată ca o reconstrucție disputată.",
+      "pikette-visits": "Jurnalul de caz consemnează vizitele lui Pikette fără a pretinde un tipar investigativ real."
+    }
+  },
   "blog": {
     "title": "REGISTRUL CAZURILOR",
-    "subtitle": "26 de intrări lunare — doi ani de supraveghere continuă, cazul 001-CR rămâne deschis"
+    "subtitle": "27 de intrări lunare — peste doi ani de supraveghere continuă, cazul 001-CR rămâne deschis"
   },
   "blogPosts": [
     {
@@ -860,6 +939,14 @@
       "title": "PARCURI LOCALE COMPROMISE",
       "body": "Subiectul a rămas la Bruxelles pe tot parcursul lunii august. Vremea frumoasă a permis operațiuni repetate în parcurile locale, urmate de obicei de procurarea și consumul ilicit de fragmente de croissant. Frecvența patrulelor a crescut. Securitatea produselor de patiserie rămâne insuficientă.",
       "image": "assets/images/blog-park-patrol.jpg"
+    },
+    {
+      "date": "SEP 2026",
+      "case": "CASE LOG 027",
+      "title": "SEZONUL CLĂTITELOR, APOI SEZONUL SOMNULUI",
+      "body": "Sezonul clătitelor s-a deschis în septembrie, iar Subiectul era la fața locului înaintea ușilor, zăbovind lângă mobilierul de terasă și acceptând măr ca avans. Nu s-au obținut clătite. Activitatea a scăzut apoi brusc: patrule lente prin frunzele căzute, inspecții lejere ale castanelor și foarte mult timp pe canapea. Raportul complet este clasat separat la «Toamna leneșă».",
+      "image": "assets/images/autumn-sofa.jpg",
+      "link": "/lazy-autumn"
     }
   ],
   "shop": {
