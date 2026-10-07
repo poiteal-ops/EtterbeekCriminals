@@ -7,7 +7,7 @@ import test from 'node:test';
 const iconDirectory = new URL('../public/assets/game/icons/', import.meta.url);
 const icons = [
   'player', 'criminal', 'sofa', 'cushion', 'remote', 'food', 'bin', 'plant',
-  'shoe', 'box', 'slipper', 'laundry',
+  'shoe', 'box', 'slipper', 'laundry', 'stop', 'treat', 'pikette',
 ];
 
 test('approved player, criminal, and household icons are available', () => {

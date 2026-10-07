@@ -1,0 +1,22 @@
+:host { display: block; }
+.guide-page { max-width: 920px; margin: 0 auto; padding: 112px 24px 80px; color: #eeeeec; }
+.guide-header { text-align: center; max-width: 720px; margin: 0 auto 48px; }
+.kicker { color: #e0645b; font-size: 11px; letter-spacing: 2px; }
+h1, h2, h3 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 2px; }
+h1 { font-size: clamp(42px, 8vw, 72px); line-height: 1; }
+h2 { font-size: clamp(30px, 5vw, 44px); margin: 0 0 12px; }
+h3 { font-size: 25px; margin: 0 0 8px; }
+p { line-height: 1.7; color: #cececa; }
+a { color: #f5d879; text-underline-offset: 4px; }
+.guide-page > section { border-top: 1px solid #555; padding: 28px 0 36px; }
+.guide-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.guide-columns > div { background: #1b1b1b; border: 1px solid #555; padding: 20px; }
+.item-cards h3 { display: flex; align-items: center; gap: 10px; }
+figure { margin: 20px 0 0; }
+figure img { display: block; max-width: 100%; height: auto; border: 1px solid #777773; background: #111; }
+figcaption { color: #bdbdb8; font-size: 12px; line-height: 1.5; margin-top: 7px; }
+app-fallback-banner { display: block; margin-top: 24px; }
+@media (max-width: 600px) {
+  .guide-page { padding: 94px 14px 60px; }
+  .guide-columns { grid-template-columns: 1fr; }
+}

@@ -6,6 +6,14 @@ export interface GameSnapshot {
   damagedIds: readonly string[];
   paused: boolean;
   ended: boolean;
+  stopAvailable: boolean;
+  treatAvailable: boolean;
+  stopSecondsLeft: number;
+  treatLuring: boolean;
+  treatStunSecondsLeft: number;
+  fartSecondsLeft: number;
+  piketteSecondsLeft: number;
+  piketteObjectId: string | null;
 }
 
 export class GameRules {
@@ -15,6 +23,15 @@ export class GameRules {
   private damagedIds = new Set<string>();
   private paused = false;
   private ended = false;
+  private stopAvailable = true;
+  private treatAvailable = true;
+  private stopSecondsLeft = 0;
+  private treatLuring = false;
+  private treatStunSecondsLeft = 0;
+  private fartSecondsLeft = 0;
+  private fartCooldownSeconds = 0;
+  private piketteSecondsLeft = 0;
+  private piketteObjectId: string | null = null;
 
   snapshot(): GameSnapshot {
     return {
@@ -25,13 +42,67 @@ export class GameRules {
       damagedIds: [...this.damagedIds],
       paused: this.paused,
       ended: this.ended,
+      stopAvailable: this.stopAvailable,
+      treatAvailable: this.treatAvailable,
+      stopSecondsLeft: this.stopSecondsLeft,
+      treatLuring: this.treatLuring,
+      treatStunSecondsLeft: this.treatStunSecondsLeft,
+      fartSecondsLeft: this.fartSecondsLeft,
+      piketteSecondsLeft: this.piketteSecondsLeft,
+      piketteObjectId: this.piketteObjectId,
     };
   }
 
   tick(seconds: number): void {
     if (this.paused || this.ended || !Number.isFinite(seconds) || seconds <= 0) return;
     this.secondsLeft = Math.max(0, this.secondsLeft - seconds);
+    this.stopSecondsLeft = Math.max(0, this.stopSecondsLeft - seconds);
+    this.treatStunSecondsLeft = Math.max(0, this.treatStunSecondsLeft - seconds);
+    this.fartSecondsLeft = Math.max(0, this.fartSecondsLeft - seconds);
+    this.fartCooldownSeconds = Math.max(0, this.fartCooldownSeconds - seconds);
+    this.piketteSecondsLeft = Math.max(0, this.piketteSecondsLeft - seconds);
+    if (this.piketteSecondsLeft === 0) this.piketteObjectId = null;
     if (this.secondsLeft === 0) this.ended = true;
+  }
+
+  useStop(): boolean {
+    if (this.paused || this.ended || !this.stopAvailable || this.stopSecondsLeft > 0 || this.treatLuring || this.treatStunSecondsLeft > 0) return false;
+    this.stopAvailable = false;
+    this.stopSecondsLeft = 5;
+    return true;
+  }
+
+  useTreat(): boolean {
+    if (this.paused || this.ended || !this.treatAvailable || this.stopSecondsLeft > 0 || this.treatLuring || this.treatStunSecondsLeft > 0) return false;
+    this.treatAvailable = false;
+    this.treatLuring = true;
+    return true;
+  }
+
+  beginTreatStun(): void {
+    if (!this.treatLuring || this.ended) return;
+    this.treatLuring = false;
+    this.treatStunSecondsLeft = 3;
+  }
+
+  clearDogControl(): void {
+    this.stopSecondsLeft = 0;
+    this.treatLuring = false;
+    this.treatStunSecondsLeft = 0;
+  }
+
+  triggerFart(): boolean {
+    if (this.paused || this.ended || this.fartSecondsLeft > 0 || this.fartCooldownSeconds > 0) return false;
+    this.fartSecondsLeft = 3;
+    this.fartCooldownSeconds = 12;
+    return true;
+  }
+
+  startPiketteGuard(id: string): boolean {
+    if (this.paused || this.ended || this.piketteSecondsLeft > 0) return false;
+    this.piketteObjectId = id;
+    this.piketteSecondsLeft = 5;
+    return true;
   }
 
   setPaused(paused: boolean): void {

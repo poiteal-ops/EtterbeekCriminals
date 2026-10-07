@@ -1,8 +1,10 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, ElementRef, HostListener, NgZone, OnDestroy, ViewChild, computed, inject, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 import { EN_CONTENT } from '../../i18n/content/en.content';
 import { FallbackBanner } from '../../shared/fallback-banner/fallback-banner';
+import { TranslationService } from '../../services/translation.service';
 import type { Direction, GameEvent, GameHandle } from './game/game-runtime';
 import type { GameSnapshot } from './game/rules';
 
@@ -10,21 +12,25 @@ type PagePhase = 'intro' | 'loading' | 'playing' | 'paused' | 'over' | 'error';
 
 @Component({
   selector: 'app-catch-the-criminal',
-  imports: [FallbackBanner],
+  imports: [FallbackBanner, RouterLink],
   templateUrl: './catch-the-criminal.html',
   styleUrl: './catch-the-criminal.scss',
 })
 export class CatchTheCriminal implements OnDestroy {
   protected readonly gameCopy = EN_CONTENT.game;
+  protected readonly translation = inject(TranslationService);
   protected readonly dogName = EN_CONTENT.about.dogName;
   private readonly zone = inject(NgZone);
   private readonly document = inject(DOCUMENT);
   @ViewChild('gameHost') private gameHost?: ElementRef<HTMLDivElement>;
+  @ViewChild('gamePanel') private gamePanel?: ElementRef<HTMLDivElement>;
   @ViewChild('focusSurface') private focusSurface?: ElementRef<HTMLDivElement>;
 
   protected readonly phase = signal<PagePhase>('intro');
   protected readonly snapshot = signal<GameSnapshot>({
     secondsLeft: 180, score: 0, prevented: 0, damaged: 0, damagedIds: [], paused: false, ended: false,
+    stopAvailable: true, treatAvailable: true, stopSecondsLeft: 0, treatLuring: false,
+    treatStunSecondsLeft: 0, fartSecondsLeft: 0, piketteSecondsLeft: 0, piketteObjectId: null,
   });
   protected readonly message = signal('');
   protected readonly soundOn = signal(false);
@@ -63,7 +69,10 @@ export class CatchTheCriminal implements OnDestroy {
       });
       this.game.setSound(this.soundOn(), this.volume() / 100);
       this.phase.set('playing');
-      this.focusSurface?.nativeElement.focus();
+      this.focusSurface?.nativeElement.focus({ preventScroll: true });
+      this.document.defaultView?.requestAnimationFrame(() => {
+        if (this.phase() === 'playing') this.gamePanel?.nativeElement.scrollIntoView({ block: 'start' });
+      });
     } catch {
       this.phase.set('error');
       this.message.set('The case file could not open. Please try again.');
@@ -98,11 +107,22 @@ export class CatchTheCriminal implements OnDestroy {
     this.game?.setSound(this.soundOn(), this.volume() / 100);
   }
 
+  protected useItem(kind: 'stop' | 'treat'): void {
+    if (this.phase() !== 'playing') return;
+    const used = kind === 'stop' ? this.game?.useStop() : this.game?.useTreat();
+    if (used) this.focusPlayfield();
+  }
+
   protected onKeyDown(event: KeyboardEvent): void {
     const key = event.key.toLowerCase();
     if (key === 'escape') {
       event.preventDefault();
       this.togglePause();
+      return;
+    }
+    if (key === '1' || key === '2') {
+      event.preventDefault();
+      this.useItem(key === '1' ? 'stop' : 'treat');
       return;
     }
     if (['w', 'a', 's', 'd', 'arrowup', 'arrowdown', 'arrowleft', 'arrowright'].includes(key)) {
@@ -116,6 +136,7 @@ export class CatchTheCriminal implements OnDestroy {
   }
 
   protected press(direction: string, event: PointerEvent): void {
+    if (this.phase() !== 'playing') return;
     event.preventDefault();
     (event.currentTarget as HTMLElement).setPointerCapture(event.pointerId);
     this.touch.add(direction);
@@ -141,8 +162,18 @@ export class CatchTheCriminal implements OnDestroy {
   private showEvent(event: GameEvent): void {
     const copy = this.gameCopy;
     const object = event.objectId ? (copy.objects[event.objectId] ?? event.objectId) : '';
-    this.message.set(event.kind === 'caught' ? copy.caughtMessage :
-      (event.kind === 'target' ? copy.targetMessage : copy.damageMessage).replace('{object}', object));
+    const messages = {
+      target: copy.targetMessage,
+      caught: copy.caughtMessage,
+      damage: copy.damageMessage,
+      stop: copy.stopMessage,
+      treat: copy.treatMessage,
+      fart: copy.fartMessage,
+      piketteEnter: copy.piketteEnterMessage,
+      pikette: copy.piketteMessage,
+      piketteGone: copy.piketteGoneMessage,
+    };
+    this.message.set(messages[event.kind].replace('{object}', object));
   }
 
   private clearInput(): void {
