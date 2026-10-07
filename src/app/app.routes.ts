@@ -45,6 +45,11 @@ const pageRoutes: Routes = [
       .then((module) => module.ConspiracyBoard),
   },
   {
+    path: 'game/how-to-play',
+    loadComponent: () => import('./pages/catch-the-criminal/how-to-play/how-to-play')
+      .then((module) => module.HowToPlay),
+  },
+  {
     path: 'game',
     loadComponent: () => import('./pages/catch-the-criminal/catch-the-criminal')
       .then((module) => module.CatchTheCriminal),

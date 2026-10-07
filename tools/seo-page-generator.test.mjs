@@ -124,6 +124,8 @@ test('buildPages creates a direct-visit game page when game copy is present', ()
   const game = buildPages(sample).find((page) => page.route === 'game');
   assert.equal(game?.title, 'Catch the Criminal');
   assert.equal(game?.description, 'Protect the house from Le Criminel.');
+  const guide = buildPages(sample).find((page) => page.route === 'game/how-to-play');
+  assert.equal(guide?.title, 'How to Play Catch the Criminal');
 });
 
 test('generateSite gives localized game fallback routes a direct-visit page', () => {
@@ -134,10 +136,16 @@ test('generateSite gives localized game fallback routes a direct-visit page', ()
     generateSite({ template, contentByLocale: { en: english, fr: content('FR') }, distDir: root });
     assert.equal(fs.existsSync(path.join(root, 'game', 'index.html')), true);
     assert.equal(fs.existsSync(path.join(root, 'fr', 'game', 'index.html')), true);
+    assert.equal(fs.existsSync(path.join(root, 'game', 'how-to-play', 'index.html')), true);
+    assert.equal(fs.existsSync(path.join(root, 'fr', 'game', 'how-to-play', 'index.html')), true);
     const fallback = fs.readFileSync(path.join(root, 'fr', 'game', 'index.html'), 'utf8');
     assert.match(fallback, /<meta name="robots" content="noindex">/);
     assert.match(fallback, /rel="canonical" href="https:\/\/thieffrycriminals\.be\/game\/"/);
     assert.doesNotMatch(fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8'), /\/fr\/game\//);
+    const guideFallback = fs.readFileSync(path.join(root, 'fr', 'game', 'how-to-play', 'index.html'), 'utf8');
+    assert.match(guideFallback, /<meta name="robots" content="noindex">/);
+    assert.match(guideFallback, /rel="canonical" href="https:\/\/thieffrycriminals\.be\/game\/how-to-play\/"/);
+    assert.match(fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8'), /\/game\/how-to-play\//);
   } finally {
     fs.rmSync(root, { recursive: true, force: true });
   }
@@ -404,10 +412,13 @@ test('CONTENT_LOCALES in locale-registry.ts matches the locales generate-seo-pag
 });
 
 test('Hindi, Tamil, and Marathi preserve protected-term casing at every English field path', async () => {
-  const expectedTermsByPath = protectedTermsByPath(await loadEnglishContent());
+  const englishContent = await loadEnglishContent();
+  delete englishContent.game; // The game and its guide are deliberately English-only.
+  const expectedTermsByPath = protectedTermsByPath(englishContent);
 
   for (const locale of ['hi', 'ta', 'mr']) {
     const localizedContent = JSON.parse(fs.readFileSync(`public/i18n/${locale}.json`, 'utf8'));
+    delete localizedContent.game;
     assert.deepEqual(
       protectedTermsByPath(localizedContent),
       expectedTermsByPath,

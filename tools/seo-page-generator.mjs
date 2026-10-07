@@ -90,6 +90,12 @@ export function buildPages(content) {
       description: content.game.intro,
       image: 'assets/images/dog-floor-portrait.jpg',
     });
+    fixedPages.push({
+      route: 'game/how-to-play',
+      title: content.game.guide?.title ?? 'How to Play Catch the Criminal',
+      description: content.game.guide?.intro ?? content.game.intro,
+      image: 'assets/game/manual/board-and-controls.webp',
+    });
   }
 
   const adventures = (content.adventures ?? []).map((adventure) => ({
@@ -202,7 +208,7 @@ export function generateSite({ template, contentByLocale, distDir }) {
       const gameFallback = locale !== DEFAULT_LOCALE && englishGame && !content.game;
       const pages = buildPages(gameFallback ? { ...content, game: englishGame } : content);
       return [locale, gameFallback
-        ? pages.map((page) => page.route === 'game' ? { ...page, noIndex: true } : page)
+        ? pages.map((page) => page.route === 'game' || page.route === 'game/how-to-play' ? { ...page, noIndex: true } : page)
         : pages];
     }),
   );

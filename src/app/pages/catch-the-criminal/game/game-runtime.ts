@@ -2,11 +2,11 @@ import Phaser from 'phaser';
 
 import { GameRules, type GameSnapshot } from './rules';
 import {
-  GRID_SIZE, HOUSE_OBJECTS, TILE_SIZE, WORLD_SIZE, cellCenter, chooseTarget, chooseWanderCell,
-  findFleeRoute, findRoute, isWalkable, pointCell, type Cell, type HouseObject,
+  GRID_SIZE, HOUSE_OBJECTS, TILE_SIZE, WORLD_SIZE, cellCenter, choosePiketteVisit, chooseTarget, chooseWanderCell,
+  findFleeRoute, findRoute, isFartOpportunity, isWalkable, pointCell, type Cell, type HouseObject, type PiketteVisit,
 } from './house';
 
-export type GameEvent = { kind: 'target' | 'caught' | 'damage'; objectId?: string };
+export type GameEvent = { kind: 'target' | 'caught' | 'damage' | 'stop' | 'treat' | 'fart' | 'piketteEnter' | 'pikette' | 'piketteGone'; objectId?: string };
 export interface Direction { x: number; y: number }
 export interface GameCallbacks {
   direction: () => Direction;
@@ -14,14 +14,18 @@ export interface GameCallbacks {
   onEvent: (event: GameEvent) => void;
   onEnd: (snapshot: GameSnapshot) => void;
   reducedMotion: boolean;
+  random?: () => number;
 }
 export interface GameHandle {
   setPaused: (paused: boolean) => void;
   setSound: (enabled: boolean, volume: number) => void;
+  useStop: () => boolean;
+  useTreat: () => boolean;
   destroy: () => void;
 }
 
-type DogMode = 'wander' | 'run' | 'destroy' | 'recover' | 'finished';
+type DogMode = 'wander' | 'run' | 'destroy' | 'recover' | 'lure' | 'stunned' | 'finished';
+type PikettePhase = 'waiting' | 'entering' | 'guarding' | 'leaving';
 
 class PatrolScene extends Phaser.Scene {
   private readonly rules = new GameRules();
@@ -40,6 +44,17 @@ class PatrolScene extends Phaser.Scene {
   private targetElapsed = 0;
   private lastShownSecond = 180;
   private endedNotified = false;
+  private confusedTurnLeft = 0;
+  private confusedDirection: Direction = { x: 0, y: 0 };
+  private gasCloud: Phaser.GameObjects.Arc[] = [];
+  private gasOrigin = { x: 0, y: 0 };
+  private gasElapsed = 0;
+  private pikettePhase: PikettePhase = 'waiting';
+  private piketteNextIn = 20 + Math.random() * 15;
+  private piketteVisit: PiketteVisit | null = null;
+  private piketteSprite: Phaser.GameObjects.Image | null = null;
+  private piketteWaypoints: { x: number; y: number }[] = [];
+  private piketteWaitAtObject = 0;
 
   constructor(private readonly callbacks: GameCallbacks, private readonly playTone: (kind: GameEvent['kind']) => void) {
     super('patrol');
@@ -48,6 +63,7 @@ class PatrolScene extends Phaser.Scene {
   preload(): void {
     this.load.svg('player', '/assets/game/icons/player.svg', { width: 96, height: 96 });
     this.load.svg('criminal', '/assets/game/icons/criminal.svg', { width: 96, height: 96 });
+    this.load.svg('pikette', '/assets/game/icons/pikette.svg', { width: 96, height: 96 });
     for (const object of HOUSE_OBJECTS) {
       this.load.svg(`object-${object.id}`, `/assets/game/icons/${object.id}.svg`, { width: 96, height: 96 });
     }
@@ -111,6 +127,23 @@ class PatrolScene extends Phaser.Scene {
     this.callbacks.onSnapshot(this.rules.snapshot());
   }
 
+  useStop(): boolean {
+    if (!this.rules.useStop()) return false;
+    this.callbacks.onEvent({ kind: 'stop' });
+    this.callbacks.onSnapshot(this.rules.snapshot());
+    return true;
+  }
+
+  useTreat(): boolean {
+    if (!this.rules.useTreat()) return false;
+    this.clearTarget();
+    this.mode = 'lure';
+    this.route = [];
+    this.callbacks.onEvent({ kind: 'treat' });
+    this.callbacks.onSnapshot(this.rules.snapshot());
+    return true;
+  }
+
   override update(_time: number, delta: number): void {
     const before = this.rules.snapshot();
     if (before.paused || before.ended) return;
@@ -120,9 +153,18 @@ class PatrolScene extends Phaser.Scene {
       this.finish();
       return;
     }
+    this.updatePikette(seconds);
+    if (this.mode === 'run' && this.target && this.rules.snapshot().stopSecondsLeft === 0 &&
+      isFartOpportunity(this.playerPosition, this.dogPosition, cellCenter(this.target.cell)) && this.rules.triggerFart()) {
+      this.startGasCloud();
+      this.callbacks.onEvent({ kind: 'fart' });
+      this.callbacks.onSnapshot(this.rules.snapshot());
+      this.playTone('fart');
+    }
     this.movePlayer(seconds);
     this.moveDog(seconds);
-    if ((this.mode === 'run' || this.mode === 'destroy') &&
+    this.updateGasCloud(seconds);
+    if ((this.mode === 'run' || this.mode === 'destroy' || this.mode === 'stunned' || this.rules.snapshot().stopSecondsLeft > 0) &&
       Phaser.Math.Distance.Between(this.playerPosition.x, this.playerPosition.y, this.dogPosition.x, this.dogPosition.y) < 27) {
       this.catchDog();
     }
@@ -134,10 +176,22 @@ class PatrolScene extends Phaser.Scene {
   }
 
   private movePlayer(seconds: number): void {
-    const direction = this.callbacks.direction();
+    const confused = this.rules.snapshot().fartSecondsLeft > 0;
+    if (confused) {
+      this.confusedTurnLeft -= seconds;
+      if (this.confusedTurnLeft <= 0) {
+        const options: Direction[] = [{ x: 1, y: 0 }, { x: -1, y: 0 }, { x: 0, y: 1 }, { x: 0, y: -1 }];
+        this.confusedDirection = options[Math.floor((this.callbacks.random?.() ?? Math.random()) * options.length)] ?? options[0];
+        this.confusedTurnLeft = 0.28;
+      }
+    } else {
+      this.confusedTurnLeft = 0;
+      this.player.angle = 0;
+    }
+    const direction = confused ? this.confusedDirection : this.callbacks.direction();
     const length = Math.hypot(direction.x, direction.y);
     if (!length) return;
-    const speed = 155 / length;
+    const speed = (confused ? 95 : 155) / length;
     const stepX = direction.x * speed * seconds;
     const stepY = direction.y * speed * seconds;
     const nextX = this.playerPosition.x + stepX;
@@ -145,6 +199,34 @@ class PatrolScene extends Phaser.Scene {
     if (this.canStand(nextX, this.playerPosition.y)) this.playerPosition.x = nextX;
     if (this.canStand(this.playerPosition.x, nextY)) this.playerPosition.y = nextY;
     this.player.setPosition(this.playerPosition.x, this.playerPosition.y);
+    if (confused && !this.callbacks.reducedMotion) this.player.angle = Math.sin(this.time.now / 45) * 12;
+  }
+
+  private startGasCloud(): void {
+    this.clearGasCloud();
+    this.gasOrigin = { ...this.dogPosition };
+    this.gasElapsed = 0;
+    for (const [x, y, radius] of [[-13, -9, 8], [1, -17, 10], [14, -9, 7]] as const) {
+      this.gasCloud.push(this.add.circle(this.gasOrigin.x + x, this.gasOrigin.y + y, radius, 0x78bc54, 0.72).setDepth(8));
+    }
+  }
+
+  private updateGasCloud(seconds: number): void {
+    if (!this.gasCloud.length) return;
+    if (this.rules.snapshot().fartSecondsLeft === 0) {
+      this.clearGasCloud();
+      return;
+    }
+    this.gasElapsed += seconds;
+    this.gasCloud.forEach((cloud, index) => {
+      cloud.setAlpha(Math.max(0.2, 0.72 - this.gasElapsed * 0.18));
+      if (!this.callbacks.reducedMotion) cloud.setPosition(this.gasOrigin.x + (index - 1) * 13, this.gasOrigin.y - 12 - this.gasElapsed * (6 + index * 2));
+    });
+  }
+
+  private clearGasCloud(): void {
+    this.gasCloud.forEach((cloud) => cloud.destroy());
+    this.gasCloud = [];
   }
 
   private canStand(x: number, y: number): boolean {
@@ -152,11 +234,125 @@ class PatrolScene extends Phaser.Scene {
     return [
       pointCell(x - radius, y - radius), pointCell(x + radius, y - radius),
       pointCell(x - radius, y + radius), pointCell(x + radius, y + radius),
-    ].every(isWalkable);
+    ].every((cell) => isWalkable(cell, this.piketteBlockedCell()));
+  }
+
+  private piketteBlockedCell(): Cell | null {
+    if (!this.piketteVisit) return null;
+    if (this.pikettePhase === 'guarding') return this.piketteVisit.object.cell;
+    if (this.pikettePhase !== 'leaving' || !this.piketteSprite) return null;
+    const center = cellCenter(this.piketteVisit.object.cell);
+    return Math.hypot(this.piketteSprite.x - center.x, this.piketteSprite.y - center.y) < 25
+      ? this.piketteVisit.object.cell : null;
+  }
+
+  private updatePikette(seconds: number): void {
+    if (this.pikettePhase === 'waiting') {
+      this.piketteNextIn -= seconds;
+      if (this.piketteNextIn > 0) return;
+      const visit = choosePiketteVisit(
+        pointCell(this.dogPosition.x, this.dogPosition.y), pointCell(this.playerPosition.x, this.playerPosition.y),
+        new Set(this.rules.snapshot().damagedIds), this.callbacks.random ?? Math.random, this.dogSpeed(),
+      );
+      if (!visit) { this.piketteNextIn = 2; return; }
+      this.piketteVisit = visit;
+      this.piketteSprite = this.add.image(visit.offboard.x, visit.offboard.y, 'pikette').setDisplaySize(40, 40).setDepth(9);
+      this.piketteWaypoints = visit.route.map(cellCenter);
+      this.pikettePhase = 'entering';
+      this.piketteWaitAtObject = 0;
+      this.callbacks.onEvent({ kind: 'piketteEnter', objectId: visit.object.id });
+      this.playTone('piketteEnter');
+      if (this.target?.id === visit.object.id) {
+        this.clearTarget();
+        this.mode = 'wander';
+        this.modeTime = 0.4;
+      }
+      return;
+    }
+    if (this.pikettePhase === 'guarding') {
+      if (this.rules.snapshot().piketteSecondsLeft === 0) {
+        this.pikettePhase = 'leaving';
+        this.piketteWaypoints = [...this.piketteVisit!.route.slice(0, -1).reverse().map(cellCenter), this.piketteVisit!.offboard];
+        this.items.get(this.piketteVisit!.object.id)?.marker.setStrokeStyle(2, 0x676763);
+      }
+      return;
+    }
+    const sprite = this.piketteSprite;
+    const visit = this.piketteVisit;
+    if (!sprite || !visit) return;
+    const destination = this.piketteWaypoints[0];
+    if (!destination) {
+      if (this.pikettePhase === 'entering') {
+        this.pikettePhase = 'guarding';
+        this.rules.startPiketteGuard(visit.object.id);
+        this.items.get(visit.object.id)?.marker.setStrokeStyle(4, 0x8fc77b);
+        this.wanderGoal = null;
+        if (this.mode === 'recover') this.fleeRoute = findFleeRoute(pointCell(this.dogPosition.x, this.dogPosition.y), pointCell(this.playerPosition.x, this.playerPosition.y), visit.object.cell);
+        if (this.target) {
+          const route = findRoute(pointCell(this.dogPosition.x, this.dogPosition.y), this.target.cell, visit.object.cell);
+          if (route) this.route = route;
+          else { this.clearTarget(); this.mode = 'wander'; this.modeTime = 0.4; }
+        }
+        this.callbacks.onEvent({ kind: 'pikette', objectId: visit.object.id });
+        this.callbacks.onSnapshot(this.rules.snapshot());
+      } else {
+        sprite.destroy();
+        this.piketteSprite = null;
+        this.piketteVisit = null;
+        this.pikettePhase = 'waiting';
+        this.piketteNextIn = 20 + (this.callbacks.random?.() ?? Math.random()) * 15;
+        this.callbacks.onEvent({ kind: 'piketteGone' });
+      }
+      return;
+    }
+    if (this.pikettePhase === 'entering' && this.piketteWaypoints.length === 1 &&
+      (pointCell(this.playerPosition.x, this.playerPosition.y).x === visit.object.cell.x && pointCell(this.playerPosition.x, this.playerPosition.y).y === visit.object.cell.y)) {
+      this.piketteWaitAtObject += seconds;
+      if (this.piketteWaitAtObject > 2) {
+        this.pikettePhase = 'leaving';
+        this.piketteWaypoints = [...visit.route.slice(0, -1).reverse().map(cellCenter), visit.offboard];
+      }
+      return;
+    }
+    const distance = Math.hypot(destination.x - sprite.x, destination.y - sprite.y);
+    const amount = Math.min(distance, 300 * seconds);
+    if (distance > 0) sprite.setPosition(sprite.x + (destination.x - sprite.x) / distance * amount, sprite.y + (destination.y - sprite.y) / distance * amount);
+    if (!this.callbacks.reducedMotion) sprite.angle = Math.sin(this.time.now / 75) * 7;
+    if (distance <= amount + 0.1) this.piketteWaypoints.shift();
   }
 
   private moveDog(seconds: number): void {
     if (this.mode === 'finished') return;
+    if (this.rules.snapshot().stopSecondsLeft > 0) return;
+    if (this.mode === 'stunned') {
+      if (this.rules.snapshot().treatStunSecondsLeft === 0) {
+        this.mode = 'wander';
+        this.modeTime = 0.5;
+      }
+      return;
+    }
+    if (this.mode === 'lure') {
+      const distanceToPlayer = Phaser.Math.Distance.Between(this.dogPosition.x, this.dogPosition.y, this.playerPosition.x, this.playerPosition.y);
+      if (distanceToPlayer <= TILE_SIZE + 4) {
+        this.rules.beginTreatStun();
+        this.mode = 'stunned';
+        this.callbacks.onSnapshot(this.rules.snapshot());
+        return;
+      }
+      const route = findRoute(pointCell(this.dogPosition.x, this.dogPosition.y), pointCell(this.playerPosition.x, this.playerPosition.y), this.piketteBlockedCell());
+      const next = route?.[1];
+      if (next) {
+        const destination = cellCenter(next);
+        const distance = Phaser.Math.Distance.Between(this.dogPosition.x, this.dogPosition.y, destination.x, destination.y);
+        const amount = Math.min(distance, 170 * seconds);
+        if (distance > 0) {
+          this.dogPosition.x += (destination.x - this.dogPosition.x) / distance * amount;
+          this.dogPosition.y += (destination.y - this.dogPosition.y) / distance * amount;
+          this.dog.setPosition(this.dogPosition.x, this.dogPosition.y);
+        }
+      }
+      return;
+    }
     if (this.mode === 'wander' || this.mode === 'recover') {
       this.modeTime -= seconds;
       if (this.mode === 'recover' && this.fleeRoute.length) {
@@ -171,7 +367,7 @@ class PatrolScene extends Phaser.Scene {
         if (distance <= amount + 0.1) this.fleeRoute.shift();
       }
       if (this.mode === 'wander') {
-        this.wanderGoal ??= chooseWanderCell(pointCell(this.dogPosition.x, this.dogPosition.y));
+        this.wanderGoal ??= chooseWanderCell(pointCell(this.dogPosition.x, this.dogPosition.y), Math.random, this.piketteBlockedCell());
         const destination = cellCenter(this.wanderGoal);
         const distance = Phaser.Math.Distance.Between(this.dogPosition.x, this.dogPosition.y, destination.x, destination.y);
         const amount = Math.min(distance, 48 * seconds);
@@ -216,12 +412,14 @@ class PatrolScene extends Phaser.Scene {
 
   private selectTarget(): void {
     const damaged = new Set(this.rules.snapshot().damagedIds);
-    const candidate = chooseTarget(damaged, this.previousTargetId);
+    const reservedId = this.piketteVisit?.object.id ?? null;
+    const candidate = chooseTarget(damaged, this.previousTargetId, Math.random, reservedId);
     if (!candidate) {
-      this.finish();
+      if (HOUSE_OBJECTS.every((object) => damaged.has(object.id))) this.finish();
+      else { this.mode = 'wander'; this.modeTime = 0.5; }
       return;
     }
-    const route = findRoute(pointCell(this.dogPosition.x, this.dogPosition.y), candidate.cell);
+    const route = findRoute(pointCell(this.dogPosition.x, this.dogPosition.y), candidate.cell, this.piketteBlockedCell());
     if (!route) {
       this.mode = 'wander';
       this.modeTime = 0.5;
@@ -240,9 +438,10 @@ class PatrolScene extends Phaser.Scene {
 
   private catchDog(): void {
     this.rules.catchDog(Math.max(0, 3000 - this.targetElapsed * 500));
+    this.rules.clearDogControl();
     this.clearTarget();
     this.mode = 'recover';
-    this.fleeRoute = findFleeRoute(pointCell(this.dogPosition.x, this.dogPosition.y), pointCell(this.playerPosition.x, this.playerPosition.y));
+    this.fleeRoute = findFleeRoute(pointCell(this.dogPosition.x, this.dogPosition.y), pointCell(this.playerPosition.x, this.playerPosition.y), this.piketteBlockedCell());
     this.modeTime = Math.max(1.6, this.fleeRoute.length * TILE_SIZE / 190);
     this.dog.angle = 0;
     this.callbacks.onEvent({ kind: 'caught' });
@@ -253,6 +452,12 @@ class PatrolScene extends Phaser.Scene {
   private damageObject(): void {
     const object = this.target;
     if (!object) return;
+    if (object.id === this.piketteVisit?.object.id) {
+      this.clearTarget();
+      this.mode = 'wander';
+      this.modeTime = 0.5;
+      return;
+    }
     this.rules.damage(object.id);
     const item = this.items.get(object.id);
     item?.body.setAlpha(0.35).setAngle(18);
@@ -286,6 +491,7 @@ class PatrolScene extends Phaser.Scene {
     if (this.endedNotified) return;
     this.endedNotified = true;
     this.mode = 'finished';
+    this.clearGasCloud();
     this.callbacks.onSnapshot(this.rules.snapshot());
     this.callbacks.onEnd(this.rules.snapshot());
   }
@@ -296,6 +502,7 @@ export function mountGame(host: HTMLElement, callbacks: GameCallbacks): GameHand
   let volume = 0.4;
   let audio: AudioContext | null = null;
   let musicBus: GainNode | null = null;
+  let effectsBus: GainNode | null = null;
   let musicTimer: ReturnType<typeof setInterval> | null = null;
   let musicStep = 0;
   let paused = false;
@@ -327,6 +534,7 @@ export function mountGame(host: HTMLElement, callbacks: GameCallbacks): GameHand
     if (!audio) return;
     const shouldPlay = enabled && !paused && !ended;
     if (musicBus) musicBus.gain.setTargetAtTime(shouldPlay ? volume * 0.5 : 0, audio.currentTime, 0.01);
+    if (effectsBus) effectsBus.gain.setValueAtTime(shouldPlay ? volume : 0, audio.currentTime);
     if (!shouldPlay && musicTimer) {
       clearInterval(musicTimer);
       musicTimer = null;
@@ -340,15 +548,26 @@ export function mountGame(host: HTMLElement, callbacks: GameCallbacks): GameHand
     try {
       audio ??= new AudioContext();
       if (audio.state === 'suspended') void audio.resume();
+      if (!effectsBus) {
+        effectsBus = audio.createGain();
+        effectsBus.gain.value = volume;
+        effectsBus.connect(audio.destination);
+      }
       const oscillator = audio.createOscillator();
       const gain = audio.createGain();
-      oscillator.type = 'sine';
-      oscillator.frequency.value = kind === 'caught' ? 660 : kind === 'damage' ? 180 : 390;
+      const duration = kind === 'piketteEnter' ? 0.72 : kind === 'fart' ? 0.36 : 0.16;
+      oscillator.type = kind === 'fart' || kind === 'piketteEnter' ? 'sawtooth' : 'sine';
+      oscillator.frequency.value = kind === 'caught' ? 660 : kind === 'damage' ? 180 : kind === 'fart' ? 170 : kind === 'piketteEnter' ? 430 : 390;
+      if (kind === 'fart') oscillator.frequency.exponentialRampToValueAtTime(55, audio.currentTime + duration);
+      if (kind === 'piketteEnter') {
+        oscillator.frequency.exponentialRampToValueAtTime(720, audio.currentTime + 0.24);
+        oscillator.frequency.exponentialRampToValueAtTime(230, audio.currentTime + duration);
+      }
       gain.gain.setValueAtTime(Math.min(volume * 0.12, 0.12), audio.currentTime);
-      gain.gain.exponentialRampToValueAtTime(0.001, audio.currentTime + 0.16);
-      oscillator.connect(gain).connect(audio.destination);
+      gain.gain.exponentialRampToValueAtTime(0.001, audio.currentTime + duration);
+      oscillator.connect(gain).connect(effectsBus);
       oscillator.start();
-      oscillator.stop(audio.currentTime + 0.16);
+      oscillator.stop(audio.currentTime + duration);
     } catch {
       enabled = false;
     }
@@ -394,6 +613,8 @@ export function mountGame(host: HTMLElement, callbacks: GameCallbacks): GameHand
       }
       syncMusic();
     },
+    useStop: () => scene.useStop(),
+    useTreat: () => scene.useTreat(),
     destroy: () => {
       ended = true;
       syncMusic();

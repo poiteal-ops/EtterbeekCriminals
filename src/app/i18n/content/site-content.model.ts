@@ -362,11 +362,23 @@ export interface SiteContent {
     start: string; loading: string; pause: string; resume: string; playAgain: string;
     score: string; time: string; prevented: string; damaged: string;
     mute: string; unmute: string; volume: string;
+    stop: string; treat: string; used: string; stopActive: string; treatLuring: string; treatActive: string; fartActive: string;
     caseClosed: string; limitReached: string;
     targetMessage: string; caughtMessage: string; damageMessage: string;
+    stopMessage: string; treatMessage: string; fartMessage: string;
+    piketteEnterMessage: string; piketteMessage: string; piketteGoneMessage: string;
     rankInsurance: string; rankOverwhelmed: string; rankNegotiator: string;
     rankWatch: string; rankAdult: string;
     objects: Record<string, string>;
+    guide: {
+      linkLabel: string; title: string; intro: string; backLabel: string;
+      goalTitle: string; goalBody: string; controlsTitle: string; keyboardLabel: string; keyboardBody: string;
+      touchLabel: string; touchBody: string; itemsTitle: string; stopBody: string; treatBody: string;
+      hazardsTitle: string; fartBody: string; piketteBody: string; finishTitle: string; finishBody: string;
+      boardCaption: string; boardAlt: string; itemsCaption: string; itemsAlt: string;
+      fartCaption: string; fartAlt: string; piketteRunCaption: string; piketteRunAlt: string;
+      piketteGuardCaption: string; piketteGuardAlt: string;
+    };
   };
   footer: string;
   footerDisclaimer: string;
