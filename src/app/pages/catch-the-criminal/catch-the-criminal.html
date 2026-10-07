@@ -1,0 +1,70 @@
+@let t = gameCopy;
+
+<section class="game-page" lang="en">
+  <header class="game-header">
+    <p class="kicker">{{ t.kicker }}</p>
+    <h1>{{ t.title }}</h1>
+    <p class="intro">{{ dogName }} — {{ t.intro }}</p>
+  </header>
+
+  <div class="game-panel" aria-label="Catch the Criminal game">
+    <div class="hud" aria-live="off">
+      <div><span>{{ t.time }}</span><strong>{{ timeLabel() }}</strong></div>
+      <div><span>{{ t.score }}</span><strong>{{ snapshot().score }}</strong></div>
+      <div><span>{{ t.prevented }}</span><strong>{{ snapshot().prevented }}</strong></div>
+      <div><span>{{ t.damaged }}</span><strong>{{ snapshot().damaged }} / 3</strong></div>
+    </div>
+
+    <div class="game-stage" #focusSurface tabindex="0" role="application" (click)="focusPlayfield()"
+      [attr.aria-label]="t.title + '. ' + t.instructions"
+      (keydown)="onKeyDown($event)" (keyup)="onKeyUp($event)">
+      <div class="game-canvas" #gameHost aria-hidden="true"></div>
+      @if (phase() === 'intro' || phase() === 'loading' || phase() === 'error') {
+        <div class="stage-overlay">
+          <div class="briefing">
+            <p class="briefing-stamp">FILE NO. 001-CR · ACTIVE</p>
+            <p>{{ t.instructions }}</p>
+            <p class="control-hint">{{ t.controls }}</p>
+            @if (phase() === 'error') { <p role="alert">{{ message() }}</p> }
+            <button type="button" class="start-button" (click)="start()" [disabled]="phase() === 'loading'">
+              {{ phase() === 'loading' ? t.loading : t.start }}
+            </button>
+          </div>
+        </div>
+      }
+      @if (phase() === 'paused') {
+        <div class="stage-overlay"><div class="briefing">
+          <p class="briefing-stamp">{{ t.pause }}</p>
+          <button type="button" (click)="togglePause()">{{ t.resume }}</button>
+        </div></div>
+      }
+      @if (phase() === 'over') {
+        <div class="stage-overlay"><div class="briefing" role="status">
+          <p class="briefing-stamp">{{ snapshot().damaged >= 3 ? t.limitReached : t.caseClosed }}</p>
+          <h2>{{ rank() }}</h2>
+          <p>{{ t.prevented }}: {{ snapshot().prevented }} · {{ t.damaged }}: {{ snapshot().damaged }}</p>
+          <button type="button" (click)="start()">{{ t.playAgain }}</button>
+        </div></div>
+      }
+    </div>
+
+    <p class="event-report" role="status" aria-live="polite" aria-atomic="true">{{ message() || t.instructions }}</p>
+
+    @if (phase() === 'playing' || phase() === 'paused') {
+      <div class="game-tools">
+        <button type="button" (click)="togglePause()">{{ phase() === 'paused' ? t.resume : t.pause }}</button>
+        <button type="button" (click)="toggleSound()" [attr.aria-pressed]="soundOn()">{{ soundOn() ? t.mute : t.unmute }}</button>
+        @if (soundOn()) {
+          <label>{{ t.volume }} <input type="range" min="0" max="100" [value]="volume()" (input)="setVolume($event)" /></label>
+        }
+      </div>
+      <div class="d-pad" aria-label="Touch movement controls">
+        <button type="button" class="up" aria-label="Move up" (pointerdown)="press('up', $event)" (pointerup)="release('up')" (pointercancel)="release('up')">↑</button>
+        <button type="button" class="left" aria-label="Move left" (pointerdown)="press('left', $event)" (pointerup)="release('left')" (pointercancel)="release('left')">←</button>
+        <button type="button" class="down" aria-label="Move down" (pointerdown)="press('down', $event)" (pointerup)="release('down')" (pointercancel)="release('down')">↓</button>
+        <button type="button" class="right" aria-label="Move right" (pointerdown)="press('right', $event)" (pointerup)="release('right')" (pointercancel)="release('right')">→</button>
+      </div>
+    }
+  </div>
+  <app-fallback-banner section="game" [englishOnly]="true" />
+</section>

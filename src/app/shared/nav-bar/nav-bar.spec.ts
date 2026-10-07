@@ -39,4 +39,10 @@ describe('NavBar', () => {
 
     expect(fixture.nativeElement.querySelector('a[href="/conspiracy-board"]')?.textContent).toContain('CONSPIRACY');
   });
+
+  it('exposes the game through the shared navigation', () => {
+    const fixture = TestBed.createComponent(NavBar);
+    fixture.detectChanges();
+    expect(fixture.nativeElement.querySelector('a[href="/game"]')?.textContent).toContain('GAME');
+  });
 });

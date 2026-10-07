@@ -44,6 +44,11 @@ const pageRoutes: Routes = [
     loadComponent: () => import('./pages/conspiracy-board/conspiracy-board')
       .then((module) => module.ConspiracyBoard),
   },
+  {
+    path: 'game',
+    loadComponent: () => import('./pages/catch-the-criminal/catch-the-criminal')
+      .then((module) => module.CatchTheCriminal),
+  },
   { path: 'shop', component: Shop },
   { path: 'shop/:slug', component: ShopItemPage },
 ];

@@ -118,6 +118,31 @@ test('buildPages omits criminal-intelligence when content.cib is absent (older/i
   assert.deepEqual(routes, ['', 'about', 'story', 'pigeon', 'blog', 'shop', 'shop/wanted-tee']);
 });
 
+test('buildPages creates a direct-visit game page when game copy is present', () => {
+  const sample = content();
+  sample.game = { title: 'Catch the Criminal', intro: 'Protect the house from Le Criminel.' };
+  const game = buildPages(sample).find((page) => page.route === 'game');
+  assert.equal(game?.title, 'Catch the Criminal');
+  assert.equal(game?.description, 'Protect the house from Le Criminel.');
+});
+
+test('generateSite gives localized game fallback routes a direct-visit page', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ttc-game-page-'));
+  try {
+    const english = content('EN');
+    english.game = { title: 'Catch the Criminal', intro: 'Protect the house.' };
+    generateSite({ template, contentByLocale: { en: english, fr: content('FR') }, distDir: root });
+    assert.equal(fs.existsSync(path.join(root, 'game', 'index.html')), true);
+    assert.equal(fs.existsSync(path.join(root, 'fr', 'game', 'index.html')), true);
+    const fallback = fs.readFileSync(path.join(root, 'fr', 'game', 'index.html'), 'utf8');
+    assert.match(fallback, /<meta name="robots" content="noindex">/);
+    assert.match(fallback, /rel="canonical" href="https:\/\/thieffrycriminals\.be\/game\/"/);
+    assert.doesNotMatch(fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8'), /\/fr\/game\//);
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
 test('pageUrl uses unprefixed English and trailing-slash localized URLs', () => {
   assert.equal(pageUrl('en', ''), 'https://thieffrycriminals.be/');
   assert.equal(pageUrl('en', 'about'), 'https://thieffrycriminals.be/about/');
