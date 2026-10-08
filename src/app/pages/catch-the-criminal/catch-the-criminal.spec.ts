@@ -123,7 +123,89 @@ describe('CatchTheCriminal', () => {
     expect(fixture.nativeElement.textContent).toContain('Pikette is charging in');
   });
 
-  it('keeps the game in English and shows the English-only notice below it on a localized route', () => {
+  describe('levels and sharing', () => {
+    const finish = (component: CatchTheCriminal, damaged: number, score = 200) => {
+      const snapshot = { secondsLeft: 0, score, prevented: 2, damaged, damagedIds: [], paused: false, ended: true,
+        stopAvailable: true, treatAvailable: true, stopSecondsLeft: 0, treatLuring: false, treatStunSecondsLeft: 0,
+        fartSecondsLeft: 0, piketteSecondsLeft: 0, piketteObjectId: null };
+      (Reflect.get(component, 'endLevel') as (data: typeof snapshot) => void).call(component, snapshot);
+    };
+    const setup = () => {
+      TestBed.configureTestingModule({
+        imports: [CatchTheCriminal],
+        providers: [provideHttpClient(), provideRouter([])],
+      });
+      const fixture = TestBed.createComponent(CatchTheCriminal);
+      fixture.detectChanges();
+      return fixture;
+    };
+    const phaseOf = (component: CatchTheCriminal) => (Reflect.get(component, 'phase') as () => string).call(component);
+
+    it('shows a level-cleared card with a Next Level button, and no share panel yet', () => {
+      const fixture = setup();
+      finish(fixture.componentInstance, 1);
+      fixture.detectChanges();
+      const page = fixture.nativeElement as HTMLElement;
+
+      expect(phaseOf(fixture.componentInstance)).toBe('levelComplete');
+      expect(page.textContent).toContain('LEVEL 1 CLEARED');
+      expect(page.textContent).toContain('THE OPEN-PLAN LOFT');
+      expect(page.textContent).toContain('faster and you are slower');
+      expect(page.querySelector('.start-button')?.textContent).toContain('NEXT LEVEL');
+      expect(page.querySelector('.share-panel')).toBeNull();
+    });
+
+    it('ends the run on three damaged objects and offers sharing with safe links', () => {
+      const fixture = setup();
+      finish(fixture.componentInstance, 3, 40);
+      fixture.detectChanges();
+      const page = fixture.nativeElement as HTMLElement;
+
+      expect(phaseOf(fixture.componentInstance)).toBe('over');
+      const panel = page.querySelector('.share-panel') as HTMLElement;
+      expect(panel).not.toBeNull();
+      expect(panel.textContent).toContain('reached Level 1 of 5');
+      const links = Array.from(panel.querySelectorAll('a.share-link')) as HTMLAnchorElement[];
+      expect(links.map(link => new URL(link.href).host)).toEqual(['x.com', 'www.facebook.com', 'wa.me', 'bsky.app']);
+      for (const link of links) {
+        expect(link.target).toBe('_blank');
+        expect(link.rel).toContain('noopener');
+        expect(link.rel).toContain('noreferrer');
+      }
+      expect(panel.textContent).toContain('own privacy terms');
+    });
+
+    it('celebrates clearing level 5 and shares a completed run', () => {
+      const fixture = setup();
+      const component = fixture.componentInstance;
+      (Reflect.get(component, 'run') as { set(value: unknown): void }).set({ level: 5, score: 1500, prevented: 14, cleared: 4 });
+      finish(component, 0, 300);
+      fixture.detectChanges();
+      const page = fixture.nativeElement as HTMLElement;
+
+      expect(phaseOf(component)).toBe('over');
+      expect(page.textContent).toContain('ALL FIVE LEVELS CLEARED');
+      expect(page.querySelector('.share-text')?.textContent).toContain('cleared all 5 levels');
+    });
+
+    it('copies the share text and confirms it', async () => {
+      const fixture = setup();
+      finish(fixture.componentInstance, 3);
+      fixture.detectChanges();
+      let copied = '';
+      Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async (text: string) => { copied = text; } } });
+      const copy = Array.from(fixture.nativeElement.querySelectorAll('.share-actions button')).find(
+        (button) => (button as HTMLElement).textContent?.includes('COPY')) as HTMLButtonElement;
+      copy.click();
+      await fixture.whenStable();
+      fixture.detectChanges();
+
+      expect(copied).toContain('https://thieffrycriminals.be/game/');
+      expect(fixture.nativeElement.querySelector('.share-status')?.textContent).toContain('Copied');
+    });
+  });
+
+  const localized = (isFallback: boolean) => {
     TestBed.configureTestingModule({
       imports: [CatchTheCriminal],
       providers: [
@@ -133,15 +215,20 @@ describe('CatchTheCriminal', () => {
           provide: TranslationService,
           useValue: {
             locale: () => 'fr',
-            isSectionFallback: () => false,
+            isSectionFallback: () => isFallback,
             path: (...segments: string[]) => ['/', 'fr', ...segments],
-            t: () => ({ ...EN_CONTENT, game: { ...EN_CONTENT.game, title: 'Jeu traduit' } }),
+            t: () => ({ ...EN_CONTENT, game: { ...EN_CONTENT.game, ...(isFallback ? {} : { title: 'Jeu traduit' }) } }),
           },
         },
       ],
     });
     const fixture = TestBed.createComponent(CatchTheCriminal);
     fixture.detectChanges();
+    return fixture;
+  };
+
+  it('shows English content and the English-only notice below the game while a locale has no game translation', () => {
+    const fixture = localized(true);
     const page = fixture.nativeElement as HTMLElement;
     const section = page.querySelector('.game-page') as HTMLElement;
     const banner = page.querySelector('.fallback-banner') as HTMLElement;
@@ -150,5 +237,14 @@ describe('CatchTheCriminal', () => {
     expect(section.getAttribute('lang')).toBe('en');
     expect(banner.textContent).toContain('This game is available in English only.');
     expect(section.lastElementChild?.querySelector('.fallback-banner')).toBe(banner);
+  });
+
+  it('shows the translated game in the locale language, without the notice, once the locale has a game block', () => {
+    const fixture = localized(false);
+    const page = fixture.nativeElement as HTMLElement;
+
+    expect(page.querySelector('h1')?.textContent).toContain('Jeu traduit');
+    expect(page.querySelector('.game-page')?.getAttribute('lang')).toBe('fr');
+    expect(page.querySelector('.fallback-banner')).toBeNull();
   });
 });

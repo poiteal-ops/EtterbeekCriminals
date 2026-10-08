@@ -1,3 +1,5 @@
+import { LEVEL_SECONDS } from './levels';
+
 export interface GameSnapshot {
   secondsLeft: number;
   score: number;
@@ -17,7 +19,7 @@ export interface GameSnapshot {
 }
 
 export class GameRules {
-  private secondsLeft = 180;
+  private secondsLeft: number;
   private score = 0;
   private prevented = 0;
   private damagedIds = new Set<string>();
@@ -32,6 +34,10 @@ export class GameRules {
   private fartCooldownSeconds = 0;
   private piketteSecondsLeft = 0;
   private piketteObjectId: string | null = null;
+
+  constructor(levelSeconds = LEVEL_SECONDS) {
+    this.secondsLeft = levelSeconds;
+  }
 
   snapshot(): GameSnapshot {
     return {

@@ -1,6 +1,6 @@
 @let t = gameCopy;
 
-<section class="game-page" lang="en">
+<section class="game-page" [attr.lang]="gameLang">
   <header class="game-header">
     <p class="kicker">{{ t.kicker }}</p>
     <h1>{{ t.title }}</h1>
@@ -8,7 +8,13 @@
     <a class="game-guide-link" [routerLink]="translation.path('game', 'how-to-play')">{{ t.guide.linkLabel }}</a>
   </header>
 
-  <div class="game-panel" #gamePanel role="group" aria-label="Catch the Criminal game">
+  <div class="game-panel" #gamePanel role="group" [attr.aria-label]="t.ariaGame">
+    @if (phase() !== 'intro') {
+      <p class="level-bar">
+        <span>{{ levelLabel() }} · {{ levelName() }}</span>
+        <strong>{{ t.totalScore }} {{ totalScore() }}</strong>
+      </p>
+    }
     <div class="hud" aria-live="off">
       <div><span>{{ t.time }}</span><strong>{{ timeLabel() }}</strong></div>
       <div><span>{{ t.score }}</span><strong>{{ snapshot().score }}</strong></div>
@@ -24,7 +30,7 @@
       @if (phase() === 'intro' || phase() === 'loading' || phase() === 'error') {
         <div class="stage-overlay">
           <div class="briefing">
-            <p class="briefing-stamp">FILE NO. 001-CR · ACTIVE</p>
+            <p class="briefing-stamp">{{ t.fileStamp }}</p>
             <p>{{ t.instructions }}</p>
             <p class="control-hint">{{ t.controls }}</p>
             @if (phase() === 'error') { <p role="alert">{{ message() }}</p> }
@@ -40,17 +46,43 @@
           <button type="button" (click)="togglePause()">{{ t.resume }}</button>
         </div></div>
       }
+      @if (phase() === 'levelComplete') {
+        <div class="stage-overlay"><div class="briefing" role="status">
+          <p class="briefing-stamp">{{ clearedTitle() }}</p>
+          <p>{{ t.score }} +{{ snapshot().score }} · {{ t.levelClearBonus }} +{{ result()?.bonus }} · {{ t.totalScore }} {{ run().score }}</p>
+          <p>{{ nextIntro() }}</p>
+          <button type="button" class="start-button" (click)="startNextLevel()">{{ t.nextLevel }}</button>
+        </div></div>
+      }
       @if (phase() === 'over') {
         <div class="stage-overlay"><div class="briefing" role="status">
-          <p class="briefing-stamp">{{ snapshot().damaged >= 3 ? t.limitReached : t.caseClosed }}</p>
+          <p class="briefing-stamp">{{ runComplete() ? t.runCompleteTitle : t.limitReached }}</p>
           <h2>{{ rank() }}</h2>
-          <p>{{ t.prevented }}: {{ snapshot().prevented }} · {{ t.damaged }}: {{ snapshot().damaged }}</p>
+          <p>{{ runComplete() ? t.caseClosed : reachedLabel() }}</p>
+          <p>{{ t.finalScore }}: {{ run().score }} · {{ t.prevented }}: {{ run().prevented }}</p>
           <button type="button" (click)="start()">{{ t.playAgain }}</button>
         </div></div>
       }
     </div>
 
     <p class="event-report" role="status" aria-live="polite" aria-atomic="true">{{ message() || t.instructions }}</p>
+
+    @if (phase() === 'over') {
+      <section class="share-panel" [attr.aria-label]="t.share.groupLabel">
+        <h2>{{ t.share.title }}</h2>
+        <p class="share-text">{{ shareText() }}</p>
+        <div class="share-actions">
+          @if (canNativeShare) { <button type="button" (click)="nativeShare()">{{ t.share.shareButton }}</button> }
+          <a class="share-link" [href]="shareLinks().x" target="_blank" rel="noopener noreferrer">{{ t.share.x }}</a>
+          <a class="share-link" [href]="shareLinks().facebook" target="_blank" rel="noopener noreferrer">{{ t.share.facebook }}</a>
+          <a class="share-link" [href]="shareLinks().whatsapp" target="_blank" rel="noopener noreferrer">{{ t.share.whatsapp }}</a>
+          <a class="share-link" [href]="shareLinks().bluesky" target="_blank" rel="noopener noreferrer">{{ t.share.bluesky }}</a>
+          <button type="button" (click)="copyShare()">{{ t.share.copy }}</button>
+        </div>
+        <p class="share-status" role="status" aria-live="polite">{{ shareStatus() }}</p>
+        <p class="share-note">{{ t.share.note }}</p>
+      </section>
+    }
 
     @if (phase() === 'playing' || phase() === 'paused') {
       <div class="game-tools">
@@ -60,7 +92,7 @@
           <label>{{ t.volume }} <input type="range" min="0" max="100" [value]="volume()" (input)="setVolume($event)" /></label>
         }
       </div>
-      <div class="game-abilities" role="group" aria-label="One-use patrol items">
+      <div class="game-abilities" role="group" [attr.aria-label]="t.ariaItems">
         <button type="button" class="ability-stop" (click)="useItem('stop')"
           [disabled]="phase() !== 'playing' || !snapshot().stopAvailable || snapshot().treatLuring || snapshot().treatStunSecondsLeft > 0">
           <img src="/assets/game/icons/stop.svg" alt="" width="32" height="32" />
@@ -77,11 +109,11 @@
         <p class="effect-status" role="status">{{ snapshot().treatLuring ? t.treatLuring : t.treatActive }}</p>
       }
       @if (snapshot().fartSecondsLeft > 0) { <p class="effect-status" role="status">{{ t.fartActive }}</p> }
-      <div class="d-pad" role="group" aria-label="Touch movement controls">
-        <button type="button" class="up" aria-label="Move up" [disabled]="phase() !== 'playing'" (pointerdown)="press('up', $event)" (pointerup)="release('up')" (pointercancel)="release('up')" (lostpointercapture)="release('up')">↑</button>
-        <button type="button" class="left" aria-label="Move left" [disabled]="phase() !== 'playing'" (pointerdown)="press('left', $event)" (pointerup)="release('left')" (pointercancel)="release('left')" (lostpointercapture)="release('left')">←</button>
-        <button type="button" class="down" aria-label="Move down" [disabled]="phase() !== 'playing'" (pointerdown)="press('down', $event)" (pointerup)="release('down')" (pointercancel)="release('down')" (lostpointercapture)="release('down')">↓</button>
-        <button type="button" class="right" aria-label="Move right" [disabled]="phase() !== 'playing'" (pointerdown)="press('right', $event)" (pointerup)="release('right')" (pointercancel)="release('right')" (lostpointercapture)="release('right')">→</button>
+      <div class="d-pad" role="group" [attr.aria-label]="t.ariaDpad">
+        <button type="button" class="up" [attr.aria-label]="t.moveUp" [disabled]="phase() !== 'playing'" (pointerdown)="press('up', $event)" (pointerup)="release('up')" (pointercancel)="release('up')" (lostpointercapture)="release('up')">↑</button>
+        <button type="button" class="left" [attr.aria-label]="t.moveLeft" [disabled]="phase() !== 'playing'" (pointerdown)="press('left', $event)" (pointerup)="release('left')" (pointercancel)="release('left')" (lostpointercapture)="release('left')">←</button>
+        <button type="button" class="down" [attr.aria-label]="t.moveDown" [disabled]="phase() !== 'playing'" (pointerdown)="press('down', $event)" (pointerup)="release('down')" (pointercancel)="release('down')" (lostpointercapture)="release('down')">↓</button>
+        <button type="button" class="right" [attr.aria-label]="t.moveRight" [disabled]="phase() !== 'playing'" (pointerdown)="press('right', $event)" (pointerup)="release('right')" (pointercancel)="release('right')" (lostpointercapture)="release('right')">→</button>
       </div>
     }
   </div>

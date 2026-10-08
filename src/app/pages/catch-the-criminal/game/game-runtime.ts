@@ -1,8 +1,9 @@
 import Phaser from 'phaser';
 
 import { GameRules, type GameSnapshot } from './rules';
+import { LEVEL_SECONDS, type LevelMap, type LevelSpec } from './levels';
 import {
-  GRID_SIZE, HOUSE_OBJECTS, TILE_SIZE, WORLD_SIZE, cellCenter, choosePiketteVisit, chooseTarget, chooseWanderCell,
+  GRID_SIZE, TILE_SIZE, WORLD_SIZE, cellCenter, choosePiketteVisit, chooseTarget, chooseWanderCell,
   findFleeRoute, findRoute, isFartOpportunity, isWalkable, pointCell, type Cell, type HouseObject, type PiketteVisit,
 } from './house';
 
@@ -10,6 +11,7 @@ export type GameEvent = { kind: 'target' | 'caught' | 'damage' | 'stop' | 'treat
 export interface Direction { x: number; y: number }
 export interface GameCallbacks {
   direction: () => Direction;
+  mapLabels: Record<string, string>;
   onSnapshot: (snapshot: GameSnapshot) => void;
   onEvent: (event: GameEvent) => void;
   onEnd: (snapshot: GameSnapshot) => void;
@@ -28,12 +30,12 @@ type DogMode = 'wander' | 'run' | 'destroy' | 'recover' | 'lure' | 'stunned' | '
 type PikettePhase = 'waiting' | 'entering' | 'guarding' | 'leaving';
 
 class PatrolScene extends Phaser.Scene {
-  private readonly rules = new GameRules();
+  private readonly rules: GameRules;
   private player!: Phaser.GameObjects.Container;
   private dog!: Phaser.GameObjects.Container;
   private readonly items = new Map<string, { marker: Phaser.GameObjects.Rectangle; body: Phaser.GameObjects.Container }>();
-  private playerPosition = cellCenter({ x: 3, y: 7 });
-  private dogPosition = cellCenter({ x: 8, y: 3 });
+  private playerPosition: { x: number; y: number };
+  private dogPosition: { x: number; y: number };
   private mode: DogMode = 'wander';
   private modeTime = 1.5;
   private route: Cell[] = [];
@@ -42,7 +44,7 @@ class PatrolScene extends Phaser.Scene {
   private target: HouseObject | null = null;
   private previousTargetId: string | null = null;
   private targetElapsed = 0;
-  private lastShownSecond = 180;
+  private lastShownSecond = LEVEL_SECONDS;
   private endedNotified = false;
   private confusedTurnLeft = 0;
   private confusedDirection: Direction = { x: 0, y: 0 };
@@ -56,15 +58,24 @@ class PatrolScene extends Phaser.Scene {
   private piketteWaypoints: { x: number; y: number }[] = [];
   private piketteWaitAtObject = 0;
 
-  constructor(private readonly callbacks: GameCallbacks, private readonly playTone: (kind: GameEvent['kind']) => void) {
+  constructor(
+    private readonly callbacks: GameCallbacks,
+    private readonly playTone: (kind: GameEvent['kind']) => void,
+    private readonly spec: LevelSpec,
+  ) {
     super('patrol');
+    this.rules = new GameRules(LEVEL_SECONDS);
+    this.playerPosition = cellCenter(spec.map.playerStart);
+    this.dogPosition = cellCenter(spec.map.dogStart);
   }
+
+  private get map(): LevelMap { return this.spec.map; }
 
   preload(): void {
     this.load.svg('player', '/assets/game/icons/player.svg', { width: 96, height: 96 });
     this.load.svg('criminal', '/assets/game/icons/criminal.svg', { width: 96, height: 96 });
     this.load.svg('pikette', '/assets/game/icons/pikette.svg', { width: 96, height: 96 });
-    for (const object of HOUSE_OBJECTS) {
+    for (const object of this.map.objects) {
       this.load.svg(`object-${object.id}`, `/assets/game/icons/${object.id}.svg`, { width: 96, height: 96 });
     }
   }
@@ -82,7 +93,7 @@ class PatrolScene extends Phaser.Scene {
     const graphics = this.add.graphics();
     for (let y = 0; y < GRID_SIZE; y++) {
       for (let x = 0; x < GRID_SIZE; x++) {
-        const walkable = isWalkable({ x, y });
+        const walkable = isWalkable({ x, y }, null, this.map);
         const color = walkable ? ((x + y) % 2 ? 0x202020 : 0x252525) : 0x080808;
         graphics.fillStyle(color);
         graphics.fillRect(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE);
@@ -94,16 +105,14 @@ class PatrolScene extends Phaser.Scene {
     }
     graphics.lineStyle(3, 0x777773);
     graphics.strokeRect(TILE_SIZE, TILE_SIZE, WORLD_SIZE - TILE_SIZE * 2, WORLD_SIZE - TILE_SIZE * 2);
-    for (const [label, x, y] of [
-      ['LOUNGE', 120, 54], ['KITCHEN', 360, 54], ['HALL', 120, 260], ['BEDROOM', 360, 260],
-    ] as const) {
-      this.add.text(x, y, label, { fontFamily: 'IBM Plex Mono, monospace', fontSize: '11px', color: '#999994' })
+    for (const { key, x, y } of this.map.labels) {
+      this.add.text(x, y, this.callbacks.mapLabels[key], { fontFamily: 'IBM Plex Mono, monospace', fontSize: '11px', color: '#999994' })
         .setOrigin(0.5).setDepth(1);
     }
   }
 
   private drawObjects(): void {
-    for (const object of HOUSE_OBJECTS) {
+    for (const object of this.map.objects) {
       const { x, y } = cellCenter(object.cell);
       const marker = this.add.rectangle(x, y, 39, 39, 0x000000, 0).setStrokeStyle(2, 0x676763);
       const icon = this.add.image(0, 0, `object-${object.id}`).setDisplaySize(34, 34);
@@ -191,7 +200,7 @@ class PatrolScene extends Phaser.Scene {
     const direction = confused ? this.confusedDirection : this.callbacks.direction();
     const length = Math.hypot(direction.x, direction.y);
     if (!length) return;
-    const speed = (confused ? 95 : 155) / length;
+    const speed = (confused ? 95 : 155) * this.spec.playerFactor / length;
     const stepX = direction.x * speed * seconds;
     const stepY = direction.y * speed * seconds;
     const nextX = this.playerPosition.x + stepX;
@@ -234,7 +243,7 @@ class PatrolScene extends Phaser.Scene {
     return [
       pointCell(x - radius, y - radius), pointCell(x + radius, y - radius),
       pointCell(x - radius, y + radius), pointCell(x + radius, y + radius),
-    ].every((cell) => isWalkable(cell, this.piketteBlockedCell()));
+    ].every((cell) => isWalkable(cell, this.piketteBlockedCell(), this.map));
   }
 
   private piketteBlockedCell(): Cell | null {
@@ -252,7 +261,7 @@ class PatrolScene extends Phaser.Scene {
       if (this.piketteNextIn > 0) return;
       const visit = choosePiketteVisit(
         pointCell(this.dogPosition.x, this.dogPosition.y), pointCell(this.playerPosition.x, this.playerPosition.y),
-        new Set(this.rules.snapshot().damagedIds), this.callbacks.random ?? Math.random, this.dogSpeed(),
+        new Set(this.rules.snapshot().damagedIds), this.callbacks.random ?? Math.random, this.dogSpeed(), this.map,
       );
       if (!visit) { this.piketteNextIn = 2; return; }
       this.piketteVisit = visit;
@@ -287,9 +296,9 @@ class PatrolScene extends Phaser.Scene {
         this.rules.startPiketteGuard(visit.object.id);
         this.items.get(visit.object.id)?.marker.setStrokeStyle(4, 0x8fc77b);
         this.wanderGoal = null;
-        if (this.mode === 'recover') this.fleeRoute = findFleeRoute(pointCell(this.dogPosition.x, this.dogPosition.y), pointCell(this.playerPosition.x, this.playerPosition.y), visit.object.cell);
+        if (this.mode === 'recover') this.fleeRoute = findFleeRoute(pointCell(this.dogPosition.x, this.dogPosition.y), pointCell(this.playerPosition.x, this.playerPosition.y), visit.object.cell, this.map);
         if (this.target) {
-          const route = findRoute(pointCell(this.dogPosition.x, this.dogPosition.y), this.target.cell, visit.object.cell);
+          const route = findRoute(pointCell(this.dogPosition.x, this.dogPosition.y), this.target.cell, visit.object.cell, this.map);
           if (route) this.route = route;
           else { this.clearTarget(); this.mode = 'wander'; this.modeTime = 0.4; }
         }
@@ -339,12 +348,12 @@ class PatrolScene extends Phaser.Scene {
         this.callbacks.onSnapshot(this.rules.snapshot());
         return;
       }
-      const route = findRoute(pointCell(this.dogPosition.x, this.dogPosition.y), pointCell(this.playerPosition.x, this.playerPosition.y), this.piketteBlockedCell());
+      const route = findRoute(pointCell(this.dogPosition.x, this.dogPosition.y), pointCell(this.playerPosition.x, this.playerPosition.y), this.piketteBlockedCell(), this.map);
       const next = route?.[1];
       if (next) {
         const destination = cellCenter(next);
         const distance = Phaser.Math.Distance.Between(this.dogPosition.x, this.dogPosition.y, destination.x, destination.y);
-        const amount = Math.min(distance, 170 * seconds);
+        const amount = Math.min(distance, 170 * this.spec.dogFactor * seconds);
         if (distance > 0) {
           this.dogPosition.x += (destination.x - this.dogPosition.x) / distance * amount;
           this.dogPosition.y += (destination.y - this.dogPosition.y) / distance * amount;
@@ -358,7 +367,7 @@ class PatrolScene extends Phaser.Scene {
       if (this.mode === 'recover' && this.fleeRoute.length) {
         const destination = cellCenter(this.fleeRoute[0]);
         const distance = Phaser.Math.Distance.Between(this.dogPosition.x, this.dogPosition.y, destination.x, destination.y);
-        const amount = Math.min(distance, 190 * seconds);
+        const amount = Math.min(distance, 190 * this.spec.dogFactor * seconds);
         if (distance > 0) {
           this.dogPosition.x += (destination.x - this.dogPosition.x) / distance * amount;
           this.dogPosition.y += (destination.y - this.dogPosition.y) / distance * amount;
@@ -367,10 +376,10 @@ class PatrolScene extends Phaser.Scene {
         if (distance <= amount + 0.1) this.fleeRoute.shift();
       }
       if (this.mode === 'wander') {
-        this.wanderGoal ??= chooseWanderCell(pointCell(this.dogPosition.x, this.dogPosition.y), Math.random, this.piketteBlockedCell());
+        this.wanderGoal ??= chooseWanderCell(pointCell(this.dogPosition.x, this.dogPosition.y), Math.random, this.piketteBlockedCell(), this.map);
         const destination = cellCenter(this.wanderGoal);
         const distance = Phaser.Math.Distance.Between(this.dogPosition.x, this.dogPosition.y, destination.x, destination.y);
-        const amount = Math.min(distance, 48 * seconds);
+        const amount = Math.min(distance, 48 * this.spec.dogFactor * seconds);
         if (distance > 0) {
           this.dogPosition.x += (destination.x - this.dogPosition.x) / distance * amount;
           this.dogPosition.y += (destination.y - this.dogPosition.y) / distance * amount;
@@ -413,13 +422,13 @@ class PatrolScene extends Phaser.Scene {
   private selectTarget(): void {
     const damaged = new Set(this.rules.snapshot().damagedIds);
     const reservedId = this.piketteVisit?.object.id ?? null;
-    const candidate = chooseTarget(damaged, this.previousTargetId, Math.random, reservedId);
+    const candidate = chooseTarget(damaged, this.previousTargetId, Math.random, reservedId, this.map);
     if (!candidate) {
-      if (HOUSE_OBJECTS.every((object) => damaged.has(object.id))) this.finish();
+      if (this.map.objects.every((object) => damaged.has(object.id))) this.finish();
       else { this.mode = 'wander'; this.modeTime = 0.5; }
       return;
     }
-    const route = findRoute(pointCell(this.dogPosition.x, this.dogPosition.y), candidate.cell, this.piketteBlockedCell());
+    const route = findRoute(pointCell(this.dogPosition.x, this.dogPosition.y), candidate.cell, this.piketteBlockedCell(), this.map);
     if (!route) {
       this.mode = 'wander';
       this.modeTime = 0.5;
@@ -441,8 +450,8 @@ class PatrolScene extends Phaser.Scene {
     this.rules.clearDogControl();
     this.clearTarget();
     this.mode = 'recover';
-    this.fleeRoute = findFleeRoute(pointCell(this.dogPosition.x, this.dogPosition.y), pointCell(this.playerPosition.x, this.playerPosition.y), this.piketteBlockedCell());
-    this.modeTime = Math.max(1.6, this.fleeRoute.length * TILE_SIZE / 190);
+    this.fleeRoute = findFleeRoute(pointCell(this.dogPosition.x, this.dogPosition.y), pointCell(this.playerPosition.x, this.playerPosition.y), this.piketteBlockedCell(), this.map);
+    this.modeTime = Math.max(1.6, this.fleeRoute.length * TILE_SIZE / (190 * this.spec.dogFactor));
     this.dog.angle = 0;
     this.callbacks.onEvent({ kind: 'caught' });
     this.callbacks.onSnapshot(this.rules.snapshot());
@@ -484,8 +493,9 @@ class PatrolScene extends Phaser.Scene {
     this.route = [];
   }
 
-  private dogSpeed(): number { return 112 + (180 - this.rules.snapshot().secondsLeft) * 0.16; }
-  private destructionTime(): number { return 3.6 - (180 - this.rules.snapshot().secondsLeft) * 0.004; }
+  private elapsedSeconds(): number { return LEVEL_SECONDS - this.rules.snapshot().secondsLeft; }
+  private dogSpeed(): number { return (112 + this.elapsedSeconds() * 0.16) * this.spec.dogFactor; }
+  private destructionTime(): number { return 3.6 - this.elapsedSeconds() * 0.004; }
 
   private finish(): void {
     if (this.endedNotified) return;
@@ -497,7 +507,7 @@ class PatrolScene extends Phaser.Scene {
   }
 }
 
-export function mountGame(host: HTMLElement, callbacks: GameCallbacks): GameHandle {
+export function mountGame(host: HTMLElement, callbacks: GameCallbacks, spec: LevelSpec): GameHandle {
   let enabled = false;
   let volume = 0.4;
   let audio: AudioContext | null = null;
@@ -543,6 +553,123 @@ export function mountGame(host: HTMLElement, callbacks: GameCallbacks): GameHand
       musicTimer = setInterval(playMusicStep, 160);
     }
   };
+  let noise: AudioBuffer | null = null;
+  const noiseSource = (ctx: AudioContext): AudioBufferSourceNode => {
+    if (!noise || noise.sampleRate !== ctx.sampleRate) {
+      noise = ctx.createBuffer(1, Math.floor(ctx.sampleRate * 1.2), ctx.sampleRate);
+      const data = noise.getChannelData(0);
+      for (let i = 0; i < data.length; i++) data[i] = Math.random() * 2 - 1;
+    }
+    const source = ctx.createBufferSource();
+    source.buffer = noise;
+    return source;
+  };
+  /** Comical fart: a low, raspy, flapping tone that wobbles in pitch, with breathy noise. */
+  const playFart = (ctx: AudioContext, bus: GainNode) => {
+    const now = ctx.currentTime;
+    const length = 0.85;
+    const body = ctx.createOscillator();
+    body.type = 'sawtooth';
+    body.frequency.setValueAtTime(150, now);
+    body.frequency.exponentialRampToValueAtTime(78, now + 0.3);
+    body.frequency.exponentialRampToValueAtTime(105, now + 0.45);
+    body.frequency.exponentialRampToValueAtTime(48, now + length);
+    const flutter = ctx.createOscillator();
+    flutter.type = 'square';
+    flutter.frequency.setValueAtTime(34, now);
+    flutter.frequency.linearRampToValueAtTime(19, now + length);
+    const flutterDepth = ctx.createGain();
+    flutterDepth.gain.value = 22;
+    flutter.connect(flutterDepth).connect(body.frequency);
+    const flap = ctx.createGain();
+    flap.gain.value = 0.55;
+    const flapLfo = ctx.createOscillator();
+    flapLfo.type = 'square';
+    flapLfo.frequency.value = 27;
+    const flapDepth = ctx.createGain();
+    flapDepth.gain.value = 0.45;
+    flapLfo.connect(flapDepth).connect(flap.gain);
+    const tone = ctx.createBiquadFilter();
+    tone.type = 'lowpass';
+    tone.frequency.value = 700;
+    const hiss = noiseSource(ctx);
+    const hissFilter = ctx.createBiquadFilter();
+    hissFilter.type = 'bandpass';
+    hissFilter.frequency.value = 520;
+    hissFilter.Q.value = 0.8;
+    const hissLevel = ctx.createGain();
+    hissLevel.gain.value = 0.35;
+    const out = ctx.createGain();
+    out.gain.setValueAtTime(0.0001, now);
+    out.gain.exponentialRampToValueAtTime(0.9, now + 0.03);
+    out.gain.setValueAtTime(0.9, now + 0.6);
+    out.gain.exponentialRampToValueAtTime(0.001, now + length);
+    body.connect(flap).connect(tone).connect(out);
+    hiss.connect(hissFilter).connect(hissLevel).connect(out);
+    out.connect(bus);
+    for (const node of [body, flutter, flapLfo, hiss]) node.start(now);
+    for (const node of [body, flutter, flapLfo, hiss]) node.stop(now + length);
+    body.onended = () => { for (const node of [body, flutter, flapLfo, hiss, flap, tone, hissFilter, hissLevel, out]) node.disconnect(); };
+  };
+  /** Angry cat: a rising "mee-ow" yowl with a growl, formant sweep and a hiss at the start. */
+  const playMeow = (ctx: AudioContext, bus: GainNode) => {
+    const now = ctx.currentTime;
+    const length = 0.95;
+    const voice = ctx.createOscillator();
+    voice.type = 'sawtooth';
+    voice.frequency.setValueAtTime(380, now);
+    voice.frequency.exponentialRampToValueAtTime(860, now + 0.22);
+    voice.frequency.setValueAtTime(860, now + 0.3);
+    voice.frequency.exponentialRampToValueAtTime(300, now + length);
+    const vibrato = ctx.createOscillator();
+    vibrato.frequency.value = 7;
+    const vibratoDepth = ctx.createGain();
+    vibratoDepth.gain.value = 24;
+    vibrato.connect(vibratoDepth).connect(voice.frequency);
+    const growl = ctx.createGain();
+    growl.gain.value = 0.6;
+    const growlLfo = ctx.createOscillator();
+    growlLfo.type = 'sawtooth';
+    growlLfo.frequency.value = 62;
+    const growlDepth = ctx.createGain();
+    growlDepth.gain.value = 0.4;
+    growlLfo.connect(growlDepth).connect(growl.gain);
+    const first = ctx.createBiquadFilter();
+    first.type = 'bandpass';
+    first.Q.value = 5;
+    first.frequency.setValueAtTime(700, now);
+    first.frequency.linearRampToValueAtTime(1100, now + 0.25);
+    first.frequency.linearRampToValueAtTime(500, now + length);
+    const second = ctx.createBiquadFilter();
+    second.type = 'bandpass';
+    second.Q.value = 7;
+    second.frequency.setValueAtTime(1800, now);
+    second.frequency.linearRampToValueAtTime(2600, now + 0.25);
+    second.frequency.linearRampToValueAtTime(1500, now + length);
+    const secondLevel = ctx.createGain();
+    secondLevel.gain.value = 0.7;
+    const hiss = noiseSource(ctx);
+    const hissFilter = ctx.createBiquadFilter();
+    hissFilter.type = 'highpass';
+    hissFilter.frequency.value = 3500;
+    const hissLevel = ctx.createGain();
+    hissLevel.gain.setValueAtTime(0.5, now);
+    hissLevel.gain.exponentialRampToValueAtTime(0.001, now + 0.22);
+    const out = ctx.createGain();
+    out.gain.setValueAtTime(0.0001, now);
+    out.gain.exponentialRampToValueAtTime(0.8, now + 0.05);
+    out.gain.setValueAtTime(0.8, now + 0.55);
+    out.gain.exponentialRampToValueAtTime(0.001, now + length);
+    voice.connect(growl);
+    growl.connect(first).connect(out);
+    growl.connect(second).connect(secondLevel).connect(out);
+    hiss.connect(hissFilter).connect(hissLevel).connect(out);
+    out.connect(bus);
+    const sources = [voice, vibrato, growlLfo, hiss];
+    for (const node of sources) node.start(now);
+    for (const node of sources) node.stop(now + length);
+    voice.onended = () => { for (const node of [...sources, growl, first, second, secondLevel, hissFilter, hissLevel, out]) node.disconnect(); };
+  };
   const sound = (kind: GameEvent['kind']) => {
     if (!enabled) return;
     try {
@@ -553,16 +680,13 @@ export function mountGame(host: HTMLElement, callbacks: GameCallbacks): GameHand
         effectsBus.gain.value = volume;
         effectsBus.connect(audio.destination);
       }
+      if (kind === 'fart') { playFart(audio, effectsBus); return; }
+      if (kind === 'piketteEnter') { playMeow(audio, effectsBus); return; }
       const oscillator = audio.createOscillator();
       const gain = audio.createGain();
-      const duration = kind === 'piketteEnter' ? 0.72 : kind === 'fart' ? 0.36 : 0.16;
-      oscillator.type = kind === 'fart' || kind === 'piketteEnter' ? 'sawtooth' : 'sine';
-      oscillator.frequency.value = kind === 'caught' ? 660 : kind === 'damage' ? 180 : kind === 'fart' ? 170 : kind === 'piketteEnter' ? 430 : 390;
-      if (kind === 'fart') oscillator.frequency.exponentialRampToValueAtTime(55, audio.currentTime + duration);
-      if (kind === 'piketteEnter') {
-        oscillator.frequency.exponentialRampToValueAtTime(720, audio.currentTime + 0.24);
-        oscillator.frequency.exponentialRampToValueAtTime(230, audio.currentTime + duration);
-      }
+      const duration = 0.16;
+      oscillator.type = 'sine';
+      oscillator.frequency.value = kind === 'caught' ? 660 : kind === 'damage' ? 180 : 390;
       gain.gain.setValueAtTime(Math.min(volume * 0.12, 0.12), audio.currentTime);
       gain.gain.exponentialRampToValueAtTime(0.001, audio.currentTime + duration);
       oscillator.connect(gain).connect(effectsBus);
@@ -579,7 +703,7 @@ export function mountGame(host: HTMLElement, callbacks: GameCallbacks): GameHand
       syncMusic();
       callbacks.onEnd(snapshot);
     },
-  }, sound);
+  }, sound, spec);
   const game = new Phaser.Game({
     type: Phaser.AUTO,
     parent: host,

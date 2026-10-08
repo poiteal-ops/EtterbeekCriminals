@@ -1,7 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-import { EN_CONTENT } from '../../../i18n/content/en.content';
 import { TranslationService } from '../../../services/translation.service';
 import { FallbackBanner } from '../../../shared/fallback-banner/fallback-banner';
 
@@ -12,6 +11,9 @@ import { FallbackBanner } from '../../../shared/fallback-banner/fallback-banner'
   styleUrl: './how-to-play.scss',
 })
 export class HowToPlay {
-  protected readonly game = EN_CONTENT.game;
   protected readonly translation = inject(TranslationService);
+
+  protected get game() { return this.translation.t().game; }
+  /** English until the locale's own `game` block exists. */
+  protected get gameLang(): string { return this.translation.isSectionFallback('game') ? 'en' : this.translation.locale(); }
 }

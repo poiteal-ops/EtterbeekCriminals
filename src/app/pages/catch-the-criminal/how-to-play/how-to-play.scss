@@ -2,7 +2,7 @@
 .guide-page { max-width: 920px; margin: 0 auto; padding: 112px 24px 80px; color: #eeeeec; }
 .guide-header { text-align: center; max-width: 720px; margin: 0 auto 48px; }
 .kicker { color: #e0645b; font-size: 11px; letter-spacing: 2px; }
-h1, h2, h3 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 2px; }
+h1, h2, h3 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 2px; overflow-wrap: anywhere; }
 h1 { font-size: clamp(42px, 8vw, 72px); line-height: 1; }
 h2 { font-size: clamp(30px, 5vw, 44px); margin: 0 0 12px; }
 h3 { font-size: 25px; margin: 0 0 8px; }

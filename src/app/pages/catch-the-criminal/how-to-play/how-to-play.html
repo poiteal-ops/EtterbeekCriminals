@@ -1,6 +1,6 @@
 @let t = game.guide;
 
-<main class="guide-page" lang="en">
+<main class="guide-page" [attr.lang]="gameLang">
   <header class="guide-header">
     <p class="kicker">{{ game.kicker }}</p>
     <h1>{{ t.title }}</h1>
@@ -14,6 +14,11 @@
     <figure><img src="/assets/game/manual/board-and-controls.webp" [alt]="t.boardAlt" width="320" height="682" loading="lazy" /><figcaption>{{ t.boardCaption }}</figcaption></figure>
   </section>
 
+  <section aria-labelledby="levels-title">
+    <h2 id="levels-title">{{ t.levelsTitle }}</h2>
+    <p>{{ t.levelsBody }}</p>
+  </section>
+
   <section aria-labelledby="controls-title">
     <h2 id="controls-title">{{ t.controlsTitle }}</h2>
     <div class="guide-columns">
@@ -25,8 +30,8 @@
   <section aria-labelledby="items-title">
     <h2 id="items-title">{{ t.itemsTitle }}</h2>
     <div class="guide-columns item-cards">
-      <div><h3><img src="/assets/game/icons/stop.svg" alt="" width="40" height="40" /> STOP</h3><p>{{ t.stopBody }}</p></div>
-      <div><h3><img src="/assets/game/icons/treat.svg" alt="" width="40" height="40" /> TREAT</h3><p>{{ t.treatBody }}</p></div>
+      <div><h3><img src="/assets/game/icons/stop.svg" alt="" width="40" height="40" /> {{ t.stopLabel }}</h3><p>{{ t.stopBody }}</p></div>
+      <div><h3><img src="/assets/game/icons/treat.svg" alt="" width="40" height="40" /> {{ t.treatLabel }}</h3><p>{{ t.treatBody }}</p></div>
     </div>
     <figure><img src="/assets/game/manual/stop-and-treat.webp" [alt]="t.itemsAlt" width="308" height="52" loading="lazy" /><figcaption>{{ t.itemsCaption }}</figcaption></figure>
   </section>
@@ -45,6 +50,8 @@
   <section aria-labelledby="finish-title">
     <h2 id="finish-title">{{ t.finishTitle }}</h2>
     <p>{{ t.finishBody }}</p>
+    <h3>{{ t.shareTitle }}</h3>
+    <p>{{ t.shareBody }}</p>
     <a [routerLink]="translation.path('game')">← {{ t.backLabel }}</a>
   </section>
   <app-fallback-banner section="game" [englishOnly]="true" />

@@ -128,6 +128,49 @@ test('buildPages creates a direct-visit game page when game copy is present', ()
   assert.equal(guide?.title, 'How to Play Catch the Criminal');
 });
 
+test('generateSite indexes a locale game page once that locale has its own translated game block', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ttc-game-translated-'));
+  try {
+    const english = content('EN');
+    english.game = { title: 'Catch the Criminal', intro: 'Protect the house.', guide: { title: 'How to play', intro: 'Guide intro.' } };
+    const french = content('FR');
+    french.game = { title: 'Attrapez le criminel', intro: 'Protegez la maison.', guide: { title: 'Comment jouer', intro: 'Intro du guide.' } };
+    generateSite({ template, contentByLocale: { en: english, fr: french, de: content('DE') }, distDir: root });
+    const translated = fs.readFileSync(path.join(root, 'fr', 'game', 'index.html'), 'utf8');
+    assert.doesNotMatch(translated, /noindex/);
+    assert.match(translated, /<title>Attrapez le criminel - The Thieffry Criminals<\/title>/);
+    assert.match(translated, /rel="canonical" href="https:\/\/thieffrycriminals\.be\/fr\/game\/"/);
+    const sitemap = fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8');
+    assert.match(sitemap, /\/fr\/game\//);
+    assert.match(sitemap, /\/fr\/game\/how-to-play\//);
+    // A locale without a translation still falls back to a noindex English page canonicalised to English.
+    const fallback = fs.readFileSync(path.join(root, 'de', 'game', 'index.html'), 'utf8');
+    assert.match(fallback, /noindex/);
+    assert.match(fallback, /rel="canonical" href="https:\/\/thieffrycriminals\.be\/game\/"/);
+    assert.doesNotMatch(sitemap, /\/de\/game\//);
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('generateSite uses English game metadata for missing fields in a partial translated block', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ttc-game-partial-'));
+  try {
+    const english = content('EN');
+    english.game = { title: 'Catch the Criminal', intro: 'Protect the house.', guide: { title: 'How to play', intro: 'Guide intro.' } };
+    const french = content('FR');
+    french.game = { title: 'Attrapez le criminel', guide: { title: 'Comment jouer' } };
+    generateSite({ template, contentByLocale: { en: english, fr: french }, distDir: root });
+    const game = fs.readFileSync(path.join(root, 'fr', 'game', 'index.html'), 'utf8');
+    const guide = fs.readFileSync(path.join(root, 'fr', 'game', 'how-to-play', 'index.html'), 'utf8');
+    assert.match(game, /<meta name="description" content="Protect the house\.">/);
+    assert.match(guide, /<title>Comment jouer - The Thieffry Criminals<\/title>/);
+    assert.match(guide, /<meta name="description" content="Guide intro\.">/);
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
 test('generateSite gives localized game fallback routes a direct-visit page', () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ttc-game-page-'));
   try {
