@@ -1,3 +1,5 @@
+import { LEVEL_MAPS, type LevelMap } from './levels';
+
 export interface Cell { x: number; y: number }
 export interface HouseObject {
   id: string;
@@ -19,26 +21,16 @@ export const GRID_SIZE = 12;
 export const TILE_SIZE = 40;
 export const WORLD_SIZE = GRID_SIZE * TILE_SIZE;
 
-export const HOUSE_OBJECTS: readonly HouseObject[] = [
-  { id: 'sofa', cell: { x: 2, y: 2 }, value: 145, kind: 'seat' },
-  { id: 'cushion', cell: { x: 3, y: 3 }, value: 19, kind: 'small' },
-  { id: 'remote', cell: { x: 2, y: 4 }, value: 28, kind: 'small' },
-  { id: 'food', cell: { x: 8, y: 2 }, value: 14, kind: 'food' },
-  { id: 'bin', cell: { x: 9, y: 3 }, value: 36, kind: 'container' },
-  { id: 'plant', cell: { x: 8, y: 4 }, value: 24, kind: 'plant' },
-  { id: 'shoe', cell: { x: 2, y: 8 }, value: 42, kind: 'small' },
-  { id: 'box', cell: { x: 3, y: 9 }, value: 8, kind: 'container' },
-  { id: 'slipper', cell: { x: 8, y: 8 }, value: 12, kind: 'small' },
-  { id: 'laundry', cell: { x: 9, y: 9 }, value: 16, kind: 'container' },
-];
+export const HOUSE_OBJECTS: readonly HouseObject[] = LEVEL_MAPS[0].objects;
 
 export function chooseTarget(
   damagedIds: ReadonlySet<string>,
   previousId: string | null,
   random: () => number = Math.random,
   blockedId: string | null = null,
+  map: LevelMap = LEVEL_MAPS[0],
 ): HouseObject | null {
-  const intact = HOUSE_OBJECTS.filter((object) => !damagedIds.has(object.id) && object.id !== blockedId);
+  const intact = map.objects.filter((object) => !damagedIds.has(object.id) && object.id !== blockedId);
   if (!intact.length) return null;
   const alternatives = intact.filter((object) => object.id !== previousId);
   const candidates = alternatives.length ? alternatives : intact;
@@ -46,23 +38,21 @@ export function chooseTarget(
   return candidates[index];
 }
 
-export function chooseWanderCell(start: Cell, random: () => number = Math.random, blocked: Cell | null = null): Cell {
+export function chooseWanderCell(start: Cell, random: () => number = Math.random, blocked: Cell | null = null, map: LevelMap = LEVEL_MAPS[0]): Cell {
   const neighbours = [
     { x: start.x + 1, y: start.y }, { x: start.x, y: start.y + 1 },
     { x: start.x - 1, y: start.y }, { x: start.x, y: start.y - 1 },
-  ].filter((cell) => isWalkable(cell, blocked));
+  ].filter((cell) => isWalkable(cell, blocked, map));
   if (!neighbours.length) return start;
   const index = Math.min(neighbours.length - 1, Math.max(0, Math.floor(random() * neighbours.length)));
   return neighbours[index];
 }
 
-export function isWalkable(cell: Cell, blocked: Cell | null = null): boolean {
+export function isWalkable(cell: Cell, blocked: Cell | null = null, map: LevelMap = LEVEL_MAPS[0]): boolean {
   const { x, y } = cell;
   if (blocked?.x === x && blocked.y === y) return false;
   if (!Number.isInteger(x) || !Number.isInteger(y) || x <= 0 || y <= 0 || x >= GRID_SIZE - 1 || y >= GRID_SIZE - 1) return false;
-  if (x === 5 && y !== 2 && y !== 8) return false;
-  if (y === 5 && x !== 2 && x !== 8) return false;
-  return true;
+  return map.rows[y]?.[x] === '.';
 }
 
 export function cellCenter(cell: Cell): { x: number; y: number } {
@@ -78,8 +68,8 @@ export function isFartOpportunity(player: { x: number; y: number }, dog: { x: nu
     Math.hypot(dog.x - target.x, dog.y - target.y) > TILE_SIZE * 2;
 }
 
-export function findRoute(start: Cell, goal: Cell, blocked: Cell | null = null): Cell[] | null {
-  if (!isWalkable(start, blocked) || !isWalkable(goal, blocked)) return null;
+export function findRoute(start: Cell, goal: Cell, blocked: Cell | null = null, map: LevelMap = LEVEL_MAPS[0]): Cell[] | null {
+  if (!isWalkable(start, blocked, map) || !isWalkable(goal, blocked, map)) return null;
   const key = (cell: Cell) => `${cell.x},${cell.y}`;
   const queue: Cell[] = [start];
   const previous = new Map<string, Cell | null>([[key(start), null]]);
@@ -99,7 +89,7 @@ export function findRoute(start: Cell, goal: Cell, blocked: Cell | null = null):
     for (const step of steps) {
       const next = { x: current.x + step.x, y: current.y + step.y };
       const nextKey = key(next);
-      if (isWalkable(next, blocked) && !previous.has(nextKey)) {
+      if (isWalkable(next, blocked, map) && !previous.has(nextKey)) {
         previous.set(nextKey, current);
         queue.push(next);
       }
@@ -108,19 +98,19 @@ export function findRoute(start: Cell, goal: Cell, blocked: Cell | null = null):
   return null;
 }
 
-export function findFleeRoute(start: Cell, player: Cell, blocked: Cell | null = null): Cell[] {
+export function findFleeRoute(start: Cell, player: Cell, blocked: Cell | null = null, map: LevelMap = LEVEL_MAPS[0]): Cell[] {
   const candidates: Cell[] = [];
   for (let y = 1; y < GRID_SIZE - 1; y++) {
     for (let x = 1; x < GRID_SIZE - 1; x++) {
       const cell = { x, y };
-      if (isWalkable(cell, blocked)) candidates.push(cell);
+      if (isWalkable(cell, blocked, map)) candidates.push(cell);
     }
   }
   candidates.sort((a, b) =>
     ((b.x - player.x) ** 2 + (b.y - player.y) ** 2) -
     ((a.x - player.x) ** 2 + (a.y - player.y) ** 2));
   for (const candidate of candidates) {
-    const route = findRoute(start, candidate, blocked);
+    const route = findRoute(start, candidate, blocked, map);
     if (route) return route;
   }
   return [start];
@@ -132,13 +122,14 @@ export function choosePiketteVisit(
   damagedIds: ReadonlySet<string>,
   random: () => number = Math.random,
   dogSpeed = 112,
+  map: LevelMap = LEVEL_MAPS[0],
 ): PiketteVisit | null {
   const visits: PiketteVisit[] = [];
-  for (const object of HOUSE_OBJECTS) {
+  for (const object of map.objects) {
     if (damagedIds.has(object.id) ||
       (object.cell.x === dog.x && object.cell.y === dog.y) ||
       (object.cell.x === player.x && object.cell.y === player.y)) continue;
-    const dogRoute = findRoute(dog, object.cell);
+    const dogRoute = findRoute(dog, object.cell, null, map);
     if (!dogRoute) continue;
     const dogSeconds = (dogRoute.length - 1) * TILE_SIZE / dogSpeed;
     const entrances = [
@@ -148,7 +139,7 @@ export function choosePiketteVisit(
       { entry: { x: GRID_SIZE - 2, y: object.cell.y }, offboard: { x: WORLD_SIZE + 20, y: (object.cell.y + 0.5) * TILE_SIZE } },
     ];
     for (const entrance of entrances) {
-      const route = findRoute(entrance.entry, object.cell);
+      const route = findRoute(entrance.entry, object.cell, null, map);
       if (!route) continue;
       const entryCenter = cellCenter(entrance.entry);
       const approach = Math.hypot(entryCenter.x - entrance.offboard.x, entryCenter.y - entrance.offboard.y);

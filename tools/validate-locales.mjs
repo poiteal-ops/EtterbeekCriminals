@@ -82,6 +82,16 @@ function checkInvariants(refObj, candObj, file, problems) {
   });
 }
 
+// The game block is optional per locale (English fallback until translated), so it is excluded from the
+// structural comparison against fr.json and validated against the English game block instead.
+const withoutGame = ({ game: _game, ...rest }) => rest;
+// Loaded lazily: it needs the TypeScript English content, which a locale-only check does not otherwise touch.
+let gameTools = null;
+async function gameProblems(game) {
+  gameTools ??= await import('./game-translations.mjs');
+  return gameTools.validateGameBlock(await gameTools.englishGameBlock(), game);
+}
+
 const files = process.argv.slice(2).length
   ? process.argv.slice(2).map((f) => (f.endsWith('.json') ? f : f + '.json'))
   : fs.readdirSync(dir).filter((f) => f.endsWith('.json') && f !== 'fr.json');
@@ -98,14 +108,23 @@ for (const f of files) {
     allOk = false;
     continue;
   }
-  const problems = deepCompare(ref, cand);
+  const problems = deepCompare(withoutGame(ref), withoutGame(cand));
   checkInvariants(ref, cand, f, problems);
+  if (cand.game !== undefined) problems.push(...await gameProblems(cand.game));
   if (problems.length) {
     allOk = false;
     console.log(`${f}: ${problems.length} problem(s)`);
     problems.slice(0, 20).forEach((p2) => console.log('   ' + p2));
   } else {
     console.log(`${f}: OK`);
+  }
+}
+if (!process.argv.slice(2).length && ref.game !== undefined) {
+  const referenceGameProblems = await gameProblems(ref.game);
+  if (referenceGameProblems.length) {
+    allOk = false;
+    console.log(`fr.json: ${referenceGameProblems.length} game problem(s)`);
+    referenceGameProblems.slice(0, 20).forEach((p2) => console.log('   ' + p2));
   }
 }
 process.exit(allOk ? 0 : 1);

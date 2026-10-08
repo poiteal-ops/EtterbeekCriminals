@@ -35,11 +35,22 @@ export class TranslationService {
    */
   readonly t = computed(() => {
     const raw: Partial<SiteContent> = this.contentMap()[this.contentLocale()] ?? {};
+    const rawGame: Partial<SiteContent['game']> = raw.game ?? {};
     return {
       ...EN_CONTENT,
       ...raw,
       common: { ...EN_CONTENT.common, ...raw.common },
       nav: { ...EN_CONTENT.nav, ...raw.nav },
+      // The game block is merged key by key (and one level deeper for its nested dictionaries), so a
+      // locale that is missing a newly added game string shows that one string in English rather than a blank.
+      game: {
+        ...EN_CONTENT.game,
+        ...rawGame,
+        share: { ...EN_CONTENT.game.share, ...rawGame.share },
+        guide: { ...EN_CONTENT.game.guide, ...rawGame.guide },
+        mapLabels: { ...EN_CONTENT.game.mapLabels, ...rawGame.mapLabels },
+        objects: { ...EN_CONTENT.game.objects, ...rawGame.objects },
+      },
     };
   });
 

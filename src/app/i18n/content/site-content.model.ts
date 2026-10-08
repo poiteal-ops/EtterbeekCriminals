@@ -369,9 +369,22 @@ export interface SiteContent {
     piketteEnterMessage: string; piketteMessage: string; piketteGoneMessage: string;
     rankInsurance: string; rankOverwhelmed: string; rankNegotiator: string;
     rankWatch: string; rankAdult: string;
+    fileStamp: string; openError: string; ariaGame: string; ariaItems: string; ariaDpad: string;
+    moveUp: string; moveLeft: string; moveDown: string; moveRight: string;
+    level: string; levelOf: string; levelNames: string[]; totalScore: string;
+    levelStartMessage: string; levelClearedTitle: string; levelClearBonus: string; nextLevel: string;
+    nextLevelIntro: string; runCompleteTitle: string; reachedLevel: string; finalScore: string;
+    share: {
+      title: string; intro: string; shareButton: string; x: string; facebook: string; whatsapp: string;
+      bluesky: string; copy: string; copied: string; copyFailed: string; note: string; groupLabel: string;
+      textReached: string; textComplete: string;
+    };
+    mapLabels: Record<string, string>;
     objects: Record<string, string>;
     guide: {
       linkLabel: string; title: string; intro: string; backLabel: string;
+      stopLabel: string; treatLabel: string;
+      levelsTitle: string; levelsBody: string; shareTitle: string; shareBody: string;
       goalTitle: string; goalBody: string; controlsTitle: string; keyboardLabel: string; keyboardBody: string;
       touchLabel: string; touchBody: string; itemsTitle: string; stopBody: string; treatBody: string;
       hazardsTitle: string; fartBody: string; piketteBody: string; finishTitle: string; finishBody: string;

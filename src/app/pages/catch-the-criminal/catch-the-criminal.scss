@@ -2,7 +2,7 @@
 .game-page { max-width: 1000px; margin: 0 auto; padding: 112px 24px 80px; }
 .game-header { max-width: 760px; margin: 0 auto 28px; text-align: center; }
 .kicker { color: #e0645b; font-size: 11px; letter-spacing: 2px; }
-h1, h2 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 2px; }
+h1, h2 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 2px; overflow-wrap: anywhere; }
 h1 { font-size: clamp(42px, 9vw, 76px); line-height: 1; }
 h2 { font-size: clamp(28px, 6vw, 42px); margin: 8px 0; }
 .intro { color: #cfcfcc; line-height: 1.6; font-size: 14px; }
@@ -68,6 +68,18 @@ button:disabled { opacity: .6; cursor: wait; }
   .game-abilities { margin-top: 5px; }
   .game-abilities button { min-width: 0; flex: 1; min-height: 44px; padding: 5px; }
   .game-abilities img { width: 24px; height: 24px; }
+  .level-bar { font-size: 9px; letter-spacing: 0; margin-bottom: 4px; }
   .d-pad { width: 160px; grid-template: repeat(2, 46px) / repeat(3, 46px); gap: 4px; padding: 4px; bottom: calc(8px + env(safe-area-inset-bottom)); }
 }
+.level-bar { display: flex; justify-content: space-between; gap: 8px; margin: 0 0 8px; font-size: 11px; letter-spacing: 1px; color: #f5d879; }
+.level-bar strong { font-weight: 400; color: #eeeeec; white-space: nowrap; }
+.share-panel { margin: 16px 0 0; padding: 14px; border: 1px solid #555; background: #191919; text-align: center; }
+.share-panel h2 { margin: 0 0 6px; font-size: 28px; }
+.share-text { margin: 0 0 12px; font-size: 13px; line-height: 1.5; color: #cfcfcc; }
+.share-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.share-actions button, .share-link { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; padding: 8px 14px; font-size: 12px; border: 1px solid #eeeeec; background: #181818; color: #eeeeec; text-decoration: none; }
+.share-link:hover { background: #eeeeec; color: #111; }
+.share-link:focus-visible { outline: 3px solid #f5d879; outline-offset: 3px; }
+.share-status { min-height: 1.4em; margin: 8px 0 0; font-size: 12px; color: #f5d879; }
+.share-note { margin: 4px 0 0; font-size: 11px; line-height: 1.5; color: #bcbcb8; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }

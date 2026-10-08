@@ -1,6 +1,6 @@
 @let t = translation.t();
 
-@if (englishOnly() ? translation.locale() !== 'en' : translation.isSectionFallback(section())) {
+@if (translation.isSectionFallback(section())) {
   <div class="fallback-banner" role="status">
     <img class="fallback-banner__gif" src="assets/images/under-construction.gif" alt="" aria-hidden="true" />
     <span class="fallback-banner__lines">

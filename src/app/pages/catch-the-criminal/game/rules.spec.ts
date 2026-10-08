@@ -21,10 +21,17 @@ describe('game rules', () => {
     const game = new GameRules();
     game.setPaused(true);
     game.tick(10);
-    expect(game.snapshot().secondsLeft).toBe(180);
+    expect(game.snapshot().secondsLeft).toBe(90);
     game.setPaused(false);
-    game.tick(180);
+    game.tick(90);
     expect(game.snapshot().secondsLeft).toBe(0);
+    expect(game.snapshot().ended).toBe(true);
+  });
+
+  it('uses a configurable level length', () => {
+    const game = new GameRules(30);
+    expect(game.snapshot().secondsLeft).toBe(30);
+    game.tick(30);
     expect(game.snapshot().ended).toBe(true);
   });
 

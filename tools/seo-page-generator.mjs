@@ -206,7 +206,10 @@ export function generateSite({ template, contentByLocale, distDir }) {
   const pagesByLocale = new Map(
     Object.entries(contentByLocale).map(([locale, content]) => {
       const gameFallback = locale !== DEFAULT_LOCALE && englishGame && !content.game;
-      const pages = buildPages(gameFallback ? { ...content, game: englishGame } : content);
+      const game = gameFallback ? englishGame : content.game && englishGame
+        ? { ...englishGame, ...content.game, guide: { ...englishGame.guide, ...content.game.guide } }
+        : content.game;
+      const pages = buildPages(game ? { ...content, game } : content);
       return [locale, gameFallback
         ? pages.map((page) => page.route === 'game' || page.route === 'game/how-to-play' ? { ...page, noIndex: true } : page)
         : pages];
