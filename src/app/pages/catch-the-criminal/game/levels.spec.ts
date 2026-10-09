@@ -107,6 +107,18 @@ describe('level maps', () => {
   }
 });
 
+describe('open-plan loft kitchen', () => {
+  it('has a counter run and stools around the island instead of a lone block', () => {
+    const loft = LEVEL_MAPS[1];
+    const walls = loft.rows.flatMap((row, y) => [...row].map((char, x) => ({ char, x, y })))
+      .filter(({ char, x, y }) => char === '#' && x > 0 && y > 0 && x < GRID_SIZE - 1 && y < GRID_SIZE - 1);
+    expect(walls.length).toBeGreaterThanOrEqual(14);
+    for (const cell of [{ x: 3, y: 3 }, { x: 9, y: 3 }, { x: 4, y: 6 }, { x: 7, y: 6 }]) {
+      expect(isWalkable(cell, null, loft), key(cell)).toBe(false);
+    }
+  });
+});
+
 describe('difficulty table', () => {
   it('starts at the original speeds and raises the dog while slowing the player each level', () => {
     expect(LEVELS[0]).toMatchObject({ dogFactor: 1, playerFactor: 1 });

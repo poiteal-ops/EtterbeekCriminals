@@ -4,10 +4,10 @@ import { GameRules, type GameSnapshot } from './rules';
 import { LEVEL_SECONDS, type LevelMap, type LevelSpec } from './levels';
 import {
   GRID_SIZE, TILE_SIZE, WORLD_SIZE, cellCenter, choosePiketteVisit, chooseTarget, chooseWanderCell,
-  findFleeRoute, findRoute, isFartOpportunity, isWalkable, pointCell, type Cell, type HouseObject, type PiketteVisit,
+  findFleeRoute, findRoute, isFartOpportunity, isInPiketteScareRange, isWalkable, pointCell, type Cell, type HouseObject, type PiketteVisit,
 } from './house';
 
-export type GameEvent = { kind: 'target' | 'caught' | 'damage' | 'stop' | 'treat' | 'fart' | 'piketteEnter' | 'pikette' | 'piketteGone'; objectId?: string };
+export type GameEvent = { kind: 'target' | 'caught' | 'damage' | 'stop' | 'treat' | 'fart' | 'piketteEnter' | 'pikette' | 'piketteScare' | 'piketteGone'; objectId?: string };
 export interface Direction { x: number; y: number }
 export interface GameCallbacks {
   direction: () => Direction;
@@ -26,7 +26,7 @@ export interface GameHandle {
   destroy: () => void;
 }
 
-type DogMode = 'wander' | 'run' | 'destroy' | 'recover' | 'lure' | 'stunned' | 'finished';
+type DogMode = 'wander' | 'run' | 'destroy' | 'recover' | 'fetch' | 'eat' | 'finished';
 type PikettePhase = 'waiting' | 'entering' | 'guarding' | 'leaving';
 
 class PatrolScene extends Phaser.Scene {
@@ -57,6 +57,11 @@ class PatrolScene extends Phaser.Scene {
   private piketteSprite: Phaser.GameObjects.Image | null = null;
   private piketteWaypoints: { x: number; y: number }[] = [];
   private piketteWaitAtObject = 0;
+  private bone: Phaser.GameObjects.Container | null = null;
+  private boneCell: Cell | null = null;
+  private dogScrambleTurnLeft = 0;
+  private dogScrambleDirection: Direction = { x: 0, y: 0 };
+  private dogWasScrambled = false;
 
   constructor(
     private readonly callbacks: GameCallbacks,
@@ -145,9 +150,7 @@ class PatrolScene extends Phaser.Scene {
 
   useTreat(): boolean {
     if (!this.rules.useTreat()) return false;
-    this.clearTarget();
-    this.mode = 'lure';
-    this.route = [];
+    this.dropBone();
     this.callbacks.onEvent({ kind: 'treat' });
     this.callbacks.onSnapshot(this.rules.snapshot());
     return true;
@@ -163,6 +166,7 @@ class PatrolScene extends Phaser.Scene {
       return;
     }
     this.updatePikette(seconds);
+    this.updatePiketteScare();
     if (this.mode === 'run' && this.target && this.rules.snapshot().stopSecondsLeft === 0 &&
       isFartOpportunity(this.playerPosition, this.dogPosition, cellCenter(this.target.cell)) && this.rules.triggerFart()) {
       this.startGasCloud();
@@ -173,7 +177,8 @@ class PatrolScene extends Phaser.Scene {
     this.movePlayer(seconds);
     this.moveDog(seconds);
     this.updateGasCloud(seconds);
-    if ((this.mode === 'run' || this.mode === 'destroy' || this.mode === 'stunned' || this.rules.snapshot().stopSecondsLeft > 0) &&
+    if ((this.mode === 'run' || this.mode === 'destroy' || this.mode === 'fetch' || this.mode === 'eat' || this.rules.snapshot().stopSecondsLeft > 0) &&
+      this.rules.snapshot().scrambleSecondsLeft === 0 &&
       Phaser.Math.Distance.Between(this.playerPosition.x, this.playerPosition.y, this.dogPosition.x, this.dogPosition.y) < 27) {
       this.catchDog();
     }
@@ -185,7 +190,7 @@ class PatrolScene extends Phaser.Scene {
   }
 
   private movePlayer(seconds: number): void {
-    const confused = this.rules.snapshot().fartSecondsLeft > 0;
+    const confused = this.rules.snapshot().fartSecondsLeft > 0 || this.rules.snapshot().scrambleSecondsLeft > 0;
     if (confused) {
       this.confusedTurnLeft -= seconds;
       if (this.confusedTurnLeft <= 0) {
@@ -209,6 +214,86 @@ class PatrolScene extends Phaser.Scene {
     if (this.canStand(this.playerPosition.x, nextY)) this.playerPosition.y = nextY;
     this.player.setPosition(this.playerPosition.x, this.playerPosition.y);
     if (confused && !this.callbacks.reducedMotion) this.player.angle = Math.sin(this.time.now / 45) * 12;
+  }
+
+  /** Green bone dropped where the player stands; the criminal detours to eat it, his target stays marked. */
+  private dropBone(): void {
+    this.clearBone();
+    this.boneCell = pointCell(this.playerPosition.x, this.playerPosition.y);
+    const { x, y } = cellCenter(this.boneCell);
+    const shaft = this.add.rectangle(0, 0, 20, 6, 0x78bc54).setStrokeStyle(1, 0x2f5f24);
+    const knobs = ([[-10, -4], [-10, 4], [10, -4], [10, 4]] as const)
+      .map(([dx, dy]) => this.add.circle(dx, dy, 4.5, 0x78bc54).setStrokeStyle(1, 0x2f5f24));
+    this.bone = this.add.container(x, y, [shaft, ...knobs]).setDepth(5.5);
+    if (!this.callbacks.reducedMotion) {
+      this.tweens.add({ targets: this.bone, scale: 1.18, duration: 450, yoyo: true, repeat: -1 });
+    }
+  }
+
+  private clearBone(): void {
+    if (this.bone) this.tweens.killTweensOf(this.bone);
+    this.bone?.destroy();
+    this.bone = null;
+    this.boneCell = null;
+  }
+
+  /** Anyone within three squares of Pikette gets hissed at: shake, meow, then both actors stumble randomly for three seconds. */
+  private updatePiketteScare(): void {
+    const sprite = this.piketteSprite;
+    const visit = this.piketteVisit;
+    if (!sprite || !visit) return;
+    if (!isInPiketteScareRange(sprite, this.playerPosition) && !isInPiketteScareRange(sprite, this.dogPosition)) return;
+    if (!this.rules.triggerPiketteScare()) return;
+    this.confusedTurnLeft = 0;
+    this.dogScrambleTurnLeft = 0;
+    if (!this.callbacks.reducedMotion) this.cameras.main.shake(350, 0.012);
+    this.callbacks.onEvent({ kind: 'piketteScare', objectId: visit.object.id });
+    this.callbacks.onSnapshot(this.rules.snapshot());
+    this.playTone('piketteScare');
+  }
+
+  private scrambleDog(seconds: number): void {
+    this.dogScrambleTurnLeft -= seconds;
+    if (this.dogScrambleTurnLeft <= 0) {
+      const options: Direction[] = [{ x: 1, y: 0 }, { x: -1, y: 0 }, { x: 0, y: 1 }, { x: 0, y: -1 }];
+      this.dogScrambleDirection = options[Math.floor((this.callbacks.random?.() ?? Math.random()) * options.length)] ?? options[0];
+      this.dogScrambleTurnLeft = 0.28;
+    }
+    const speed = 95 * this.spec.dogFactor;
+    const nextX = this.dogPosition.x + this.dogScrambleDirection.x * speed * seconds;
+    const nextY = this.dogPosition.y + this.dogScrambleDirection.y * speed * seconds;
+    if (this.canStand(nextX, this.dogPosition.y)) this.dogPosition.x = nextX;
+    if (this.canStand(this.dogPosition.x, nextY)) this.dogPosition.y = nextY;
+    this.dog.setPosition(this.dogPosition.x, this.dogPosition.y);
+    if (!this.callbacks.reducedMotion) this.dog.angle = Math.sin(this.time.now / 45) * 12;
+  }
+
+  /** After a scramble the dog is somewhere new, so his old route is stale: plan again from here. */
+  private resumeAfterScramble(): void {
+    this.dog.angle = 0;
+    this.wanderGoal = null;
+    const here = pointCell(this.dogPosition.x, this.dogPosition.y);
+    if ((this.mode === 'run' || this.mode === 'destroy') && this.target) {
+      const route = findRoute(here, this.target.cell, this.piketteBlockedCell(), this.map);
+      if (route) { this.route = route; this.mode = 'run'; return; }
+      this.clearTarget();
+      this.mode = 'wander';
+      this.modeTime = 0.5;
+    } else if (this.mode === 'recover') {
+      this.fleeRoute = findFleeRoute(here, pointCell(this.playerPosition.x, this.playerPosition.y), this.piketteBlockedCell(), this.map);
+    }
+  }
+
+  private finishEating(): void {
+    this.wanderGoal = null;
+    const target = this.target;
+    if (target && !this.rules.snapshot().damagedIds.includes(target.id) && target.id !== this.piketteVisit?.object.id) {
+      const route = findRoute(pointCell(this.dogPosition.x, this.dogPosition.y), target.cell, this.piketteBlockedCell(), this.map);
+      if (route) { this.route = route; this.mode = 'run'; return; }
+    }
+    this.clearTarget();
+    this.mode = 'wander';
+    this.modeTime = 0.5;
   }
 
   private startGasCloud(): void {
@@ -262,8 +347,9 @@ class PatrolScene extends Phaser.Scene {
       const visit = choosePiketteVisit(
         pointCell(this.dogPosition.x, this.dogPosition.y), pointCell(this.playerPosition.x, this.playerPosition.y),
         new Set(this.rules.snapshot().damagedIds), this.callbacks.random ?? Math.random, this.dogSpeed(), this.map,
+        this.mode === 'run' ? (this.target?.id ?? null) : null,
       );
-      if (!visit) { this.piketteNextIn = 2; return; }
+      if (!visit) { this.piketteNextIn = 0.3; return; }
       this.piketteVisit = visit;
       this.piketteSprite = this.add.image(visit.offboard.x, visit.offboard.y, 'pikette').setDisplaySize(40, 40).setDepth(9);
       this.piketteWaypoints = visit.route.map(cellCenter);
@@ -333,23 +419,36 @@ class PatrolScene extends Phaser.Scene {
   private moveDog(seconds: number): void {
     if (this.mode === 'finished') return;
     if (this.rules.snapshot().stopSecondsLeft > 0) return;
-    if (this.mode === 'stunned') {
-      if (this.rules.snapshot().treatStunSecondsLeft === 0) {
-        this.mode = 'wander';
-        this.modeTime = 0.5;
-      }
+    if (this.rules.snapshot().scrambleSecondsLeft > 0) {
+      this.dogWasScrambled = true;
+      this.scrambleDog(seconds);
       return;
     }
-    if (this.mode === 'lure') {
-      const distanceToPlayer = Phaser.Math.Distance.Between(this.dogPosition.x, this.dogPosition.y, this.playerPosition.x, this.playerPosition.y);
-      if (distanceToPlayer <= TILE_SIZE + 4) {
+    if (this.dogWasScrambled) {
+      this.dogWasScrambled = false;
+      this.resumeAfterScramble();
+    }
+    if (this.mode === 'eat') {
+      if (this.rules.snapshot().treatStunSecondsLeft === 0) this.finishEating();
+      return;
+    }
+    if (this.bone && this.mode !== 'fetch') {
+      this.mode = 'fetch';
+      this.dog.angle = 0;
+    }
+    if (this.mode === 'fetch') {
+      const boneCell = this.boneCell;
+      if (!boneCell) { this.finishEating(); return; }
+      const bone = cellCenter(boneCell);
+      if (Phaser.Math.Distance.Between(this.dogPosition.x, this.dogPosition.y, bone.x, bone.y) <= 10) {
+        this.clearBone();
         this.rules.beginTreatStun();
-        this.mode = 'stunned';
+        this.mode = 'eat';
         this.callbacks.onSnapshot(this.rules.snapshot());
         return;
       }
-      const route = findRoute(pointCell(this.dogPosition.x, this.dogPosition.y), pointCell(this.playerPosition.x, this.playerPosition.y), this.piketteBlockedCell(), this.map);
-      const next = route?.[1];
+      const route = findRoute(pointCell(this.dogPosition.x, this.dogPosition.y), boneCell, this.piketteBlockedCell(), this.map);
+      const next = route ? (route[1] ?? boneCell) : null;
       if (next) {
         const destination = cellCenter(next);
         const distance = Phaser.Math.Distance.Between(this.dogPosition.x, this.dogPosition.y, destination.x, destination.y);
@@ -448,6 +547,7 @@ class PatrolScene extends Phaser.Scene {
   private catchDog(): void {
     this.rules.catchDog(Math.max(0, 3000 - this.targetElapsed * 500));
     this.rules.clearDogControl();
+    this.clearBone();
     this.clearTarget();
     this.mode = 'recover';
     this.fleeRoute = findFleeRoute(pointCell(this.dogPosition.x, this.dogPosition.y), pointCell(this.playerPosition.x, this.playerPosition.y), this.piketteBlockedCell(), this.map);
@@ -502,6 +602,7 @@ class PatrolScene extends Phaser.Scene {
     this.endedNotified = true;
     this.mode = 'finished';
     this.clearGasCloud();
+    this.clearBone();
     this.callbacks.onSnapshot(this.rules.snapshot());
     this.callbacks.onEnd(this.rules.snapshot());
   }
@@ -681,7 +782,7 @@ export function mountGame(host: HTMLElement, callbacks: GameCallbacks, spec: Lev
         effectsBus.connect(audio.destination);
       }
       if (kind === 'fart') { playFart(audio, effectsBus); return; }
-      if (kind === 'piketteEnter') { playMeow(audio, effectsBus); return; }
+      if (kind === 'piketteEnter' || kind === 'piketteScare') { playMeow(audio, effectsBus); return; }
       const oscillator = audio.createOscillator();
       const gain = audio.createGain();
       const duration = 0.16;
