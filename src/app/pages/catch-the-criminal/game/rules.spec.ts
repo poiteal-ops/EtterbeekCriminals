@@ -55,6 +55,37 @@ describe('game rules', () => {
     expect(new GameRules().snapshot()).toMatchObject({ stopAvailable: true, treatAvailable: true });
   });
 
+  it('lets the player use STOP while a TREAT bone is on the floor or being eaten', () => {
+    const game = new GameRules();
+    expect(game.useTreat()).toBe(true);
+    expect(game.snapshot().treatLuring).toBe(true);
+    expect(game.useStop()).toBe(true);
+    game.tick(5);
+    game.beginTreatStun();
+    expect(game.snapshot().treatStunSecondsLeft).toBe(3);
+  });
+
+  it('never touches STOP, TREAT or object damage when a fart happens', () => {
+    const game = new GameRules();
+    const before = game.snapshot();
+    expect(game.triggerFart()).toBe(true);
+    expect(game.snapshot()).toEqual({ ...before, fartSecondsLeft: 3 });
+  });
+
+  it('scrambles both actors for three seconds when Pikette scares them, then rests before the next scare', () => {
+    const game = new GameRules();
+    expect(game.triggerPiketteScare()).toBe(true);
+    expect(game.triggerPiketteScare()).toBe(false);
+    game.tick(3);
+    expect(game.snapshot().scrambleSecondsLeft).toBe(0);
+    expect(game.triggerPiketteScare()).toBe(false);
+    game.tick(2);
+    expect(game.triggerPiketteScare()).toBe(true);
+    const paused = new GameRules();
+    paused.setPaused(true);
+    expect(paused.triggerPiketteScare()).toBe(false);
+  });
+
   it('limits a fart to three active seconds and guards a Pikette object for five', () => {
     const game = new GameRules();
     expect(game.triggerFart()).toBe(true);

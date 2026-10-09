@@ -94,7 +94,7 @@
       </div>
       <div class="game-abilities" role="group" [attr.aria-label]="t.ariaItems">
         <button type="button" class="ability-stop" (click)="useItem('stop')"
-          [disabled]="phase() !== 'playing' || !snapshot().stopAvailable || snapshot().treatLuring || snapshot().treatStunSecondsLeft > 0">
+          [disabled]="phase() !== 'playing' || !snapshot().stopAvailable">
           <img src="/assets/game/icons/stop.svg" alt="" width="32" height="32" />
           <span>{{ snapshot().stopAvailable ? t.stop : t.used }}</span>
         </button>

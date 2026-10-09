@@ -16,7 +16,7 @@ function initialSnapshot(): GameSnapshot {
   return {
     secondsLeft: LEVEL_SECONDS, score: 0, prevented: 0, damaged: 0, damagedIds: [], paused: false, ended: false,
     stopAvailable: true, treatAvailable: true, stopSecondsLeft: 0, treatLuring: false,
-    treatStunSecondsLeft: 0, fartSecondsLeft: 0, piketteSecondsLeft: 0, piketteObjectId: null,
+    treatStunSecondsLeft: 0, fartSecondsLeft: 0, scrambleSecondsLeft: 0, piketteSecondsLeft: 0, piketteObjectId: null,
   };
 }
 
@@ -202,14 +202,17 @@ export class CatchTheCriminal implements OnDestroy {
 
   protected onKeyDown(event: KeyboardEvent): void {
     const key = event.key.toLowerCase();
+    // event.code is layout- and NumLock-independent: Numpad1/2 report key "End"/"ArrowDown" with NumLock off.
+    const item = event.code === 'Digit1' || event.code === 'Numpad1' ? 'stop'
+      : event.code === 'Digit2' || event.code === 'Numpad2' ? 'treat' : null;
+    if (item) {
+      event.preventDefault();
+      this.useItem(item);
+      return;
+    }
     if (key === 'escape') {
       event.preventDefault();
       this.togglePause();
-      return;
-    }
-    if (key === '1' || key === '2') {
-      event.preventDefault();
-      this.useItem(key === '1' ? 'stop' : 'treat');
       return;
     }
     if (['w', 'a', 's', 'd', 'arrowup', 'arrowdown', 'arrowleft', 'arrowright'].includes(key)) {
@@ -283,6 +286,7 @@ export class CatchTheCriminal implements OnDestroy {
       fart: copy.fartMessage,
       piketteEnter: copy.piketteEnterMessage,
       pikette: copy.piketteMessage,
+      piketteScare: copy.piketteMessage,
       piketteGone: copy.piketteGoneMessage,
     };
     this.message.set(messages[event.kind].replace('{object}', object));

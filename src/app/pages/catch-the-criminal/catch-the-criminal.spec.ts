@@ -110,6 +110,28 @@ describe('CatchTheCriminal', () => {
     expect(document.activeElement).toBe(stage);
   });
 
+  it('maps 1 and 2 on the number row and the keypad to STOP and TREAT, even with NumLock off', () => {
+    TestBed.configureTestingModule({
+      imports: [CatchTheCriminal],
+      providers: [provideHttpClient(), provideRouter([])],
+    });
+    const fixture = TestBed.createComponent(CatchTheCriminal);
+    const component = fixture.componentInstance;
+    (Reflect.get(component, 'phase') as { set(value: string): void }).set('playing');
+    const used: string[] = [];
+    Reflect.set(component, 'game', {
+      useStop: () => { used.push('stop'); return true; },
+      useTreat: () => { used.push('treat'); return true; },
+      destroy: () => undefined,
+    });
+    const onKeyDown = Reflect.get(component, 'onKeyDown') as (event: KeyboardEvent) => void;
+    for (const [key, code] of [['1', 'Digit1'], ['2', 'Digit2'], ['1', 'Numpad1'], ['2', 'Numpad2'], ['End', 'Numpad1'], ['ArrowDown', 'Numpad2']]) {
+      onKeyDown.call(component, new KeyboardEvent('keydown', { key, code }));
+    }
+    expect(used).toEqual(['stop', 'treat', 'stop', 'treat', 'stop', 'treat']);
+    expect((Reflect.get(component, 'direction') as () => { x: number; y: number }).call(component)).toEqual({ x: 0, y: 0 });
+  });
+
   it('announces Pikette when she enters from the board edge', () => {
     TestBed.configureTestingModule({
       imports: [CatchTheCriminal],
@@ -127,7 +149,7 @@ describe('CatchTheCriminal', () => {
     const finish = (component: CatchTheCriminal, damaged: number, score = 200) => {
       const snapshot = { secondsLeft: 0, score, prevented: 2, damaged, damagedIds: [], paused: false, ended: true,
         stopAvailable: true, treatAvailable: true, stopSecondsLeft: 0, treatLuring: false, treatStunSecondsLeft: 0,
-        fartSecondsLeft: 0, piketteSecondsLeft: 0, piketteObjectId: null };
+        fartSecondsLeft: 0, scrambleSecondsLeft: 0, piketteSecondsLeft: 0, piketteObjectId: null };
       (Reflect.get(component, 'endLevel') as (data: typeof snapshot) => void).call(component, snapshot);
     };
     const setup = () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { HOUSE_OBJECTS, chooseTarget, chooseWanderCell, findFleeRoute, findRoute, isWalkable, type Cell } from './house';
+import { HOUSE_OBJECTS, TILE_SIZE, chooseTarget, chooseWanderCell, findFleeRoute, findRoute, isWalkable, type Cell } from './house';
 import * as house from './house';
 
 describe('house routes', () => {
@@ -55,11 +55,26 @@ describe('house routes', () => {
     expect(allowed?.({ x: 100, y: 100 }, { x: 130, y: 100 }, { x: 170, y: 100 })).toBe(false);
   });
 
+  it('detects an actor inside Pikette\'s three-square scare range', () => {
+    const near = { x: 100, y: 100 };
+    expect(house.isInPiketteScareRange(near, { x: 100 + TILE_SIZE * 3 - 1, y: 100 })).toBe(true);
+    expect(house.isInPiketteScareRange(near, { x: 100 + TILE_SIZE * 3, y: 100 })).toBe(false);
+    expect(house.isInPiketteScareRange(near, { x: 100 + TILE_SIZE * 2, y: 100 + TILE_SIZE * 2 })).toBe(true);
+  });
+
+  it('only sends Pikette to the active target object, never another one', () => {
+    for (const object of HOUSE_OBJECTS) {
+      const visit = house.choosePiketteVisit({ x: 8, y: 3 }, { x: 3, y: 7 }, new Set(), () => 0, 112, undefined, object.id);
+      if (visit) expect(visit.object.id).toBe(object.id);
+    }
+    expect(house.choosePiketteVisit({ x: 8, y: 3 }, { x: 3, y: 7 }, new Set(), () => 0, 112, undefined, null)).toBeNull();
+    expect(house.choosePiketteVisit({ x: 8, y: 3 }, { x: 3, y: 7 }, new Set(['sofa']), () => 0, 112, undefined, 'sofa')).toBeNull();
+  });
+
   it('plans a visible edge route that reaches an unoccupied object before the dog', () => {
-    const choose = Reflect.get(house, 'choosePiketteVisit') as ((dog: Cell, player: Cell, damaged: ReadonlySet<string>, random: () => number) => {
-      object: { id: string; cell: Cell }; entry: Cell; offboard: { x: number; y: number }; route: Cell[]; catSeconds: number; dogSeconds: number;
-    } | null) | undefined;
-    const visit = choose?.({ x: 8, y: 3 }, { x: 3, y: 7 }, new Set(), () => 0);
+    const choose = (dog: Cell, player: Cell, damaged: ReadonlySet<string>, random: () => number) =>
+      house.choosePiketteVisit(dog, player, damaged, random, 112, undefined, 'shoe');
+    const visit = choose({ x: 8, y: 3 }, { x: 3, y: 7 }, new Set(), () => 0);
     expect(visit).toBeTruthy();
     if (!visit) throw new Error('Expected an eligible Pikette visit');
     expect(visit.route[0]).toEqual(visit?.entry);

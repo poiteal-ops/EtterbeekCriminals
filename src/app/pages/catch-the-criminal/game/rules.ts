@@ -14,6 +14,7 @@ export interface GameSnapshot {
   treatLuring: boolean;
   treatStunSecondsLeft: number;
   fartSecondsLeft: number;
+  scrambleSecondsLeft: number;
   piketteSecondsLeft: number;
   piketteObjectId: string | null;
 }
@@ -32,6 +33,8 @@ export class GameRules {
   private treatStunSecondsLeft = 0;
   private fartSecondsLeft = 0;
   private fartCooldownSeconds = 0;
+  private scrambleSecondsLeft = 0;
+  private scareCooldownSeconds = 0;
   private piketteSecondsLeft = 0;
   private piketteObjectId: string | null = null;
 
@@ -54,6 +57,7 @@ export class GameRules {
       treatLuring: this.treatLuring,
       treatStunSecondsLeft: this.treatStunSecondsLeft,
       fartSecondsLeft: this.fartSecondsLeft,
+      scrambleSecondsLeft: this.scrambleSecondsLeft,
       piketteSecondsLeft: this.piketteSecondsLeft,
       piketteObjectId: this.piketteObjectId,
     };
@@ -66,13 +70,15 @@ export class GameRules {
     this.treatStunSecondsLeft = Math.max(0, this.treatStunSecondsLeft - seconds);
     this.fartSecondsLeft = Math.max(0, this.fartSecondsLeft - seconds);
     this.fartCooldownSeconds = Math.max(0, this.fartCooldownSeconds - seconds);
+    this.scrambleSecondsLeft = Math.max(0, this.scrambleSecondsLeft - seconds);
+    this.scareCooldownSeconds = Math.max(0, this.scareCooldownSeconds - seconds);
     this.piketteSecondsLeft = Math.max(0, this.piketteSecondsLeft - seconds);
     if (this.piketteSecondsLeft === 0) this.piketteObjectId = null;
     if (this.secondsLeft === 0) this.ended = true;
   }
 
   useStop(): boolean {
-    if (this.paused || this.ended || !this.stopAvailable || this.stopSecondsLeft > 0 || this.treatLuring || this.treatStunSecondsLeft > 0) return false;
+    if (this.paused || this.ended || !this.stopAvailable || this.stopSecondsLeft > 0) return false;
     this.stopAvailable = false;
     this.stopSecondsLeft = 5;
     return true;
@@ -101,6 +107,14 @@ export class GameRules {
     if (this.paused || this.ended || this.fartSecondsLeft > 0 || this.fartCooldownSeconds > 0) return false;
     this.fartSecondsLeft = 3;
     this.fartCooldownSeconds = 12;
+    return true;
+  }
+
+  /** Pikette hisses at anyone within three squares: both actors are scrambled for three seconds, then get a two-second breather. */
+  triggerPiketteScare(): boolean {
+    if (this.paused || this.ended || this.scareCooldownSeconds > 0) return false;
+    this.scrambleSecondsLeft = 3;
+    this.scareCooldownSeconds = 5;
     return true;
   }
 

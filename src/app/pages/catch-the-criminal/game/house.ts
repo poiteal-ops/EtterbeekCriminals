@@ -63,6 +63,12 @@ export function pointCell(x: number, y: number): Cell {
   return { x: Math.floor(x / TILE_SIZE), y: Math.floor(y / TILE_SIZE) };
 }
 
+export const PIKETTE_SCARE_RADIUS = TILE_SIZE * 3;
+
+export function isInPiketteScareRange(pikette: { x: number; y: number }, actor: { x: number; y: number }): boolean {
+  return Math.hypot(pikette.x - actor.x, pikette.y - actor.y) < PIKETTE_SCARE_RADIUS;
+}
+
 export function isFartOpportunity(player: { x: number; y: number }, dog: { x: number; y: number }, target: { x: number; y: number }): boolean {
   return Math.hypot(player.x - dog.x, player.y - dog.y) < TILE_SIZE &&
     Math.hypot(dog.x - target.x, dog.y - target.y) > TILE_SIZE * 2;
@@ -123,10 +129,12 @@ export function choosePiketteVisit(
   random: () => number = Math.random,
   dogSpeed = 112,
   map: LevelMap = LEVEL_MAPS[0],
+  activeObjectId: string | null = null,
 ): PiketteVisit | null {
+  if (!activeObjectId) return null;
   const visits: PiketteVisit[] = [];
   for (const object of map.objects) {
-    if (damagedIds.has(object.id) ||
+    if (object.id !== activeObjectId || damagedIds.has(object.id) ||
       (object.cell.x === dog.x && object.cell.y === dog.y) ||
       (object.cell.x === player.x && object.cell.y === player.y)) continue;
     const dogRoute = findRoute(dog, object.cell, null, map);
